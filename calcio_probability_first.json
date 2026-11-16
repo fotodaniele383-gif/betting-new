@@ -1,0 +1,9 @@
+{
+  "version": "CALCIO_PROBABILITY_FIRST_V1_20261106",
+  "mode": "PROBABILITY_FIRST",
+  "minOdd": 1.5,
+  "maxOdd": 2.4,
+  "minProbabilityPct": 55,
+  "minReliabilityScore": 55,
+  "paperSimulationStakeEuro": 2
+}

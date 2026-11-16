@@ -1,0 +1,248 @@
+{
+  "timestamp": 1794822057682,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 29,
+    "sourceCoverageConfidence": 77,
+    "matchImpactConfidence": 29,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 45,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Aston Villa",
+      "officialDomain": "avfc.co.uk",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 29,
+      "coverageConfidence": 77,
+      "matchImpactConfidence": 29,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 815,
+          "received": 10,
+          "relevant": 1,
+          "fresh": 10,
+          "usable": 1,
+          "excluded": 1,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:57.580Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 822,
+          "received": 15,
+          "relevant": 4,
+          "fresh": 11,
+          "usable": 1,
+          "excluded": 2,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:57.587Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 906,
+          "received": 12,
+          "relevant": 4,
+          "fresh": 8,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:57.671Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 37,
+        "relevantArticles": 9,
+        "usableArticles": 2,
+        "uniqueArticles": 2,
+        "duplicateRetrievals": 1,
+        "evidenceClusters": 2,
+        "officialArticles": 1,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 34,
+        "excludedSquadArticles": 3
+      },
+      "articles": [
+        {
+          "title": "team news for united encounter - aston villa",
+          "originalTitle": "Team news for United encounter - Aston Villa",
+          "fullText": "team news for united encounter - aston villa <a href=\"https://news.google.com/rss/articles/cbmijgfbvv95cuxnrfnou0dqngliqu01zw8wrlnuchdlrlnooxy2vzztoxnltfzodljltlpjoxp6x0dtutlsnmqxszj1rvl1z2v2b1rdyjfeyi1wt1z4bgtsb2flvwtscehqoxnxu2xqawlimvzctxfhrmrtqnbwbllftnc1nvaybkn0cujvwkrfv21za1z5ce5r?oc=5\" target=\"_blank\">team news for united encounter</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">aston villa</font>",
+          "sourceName": "Aston Villa",
+          "sourceUrl": "https://www.avfc.co.uk",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRFNOU0dQNGlIQU01ZW8wRlNUcHdLRlNoOXY2VzZtOXNlTFZOdlJlTlpJOXp6X0dtUTlsNmQxSzJ1RVl1Z2V2b1RDYjFEYi1wT1Z4bGtSb2FlVWtscEhqOXNXU2xQaWliMVZCTXFHRmRtQnBwbllFTnc1NVAybkN0cUJvWkRfV21Za1Z5cE5R?oc=5",
+          "publishedAt": "2026-11-06T08:00:00.000Z",
+          "ageDays": 10.07,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 1,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "pronostici barcellona - aston villa: raphinha pronto a colpire in una vittoria casalinga",
+          "originalTitle": "Pronostici Barcellona - Aston Villa: Raphinha pronto a colpire in una vittoria casalinga",
+          "fullText": "pronostici barcellona - aston villa: raphinha pronto a colpire in una vittoria casalinga in questo articolo si possono trovare i pronostici barcellona - aston villa, le quote dei bookmakers e le probabili formazioni del match ...",
+          "sourceName": "GOAL",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afacfaa4c2149cf81667a47a5b0a254&url=https%3a%2f%2fwww.goal.com%2fit%2fscommesse%2fpronostici%2fpronostici-barcellona-aston-villa-03-11-2026%2fA%253Ablt684dcd0a346c48ca&c=8877564068974101113&mkt=it-it",
+          "publishedAt": "2026-11-03T00:00:00.000Z",
+          "ageDays": 13.4,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "u18s: crystal palace 1-2 aston villa - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "U18",
+          "reason": "U18_CONTENT"
+        },
+        {
+          "title": "inside the programme: birmingham city - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "taylor harwood-bellis starts against united - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "second city derby connections - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "sørensen seeing plenty of positives despite united defeat - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "the official club website - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "slim defeat to the red devils in b6 - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "liverpool 4 - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "zion suzuki victorious with japan - aston villa",
+          "sourceName": "Aston Villa",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "matty cash to return to aston villa after suffering concussion in poland defeat to romania - the new york times",
+          "sourceName": "The New York Times",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "johan manzambi returns to aston villa after switzerland withdrawal - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "£60m aston villa star sent home from international duty in major injury blow - talksport",
+          "sourceName": "talkSPORT",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "1 recupero/i duplicati consolidati in cluster informativi unici.",
+        "R12: 3 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

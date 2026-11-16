@@ -1,0 +1,192 @@
+{
+  "timestamp": 1794827412641,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 35,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 0
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Carrarese",
+      "officialDomain": null,
+      "status": "NO_RELEVANT_EVIDENCE",
+      "confidence": 0,
+      "coverageConfidence": 35,
+      "matchImpactConfidence": 0,
+      "r25MatchCandidateCount": 0,
+      "r25TeamContextCount": 0,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1224,
+          "received": 15,
+          "relevant": 2,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T11:10:12.634Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1068,
+          "received": 6,
+          "relevant": 1,
+          "fresh": 2,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T11:10:12.478Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 21,
+        "relevantArticles": 3,
+        "usableArticles": 0,
+        "uniqueArticles": 0,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 0,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 0,
+        "independentPublishers": 0,
+        "excludedEvidence": 21,
+        "excludedSquadArticles": 0
+      },
+      "articles": [],
+      "excludedEvidence": [
+        {
+          "title": "how & where to watch napoli vs. carrarese? start time, live stream & tv channels for preseason friendly - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "napoli vs carrarese - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "hellas verona vs carrarese - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "tommaso macchioni - espn",
+          "sourceName": "ESPN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "torino vs carrarese: coppa italia stats & head-to-head - bbc",
+          "sourceName": "BBC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "🎙verso carrarese-palermo: dionisi in conferenza stampa - youtube",
+          "sourceName": "YouTube",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "gabriele parlanti stats and ratings - sofascore",
+          "sourceName": "Sofascore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "empoli vs carrarese: live scores, lineups, h2h & odds - 365scores",
+          "sourceName": "365Scores",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "tommaso rubino stats and ratings - sofascore",
+          "sourceName": "Sofascore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "road to palermo fc vs carrarese calcio: inzaghi press conference - palermo f.c.",
+          "sourceName": "Palermo F.C.",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "mantova vs carrarese - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "jonas rouhi stats and ratings - sofascore",
+          "sourceName": "Sofascore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Nessuna notizia fresca e first-team rilevante verificata: non equivale a rosa completa o assenze zero."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

@@ -1,0 +1,20 @@
+'use strict';
+const assert=require('assert');
+const {DatabaseSync}=require('node:sqlite');
+const guard=require('../backend/tennisProbabilityCalibrationGuardPatch39');
+const db=new DatabaseSync(':memory:');
+db.exec(`CREATE TABLE ai_forward_test(id INTEGER PRIMARY KEY,status TEXT,estimated_prob REAL,odd REAL,sport_type TEXT,bet_type TEXT,strategy_tag TEXT,tour_type TEXT,league TEXT,match_date TEXT);`);
+const ins=db.prepare('INSERT INTO ai_forward_test(id,status,estimated_prob,odd,sport_type,bet_type,strategy_tag,match_date) VALUES(?,?,?,?,?,?,?,?)');
+for(let i=1;i<=100;i++){const p=i<=50?80:70;const won=i<=31||(i>50&&i<=64);ins.run(i,won?'WON':'LOST',p,won?1.65:1.65,'TENNIS','SINGLE_TENNIS_CR','TENNIS_ATP_MONEYLINE',`2026-07-${String((i%28)+1).padStart(2,'0')}`);}
+const report=guard.buildCalibrationReport(db,{generatedAt:'2026-08-04T00:00:00Z'});
+assert.equal(report.windows.length,3);
+const d=guard.decide({estimated_prob:72,proposedStake:2},report);
+assert.equal(d.status,'SHADOW_OVERCONFIDENCE_MICRO_CAP');
+assert.equal(d.finalStake,2);
+assert.equal(d.authority,'PATCH48_SHADOW_DIAGNOSTIC_MICRO_CAP');
+assert.ok(d.operationalProbabilityPct<=d.rawProbabilityPct);
+const low=guard.decide({estimated_prob:52,proposedStake:2},report);
+assert.ok(low.finalStake<=2);
+guard.persistRun(db,report);guard.persistDecision(db,99,d,report.reportHash);guard.persistDecision(db,99,d,report.reportHash);
+assert.equal(Number(db.prepare('SELECT COUNT(*) n FROM tennis_probability_guard_decisions').get().n),1);
+console.log(JSON.stringify({success:true,checks:9,version:guard.VERSION,status:d.status,reductionPp:d.probabilityReductionPp}));

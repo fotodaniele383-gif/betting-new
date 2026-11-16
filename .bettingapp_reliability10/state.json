@@ -1,0 +1,143 @@
+{
+  "version": "BETTINGAPP_RELIABILITY10_V1_20261109",
+  "installedAt": "2026-11-09T09:53:03.094Z",
+  "baseVersion": "21.46.0",
+  "r17Version": "BETTINGAPP_R17_CALCIO_DEEPSCAN_QUALITATIVE_MEDICAL_CLEAN_20261108",
+  "stages": [
+    {
+      "id": "C01",
+      "title": "Calcio evento e pre-match"
+    },
+    {
+      "id": "C02",
+      "title": "Calcio fonti e provenienza"
+    },
+    {
+      "id": "C03",
+      "title": "Calcio probabilità e EV coerente"
+    },
+    {
+      "id": "C04",
+      "title": "Calcio payoff Asian quarti"
+    },
+    {
+      "id": "C05",
+      "title": "Calcio Decision Engine + prompt + fallback"
+    },
+    {
+      "id": "T01",
+      "title": "Tennis evento, superficie e orari"
+    },
+    {
+      "id": "T02",
+      "title": "Tennis fonti e freschezza"
+    },
+    {
+      "id": "T03",
+      "title": "Tennis probabilità e calibrazione"
+    },
+    {
+      "id": "T04",
+      "title": "Tennis payoff set BO3/BO5"
+    },
+    {
+      "id": "T05",
+      "title": "Tennis Decision Engine"
+    }
+  ],
+  "files": [
+    {
+      "rel": "backend/reliability10/common.js",
+      "created": true,
+      "original": null,
+      "installed": "3fffd90d3db542ea3d340c18aab958996e833dc9856dbf97fb97cd7b5f04fe9e"
+    },
+    {
+      "rel": "backend/reliability10/calcioEventAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "642861d174c86e2f317b1ccaf44204cf2b986aeda174e2385eff11149b046991"
+    },
+    {
+      "rel": "backend/reliability10/calcioSourceAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "bab03c01625ff6f45c3c7fa46b9148fd586af213311da945e49f9217b8d9cb4f"
+    },
+    {
+      "rel": "backend/reliability10/calcioProbabilityAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "6be42dcb7272d8ea9c874ccd5c6e79970409ee4be761a8970ca5da99325738dd"
+    },
+    {
+      "rel": "backend/reliability10/calcioPayoffAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "b115f3f9458de3246c4269a5c114db0806dcb39faee80530c2b0fb356437ff50"
+    },
+    {
+      "rel": "backend/reliability10/calcioDecisionAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "b7d94cbc6f2a368ceca744e781c78c5a6c4965e893bb0385d2e41863e9ecc1f7"
+    },
+    {
+      "rel": "backend/reliability10/tennisEventAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "e2979c168c237d44a97125cd55623db8ef205c8f79557b6de440e005c6b1a59e"
+    },
+    {
+      "rel": "backend/reliability10/tennisSourceAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "470c91b5aae421e55c28c42bb398ce17e31dd65c9714132295bc09bc2eacca34"
+    },
+    {
+      "rel": "backend/reliability10/tennisProbabilityAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "f98b9d3c98742690b6211ba6011328c0b142dace86ae465edbd3b1de7e878192"
+    },
+    {
+      "rel": "backend/reliability10/tennisPayoffAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "c83423cd274d14c765b24893c7af4f97cff8b45f8afcc7ef678e42336b7928ab"
+    },
+    {
+      "rel": "backend/reliability10/tennisDecisionAudit.js",
+      "created": true,
+      "original": null,
+      "installed": "aa165672fd28e84888c17ca3b92954eed37fb3a529e3707b18b3c4cdeb7abcb9"
+    },
+    {
+      "rel": "backend/calcioDecisionCertification.js",
+      "created": false,
+      "original": "88d35750471b767543bf8aba24b81b631a09994f811ecd036f3dbd53700e8c45",
+      "installed": "30b2fd548b55c4f6f925cbd2b7ff2b925bd1193aae76eeecb00444f64e075e53"
+    },
+    {
+      "rel": "backend/calcioAiFinalization.js",
+      "created": false,
+      "original": "871bfd7a5772a9625d3d10db79b63492332378942a7408d9f35c7d594aaa0855",
+      "installed": "af8cffe7b240f94c1ef681aa9177fdb34a6fe57b50a27fc93e921f713976a5e0"
+    },
+    {
+      "rel": "backend/tennisValueEvaluator.js",
+      "created": false,
+      "original": "c2cff280a2e0551fd35ec8d0c3fdfd80d45de5a1f8f939c5e98f7c6dde34da3f",
+      "installed": "9147551247bdd12d9037ca21c01918883045328aea5731958637dee66297e17d"
+    },
+    {
+      "rel": "backend/public/quantMatchPromptBridgeV4.js",
+      "created": false,
+      "original": "25bc102df20a3b0c56248b0299cb72c30107da94e287fc89cb629c6104e80e4e",
+      "installed": "18a55dbe8fef3fad09cde2d2521e42e10ca857c31b47707dc27bedc16d1f5feb"
+    }
+  ],
+  "dbBytesBefore": 507535360,
+  "dbBytesAfter": 507535360,
+  "mode": "PAPER_SHADOW_COMPAT_NO_STAKE_OVERRIDE"
+}

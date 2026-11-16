@@ -1,0 +1,158 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #f8fafc;
+    --accent: #10b981;
+    --accent-hover: #059669;
+    --danger: #ef4444;
+}
+/* Aggiungi al tuo style.css */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: linear-gradient(145deg, #1e293b, #111827);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #f8fafc;
+}
+
+/* Evidenzia l'Edge positivo */
+.edge-positive {
+    color: #10b981;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+}
+
+header { text-align: center; margin-bottom: 40px; }
+h1 { color: var(--accent); margin-bottom: 5px;}
+
+main { max-width: 1000px; margin: 0 auto; }
+
+section {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+input, select {
+    width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #334155;
+    background-color: #0f172a; color: white; box-sizing: border-box;
+}
+
+button {
+    width: 100%; padding: 15px; background-color: var(--accent);
+    color: white; border: none; border-radius: 6px; font-size: 16px;
+    cursor: pointer; font-weight: bold; transition: 0.3s;
+}
+button:hover { background-color: var(--accent-hover); }
+
+.hidden { display: none; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; }
+th, td { padding: 12px; border-bottom: 1px solid #334155; }
+th { background-color: #0f172a; color: var(--accent); }
+td.edge { color: var(--accent); font-weight: bold; }
+
+.acc-box { border-left: 4px solid var(--accent); padding-left: 15px; background: rgba(16, 185, 129, 0.1); padding: 20px; border-radius: 8px;}
+.acc-item { border-bottom: 1px solid #334155; padding-bottom: 10px; margin-bottom: 10px;}
+.acc-summary { font-size: 1.2em; font-weight: bold; margin-top: 15px; }
+
+/* BETTING_PATCH_26F_F_CROSS_SPORT_AI_OUTCOME_PROBABILITY_BANDS */
+.ai-outcome-host { margin-top: 18px; width: 100%; min-width: 0; }
+.ai-outcome-panel {
+    width: 100%; min-width: 0; box-sizing: border-box;
+    background: rgba(15, 23, 42, .72);
+    border: 1px solid rgba(56, 189, 248, .22);
+    border-radius: 14px; padding: 16px; overflow: hidden;
+}
+.ai-outcome-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; flex-wrap: wrap; }
+.ai-outcome-eyebrow { color: #7dd3fc; font-size: .7rem; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; }
+.ai-outcome-header h3 { margin: 4px 0 4px; color: #f8fafc; font-size: 1.08rem; line-height: 1.25; }
+.ai-outcome-header p { margin: 0; color: #94a3b8; font-size: .8rem; line-height: 1.4; max-width: 780px; }
+.ai-outcome-readonly { padding: 5px 9px; border-radius: 999px; border: 1px solid rgba(94, 234, 212, .28); background: rgba(20, 184, 166, .1); color: #99f6e4; font-size: .68rem; font-weight: 900; white-space: nowrap; }
+.ai-outcome-controls { display: grid; grid-template-columns: minmax(250px, auto) minmax(240px, 1fr); gap: 12px; align-items: end; margin-top: 14px; }
+.ai-outcome-segmented { display: inline-grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; border-radius: 10px; background: rgba(2, 6, 23, .45); border: 1px solid rgba(148, 163, 184, .14); }
+.ai-outcome-segmented button { border: 0; border-radius: 8px; padding: 9px 11px; background: transparent; color: #94a3b8; font-size: .78rem; font-weight: 800; cursor: pointer; }
+.ai-outcome-segmented button.active { background: rgba(56, 189, 248, .16); color: #e0f2fe; box-shadow: inset 0 0 0 1px rgba(56, 189, 248, .25); }
+.ai-outcome-select-wrap { min-width: 0; color: #94a3b8; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; }
+.ai-outcome-select { display: block; width: 100%; min-width: 0; margin-top: 5px; box-sizing: border-box; border: 1px solid rgba(148, 163, 184, .22); border-radius: 9px; background: #0f172a; color: #e2e8f0; padding: 9px 10px; font-size: .8rem; }
+.ai-outcome-kpis { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 8px; margin-top: 12px; }
+.ai-outcome-kpis > div { min-width: 0; border: 1px solid rgba(148, 163, 184, .14); border-radius: 10px; padding: 10px; background: rgba(2, 6, 23, .32); }
+.ai-outcome-kpis span, .ai-outcome-kpis small { display: block; color: #94a3b8; font-size: .65rem; line-height: 1.25; }
+.ai-outcome-kpis span { text-transform: uppercase; letter-spacing: .05em; font-weight: 800; }
+.ai-outcome-kpis strong { display: block; margin: 3px 0; color: #f8fafc; font-size: 1.1rem; line-height: 1.15; }
+.ai-outcome-kpis .good { border-color: rgba(16,185,129,.25); }
+.ai-outcome-kpis .warn { border-color: rgba(245,158,11,.25); }
+.ai-outcome-kpis .low { border-color: rgba(239,68,68,.22); }
+.ai-outcome-quality-note, .ai-outcome-footnote { margin-top: 9px; color: #94a3b8; font-size: .72rem; line-height: 1.4; }
+.ai-outcome-quality-note { border-left: 3px solid #f59e0b; background: rgba(245,158,11,.07); border-radius: 7px; padding: 8px 10px; color: #fde68a; }
+.ai-outcome-table-wrap { margin-top: 12px; width: 100%; overflow: hidden; border: 1px solid rgba(148,163,184,.14); border-radius: 10px; }
+.ai-outcome-table { width: 100%; min-width: 0 !important; border-collapse: collapse; table-layout: fixed; }
+.ai-outcome-table th, .ai-outcome-table td { padding: 9px 8px; text-align: left; border-bottom: 1px solid rgba(148,163,184,.1); font-size: .76rem; overflow-wrap: anywhere; }
+.ai-outcome-table th { color: #94a3b8; background: rgba(2,6,23,.42); text-transform: uppercase; letter-spacing: .04em; font-size: .65rem; }
+.ai-outcome-table td { color: #cbd5e1; }
+.ai-outcome-table td small { display: block; color: #64748b; margin-top: 2px; font-size: .63rem; }
+.ai-outcome-table tbody tr:last-child td { border-bottom: 0; }
+.ai-outcome-table tr.sample-low { opacity: .72; }
+.ai-outcome-won { color: #34d399 !important; }
+.ai-outcome-lost { color: #f87171 !important; }
+.ai-gap-positive { color: #34d399 !important; }
+.ai-gap-negative { color: #fbbf24 !important; }
+.ai-outcome-mobile-grid { display: none; }
+.ai-outcome-loading, .ai-outcome-empty { padding: 14px; border-radius: 10px; color: #94a3b8; background: rgba(15,23,42,.55); border: 1px dashed rgba(148,163,184,.22); font-size: .8rem; }
+
+@media (max-width: 760px) {
+    .ai-outcome-panel { padding: 12px; border-radius: 12px; }
+    .ai-outcome-controls { grid-template-columns: 1fr; gap: 9px; }
+    .ai-outcome-kpis { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .ai-outcome-table-wrap { display: none; }
+    .ai-outcome-mobile-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 11px; }
+    .ai-outcome-band-card { min-width: 0; border: 1px solid rgba(148,163,184,.14); border-radius: 10px; padding: 10px; background: rgba(2,6,23,.32); }
+    .ai-outcome-band-card.sample-low { opacity: .72; }
+    .ai-outcome-band-card-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; color: #f8fafc; }
+    .ai-outcome-band-card-head span { color: #94a3b8; font-size: .7rem; }
+    .ai-outcome-band-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 7px; margin-top: 8px; }
+    .ai-outcome-band-card-grid div { min-width: 0; }
+    .ai-outcome-band-card-grid small { display: block; color: #64748b; font-size: .62rem; text-transform: uppercase; }
+    .ai-outcome-band-card-grid strong { display: block; color: #e2e8f0; font-size: .78rem; margin-top: 2px; overflow-wrap: anywhere; }
+    .ai-outcome-band-card-foot { margin-top: 8px; padding-top: 7px; border-top: 1px solid rgba(148,163,184,.1); color: #94a3b8; font-size: .65rem; }
+}
+
+@media (max-width: 390px) {
+    .ai-outcome-kpis { grid-template-columns: 1fr; }
+    .ai-outcome-segmented { grid-template-columns: 1fr; }
+}
+/* /BETTING_PATCH_26F_F_CROSS_SPORT_AI_OUTCOME_PROBABILITY_BANDS */

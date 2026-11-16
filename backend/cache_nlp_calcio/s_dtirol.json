@@ -1,0 +1,177 @@
+{
+  "timestamp": 1793881028616,
+  "cacheSchemaVersion": "CALCIO_PATCH_7_NLP_CACHE_V2",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 35,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 0
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_PATCH_24_SEMANTIC_FOOTBALL_ENTITY_FILTER_V1",
+      "cacheSchemaVersion": "CALCIO_PATCH_7_NLP_CACHE_V2",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Südtirol",
+      "officialDomain": null,
+      "status": "NO_RELEVANT_EVIDENCE",
+      "confidence": 0,
+      "coverageConfidence": 35,
+      "matchImpactConfidence": 0,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1289,
+          "received": 10,
+          "relevant": 0,
+          "fresh": 10,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-05T12:17:08.607Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "EMPTY",
+          "httpStatus": 200,
+          "durationMs": 900,
+          "received": 0,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-05T12:17:08.218Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 1,
+        "receivedArticles": 10,
+        "relevantArticles": 0,
+        "usableArticles": 0,
+        "uniqueArticles": 0,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 0,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 0,
+        "independentPublishers": 0,
+        "excludedEvidence": 10
+      },
+      "articles": [],
+      "excludedEvidence": [
+        {
+          "title": "fc südtirol presents inclusion day at drusus stadium - italien.news",
+          "sourceName": "italien.news",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "iraola drops transfer hint! + arsenal injury crisis? liverpool fc latest transfer news - onefootball",
+          "sourceName": "OneFootball",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "sampdoria primavera - südtirol primavera, 31/10/2026 - primavera 2 - a - match sheet - transfermarkt",
+          "sourceName": "Transfermarkt",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hcb südtirol alperia defeats vsv and defends top spot in the standings - italien.news",
+          "sourceName": "italien.news",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hcb südtirol alperia loses in fehérvár after overtime - italien.news",
+          "sourceName": "italien.news",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "fc südtirol - cesena betting tip & best odds | 31.10.2026 - futbol24",
+          "sourceName": "Futbol24",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hcb südtirol alperia hosts vsv for a rematch in bolzano - italien.news",
+          "sourceName": "italien.news",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "fc südtirol empfängt cesena zum abschluss der englischen woche - italien.news",
+          "sourceName": "italien.news",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "diamanti's recipe for winning: \"the right mindset and focus.\" - quotidiano sportivo",
+          "sourceName": "Quotidiano Sportivo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "cesena, a fortress needs to be demolished. the bianconeri are looking for a repeat victory against südtirol, who are undefeated at home. - quotidiano sportivo",
+          "sourceName": "Quotidiano Sportivo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Nessuna notizia fresca e first-team rilevante verificata: non equivale a rosa completa o assenze zero."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_PATCH_24_SEMANTIC_FOOTBALL_ENTITY_FILTER_V1",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

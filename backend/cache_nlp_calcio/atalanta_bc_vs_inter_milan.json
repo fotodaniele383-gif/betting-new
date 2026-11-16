@@ -1,0 +1,207 @@
+{
+  "timestamp": 1794836375474,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 35,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 0
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Atalanta BC",
+      "officialDomain": "atalanta.it",
+      "status": "NO_RELEVANT_EVIDENCE",
+      "confidence": 0,
+      "coverageConfidence": 35,
+      "matchImpactConfidence": 0,
+      "r25MatchCandidateCount": 0,
+      "r25TeamContextCount": 0,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1272,
+          "received": 4,
+          "relevant": 0,
+          "fresh": 4,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T13:39:35.461Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1195,
+          "received": 15,
+          "relevant": 0,
+          "fresh": 1,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T13:39:35.385Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "EMPTY",
+          "httpStatus": 200,
+          "durationMs": 1207,
+          "received": 0,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T13:39:35.397Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 19,
+        "relevantArticles": 0,
+        "usableArticles": 0,
+        "uniqueArticles": 0,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 0,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 0,
+        "independentPublishers": 0,
+        "excludedEvidence": 19,
+        "excludedSquadArticles": 0
+      },
+      "articles": [],
+      "excludedEvidence": [
+        {
+          "title": "atalanta for the community: christmas match 2025 proceeds support paediatric research - atalanta",
+          "sourceName": "Atalanta",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "atalanta baby plush backpack - atalanta",
+          "sourceName": "Atalanta",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "atalanta dea beaded bracelet - atalanta",
+          "sourceName": "Atalanta",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "atalanta usb-c cable - atalanta",
+          "sourceName": "Atalanta",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "sarri ‘getting worried’ as atalanta injury crisis intensifies after 2-2 draw - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "line-ups: fc bayern vs. atalanta bc - champions league 25/26 - fc bayern",
+          "sourceName": "FC Bayern",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "real madrid vs atalanta | line-ups | uefa super cup 2024 final - uefa.com",
+          "sourceName": "UEFA.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "history: atalanta 3-0 leverkusen | line-ups | uefa europa league 2023/24 final - uefa.com",
+          "sourceName": "UEFA.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "atalanta bc - detailed squad 26/27 - transfermarkt",
+          "sourceName": "Transfermarkt",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview: monza vs atalanta bc - prediction, team news, lineups - sports mole",
+          "sourceName": "Sports Mole",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "preview: fiorentina vs atalanta bc - prediction, team news, lineups - sports mole",
+          "sourceName": "Sports Mole",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview: atalanta bc vs frosinone - prediction, team news, lineups - sports mole",
+          "sourceName": "Sports Mole",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "Nessuna notizia fresca e first-team rilevante verificata: non equivale a rosa completa o assenze zero."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

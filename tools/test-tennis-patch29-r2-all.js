@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const root=path.resolve(__dirname,'..');
+const audit=require('../backend/tennisSettlementUpdateAudit');
+const paper=fs.readFileSync(path.join(root,'backend','paperTrading.tennis.js'),'utf8');
+const app=fs.readFileSync(path.join(root,'public','app.js'),'utf8');
+const checks=[];function check(name,fn){try{fn();checks.push({name,ok:true})}catch(e){checks.push({name,ok:false,error:e.message})}}
+check('versione audit R2',()=>assert.equal(audit.VERSION,'TENNIS_SETTLEMENT_UPDATE_AUDIT_V1_PATCH29_R2'));
+check('outcome aggiornato',()=>assert.equal(audit.OUTCOMES.UPDATED,'UPDATED'));
+check('manual review protetta',()=>assert(audit.isProtectedManualReview({settlement_contract_status:'MANUAL_REVIEW',settlement_contract_reason:'OFFICIAL_RETIREMENT_BOOKMAKER_RULE_REQUIRED'})));
+check('proposed non manuale',()=>assert(!audit.isProtectedManualReview({settlement_contract_status:'PROPOSED',settlement_contract_reason:'SOURCE_TIER_WEAK_WEB_REQUIRES_REVIEW'})));
+check('engine 11.7 R2',()=>assert(paper.includes("11.7_PATCH29_R2_SETTLEMENT_UPDATE_AUDIT_TRUTH")));
+check('DB update failed non incrementato genericamente',()=>assert(!/unresolvedNoEvaluation\+\+;\s*diagnostics\.pendingReasons\.DB_UPDATE_FAILED/.test(paper)));
+check('manual protection runtime',()=>assert(paper.includes('MANUAL_REVIEW_PROTECTION')&&paper.includes('SKIPPED_MANUAL_REVIEW')));
+check('fingerprint guard runtime',()=>assert(paper.includes('OFFICIAL_EVENT_MARKET_FINGERPRINT_MISMATCH')&&paper.includes('MANUAL_REVIEW_RECORDED')));
+check('audit tentativi esposto',()=>assert(paper.includes('settlementAttemptAudit')&&paper.includes('updateOutcomes')));
+check('conteggi before after',()=>assert(paper.includes('pendingBefore')&&paper.includes('pendingAfter')&&paper.includes('manualReviewAfter')));
+check('frontend DB error specifico',()=>assert(app.includes('Aggiornamento database settlement non riuscito')));
+check('frontend fonte debole specifica',()=>assert(app.includes('Fonte debole · settlement non applicato')));
+const failed=checks.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,patch:'TENNIS_PATCH_29_R2',checks:checks.length,passed:checks.length-failed.length,failed:failed.length,results:checks},null,2));process.exit(failed.length?1:0);

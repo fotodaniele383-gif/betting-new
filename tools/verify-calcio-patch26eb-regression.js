@@ -1,0 +1,13 @@
+'use strict';
+const assert = require('assert');
+const registry = require('../backend/calcioPatchRegistry');
+assert.strictEqual(String(registry.CALCIO_CURRENT_PATCH_VERSION), '31');
+const patch = registry.PATCHES.find(p => String(p.version) === '31');
+assert(patch && patch.id === 'BETTING_PATCH_26E_B_CALCIO_CROSS_MARKET_UNCERTAINTY_OPERATIONAL_GUARD');
+assert.strictEqual(patch.tennisAuthorityChanged, false);
+assert.strictEqual(patch.footballProbabilityContractChanged, false);
+assert.strictEqual(patch.footballProductionProbabilityChanged, false);
+assert.strictEqual(patch.stakeAuthorityChanged, true);
+assert.strictEqual(patch.stakeAuthority, 'ONE_WAY_REDUCE_OR_ZERO_ONLY_AFTER_IPM_AND_BEFORE_BATCH_CAPS');
+assert.strictEqual(patch.newOddsApiCalls, 0);
+console.log(JSON.stringify({ success: true, checks: 8 }, null, 2));

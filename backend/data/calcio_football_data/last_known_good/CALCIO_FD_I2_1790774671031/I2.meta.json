@@ -1,0 +1,25 @@
+{
+  "operationId": "CALCIO_FD_I2_1790763724597",
+  "fetchedAt": "2026-09-30T10:21:15.678Z",
+  "lastSuccessAt": "2026-09-30T10:21:15.678Z",
+  "source": "NETWORK",
+  "season": "2425",
+  "url": "https://www.football-data.co.uk/mmz4281/2425/I2.csv",
+  "leagueKey": "serie_b",
+  "leagueName": "Serie B",
+  "code": "I2",
+  "attemptedSeasons": [
+    "2627",
+    "2526",
+    "2425"
+  ],
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "sha256": "ae2f59b7c410e31dab1565f245fc9cc45cd4420bee564958be5ad81f0bac6711",
+  "validRows": 380,
+  "rejectedRows": 0,
+  "earliestMatchAt": "2024-08-16T12:00:00.000Z",
+  "latestMatchAt": "2025-05-13T12:00:00.000Z",
+  "sizeBytes": 192671,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\OneDrive\\Personale\\BettingApp\\BettingApp\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_I2_1790763724597"
+}

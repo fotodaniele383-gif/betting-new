@@ -1,0 +1,19 @@
+{
+  "timestamp": 1794396481408,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 1,
+  "totalGames": 25,
+  "isVoid": false,
+  "source": "STEP58_WEB_FALLBACK_SCORE_GUARDED",
+  "confidence": 0.9,
+  "step107WeakWinnerSide": true,
+  "observedAt": "2026-11-11T11:28:01.408Z",
+  "sourceEventId": "WEB:2823af1f95510513b366",
+  "rawEvidence": {
+    "query": "navone vacherot tennis score 2026-08-05 result",
+    "matchDate": "2026-08-05",
+    "excerpt": "vac 1-2 nav valentin vacherot v mariano navone 05 08 2026 tennis ... flashscore news follow valentin vacherot v mariano navone 05 08 2026 match information valentin vacherot latest results news highlights and valentin vacherot v mariano navone h2h statistics flashscore tennis coverage includes tennis scores and tennis news from more than 5000 tournaments worldwide. valentin vacherot v mariano navone 05 08 2026 tennis - flashscore follow valentin vacherot v mariano navone 05 08 2026 h2h stats latest news and results and more information on flashscore. valentin vacherot vs mariano navone round 2 - tennis.com valentin vacherot vs mariano navone round 2 atp montreal live score statistics and broadcast info on tennis.com. vacherot vs navone round 2 montreal qc canada august 5 2026 mariano navone beat valentin vacherot 1-6 6-3 6-3. round 2 montreal qc canada august 5 2026. every set and the match stats. valentin vacherot - mariano navone 1-2 - flashscore.it flashscore.it tennis valentin vacherot v mariano navone segui valentin vacherot v mariano navone live valentin vacherot ultimi risultati statistiche news e altre informazioni. 2026 08 05 valentin vacherot vs mariano navone prediction "
+  },
+  "score": "1-6 6-3 6-3",
+  "note": "Risultato da web fallback: classificato PROPOSED da Patch 5; non chiude automaticamente senza fonte strutturata/certificata."
+}

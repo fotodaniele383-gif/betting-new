@@ -1,0 +1,171 @@
+{
+  "fixtureId": 1223605,
+  "season": 2024,
+  "response": [
+    {
+      "team": {
+        "id": 490,
+        "name": "Cagliari",
+        "logo": "https://media.api-sports.io/football/teams/490.png"
+      },
+      "statistics": [
+        {
+          "type": "Shots on Goal",
+          "value": 5
+        },
+        {
+          "type": "Shots off Goal",
+          "value": 4
+        },
+        {
+          "type": "Total Shots",
+          "value": 11
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 2
+        },
+        {
+          "type": "Shots insidebox",
+          "value": 9
+        },
+        {
+          "type": "Shots outsidebox",
+          "value": 2
+        },
+        {
+          "type": "Fouls",
+          "value": 12
+        },
+        {
+          "type": "Corner Kicks",
+          "value": 5
+        },
+        {
+          "type": "Offsides",
+          "value": 1
+        },
+        {
+          "type": "Ball Possession",
+          "value": "47%"
+        },
+        {
+          "type": "Yellow Cards",
+          "value": 2
+        },
+        {
+          "type": "Red Cards",
+          "value": null
+        },
+        {
+          "type": "Goalkeeper Saves",
+          "value": 3
+        },
+        {
+          "type": "Total passes",
+          "value": 362
+        },
+        {
+          "type": "Passes accurate",
+          "value": 272
+        },
+        {
+          "type": "Passes %",
+          "value": "75%"
+        },
+        {
+          "type": "expected_goals",
+          "value": "0.81"
+        },
+        {
+          "type": "goals_prevented",
+          "value": "0.39"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": 895,
+        "name": "Como",
+        "logo": "https://media.api-sports.io/football/teams/895.png"
+      },
+      "statistics": [
+        {
+          "type": "Shots on Goal",
+          "value": 4
+        },
+        {
+          "type": "Shots off Goal",
+          "value": 4
+        },
+        {
+          "type": "Total Shots",
+          "value": 14
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 6
+        },
+        {
+          "type": "Shots insidebox",
+          "value": 8
+        },
+        {
+          "type": "Shots outsidebox",
+          "value": 6
+        },
+        {
+          "type": "Fouls",
+          "value": 10
+        },
+        {
+          "type": "Corner Kicks",
+          "value": 6
+        },
+        {
+          "type": "Offsides",
+          "value": 3
+        },
+        {
+          "type": "Ball Possession",
+          "value": "53%"
+        },
+        {
+          "type": "Yellow Cards",
+          "value": 2
+        },
+        {
+          "type": "Red Cards",
+          "value": null
+        },
+        {
+          "type": "Goalkeeper Saves",
+          "value": 5
+        },
+        {
+          "type": "Total passes",
+          "value": 422
+        },
+        {
+          "type": "Passes accurate",
+          "value": 333
+        },
+        {
+          "type": "Passes %",
+          "value": "79%"
+        },
+        {
+          "type": "expected_goals",
+          "value": "1.53"
+        },
+        {
+          "type": "goals_prevented",
+          "value": "0.39"
+        }
+      ]
+    }
+  ],
+  "cachedAt": "2026-10-09T07:25:59.719Z",
+  "final": true,
+  "source": "API_FOOTBALL_FREE_HISTORICAL"
+}

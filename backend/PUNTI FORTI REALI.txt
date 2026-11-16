@@ -1,0 +1,459 @@
+PUNTI FORTI REALI
+✅ Separazione concettuale eccellente
+
+Hai separato:
+
+metriche player,
+dynamics,
+Monte Carlo,
+classificazione matchup,
+decision engine,
+pivot engine.
+
+Questa architettura è già hedge-fund style.
+
+Molti betting engine amatoriali mescolano tutto in una funzione.
+
+Qui no.
+
+2. PROBLEMA GRAVE: buildPlayerMetrics()
+
+Questa parte:
+
+let holdPct = 100 * (0.45 + 0.85 * spw);
+
+è completamente arbitraria.
+
+Perché è pericolosa
+
+SPW → Hold% NON è lineare.
+
+Nel tennis reale:
+
+62% SPW → ~78% hold
+68% SPW → ~90% hold
+
+la curva è sigmoidale/logistica.
+
+Tu invece usi:
+
+hold = a + b*x
+
+che distorce tantissimo:
+
+servebot
+WTA
+clay grinders
+matchup estremi.
+FIX CORRETTO
+
+Usa logistic calibration.
+
+Esempio:
+
+function estimateHoldPct(spw) {
+    return 100 / (1 + Math.exp(-12 * (spw - 0.62)));
+}
+
+oppure:
+
+const holdPct =
+    100 * (
+        0.02 +
+        0.96 / (1 + Math.exp(-14 * (spw - 0.61)))
+    );
+3. BREAK% MODEL È TROPPO AGGRESSIVO
+
+Questo:
+
+1 - Math.pow(1 - rpw, 4)
+
+esplode troppo.
+
+Con:
+
+rpw = 0.40
+
+ottieni:
+
+87%
+
+che è folle.
+
+Effetto
+
+Il DR diventa artificialmente enorme.
+
+Quindi:
+
+overconfidence
+troppi favoriti
+handicap troppo aggressivi
+under troppo spinti.
+FIX
+
+Usa una regressione calibrata ATP/WTA reale.
+
+Esempio:
+
+breakPct = 100 / (1 + Math.exp(-10 * (rpw - 0.36)));
+4. DOMINANCE RATIO INSTABILE
+
+Questo:
+
+breakPct / (100 - holdPct)
+
+esplode vicino a hold 100%.
+
+Problema
+
+Con:
+
+hold = 95
+break = 25
+
+hai:
+
+DR = 5
+
+completamente ingestibile.
+
+FIX
+
+Clamp aggressivo:
+
+dr = clamp(dr, 0.4, 2.5);
+
+oppure:
+
+dr = Math.log1p(dr)
+5. estimateSetDynamics() È TROPPO SEMPLICE
+
+Questo:
+
+tieBreakProb = h1^6 * h2^6
+
+è matematicamente elegante…
+
+ma sbagliato.
+
+Perché:
+
+ignora order serving
+ignora mini-breaks
+ignora pressure
+ignora return asymmetry.
+Conseguenza
+
+Il tie-break risk è:
+
+sovrastimato ATP
+sottostimato WTA
+distorto indoor.
+FIX PROFESSIONALE
+
+Usa Markov chain semplificata.
+
+Oppure lookup empirico:
+
+TBProb ≈ sigmoid(avgHold - threshold)
+6. MONTE CARLO È BUONO MA HA UN BUG CONCETTUALE
+
+Questa parte:
+
+if (totalGames > line)
+Problema
+
+Le linee bookmaker sono:
+
+21.5
+22.5
+23.5
+
+quindi OK.
+
+Ma se arriva:
+
+22
+
+hai push invisibili.
+
+FIX
+if (totalGames > line) over++
+else if (totalGames < line) under++
+else push++
+7. simulateSetGames() NON È REALISTICO
+
+Tu simuli game-level.
+
+Non point-level.
+
+Conseguenze
+
+Perdi:
+
+clutch factor
+deuce loops
+pressure collapse
+serve volatility.
+Versione professionale
+
+Serve simulazione point-by-point.
+
+Schema:
+
+point -> game -> set -> match
+8. CLASSIFICAZIONE MATCHUP TROPPO RIGIDA
+
+Questo:
+
+if (h >= 85 && b <= 20)
+
+è hardcoded fragile.
+
+Problema
+
+Un giocatore può essere:
+
+servebot indoor
+grinder clay
+balanced outdoor.
+
+Tu invece usi classificazione globale.
+
+FIX
+
+Usa clustering continuo:
+
+serveIndex
+returnIndex
+aggressionIndex
+surfaceModifier
+
+NON categorie discrete.
+
+9. WTA CALIBRATION È INTELLIGENTE
+
+Questa è una delle parti migliori:
+
+if (isWTA) {
+    let wtaPenalty = surface === 'Clay' ? 0.045 : 0.025;
+}
+
+Finalmente qualcuno capisce che:
+
+Sackmann SPW grezzo
+sovrastima hold femminili.
+
+Ottima intuizione.
+
+Però…
+
+La penalità fissa è pericolosa.
+
+FIX
+
+Dinamica:
+
+wtaPenalty =
+    0.02 +
+    volatilityIndex * 0.03
+10. DECISION ENGINE = MOLTO BUONO
+
+Qui c’è roba seria.
+
+Ottimo:
+✅ anti-toxic traps
+if (isWTA && SR > 0.5 ...)
+
+molto intelligente.
+
+✅ anti-suicide ML
+if (realEdge < 5)
+
+fondamentale.
+
+✅ veto medicali
+
+corretto.
+
+MA…
+11. realEdge È ANCORA MAL CALIBRATO
+
+Tu usi:
+
+((prob * odd) - 1)
+
+che è EV%.
+
+MA:
+
+non correggi closing efficiency
+non correggi vig multi-way
+non correggi skew market.
+Conseguenza
+
+Edge sistematicamente gonfiato.
+
+FIX
+
+Usa:
+
+edge =
+    modelProb -
+    fairMarketProb
+
+e poi:
+
+kellyEV
+
+separatamente.
+
+12. FINAL CONFIDENCE NON È STATISTICA
+
+Questa:
+
+0.35*(1-SR)
++ ...
+
+è euristica.
+
+Non confidence reale.
+
+Problema
+
+L’utente crede:
+
+72/100 = 72% accuratezza
+
+ma non è vero.
+
+FIX
+
+Rinomina:
+
+Model Conviction
+
+NON confidence.
+
+13. generateBetSuggestion() È ECCELLENTE
+
+Questa parte è davvero forte.
+
+Perché:
+
+pensa per struttura,
+non solo prediction.
+Questo è molto professionale:
+Pivot dall'Over
+
+È concetto da trading desk:
+
+“il read era giusto, il market era sbagliato”
+
+molto raro nei modelli betting retail.
+
+14. RISCHIO OVERFITTING NARRATIVO
+
+Problema enorme.
+
+Hai:
+
+if avgGames >= 10.2
+if drDelta >= 0.12
+if SR > 0.5
+Domanda fondamentale:
+
+Queste soglie:
+
+derivano da backtest?
+o intuizione?
+
+Perché se sono manuali:
+
+→ rischio curve fitting enorme.
+
+FIX OBBLIGATORIO
+
+Centralizza tutto:
+
+const MODEL_THRESHOLDS = {}
+
+e fai optimization separata.
+
+15. MANCANO COMPLETAMENTE
+❌ calibration layer
+
+Ti serve:
+
+predicted_prob vs actual_prob
+❌ closing line validation
+
+Serve:
+
+CLV tracking
+❌ Bayesian uncertainty
+
+Adesso il modello è deterministic.
+
+❌ surface transition fatigue
+
+Importantissimo ATP.
+
+❌ travel fatigue
+❌ indoor/outdoor split
+❌ altitude effect
+
+Madrid enorme.
+
+16. BUG LOGICO IMPORTANTE
+
+Questo:
+
+if (hardVeto)
+
+trasforma Under in:
+
+🔥 SUPER VALUE
+Problema
+
+Se il ritiro avviene:
+
+dopo 1 set,
+alcuni book voidano,
+altri no.
+
+Quindi il modello assume regole bookmaker uniformi.
+
+Errore gravissimo.
+
+FIX
+
+Aggiungi bookmaker ruleset:
+
+bookRules.retirementPolicy
+17. COSA HAI COSTRUITO DAVVERO
+
+Hai creato un:
+
+“Hybrid heuristic-quant tennis betting engine”
+
+NON ancora:
+
+AI,
+ML,
+quant institutional.
+
+MA:
+
+molto sopra media retail.
+
+PRIORITÀ DI MIGLIORAMENTO
+
+
+calibration pipeline,
+historical validation,
+Bayesian uncertainty,
+proper Monte Carlo,
+
+potrebbe diventare davvero molto forte.

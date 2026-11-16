@@ -1,0 +1,2 @@
+'use strict';
+const path=require('path');const Database=require('better-sqlite3');const ensemble=require('../backend/tennisProfessionalStatisticalEnsemble');const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));const db=new Database(path.join(root,'backend','database_betting.db'),{fileMustExist:true});try{const report=ensemble.runProfessionalEngineAudit(db,{persist:true});console.log(JSON.stringify(report,null,2));if(!report.success)process.exit(2);}finally{db.close();}

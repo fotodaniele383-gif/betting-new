@@ -1,0 +1,326 @@
+{
+  "timestamp": 1794822057818,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -4,
+    "tactics": {
+      "mentions": 2,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": true
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 59.4,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 59.4,
+    "raw": {
+      "injury": -4,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 1,
+      "fakeInjuryCount": 0,
+      "confidence": 70,
+      "globalScore": -16,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": true,
+      "evidenceArticles": 6
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Sunderland",
+      "officialDomain": "safc.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 59.4,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 59.4,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 888,
+          "received": 15,
+          "relevant": 1,
+          "fresh": 15,
+          "usable": 1,
+          "excluded": 1,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:57.654Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1042,
+          "received": 15,
+          "relevant": 9,
+          "fresh": 7,
+          "usable": 5,
+          "excluded": 0,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:57.808Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 813,
+          "received": 4,
+          "relevant": 0,
+          "fresh": 2,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:57.579Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 34,
+        "relevantArticles": 10,
+        "usableArticles": 6,
+        "uniqueArticles": 6,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 6,
+        "officialArticles": 2,
+        "trustedArticles": 1,
+        "independentChannels": 5,
+        "independentPublishers": 5,
+        "excludedEvidence": 28,
+        "excludedSquadArticles": 1
+      },
+      "articles": [
+        {
+          "title": "le bris provides team news ahead of dinamo zagreb - sunderland afc",
+          "originalTitle": "Le Bris provides team news ahead of Dinamo Zagreb - Sunderland AFC",
+          "fullText": "le bris provides team news ahead of dinamo zagreb - sunderland afc <a href=\"https://news.google.com/rss/articles/cbmimafbvv95cuxoako5tkpdwfdydgixz2lmwff2ngrithjddhrkngjjnujsbjvwt19tdzfeegg2svnedjdvvuzzbvjvznrdy05llvlbrtvcm2nawlffd2fpc3zxovddbnbzems5n1ktbknpsxjuqu1qu3n5c21vnm4yzgx4t3h4nzzwcvbiwkc1r2lfbjmzemrkc2dqzkphclrgcq?oc=5\" target=\"_blank\">le bris provides team news ahead of dinamo zagreb</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">sunderland afc</font>",
+          "sourceName": "Sunderland AFC",
+          "sourceUrl": "https://www.safc.com",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOako5TkpDWFdYdGIxZ2lmWFF2NGRITHJDdHRkNGJJNUJsbjVwT19tdzFEeGg2SVNEdjdvVUZzbVJVZnRDY05lLVlBRTVCM2NaWlFfd2Fpc3ZxOVdDbnBzems5N1ktbkNpSXJUQU1QU3N5c21vNm4yZGx4T3h4NzZWcVBiWkc1R2lFbjMzemRKc2dQZkphclRGcQ?oc=5",
+          "publishedAt": "2026-11-13T02:04:51.000Z",
+          "ageDays": 3.32,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "le bris provides diarra injury update - sunderland afc",
+          "originalTitle": "Le Bris provides Diarra injury update - Sunderland AFC",
+          "fullText": "le bris provides diarra injury update - sunderland afc <a href=\"https://news.google.com/rss/articles/cbmiigfbvv95cuxneg9lbkjhoxm5vgm3b3bnm2f1tvozq2nuwhczlxvpy0hjvwpdt21ycuxmqtfpahvzazvpm1qtmk4ysgfqzku3ddfgbxz1dvnuu3bud1hmmdhpynpcrxzux1fuz090t1pvuwpmuzvfqutgqkg2uedbohrmzkjntlvoy0pczddubk9zble?oc=5\" target=\"_blank\">le bris provides diarra injury update</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">sunderland afc</font>",
+          "sourceName": "Sunderland AFC",
+          "sourceUrl": "https://www.safc.com",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNeG9lbkJHOXM5VGM3b3BnM2F1TVozQ2NuWHczLXVpY0hjVWpDT21ycUxMQTFpaHVZazVpM1QtMk4ySGFQZkU3dDFGbXZ1dVNuU3Bud1hmMDhpYnpCRXZuX1FuZ090T1pvUWpMUzVfQUtGQkg2UEdBOHRmZkJnTlVOY0pCZDdUbk9ZblE?oc=5",
+          "publishedAt": "2026-11-15T02:04:52.000Z",
+          "ageDays": 1.32,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "sunderland transfer news, rumours and gossip: live updates and latest on deals, signings, loans and contracts - sky sports",
+          "originalTitle": "Sunderland transfer news, rumours and gossip: Live updates and latest on deals, signings, loans and contracts - Sky Sports",
+          "fullText": "sunderland transfer news, rumours and gossip: live updates and latest on deals, signings, loans and contracts - sky sports <a href=\"https://news.google.com/rss/articles/cbmi8afbvv95cuxqnmxzahnhekzgb1hrnjr3bvkwrhbzd0v5ouzpt05yng5wzvhantdpcu9wa1bczks3s2vianpqwujooglbyjjrs1f0yuhrcc1bowzgatnqmwnkvf9icljzuzjvvlq3amxeqljioe1otdqtvgpsn0dswgs1bxjpd0dudviya3m2vmdgv2i2wi1jcvhotv8wbgvjrhbny1zmtgrhste4cfc0whbwm0ryzk9hqmziu0hlblzut0z3rtdwmwxlaffzqlnyofdtenhxehoyuhljehjxn0lmu2e0cmrqy0lzcwvomddhmudvvnrxnus?oc=5\" target=\"_blank\">sunderland transfer news, rumours and gossip: live updates and latest on deals, signings, loans and contracts</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">sky sports</font>",
+          "sourceName": "Sky Sports",
+          "sourceUrl": "https://www.skysports.com",
+          "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQNmxZaHNHekZGb1hRNjR3bVkwRHBzd0V5OUZPT05YNG5WZVhaNTdPcU9Wa1BCZks3S2VianpqWUJOOGlBYjJRS1F0YUhRcC1BOWZGaTNQMWNkVF9IclJzUzJVVlQ3amxEQlJIOE1OTDQtVGpsN0dsWGs1bXJpd0dUdVIya3M2VmdGV2I2Wi1JcVhoTV8wbGVJRHBNY1ZmTGRHSTE4cFc0WHBwM0RyZk9HQmZIU0hlblZuT0Z3RTdWMWxlaFFZQlNYOFdTenhXeHoyUHlJeHJxN0lMU2E0cmRqY0lzcWVOMDdhMUdVVnRxNUs?oc=5",
+          "publishedAt": "2026-11-13T08:00:00.000Z",
+          "ageDays": 3.07,
+          "category": "TRANSFER",
+          "trustTier": "TRUSTED_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.4836
+        },
+        {
+          "title": "sunderland vs chelsea – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Sunderland vs Chelsea – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "sunderland vs chelsea – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmikafbvv95cuxpyudhde5xbectmhvvczr5wgrkuwe0edjirffcr2zrbhrvu213aknoog5tv1vmb3atmjvju09pzmx2wvk0sjvaztzmx1hpruhoedbdawyzewrcdglzewpwnu1zmxb4belyuetsdletzznsd21xsna5oepjnk81uzbztlfvzvndegplc0xnskhrqm8?oc=5\" target=\"_blank\">sunderland vs chelsea – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYUdhdE5XbEctMHVvczR5WGRkUWE0eDJiRFFCR2ZRbHRvU213akNOOG5tV1VMb3AtMjVjU09pZmx2WVk0SjVaZTZmX1hPRUhoeDBDaWYzeWRCdGlZeWpwNU1ZMXB4bElYUEtSdlEtZzNsd21XSnA5OEpjNk81UzBZTlFvZVNDeGpLc0xnSkhRQm8?oc=5",
+          "publishedAt": "2026-11-08T06:06:00.000Z",
+          "ageDays": 8.15,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "xabi alonso confirms chelsea team news for sunderland | news | official site - chelsea football club",
+          "originalTitle": "Xabi Alonso confirms Chelsea team news for Sunderland | News | Official Site - Chelsea Football Club",
+          "fullText": "xabi alonso confirms chelsea team news for sunderland | news | official site - chelsea football club <a href=\"https://news.google.com/rss/articles/cbmimwfbvv95cuxpsnlrc25ndu8xsxv0ylfcwgrkbmzjq0lcvvv2wmxwd0f1nwkzwte4nndnwkhhce1uv2jaevpzme9zz2ljzfzuwlvuewlta2jnlxlpm0rozxjrwwfhdgn6uwczmzrxqu1szemyqxfjt2pnagk4rutyz05pyujquwr1wwktufhswlviwmrjnhzuwudsa0r4cm9jdedjma?oc=5\" target=\"_blank\">xabi alonso confirms chelsea team news for sunderland | news | official site</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">chelsea football club</font>",
+          "sourceName": "Chelsea Football Club",
+          "sourceUrl": "https://www.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSnlRc25ndU8xSXV0YlFCWGRkbmZJQ0lCVVV2Wmxwd0F1NWkzWTE4NndnWkhhcE1UV2JaeVpzME9ZZ2lJZFZuWlVueWlTa2JNLXlpM0RoZXJrWWFhdGN6UWczMzRxQU1SZEMyQXFJT2pNaGk4RUtYZ05pYUJQUWR1WWktUFhsWlViWmRJNHZuWUdSa0R4cm9JdEdJMA?oc=5",
+          "publishedAt": "2026-11-06T08:00:00.000Z",
+          "ageDays": 10.07,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "granit xhaka's switzerland return delayed! sunderland captain ruled out with calf injury after missing previous camp over fake covid-19 certificate scandal - goal.com",
+          "originalTitle": "Granit Xhaka's Switzerland return delayed! Sunderland captain ruled out with calf injury after missing previous camp over fake Covid-19 certificate scandal - Goal.com",
+          "fullText": "granit xhaka's switzerland return delayed! sunderland captain ruled out with calf injury after missing previous camp over fake covid-19 certificate scandal - goal.com <a href=\"https://news.google.com/rss/articles/cbmiqafbvv95cuxqx2hxstjizy1qmkrkq0tfcwduyzjtnektrnizwdrkafoyy1fvofo0lvg2t1ltzlfrq2vam3zurhfkmedka2jszhvfauzkafdzdnrtvm5bme81wmncaknqogutzlhtugriejztylpwyzr6aut6d0funzvfttzfvnvzt3i3c2flwxnltfvmmjvrylbqnjbwukz5t2rtd0doaelhdgg4vgu5rww?oc=5\" target=\"_blank\">granit xhaka's switzerland return delayed! sunderland captain ruled out with calf injury after missing previous camp over fake covid-19 certificate scandal</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">goal.com</font>",
+          "sourceName": "Goal.com",
+          "sourceUrl": "https://www.goal.com",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX2hXSTJIZy1QMkRKQ0tFcWduYzJtNEktRnIzWDRkaFoyY1FVOFo0LVg2T1lTZlFrQ2VaM3ZuRHFkMEdKa2JsZHVFaUZKaFdZdnRtVm5BME81WmNCakNQOGUtZlhtUGRIejZTYlpWYzR6aUt6d0FUNzVfTTZfVnVzT3I3c2FLWXNLTFVMMjVRYlBqNjBwUkZ5T2RTd0doaElhdGg4VGU5RWw?oc=5",
+          "publishedAt": "2026-11-09T15:07:42.000Z",
+          "ageDays": 6.77,
+          "category": "HARD_MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "le bris wants sunderland to embrace man city challenge - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "everything you need to know about sunderland's 12 players at the world cup... - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "u21s set to host psv at the sol - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "U21",
+          "reason": "U21_CONTENT"
+        },
+        {
+          "title": "le bris praises young striker geragusian’s progress - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "season ticket waiting list is open - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "wilson isidor reflects on world cup summer and sunderland ambitions - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "preview: sunderland back in europe on bonfire night - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "the numbers behind ahoka's potm display vs chelsea - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "find out how sunderland's players have fared on international duty so far... - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "when did a sunderland player last get three assists in a game? - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "tom proctor: a dream come true - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "o'nien praises two teammates after win vs chelsea - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "R12: 1 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

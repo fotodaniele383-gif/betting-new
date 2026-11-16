@@ -1,0 +1,22 @@
+{
+  "version": "BETTINGAPP_R9_CONSOLIDATED_UI_RECONCILIATION_EDITOR_20261111",
+  "installedAt": "2026-11-12T21:23:28.218Z",
+  "sqliteModified": false,
+  "coreModified": false,
+  "legacySchedulerModified": false,
+  "stakeModified": false,
+  "autoBetEnabled": false,
+  "autoSettlementEnabled": false,
+  "r7DependencyInstalled": true,
+  "files": {
+    "APRI_INTERFACCIA_R9.cmd": "48594901136f34a54ea05b86cb9ed95414960cc5e25516066ebc9a52adf85c63",
+    "R9_AUDIT_ANOMALIE.cmd": "76a619a1c8c8005c32177512ef279f99067db5a58d420e616766bff1d1cd7564",
+    "R9_COLLAUDO_EDITOR_READONLY.cmd": "59b87210dc1f102c3fd62029ae75c8653ced54901347b7045347a9d42ca6e306",
+    "addons/reliability-r9/audit.cjs": "79ec17a4d4f507567cabbd10c8748168dd2a2845f525c13cb781d5bec82a1f4a",
+    "addons/reliability-r9/editor-audit.cjs": "239f0d4ef7f77c8ddb598322c7162b3ff360baeccdafbd723900de6e17794bee",
+    "backend/public/index-r9.html": "50fd202f4566a5716b11dad2284c403f29b00bd8678ef477179592048bc3ae5e",
+    "backend/public/r9-consistency.js": "9f35fb7dec317cf1a8f96bce708aca5addf5ccb34be9d263c7a3e270d3b55aca",
+    "public/index-r9.html": "50fd202f4566a5716b11dad2284c403f29b00bd8678ef477179592048bc3ae5e",
+    "public/r9-consistency.js": "9f35fb7dec317cf1a8f96bce708aca5addf5ccb34be9d263c7a3e270d3b55aca"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "enabled": false,
+  "tokenEnv": "TELEGRAM_BOT_TOKEN",
+  "credentialPolicy": "ENVIRONMENT_ONLY",
+  "defaultParseMode": "HTML",
+  "contacts": [
+    {
+      "name": "INSERISCI_QUI_NOME_CONTATTO",
+      "chatId": "INSERISCI_QUI_CHAT_ID",
+      "enabled": false
+    }
+  ],
+  "defaultFilters": {
+    "mode": "results_since_last",
+    "area": "both",
+    "sport": "tennis",
+    "stakeScope": "operational",
+    "onlyCurrentDataQuality": true,
+    "dedupe": true,
+    "limit": 20
+  },
+  "uiNotes": [
+    "Patch 31: il token non deve mai essere scritto in questo file.",
+    "Configura TELEGRAM_BOT_TOKEN nel file .env della root, caricato da Avvia_Betting.bat.",
+    "Dopo la rotazione di un token esposto imposta TELEGRAM_TOKEN_ROTATION_REQUIRED=0.",
+    "contacts[].chatId accetta chat private, gruppi e canali autorizzati."
+  ]
+}

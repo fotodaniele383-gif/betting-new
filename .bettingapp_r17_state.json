@@ -1,0 +1,44 @@
+{
+  "version": "BETTINGAPP_R17_CALCIO_DEEPSCAN_QUALITATIVE_MEDICAL_CLEAN_20261108",
+  "installedAt": "2026-11-09T08:08:46.690Z",
+  "files": [
+    {
+      "path": "backend/public/app.js",
+      "beforeSha256": "ef1036aa790507ab73aa636b15597595dcccbcadc14cc0024c86053d948191b6",
+      "afterSha256": "e82cad72b53d9f81c7a040e333dfd0a546080beb83b665edff3966c62df0b762",
+      "size": 883725
+    },
+    {
+      "path": "public/app.js",
+      "beforeSha256": "07e68debbaf3a2aa60265876af97d3cdacbccc5305d65dae8936f3cf7fd2875f",
+      "afterSha256": "a81267f4717da128f2243268ff81ab0b1f75977a70ccb6cf468c20cfe678b1dd",
+      "size": 880639
+    },
+    {
+      "path": "backend/public/index.html",
+      "beforeSha256": "5bc2269bc03248ce0295c3265a28f68fd186b0efbaf564c86e35e3b55c21432c",
+      "afterSha256": "206c5373cea83f21f7974b93b1e3662734eda9fc58ca908fdeb92629507323c8",
+      "size": 194440
+    },
+    {
+      "path": "public/index.html",
+      "beforeSha256": "364ecdbbb4555943198244c55915a6dc2b6460e9babbf0243378b6adf2424385",
+      "afterSha256": "ff8e05fb9d66574c4d5b5fda9900f853c740a01dbb2739781e8aa7c9dab06c96",
+      "size": 194144
+    },
+    {
+      "path": "backend/deepScanCalcio.js",
+      "beforeSha256": "6c46374f64d83c7afca5de361b97b05ed93b0e0c6f6b595d2c2f38dd10453b34",
+      "afterSha256": "8bbb10bc097b385013b03c50b9c8b0f725a2fe75046ea1f2a9e496a17e30c1a1",
+      "size": 70318
+    },
+    {
+      "path": "backend/calcioDeepScanEvidenceR17.js",
+      "beforeSha256": null,
+      "afterSha256": "91b4cf894556be2ce7614a38c5208dd1bc5b801ef4790fb866993d16c7919bd3",
+      "size": 4220
+    }
+  ],
+  "backupRelative": ".bettingapp_r17_backups\\2026-11-09T08-08-41-004Z",
+  "dbSha256Before": "42bd18ac897738c4538bcffd3243f395f877f75e3d1172064d79a0f363ec2593"
+}

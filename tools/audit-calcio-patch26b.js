@@ -1,0 +1,9 @@
+'use strict';
+const fs=require('fs');const path=require('path');const Database=require('./sqlite-compat');
+const root=path.resolve(__dirname,'..');const server=fs.readFileSync(path.join(root,'backend/server.js'),'utf8');const fin=fs.readFileSync(path.join(root,'backend/calcioAiFinalization.js'),'utf8');
+const dbPath=process.env.BETTING_DB_PATH||path.join(root,'backend','database_betting.db');const db=new Database(dbPath,{readonly:true});
+try{
+ const active=db.prepare("SELECT COUNT(*) n FROM ai_forward_test WHERE UPPER(COALESCE(sport_type,''))='CALCIO' AND UPPER(COALESCE(status,'PENDING'))='PENDING' AND COALESCE(paper_result_active,1)=1 AND COALESCE(paper_result_conflict,0)=0").get().n;
+ const awaiting=db.prepare("SELECT COUNT(*) n FROM ai_forward_test WHERE UPPER(COALESCE(sport_type,''))='CALCIO' AND UPPER(COALESCE(status,'PENDING'))='PENDING' AND UPPER(COALESCE(calcio_ai_finalization_status,'')) LIKE '%AWAITING%'").get().n;
+ console.log(JSON.stringify({success:true,patch:'BETTING_PATCH_26B_CALCIO_FULL_CANDIDATE_POOL_EVENT_ISOLATION',certification:'CODE_AND_OFFLINE_FIXTURE_CERTIFIED_REQUIRES_FRESH_LIVE_ANALYSIS',database:{activePendingCalcio:active,legacyAwaitingRows:awaiting},guards:{completeCandidatePool:server.includes('buildFullCandidateAudit('),provisionalIpmCannotFilterPool:server.includes("source: 'ALL_DIRECT_CERTIFIED_MARKETS'"),singleCandidateNoCrash:fin.includes('MARKET_SINGLE_DIRECT_FINALIZED'),degradedNotFullyCertified:fin.includes('directFinalizedCount === ranked.length'),eventTransactionOnly:server.includes('COMMITTED_EVENT_ONLY'),crossEventWriteGuard:server.includes('assertOnlyCurrentEventMutated('),globalPortfolioLoopRemoved:!server.includes('for (const allocatedRow of portfolioAllocation.candidates)'),portfolioBatchCertified:false},nextStep:'PATCH26C_BATCH_PORTFOLIO_ALLOCATION_AND_AUTHORITATIVE_UI_REFRESH'},null,2));
+}finally{db.close();}

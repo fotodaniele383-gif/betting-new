@@ -1,0 +1,246 @@
+{
+  "timestamp": 1794817226211,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 13.5,
+    "sourceCoverageConfidence": 77,
+    "matchImpactConfidence": 13.5,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 45,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Torino",
+      "officialDomain": "torinofc.it",
+      "status": "PARTIAL",
+      "confidence": 13.5,
+      "coverageConfidence": 77,
+      "matchImpactConfidence": 13.5,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 597,
+          "received": 1,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:20:25.698Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 817,
+          "received": 15,
+          "relevant": 12,
+          "fresh": 1,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:20:25.918Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1105,
+          "received": 8,
+          "relevant": 2,
+          "fresh": 4,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:20:26.206Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 24,
+        "relevantArticles": 14,
+        "usableArticles": 2,
+        "uniqueArticles": 2,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 2,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 22,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "preview | torino vs lecce: team news, lineups, predictions (serie a 07/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Torino vs Lecce: team news, lineups, predictions (Serie A 07/11) - Yahoo Sports",
+          "fullText": "preview | torino vs lecce: team news, lineups, predictions (serie a 07/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxovexxvlmzqvm5odbwahfzmtz4twpcy050q2jktfvpwlfwx0zkmxg5wfdksg11rhlvqzktnfg3q19pyxlhvxzdvlzvztz3qxdervbizhpeby0yqnjwnzvsz0k4cfjtcm9wrfr0m1batlnzbzb0wg9lyjlyb3dgr0l3udjcoa?oc=5\" target=\"_blank\">preview | torino vs lecce: team news, lineups, predictions (serie a 07/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVExxVlMzQVM5ODBWaHFZMTZ4TWpCY050Q2JkTFVPWlFwX0ZKMXg5WFdKSG11RHlVQzktNFg3Q19PYXlHVXZDVlZvZTZ3QXdERVBiZHpEby0yQnJwNzVSZ0k4cFJTcm9WRFR0M1BaTlNZbzB0WG9LYjlyb3dGR0l3UDJCOA?oc=5",
+          "publishedAt": "2026-11-05T08:00:00.000Z",
+          "ageDays": 11.01,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "torino-lecce: formazioni ufficiali e diretta. dove si vede in tv e streaming",
+          "originalTitle": "Torino-Lecce: formazioni ufficiali e diretta. Dove si vede in tv e streaming",
+          "fullText": "torino-lecce: formazioni ufficiali e diretta. dove si vede in tv e streaming i granata di ignazio abate ospitano i salentini di eusebio di francesco nell’11ª giornata del campionato di serie a ...",
+          "sourceName": "Tuttosport",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afabccba03e4ca48ecc5f024003e5b9&url=https%3a%2f%2fwww.tuttosport.com%2fnews%2fcalcio%2fserie-a%2f2026%2f11%2f07-152413874%2ftorino-lecce_probabili_formazioni_aggiornate_e_diretta_dove_si_vede_in_tv_e_streaming&c=2658500220723170156&mkt=it-it",
+          "publishedAt": "2026-11-06T23:25:00.000Z",
+          "ageDays": 9.37,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "giovanili - torino fc 1906",
+          "sourceName": "TORINO FC 1906",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | frosinone vs torino: team news, lineups, predictions (serie a 01/11) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "torino vs. milan preview: team news, prediction, date, and how to watch serie a on dazn - dazn",
+          "sourceName": "DAZN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "new maserati lineup captivates salone auto torino - maserati",
+          "sourceName": "Maserati",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | torino vs monza: team news, lineups, predictions (serie a 23/10) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | torino vs como 1907: team news, lineups, predictions (serie a 27/10) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "serie a official line-ups: torino vs. monza - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "is christian pulisic playing today for ac milan vs. torino? - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "abate important torino injury updates for roma clash - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "ac milan xi vs torino – predicted lineup and team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | parma vs torino: team news, lineups, predictions (serie a 19/10) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | bologna vs torino: team news, lineups, predictions (serie a 19/09) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

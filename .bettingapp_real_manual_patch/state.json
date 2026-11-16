@@ -1,0 +1,25 @@
+{
+  "version": "BETTINGAPP_REAL_MANUAL_V1_20261109",
+  "installedAt": "2026-11-09T10:35:41.040Z",
+  "edited": {
+    "backend/server.js": {
+      "before": "01592301b41839ffc6ec1de53f7b909d07d31c90f3157e797fca6d46f0150718",
+      "after": "0b971e1807d2cc1aaff633b753136cf861a499f653c90d97dd1782e4f86a3fce"
+    },
+    "backend/safe13ManualRouteGuard.js": {
+      "before": "749c6860d9d963269e1588ea4644ebadad165a79ad218593b599fbb51d7fe8bc",
+      "after": "d7b7dcddc0ef61bc8afb0cc1a7482cdf1010488f2b6c2f9d37cfdb90e15b8b92"
+    },
+    "backend/public/index.html": {
+      "before": "206c5373cea83f21f7974b93b1e3662734eda9fc58ca908fdeb92629507323c8",
+      "after": "8ff5d733330226719147db0964d31c8e43e28764623749c73467f02cbed76185"
+    }
+  },
+  "added": {
+    "backend/realManualMode.js": "7c7deaf9d3f1a2ff2d0bcc7c5dd85afdf8ec7589c527cb1e0a2f4564d9d93dc9",
+    "backend/public/real-manual.js": "337d7d7b9fb220b55a5b985ba16484c02e001b4d8ab2e700567c5fde853f24a9",
+    "backend/public/real-manual.html": "3f860b760f8593d7eafd835530ffdfecc0219956ab7ececc37e4e9f6b6a4e7db",
+    "AVVIA_REALE_MANUALE.cmd": "baeefe63cc0afce4939b0036c24484e29b1abd0ff3b0d3be02b35d96c71a18fb"
+  },
+  "historicalDbChanged": false
+}

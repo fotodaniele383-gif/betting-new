@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs'),path=require('path');
+const root=path.resolve(process.argv.includes('--root')?process.argv[process.argv.indexOf('--root')+1]||'.':process.argv[2]||path.join(__dirname,'..'));
+const read=r=>fs.readFileSync(path.join(root,r),'utf8');
+const bat=read('Avvia_Betting.bat'),doctor=read('tools/startupDoctorPatch57R2.js'),server=read('backend/server.js');
+const checks=[];const c=(n,o,d=null)=>checks.push({name:n,ok:Boolean(o),details:d});
+const rawNgrok=/\bngrok(?:\.exe)?\s+http\b/i.test(bat);
+const recoveryR2=bat.includes('Startup Recovery Patch57 R2');
+c('Recovery R2 launcher preservato',recoveryR2);
+c('Startup doctor R2 preservato',doctor.includes('startupDoctorPatch57R2')||doctor.includes('PATCH57_R2'));
+c('Recovery usa Security Patch57',bat.includes("require('./backend/productionSecuritySafeReleasePatch57')"));
+c('Recovery richiede security ready',bat.includes('if(!c.ready)'));
+c('Default .env assente non blocca locale',bat.includes('Uso default Patch57 sicuri: 127.0.0.1, remote OFF'));
+c('Dashboard resta loopback',bat.includes('http://127.0.0.1:3000'));
+c('Nessun raw ngrok http',!rawNgrok,{rawNgrok});
+c('Tunnel automatico esplicitamente disabilitato',bat.includes('Tunnel remoto non avviato automaticamente.'));
+c('Server Patch57 security preservata',server.includes("require('./productionSecuritySafeReleasePatch57')"));
+c('Patch58 non sovrascrive launcher recovery',!fs.existsSync(path.join(root,'backend','.scheduler_patch58_runtime','launcher-overwrite.flag')));
+const failed=checks.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,patch:'58-R2',suite:'STARTUP_RECOVERY_COMPAT',checks:checks.length,details:checks},null,2));process.exit(failed.length?1:0);

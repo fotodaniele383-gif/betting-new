@@ -1,0 +1,216 @@
+{
+  "timestamp": 1794827436539,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 60,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Modena",
+      "officialDomain": null,
+      "status": "TEAM_CONTEXT_ONLY",
+      "confidence": 0,
+      "coverageConfidence": 60,
+      "matchImpactConfidence": 0,
+      "r25MatchCandidateCount": 0,
+      "r25TeamContextCount": 1,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1199,
+          "received": 15,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T11:10:36.533Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 951,
+          "received": 3,
+          "relevant": 1,
+          "fresh": 2,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T11:10:36.285Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 18,
+        "relevantArticles": 1,
+        "usableArticles": 1,
+        "uniqueArticles": 1,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 1,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 17,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "cev cup: modena travolge l'ok napredak nell'andata dei 32i",
+          "originalTitle": "Cev Cup: Modena travolge l'Ok Napredak nell'andata dei 32i",
+          "fullText": "cev cup: modena travolge l'ok napredak nell'andata dei 32i la formazione allenata da tubertini si impone con un largo 0-3 (19-25, 17-25, 12-25) in bosnia-erzegovina e mette in cassaforte il passaggio del turno. il ritorno martedì prossimo, 17 novembre al pala ...",
+          "sourceName": "Tuttosport",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afae4ad0c404e589815d6d4601e70cc&url=https%3a%2f%2fwww.tuttosport.com%2fnews%2fpallavolo%2fcoppe%2f2026%2f11%2f11-152532252%2fcev_cup_modena_travolge_l_ok_napredak_nell_andata_dei_32i&c=4103725929543721395&mkt=it-it",
+          "publishedAt": "2026-11-11T15:08:00.000Z",
+          "ageDays": 4.84,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0,
+          "matchScopeR25": "TEAM_CONTEXT_ONLY",
+          "matchSpecificEvidence": false
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "eight injured after car ploughs into crowd in italy's modena - dw.com",
+          "sourceName": "DW.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "italian leaders visit modena after car-ramming attack - reuters",
+          "sourceName": "Reuters",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "8 injured as man rams car into crowd in italy’s modena - south china morning post",
+          "sourceName": "South China Morning Post",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "at least eight injured in car ramming in italian city of modena - the times of israel",
+          "sourceName": "The Times of Israel",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "8 wounded, 4 critically, after driver plows into crowd in italy, officials say - abc7 new york",
+          "sourceName": "ABC7 New York",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "driver rams pedestrians in modena, italy, leaving four critically injured - la voce di new york",
+          "sourceName": "La Voce di New York",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "driver plows into pedestrians in italy, 8 injured as driver detained after attempted escape - wbal-tv",
+          "sourceName": "WBAL-TV",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "several injured after car ploughs into crowd in italy's modena - euronews.com",
+          "sourceName": "Euronews.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "woman loses both legs, 7 others injured after car plows into pedestrians in italy - people.com",
+          "sourceName": "People.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "driver plows into pedestrians in italy's modena, leaving 8 injured - cbc",
+          "sourceName": "CBC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "man ploughs car into crowd in italy before trying to stab them - bbc",
+          "sourceName": "BBC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "car plows into pedestrians in italy's modena, 8 injured, 2 critically, mayor says - the independent",
+          "sourceName": "The Independent",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "R25: notizie disponibili come contesto squadra, non certificate per l’avversario del match.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

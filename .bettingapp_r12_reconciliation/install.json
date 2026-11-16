@@ -1,0 +1,24 @@
+{
+  "version": "BETTINGAPP_R12_CONSERVATIVE_RECONCILIATION_20261113",
+  "installedAt": "2026-11-14T13:04:45.259Z",
+  "dbWrite": false,
+  "stakeWrite": false,
+  "coreReplace": false,
+  "autoBet": false,
+  "settlementWrite": false,
+  "qualityGateChanged": false,
+  "files": {
+    "APRI_PANNELLO_R12.cmd": "c8819f0e82d23382d5d27c9ee75d35ca8d743f4792c95b72ebed91f5e78fb160",
+    "R12_DIAGNOSI_COMPLETA.cmd": "9f9dfdb8cd2418031d3012dccfbd37809241d657f7fbc0176aeeb9817089f9e5",
+    "R12_LEGGIMI_PROTEZIONI.txt": "abd1429bec30e88a8c313c54610c803d05dac45eca1b04bd1d3a9070542cec12",
+    "R12_SCARICA_CANDIDATI_TENNIS.cmd": "d54e54e4b30723c9a0ebf8140d07932d272cd5b3f63763a4a096c29d21951e60",
+    "R12_SCARICA_CANDIDATI_TENNIS.ps1": "b79864299219412239884ad0f28aaebfbd3b07bfadd51d7ef47ff0495ba845d8",
+    "R12_VERIFICA_FONTI_TENNIS.cmd": "91f60bdc54c072bb63f0e5f71fe7e784631dd1f6531f77dcd4e4f91d04db0daf",
+    "addons/reconciliation-r12/cli.cjs": "3ea4fcfa6fee6afb17065c04b6a35ed978c3f8a118e31bb882227ed7dca4233a",
+    "addons/reconciliation-r12/engine.cjs": "88d366dbba4f0d05b932dccb5cb448b9aa656f69bace1e068d9a44e81bb142ed",
+    "backend/public/index-r12.html": "07d3690f4cc86db9dc9dc5d0ba4f21abae900fa6198480bddb009afd62c87277",
+    "backend/public/r12-ui.js": "5887ffbbdfae5b6e6e66a4466184d197bca065b54c06744a0392a5484a71339d",
+    "public/index-r12.html": "07d3690f4cc86db9dc9dc5d0ba4f21abae900fa6198480bddb009afd62c87277",
+    "public/r12-ui.js": "5887ffbbdfae5b6e6e66a4466184d197bca065b54c06744a0392a5484a71339d"
+  }
+}

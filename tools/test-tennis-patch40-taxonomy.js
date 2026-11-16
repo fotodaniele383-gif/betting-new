@@ -1,0 +1,17 @@
+'use strict';
+const assert=require('assert');
+const t=require('../backend/tennisDeepScanTaxonomyPatch40');
+let checks=0;const eq=(actual,expected)=>{assert.equal(actual,expected);checks++};
+eq(t.normalize('🟠 RISCHIO MODELLO').label,'RISCHIO MODELLO');
+eq(t.normalize('RISCHIO_MODELLO').code,'MODEL_RISK');
+eq(t.normalize('📊 EDGE TECNICO').label,'EDGE TECNICO');
+eq(t.normalize('VALUE_CONFIRMED').label,'VALUE CONFERMATO / MICRO');
+eq(t.normalize('🟢 VALUE CONFERMATO · MICRO').code,'VALUE_CONFIRMED_MICRO');
+eq(t.normalize('🔴 ALTO RISCHIO').label,'ALTO RISCHIO');
+eq(t.normalize('WATCHLIST / LOW EDGE').label,'WATCHLIST LOW EDGE');
+eq(t.normalize({ds_suggestion:'Attendi live dopo tre game'}).label,'ATTENDI IN-PLAY');
+eq(t.normalize({}).label,'SENZA DEEPSCAN');
+eq(t.decorateRow({ds_action:'VALUE_CONFERMATO'}).deep_scan_canonical_label,'VALUE CONFERMATO / MICRO');
+eq(t.registry().length,8);
+eq(new Set(t.registry().map(x=>x.label)).size,8);
+console.log(JSON.stringify({success:true,checks,version:t.VERSION,categories:t.registry()}));

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "CALCIO_PATCH_10_UNDERSTAT_LKG_V1",
+  "leagueName": "Ligue 1",
+  "teams": {
+    "Lille": {
+      "xG_for": 1.481,
+      "xG_against": 1.779,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Paris Saint Germain": {
+      "xG_for": 2.188,
+      "xG_against": 1.157,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Rennes": {
+      "xG_for": 2.08,
+      "xG_against": 2.027,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Marseille": {
+      "xG_for": 1.7,
+      "xG_against": 2.434,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Angers": {
+      "xG_for": 1.674,
+      "xG_against": 1.508,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Nice": {
+      "xG_for": 1.092,
+      "xG_against": 1.962,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Monaco": {
+      "xG_for": 1.234,
+      "xG_against": 1.315,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Troyes": {
+      "xG_for": 1.237,
+      "xG_against": 2.105,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Toulouse": {
+      "xG_for": 2.12,
+      "xG_against": 1.659,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Lyon": {
+      "xG_for": 1.991,
+      "xG_against": 1.18,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Lorient": {
+      "xG_for": 1.16,
+      "xG_against": 1.233,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Lens": {
+      "xG_for": 2.501,
+      "xG_against": 1.658,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Strasbourg": {
+      "xG_for": 1.295,
+      "xG_against": 1.925,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Brest": {
+      "xG_for": 2.167,
+      "xG_against": 1.158,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Auxerre": {
+      "xG_for": 1.369,
+      "xG_against": 2.137,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Le Havre": {
+      "xG_for": 1.312,
+      "xG_against": 2.058,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Paris FC": {
+      "xG_for": 1.885,
+      "xG_against": 0.657,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Le Mans": {
+      "xG_for": 1.557,
+      "xG_against": 2.093,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    }
+  },
+  "metadata": {
+    "version": "CALCIO_PATCH_11_UNDERSTAT_PROVIDER_V3",
+    "resilienceRevision": "AUDIT16D_R3_R3A_UNDERSTAT_API_DATE_BROWSER_RESILIENCE_V1",
+    "provenanceRevision": "AUDIT16D_R3_R3A_R2_UNDERSTAT_PROVENANCE_LOCK_V1",
+    "evidenceSource": "UNDERSTAT_TEAMS_DATA",
+    "evidenceClass": "REAL_XG",
+    "ajaxContract": "UNDERSTAT_GET_LEAGUE_DATA_V1",
+    "parser": "AJAX_GET_LEAGUE_DATA_JSON_TEAMS",
+    "season": "2026/2027",
+    "teamCount": 18,
+    "rejectedCount": 0,
+    "fetchedAt": "2026-10-04T17:59:43.876Z",
+    "source": "DIRECT_AJAX_JSON",
+    "apiLeagueSegment": "Ligue_1",
+    "wireRevision": "AUDIT16D_R3_R3A_R4_UNDERSTAT_GZIP_AND_ENDPOINT_ALIAS_V1"
+  }
+}

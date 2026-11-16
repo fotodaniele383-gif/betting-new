@@ -1,0 +1,230 @@
+{
+  "timestamp": 1793881019702,
+  "cacheSchemaVersion": "CALCIO_PATCH_7_NLP_CACHE_V2",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 10.4,
+    "sourceCoverageConfidence": 71,
+    "matchImpactConfidence": 10.4,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 50,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 2
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_PATCH_24_SEMANTIC_FOOTBALL_ENTITY_FILTER_V1",
+      "cacheSchemaVersion": "CALCIO_PATCH_7_NLP_CACHE_V2",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Juve Stabia",
+      "officialDomain": null,
+      "status": "PARTIAL",
+      "confidence": 10.4,
+      "coverageConfidence": 71,
+      "matchImpactConfidence": 10.4,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 2224,
+          "received": 15,
+          "relevant": 1,
+          "fresh": 15,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-05T12:16:59.692Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 2217,
+          "received": 7,
+          "relevant": 1,
+          "fresh": 6,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-05T12:16:59.685Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 22,
+        "relevantArticles": 2,
+        "usableArticles": 2,
+        "uniqueArticles": 2,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 2,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 20
+      },
+      "articles": [
+        {
+          "title": "antonio di nardo (juve stabia): transfer news, market value (etv) and stats - www.footballtransfers.com",
+          "originalTitle": "Antonio Di Nardo (Juve Stabia): transfer news, market value (ETV) and stats - www.footballtransfers.com",
+          "fullText": "antonio di nardo (juve stabia): transfer news, market value (etv) and stats - www.footballtransfers.com <a href=\"https://news.google.com/rss/articles/cbmicefvx3lxtfbttgxzqnlkcww2df8twndyakv2bw5duwjsnuzazdzwsen0bmdxmnlowxjgmwxnukjnefczqs1wu0lkr2jpsktpdezpzznivfvwx3hgnufwnmy1t1c3txu5oddommxzzkrrd0nqrufubew?oc=5\" target=\"_blank\">antonio di nardo (juve stabia): transfer news, market value (etv) and stats</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.footballtransfers.com</font>",
+          "sourceName": "www.footballtransfers.com",
+          "sourceUrl": "https://www.footballtransfers.com",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBTTGxzQnlKcWw2dF8tWndYakV2bW5DUWJsNUZaZDZWSEN0bmdXMnloWXJGMWxnUkJneFczQS1wU0lkR2JPSktpdEZPZzNiVFVWX3hGNUFWNmY1T1c3TXU5ODdOMmxzZkRRd0NQRUFUbEw?oc=5",
+          "publishedAt": "2026-11-01T07:00:00.000Z",
+          "ageDays": 4.22,
+          "category": "TRANSFER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "FINAL_TEAM_NEWS",
+          "matchImpactWeight": 0.369
+        },
+        {
+          "title": "the news. the team loses players. fan fever rises.",
+          "originalTitle": "The news. The team loses players. Fan fever rises.",
+          "fullText": "the news. the team loses players. fan fever rises. arezzo: the final days before the away match against juve stabia this saturday at 3:00 pm. yesterday morning's training ...",
+          "sourceName": "Quotidiano Sportivo",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6aec73bc9c2846939d47980f6cdc4684&url=https%3a%2f%2fsport.quotidiano.net%2fen%2flocale%2fcalcio%2fil-notiziario-la-squadra-b2c9fcd7&c=7477851767289620714&mkt=it-it",
+          "publishedAt": "2026-11-04T23:40:00.000Z",
+          "ageDays": 0.53,
+          "category": "PRESEASON",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "FINAL_TEAM_NEWS",
+          "matchImpactWeight": 0.369
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "juve stabia vs. verona (28 oct, 2026) live score - espn",
+          "sourceName": "ESPN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "mussolini’s great-grandson scores first lazio goal in 6-2 win over sassuolo - the new york times",
+          "sourceName": "The New York Times",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "juve stabia vs hellas verona - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "stabia vs. benevento: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "liverpool title charge? + carra's transfer wishlist! liverpool fc latest transfer news - onefootball",
+          "sourceName": "OneFootball",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "alajbegovic’s thunderbolt, boga’s return: how juve rediscovered the light - la gazzetta dello sport",
+          "sourceName": "La Gazzetta dello Sport",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "ss juve stabia - transfermarkt",
+          "sourceName": "Transfermarkt",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "possession won final 3rd per match - juve stabia stats for serie b 2026/2027 - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "carrarese vs. stabia: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "save percentage - juve stabia stats for serie b 2026/2027 - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "stabia vs. catanzaro: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "assists - juve stabia stats for serie b 2026/2027 - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_PATCH_24_SEMANTIC_FOOTBALL_ENTITY_FILTER_V1",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

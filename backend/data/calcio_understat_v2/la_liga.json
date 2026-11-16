@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "CALCIO_PATCH_10_UNDERSTAT_LKG_V1",
+  "leagueName": "La Liga",
+  "teams": {
+    "Malaga": {
+      "xG_for": 0.806,
+      "xG_against": 1.999,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Sevilla": {
+      "xG_for": 1.058,
+      "xG_against": 1.501,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Deportivo La Coruna": {
+      "xG_for": 1.199,
+      "xG_against": 1.493,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Real Sociedad": {
+      "xG_for": 1.337,
+      "xG_against": 1.828,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Espanyol": {
+      "xG_for": 1.346,
+      "xG_against": 1.462,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Getafe": {
+      "xG_for": 0.9,
+      "xG_against": 1.542,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Atletico Madrid": {
+      "xG_for": 1.956,
+      "xG_against": 1.21,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Rayo Vallecano": {
+      "xG_for": 1.302,
+      "xG_against": 1.862,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Valencia": {
+      "xG_for": 0.813,
+      "xG_against": 1.811,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Athletic Club": {
+      "xG_for": 1.881,
+      "xG_against": 1.283,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Barcelona": {
+      "xG_for": 4.2,
+      "xG_against": 1.114,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Real Madrid": {
+      "xG_for": 2.809,
+      "xG_against": 1.111,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Levante": {
+      "xG_for": 1.552,
+      "xG_against": 2.218,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Celta Vigo": {
+      "xG_for": 1.087,
+      "xG_against": 1.314,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Real Betis": {
+      "xG_for": 1.879,
+      "xG_against": 1.827,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Villarreal": {
+      "xG_for": 2.801,
+      "xG_against": 1.634,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Osasuna": {
+      "xG_for": 1.269,
+      "xG_against": 1.711,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Alaves": {
+      "xG_for": 1.522,
+      "xG_against": 1.087,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Elche": {
+      "xG_for": 1.404,
+      "xG_against": 2.243,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Racing Santander": {
+      "xG_for": 1.402,
+      "xG_against": 2.285,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    }
+  },
+  "metadata": {
+    "version": "CALCIO_PATCH_11_UNDERSTAT_PROVIDER_V3",
+    "resilienceRevision": "AUDIT16D_R3_R3A_UNDERSTAT_API_DATE_BROWSER_RESILIENCE_V1",
+    "provenanceRevision": "AUDIT16D_R3_R3A_R2_UNDERSTAT_PROVENANCE_LOCK_V1",
+    "evidenceSource": "UNDERSTAT_TEAMS_DATA",
+    "evidenceClass": "REAL_XG",
+    "ajaxContract": "UNDERSTAT_GET_LEAGUE_DATA_V1",
+    "parser": "AJAX_GET_LEAGUE_DATA_JSON_TEAMS",
+    "season": "2026/2027",
+    "teamCount": 20,
+    "rejectedCount": 0,
+    "fetchedAt": "2026-10-04T17:59:43.777Z",
+    "source": "DIRECT_AJAX_JSON",
+    "apiLeagueSegment": "La_liga",
+    "wireRevision": "AUDIT16D_R3_R3A_R4_UNDERSTAT_GZIP_AND_ENDPOINT_ALIAS_V1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": "TENNIS_OFFICIAL_RETIREMENT_EVIDENCE_V1_PATCH29_R1",
+  "generatedAt": "2026-07-31T13:05:00.000Z",
+  "policy": "OFFICIAL_RESULT_CAPTURED_AUTO_SETTLEMENT_DISABLED_BOOKMAKER_RULE_REQUIRED",
+  "records": [
+    {
+      "date": "2026-07-30",
+      "home": "Ashlyn Krueger",
+      "away": "Naomi Osaka",
+      "winner": "Naomi Osaka",
+      "winnerSide": 2,
+      "retiredPlayer": "Ashlyn Krueger",
+      "score": "6-3 3-1 RET",
+      "sourceEventId": "WTA1045:20260730:R16:OSAKA-KRUEGER:RET",
+      "tour": "WTA",
+      "tournamentCatalogId": "wta_500_washington",
+      "tournamentCanonicalName": "Washington DC (Mubadala DC Open)",
+      "source": "WTA_OFFICIAL_RETIREMENT_MANUAL_REVIEW_PATCH29_R1",
+      "sourceUrl": "https://www.wtatennis.com/tournaments/1045/washington-dc/2026/draws",
+      "observedAt": "2026-07-31T13:05:00.000Z",
+      "providerCompleted": true,
+      "confidence": 0.995,
+      "evidenceType": "OFFICIAL_WTA_RETIREMENT_RESULT",
+      "requiresBookmakerRule": true,
+      "automaticSettlement": false,
+      "recordHash": "c1979f8ac00599d727fb777f0a01a2d80d585bb538b06abe571e264efae6b597"
+    }
+  ],
+  "evidenceHash": "0488284db920d7eca694c7ad2791376c5df8fa20be8bcf750c34e399766fe7eb"
+}

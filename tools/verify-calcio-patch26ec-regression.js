@@ -1,0 +1,18 @@
+'use strict';
+const assert = require('assert');
+const registry = require('../backend/calcioPatchRegistry');
+assert.strictEqual(String(registry.CALCIO_CURRENT_PATCH_VERSION), '32');
+const patch = registry.PATCHES.find(p => String(p.version) === '32');
+assert(patch && patch.id === 'BETTING_PATCH_26E_C_CALCIO_UNIFIED_STAKE_AUTHORITY_DATA_QUALITY_COHERENCE_RECOVERY');
+assert.strictEqual(patch.tennisAuthorityChanged, false);
+assert.strictEqual(patch.tennisRowsChanged, false);
+assert.strictEqual(patch.resolvedRowsChanged, false);
+assert.strictEqual(patch.footballProbabilityContractChanged, false);
+assert.strictEqual(patch.footballProductionProbabilityChanged, false);
+assert.strictEqual(patch.stakeAuthority, 'EXCLUSIVE_UNIFIED_STAKE_AMOUNT_AUTHORITY_THEN_BATCH_CAPS');
+assert.strictEqual(patch.immutableCalcioBankrollSnapshot, true);
+assert.strictEqual(patch.robustEvNonPositiveHardVeto, true);
+assert.strictEqual(patch.dedicatedDataQualityAuthority, true);
+assert.strictEqual(patch.legacyStakeReconcileWriterDisabled, true);
+assert.strictEqual(patch.newOddsApiCalls, 0);
+console.log(JSON.stringify({ success: true, checks: 13 }, null, 2));

@@ -1,0 +1,13 @@
+{
+  "version": "BETTINGAPP_R23_QUALITATIVE_AUTHORITY_SEPARATION_V1_20261115",
+  "dbChanged": false,
+  "authorityChanged": false,
+  "realMoneyAuthorization": false,
+  "files": {
+    "backend/calcioDeepScanFinalState.js": "cf87c43d7151926753ffbfdf15a3a8461640bbe1edb46b3cc3f476bc1494eccc",
+    "public/app.js": "58d6f4ac8821a92a4eb32245f0c23e39facd0a08093b1b0162e91b0f510617e7",
+    "backend/public/app.js": "58d6f4ac8821a92a4eb32245f0c23e39facd0a08093b1b0162e91b0f510617e7",
+    "public/index.html": "fbbd4c0e30f0e0ea859c58399984bd8969347754a0e988d52bae18cc1aede7eb",
+    "backend/public/index.html": "fbbd4c0e30f0e0ea859c58399984bd8969347754a0e988d52bae18cc1aede7eb"
+  }
+}

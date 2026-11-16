@@ -1,0 +1,12 @@
+'use strict';
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const root = path.join(__dirname, '..');
+const a = fs.readFileSync(path.join(root, 'public', 'app.js'), 'utf8');
+const b = fs.readFileSync(path.join(root, 'backend', 'public', 'app.js'), 'utf8');
+assert.strictEqual(a, b, 'I mirror frontend devono essere identici');
+assert(a.includes('bet.calcioDeepScanResult'));
+assert(a.includes('renderCompactCalcioDeepScan(finalResult, bet)'));
+assert(a.includes('operationalStake: operational'));
+console.log(JSON.stringify({ success: true, checks: 4 }, null, 2));

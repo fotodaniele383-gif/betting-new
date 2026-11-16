@@ -1,0 +1,879 @@
+{
+  "generatedAt": "2026-08-12T09:48:57.051Z",
+  "registry": {
+    "registryVersion": "TENNIS_PATCH_REGISTRY_V59",
+    "legacyBaselineVersion": "0",
+    "currentPatchVersion": "59",
+    "currentPatchStatus": "ACTIVE",
+    "pendingPipelineVersion": "TENNIS_PATCH_1_PENDING_PIPELINE",
+    "legacyGroups": [
+      {
+        "version": "0.1",
+        "minStep": 2,
+        "maxStep": 21,
+        "area": "CORE_MODEL_UI",
+        "description": "Motore Tennis iniziale, health, calibrazione, gate e prime integrazioni UI."
+      },
+      {
+        "version": "0.2",
+        "minStep": 22,
+        "maxStep": 49,
+        "area": "GATE_PORTFOLIO_CONSENSUS",
+        "description": "Stake policy, DeepScan, portafoglio, gate e consensus pre-match."
+      },
+      {
+        "version": "0.3",
+        "minStep": 50,
+        "maxStep": 69,
+        "area": "TOTALS_CLV_OPERATIONAL",
+        "description": "Totals, API efficiency, settlement, CLV, scope operativo ed explainability."
+      },
+      {
+        "version": "0.4",
+        "minStep": 70,
+        "maxStep": 89,
+        "area": "UI_BOOTSTRAP_RELIABILITY",
+        "description": "Dashboard, bootstrap storico, reliability e ripristini frontend/portfolio."
+      },
+      {
+        "version": "0.5",
+        "minStep": 90,
+        "maxStep": 99,
+        "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+        "description": "Gate canonico, persistenza Paper Trading, identità lato e final guard runtime."
+      },
+      {
+        "version": "0.6",
+        "minStep": 100,
+        "maxStep": 110,
+        "area": "CLV_SETTLEMENT_CERTIFICATION",
+        "description": "Stabilità CLV, settlement certificato, summary e notifiche."
+      },
+      {
+        "version": "0.7",
+        "minStep": 111,
+        "maxStep": 117,
+        "area": "FINAL_CATALOG_PORTABILITY",
+        "description": "Catalogo torneo/superficie, compatibilità strutturale e portabilità finale."
+      }
+    ],
+    "activePendingPipeline": {
+      "version": "TENNIS_PATCH_1_PENDING_PIPELINE",
+      "phases": {
+        "PRE_LOOKUP": [
+          "STEP98D"
+        ],
+        "UPSERT": [
+          "STEP96D",
+          "STEP96E",
+          "STEP96F",
+          "STEP96F_DRIFT",
+          "STEP99",
+          "STEP101",
+          "STEP101E",
+          "STEP98D_FINAL"
+        ],
+        "INSERT": [
+          "STEP92_CONFLICT",
+          "STEP54_EXPOSURE",
+          "STEP98D",
+          "STEP96F",
+          "STEP101",
+          "STEP101E",
+          "STEP98E_FINAL"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "uniqueLegacySteps": 56,
+    "firstLegacyStep": 2,
+    "lastLegacyStep": 115,
+    "unregisteredCount": 0
+  },
+  "legacySteps": [
+    {
+      "step": 2,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 5,
+      "tokens": [
+        "STEP2"
+      ],
+      "files": [
+        "backend/public/app.js",
+        "backend/public/index.html",
+        "backend/tests/tennis.health.readability.ui.test.js",
+        "public/app.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 3,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 4,
+      "tokens": [
+        "STEP3"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "backend/tests/server.tennis.calibration.test.js",
+        "backend/tests/tennis.health.readability.ui.test.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 5,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP5"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "backend/tests/app.tennis.operational.ui.test.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 7,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP7"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "backend/tests/app.health.collapse.ui.test.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 8,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP8"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "backend/tests/app.deepscan.papertrading.ui.test.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 10,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP10"
+      ],
+      "files": [
+        "backend/tennisSettlementContract.js"
+      ]
+    },
+    {
+      "step": 11,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP11"
+      ],
+      "files": [
+        "backend/tests/app.deepscan.stakeSync.ui.test.js",
+        "backend/tests/server.tennis.deepscanStake.test.js",
+        "backend/tests/tennisStakePolicy.test.js"
+      ]
+    },
+    {
+      "step": 12,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP12"
+      ],
+      "files": [
+        "backend/tests/tennisOperationalStakePolicyRuntime.test.js"
+      ]
+    },
+    {
+      "step": 14,
+      "baselineVersion": "0.1",
+      "area": "CORE_MODEL_UI",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP14"
+      ],
+      "files": [
+        "backend/server.js"
+      ]
+    },
+    {
+      "step": 40,
+      "baselineVersion": "0.2",
+      "area": "GATE_PORTFOLIO_CONSENSUS",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP40"
+      ],
+      "files": [
+        "backend/deepScanTennis.js"
+      ]
+    },
+    {
+      "step": 42,
+      "baselineVersion": "0.2",
+      "area": "GATE_PORTFOLIO_CONSENSUS",
+      "occurrenceCount": 4,
+      "tokens": [
+        "STEP42"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tennisGateStep42.js"
+      ]
+    },
+    {
+      "step": 43,
+      "baselineVersion": "0.2",
+      "area": "GATE_PORTFOLIO_CONSENSUS",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP43"
+      ],
+      "files": [
+        "backend/tennisGatePolicyStep43.js"
+      ]
+    },
+    {
+      "step": 44,
+      "baselineVersion": "0.2",
+      "area": "GATE_PORTFOLIO_CONSENSUS",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP44"
+      ],
+      "files": [
+        "backend/tests/tennisStep44RobustTotalsStakeDeepScan.test.js",
+        "backend/tests/tennisStep45FinalRobustIntegration.test.js"
+      ]
+    },
+    {
+      "step": 49,
+      "baselineVersion": "0.2",
+      "area": "GATE_PORTFOLIO_CONSENSUS",
+      "occurrenceCount": 5,
+      "tokens": [
+        "STEP49B",
+        "STEP49C"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tennisValueEvaluator.js"
+      ]
+    },
+    {
+      "step": 51,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP51"
+      ],
+      "files": [
+        "backend/apiUsageTracker.js",
+        "backend/public/app.js",
+        "public/app.js"
+      ]
+    },
+    {
+      "step": 54,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP54"
+      ],
+      "files": [
+        "backend/server.tennis.js"
+      ]
+    },
+    {
+      "step": 57,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP57"
+      ],
+      "files": [
+        "backend/clvTracker.js"
+      ]
+    },
+    {
+      "step": 58,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 4,
+      "tokens": [
+        "STEP58"
+      ],
+      "files": [
+        "backend/paperTrading.tennis.js",
+        "backend/tests/tennisSettlementStep58.test.js"
+      ]
+    },
+    {
+      "step": 59,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 7,
+      "tokens": [
+        "STEP59",
+        "STEP59B",
+        "STEP59C"
+      ],
+      "files": [
+        "backend/paperTrading.js",
+        "backend/server.js",
+        "backend/tests/calcioStep59Alignment.test.js"
+      ]
+    },
+    {
+      "step": 60,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 4,
+      "tokens": [
+        "STEP60"
+      ],
+      "files": [
+        "backend/calcioProfessionalGuard.js",
+        "backend/deepScanCalcio.js",
+        "backend/server.js"
+      ]
+    },
+    {
+      "step": 61,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 5,
+      "tokens": [
+        "STEP61"
+      ],
+      "files": [
+        "backend/manualDeepScanLab.js",
+        "backend/public/app.js",
+        "backend/server.js",
+        "backend/tests/manualDeepScanStep61.test.js",
+        "public/app.js"
+      ]
+    },
+    {
+      "step": 62,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP62"
+      ],
+      "files": [
+        "backend/clvTracker.js",
+        "backend/tests/clvTracker.vaultMigration.test.js"
+      ]
+    },
+    {
+      "step": 63,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP63"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tests/server.tennis.step63.test.js"
+      ]
+    },
+    {
+      "step": 64,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 4,
+      "tokens": [
+        "STEP64"
+      ],
+      "files": [
+        "backend/server.js",
+        "backend/server.tennis.js",
+        "backend/step96DeepScanGateCombinationPolicy.js"
+      ]
+    },
+    {
+      "step": 65,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP65"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tests/server.tennis.step65.test.js"
+      ]
+    },
+    {
+      "step": 66,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP66"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tests/server.tennis.step66.test.js"
+      ]
+    },
+    {
+      "step": 67,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 5,
+      "tokens": [
+        "STEP67",
+        "STEP67A",
+        "STEP67C"
+      ],
+      "files": [
+        "backend/clvTracker.js",
+        "backend/paperTrading.js",
+        "backend/paperTrading.tennis.js",
+        "backend/portfolioAuditMetrics.js",
+        "backend/server.tennis.js"
+      ]
+    },
+    {
+      "step": 69,
+      "baselineVersion": "0.3",
+      "area": "TOTALS_CLV_OPERATIONAL",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP69"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tennisAiRejectionExplainability.js",
+        "backend/tennisSystemAudit.js"
+      ]
+    },
+    {
+      "step": 70,
+      "baselineVersion": "0.4",
+      "area": "UI_BOOTSTRAP_RELIABILITY",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP70"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 71,
+      "baselineVersion": "0.4",
+      "area": "UI_BOOTSTRAP_RELIABILITY",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP71"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 72,
+      "baselineVersion": "0.4",
+      "area": "UI_BOOTSTRAP_RELIABILITY",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP72"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 73,
+      "baselineVersion": "0.4",
+      "area": "UI_BOOTSTRAP_RELIABILITY",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP73"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 75,
+      "baselineVersion": "0.4",
+      "area": "UI_BOOTSTRAP_RELIABILITY",
+      "occurrenceCount": 4,
+      "tokens": [
+        "STEP75"
+      ],
+      "files": [
+        "backend/public/app.js",
+        "backend/public/index.html",
+        "public/app.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 84,
+      "baselineVersion": "0.4",
+      "area": "UI_BOOTSTRAP_RELIABILITY",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP84"
+      ],
+      "files": [
+        "backend/public/app.js",
+        "public/app.js"
+      ]
+    },
+    {
+      "step": 88,
+      "baselineVersion": "0.4",
+      "area": "UI_BOOTSTRAP_RELIABILITY",
+      "occurrenceCount": 5,
+      "tokens": [
+        "STEP88",
+        "STEP88C"
+      ],
+      "files": [
+        "backend/public/index.html",
+        "backend/tests/step89FrontendFullRepair.test.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 89,
+      "baselineVersion": "0.4",
+      "area": "UI_BOOTSTRAP_RELIABILITY",
+      "occurrenceCount": 12,
+      "tokens": [
+        "STEP89",
+        "STEP89B"
+      ],
+      "files": [
+        "backend/public/app.js",
+        "backend/public/index.html",
+        "public/app.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 90,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 6,
+      "tokens": [
+        "STEP90"
+      ],
+      "files": [
+        "backend/gateStatusCanonicalizer.js",
+        "backend/public/index.html",
+        "backend/step96DeepScanGateCombinationPolicy.js",
+        "public/index.html"
+      ]
+    },
+    {
+      "step": 91,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 16,
+      "tokens": [
+        "STEP91",
+        "STEP91D",
+        "STEP91L",
+        "STEP91N",
+        "STEP91P",
+        "STEP91T",
+        "STEP91V",
+        "STEP91X"
+      ],
+      "files": [
+        "backend/deepScanTennis.js",
+        "backend/public/app.js",
+        "backend/server.tennis.js",
+        "backend/tennisValueEvaluator.js",
+        "backend/tests/step91SeniorAuditHardening.test.js",
+        "backend/tests/step91mVerifiedClvPortfolioRepair.test.js",
+        "public/app.js"
+      ]
+    },
+    {
+      "step": 92,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 6,
+      "tokens": [
+        "STEP92"
+      ],
+      "files": [
+        "backend/public/app.js",
+        "backend/server.tennis.js",
+        "public/app.js"
+      ]
+    },
+    {
+      "step": 94,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP94",
+        "STEP94B"
+      ],
+      "files": [
+        "backend/calcioAutoScheduler.js",
+        "backend/tests/step94AutomationSchedulerOptions.test.js",
+        "backend/tests/step94bAutomationUiFinalRepair.test.js"
+      ]
+    },
+    {
+      "step": 95,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP95"
+      ],
+      "files": [
+        "backend/public/app.js",
+        "public/app.js"
+      ]
+    },
+    {
+      "step": 96,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 16,
+      "tokens": [
+        "STEP96D",
+        "STEP96E",
+        "STEP96F"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tennisOperationalScope.js",
+        "backend/tennisPatchRegistry.js",
+        "backend/tests/patch1TennisPatchRegistryAndPipeline.test.js",
+        "backend/tests/step96fRuntimeMicroFinalOverrideAndDriftAudit.test.js",
+        "backend/tests/step98eTennisSideProbabilityAndMicroFinalStabilizer.test.js"
+      ]
+    },
+    {
+      "step": 97,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 4,
+      "tokens": [
+        "STEP97"
+      ],
+      "files": [
+        "backend/public/app.js",
+        "backend/server.js",
+        "backend/tests/step97CalcioTennisAlignmentAudit.test.js",
+        "public/app.js"
+      ]
+    },
+    {
+      "step": 98,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 7,
+      "tokens": [
+        "STEP98D",
+        "STEP98E"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tennisPatchRegistry.js",
+        "backend/tests/patch1TennisPatchRegistryAndPipeline.test.js"
+      ]
+    },
+    {
+      "step": 99,
+      "baselineVersion": "0.5",
+      "area": "PREMATCH_PERSISTENCE_SIDE_GUARDS",
+      "occurrenceCount": 6,
+      "tokens": [
+        "STEP99"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tennisOperationalScope.js",
+        "backend/tennisPatchRegistry.js",
+        "backend/tests/patch1TennisPatchRegistryAndPipeline.test.js"
+      ]
+    },
+    {
+      "step": 100,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP100F"
+      ],
+      "files": [
+        "backend/clvTracker.js"
+      ]
+    },
+    {
+      "step": 101,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 19,
+      "tokens": [
+        "STEP101",
+        "STEP101D",
+        "STEP101E"
+      ],
+      "files": [
+        "backend/server.tennis.js",
+        "backend/tennisOperationalScope.js",
+        "backend/tennisPatchRegistry.js",
+        "backend/tests/patch1TennisPatchRegistryAndPipeline.test.js"
+      ]
+    },
+    {
+      "step": 103,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 20,
+      "tokens": [
+        "STEP103"
+      ],
+      "files": [
+        "backend/clvTracker.js",
+        "backend/server.js",
+        "backend/tests/step103ClvRuntimeVisibilityAutotrack.test.js"
+      ]
+    },
+    {
+      "step": 105,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP105"
+      ],
+      "files": [
+        "backend/paperTrading.tennis.js"
+      ]
+    },
+    {
+      "step": 106,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 3,
+      "tokens": [
+        "STEP106"
+      ],
+      "files": [
+        "backend/paperTrading.tennis.js",
+        "backend/tests/step106TennisSettlementRuntimeBindRepair.test.js"
+      ]
+    },
+    {
+      "step": 107,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 6,
+      "tokens": [
+        "STEP107"
+      ],
+      "files": [
+        "backend/paperTrading.tennis.js",
+        "backend/tests/step107TennisSideIdentityCertifiedResultsRepair.test.js"
+      ]
+    },
+    {
+      "step": 108,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP108"
+      ],
+      "files": [
+        "backend/public/app.js",
+        "public/app.js"
+      ]
+    },
+    {
+      "step": 109,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP109B"
+      ],
+      "files": [
+        "backend/tests/step109TelegramExternalUiNotifier.test.js"
+      ]
+    },
+    {
+      "step": 110,
+      "baselineVersion": "0.6",
+      "area": "CLV_SETTLEMENT_CERTIFICATION",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP110"
+      ],
+      "files": [
+        "backend/step110RepairCertifiedResult.js",
+        "backend/tests/tests_step110_edit_closed_bets.test.js"
+      ]
+    },
+    {
+      "step": 111,
+      "baselineVersion": "0.7",
+      "area": "FINAL_CATALOG_PORTABILITY",
+      "occurrenceCount": 2,
+      "tokens": [
+        "STEP111"
+      ],
+      "files": [
+        "backend/tests/step111TennisTournamentSurfaceCatalog.test.js"
+      ]
+    },
+    {
+      "step": 115,
+      "baselineVersion": "0.7",
+      "area": "FINAL_CATALOG_PORTABILITY",
+      "occurrenceCount": 1,
+      "tokens": [
+        "STEP115"
+      ],
+      "files": [
+        "backend/tests/step115PortabilityNoAbsolutePaths.test.js"
+      ]
+    }
+  ],
+  "sha256": "a8ca2929a267303b932647574d1b7d14f08f9fdd65f5e0a7bd5bc41a7201dd72"
+}

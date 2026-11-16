@@ -1,0 +1,344 @@
+{
+  "timestamp": 1794817254232,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 43.4,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 43.4,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 70,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 6
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Parma",
+      "officialDomain": "parmacalcio1913.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 43.4,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 43.4,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1090,
+          "received": 14,
+          "relevant": 4,
+          "fresh": 13,
+          "usable": 4,
+          "excluded": 0,
+          "officialUsable": 4,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:20:54.225Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 917,
+          "received": 15,
+          "relevant": 9,
+          "fresh": 2,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:20:54.052Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 733,
+          "received": 12,
+          "relevant": 3,
+          "fresh": 6,
+          "usable": 2,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:20:53.868Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 41,
+        "relevantArticles": 16,
+        "usableArticles": 7,
+        "uniqueArticles": 7,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 7,
+        "officialArticles": 4,
+        "trustedArticles": 0,
+        "independentChannels": 4,
+        "independentPublishers": 4,
+        "excludedEvidence": 34,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "parma vs. cesena: friendly at the collecchio mutti training center - www.parmacalcio1913.com",
+          "originalTitle": "PARMA VS. CESENA: FRIENDLY AT THE COLLECCHIO MUTTI TRAINING CENTER - www.parmacalcio1913.com",
+          "fullText": "parma vs. cesena: friendly at the collecchio mutti training center - www.parmacalcio1913.com <a href=\"https://news.google.com/rss/articles/cbmiqwfbvv95cuxnnxdqdkrlam5wwty5dujroc15z0tizxretgfoqllsvdnpdjvmr043mmduodrocxzim1jmmklzzjnar1a4sepkvi1psvfucfv6ce9ozlnhy2pqbjbub21yeuzqq25neffdcvvjzli0ymdjoekxtvpfbja4bknma0pbn3fqmde1sjvpswm2tmzmvmvsrfjlagtsvhnyaexzq1dfrkpbb2d5rg5vtda?oc=5\" target=\"_blank\">parma vs. cesena: friendly at the collecchio mutti training center</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.parmacalcio1913.com</font>",
+          "sourceName": "www.parmacalcio1913.com",
+          "sourceUrl": "https://www.parmacalcio1913.com",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNXdqdkRLam5wWTY5dUJROC15Z0tIZXRETGFOQllSVDNpdjVMR043MmdUODRocXZIM1JMMklZZjNaR1A4SEpkVi1pSVFUcFV6cE9OZlNhY2pQbjBub21yeUZqQ25neFFDcVVjZlI0YmdjOEkxTVpFbjA4bkNma0pBN3FqMDE1SjVpSWM2TmZMVmVsRFJlaGtsVHNYaExZQ1dFRkpBb2d5RG5VTDA?oc=5",
+          "publishedAt": "2026-11-09T08:00:00.000Z",
+          "ageDays": 7.01,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "friendly: parma 0-2 cesena - parmacalcio1913.com",
+          "originalTitle": "FRIENDLY: PARMA 0-2 CESENA - parmacalcio1913.com",
+          "fullText": "friendly: parma 0-2 cesena - parmacalcio1913.com <a href=\"https://news.google.com/rss/articles/cbmiekfvx3lxte5ry0zqvw1xnujmx2nxs05vmwdmni1mmhfnufhczuhssflmzzzxz3nectrbog03ak8yewxrbxp0tnv2v2vjyldrzuphx1lswhvylvjnzergtw84aetzdhpxblrpr01znmsxvdbotukwzghfvni1y1hwbvd3?oc=5\" target=\"_blank\">friendly: parma 0-2 cesena</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">parmacalcio1913.com</font>",
+          "sourceName": "parmacalcio1913.com",
+          "sourceUrl": "https://www.parmacalcio1913.com",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5rY0ZqVW1xNUJmX2NxS05VMWdMNi1MMHFnUFhCZUhSSFlmZzZxZ3NEcTRBOG03ak8yeWxRbXp0TnV2V2VjYldrZUphX1lSWHVYLVJNZERGTW84aEtzdHpXblRPR01ZNmsxVDBoTUkwZGhfVnI1Y1hWbVd3?oc=5",
+          "publishedAt": "2026-11-14T08:00:00.000Z",
+          "ageDays": 2.01,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "medical update | adrián bernabé - www.parmacalcio1913.com",
+          "originalTitle": "MEDICAL UPDATE | ADRIÁN BERNABÉ - www.parmacalcio1913.com",
+          "fullText": "medical update | adrián bernabé - www.parmacalcio1913.com <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxoyjhyaddqavjbr3byry1xq2tfylhvq3mzzezgug9gc2xawkv5ofatme9jm1hzbtb3q2vyufo3q180agvmqwrwympub2nemenlbgjcundvauvebldflxctwkttewvpt1vpbeu2ugtecnfimhf4qxexz2u2ahbcvheyrmzmqq?oc=5\" target=\"_blank\">medical update | adrián bernabé</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.parmacalcio1913.com</font>",
+          "sourceName": "www.parmacalcio1913.com",
+          "sourceUrl": "https://www.parmacalcio1913.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYjhYaDdqaVJBR3ByRy1XQ2tFYlhvQ3MzZEZGUG9Gc2xaWkV5OFAtME9JM1hZbTB3Q2VYUFo3Q180aGVmQWRwYmpub2NEMENLbGJCUndvaUVEbldFLXctWktTeWVPT1VpbEU2UGtEcnFiMHF4QXExZ2U2aHBCVHEyRmZMQQ?oc=5",
+          "publishedAt": "2026-11-02T08:00:00.000Z",
+          "ageDays": 14.01,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "dominik drobnič signs new parma deal until 2030 - www.parmacalcio1913.com",
+          "originalTitle": "DOMINIK DROBNIČ SIGNS NEW PARMA DEAL UNTIL 2030 - www.parmacalcio1913.com",
+          "fullText": "dominik drobnič signs new parma deal until 2030 - www.parmacalcio1913.com <a href=\"https://news.google.com/rss/articles/cbmilwfbvv95cuxnuhdrz1dgenb0dwjpt0navfhwqjbzdw4zughezzq3znfjx19jd20xd3jwcmv0oxi5vuryr1u0wuvuaxhbx1u5bhpiyy0tdulzbzrjtffeakcxcs0tmudzdg5xn2rfdupznnlesdz0qzz4rnjuvu9bb0exq3h5vgd2bnfwqkvwngxqtfdub3fqwldmajktd3rv?oc=5\" target=\"_blank\">dominik drobnič signs new parma deal until 2030</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.parmacalcio1913.com</font>",
+          "sourceName": "www.parmacalcio1913.com",
+          "sourceUrl": "https://www.parmacalcio1913.com",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUHdRZ1dGenB0dWJPT0NaVFhwQjBZdW4zUGhEZzQ3ZnFjX19jd20xd3JWcmV0OXI5VURYR1U0WUVuaXhBX1U5bHpiYy0tdUlZbzRjTFFEakcxcS0tMUdzdG5XN2RfdUpZNnlESDZ0QzZ4RnJuVU9Bb0ExQ3h5VGd2bnFwQkVwNGxQTFdub3FqWldmajktd3Rv?oc=5",
+          "publishedAt": "2026-11-13T16:59:31.000Z",
+          "ageDays": 2.64,
+          "category": "TRANSFER",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "preview | parma vs bologna: team news, lineups, predictions (serie a 07/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Parma vs Bologna: team news, lineups, predictions (Serie A 07/11) - Yahoo Sports",
+          "fullText": "preview | parma vs bologna: team news, lineups, predictions (serie a 07/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihafbvv95cuxpnehzoghfs19xmhfrodl4slnvvy1mrtzbahrkq3v5cf9wwmc3bk1yd1vvsufkenetm1hbd1rhmtbystbtakhob3z2slryu1honfdjteltmxrtmw1leevjvef0x3nvrev0ymj4skviqnzsnnpzqkxfywjvc1vvmw5zmjqztwc?oc=5\" target=\"_blank\">preview | parma vs bologna: team news, lineups, predictions (serie a 07/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNEhZOGhfS19xMHFrODl4SlNVVy1mRTZBaHRkQ3V5cF9WWmc3bk1Yd1VVSUFKenEtM1hBd1RhMTBYSTBTakhob3Z2SlRyU1hONFdJTElTMXRTMW1LeEVjVEF0X3NvREV0YmJ4SkVIQnZsNnpZQkxfYWJvc1VvMW5zMjQzTWc?oc=5",
+          "publishedAt": "2026-11-05T08:00:00.000Z",
+          "ageDays": 11.01,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "presentata a parma la supercoppa italiana",
+          "originalTitle": "Presentata a Parma la Supercoppa Italiana",
+          "fullText": "presentata a parma la supercoppa italiana parma-si è svolta questa mattina, all’interno della sala del consiglio comunale della residenza municipale di parma la conferenza stampa di presentazione della del monte® supercoppa superlega, che si ...",
+          "sourceName": "Corriere dello Sport.it",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afabce62f144bae843106425bc3f27f&url=https%3a%2f%2fwww.corrieredellosport.it%2fnews%2fvolley%2fcoppe-volley%2f2026%2f11%2f11-152526062%2fpresentata_a_parma_la_supercoppa_italiana&c=18200688745634717880&mkt=it-it",
+          "publishedAt": "2026-11-11T09:09:00.000Z",
+          "ageDays": 4.97,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "parma-bologna: le probabili formazioni e dove vederla in tv",
+          "originalTitle": "Parma-Bologna: le probabili formazioni e dove vederla in tv",
+          "fullText": "parma-bologna: le probabili formazioni e dove vederla in tv palladino, parma a doppio taglio: \"prova di maturità per il bologna”. la febbre del sabato sera: oggi alle 18 al tardini di parma ci saranno anche 3.500 cuori rossoblù ...",
+          "sourceName": "Il Resto del Carlino",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afabce62f144bae843106425bc3f27f&url=https%3a%2f%2fwww.ilrestodelcarlino.it%2fbologna%2fsport%2fbfc%2fa-caccia-della-quarta-vittoria-f1b81299&c=1527478662363741066&mkt=it-it",
+          "publishedAt": "2026-11-07T02:05:00.000Z",
+          "ageDays": 9.26,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "black friday week - early access – page 3 - shop.parmacalcio1913.com",
+          "sourceName": "shop.parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "archivi news - parmacalcio1913.com",
+          "sourceName": "parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "ceo federico cherubini’s comments at the press conference ahead of parma vs. udinese - parmacalcio1913.com",
+          "sourceName": "parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lifestyle backpack - parma calcio - shop.parmacalcio1913.com",
+          "sourceName": "shop.parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "serie a enilive | atalanta 0-3 parma - www.parmacalcio1913.com",
+          "sourceName": "www.parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "parma esports takes centre stage at milano games week 2026 - www.parmacalcio1913.com",
+          "sourceName": "www.parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "serie a enilive | squad list for parma vs. bologna - www.parmacalcio1913.com",
+          "sourceName": "www.parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "serie a enilive | lazio-parma 2-1 - parmacalcio1913.com",
+          "sourceName": "parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "gialloblu out on loan: an update on parma's loan players - www.parmacalcio1913.com",
+          "sourceName": "www.parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "international duty: gialloblu players called up - www.parmacalcio1913.com",
+          "sourceName": "www.parmacalcio1913.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "roma could welcome dybala and svilar back against parma - chiesa di totti",
+          "sourceName": "Chiesa Di Totti",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "preview | atalanta vs parma: team news, lineups, predictions (serie a 02/11) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

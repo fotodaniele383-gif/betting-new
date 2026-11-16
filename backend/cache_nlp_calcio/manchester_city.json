@@ -1,0 +1,244 @@
+{
+  "timestamp": 1794822111827,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 29,
+    "sourceCoverageConfidence": 77,
+    "matchImpactConfidence": 29,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 45,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Manchester City",
+      "officialDomain": "mancity.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 29,
+      "coverageConfidence": 77,
+      "matchImpactConfidence": 29,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1137,
+          "received": 15,
+          "relevant": 1,
+          "fresh": 15,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:51.711Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1247,
+          "received": 9,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:51.821Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1036,
+          "received": 10,
+          "relevant": 3,
+          "fresh": 3,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:51.610Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 34,
+        "relevantArticles": 4,
+        "usableArticles": 2,
+        "uniqueArticles": 2,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 2,
+        "officialArticles": 1,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 32,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "hacken v city: kick off time, team news and tv information - manchester city fc",
+          "originalTitle": "Hacken v City: Kick off time, team news and TV information - Manchester City FC",
+          "fullText": "hacken v city: kick off time, team news and tv information - manchester city fc <a href=\"https://news.google.com/rss/articles/cbmiigfbvv95cuxnxzcybmderjj2bhowdkwxwndmzxvvwloxqui3chbzx0fjczu0utvzexjhuuz4m25vrzi1rlbxnjczt3lvohfnwgnpoxhocel2m1ppz2fyqm55zu92rzg2emx5czfhmlrizzdxnjlgzffvaw10azfbehzoovnbdnlkts1pqnnumjhbmke?oc=5\" target=\"_blank\">hacken v city: kick off time, team news and tv information</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester city fc</font>",
+          "sourceName": "Manchester City FC",
+          "sourceUrl": "https://www.mancity.com",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNXzcybmdERjJ2bHowdkwxWndMZXVvWloxQUI3cHBZX0FjczU0UTVZeXJHUUZ4M25VRzI1RlBXNjczT3lVOHFnWGNpOXhOcEl2M1pPZ2FYQm55ZU92Rzg2emx5czFHMlRiZzdxNjlGZFFvaW10azFBeHZOOVNBdnlkTS1PQnNUMjhBMkE?oc=5",
+          "publishedAt": "2026-11-15T10:00:00.000Z",
+          "ageDays": 0.99,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "lipsia-manchester city, orario e dove gratis (in chiaro) in tv e streaming: formazioni, orario e quote",
+          "originalTitle": "Lipsia-Manchester City, orario e dove gratis (in chiaro) in tv e streaming: formazioni, orario e quote",
+          "fullText": "lipsia-manchester city, orario e dove gratis (in chiaro) in tv e streaming: formazioni, orario e quote dopo due sconfitte consecutive in premier league, il manchester city vola in germania per ripartire dal cammino positivo in champions league. la squadra di enzo maresca ha conquistato sei ...",
+          "sourceName": "Il Messaggero",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afacfe07bba4206b5e9ce229b40d27b&url=https%3a%2f%2fwww.ilmessaggero.it%2fsport%2fschede%2flipsia_manchester_city_dove_vederla_gratis_sky_prime_tv_streaming_orario_formazioni_champions_league-9869088.html&c=13767250204076661718&mkt=it-it",
+          "publishedAt": "2026-11-04T10:41:00.000Z",
+          "ageDays": 11.96,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "watch: enzo maresca’s press conference after forest defeat - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "jeglertz: inter win shows we’re enjoying our football - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "join us to watch arsenal v city at medlock square! - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "haaland voted into 2026 fifpro world 11 - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "city make 10 changes - haaland, bouaddi and nunes all start - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "man city official latest news - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "man city official latest news - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "man city official latest news - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "man city official latest news - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "news - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "how can i watch inter milan v city on tv? - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "city put four past inter to stretch unbeaten european run - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

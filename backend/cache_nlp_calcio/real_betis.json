@@ -1,0 +1,364 @@
+{
+  "timestamp": 1794684188699,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -5,
+    "tactics": {
+      "mentions": 5,
+      "isEmergency": true,
+      "attackOut": true,
+      "defenseOut": false,
+      "keyPlayerOut": true
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 69,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 69,
+    "raw": {
+      "injury": -11,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 5,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 1,
+      "fakeInjuryCount": 0,
+      "confidence": 80,
+      "globalScore": -44,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": true,
+      "attackOut": true,
+      "defenseOut": false,
+      "keyPlayerOut": true,
+      "evidenceArticles": 8
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Real Betis",
+      "officialDomain": "realbetisbalompie.es",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 69,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 69,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1144,
+          "received": 12,
+          "relevant": 2,
+          "fresh": 12,
+          "usable": 2,
+          "excluded": 0,
+          "officialUsable": 2,
+          "error": null,
+          "fetchedAt": "2026-11-14T19:23:08.474Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1360,
+          "received": 15,
+          "relevant": 9,
+          "fresh": 14,
+          "usable": 9,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-14T19:23:08.690Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1336,
+          "received": 7,
+          "relevant": 1,
+          "fresh": 1,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-14T19:23:08.666Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 34,
+        "relevantArticles": 12,
+        "usableArticles": 12,
+        "uniqueArticles": 12,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 12,
+        "officialArticles": 2,
+        "trustedArticles": 0,
+        "independentChannels": 9,
+        "independentPublishers": 9,
+        "excludedEvidence": 22,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "real betis training collection 26/27 – page 2 - real betis balompié",
+          "originalTitle": "Real Betis Training Collection 26/27 – Page 2 - Real Betis Balompié",
+          "fullText": "real betis training collection 26/27 – page 2 - real betis balompié <a href=\"https://news.google.com/rss/articles/cbmioafbvv95cuxnb3j4wnjizfcywhbyrwj0amxeazz2wxfhbevsrvhicwxan0d2tdn6qwfolunhexbiv2s4x2lkrvzwdxdvcegtzhzudzfmvuq3wu9htw43txrjdwg5qxuzqlplzdj5eu5rlulmdhzrulpnrzrdvdntluhqshrudw1pzg0zs01zd1jmwg9zn3dqwkldtmhhwghfrljusuytr2ng?oc=5\" target=\"_blank\">real betis training collection 26/27 – page 2</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">real betis balompié</font>",
+          "sourceName": "Real Betis Balompié",
+          "sourceUrl": "https://shop.realbetisbalompie.es",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb3J4WnJIZFcyWHBYRWJ0amxEazZ2WXFHbEVsRVhicWxaN0d2TDN6QWFOLUNheXBIV2s4X2lkRVZwdXdvcEgtZHZUdzFMVUQ3WU9hTW43TXRJdWg5QXUzQlplZDJ5eU5rLUlMdHZrUlpnRzRDVDNtLUhqSHRudW1PZG0zS01zd1JmWG9ZN3dQWklDTmhHWGhfRlJuSUYtR2NG?oc=5",
+          "publishedAt": "2026-11-09T14:06:01.000Z",
+          "ageDays": 5.22,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "real betis 26/27 green adult training shorts with pockets - real betis balompié",
+          "originalTitle": "Real Betis 26/27 Green Adult Training Shorts with Pockets - Real Betis Balompié",
+          "fullText": "real betis 26/27 green adult training shorts with pockets - real betis balompié <a href=\"https://news.google.com/rss/articles/cbmiwwfbvv95cuxnzluyvhziawy5mehvnlflugf2zuqyzktmvvnaee9kzdbbsjzmytlta1f6xzhmlwl5ee1rsefhz2jut1zzx3fftwnsvhn2eg5ks205avpkouuzrxm3t1dsagvvatjpnxdwltm4werfexnfevhlaurzthlpm1drbfzsodz0eezzbktfnvhfzefwv0lnvgnpmnnusufttkx1dmmtdevvcmrkuwfizdlru0vfs2r4v2juwldkcetjrg1odurmntq?oc=5\" target=\"_blank\">real betis 26/27 green adult training shorts with pockets</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">real betis balompié</font>",
+          "sourceName": "Real Betis Balompié",
+          "sourceUrl": "https://shop.realbetisbalompie.es",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZlUyVHZiaWY5MEhvNlFLUGF2ZUQyZktMVVNaeE9kZDBBSjZMYTlTa1F6XzhmLWl5eE1rSEFhZ2JuT1ZzX3FFTWNSVHN2eG5KS205aVpKOUUzRXM3T1dSaGVVaTJPNXdwLTM4WERfeXNfeVhlaURzTHlpM1drbFZSODZ0eEZZbktfNVhfZEFwV0lnVGNpMnNuSUFtTkx1dmMtdEVVcmRkUWFIZDlrU0VfS2R4V2JuWldKcEtJRG1OdURMNTQ?oc=5",
+          "publishedAt": "2026-11-09T13:42:55.000Z",
+          "ageDays": 5.24,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "borussia dortmund vs real betis – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Borussia Dortmund vs Real Betis – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "borussia dortmund vs real betis – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihwfbvv95cuxotnbysfzvchd3mjdfrgq1n3zloedlntdhulywtjnmvfvdvkzrq3bqtevas3zstgfwsmfiwdlpaxnqcldvnfpjmm9wr2xxdk5bbdbdqmzszhzjtgt0shblwwthvffgnul5vlvmwvayyzz4ugp6cfrknvvhm1h5vnbiaufya3d1vvu?oc=5\" target=\"_blank\">borussia dortmund vs real betis – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTnBYSFZvcHd3MjdFRGQ1N3ZlOEdLNTdHUlYwTjNmVFVDVkZRQ3BQTEVaS3ZSTGFwSmFiWDlPaXNqcldVNFpJMm9wR2xxdk5BbDBDQmZsZHZjTGt0SHBlWWthVFFGNUl5VlVMWVAyYzZ4UGp6cFRKNVVhM1h5VnBiaUFYa3d1VVU?oc=5",
+          "publishedAt": "2026-11-03T08:00:00.000Z",
+          "ageDays": 11.47,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "dortmund forward guirassy leaves injured against real betis in champions league - the killeen daily herald",
+          "originalTitle": "Dortmund forward Guirassy leaves injured against Real Betis in Champions League - The Killeen Daily Herald",
+          "fullText": "dortmund forward guirassy leaves injured against real betis in champions league - the killeen daily herald <a href=\"https://news.google.com/rss/articles/cbmi9gfbvv95cuxnvhffn2xequ1msji2tglyyu4yu1iwenflmkrmq2rsbnlxshbfawzksudot3frchjxa3lnakh1c3o3ngpjqvgzdwhpajnpa3b6dvbkzzbnbxbvuullwkt4tkltddeyrxd1s2d3emvvx1h0q2z1v2lysgvps1b5zunsrmpjuzjmyjdjb3fnthbflxc0ywzkmmwtovnobuvpb2tszwp6nkhtqmpcujhvdkrsu2voofi4t1pyb2txatv6r2fodhzrqnjztxhowmvzvgjyttexv0pydthbswd5ewrev3flqmjrtxnxag1svvzcv2tpnhf1qmc?oc=5\" target=\"_blank\">dortmund forward guirassy leaves injured against real betis in champions league</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">the killeen daily herald</font>",
+          "sourceName": "The Killeen Daily Herald",
+          "sourceUrl": "https://kdhnews.com",
+          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNVHFFN2xEQU1mSjI2TGlYYU4yU1IwenFLMkRmQ2RsbnlXSHBfaWZKSUdoT3FrcHJXa3lNakh1c3o3NGpjQVgzdWhpajNPa3B6dVBkZzBNbXBVUUllWkt4TklTdDEyRXd1S2d3emVVX1h0Q2Z1V2lYSGVPS1B5ZUNsRmpjUzJmYjdJb3FNTHBFLXc0YWZkMmwtOVNobUVPb2tsZWp6NkhTQmpCUjhvdkRsU2VOOFI4T1pyb2txaTV6R2FodHZRQnJzTXhoWmVZVGJYTTExV0pYdThBSWd5eWREV3FlQmJRTXNXaG1sVVZCV2tpNHF1Qmc?oc=5",
+          "publishedAt": "2026-11-05T03:15:46.000Z",
+          "ageDays": 9.67,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "dortmund forward guirassy leaves injured against real betis in champions league - yakima herald-republic",
+          "originalTitle": "Dortmund forward Guirassy leaves injured against Real Betis in Champions League - Yakima Herald-Republic",
+          "fullText": "dortmund forward guirassy leaves injured against real betis in champions league - yakima herald-republic <a href=\"https://news.google.com/rss/articles/cbmi_afbvv95cuxotjdvqznnlvh4tlnfcuxzzgjyue1wq0njn00yvg93q1p6otbczklfoxhms0twsxzllxjjdjrhcc15wxr0mtm4n1rga3pjeffps2pxzvbfdtvzb0dcdvk2n0focxfqquzaofhfd3far1zpehp4eg50r0n4edh1x0ktzzdgzjaxse8tslktunbocgpxbuo2n0duykxhbkzgtxjfd2ffttrpb1losgfoeg5ksvzkv2jpbi03ytjscvy5zgppcgy2bfl3rljpbs1fmvpixzjjce1urnr0dkm1rjd4ywvhdfhvr0tyry1xwnjonxp1ajdtdwzlrmtnrhrsayicqvvfexfmtxh0n1rbsm9ucgpmuxv0wlfnn2j3rwdrymhas0zeog1snvdlx0zvzlhawuz2agnktmvpqzrbnhziqnfub19hlxbad2vkuu9kmmdyqldeqvzwrwfpzwu4cthkvgnnv1vvnlpgrmpqy0lpu2j6b3zuvgfuu011zgvuzgrocflrylewtg04cm1vc3h0zthpmkq5yxlabnb3rep2bkpuyvdhtxrsd2xqdevbx0xjckneeeg0r2fruulssmpzmwf0y0owdnnawtc0nwrpshpkm0u3oudqtmzfr2dkqmfpt3dpvfzmewjmsdv4ltjkzdznr0zesuh4exm0ry1wck5r?oc=5\" target=\"_blank\">dortmund forward guirassy leaves injured against real betis in champions league</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yakima herald-republic</font>",
+          "sourceName": "Yakima Herald-Republic",
+          "sourceUrl": "https://www.yakimaherald.com",
+          "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOTjdvQzNnLVh4TlNfcUxzZGJyUE1WQ0NJN00yVG93Q1p6OTBCZklFOXhmS0tWSXZlLXJjdjRhcC15WXR0MTM4N1RGa3pJeFFpS2pxZVBfdTVzb0dCdVk2N0FocXFqQUZaOFhfd3FaR1ZpeHp4eG50R0N4eDh1X0ktZzdGZjAxSE8tSlktUnBocGpxbUo2N0dUYkxHbkZGTXJfd2FFTTRpb1lOSGFoeG5KSVZKV2Jpbi03YTJscVY5ZGpPcGY2bFl3RlJPbS1FMVpIXzJjcE1URnR0dkM1Rjd4YWVHdFhVR0tYRy1xWnJoNXp1ajdtdWZLRmtNRHrSAYICQVVfeXFMTXh0N1RBSm9UcGpmUXV0WlFNN2J3RWdRYmhaS0ZEOG1sNVdLX0ZvZlhaWUZ2aGNKTmVpQzRBNHZiQnFUb19hLXBad2VkUU9kMmdYQldEQVZWRWFPZWU4cThKVGNnV1VVNlpGRmpqY0lPU2J6b3ZuVGFuU011ZGVuZGROcFlRYlEwTG04cm1Vc3h0ZThpMkQ5YXlabnB3REp2bkpuYVdHTXRsd2xQdEVBX0xJckNEeEg0R2FRUUlsSmpZMWF0Y0owdnNaWTc0NWRPSHpkM0U3OUdQTmZfR2dkQmFPT3dpVFZmeWJMSDV4LTJKZDZnR0ZESUh4eXM0Ry1Wck5R?oc=5",
+          "publishedAt": "2026-11-04T22:56:39.000Z",
+          "ageDays": 9.85,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "dortmund forward guirassy leaves injured against real betis in champions league - oskaloosa herald",
+          "originalTitle": "Dortmund forward Guirassy leaves injured against Real Betis in Champions League - Oskaloosa Herald",
+          "fullText": "dortmund forward guirassy leaves injured against real betis in champions league - oskaloosa herald <a href=\"https://news.google.com/rss/articles/cbmiigjbvv95cuxpczn2oulztjf1aktja3i1n2frnl9fwk1urjzhzklrv2d4bfznslrvtwldrlg5qvjomm9jckhky3v1uendwkzsywl1n255axiwu3nxse5neem1swdornf1restsxjeaunhudhodlztu0rzq1a5mfv2cfp4awexcfdmahbnng04ahrnctbmd2dknzhaogtuqkrtuu5uazjyohbzsxv1dfvox1rpsxj3rfi0ejzhv1jisnm3c3rmbddhcvppwvfsyk9tby1izdffcgi4nlnxa1exrgg1rdf6mu16eljltdfrqvoybg5ftxzztxnmuvzertbvsgjflw03c05pd2vjac1qy3v5uq?oc=5\" target=\"_blank\">dortmund forward guirassy leaves injured against real betis in champions league</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">oskaloosa herald</font>",
+          "sourceName": "Oskaloosa Herald",
+          "sourceUrl": "https://www.oskaloosa.com",
+          "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPczN2OUlZTjF1aktJa3I1N2FrNl9FWk1URjZHZklRV2d4bFZNSlRvTWlDRlg5QVJOMm9JckhkY3V1UENDWkZsYWl1N255aXIwU3NXSE5neEM1SWdORnF1REstSXJEaUNhUDhodlZtU0RzQ1A5MFV2cFp4aWExcFdMaHBNNG04aHRNcTBMd2dkNzhaOGtuQkRtUU5UazJyOHBZSXV1dFVoX1RPSXJ3RFI0ejZHV1JISnM3c3RMbDdhcVpPWVFSYk9Tby1IZDFfcGI4NlNxa1ExRGg1RDF6MU16elJlTDFrQVoybG5fTXZzTXNmUVZERTBVSGJfLW03c05Pd2VJaC1qY3V5UQ?oc=5",
+          "publishedAt": "2026-11-04T22:41:57.000Z",
+          "ageDays": 9.86,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "dortmund forward guirassy leaves injured against real betis in champions league - toronto star",
+          "originalTitle": "Dortmund forward Guirassy leaves injured against Real Betis in Champions League - Toronto Star",
+          "fullText": "dortmund forward guirassy leaves injured against real betis in champions league - toronto star <a href=\"https://news.google.com/rss/articles/cbmi-wfbvv95cuxorju4tdfmrkiwa042ejbyywllczlzmefwzdhfak83shhrlxjuvzfhtzuxwlnanvrmr08xbwpnewn5x1a3v0i2ekj3bxdybexsyzjxnuhuy21hdxhxzuverkptwfldzjnflxdut2czeugychzqmtn5z2lzvv95zjdsr2dswefzauszs2gxselzqwnxsevpa3hzu25fndaxsezozljdwjdxvdbgzvrox29kvfray2gzulg0v1zum2v6ouotafk0ulkteu9asvjpbgtxxzvlewpbwwnsr09wnk1hmkvsymm5a1nxsm1kqw9athh2u05cy0phchg5rq?oc=5\" target=\"_blank\">dortmund forward guirassy leaves injured against real betis in champions league</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">toronto star</font>",
+          "sourceName": "Toronto Star",
+          "sourceUrl": "https://www.thestar.com",
+          "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxORjU4TDFmRkIwa042ejBYYWllczlzMEFwZDhFak83SHhRLXJuVzFHTzUxWlNaNVRmR08xbWpneWN5X1A3V0I2ekJ3bXdybExsYzJXNUhuY21hdXhxZUVERkptWFlDZjNFLXdUT2czeUgycHZqMTN5Z2lZVV95ZjdsR2dSWEFZaUszS2gxSElzQWNXSEVpa3hZU25fNDAxSEZOZlJDWjdxVDBGZVRoX29KVFRaY2gzUlg0V1ZUM2V6OUotaFk0UlkteU9aSVJPbGtXXzVleWpBWWNsR09WNk1hMkVSYmM5a1NxSm1KQW9aTHh2U05CY0pHcHg5RQ?oc=5",
+          "publishedAt": "2026-11-04T08:00:00.000Z",
+          "ageDays": 10.47,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "dortmund forward guirassy leaves injured against real betis in champions league - winnipeg free press",
+          "originalTitle": "Dortmund forward Guirassy leaves injured against Real Betis in Champions League - Winnipeg Free Press",
+          "fullText": "dortmund forward guirassy leaves injured against real betis in champions league - winnipeg free press <a href=\"https://news.google.com/rss/articles/cbmi1afbvv95cuxprle1y2tzofjkrzvwovjmrk5xofrmcghtq05pckfhltbzqu1jdxvjwlvwcne0amfvs0tjm2nnzmxadjb6nk1hb183sug1smllcfjdwtnpnkfnr3nztmm5wxpnowvfcgvssv9tmgh1wudzmhjfrhewwwo2vwfhvdmtbnlwnmnqywtrr1pvnfjfx3boy05azdhpmf9eekjja0s1blnrehbzyvuwbhndow9or2nnos04lxnxwvj3a2oyb29hrtrjamgxs1lzeuputkhyd1jwdw?oc=5\" target=\"_blank\">dortmund forward guirassy leaves injured against real betis in champions league</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">winnipeg free press</font>",
+          "sourceName": "Winnipeg Free Press",
+          "sourceUrl": "https://www.winnipegfreepress.com",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRlE1Y2tZOFJKRzVwOVJMRk5XOFRMcGhTQ05pckFhLTBZQU1JdXVjWlVwcnE0amFvS0tJM2NnZmxadjB6Nk1hb183SUg1SmlLcFJDWTNpNkFnR3NZTmM5WXpNOWVFcGVsSV9TMGh1WUdZMHJfRHEwWWo2VWFhVDMtbnlWNmNqYWtrR1pvNFJfX3BoY05aZDhpMF9EekJJa0s1blNreHBzYVUwbHNDOW9OR2NnOS04LXNxWVJ3a2oyb29HRTRJamgxS1lzeUpUTkhYd1JWdw?oc=5",
+          "publishedAt": "2026-11-04T08:00:00.000Z",
+          "ageDays": 10.47,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "real betis trivia board game - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "real betis adult pink college jacket - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "regalos para ella real betis - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "men's playful real betis long jacket black 25/26 - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "real betis balompié acrylic grass - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "real betis balompié methacrylate turf - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "real betis balompié. real betis 26/27 away shirt adult short sleeve. - real betis balompié - web oficial",
+          "sourceName": "Real Betis Balompié - Web Oficial",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "real betis football shirts and kits - official store - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "real betis balompié socks second kit 24/25 - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "communion gifts - kids' kits - real betis balompié",
+          "sourceName": "Real Betis Balompié",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lyon appoint vicens as manager until 2028 - reuters",
+          "sourceName": "Reuters",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "preview | elche cf vs real betis: team news, lineups, predictions (la liga 08/11) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

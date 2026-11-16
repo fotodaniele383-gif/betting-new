@@ -1,0 +1,364 @@
+{
+  "timestamp": 1794822094539,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -2,
+    "tactics": {
+      "mentions": 2,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 90,
+    "sourceCoverageConfidence": 91,
+    "matchImpactConfidence": 90,
+    "raw": {
+      "injury": -2,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 80,
+      "globalScore": -8,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 8
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Manchester United",
+      "officialDomain": "manutd.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 90,
+      "coverageConfidence": 91,
+      "matchImpactConfidence": 90,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1153,
+          "received": 15,
+          "relevant": 8,
+          "fresh": 15,
+          "usable": 8,
+          "excluded": 0,
+          "officialUsable": 8,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:34.531Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1000,
+          "received": 8,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:34.378Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 801,
+          "received": 11,
+          "relevant": 1,
+          "fresh": 10,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:34.179Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 34,
+        "relevantArticles": 9,
+        "usableArticles": 9,
+        "uniqueArticles": 9,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 9,
+        "officialArticles": 8,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 25,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "pochettino to become head coach - manchester united",
+          "originalTitle": "Pochettino to become head coach - Manchester United",
+          "fullText": "pochettino to become head coach - manchester united <a href=\"https://news.google.com/rss/articles/cbmijgfbvv95cuxpsffvwhzpzxddsthuz2jcnzlwc1zsbgjaatzpukm4n2poafhwsf92y1vmmc1tq29oowtlrhd5qk55wgjrrjlobki4zknusergm1vrnhhorgddmwvoyw9gag5ycduydhptd1dlykzjshfublpssnixq0jzyw9syjduni1jd0rku0z3snzxlwpb?oc=5\" target=\"_blank\">pochettino to become head coach</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester united</font>",
+          "sourceName": "Manchester United",
+          "sourceUrl": "https://www.manutd.com",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSFFvWHZpZXdDSThUZ2JCNzlwc1ZSbGJaaTZPUkM4N2poaFhWSF92Y1VMMC1tQ29OOWtlRHd5Qk55WGJrRjlObkI4ZkNUSERGM1VRNHhoRGdDMWVoYW9GaG5ycDUydHpTd1dlYkZjSHFublpSSnIxQ0JZYW9sYjduNi1jd0RkU0Z3SnZXLWpB?oc=5",
+          "publishedAt": "2026-11-13T12:01:16.000Z",
+          "ageDays": 2.9,
+          "category": "MANAGER",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "baleba injury confirmed - manchester united",
+          "originalTitle": "Baleba injury confirmed - Manchester United",
+          "fullText": "baleba injury confirmed - manchester united <a href=\"https://news.google.com/rss/articles/cbmifefvx3lxte1nbhdvmthztmhpotaxy2rxdjvtukq3cmnlwle0culov1b1bfnuwhnxamk3quferdranki4egzjtm1ymwvgmu1oafbjsfpzwmlmzgtjaeriwtlnzmvcx0dmbldwulpoqzhvtlfuluxwvhytx294vddwow9urly?oc=5\" target=\"_blank\">baleba injury confirmed</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester united</font>",
+          "sourceName": "Manchester United",
+          "sourceUrl": "https://www.manutd.com",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NbHdVMThzTmhPOTAxY2RXdjVtUkQ3cmNlWlE0cUlOV1B1bFNuWHNxamk3QUFERDRaNkI4eGZJTm1yMWVGMU1oaFBjSFpZWmlMZGtJaERiWTlNZmVCX0dMbldwUlpOQzhVTlFULUxwVHYtX294VDdWOW9uRlY?oc=5",
+          "publishedAt": "2026-11-04T05:44:53.000Z",
+          "ageDays": 12.16,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "baleba injury update - manchester united",
+          "originalTitle": "Baleba injury update - Manchester United",
+          "fullText": "baleba injury update - manchester united <a href=\"https://news.google.com/rss/articles/cbmigafbvv95cuxpnk1sqxr0whvqm05bbvbfmkpoejzmenreyk5hu19ecdllauc4ujnysetwqulhcgdfww82y1azqw5nzeyzx09sa3fqemjlc1zirkhcdm1wdtfumu81zvzhqjjxr0pxeu9iaedbrjrwzfq4ymtydwlltdj4sjdzrmg5ug?oc=5\" target=\"_blank\">baleba injury update</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester united</font>",
+          "sourceName": "Manchester United",
+          "sourceUrl": "https://www.manutd.com",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNk1SQXR0WHVqM05BbVBFMkpoejZMenREYk5HU19EcDlLaUc4UjNySEtWQUlhcGdfWW82Y1AzQW5nZEYzX09Sa3FqemJLc1ZiRkhCdm1wdTFuMU81ZVZhQjJXR0pXeU9IaEdBRjRwZFQ4YmtydWllTDJ4SjdzRmg5Ug?oc=5",
+          "publishedAt": "2026-11-07T02:09:00.000Z",
+          "ageDays": 9.31,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "team news for united v roma - manchester united",
+          "originalTitle": "Team news for United v Roma - Manchester United",
+          "fullText": "team news for united v roma - manchester united <a href=\"https://news.google.com/rss/articles/cbmieefvx3lxte5uelz5ltzidk5scgrxbwhwqutuuelkadjrsjjgsnfwq29wltdtslbrrwlicdlon2pilvfnn3lnalc2egjfaw5gmtdkckx6tkdfnjjfodrhexfjcc03slfgdnm0rnnozhzwulnkqxziemlws0q2m1cteg?oc=5\" target=\"_blank\">team news for united v roma</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester united</font>",
+          "sourceName": "Manchester United",
+          "sourceUrl": "https://www.manutd.com",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5UelZ5LTZidk5ScGRXbWhwQUtUUElKaDJrSjJGSnFWQ29WLTdtSlBRRWlIcDlON2piLVFNN3lnalc2eGJFaW5GMTdkckx6TkdfNjJfODRheXFJcC03SlFGdnM0RnNOZHZWUlNKQXZiemlWS0Q2M1cteg?oc=5",
+          "publishedAt": "2026-11-03T04:08:15.000Z",
+          "ageDays": 13.23,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "fitness boost ahead of roma encounter - manchester united",
+          "originalTitle": "Fitness boost ahead of Roma encounter - Manchester United",
+          "fullText": "fitness boost ahead of roma encounter - manchester united <a href=\"https://news.google.com/rss/articles/cbmiowfbvv95cuxpz2pvvmxbbm41atj2dfpjck5tnl94unfbnfl3nm9zzkh4rurjtkjlzg9mrg5vevvmndhqvwnyntzpzvz0stjysmf3swvundbxmwfraffmzmfgx3hsthjwdndesgeyaernulh3ohhwcwpjsu0yskdvavrnogptyxhfx3f5bk1wrurhefpmc1bpuhzkwdjuwgrnqvfoymy0luhrx0rf?oc=5\" target=\"_blank\">fitness boost ahead of roma encounter</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester united</font>",
+          "sourceName": "Manchester United",
+          "sourceUrl": "https://www.manutd.com",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZ2pVVmxBbm41aTJ2dFpJck5TNl94UnFBNFl3Nm9ZZkh4RURjTkJLZG9MRG5VeVVmNDhQVWNYNTZPZVZ0STJySmF3SWVUNDBxMWFRaFFmZmFGX3hsTHJwdndESGEyaERnUlh3OHhwcWpjSU0ySkdvaVRNOGpTYXhFX3F5bk1wRURHeFpMc1BpUHZKWDJuWGRNQVFoYmY0LUhRX0RF?oc=5",
+          "publishedAt": "2026-11-02T05:06:18.000Z",
+          "ageDays": 14.19,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "team news: carrick's positive update on mainoo - manchester united",
+          "originalTitle": "Team news: Carrick's positive update on Mainoo - Manchester United",
+          "fullText": "team news: carrick's positive update on mainoo - manchester united <a href=\"https://news.google.com/rss/articles/cbmiowfbvv95cuxowudocufmx0fjq0lmc004lxvzahvkmwhrr0wwdzflr0twrw9znhjhtezjzllnnlhrwk56ywrnexy2s0hsvg1zegxhdlhvevrcbwx4z3hmcgfjdm1lcxhlz1ytrdroatvlvhlwufz2q1nqqxvxrmnsvjbiywltcwcyr2xoeevod1lsv25sm1r1au85rmm2se5xuvu2x0c4nej1uecw?oc=5\" target=\"_blank\">team news: carrick's positive update on mainoo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester united</font>",
+          "sourceName": "Manchester United",
+          "sourceUrl": "https://www.manutd.com",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWUdocUFMX0FjQ0lmc004LXVZaHVKMWhRR0wwdzFLR0tWRW9zNHJhTEZjZllnNlhRWk56YWRneXY2S0hsVG1zeGxHdlhveVRCbWx4Z3hmcGFjdm1LcXhLZ1YtRDRoaTVlVHlWUFZ2Q1NqQXVxRmNSVjBiYWltcWcyR2xOeEVOd1lsV25SM1R1aU85RmM2SE5XUVU2X0c4NEJ1UEcw?oc=5",
+          "publishedAt": "2026-10-30T02:54:44.000Z",
+          "ageDays": 17.28,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "team news for united v aston villa - manchester united",
+          "originalTitle": "Team news for United v Aston Villa - Manchester United",
+          "fullText": "team news for united v aston villa - manchester united <a href=\"https://news.google.com/rss/articles/cbmie0fvx3lxtfb3v3vmqulutefac3pcagnusxbnc1jctxcyner1akhjshdzoxldzvhjr1h5m3nna3jqc1lnvzbmazgztkv5mw9uofr5bfvcmgfgs25qzwnrbug5yzbytvbhmw90sjzzmtd6mgh1rzvlwgrey0v1mkvrmhu2tq?oc=5\" target=\"_blank\">team news for united v aston villa</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester united</font>",
+          "sourceName": "Manchester United",
+          "sourceUrl": "https://www.manutd.com",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB3V3VMQUlUTEFac3pCaGNUSXBnc1JCTXcyNER1akhJSHdZOXlDZVhjR1h5M3Nna3Jqc1lnVzBMazgzTkV5MW9UOFR5bFVCMGFGS25QZWNrbUg5YzByTVBHMW90SjZzMTd6MGh1RzVlWGREY0V1MkVRMHU2TQ?oc=5",
+          "publishedAt": "2026-11-07T00:17:36.000Z",
+          "ageDays": 9.39,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "mainoo returns to training at carrington - manchester united",
+          "originalTitle": "Mainoo returns to training at Carrington - Manchester United",
+          "fullText": "mainoo returns to training at carrington - manchester united <a href=\"https://news.google.com/rss/articles/cbmijafbvv95cuxncdjmuljveuntcwr0nhl4nlzxtktbvmllzmnlcup2rtcyy3hycvj5mwdwrnu5mwk1t2p1dxhvrkdosvjgdzrong5svnbiwhnds3z0u0f4tk1xnkzlq2hym01snduydmxnwulfamfoa1q5dknhq1rcdu5yre9nzevlsvrsahn6qtgynvhctw?oc=5\" target=\"_blank\">mainoo returns to training at carrington</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">manchester united</font>",
+          "sourceName": "Manchester United",
+          "sourceUrl": "https://www.manutd.com",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcDJmUlJVeUNtcWR0NHl4NlZXTktBVmlLZmNLcUp2RTcyY3hYcVJ5MWdWRnU5MWk1T2p1dXhvRkdoSVJGdzRoNG5sVnBiWHNDS3Z0U0F4Tk1XNkZLQ2hyM01sNDUydmxnWUlfamFOa1Q5dkNhQ1RCdU5YRE9nZEVlSVRsaHN6QTgyNVhCTw?oc=5",
+          "publishedAt": "2026-10-29T16:05:27.000Z",
+          "ageDays": 17.73,
+          "category": "RETURN_FITNESS",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "pochettino's coaching journey to united - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "liverpool v united preview: pochettino’s first game in charge - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "pochettino: it's difficult to turn down united - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "how to watch pochettino's usa in action - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "international reds guide for november - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "betway announced as official principal partner - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "what eva's expecting from palace - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "every word from arteta's pre-man united presser - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "every word: part one of ruben's press conference - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "donnarumma's experience and presence will only help city, says pep - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "fabregas rallies como: \"a historic day for us. united in crisis? a big lie\" - la gazzetta dello sport",
+          "sourceName": "La Gazzetta dello Sport",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "every word from ralf's press conference: part 2 - manchester united",
+          "sourceName": "Manchester United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "timestamp": 1794164815616,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 9.9,
+    "sourceCoverageConfidence": 60,
+    "matchImpactConfidence": 9.9,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 0
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "RC Lens",
+      "officialDomain": null,
+      "status": "PARTIAL",
+      "confidence": 9.9,
+      "coverageConfidence": 60,
+      "matchImpactConfidence": 9.9,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 916,
+          "received": 14,
+          "relevant": 1,
+          "fresh": 14,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:06:55.580Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 946,
+          "received": 4,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:06:55.610Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 18,
+        "relevantArticles": 1,
+        "usableArticles": 1,
+        "uniqueArticles": 1,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 1,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 17,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "preview | lens vs como 1907: team news, lineups, predictions (champions league 04/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Lens vs Como 1907: team news, lineups, predictions (Champions League 04/11) - Yahoo Sports",
+          "fullText": "preview | lens vs como 1907: team news, lineups, predictions (champions league 04/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmif0fvx3lxte9zqngtcnn5ndvaz3bzqlhjtwu4dzrebfhxcefuy3jgr1jpvnb6exvumgjvetztbs05q1ozlwgzy1znqi1tlxromzf2y2g5tvr1wvdtvvcynjdhsgc4ruvinm52yxj3sexnenljnwtmcusxcgs3bkd6qxe2q2nnceu?oc=5\" target=\"_blank\">preview | lens vs como 1907: team news, lineups, predictions (champions league 04/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zQngtcnN5NDVaZ3BZQlhJTWU4dzREbFhxcEFUY3JGR1JpVnB6eXVUMGJVeTZtbS05Q1ozLWgzY1ZNQi1tLXRoMzF2Y2g5TVR1WVdtVVcyNjdHSGc4RUVINm52YXJ3SExnenlJNWtMcUsxcGs3bkd6QXE2Q2NNcEU?oc=5",
+          "publishedAt": "2026-11-02T19:25:00.000Z",
+          "ageDays": 5.99,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "hume and isidor on target as sunderland win in lens - sunderland afc",
+          "sourceName": "Sunderland AFC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "official | lens’ odsonne édouard undergoes surgery - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "rc lens vs como: champions league preview, form guide and key players - sofascore",
+          "sourceName": "Sofascore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lille predicted xi v lens: davide ancelotti to start with a false no.9? - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[((tv-gratuite)) 4k] rc lens vs om match en direct streaming - jra日本中央競馬会",
+          "sourceName": "JRA日本中央競馬会",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "^$^%[direct$ live] diffusion rc lens vs olympique de marseille en streaming - jra日本中央競馬会",
+          "sourceName": "JRA日本中央競馬会",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[en direct] rc lens v marseille en streaming - jra日本中央競馬会",
+          "sourceName": "JRA日本中央競馬会",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[!livestreams!]tv] om vs rc lens diffusion ligue 1 live en direct à la tv 09 novembre 2026 stream - jra日本中央競馬会",
+          "sourceName": "JRA日本中央競馬会",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[direct@tv!] marseille vs rc lens football en direct gratuit streaming - jra日本中央競馬会",
+          "sourceName": "JRA日本中央競馬会",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[en direct et gratuit] olympique marseille vs rc lens en direct streaming gratuit voir tv 2026 - jra日本中央競馬会",
+          "sourceName": "JRA日本中央競馬会",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "(soirée mondiale/live)*! olympique marseille vs rc lens en direct live 09 novembre 2026 - jra日本中央競馬会",
+          "sourceName": "JRA日本中央競馬会",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[!livestreams!]tv] rc lens vs marseille live en direct 09 novembre 2026 stream - jra日本中央競馬会",
+          "sourceName": "JRA日本中央競馬会",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 5000,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

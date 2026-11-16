@@ -1,0 +1,326 @@
+{
+  "timestamp": 1794822025684,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -2,
+    "tactics": {
+      "mentions": 2,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 57.7,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 57.7,
+    "raw": {
+      "injury": -2,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 70,
+      "globalScore": -8,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 6
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Arsenal",
+      "officialDomain": "arsenal.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 57.7,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 57.7,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1298,
+          "received": 15,
+          "relevant": 0,
+          "fresh": 15,
+          "usable": 0,
+          "excluded": 2,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:25.661Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1210,
+          "received": 15,
+          "relevant": 7,
+          "fresh": 13,
+          "usable": 5,
+          "excluded": 0,
+          "officialUsable": 2,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:25.573Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1121,
+          "received": 5,
+          "relevant": 3,
+          "fresh": 2,
+          "usable": 1,
+          "excluded": 1,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:25.484Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 35,
+        "relevantArticles": 10,
+        "usableArticles": 6,
+        "uniqueArticles": 6,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 6,
+        "officialArticles": 2,
+        "trustedArticles": 0,
+        "independentChannels": 4,
+        "independentPublishers": 4,
+        "excludedEvidence": 29,
+        "excludedSquadArticles": 3
+      },
+      "articles": [
+        {
+          "title": "team news: two changes against london city - arsenal.com",
+          "originalTitle": "Team news: Two changes against London City - Arsenal.com",
+          "fullText": "team news: two changes against london city - arsenal.com <a href=\"https://news.google.com/rss/articles/cbmiiwfbvv95cuxosku2uud3m0hcyjfrtnnaa1rpd3vmuwh0z0jhbs1qchfrb1rybznsa2fzovf4nexomvfltw5irwcwsvz6d00yr0xjsthmrhbmrw50ddnalu5xugp2lvlqrjbarhjfn1q3szzzd1vtelhwouzaxzr1zuswsuhaoelinllfu0jsvknoctvj?oc=5\" target=\"_blank\">team news: two changes against london city</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">arsenal.com</font>",
+          "sourceName": "Arsenal.com",
+          "sourceUrl": "https://www.arsenal.com",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSkU2UUd3M0hCYjFrTnNaa1RPd3VMUWh0Z0JHbS1qcHFRb1RYbzNsa2FZOVF4NExOMVFlTW5iRWcwSVZ6d00yR0xjSThMRHBMRW50dDNaLU5XUGp2LVlQRjBaRHJfN1Q3SzZzd1VTelhwOUZaXzR1ZUswSUhaOEliNllFU0JsVkNocTVJ?oc=5",
+          "publishedAt": "2026-11-15T15:33:47.000Z",
+          "ageDays": 0.75,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "team news: one change at camp nou - arsenal.com",
+          "originalTitle": "Team news: One change at Camp Nou - Arsenal.com",
+          "fullText": "team news: one change at camp nou - arsenal.com <a href=\"https://news.google.com/rss/articles/cbmif0fvx3lxte5sagfhngtxmnfidfppu1nkrxowahldrxplajrusu9fexrjm1l2mldhvkljr3phstvvnulenmxmz1zba2q3ugxtu0xrzk1glvhndgr0uxhieuvpzvgyn3p2zmwtui1prxz1vuzmtzf3nercbzczew1zc1e4bdu5ymc?oc=5\" target=\"_blank\">team news: one change at camp nou</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">arsenal.com</font>",
+          "sourceName": "Arsenal.com",
+          "sourceUrl": "https://www.arsenal.com",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SaGFhNGtXMnFidFpPU1NKRXowaHlDRXpLajRuSU9feXRjM1l2MldHVkljR3phSTVvNUlENmxmZ1ZBa2Q3UGxTU0xRZk1GLVhNdGR0UXhieUVPZVgyN3p2ZmwtUi1PRXZ1VUZMTzF3NERCbzczeW1zc1E4bDU5Ymc?oc=5",
+          "publishedAt": "2026-11-12T17:14:29.000Z",
+          "ageDays": 3.68,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "arsenal dealt new injury blow ahead of newcastle after 'disastrous night' - football london",
+          "originalTitle": "Arsenal dealt new injury blow ahead of Newcastle after 'disastrous night' - Football London",
+          "fullText": "arsenal dealt new injury blow ahead of newcastle after 'disastrous night' - football london <a href=\"https://news.google.com/rss/articles/cbmiigfbvv95cuxoymfktlfbmmsywlhrzfpfwjdswtfqtxj4mfrxenm1lufcd21ubdb4eedutjn5dufrwjrwavhnnmhtwfyzunbpq2fhdmrfwxvkae13zdgwntlpwertmvk3zjbvuuxlvw9sbejdbupryvnhuxh2umf1a2n0zjfnmwpoefzkbxc0rf9ez2fsay8bqvvfexfmt1hlx2lxtfo2ouxlte5jrm1mzndsaxnsuhfmt3lxc2y1y3pauu5ac180mhjlzna5dm8tnutplun5r2z5umrjtxlfnjjobg1rblllzlk2uxjpovlft1hwzm81dnrrvtlkwklsetdbajqtzuntm0lkv0h1axu5ck9raxfhmutkyla2ruxqq3nqnvk?oc=5\" target=\"_blank\">arsenal dealt new injury blow ahead of newcastle after 'disastrous night'</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">football london</font>",
+          "sourceName": "Football London",
+          "sourceUrl": "https://www.football.london",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYmFKTlFBMmsyWlhRZFpFWjdSWTFQTXJ4MFRxenM1LUFCd21UbDB4eEdUTjN5dUFrWjRwaVhNNmhtWFYzUnBPQ2FhdmRfWXVkaE13ZDgwNTlpWERtMVk3ZjBVUUxlVW9sbEJDbUpRYVNhUXh2UmF1a2N0ZjFNMWpOeFZKbXc0RF9EZ2fSAY8BQVVfeXFMT1hlX2lxTFo2OUxLTE5JRm1MZndsaXNsUHFmT3lXc2Y1Y3paUU5ac180MHJlZnA5dm8tNUtpLUN5R2Z5UmRJTXlfNjJObG1rblllZlk2UXJPOVlfT1hWZm81dnRRVTlKWklseTdBajQtZUNtM0lKV0h1aXU5ck9raXFhMUtKYlA2RUxQQ3NqNVk?oc=5",
+          "publishedAt": "2026-11-16T08:24:24.000Z",
+          "ageDays": 0.05,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "arsenal lineup today vs hull: confirmed starting xi for premier league - yahoo sports",
+          "originalTitle": "Arsenal lineup today vs Hull: Confirmed starting XI for Premier League - Yahoo Sports",
+          "fullText": "arsenal lineup today vs hull: confirmed starting xi for premier league - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxptdflswjeu2gycjnqm25qvmvqqw10vlc5n2fcrzvyq0jsz1pjn0fhcnrvb0tlvdrsnvzfnxk0luzpr1ztvxitaf9vuezkrjbuyjhtdlpyszzky25zada3mwtcrgtwewhwew9slty2sedcx3nidgddc0s2am1fmhrrvdfszw?oc=5\" target=\"_blank\">arsenal lineup today vs hull: confirmed starting xi for premier league</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTDFlSWJEU2gycjNqM25QVmVqQW10Vlc5N2FCRzVYQ0JsZ1pJN0FHcnRvb0tlVDRSNVZFNXk0LUZPR1ZtVXItaF9VUEZkRjBUYjhtdlpySzZKY25zaDA3MWtCRGtWeWhweW9SLTY2SEdCX3NIdGdDc0s2am1FMHRrVDFsZw?oc=5",
+          "publishedAt": "2026-11-07T08:00:00.000Z",
+          "ageDays": 9.07,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "christos tzolis opens up on arsenal injury blow and what makes mikel arteta special - football london",
+          "originalTitle": "Christos Tzolis opens up on Arsenal injury blow and what makes Mikel Arteta special - Football London",
+          "fullText": "christos tzolis opens up on arsenal injury blow and what makes mikel arteta special - football london <a href=\"https://news.google.com/rss/articles/cbmikgfbvv95cuxpnhruwfoxyuitdy1ebujwmexyv25nr2ddcm1jd3put1b0r01krxpot3fsnkvwcxrvrvnrafptbfutz1lcx0jgretqbm9nue9xew1fr0fkzuldy1p1bzbzdjr2um9ocw5pekgzb1e5uxlryu9dv0jzwg90zg1fawrtq25yqznfd3g3odntmwh6cxctd9iblwfbvv95cuxndtdobhbqq3e1egrldtm1z2ltvdvmtvuzdthuofhssjg0exnfa0htcko5ehhmvfpyq3aytllpnfhwdfrvswtvdurfyla5zulndlu2uwm1bfc2n1ewrxlfeucxsgxlqk16tmjzqk9wwehya2zxyvllcmngcdvmqy1mwfjjuhvhrec3nkm0b2m0wgdidgldogmw?oc=5\" target=\"_blank\">christos tzolis opens up on arsenal injury blow and what makes mikel arteta special</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">football london</font>",
+          "sourceName": "Football London",
+          "sourceUrl": "https://www.football.london",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNHRUWFoxYUItdy1EbUJwMExyV25NR2dDcm1jd3pUT1B0R01kRXpOT3FsNkVWcXRVRVNraFpTbFUtZ1lCX0JGREtQbm9nUE9XeW1fR0FKZUlDY1p1bzBzdjR2Um9OcW5Pekgzb1E5UXlrYU9DV0JzWG90ZG1FaWRTQ25YQzNfd3g3ODNTMWh6cXctd9IBlwFBVV95cUxNdTdObHBqQ3E1eGRldTM1Z2lTVDVmTVUzdThuOFhsSjg0eXNfa0htcko5eHhmVFpYQ3AyTllpNFhWdFRvSWtVdURfYlA5ZUlNdlU2UWM1bFc2N1EwRXlFeUcxSGxLQk16TmJZQk9WWEhya2ZXYVlLcmNGcDVMQy1MWFJjUHVHREc3NkM0b2M0WGdidGlDOGMw?oc=5",
+          "publishedAt": "2026-11-10T15:05:33.000Z",
+          "ageDays": 5.77,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "arsenal-hull city in diretta oggi: dove vedere la partita in tv e streaming?",
+          "originalTitle": "Arsenal-Hull City in diretta oggi: dove vedere la partita in TV e streaming?",
+          "fullText": "arsenal-hull city in diretta oggi: dove vedere la partita in tv e streaming? scopri dove vedere arsenal-hull city in diretta tv e streaming. orario esatto del calcio d’inizio, notizie sulle formazioni, stato di forma e precedenti della sfida di premier league all’emirates stad ...",
+          "sourceName": "Calciomercato.com",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afacf8a002f43d391a724eb158c145d&url=https%3a%2f%2fwww.calciomercato.com%2fnotizie%2farsenal-hull-city-in-diretta-oggi-dove-vedere-la-partita-in-tv-e-streaming%2fblt6dc6c2c22224d219&c=15525319832286684887&mkt=it-it",
+          "publishedAt": "2026-11-06T22:46:00.000Z",
+          "ageDays": 9.45,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "preview: arsenal women v london city lionesses - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "gyokeres scores twice to secure promotion for sweden - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "timber scores first netherlands goals in 7-0 win - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "maanum: “i always want to hunt those rebounds!” - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "winning mentality: kai havertz - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "renée on barca draw, bodies in the box and backs to the wall - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "how arsenal changed football: buchan's magazine booms - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "quiz: first to play for us from each country - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "in focus: ezri excels in win over hull city - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "andrea berta named best executive at golden awards - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "big nations league wins for zubimendi, rice and calafiori - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "every word of renée’s pre-barcelona press conference - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "R12: 3 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

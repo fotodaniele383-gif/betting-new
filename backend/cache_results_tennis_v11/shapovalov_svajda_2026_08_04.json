@@ -1,0 +1,18 @@
+{
+  "timestamp": 1794393030942,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": null,
+  "totalGames": "VOID",
+  "isVoid": true,
+  "source": "STEP58_WEB_FALLBACK_VOID_GUARDED",
+  "confidence": 0.9,
+  "observedAt": "2026-11-11T10:30:30.942Z",
+  "sourceEventId": "WEB:545923ff3099c32e530e",
+  "rawEvidence": {
+    "query": "shapovalov svajda tennis score 2026-08-04 result",
+    "matchDate": "2026-08-04",
+    "excerpt": "sva 1-1 sha zachary svajda v denis shapovalov 04 08 2026 tennis ... follow zachary svajda v denis shapovalov 04 08 2026 match information zachary svajda latest results news highlights and zachary svajda v denis shapovalov h2h statistics flashscore tennis coverage includes tennis scores and tennis news from more than 5000 tournaments worldwide. zachary svajda - denis shapovalov results score 04-08-2026 zachary svajda - denis shapovalov on 04-08-2026 delivered a great game finishing 1 1 at stade iga. court central montreal canada in the atp montreal canada men singles 2026 playoffs round of 128 event. svajda vs shapovalov 2026 421 ms106 tennis results completed on 4 aug 2026 7 41 pm at omnium banque nationale presente par rogers in montreal canada share match zs usa zsz.svajda 1 4 6 3 6 4 0 1 ds can dsd.shapovalov zsz.svajda 1 4 6 3 dsd.shapovalov 1 6 4 0 point by point summary set 1 set 2 set 3 tennis ball svajda 1 - 0 shapovalov 0 15 15 15 15 30 30 30 40 30 game 30 points breakdown ... zachary svajda v denis shapovalov 04 08 2026 cotes suivez zachary svajda v denis shapovalov 04 08 2026 cotes stats des affrontements derniers resultats et plus d informations sur flashscore. zachary "
+  },
+  "score": "VOID",
+  "note": "Web fallback affidabile: testo ritiro/void con entrambi i giocatori presenti."
+}

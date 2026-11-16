@@ -1,0 +1,13 @@
+'use strict';
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const root = path.join(__dirname, '..');
+const a = fs.readFileSync(path.join(root, 'public', 'app.js'), 'utf8');
+const b = fs.readFileSync(path.join(root, 'backend', 'public', 'app.js'), 'utf8');
+assert.strictEqual(a, b, 'I mirror frontend devono essere identici');
+assert(a.includes('Affidabilità cross-market e incertezza — Patch 26E-B'));
+assert(a.includes('La probabilità production resta invariata'));
+assert(a.includes('calcio_reliability_adjusted_stake'));
+assert(a.includes('Modello €'));
+console.log(JSON.stringify({ success: true, checks: 5 }, null, 2));

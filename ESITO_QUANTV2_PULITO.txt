@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "version": "QUANTV2_SAFE13_PULITO_BRIDGE_R2_20261105",
+  "mode": "OPT_IN_MANUAL_PAPER_ONLY",
+  "root": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO",
+  "verifiedFiles": 10,
+  "dbCurrentHash": "d85c2c4ebd9431fc5ce4536f7c638dc77f821449cd038d925713bbd8b5823024",
+  "dbAtInstall": "d85c2c4ebd9431fc5ce4536f7c638dc77f821449cd038d925713bbd8b5823024",
+  "dbUnchangedSinceInstall": true
+}

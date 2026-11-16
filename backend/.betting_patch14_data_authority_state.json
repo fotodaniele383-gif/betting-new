@@ -1,0 +1,74 @@
+{
+  "patch": "BETTING_PATCH_14_DATA_AUTHORITY_KELLY_GATE",
+  "version": "BETTING_PATCH_14_DATA_AUTHORITY_KELLY_GATE_V1",
+  "installerRevision": "R1_WINDOWS_NODE_ATOMIC_IDEMPOTENT_ROLLBACK",
+  "installedAt": "2026-07-23T11:12:57.129Z",
+  "backupRoot": "C:\\Users\\pc-user\\OneDrive\\Personale\\BettingApp\\BettingApp\\backend\\.betting_patch_backups\\BETTING_PATCH_14_DATA_AUTHORITY_KELLY_GATE",
+  "baselineHashes": {
+    "backend/calcioMultiProviderEvidence.js": "24ae6a6bcc62f9853ebb06fc6d8f43a44faafe7d687ebba48b08e3780f0920cf",
+    "backend/calcioSourceIntelligence.js": "81e1b487d56aa7ee225d207de22ab543de7b73fcc7e155369dc623fc1b48a9e8",
+    "backend/calcioProfessionalGuard.js": "8413a88d2ff837a8abd067403c3bd6c6a1f920b2338a1d0ecc272be14bfebccc",
+    "backend/calcioProgramCoherence.js": "01911cfd3480199547346d0aabd7e182fab76877ac89af68e83c5810746b132c",
+    "backend/calcioStakeLifecycle.js": "21be00f97834b80f498e970eda690cf4813088bf6f62e020725fcfdd8c3b9cf0",
+    "backend/server.js": "2c0d5aaf42a6a4320846fc3ab4878c77218282cd3f85a1f47e6403a6d3114318",
+    "backend/calcioPatchRegistry.js": "bbc8f76a30eb2f548dd45acb541afaf6059ca663619a6ac8eab7edbf653679ca",
+    "public/app.js": "88fcffeabfd238747ec105e9c3add9cfd615a79f32841d2efe6d9e3f5398a66a",
+    "backend/public/app.js": "88fcffeabfd238747ec105e9c3add9cfd615a79f32841d2efe6d9e3f5398a66a",
+    "package.json": "e3be3e7a86a447079117322bcd676ec35d131d03f9a0d57267097bc710d4e9a8"
+  },
+  "targetHashes": {
+    "backend/calcioKellyStakePolicy.js": "1b6050feaf368ee14cb58ecae948d50c1a7e5e58026803563ff6f2f46732e4d3",
+    "backend/calcioClubEloProvider.js": "8f01f8aeed4f4cea542e5f635b71338188603192f7e4206f871438f36e7febf8",
+    "backend/calcioMultiProviderEvidence.js": "ff559f24632525dfef0e4b09782f0c691bd41c93f8b3f58fb55e61d652cb7d54",
+    "backend/calcioSourceIntelligence.js": "43edb1f84315b8796b40d10b2f5ca07a1599757785cae98f00b5259a20cb93c1",
+    "backend/calcioProfessionalGuard.js": "f6e3706a0285a8b24d505d90ecbf5ce176a2b7b23966b00937ffba6809deeff4",
+    "backend/calcioProgramCoherence.js": "b6a2dd6516b5650cc627c8454983dabbe589aad595655344f528e553dca5d544",
+    "backend/calcioStakeLifecycle.js": "b5363bbda11b9b5dae20604fd12a0a0010111719b68169426c7890e9e5f0ffed",
+    "backend/server.js": "f125a163f85e7e6828bacfd6d8991e0a26ba00427c8fd89f07d886873ece5b49",
+    "backend/calcioPatchRegistry.js": "ecba8d8cc7f23b822a22244b33cd55a0a4bb85ebad03681dd3a7db697e3c41b0",
+    "public/app.js": "fb04db304a50bba06a1e7c6939572b67f190c6abec7892a812c3032a401f5a36",
+    "backend/public/app.js": "fb04db304a50bba06a1e7c6939572b67f190c6abec7892a812c3032a401f5a36",
+    "package.json": "158aea22513b993bb518d3250f1eeb154a0ac5db232c8227455ab992b9576af4",
+    "backend/tests/calcioPatch14DataAuthorityKellyGate.test.js": "7d562dae88e40bf3a104ab0caf798363c22bf3a49fb8734d2f20ee1d23c7c19d",
+    "tools/calcioPatch14VerificationCore.js": "f92e8888cfda5551949c5f1f60b3a02b3589b3d0dc6c27fe8d3fb298ce5088a8",
+    "tools/test-calcio-patch14-standalone.js": "3bee113c5a27496619591fe2fe2838f5c8ef686c7f4172cb16d29db53368bb8d",
+    "tools/verify-calcio-patch14.js": "3e259b27584faa73a1ef1e932212c0aa45c1badcf7c71acf7453345c64afdcb3",
+    "tools/verify-calcio-patch14-db.js": "ee93b919ecdcebac805c07da51bf1f0c7b60307adf42e766f47adec4fd35959f",
+    "tools/verify-calcio-patch14-frontend.js": "761ccbba05c62c09b7acb6389c457b56f8bddb4a1074803ebc92a32c832b917b",
+    "tools/verify-calcio-patch14-regression.js": "c6474f30c658c913cc7b8e96e629190e7207fc9c29d6b47521d70f3875532b9e",
+    "tools/audit-calcio-patch14.js": "0ebc370b417b5f995df5e1ee934cc76d69c86c7bac16a9519246161d9d08ed65"
+  },
+  "boundaries": {
+    "databaseMutation": false,
+    "historicalTennisRowsChanged": false,
+    "tennisModelChanged": false,
+    "newOddsApiCalls": 0,
+    "minimumPositiveStakeEur": 2,
+    "unreliableThreshold": 55,
+    "clubEloCalls": "ZERO_KEY_DAILY_CACHE_LKG",
+    "understatProxyPromoted": false,
+    "qualitativeNewsProbabilityAuthority": false
+  },
+  "verification": [
+    {
+      "script": "tools/test-calcio-patch14-standalone.js",
+      "status": 0
+    },
+    {
+      "script": "tools/verify-calcio-patch14-frontend.js",
+      "status": 0
+    },
+    {
+      "script": "tools/verify-calcio-patch14-db.js",
+      "status": 0
+    },
+    {
+      "script": "tools/verify-calcio-patch14-regression.js",
+      "status": 0
+    },
+    {
+      "script": "tools/audit-calcio-patch14.js",
+      "status": 0
+    }
+  ]
+}

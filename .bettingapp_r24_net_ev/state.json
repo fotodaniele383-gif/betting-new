@@ -1,0 +1,18 @@
+{
+  "version": "BETTINGAPP_R24_NET_EV_STAKE_RECONCILIATION_V1_20261116",
+  "dbChanged": false,
+  "realMoneyAuthorization": false,
+  "schedulerChanged": false,
+  "settlementChanged": false,
+  "safetyGateDisabled": false,
+  "replayValidationRetained": true,
+  "description": "Net EV basis with gross and fee replay proof; pending-state and committed UI labels",
+  "files": {
+    "backend/server.js": "a29eb1ae3e2f0c84bd52e46516c8fdcbfc4fbad1d09e47a45577a84ecb9deb2d",
+    "backend/calcioRobustEvNetReplayR24.js": "e962df6eb8373efbc90476a3b2ea4574c97dd2594fff092e664f3b41b9526296",
+    "public/app.js": "4e72b15cb57f9eb72833be20b10614779632a0f2641f0d8245db09dda59c5b8e",
+    "backend/public/app.js": "4e72b15cb57f9eb72833be20b10614779632a0f2641f0d8245db09dda59c5b8e",
+    "public/index.html": "fd5528cb30b2f5cff0c9b10827a6ee0ba73177af148e73880be9e7a5c5fd7443",
+    "backend/public/index.html": "fd5528cb30b2f5cff0c9b10827a6ee0ba73177af148e73880be9e7a5c5fd7443"
+  }
+}

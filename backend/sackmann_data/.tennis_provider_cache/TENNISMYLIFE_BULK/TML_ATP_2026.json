@@ -1,0 +1,10 @@
+{
+  "providerId": "TENNISMYLIFE_BULK",
+  "resourceId": "TML_ATP_2026",
+  "url": "https://stats.tennismylife.org/data/2026.csv",
+  "fetchedAt": "2026-11-15T13:57:02.362Z",
+  "etag": "W/\"8f574-1a1c719892b\"",
+  "lastModified": "Tue, 10 Nov 2026 20:15:01 GMT",
+  "bytes": 587124,
+  "sha256": "0016632fe2ddf392195bc1db30cdd7e8a3aa8046bf25bd8380b2f37d9fb5dfdc"
+}

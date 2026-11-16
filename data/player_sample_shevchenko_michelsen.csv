@@ -1,0 +1,51 @@
+player,tourney_date_str,tourney_name,surface,winner_name,loser_name,score,total_games,source_file
+Alexander Shevchenko,20260422,Madrid Masters,Clay,Jaume Munar,Alexander Shevchenko,6-4 6-1,17.0,atp_matches_2026.csv
+Alexander Shevchenko,20260405,Monte Carlo Masters,Clay,Marin Cilic,Alexander Shevchenko,6-1 6-3,16.0,atp_matches_2026.csv
+Alexander Shevchenko,20260330,Bucharest,Clay,Botic Van De Zandschulp,Alexander Shevchenko,7-5 6-1,19.0,atp_matches_2026.csv
+Alexander Shevchenko,20260330,Bucharest,Clay,Alexander Shevchenko,Radu David Turcanu,6-2 6-4,18.0,atp_matches_2026.csv
+Alexander Shevchenko,20260318,Miami Masters,Hard,Ugo Humbert,Alexander Shevchenko,6-4 7-6(2),23.0,atp_matches_2026.csv
+Alexander Shevchenko,20260318,Miami Masters,Hard,Alexander Shevchenko,Ben Shelton,6-7(3) 7-6(3) 6-3,35.0,atp_matches_2026.csv
+Alexander Shevchenko,20260318,Miami Masters,Hard,Alexander Shevchenko,Matteo Arnaldi,7-6(5) 6-7(5) 6-2,34.0,atp_matches_2026.csv
+Alexander Shevchenko,20260309,Phoenix,Hard,Ethan Quinn,Alexander Shevchenko,6-7(4) 6-4 6-2,31.0,atp_matches_challenger_2026.csv
+Alexander Shevchenko,20260304,Indian Wells Masters,Hard,Alexander Shevchenko,Sho Shimabukuro,6-4 3-6 6-2,27.0,atp_matches_2026.csv
+Alexander Shevchenko,20260304,Indian Wells Masters,Hard,Casper Ruud,Alexander Shevchenko,6-1 7-6(4),20.0,atp_matches_2026.csv
+Alexander Shevchenko,20260223,Dubai,Hard,Karen Khachanov,Alexander Shevchenko,6-7(5) 6-2 6-3,30.0,atp_matches_2026.csv
+Alexander Shevchenko,20260209,Pau,Hard,Alexander Shevchenko,Clement Chidekh,6-4 7-6(6),23.0,atp_matches_challenger_2026.csv
+Alexander Shevchenko,20260209,Pau,Hard,Alexander Shevchenko,Daniil Glinka,6-3 6-7(7) 6-1,29.0,atp_matches_challenger_2026.csv
+Alexander Shevchenko,20260209,Pau,Hard,Henri Squire,Alexander Shevchenko,6-7(5) 7-6(6) 7-6(4),39.0,atp_matches_challenger_2026.csv
+Alexander Shevchenko,20260206,Davis Cup WG1 PO: KAZ vs MON,Hard,Valentin Vacherot,Alexander Shevchenko,6-0 6-3,15.0,atp_matches_2026.csv
+Alexander Shevchenko,20260126,Quimper,Hard,Luca Van Assche,Alexander Shevchenko,6-4 6-4,20.0,atp_matches_challenger_2026.csv
+Alexander Shevchenko,20260119,Australian Open,Hard,Learner Tien,Alexander Shevchenko,6-2 5-7 6-1 6-0,33.0,atp_matches_2026.csv
+Alexander Shevchenko,20260119,Australian Open,Hard,Alexander Shevchenko,Elias Ymer,3-6 7-5 6-4 6-1,38.0,atp_matches_2026.csv
+Alexander Shevchenko,20260112,Adelaide,Hard,Ugo Humbert,Alexander Shevchenko,6-0 6-3,15.0,atp_matches_2026.csv
+Alexander Shevchenko,20260112,Adelaide,Hard,Alexander Shevchenko,Damir Dzumhur,4-6 6-4 7-5,32.0,atp_matches_2026.csv
+Alexander Shevchenko,20260112,Adelaide,Hard,Alexander Shevchenko,Marton Fucsovics,6-3 7-6(6),22.0,atp_matches_2026.csv
+Alexander Shevchenko,20251013,Almaty,Hard,Corentin Moutet,Alexander Shevchenko,7-5 6-3,21.0,atp_matches_2025.csv
+Alexander Shevchenko,20251013,Almaty,Hard,Alexander Shevchenko,Laslo Djere,7-6(1) 7-6(12),26.0,atp_matches_2025.csv
+Alexander Shevchenko,20251001,Shanghai Masters,Hard,Yoshihito Nishioka,Alexander Shevchenko,6-1 6-2,15.0,atp_matches_2025.csv
+Alexander Shevchenko,20250917,Chengdu,Hard,Lorenzo Musetti,Alexander Shevchenko,6-3 6-1,16.0,atp_matches_2025.csv
+Alex Michelsen,20260422,Madrid Masters,Clay,Alex Michelsen,Jan Lennard Struff,6-2 6-1,15.0,atp_matches_2026.csv
+Alex Michelsen,20260422,Madrid Masters,Clay,Jiri Lehecka,Alex Michelsen,6-4 6-2,18.0,atp_matches_2026.csv
+Alex Michelsen,20260413,Munich,Clay,Arthur Rinderknech,Alex Michelsen,6-3 6-3,18.0,atp_matches_2026.csv
+Alex Michelsen,20260330,Houston,Clay,Alex Michelsen,Coleman Wong,6-4 6-2,18.0,atp_matches_2026.csv
+Alex Michelsen,20260330,Houston,Clay,Alexei Popyrin,Alex Michelsen,6-0 4-6 6-1,23.0,atp_matches_2026.csv
+Alex Michelsen,20260318,Miami Masters,Hard,Alex Michelsen,Cameron Norrie,7-5 6-7(4) 6-4,35.0,atp_matches_2026.csv
+Alex Michelsen,20260318,Miami Masters,Hard,Jannik Sinner,Alex Michelsen,7-5 7-6(4),25.0,atp_matches_2026.csv
+Alex Michelsen,20260318,Miami Masters,Hard,Alex Michelsen,Alejandro Tabilo,3-6 6-3 6-4,28.0,atp_matches_2026.csv
+Alex Michelsen,20260318,Miami Masters,Hard,Alex Michelsen,Mattia Bellucci,6-2 6-1,15.0,atp_matches_2026.csv
+Alex Michelsen,20260304,Indian Wells Masters,Hard,Alex Michelsen,Ugo Humbert,7-5 6-7(5) 7-6(6),38.0,atp_matches_2026.csv
+Alex Michelsen,20260304,Indian Wells Masters,Hard,Alex Michelsen,Daniel Merida Aguilar,6-3 6-4,19.0,atp_matches_2026.csv
+Alex Michelsen,20260304,Indian Wells Masters,Hard,Daniil Medvedev,Alex Michelsen,6-2 6-4,18.0,atp_matches_2026.csv
+Alex Michelsen,20260304,Indian Wells Masters,Hard,Alex Michelsen,Taylor Fritz,6-4 7-6(6),23.0,atp_matches_2026.csv
+Alex Michelsen,20260216,Delray Beach,Hard,Alex Michelsen,Valentin Vacherot,7-6(4) 6-4,23.0,atp_matches_2026.csv
+Alex Michelsen,20260216,Delray Beach,Hard,Sebastian Korda,Alex Michelsen,6-3 7-6(6),22.0,atp_matches_2026.csv
+Alex Michelsen,20260209,Dallas,Hard,Alex Michelsen,Grigor Dimitrov,5-7 6-4 6-4,32.0,atp_matches_2026.csv
+Alex Michelsen,20260209,Dallas,Hard,Alejandro Davidovich Fokina,Alex Michelsen,6-4 6-4,20.0,atp_matches_2026.csv
+Alex Michelsen,20260119,Australian Open,Hard,Karen Khachanov,Alex Michelsen,4-6 6-4 6-3 5-7 6-3,50.0,atp_matches_2026.csv
+Alex Michelsen,20260112,Auckland,Hard,Marcos Giron,Alex Michelsen,6-4 6-4,20.0,atp_matches_2026.csv
+Alex Michelsen,20260112,Auckland,Hard,Alex Michelsen,Mariano Navone,2-6 6-2 7-5,28.0,atp_matches_2026.csv
+Alex Michelsen,20260104,Brisbane,Hard,Alex Michelsen,James Duckworth,6-7(4) 7-6(2) 6-3,35.0,atp_matches_2026.csv
+Alex Michelsen,20260104,Brisbane,Hard,Alex Michelsen,Sebastian Korda,6-3 7-6(7),22.0,atp_matches_2026.csv
+Alex Michelsen,20260104,Brisbane,Hard,Alex Michelsen,Learner Tien,6-4 6-2,18.0,atp_matches_2026.csv
+Alex Michelsen,20260104,Brisbane,Hard,Daniil Medvedev,Alex Michelsen,6-4 6-2,18.0,atp_matches_2026.csv
+Alex Michelsen,20251027,Paris Masters,Hard,Zizou Bergs,Alex Michelsen,6-3 2-6 6-2,25.0,atp_matches_2025.csv

@@ -1,0 +1,24 @@
+{
+  "version": "BETTINGAPP_R25_UNICA_DECISION_COHERENCE_V1_20261116",
+  "date": "2026-11-16",
+  "from": "BETTINGAPP_R24_NET_EV_STAKE_RECONCILIATION_V1_20261116",
+  "dbChanged": false,
+  "authorityBypass": false,
+  "realMoneyAuthorization": false,
+  "autoSettlement": false,
+  "scope": "TEN_CAP_TRACE,TENNIS_MARKET_CLASSIFICATION,CALCIO_NEWS_MATCH_SCOPE,UI_DIAGNOSTICS,SETTLEMENT_READ_ONLY",
+  "files": {
+    "backend/calcioNewsMatchScopeR25.cjs": "d800bf00f33c8325e660beac7ae8c3a8fd776d0017f58aedffb6242dbb8da106",
+    "backend/calcioSourceIntelligence.js": "4342fe936a7c1196980f0d199ef9f4f031f98df59379d44750e066e50b234c39",
+    "backend/deepScanCalcio.js": "56137b4e7e280202257e71e3ce1f569c7be99bb0c88766a98cdd5d6da0d32167",
+    "backend/nlpEngine7.js": "d8701489761c5a83bf60a1aa5ffcfcdb79c8c3ecc40df2a5625f96401c4dd3ff",
+    "backend/public/app.js": "247d903a2c9c0efa6a41b67034fe8997e93398cdfce4830fdcf4b1ea488593d6",
+    "backend/r25DecisionContracts.cjs": "03c182ca53eda8ac32d3bb9280c9721faf0a7c91d477133308a9086752ebf9f3",
+    "backend/server.js": "d651884600ca5b72a6f36da6c43e2ab117ee88ea2b29fda1939168ecb3b5d430",
+    "backend/server.tennis.js": "909eb342ec03bfa0fcef76774aea30ed41d5ae55d1c31215d0b72b484dd81e61",
+    "backend/tennisCapProvenanceR25.cjs": "c895e731634f9a208a19b5be78ddce19a8934c1c7d6a06188adeffd663139bb8",
+    "backend/tennisMarketContractR25.cjs": "8a82d6a5c4aca10b4512916363a1f58d013c157363495541d6c09f03c115c362",
+    "backend/tennisQualityGateV2.js": "4f9393da6a25d670c47580b6ea79e9a0a42a9edc059d241689e968f793de6593",
+    "public/app.js": "247d903a2c9c0efa6a41b67034fe8997e93398cdfce4830fdcf4b1ea488593d6"
+  }
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs'),path=require('path');
+const i=process.argv.indexOf('--root');const root=path.resolve(i>=0&&process.argv[i+1]?process.argv[i+1]:'.');const statePath=path.join(root,'.tennis_patch39_state.json');
+function copy(s,d){fs.mkdirSync(path.dirname(d),{recursive:true});fs.copyFileSync(s,d);}function remove(p){if(fs.existsSync(p))fs.rmSync(p,{recursive:true,force:true});}
+const successorState=path.join(root,'.tennis_patch40_state.json');if(fs.existsSync(successorState)){console.log(JSON.stringify({success:false,code:'PATCH40_DEPENDENCY_ACTIVE',message:'Eseguire prima rollback Patch 40.',stateFile:successorState},null,2));process.exit(1);}
+if(!fs.existsSync(statePath)){console.log(JSON.stringify({success:false,code:'PATCH39_STATE_NOT_FOUND',stateFile:statePath},null,2));process.exit(1);}const state=JSON.parse(fs.readFileSync(statePath,'utf8'));
+if(state.patch!=='TENNIS_PATCH_39_PRIORITY_CALIBRATION_CLV_EVIDENCE_WTA_VENUE_GUARD'){console.log(JSON.stringify({success:false,code:'PATCH39_STATE_INVALID'},null,2));process.exit(1);}
+try{for(const rel of [...state.targets].reverse()){const dst=path.join(root,rel),src=path.join(state.backup,'files',rel);if(state.existed[rel])copy(src,dst);else remove(dst);}const dbPath=path.join(root,'backend','database_betting.db');for(const suffix of['','-wal','-shm']){const key=`database_betting.db${suffix}`,dst=dbPath+suffix,src=path.join(state.backup,'database',key);remove(dst);if(state.dbArtifacts[key]&&fs.existsSync(src))copy(src,dst);}remove(statePath);console.log(JSON.stringify({success:true,patch:state.patch,restoredPackageVersion:state.packageBefore,restoredTennisRegistry:state.tennisRegistryBefore,backup:state.backup},null,2));}catch(error){console.log(JSON.stringify({success:false,code:'PATCH39_ROLLBACK_FAILED',error:error.message},null,2));process.exit(1);}

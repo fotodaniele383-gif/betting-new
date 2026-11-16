@@ -1,0 +1,59 @@
+{
+  "version": "QUANTV2_SAFE13_PULITO_BRIDGE_R2_20261105",
+  "root": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO",
+  "created": "2026-11-05T12:57:12.932Z",
+  "dbShaBefore": "d85c2c4ebd9431fc5ce4536f7c638dc77f821449cd038d925713bbd8b5823024",
+  "files": {
+    "backend/server.tennis.js": {
+      "existed": true,
+      "oldSha": "ac484addc108ad438b5ae0cb012701ebf1652d4e01f15cbb6e07501114347d7f",
+      "newSha": "086c363aa37882019ab4645b403a47ddcad5dc914c21e1d3fddae34334e132e1"
+    },
+    "backend/calcioUnifiedPredictionIndex.js": {
+      "existed": true,
+      "oldSha": "b9aade3c1875c380ac4b2e957475c88cedba941d1fa5c973552ebd3f5d3a682b",
+      "newSha": "7a4b386f3ef5419d8b1792772f99aa426ec0ead4b68bec90527f2278ea45c32d"
+    },
+    "backend/quantv2Decision.js": {
+      "existed": false,
+      "oldSha": null,
+      "newSha": "beed405d3006f28cb966eb7022d3190a4fad68ce83bb5ef8a8d3ef6e5c1feab2"
+    },
+    "backend/quantv2OpenSources.js": {
+      "existed": false,
+      "oldSha": null,
+      "newSha": "df20e403c2069f9071a2272e4e602fa52284cf0d3e7b6209b7ae5f5781eefab3"
+    },
+    "BETTINGAPP_STANDALONE_STATE.json": {
+      "existed": true,
+      "oldSha": "834c6b610e7500b56b879b911c869b0170cb9849a1116af56c209aea51b58414",
+      "newSha": "a0bce33efd054c1e24ef52abe194b008803baf4e3ba7e62f75d53d0088a5efcd"
+    },
+    "AVVIA_QUANTV2_PAPER.bat": {
+      "existed": false,
+      "oldSha": null,
+      "newSha": "8840132a9c64f57b4a3e4804dc88291d39a8b7fcc0f48f3ade4030426c75b59e"
+    },
+    "tools/quantv2_import_tennis_ratings.cjs": {
+      "existed": false,
+      "oldSha": null,
+      "newSha": "917fe3942f7259d3656b4c8c524cdb3a4956e271c180a387524bd0f1c65b17a3"
+    },
+    "tools/quantv2_sources_report.cjs": {
+      "existed": false,
+      "oldSha": null,
+      "newSha": "c9818f6cb7c37bb55d7fc2806e4f28928ad6b16a0948d398b307d2bab85c3511"
+    },
+    "tools/quantv2_sync_open_data.cjs": {
+      "existed": false,
+      "oldSha": null,
+      "newSha": "38113eb7313ccf4eb8e694c235667a0fcd9dad6200c8a8c69a9ff4f50a939c63"
+    },
+    "tools/quantv2_sync_statsbomb.cjs": {
+      "existed": false,
+      "oldSha": null,
+      "newSha": "d4fa1ee352baa1f327b5514186899f98beff88f0d5ff40ba3822e7e245b238c1"
+    }
+  },
+  "committed": true
+}

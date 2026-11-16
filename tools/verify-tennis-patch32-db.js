@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+'use strict';
+const assert=require('assert'); const path=require('path'); const mod=require('../backend/tennisRejectedCaptureObservability');
+const root=path.resolve(__dirname,'..');let DB;try{DB=require('../node_modules/better-sqlite3');}catch(_){DB=require('node:sqlite').DatabaseSync;}const db=new DB(path.join(root,'backend','database_betting.db'));const checks=[];function check(n,f){try{f();checks.push({name:n,ok:true});}catch(e){checks.push({name:n,ok:false,error:e.message});}}
+try{
+ const total=Number(db.prepare('SELECT COUNT(*) n FROM ai_forward_test').get().n||0),tennis=Number(db.prepare("SELECT COUNT(*) n FROM ai_forward_test WHERE UPPER(COALESCE(sport_type,''))='TENNIS' OR UPPER(COALESCE(bet_type,'')) LIKE '%TENNIS%' OR UPPER(COALESCE(strategy_tag,'')) LIKE '%TENNIS%' OR UPPER(COALESCE(league,'')) LIKE '%ATP%' OR UPPER(COALESCE(league,'')) LIKE '%WTA%'").get().n||0),snapshots=Number(db.prepare('SELECT COUNT(*) n FROM tennis_prediction_snapshots').get().n||0),anchors=Number(db.prepare('SELECT COUNT(*) n FROM tennis_prediction_snapshots WHERE is_calibration_anchor=1').get().n||0),invalid=Number(db.prepare("SELECT COUNT(*) n FROM tennis_prediction_snapshots WHERE snapshot_status IN ('POST_START_INVALID','INCOMPLETE')").get().n||0);
+ const schema=mod.schemaHealth(db),ledger=schema.tablePresent?Number(db.prepare('SELECT COUNT(*) n FROM tennis_rejected_capture_ledger').get().n||0):0;
+ check('integrità ok',()=>assert.equal(db.prepare('PRAGMA integrity_check').get().integrity_check,'ok'));check('foreign key zero',()=>assert.equal(db.prepare('PRAGMA foreign_key_check').all().length,0));
+ check('righe totali 1161',()=>assert.equal(total,1161));check('righe Tennis 878',()=>assert.equal(tennis,878));check('snapshot 195',()=>assert.equal(snapshots,195));check('anchor 72',()=>assert.equal(anchors,72));check('invalidi zero',()=>assert.equal(invalid,0));
+ check('schema ledger sano',()=>assert.equal(schema.healthy,true));check('ledger forward empty',()=>assert.equal(ledger,0));check('trigger update presente',()=>assert(schema.triggers.includes('trg_tennis_rejected_capture_no_update')));check('trigger delete presente',()=>assert(schema.triggers.includes('trg_tennis_rejected_capture_no_delete')));check('chain vuota sana',()=>assert.equal(mod.verifyLedgerChain(db).healthy,true));
+}finally{db.close();}
+const failed=checks.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,checks,passed:checks.length-failed.length,failed:failed.length},null,2));process.exit(failed.length?1:0);

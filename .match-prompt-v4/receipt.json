@@ -1,0 +1,16 @@
+{
+  "version": "BETTINGAPP_MATCH_PROMPT_V4_20261106",
+  "root": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "source": "PROMPT_V3",
+  "createdAt": "2026-11-06T11:42:04.861Z",
+  "committed": true,
+  "originalIndexSha": "61070b0d977fdc391088bc8f126b93f0e31635bc831f42abea28cc223bdb2ad4",
+  "revisedIndexSha": "550fbdfd7aff4d018a4c0d627dd0c1532b148a12983e58e5e6436f843900ccc2",
+  "payloadSha": "f3b92fc81de12104e99cc86a7af9fa15a67a7153b4c52a50a8f905690b944f63",
+  "appJsSha": "029ecd64d409f053fe777f3f14c4b9c638f97ecad2b5b325786bb4149022affa",
+  "serverJsSha": "21686d9f10050d9686853d554e4f335092249b82105355ad303475021159e832",
+  "dbMeta": {
+    "size": 445493248,
+    "mtimeMs": 1793964247843.7869
+  }
+}

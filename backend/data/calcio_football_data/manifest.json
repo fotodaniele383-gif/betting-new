@@ -1,0 +1,146 @@
+{
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "updatedAt": "2026-11-16T14:15:04.109Z",
+  "leagues": {
+    "I1": {
+      "operationId": "CALCIO_FD_I1_1794838504109",
+      "fetchedAt": "2026-11-16T14:15:04.109Z",
+      "lastSuccessAt": "2026-11-16T14:15:04.109Z",
+      "source": "NETWORK",
+      "season": "2627",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+      "leagueKey": "serie_a",
+      "leagueName": "Serie A",
+      "code": "I1",
+      "attemptedSeasons": [
+        "2627"
+      ],
+      "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+      "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+      "sha256": "5db647973de276aebb9b4947c45dcecb28002b015e7a136ea1de455a997d381b",
+      "validRows": 110,
+      "rejectedRows": 0,
+      "earliestMatchAt": "2026-08-22T12:00:00.000Z",
+      "latestMatchAt": "2026-11-08T12:00:00.000Z",
+      "sizeBytes": 52271,
+      "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_I1_1794838504109"
+    },
+    "I2": {
+      "operationId": "CALCIO_FD_I2_1794751033223",
+      "fetchedAt": "2026-11-15T13:57:12.437Z",
+      "lastSuccessAt": "2026-11-15T13:57:12.437Z",
+      "source": "NETWORK",
+      "season": "2627",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/I2.csv",
+      "leagueKey": "serie_b",
+      "leagueName": "Serie B",
+      "code": "I2",
+      "attemptedSeasons": [
+        "2627"
+      ],
+      "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+      "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+      "sha256": "cb9358278bad6f3cd7439fc530c3729b945cd879e072b51b18b0370aacd1a282",
+      "validRows": 110,
+      "rejectedRows": 0,
+      "earliestMatchAt": "2026-08-21T12:00:00.000Z",
+      "latestMatchAt": "2026-11-08T12:00:00.000Z",
+      "sizeBytes": 52616,
+      "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_I2_1794751033223"
+    },
+    "E0": {
+      "operationId": "CALCIO_FD_E0_1794751033540",
+      "fetchedAt": "2026-11-15T13:57:12.437Z",
+      "lastSuccessAt": "2026-11-15T13:57:12.437Z",
+      "source": "NETWORK",
+      "season": "2627",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
+      "leagueKey": "premier_league",
+      "leagueName": "Premier",
+      "code": "E0",
+      "attemptedSeasons": [
+        "2627"
+      ],
+      "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+      "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+      "sha256": "f1f88e7518b6626cbc4357f05efd99baf2b071ef3a3d578719574e24ffa1d1b2",
+      "validRows": 100,
+      "rejectedRows": 0,
+      "earliestMatchAt": "2026-08-21T12:00:00.000Z",
+      "latestMatchAt": "2026-11-08T12:00:00.000Z",
+      "sizeBytes": 49043,
+      "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_E0_1794751033540"
+    },
+    "SP1": {
+      "operationId": "CALCIO_FD_SP1_1794751033769",
+      "fetchedAt": "2026-11-15T13:57:12.437Z",
+      "lastSuccessAt": "2026-11-15T13:57:12.437Z",
+      "source": "NETWORK",
+      "season": "2627",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
+      "leagueKey": "la_liga",
+      "leagueName": "La Liga",
+      "code": "SP1",
+      "attemptedSeasons": [
+        "2627"
+      ],
+      "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+      "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+      "sha256": "a251dfe394876e52e6d528fa62a5d6f1fb34dad748db7dfe4f34baff53e91bcc",
+      "validRows": 119,
+      "rejectedRows": 0,
+      "earliestMatchAt": "2026-08-15T12:00:00.000Z",
+      "latestMatchAt": "2026-11-08T12:00:00.000Z",
+      "sizeBytes": 56851,
+      "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_SP1_1794751033769"
+    },
+    "F1": {
+      "operationId": "CALCIO_FD_F1_1794751033980",
+      "fetchedAt": "2026-11-15T13:57:12.437Z",
+      "lastSuccessAt": "2026-11-15T13:57:12.437Z",
+      "source": "NETWORK",
+      "season": "2627",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/F1.csv",
+      "leagueKey": "ligue_1",
+      "leagueName": "Ligue 1",
+      "code": "F1",
+      "attemptedSeasons": [
+        "2627"
+      ],
+      "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+      "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+      "sha256": "3bcfa0405c7cae448e0dd40721ed06309cc2956c3e50ccbd38297d2186abf711",
+      "validRows": 90,
+      "rejectedRows": 0,
+      "earliestMatchAt": "2026-08-21T12:00:00.000Z",
+      "latestMatchAt": "2026-11-08T12:00:00.000Z",
+      "sizeBytes": 43045,
+      "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_F1_1794751033980"
+    },
+    "D1": {
+      "operationId": "CALCIO_FD_D1_1794751034207",
+      "fetchedAt": "2026-11-15T13:57:12.437Z",
+      "lastSuccessAt": "2026-11-15T13:57:12.437Z",
+      "source": "NETWORK",
+      "season": "2627",
+      "url": "https://www.football-data.co.uk/mmz4281/2627/D1.csv",
+      "leagueKey": "bundesliga",
+      "leagueName": "Bundesliga",
+      "code": "D1",
+      "attemptedSeasons": [
+        "2627"
+      ],
+      "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+      "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+      "sha256": "6dba21eb7d71063c8e61a8edece987f20a4c535a34e98b14822ffa250250a420",
+      "validRows": 81,
+      "rejectedRows": 0,
+      "earliestMatchAt": "2026-08-28T12:00:00.000Z",
+      "latestMatchAt": "2026-11-08T12:00:00.000Z",
+      "sizeBytes": 39027,
+      "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_D1_1794751034207"
+    }
+  },
+  "revisionToken": "18b821a2d1bcb3e3e7f3f58e"
+}

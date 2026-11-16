@@ -1,0 +1,26 @@
+{
+  "patch": "AUDIT12_SETTLEMENT_RESOLUTION_PROOF_HARDENING_V1",
+  "baseline": "POST_AUDIT11",
+  "purpose": "Fail-closed official evidence contract before Tennis settlement exception RESOLVED transition",
+  "modifiedFiles": [
+    "backend/tennisSettlementExceptionQueuePatch51.js",
+    "backend/paperTrading.tennis.js",
+    "tools/test-tennis-patch51-settlement-exception-queue.js"
+  ],
+  "addedFiles": [
+    "backend/settlementResolutionEvidenceGateAudit12.js",
+    "tools/test-tennis-audit12-settlement-resolution-evidence.js"
+  ],
+  "preRegressionSuites": 11,
+  "postRegressionSuites": 12,
+  "databaseMutationDuringPatch": false,
+  "automaticExceptionResolutionDuringPatch": false,
+  "automaticProductionActivation": false,
+  "payloadSha256": {
+    "paperTrading.tennis.js": "a0da896b5fd435e87f1a031f8fc9bf5f4447be0cdf53db7358221499741ab3e7",
+    "settlementResolutionEvidenceGateAudit12.js": "02a919a4d26c9b004e68e0f8d6e1f10a41974b8ff30ce464829d5b87319ad919",
+    "tennisSettlementExceptionQueuePatch51.js": "772fca3eb0609e54a3b8d5c3bd59b080f3fe2ba19e90ea2d9ca423d0efed8f8a",
+    "test-tennis-audit12-settlement-resolution-evidence.js": "1d0b6630a123250a9011ca4ffd22d9a91ac7838b5039f6e8520cddf9e396d6c3",
+    "test-tennis-patch51-settlement-exception-queue.js": "98ec097db7aaef0defe10888c7f9695331f76b8382a3bee83cf96f2eb7e5de22"
+  }
+}

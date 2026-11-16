@@ -1,0 +1,12 @@
+{
+  "backend/calcioQuantEngine.js": "925dc8e1020c3eae07a33fe02d6dfd802656e8c07addba419ad7ffd0a4d4af27",
+  "backend/calcioUnifiedStakeAuthority.js": "ec17b09a05df58a48a1c42467e003eeae590ba71739785f9189cc1a202f83529",
+  "backend/calcioBatchPortfolioAllocator.js": "d8447cd69d5e769d45d84ffbc65189a51fa1bef4659b1c11f17b4fd559a8b687",
+  "backend/calcioFinalMarketDiagnosticContract.js": "8eea3517fc7ba05cc06b462622c1124de3a1aa5e40491eedd58be514667fee9a",
+  "backend/calcioDualScoreArchitecture.js": "9deed5478e6a662b704bcc7efebe55110553c06a0e298e015e92f0f8b291c4b0",
+  "backend/tennisQualityGateV2.js": "084803dfce7dcb35d65b0e9f6681771e9670bea2a5e9f45965d74d5c686c3bb7",
+  "backend/tennisValueEvaluator.js": "c2cff280a2e0551fd35ec8d0c3fdfd80d45de5a1f8f939c5e98f7c6dde34da3f",
+  "backend/paperTrading.tennis.js": "7064cdef177b39cd4ccb7684f1c531ddbe24dcdb3faeb5f94202102818689eb5",
+  "backend/deepScanTennis.js": "5116d2bde045a12eb12bd1d293f17c4dbaa9c1083279cdc417ab1a5ce98fcd15",
+  "backend/server.js": "935e5e1c3fc2495e0004993a1ca9bbdc441d90284ffc5de64f4785ed4d5b4fad"
+}

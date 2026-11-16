@@ -1,0 +1,4740 @@
+{
+  "schemaVersion": "BETTING_PATCH_14_CLUB_ELO_CACHE_V1",
+  "version": "BETTING_PATCH_14_CLUB_ELO_ZERO_KEY_LKG_V1",
+  "status": "AVAILABLE",
+  "source": "DIRECT_ZERO_KEY_CSV",
+  "sourceUrl": "http://api.clubelo.com/2026-08-31",
+  "snapshotDate": "2026-08-31",
+  "fetchedAt": "2026-08-31T08:35:43.788Z",
+  "ratingCount": 591,
+  "ratings": {
+    "Arsenal": {
+      "club": "Arsenal",
+      "elo": 2063.76,
+      "country": "ENG",
+      "rank": 1,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bayern": {
+      "club": "Bayern",
+      "elo": 2000.87,
+      "country": "GER",
+      "rank": 2,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Man City": {
+      "club": "Man City",
+      "elo": 1970.85,
+      "country": "ENG",
+      "rank": 3,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Paris SG": {
+      "club": "Paris SG",
+      "elo": 1967.88,
+      "country": "FRA",
+      "rank": 4,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Barcelona": {
+      "club": "Barcelona",
+      "elo": 1951.59,
+      "country": "ESP",
+      "rank": 5,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Real Madrid": {
+      "club": "Real Madrid",
+      "elo": 1922.91,
+      "country": "ESP",
+      "rank": 6,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Aston Villa": {
+      "club": "Aston Villa",
+      "elo": 1920.97,
+      "country": "ENG",
+      "rank": 7,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Man United": {
+      "club": "Man United",
+      "elo": 1915.32,
+      "country": "ENG",
+      "rank": 8,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Liverpool": {
+      "club": "Liverpool",
+      "elo": 1910.8,
+      "country": "ENG",
+      "rank": 9,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Inter": {
+      "club": "Inter",
+      "elo": 1888.6,
+      "country": "ITA",
+      "rank": 10,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bournemouth": {
+      "club": "Bournemouth",
+      "elo": 1871.97,
+      "country": "ENG",
+      "rank": 11,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sporting": {
+      "club": "Sporting",
+      "elo": 1847.93,
+      "country": "POR",
+      "rank": 12,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Brighton": {
+      "club": "Brighton",
+      "elo": 1842.01,
+      "country": "ENG",
+      "rank": 13,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Newcastle": {
+      "club": "Newcastle",
+      "elo": 1837.53,
+      "country": "ENG",
+      "rank": 14,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Brentford": {
+      "club": "Brentford",
+      "elo": 1836.59,
+      "country": "ENG",
+      "rank": 15,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dortmund": {
+      "club": "Dortmund",
+      "elo": 1834.77,
+      "country": "GER",
+      "rank": 16,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Chelsea": {
+      "club": "Chelsea",
+      "elo": 1831.1,
+      "country": "ENG",
+      "rank": 17,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Atletico": {
+      "club": "Atletico",
+      "elo": 1827.68,
+      "country": "ESP",
+      "rank": 18,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Benfica": {
+      "club": "Benfica",
+      "elo": 1823.51,
+      "country": "POR",
+      "rank": 19,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Forest": {
+      "club": "Forest",
+      "elo": 1822.17,
+      "country": "ENG",
+      "rank": 20,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Fulham": {
+      "club": "Fulham",
+      "elo": 1813.1,
+      "country": "ENG",
+      "rank": 21,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Porto": {
+      "club": "Porto",
+      "elo": 1805.95,
+      "country": "POR",
+      "rank": 22,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Leverkusen": {
+      "club": "Leverkusen",
+      "elo": 1804.03,
+      "country": "GER",
+      "rank": 23,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Crystal Palace": {
+      "club": "Crystal Palace",
+      "elo": 1803.82,
+      "country": "ENG",
+      "rank": 24,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Everton": {
+      "club": "Everton",
+      "elo": 1803.43,
+      "country": "ENG",
+      "rank": 25,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Leeds": {
+      "club": "Leeds",
+      "elo": 1797.39,
+      "country": "ENG",
+      "rank": 26,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Roma": {
+      "club": "Roma",
+      "elo": 1793.45,
+      "country": "ITA",
+      "rank": 27,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Napoli": {
+      "club": "Napoli",
+      "elo": 1780.3,
+      "country": "ITA",
+      "rank": 28,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Tottenham": {
+      "club": "Tottenham",
+      "elo": 1777.31,
+      "country": "ENG",
+      "rank": 29,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Juventus": {
+      "club": "Juventus",
+      "elo": 1772.26,
+      "country": "ITA",
+      "rank": 30,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "West Ham": {
+      "club": "West Ham",
+      "elo": 1768.8,
+      "country": "ENG",
+      "rank": 31,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lens": {
+      "club": "Lens",
+      "elo": 1767.04,
+      "country": "FRA",
+      "rank": 32,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Stuttgart": {
+      "club": "Stuttgart",
+      "elo": 1763.83,
+      "country": "GER",
+      "rank": 33,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Atalanta": {
+      "club": "Atalanta",
+      "elo": 1763.52,
+      "country": "ITA",
+      "rank": 34,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "RB Leipzig": {
+      "club": "RB Leipzig",
+      "elo": 1761.9,
+      "country": "GER",
+      "rank": 35,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Como": {
+      "club": "Como",
+      "elo": 1760.03,
+      "country": "ITA",
+      "rank": 36,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Villarreal": {
+      "club": "Villarreal",
+      "elo": 1759.34,
+      "country": "ESP",
+      "rank": 37,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "PSV": {
+      "club": "PSV",
+      "elo": 1759.13,
+      "country": "NED",
+      "rank": 38,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Brugge": {
+      "club": "Brugge",
+      "elo": 1757.44,
+      "country": "BEL",
+      "rank": 39,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Milan": {
+      "club": "Milan",
+      "elo": 1750.04,
+      "country": "ITA",
+      "rank": 40,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Betis": {
+      "club": "Betis",
+      "elo": 1747.13,
+      "country": "ESP",
+      "rank": 41,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lille": {
+      "club": "Lille",
+      "elo": 1743.71,
+      "country": "FRA",
+      "rank": 42,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sunderland": {
+      "club": "Sunderland",
+      "elo": 1735.93,
+      "country": "ENG",
+      "rank": 43,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lyon": {
+      "club": "Lyon",
+      "elo": 1731.62,
+      "country": "FRA",
+      "rank": 44,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Freiburg": {
+      "club": "Freiburg",
+      "elo": 1724.91,
+      "country": "GER",
+      "rank": 45,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Monaco": {
+      "club": "Monaco",
+      "elo": 1717.52,
+      "country": "FRA",
+      "rank": 46,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "St Gillis": {
+      "club": "St Gillis",
+      "elo": 1716.76,
+      "country": "BEL",
+      "rank": 47,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Marseille": {
+      "club": "Marseille",
+      "elo": 1716.74,
+      "country": "FRA",
+      "rank": 48,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rennes": {
+      "club": "Rennes",
+      "elo": 1716.12,
+      "country": "FRA",
+      "rank": 49,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Strasbourg": {
+      "club": "Strasbourg",
+      "elo": 1710.8,
+      "country": "FRA",
+      "rank": 50,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bodoe Glimt": {
+      "club": "Bodoe Glimt",
+      "elo": 1708.89,
+      "country": "NOR",
+      "rank": 51,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rayo Vallecano": {
+      "club": "Rayo Vallecano",
+      "elo": 1707.34,
+      "country": "ESP",
+      "rank": 52,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lazio": {
+      "club": "Lazio",
+      "elo": 1703.17,
+      "country": "ITA",
+      "rank": 53,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bologna": {
+      "club": "Bologna",
+      "elo": 1701.28,
+      "country": "ITA",
+      "rank": 54,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Celta": {
+      "club": "Celta",
+      "elo": 1700.78,
+      "country": "ESP",
+      "rank": 55,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hoffenheim": {
+      "club": "Hoffenheim",
+      "elo": 1700.35,
+      "country": "GER",
+      "rank": 56,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Braga": {
+      "club": "Braga",
+      "elo": 1698.91,
+      "country": "POR",
+      "rank": 57,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Valencia": {
+      "club": "Valencia",
+      "elo": 1697.41,
+      "country": "ESP",
+      "rank": 58,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Midtjylland": {
+      "club": "Midtjylland",
+      "elo": 1687.38,
+      "country": "DEN",
+      "rank": 59,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Galatasaray": {
+      "club": "Galatasaray",
+      "elo": 1684.27,
+      "country": "TUR",
+      "rank": 60,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Wolves": {
+      "club": "Wolves",
+      "elo": 1679.69,
+      "country": "ENG",
+      "rank": 61,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bilbao": {
+      "club": "Bilbao",
+      "elo": 1677.9,
+      "country": "ESP",
+      "rank": 62,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Mainz": {
+      "club": "Mainz",
+      "elo": 1671.93,
+      "country": "GER",
+      "rank": 63,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Fiorentina": {
+      "club": "Fiorentina",
+      "elo": 1670.17,
+      "country": "ITA",
+      "rank": 64,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sociedad": {
+      "club": "Sociedad",
+      "elo": 1669.47,
+      "country": "ESP",
+      "rank": 65,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Burnley": {
+      "club": "Burnley",
+      "elo": 1666.34,
+      "country": "ENG",
+      "rank": 66,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Getafe": {
+      "club": "Getafe",
+      "elo": 1664.07,
+      "country": "ESP",
+      "rank": 67,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Frankfurt": {
+      "club": "Frankfurt",
+      "elo": 1663.78,
+      "country": "GER",
+      "rank": 68,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Olympiakos": {
+      "club": "Olympiakos",
+      "elo": 1663.38,
+      "country": "GRE",
+      "rank": 69,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Coventry": {
+      "club": "Coventry",
+      "elo": 1661.48,
+      "country": "ENG",
+      "rank": 70,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zenit": {
+      "club": "Zenit",
+      "elo": 1657.2,
+      "country": "RUS",
+      "rank": 71,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Fenerbahce": {
+      "club": "Fenerbahce",
+      "elo": 1655.56,
+      "country": "TUR",
+      "rank": 72,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Slavia Praha": {
+      "club": "Slavia Praha",
+      "elo": 1654.12,
+      "country": "CZE",
+      "rank": 73,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Toulouse": {
+      "club": "Toulouse",
+      "elo": 1652.32,
+      "country": "FRA",
+      "rank": 74,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Osasuna": {
+      "club": "Osasuna",
+      "elo": 1650.26,
+      "country": "ESP",
+      "rank": 75,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Udinese": {
+      "club": "Udinese",
+      "elo": 1645.94,
+      "country": "ITA",
+      "rank": 76,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Gladbach": {
+      "club": "Gladbach",
+      "elo": 1640.84,
+      "country": "GER",
+      "rank": 77,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "AEK": {
+      "club": "AEK",
+      "elo": 1640.66,
+      "country": "GRE",
+      "rank": 78,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ipswich": {
+      "club": "Ipswich",
+      "elo": 1640,
+      "country": "ENG",
+      "rank": 79,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lorient": {
+      "club": "Lorient",
+      "elo": 1639.06,
+      "country": "FRA",
+      "rank": 80,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Levante": {
+      "club": "Levante",
+      "elo": 1638.74,
+      "country": "ESP",
+      "rank": 81,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Augsburg": {
+      "club": "Augsburg",
+      "elo": 1636.45,
+      "country": "GER",
+      "rank": 82,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Southampton": {
+      "club": "Southampton",
+      "elo": 1636.35,
+      "country": "ENG",
+      "rank": 83,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Alaves": {
+      "club": "Alaves",
+      "elo": 1634.98,
+      "country": "ESP",
+      "rank": 84,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "FC Krasnodar": {
+      "club": "FC Krasnodar",
+      "elo": 1632.23,
+      "country": "RUS",
+      "rank": 85,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Viking": {
+      "club": "Viking",
+      "elo": 1631.91,
+      "country": "NOR",
+      "rank": 86,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Espanyol": {
+      "club": "Espanyol",
+      "elo": 1629.46,
+      "country": "ESP",
+      "rank": 87,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Paris FC": {
+      "club": "Paris FC",
+      "elo": 1629.33,
+      "country": "FRA",
+      "rank": 88,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sevilla": {
+      "club": "Sevilla",
+      "elo": 1625.92,
+      "country": "ESP",
+      "rank": 89,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Auxerre": {
+      "club": "Auxerre",
+      "elo": 1624.11,
+      "country": "FRA",
+      "rank": 90,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Torino": {
+      "club": "Torino",
+      "elo": 1624.06,
+      "country": "ITA",
+      "rank": 91,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Elche": {
+      "club": "Elche",
+      "elo": 1623.4,
+      "country": "ESP",
+      "rank": 92,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sassuolo": {
+      "club": "Sassuolo",
+      "elo": 1622.02,
+      "country": "ITA",
+      "rank": 93,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Brest": {
+      "club": "Brest",
+      "elo": 1620.84,
+      "country": "FRA",
+      "rank": 94,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Union Berlin": {
+      "club": "Union Berlin",
+      "elo": 1619.43,
+      "country": "GER",
+      "rank": 95,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Genoa": {
+      "club": "Genoa",
+      "elo": 1618.23,
+      "country": "ITA",
+      "rank": 96,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Werder": {
+      "club": "Werder",
+      "elo": 1606.02,
+      "country": "GER",
+      "rank": 97,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "PAOK": {
+      "club": "PAOK",
+      "elo": 1605.58,
+      "country": "GRE",
+      "rank": 98,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Millwall": {
+      "club": "Millwall",
+      "elo": 1604.42,
+      "country": "ENG",
+      "rank": 99,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Feyenoord": {
+      "club": "Feyenoord",
+      "elo": 1602.56,
+      "country": "NED",
+      "rank": 100,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hamburg": {
+      "club": "Hamburg",
+      "elo": 1602.15,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Parma": {
+      "club": "Parma",
+      "elo": 1599.93,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Wolfsburg": {
+      "club": "Wolfsburg",
+      "elo": 1599.57,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Venezia": {
+      "club": "Venezia",
+      "elo": 1598.85,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cagliari": {
+      "club": "Cagliari",
+      "elo": 1594.3,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Famalicao": {
+      "club": "Famalicao",
+      "elo": 1590.97,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Middlesbrough": {
+      "club": "Middlesbrough",
+      "elo": 1588.95,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Crvena Zvezda": {
+      "club": "Crvena Zvezda",
+      "elo": 1586.16,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Aarhus": {
+      "club": "Aarhus",
+      "elo": 1582.55,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nice": {
+      "club": "Nice",
+      "elo": 1582.37,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Santander": {
+      "club": "Santander",
+      "elo": 1581.93,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Genk": {
+      "club": "Genk",
+      "elo": 1581.33,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Le Havre": {
+      "club": "Le Havre",
+      "elo": 1580.07,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "FC Kobenhavn": {
+      "club": "FC Kobenhavn",
+      "elo": 1578.41,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ajax": {
+      "club": "Ajax",
+      "elo": 1578.03,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dinamo Zagreb": {
+      "club": "Dinamo Zagreb",
+      "elo": 1577.12,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Celtic": {
+      "club": "Celtic",
+      "elo": 1575.15,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Malaga": {
+      "club": "Malaga",
+      "elo": 1568.63,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Koeln": {
+      "club": "Koeln",
+      "elo": 1568.17,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lecce": {
+      "club": "Lecce",
+      "elo": 1568.02,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Twente": {
+      "club": "Twente",
+      "elo": 1567.75,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Frosinone": {
+      "club": "Frosinone",
+      "elo": 1564.73,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Paphos": {
+      "club": "Paphos",
+      "elo": 1561.03,
+      "country": "CYP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Norwich": {
+      "club": "Norwich",
+      "elo": 1560.36,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Viktoria Plzen": {
+      "club": "Viktoria Plzen",
+      "elo": 1556.4,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Almeria": {
+      "club": "Almeria",
+      "elo": 1556.26,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lok Moskva": {
+      "club": "Lok Moskva",
+      "elo": 1555.28,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "CSKA Moskva": {
+      "club": "CSKA Moskva",
+      "elo": 1554.62,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "St Truiden": {
+      "club": "St Truiden",
+      "elo": 1554.61,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Karabakh Agdam": {
+      "club": "Karabakh Agdam",
+      "elo": 1554.38,
+      "country": "AZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Heidenheim": {
+      "club": "Heidenheim",
+      "elo": 1552.57,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Spartak Moskva": {
+      "club": "Spartak Moskva",
+      "elo": 1550.99,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sparta Praha": {
+      "club": "Sparta Praha",
+      "elo": 1547.85,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Angers": {
+      "club": "Angers",
+      "elo": 1547.55,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Panathinaikos": {
+      "club": "Panathinaikos",
+      "elo": 1546.64,
+      "country": "GRE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sheffield United": {
+      "club": "Sheffield United",
+      "elo": 1546.58,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Castellon": {
+      "club": "Castellon",
+      "elo": 1546.33,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Depor": {
+      "club": "Depor",
+      "elo": 1546.31,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nantes": {
+      "club": "Nantes",
+      "elo": 1544.43,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Monza": {
+      "club": "Monza",
+      "elo": 1543.99,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Reims": {
+      "club": "Reims",
+      "elo": 1541.97,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nordsjaelland": {
+      "club": "Nordsjaelland",
+      "elo": 1541.78,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Derby": {
+      "club": "Derby",
+      "elo": 1539.21,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Alkmaar": {
+      "club": "Alkmaar",
+      "elo": 1539.21,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dynamo Moskva": {
+      "club": "Dynamo Moskva",
+      "elo": 1538.53,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Swansea": {
+      "club": "Swansea",
+      "elo": 1536.29,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "St Pauli": {
+      "club": "St Pauli",
+      "elo": 1532.94,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hull": {
+      "club": "Hull",
+      "elo": 1532.88,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nijmegen": {
+      "club": "Nijmegen",
+      "elo": 1531.6,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cremonese": {
+      "club": "Cremonese",
+      "elo": 1531.56,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Brondby": {
+      "club": "Brondby",
+      "elo": 1529.93,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Brann": {
+      "club": "Brann",
+      "elo": 1528.17,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hannover": {
+      "club": "Hannover",
+      "elo": 1527.87,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Wrexham": {
+      "club": "Wrexham",
+      "elo": 1527.46,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Trabzonspor": {
+      "club": "Trabzonspor",
+      "elo": 1526.24,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Paderborn": {
+      "club": "Paderborn",
+      "elo": 1525.37,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Anderlecht": {
+      "club": "Anderlecht",
+      "elo": 1523.74,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Elversberg": {
+      "club": "Elversberg",
+      "elo": 1523.4,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Troyes": {
+      "club": "Troyes",
+      "elo": 1521.14,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lech": {
+      "club": "Lech",
+      "elo": 1520.92,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bueyueksehir": {
+      "club": "Bueyueksehir",
+      "elo": 1520.46,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Utrecht": {
+      "club": "Utrecht",
+      "elo": 1520.3,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ferencvaros": {
+      "club": "Ferencvaros",
+      "elo": 1520.05,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Schalke": {
+      "club": "Schalke",
+      "elo": 1519.74,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rangers": {
+      "club": "Rangers",
+      "elo": 1517.06,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Besiktas": {
+      "club": "Besiktas",
+      "elo": 1516.34,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Mjaellby": {
+      "club": "Mjaellby",
+      "elo": 1515.65,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Guimaraes": {
+      "club": "Guimaraes",
+      "elo": 1515.55,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Palermo": {
+      "club": "Palermo",
+      "elo": 1514.04,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rakow": {
+      "club": "Rakow",
+      "elo": 1513.5,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Viborg": {
+      "club": "Viborg",
+      "elo": 1512.2,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Gil Vicente": {
+      "club": "Gil Vicente",
+      "elo": 1507.85,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Saint-Etienne": {
+      "club": "Saint-Etienne",
+      "elo": 1507.84,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bristol City": {
+      "club": "Bristol City",
+      "elo": 1507.68,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hammarby": {
+      "club": "Hammarby",
+      "elo": 1507.66,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Birmingham": {
+      "club": "Birmingham",
+      "elo": 1507.07,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Charleroi": {
+      "club": "Charleroi",
+      "elo": 1505,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "West Brom": {
+      "club": "West Brom",
+      "elo": 1504.71,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Verona": {
+      "club": "Verona",
+      "elo": 1502.56,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Standard": {
+      "club": "Standard",
+      "elo": 1502.06,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Arouca": {
+      "club": "Arouca",
+      "elo": 1500.69,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Gijon": {
+      "club": "Gijon",
+      "elo": 1499.99,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Portsmouth": {
+      "club": "Portsmouth",
+      "elo": 1499.32,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Gent": {
+      "club": "Gent",
+      "elo": 1497.22,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Tromso": {
+      "club": "Tromso",
+      "elo": 1496.79,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rodez": {
+      "club": "Rodez",
+      "elo": 1494.45,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Larnaca": {
+      "club": "Larnaca",
+      "elo": 1494.36,
+      "country": "CYP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Estoril": {
+      "club": "Estoril",
+      "elo": 1493.88,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Blackburn": {
+      "club": "Blackburn",
+      "elo": 1493.28,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Le Mans": {
+      "club": "Le Mans",
+      "elo": 1492.42,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Metz": {
+      "club": "Metz",
+      "elo": 1489.81,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bochum": {
+      "club": "Bochum",
+      "elo": 1486.64,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Baltika": {
+      "club": "Baltika",
+      "elo": 1484.53,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Santa Clara": {
+      "club": "Santa Clara",
+      "elo": 1482.96,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Salzburg": {
+      "club": "Salzburg",
+      "elo": 1482.41,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "QPR": {
+      "club": "QPR",
+      "elo": 1480.51,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Antwerp": {
+      "club": "Antwerp",
+      "elo": 1480.32,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Moreirense": {
+      "club": "Moreirense",
+      "elo": 1479,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Preston": {
+      "club": "Preston",
+      "elo": 1478.86,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Mechelen": {
+      "club": "Mechelen",
+      "elo": 1478.85,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Montpellier": {
+      "club": "Montpellier",
+      "elo": 1477.12,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Westerlo": {
+      "club": "Westerlo",
+      "elo": 1475.35,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Apollon Lemesos": {
+      "club": "Apollon Lemesos",
+      "elo": 1474.16,
+      "country": "CYP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hearts": {
+      "club": "Hearts",
+      "elo": 1473.27,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Djurgarden": {
+      "club": "Djurgarden",
+      "elo": 1472,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sturm Graz": {
+      "club": "Sturm Graz",
+      "elo": 1471.64,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "StGallen": {
+      "club": "StGallen",
+      "elo": 1469.7,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cardiff": {
+      "club": "Cardiff",
+      "elo": 1468.63,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bolton": {
+      "club": "Bolton",
+      "elo": 1468.63,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Heerenveen": {
+      "club": "Heerenveen",
+      "elo": 1468.31,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Molde": {
+      "club": "Molde",
+      "elo": 1467.12,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Jagiellonia": {
+      "club": "Jagiellonia",
+      "elo": 1466.61,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Beer-Sheva": {
+      "club": "Beer-Sheva",
+      "elo": 1466.14,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Annecy": {
+      "club": "Annecy",
+      "elo": 1465.86,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "SonderjyskE": {
+      "club": "SonderjyskE",
+      "elo": 1465.48,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Darmstadt": {
+      "club": "Darmstadt",
+      "elo": 1463.36,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Thun": {
+      "club": "Thun",
+      "elo": 1463.22,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Holstein": {
+      "club": "Holstein",
+      "elo": 1462.64,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Samsunspor": {
+      "club": "Samsunspor",
+      "elo": 1461.58,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hertha": {
+      "club": "Hertha",
+      "elo": 1461.54,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nuernberg": {
+      "club": "Nuernberg",
+      "elo": 1458.71,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Craiova": {
+      "club": "Craiova",
+      "elo": 1458.69,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Catanzaro": {
+      "club": "Catanzaro",
+      "elo": 1458.62,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Watford": {
+      "club": "Watford",
+      "elo": 1458.16,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Omonia": {
+      "club": "Omonia",
+      "elo": 1456.9,
+      "country": "CYP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lautern": {
+      "club": "Lautern",
+      "elo": 1456.04,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Pisa": {
+      "club": "Pisa",
+      "elo": 1455.7,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Celje": {
+      "club": "Celje",
+      "elo": 1455.53,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Gyoer": {
+      "club": "Gyoer",
+      "elo": 1454.81,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Charlton": {
+      "club": "Charlton",
+      "elo": 1452.99,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Stoke": {
+      "club": "Stoke",
+      "elo": 1452.73,
+      "country": "ENG",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "LASK": {
+      "club": "LASK",
+      "elo": 1452.55,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Gornik": {
+      "club": "Gornik",
+      "elo": 1452.05,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rio Ave": {
+      "club": "Rio Ave",
+      "elo": 1451.29,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nacional": {
+      "club": "Nacional",
+      "elo": 1451.03,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Goeztepe": {
+      "club": "Goeztepe",
+      "elo": 1450.39,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lugano": {
+      "club": "Lugano",
+      "elo": 1450.06,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rubin Kazan": {
+      "club": "Rubin Kazan",
+      "elo": 1449.73,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cercle Brugge": {
+      "club": "Cercle Brugge",
+      "elo": 1445.63,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hradec Kralove": {
+      "club": "Hradec Kralove",
+      "elo": 1445.51,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Silkeborg": {
+      "club": "Silkeborg",
+      "elo": 1445.33,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Jablonec": {
+      "club": "Jablonec",
+      "elo": 1445.1,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Malmoe": {
+      "club": "Malmoe",
+      "elo": 1444.68,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Alverca": {
+      "club": "Alverca",
+      "elo": 1443.63,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Levski": {
+      "club": "Levski",
+      "elo": 1441.25,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Red Star": {
+      "club": "Red Star",
+      "elo": 1441.05,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Go Ahead Eagles": {
+      "club": "Go Ahead Eagles",
+      "elo": 1440.83,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Legia": {
+      "club": "Legia",
+      "elo": 1440.72,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Magdeburg": {
+      "club": "Magdeburg",
+      "elo": 1439.75,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Groningen": {
+      "club": "Groningen",
+      "elo": 1438.97,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "M Tel Aviv": {
+      "club": "M Tel Aviv",
+      "elo": 1438.46,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "CFR Cluj": {
+      "club": "CFR Cluj",
+      "elo": 1437.53,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Basel": {
+      "club": "Basel",
+      "elo": 1436.54,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Karlsruhe": {
+      "club": "Karlsruhe",
+      "elo": 1435.78,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sion": {
+      "club": "Sion",
+      "elo": 1433.72,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Universitatea Cluj": {
+      "club": "Universitatea Cluj",
+      "elo": 1433.62,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Randers": {
+      "club": "Randers",
+      "elo": 1432.49,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Razgrad": {
+      "club": "Razgrad",
+      "elo": 1431.41,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Slovan Liberec": {
+      "club": "Slovan Liberec",
+      "elo": 1431.4,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Young Boys": {
+      "club": "Young Boys",
+      "elo": 1431.36,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Odense": {
+      "club": "Odense",
+      "elo": 1430.63,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zulte Waregem": {
+      "club": "Zulte Waregem",
+      "elo": 1430.48,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Modena": {
+      "club": "Modena",
+      "elo": 1429.02,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sociedad B": {
+      "club": "Sociedad B",
+      "elo": 1428.48,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Casa Pia": {
+      "club": "Casa Pia",
+      "elo": 1427.92,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "IK Sirius": {
+      "club": "IK Sirius",
+      "elo": 1427.83,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rosenborg": {
+      "club": "Rosenborg",
+      "elo": 1427.67,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hajduk": {
+      "club": "Hajduk",
+      "elo": 1426.87,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Steaua": {
+      "club": "Steaua",
+      "elo": 1426.7,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Katowice": {
+      "club": "Katowice",
+      "elo": 1426.27,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Juve Stabia": {
+      "club": "Juve Stabia",
+      "elo": 1425.4,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Pogon": {
+      "club": "Pogon",
+      "elo": 1424.83,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rostov": {
+      "club": "Rostov",
+      "elo": 1424.75,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sandefjord": {
+      "club": "Sandefjord",
+      "elo": 1423.67,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dunkerque": {
+      "club": "Dunkerque",
+      "elo": 1423.47,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Empoli": {
+      "club": "Empoli",
+      "elo": 1422.83,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Leuven": {
+      "club": "Leuven",
+      "elo": 1422.09,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Servette": {
+      "club": "Servette",
+      "elo": 1417.45,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Beitar": {
+      "club": "Beitar",
+      "elo": 1414.83,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dresden": {
+      "club": "Dresden",
+      "elo": 1414.36,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Piast Gliwice": {
+      "club": "Piast Gliwice",
+      "elo": 1413.76,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Fredrikstad": {
+      "club": "Fredrikstad",
+      "elo": 1412.8,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sparta Rotterdam": {
+      "club": "Sparta Rotterdam",
+      "elo": 1411.77,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Terek Grozny": {
+      "club": "Terek Grozny",
+      "elo": 1406.52,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Levadeiakos": {
+      "club": "Levadeiakos",
+      "elo": 1405.93,
+      "country": "GRE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Grenoble": {
+      "club": "Grenoble",
+      "elo": 1405.71,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bielefeld": {
+      "club": "Bielefeld",
+      "elo": 1404.9,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sarpsborg": {
+      "club": "Sarpsborg",
+      "elo": 1403.36,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Estrela Amadora": {
+      "club": "Estrela Amadora",
+      "elo": 1403.17,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Radomiak": {
+      "club": "Radomiak",
+      "elo": 1402.67,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rizespor": {
+      "club": "Rizespor",
+      "elo": 1402.18,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Mantova": {
+      "club": "Mantova",
+      "elo": 1399.96,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Maritimo": {
+      "club": "Maritimo",
+      "elo": 1399.69,
+      "country": "POR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Austria Wien": {
+      "club": "Austria Wien",
+      "elo": 1398.94,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hibernian": {
+      "club": "Hibernian",
+      "elo": 1398.91,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Alanyaspor": {
+      "club": "Alanyaspor",
+      "elo": 1398.89,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Konyaspor": {
+      "club": "Konyaspor",
+      "elo": 1398.39,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lubin": {
+      "club": "Lubin",
+      "elo": 1397.55,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Luzern": {
+      "club": "Luzern",
+      "elo": 1397.1,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ham-Kam": {
+      "club": "Ham-Kam",
+      "elo": 1395.87,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Eldense": {
+      "club": "Eldense",
+      "elo": 1395.09,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sabadell": {
+      "club": "Sabadell",
+      "elo": 1395.09,
+      "country": "ESP",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Guingamp": {
+      "club": "Guingamp",
+      "elo": 1394.88,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Fuerth": {
+      "club": "Fuerth",
+      "elo": 1394.83,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Telstar": {
+      "club": "Telstar",
+      "elo": 1394.7,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cracovia": {
+      "club": "Cracovia",
+      "elo": 1394.19,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sampdoria": {
+      "club": "Sampdoria",
+      "elo": 1390.78,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Clermont": {
+      "club": "Clermont",
+      "elo": 1390.66,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Korona": {
+      "club": "Korona",
+      "elo": 1390.39,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Motherwell": {
+      "club": "Motherwell",
+      "elo": 1389.7,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zwolle": {
+      "club": "Zwolle",
+      "elo": 1389.37,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Elfsborg": {
+      "club": "Elfsborg",
+      "elo": 1388.13,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rijeka": {
+      "club": "Rijeka",
+      "elo": 1387.5,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "GAIS": {
+      "club": "GAIS",
+      "elo": 1387.09,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Carrarese": {
+      "club": "Carrarese",
+      "elo": 1385.9,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Spezia": {
+      "club": "Spezia",
+      "elo": 1384.78,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Laval": {
+      "club": "Laval",
+      "elo": 1384.29,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Haecken": {
+      "club": "Haecken",
+      "elo": 1383.42,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sittard": {
+      "club": "Sittard",
+      "elo": 1383.1,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kasimpasa": {
+      "club": "Kasimpasa",
+      "elo": 1383.05,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Avellino": {
+      "club": "Avellino",
+      "elo": 1381.59,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rapid Wien": {
+      "club": "Rapid Wien",
+      "elo": 1381.19,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Mlada Boleslav": {
+      "club": "Mlada Boleslav",
+      "elo": 1381.15,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "AIK": {
+      "club": "AIK",
+      "elo": 1381.12,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Braunschweig": {
+      "club": "Braunschweig",
+      "elo": 1381.05,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Motor Lublin": {
+      "club": "Motor Lublin",
+      "elo": 1379.7,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Valerenga": {
+      "club": "Valerenga",
+      "elo": 1377.27,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Excelsior": {
+      "club": "Excelsior",
+      "elo": 1377.13,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Plock": {
+      "club": "Plock",
+      "elo": 1375.22,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lausanne": {
+      "club": "Lausanne",
+      "elo": 1374.96,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Pau": {
+      "club": "Pau",
+      "elo": 1374.35,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Suedtirol": {
+      "club": "Suedtirol",
+      "elo": 1372.3,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sigma Olomouc": {
+      "club": "Sigma Olomouc",
+      "elo": 1371.95,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Widzew": {
+      "club": "Widzew",
+      "elo": 1371.26,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hartberg": {
+      "club": "Hartberg",
+      "elo": 1370.59,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Eyupspor": {
+      "club": "Eyupspor",
+      "elo": 1370.07,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Goeteborg": {
+      "club": "Goeteborg",
+      "elo": 1368.8,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "RAAL": {
+      "club": "RAAL",
+      "elo": 1368.54,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rapid Bucuresti": {
+      "club": "Rapid Bucuresti",
+      "elo": 1368.52,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dinamo Bucuresti": {
+      "club": "Dinamo Bucuresti",
+      "elo": 1368.22,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Paksi": {
+      "club": "Paksi",
+      "elo": 1367.53,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Slovan Bratislava": {
+      "club": "Slovan Bratislava",
+      "elo": 1366.52,
+      "country": "SLK",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bari": {
+      "club": "Bari",
+      "elo": 1366.16,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kryliya Sovetov": {
+      "club": "Kryliya Sovetov",
+      "elo": 1366.14,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cesena": {
+      "club": "Cesena",
+      "elo": 1365.55,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Padova": {
+      "club": "Padova",
+      "elo": 1365.4,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Koper": {
+      "club": "Koper",
+      "elo": 1364.54,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Puskas Akademia": {
+      "club": "Puskas Akademia",
+      "elo": 1363.62,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "KFUM Oslo": {
+      "club": "KFUM Oslo",
+      "elo": 1363.45,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lillestrom": {
+      "club": "Lillestrom",
+      "elo": 1363.4,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sochaux": {
+      "club": "Sochaux",
+      "elo": 1361.64,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dijon": {
+      "club": "Dijon",
+      "elo": 1361.64,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Akron Togliatti": {
+      "club": "Akron Togliatti",
+      "elo": 1360.69,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nancy": {
+      "club": "Nancy",
+      "elo": 1359.41,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Entella": {
+      "club": "Entella",
+      "elo": 1358.08,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Varazdin": {
+      "club": "Varazdin",
+      "elo": 1357.82,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Boulogne": {
+      "club": "Boulogne",
+      "elo": 1357.81,
+      "country": "FRA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "CSKA Sofia": {
+      "club": "CSKA Sofia",
+      "elo": 1355.23,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Gaziantep FK": {
+      "club": "Gaziantep FK",
+      "elo": 1354.34,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Debrecen": {
+      "club": "Debrecen",
+      "elo": 1353.97,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lok Zagreb": {
+      "club": "Lok Zagreb",
+      "elo": 1353.19,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kristiansund": {
+      "club": "Kristiansund",
+      "elo": 1353.02,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Pescara": {
+      "club": "Pescara",
+      "elo": 1351.92,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "FK Astana": {
+      "club": "FK Astana",
+      "elo": 1351.59,
+      "country": "KAZ",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Beveren": {
+      "club": "Beveren",
+      "elo": 1350.29,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kortrijk": {
+      "club": "Kortrijk",
+      "elo": 1350.29,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lommel": {
+      "club": "Lommel",
+      "elo": 1350.29,
+      "country": "BEL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Genclerbirligi": {
+      "club": "Genclerbirligi",
+      "elo": 1349.63,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Maccabi Haifa": {
+      "club": "Maccabi Haifa",
+      "elo": 1347.22,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lyngby": {
+      "club": "Lyngby",
+      "elo": 1347.07,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Horsens": {
+      "club": "Horsens",
+      "elo": 1347.07,
+      "country": "DEN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Pardubice": {
+      "club": "Pardubice",
+      "elo": 1346.96,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Banik Ostrava": {
+      "club": "Banik Ostrava",
+      "elo": 1346.56,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bohemians Praha": {
+      "club": "Bohemians Praha",
+      "elo": 1344.51,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Orenburg": {
+      "club": "Orenburg",
+      "elo": 1343.04,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kocaelispor": {
+      "club": "Kocaelispor",
+      "elo": 1342.99,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Osnabrueck": {
+      "club": "Osnabrueck",
+      "elo": 1342.63,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cottbus": {
+      "club": "Cottbus",
+      "elo": 1342.63,
+      "country": "GER",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Partizan": {
+      "club": "Partizan",
+      "elo": 1342.42,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dunajska": {
+      "club": "Dunajska",
+      "elo": 1342.41,
+      "country": "SLK",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dynamo Makhachkala": {
+      "club": "Dynamo Makhachkala",
+      "elo": 1339.21,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Wisla": {
+      "club": "Wisla",
+      "elo": 1338.52,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Slask": {
+      "club": "Slask",
+      "elo": 1338.52,
+      "country": "POL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nizhny Novgorod": {
+      "club": "Nizhny Novgorod",
+      "elo": 1337.8,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sheriff Tiraspol": {
+      "club": "Sheriff Tiraspol",
+      "elo": 1337.36,
+      "country": "MOL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zalaegerszegi": {
+      "club": "Zalaegerszegi",
+      "elo": 1335.48,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Maribor": {
+      "club": "Maribor",
+      "elo": 1334.22,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Reggiana": {
+      "club": "Reggiana",
+      "elo": 1334.05,
+      "country": "ITA",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Trnava": {
+      "club": "Trnava",
+      "elo": 1333.73,
+      "country": "SLK",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kayseri": {
+      "club": "Kayseri",
+      "elo": 1333.65,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Wolfsberg": {
+      "club": "Wolfsberg",
+      "elo": 1333.65,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zilina": {
+      "club": "Zilina",
+      "elo": 1333.45,
+      "country": "SLK",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "H Tel Aviv": {
+      "club": "H Tel Aviv",
+      "elo": 1333.11,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Osijek": {
+      "club": "Osijek",
+      "elo": 1330.09,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Antalyaspor": {
+      "club": "Antalyaspor",
+      "elo": 1328.72,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Teplice": {
+      "club": "Teplice",
+      "elo": 1328.14,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Fatih Karaguemruek": {
+      "club": "Fatih Karaguemruek",
+      "elo": 1325.41,
+      "country": "TUR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zira": {
+      "club": "Zira",
+      "elo": 1319.09,
+      "country": "AZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Olimpija Ljubljana": {
+      "club": "Olimpija Ljubljana",
+      "elo": 1317.78,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Den Haag": {
+      "club": "Den Haag",
+      "elo": 1317.29,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cambuur": {
+      "club": "Cambuur",
+      "elo": 1317.29,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Willem II": {
+      "club": "Willem II",
+      "elo": 1317.29,
+      "country": "NED",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Asteras Tripolis": {
+      "club": "Asteras Tripolis",
+      "elo": 1313.7,
+      "country": "GRE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Shamrock": {
+      "club": "Shamrock",
+      "elo": 1313.01,
+      "country": "IRL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "CSKA 1948 Sofia": {
+      "club": "CSKA 1948 Sofia",
+      "elo": 1312.79,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Neftchi": {
+      "club": "Neftchi",
+      "elo": 1312.18,
+      "country": "AZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sabah": {
+      "club": "Sabah",
+      "elo": 1311.19,
+      "country": "AZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zuerich": {
+      "club": "Zuerich",
+      "elo": 1307.4,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "UTA Arad": {
+      "club": "UTA Arad",
+      "elo": 1305.11,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ried": {
+      "club": "Ried",
+      "elo": 1301.84,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "HNK Gorica": {
+      "club": "HNK Gorica",
+      "elo": 1300.92,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Altach": {
+      "club": "Altach",
+      "elo": 1298.19,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sochi": {
+      "club": "Sochi",
+      "elo": 1297.67,
+      "country": "RUS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kilmarnock": {
+      "club": "Kilmarnock",
+      "elo": 1297.12,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kuopio": {
+      "club": "Kuopio",
+      "elo": 1296.51,
+      "country": "FIN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Otelul Galati": {
+      "club": "Otelul Galati",
+      "elo": 1296.08,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bravo": {
+      "club": "Bravo",
+      "elo": 1294.93,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Start": {
+      "club": "Start",
+      "elo": 1294.83,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kairat": {
+      "club": "Kairat",
+      "elo": 1294.39,
+      "country": "KAZ",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Noah": {
+      "club": "Noah",
+      "elo": 1294.14,
+      "country": "ARM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Viitorul": {
+      "club": "Viitorul",
+      "elo": 1293.85,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Panetolikos": {
+      "club": "Panetolikos",
+      "elo": 1292.26,
+      "country": "GRE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Wattens": {
+      "club": "Wattens",
+      "elo": 1292.03,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ujpest": {
+      "club": "Ujpest",
+      "elo": 1291.94,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Aalesund": {
+      "club": "Aalesund",
+      "elo": 1291.39,
+      "country": "NOR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Istra 1961": {
+      "club": "Istra 1961",
+      "elo": 1291.17,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Tescoma Zlin": {
+      "club": "Tescoma Zlin",
+      "elo": 1290.14,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Grasshoppers": {
+      "club": "Grasshoppers",
+      "elo": 1289.91,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kifisias": {
+      "club": "Kifisias",
+      "elo": 1289.78,
+      "country": "GRE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Novi Sad": {
+      "club": "Novi Sad",
+      "elo": 1288.3,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Brommapojkarna": {
+      "club": "Brommapojkarna",
+      "elo": 1286.94,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dundee United": {
+      "club": "Dundee United",
+      "elo": 1286.71,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Pyunik": {
+      "club": "Pyunik",
+      "elo": 1286.71,
+      "country": "ARM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nyiregyhaza": {
+      "club": "Nyiregyhaza",
+      "elo": 1285.85,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Vikingur": {
+      "club": "Vikingur",
+      "elo": 1285.12,
+      "country": "ISL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Slovacko": {
+      "club": "Slovacko",
+      "elo": 1284.8,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "FK Riga": {
+      "club": "FK Riga",
+      "elo": 1283.33,
+      "country": "LAT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "MTK": {
+      "club": "MTK",
+      "elo": 1283.06,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zrinjski Mostar": {
+      "club": "Zrinjski Mostar",
+      "elo": 1283.05,
+      "country": "BHZ",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Slaven Belupo": {
+      "club": "Slaven Belupo",
+      "elo": 1282.48,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Vaduz": {
+      "club": "Vaduz",
+      "elo": 1280.6,
+      "country": "LIE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "GAK": {
+      "club": "GAK",
+      "elo": 1279.81,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cherno More": {
+      "club": "Cherno More",
+      "elo": 1279.6,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "St Patricks": {
+      "club": "St Patricks",
+      "elo": 1278.35,
+      "country": "IRL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Botosani": {
+      "club": "Botosani",
+      "elo": 1277.43,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Tobol": {
+      "club": "Tobol",
+      "elo": 1273.34,
+      "country": "KAZ",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Halmstad": {
+      "club": "Halmstad",
+      "elo": 1272.31,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Degerfors": {
+      "club": "Degerfors",
+      "elo": 1271.91,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Netanya": {
+      "club": "Netanya",
+      "elo": 1271.08,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Falkirk": {
+      "club": "Falkirk",
+      "elo": 1270.05,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Aarau": {
+      "club": "Aarau",
+      "elo": 1267.47,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Csikszereda": {
+      "club": "Csikszereda",
+      "elo": 1267.14,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Petrolul Ploiesti": {
+      "club": "Petrolul Ploiesti",
+      "elo": 1266.39,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dundee": {
+      "club": "Dundee",
+      "elo": 1266.16,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Vaesteras": {
+      "club": "Vaesteras",
+      "elo": 1265,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Arda": {
+      "club": "Arda",
+      "elo": 1262.61,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kisvarda": {
+      "club": "Kisvarda",
+      "elo": 1261.07,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Aberdeen": {
+      "club": "Aberdeen",
+      "elo": 1258.2,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Oergryte": {
+      "club": "Oergryte",
+      "elo": 1257.3,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "HJK Helsinki": {
+      "club": "HJK Helsinki",
+      "elo": 1246.65,
+      "country": "FIN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ararat": {
+      "club": "Ararat",
+      "elo": 1246.34,
+      "country": "ARM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kalmar": {
+      "club": "Kalmar",
+      "elo": 1246.31,
+      "country": "SWE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Honved": {
+      "club": "Honved",
+      "elo": 1246.13,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Vasas SC": {
+      "club": "Vasas SC",
+      "elo": 1246.13,
+      "country": "HUN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lustenau": {
+      "club": "Lustenau",
+      "elo": 1243.69,
+      "country": "AUT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "St Mirren": {
+      "club": "St Mirren",
+      "elo": 1243.31,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Drita": {
+      "club": "Drita",
+      "elo": 1242.5,
+      "country": "KOS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Shakhtar": {
+      "club": "Shakhtar",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dynamo Kyiv": {
+      "club": "Dynamo Kyiv",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Chernomorets": {
+      "club": "Chernomorets",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zorya": {
+      "club": "Zorya",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Karpaty": {
+      "club": "Karpaty",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kryvbas": {
+      "club": "Kryvbas",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Veres": {
+      "club": "Veres",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Obolon Kyiv": {
+      "club": "Obolon Kyiv",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "FC Kharkiv": {
+      "club": "FC Kharkiv",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kolos": {
+      "club": "Kolos",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Polissya Zhytomyr": {
+      "club": "Polissya Zhytomyr",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "LNZ": {
+      "club": "LNZ",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kudrivka": {
+      "club": "Kudrivka",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Episentr": {
+      "club": "Episentr",
+      "elo": 1241.82,
+      "country": "UKR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Shelbourne": {
+      "club": "Shelbourne",
+      "elo": 1240.87,
+      "country": "IRL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zeleznicar Pancevo": {
+      "club": "Zeleznicar Pancevo",
+      "elo": 1240.4,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Iraklis": {
+      "club": "Iraklis",
+      "elo": 1239.42,
+      "country": "GRE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Derry City": {
+      "club": "Derry City",
+      "elo": 1233.98,
+      "country": "IRL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Botev Plovdiv": {
+      "club": "Botev Plovdiv",
+      "elo": 1233.97,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Winterthur": {
+      "club": "Winterthur",
+      "elo": 1232.13,
+      "country": "SUI",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hapoel Jerusalem": {
+      "club": "Hapoel Jerusalem",
+      "elo": 1230.99,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hapoel Haifa": {
+      "club": "Hapoel Haifa",
+      "elo": 1230.65,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Stjarnan": {
+      "club": "Stjarnan",
+      "elo": 1230.39,
+      "country": "ISL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Bnei Sakhinin": {
+      "club": "Bnei Sakhinin",
+      "elo": 1229.76,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "H Petach Tikva": {
+      "club": "H Petach Tikva",
+      "elo": 1228.65,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Velez Mostar": {
+      "club": "Velez Mostar",
+      "elo": 1227.04,
+      "country": "BHZ",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Shkendija": {
+      "club": "Shkendija",
+      "elo": 1226.55,
+      "country": "MAC",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Corvinul Hunedoara": {
+      "club": "Corvinul Hunedoara",
+      "elo": 1223.71,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Voluntari": {
+      "club": "Voluntari",
+      "elo": 1223.71,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sepsi": {
+      "club": "Sepsi",
+      "elo": 1223.71,
+      "country": "ROM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "RFS": {
+      "club": "RFS",
+      "elo": 1221.79,
+      "country": "LAT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "St Johnstone": {
+      "club": "St Johnstone",
+      "elo": 1213.45,
+      "country": "SCO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ironi Tiberias": {
+      "club": "Ironi Tiberias",
+      "elo": 1212.54,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Valur": {
+      "club": "Valur",
+      "elo": 1211.37,
+      "country": "ISL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "FK Sarajevo": {
+      "club": "FK Sarajevo",
+      "elo": 1211.23,
+      "country": "BHZ",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Borac Banja Luka": {
+      "club": "Borac Banja Luka",
+      "elo": 1210.83,
+      "country": "BHZ",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lok Plovdiv": {
+      "club": "Lok Plovdiv",
+      "elo": 1205.97,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ilves Tampere": {
+      "club": "Ilves Tampere",
+      "elo": 1205.37,
+      "country": "FIN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dinamo Minsk": {
+      "club": "Dinamo Minsk",
+      "elo": 1202.7,
+      "country": "BLR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Inter Turku": {
+      "club": "Inter Turku",
+      "elo": 1202.64,
+      "country": "FIN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "BATE": {
+      "club": "BATE",
+      "elo": 1202.38,
+      "country": "BLR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kiryat Shmona": {
+      "club": "Kiryat Shmona",
+      "elo": 1201.36,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Alashkert": {
+      "club": "Alashkert",
+      "elo": 1199.71,
+      "country": "ARM",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Slavia Sofia": {
+      "club": "Slavia Sofia",
+      "elo": 1199.18,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "OFK": {
+      "club": "OFK",
+      "elo": 1199.15,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Cukaricki": {
+      "club": "Cukaricki",
+      "elo": 1198.35,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Novi Pazar": {
+      "club": "Novi Pazar",
+      "elo": 1194.03,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lok Sofia": {
+      "club": "Lok Sofia",
+      "elo": 1193.54,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Brno": {
+      "club": "Brno",
+      "elo": 1192.71,
+      "country": "CZE",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Klaksvik": {
+      "club": "Klaksvik",
+      "elo": 1189.47,
+      "country": "FAR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kragujevac": {
+      "club": "Kragujevac",
+      "elo": 1187.92,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Liepajas": {
+      "club": "Liepajas",
+      "elo": 1187.77,
+      "country": "LAT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Radomlje": {
+      "club": "Radomlje",
+      "elo": 1187.17,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ballkani": {
+      "club": "Ballkani",
+      "elo": 1185.14,
+      "country": "KOS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dinamo Tirana": {
+      "club": "Dinamo Tirana",
+      "elo": 1183.72,
+      "country": "ALB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Auda": {
+      "club": "Auda",
+      "elo": 1179.07,
+      "country": "LAT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Ashdod": {
+      "club": "Ashdod",
+      "elo": 1172.46,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zalgiris Vilnius": {
+      "club": "Zalgiris Vilnius",
+      "elo": 1167.5,
+      "country": "LIT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "IMT": {
+      "club": "IMT",
+      "elo": 1167.23,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Botev Vratsa": {
+      "club": "Botev Vratsa",
+      "elo": 1165.69,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rudes Zagreb": {
+      "club": "Rudes Zagreb",
+      "elo": 1163.89,
+      "country": "CRO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Torpedo Kutaisi": {
+      "club": "Torpedo Kutaisi",
+      "elo": 1159.65,
+      "country": "GEO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Radnik Surdulica": {
+      "club": "Radnik Surdulica",
+      "elo": 1159.57,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Petrocub": {
+      "club": "Petrocub",
+      "elo": 1159.46,
+      "country": "MOL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Partizani Tirana": {
+      "club": "Partizani Tirana",
+      "elo": 1158.83,
+      "country": "ALB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Egnatia": {
+      "club": "Egnatia",
+      "elo": 1157.89,
+      "country": "ALB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dinamo Tbilisi": {
+      "club": "Dinamo Tbilisi",
+      "elo": 1153.7,
+      "country": "GEO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dila Gori": {
+      "club": "Dila Gori",
+      "elo": 1149.46,
+      "country": "GEO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Saburtalo": {
+      "club": "Saburtalo",
+      "elo": 1149.44,
+      "country": "GEO",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Vllaznia": {
+      "club": "Vllaznia",
+      "elo": 1145.86,
+      "country": "ALB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Mura": {
+      "club": "Mura",
+      "elo": 1140.62,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Aluminij": {
+      "club": "Aluminij",
+      "elo": 1136.17,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Mladost Lucani": {
+      "club": "Mladost Lucani",
+      "elo": 1133.25,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Kauno Zalgiris": {
+      "club": "Kauno Zalgiris",
+      "elo": 1131.27,
+      "country": "LIT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Flora Tallinn": {
+      "club": "Flora Tallinn",
+      "elo": 1130.35,
+      "country": "EST",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Maccabi Bnei Raina": {
+      "club": "Maccabi Bnei Raina",
+      "elo": 1127.99,
+      "country": "ISR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zimbru": {
+      "club": "Zimbru",
+      "elo": 1121.75,
+      "country": "MOL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nis": {
+      "club": "Nis",
+      "elo": 1120.03,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hamrun": {
+      "club": "Hamrun",
+      "elo": 1116.78,
+      "country": "MLT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nafta": {
+      "club": "Nafta",
+      "elo": 1116.74,
+      "country": "SVN",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Panevezys": {
+      "club": "Panevezys",
+      "elo": 1114.84,
+      "country": "LIT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Linfield": {
+      "club": "Linfield",
+      "elo": 1112.9,
+      "country": "NIR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Milsami Orhei": {
+      "club": "Milsami Orhei",
+      "elo": 1106.46,
+      "country": "MOL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Hegelmann": {
+      "club": "Hegelmann",
+      "elo": 1105.83,
+      "country": "LIT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Spartak Varna": {
+      "club": "Spartak Varna",
+      "elo": 1099.84,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Vardar": {
+      "club": "Vardar",
+      "elo": 1099.73,
+      "country": "MAC",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Decic": {
+      "club": "Decic",
+      "elo": 1098.28,
+      "country": "MNT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Septemvri Sofia": {
+      "club": "Septemvri Sofia",
+      "elo": 1095.19,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sileks": {
+      "club": "Sileks",
+      "elo": 1091.06,
+      "country": "MAC",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dukagjini": {
+      "club": "Dukagjini",
+      "elo": 1084.09,
+      "country": "KOS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Paide Linnameeskond": {
+      "club": "Paide Linnameeskond",
+      "elo": 1082.52,
+      "country": "EST",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Sutjeska": {
+      "club": "Sutjeska",
+      "elo": 1082.16,
+      "country": "MNT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Rabotnicki": {
+      "club": "Rabotnicki",
+      "elo": 1081.38,
+      "country": "MAC",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Nomme Kalju": {
+      "club": "Nomme Kalju",
+      "elo": 1067.47,
+      "country": "EST",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "The New Saints": {
+      "club": "The New Saints",
+      "elo": 1066.43,
+      "country": "WAL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Lincoln": {
+      "club": "Lincoln",
+      "elo": 1065.09,
+      "country": "GIB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Differdang": {
+      "club": "Differdang",
+      "elo": 1064.41,
+      "country": "LUX",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Floriana": {
+      "club": "Floriana",
+      "elo": 1063.39,
+      "country": "MLT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Larne": {
+      "club": "Larne",
+      "elo": 1059.33,
+      "country": "NIR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Valletta": {
+      "club": "Valletta",
+      "elo": 1058.55,
+      "country": "MLT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Marsaxlokk": {
+      "club": "Marsaxlokk",
+      "elo": 1058.55,
+      "country": "MLT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Glentoran": {
+      "club": "Glentoran",
+      "elo": 1056.45,
+      "country": "NIR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Coleraine": {
+      "club": "Coleraine",
+      "elo": 1056.45,
+      "country": "NIR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "R Letzebuerg": {
+      "club": "R Letzebuerg",
+      "elo": 1055.8,
+      "country": "LUX",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Malisheva": {
+      "club": "Malisheva",
+      "elo": 1053.16,
+      "country": "KOS",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dunav Ruse": {
+      "club": "Dunav Ruse",
+      "elo": 1051.71,
+      "country": "BUL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "FC Infonet": {
+      "club": "FC Infonet",
+      "elo": 1050.11,
+      "country": "EST",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "HB Torshavn": {
+      "club": "HB Torshavn",
+      "elo": 1050.03,
+      "country": "FAR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Zemun": {
+      "club": "Zemun",
+      "elo": 1049.02,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Macva Sabac": {
+      "club": "Macva Sabac",
+      "elo": 1049.02,
+      "country": "SRB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Una Strassen": {
+      "club": "Una Strassen",
+      "elo": 1047.87,
+      "country": "LUX",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Petrovac": {
+      "club": "Petrovac",
+      "elo": 1045.58,
+      "country": "MNT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Mornar": {
+      "club": "Mornar",
+      "elo": 1045.58,
+      "country": "MNT",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Runavik": {
+      "club": "Runavik",
+      "elo": 1039.27,
+      "country": "FAR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Dudelange": {
+      "club": "Dudelange",
+      "elo": 1035.68,
+      "country": "LUX",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Gota": {
+      "club": "Gota",
+      "elo": 1033.26,
+      "country": "FAR",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Escaldes": {
+      "club": "Escaldes",
+      "elo": 1002.07,
+      "country": "AND",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Penybont": {
+      "club": "Penybont",
+      "elo": 988.08,
+      "country": "WAL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Caernarfon Town": {
+      "club": "Caernarfon Town",
+      "elo": 969.86,
+      "country": "WAL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Connahs Quay": {
+      "club": "Connahs Quay",
+      "elo": 969.86,
+      "country": "WAL",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "St Josephs": {
+      "club": "St Josephs",
+      "elo": 968.1,
+      "country": "GIB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "College Europa": {
+      "club": "College Europa",
+      "elo": 956,
+      "country": "GIB",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Santa Coloma": {
+      "club": "Santa Coloma",
+      "elo": 954.31,
+      "country": "AND",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    },
+    "Atletic Club Escaldes": {
+      "club": "Atletic Club Escaldes",
+      "elo": 944.22,
+      "country": "AND",
+      "rank": null,
+      "from": "2026-08-31",
+      "to": "2026-12-31"
+    }
+  }
+}

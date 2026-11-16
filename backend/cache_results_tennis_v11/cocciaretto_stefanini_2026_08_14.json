@@ -1,0 +1,18 @@
+{
+  "timestamp": 1794396484495,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": null,
+  "totalGames": "VOID",
+  "isVoid": true,
+  "source": "STEP58_WEB_FALLBACK_VOID_GUARDED",
+  "confidence": 0.9,
+  "observedAt": "2026-11-11T11:28:04.495Z",
+  "sourceEventId": "WEB:ad2545f711db423448e5",
+  "rawEvidence": {
+    "query": "cocciaretto stefanini tennis score 2026-08-14 result",
+    "matchDate": "2026-08-14",
+    "excerpt": "elisabetta cocciaretto lucrezia stefanini live score and h2h results ... elisabetta cocciaretto lucrezia stefanini live score starts on 14 aug 2026 at 15 00 utc time at court 4 stadium cincinnati city usa in cincinnati usa wta. elisabetta cocciaretto vs lucrezia stefanini 14-08-2026 live scores ... get elisabetta cocciaretto vs lucrezia stefanini on 14-aug-2026 live scores set-by-set updates and stats. stay updated with live results and head-to-head history on xscores. elisabetta cocciaretto vs lucrezia stefanini round 1 cincinnati elisabetta cocciaretto vs lucrezia stefanini round 1 cincinnati live score statistics and broadcast info on tennis.com. elisabetta cocciaretto v lucrezia stefanini 14 08 2026 follow elisabetta cocciaretto v lucrezia stefanini 14 08 2026 match information elisabetta cocciaretto latest results news highlights and elisabetta cocciaretto v lucrezia stefanini h2h statistics flashscore tennis coverage includes tennis scores and tennis news from more than 5000 tournaments worldwide. elisabetta cocciaretto v lucrezia stefanini 14 08 2026 tennis ... follow elisabetta cocciaretto v lucrezia stefanini 14 08 2026 match information elisabetta cocciaretto latest resul"
+  },
+  "score": "VOID",
+  "note": "Web fallback affidabile: testo ritiro/void con entrambi i giocatori presenti."
+}

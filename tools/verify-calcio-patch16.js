@@ -1,0 +1,3 @@
+'use strict';
+const path=require('path'); const {spawnSync}=require('child_process'); const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));
+for(const script of ['tools/test-calcio-patch16-standalone.js','tools/verify-calcio-patch16-frontend.js','tools/verify-calcio-patch16-db.js','tools/verify-calcio-patch16-regression.js']){const r=spawnSync(process.execPath,[path.join(root,script),root],{cwd:root,stdio:'inherit'}); if(r.status!==0) process.exit(r.status||1);} console.log(JSON.stringify({success:true,patch:'BETTING_PATCH_16_FORCED_STAKE_AUTHORITY_RECONCILIATION',verification:'COMPLETE'},null,2));

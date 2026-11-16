@@ -1,0 +1,10 @@
+{
+  "version": "SAFE13_PORTFOLIO_SEMANTIC_READONLY_R2_20261106",
+  "target": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "installedAt": "2026-11-06T11:59:03.469Z",
+  "before": "57290854eab1e9b5ddfe4fac53c318f85dfeb97fe27becb471fb77300ac9d336",
+  "after": "749c6860d9d963269e1588ea4644ebadad165a79ad218593b599fbb51d7fe8bc",
+  "checks": 11,
+  "originalGuardOnly": true,
+  "databaseModified": false
+}

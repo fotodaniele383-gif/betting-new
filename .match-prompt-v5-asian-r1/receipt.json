@@ -1,0 +1,22 @@
+{
+  "version": "MATCH_PROMPT_V5_ASIAN_SCANNER_R1_20261106",
+  "root": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "strategy": "upgrade-v4",
+  "target": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\public\\quantMatchPromptBridgeV4.js",
+  "targetOldHash": "f3b92fc81de12104e99cc86a7af9fa15a67a7153b4c52a50a8f905690b944f63",
+  "targetNewHash": "25bc102df20a3b0c56248b0299cb72c30107da94e287fc89cb629c6104e80e4e",
+  "indexOldHash": null,
+  "indexNewHash": null,
+  "protectedBefore": {
+    "hashes": {
+      "backend\\public\\app.js": "029ecd64d409f053fe777f3f14c4b9c638f97ecad2b5b325786bb4149022affa",
+      "backend\\server.js": "21686d9f10050d9686853d554e4f335092249b82105355ad303475021159e832"
+    },
+    "db": {
+      "size": 448167936,
+      "mtimeMs": 1793965740585.9768
+    }
+  },
+  "createdAt": "2026-11-07T10:01:36.601Z",
+  "committed": true
+}

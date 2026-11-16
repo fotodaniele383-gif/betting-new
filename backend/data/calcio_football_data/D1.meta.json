@@ -1,0 +1,23 @@
+{
+  "operationId": "CALCIO_FD_D1_1794751034207",
+  "fetchedAt": "2026-11-15T13:57:12.437Z",
+  "lastSuccessAt": "2026-11-15T13:57:12.437Z",
+  "source": "NETWORK",
+  "season": "2627",
+  "url": "https://www.football-data.co.uk/mmz4281/2627/D1.csv",
+  "leagueKey": "bundesliga",
+  "leagueName": "Bundesliga",
+  "code": "D1",
+  "attemptedSeasons": [
+    "2627"
+  ],
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "sha256": "6dba21eb7d71063c8e61a8edece987f20a4c535a34e98b14822ffa250250a420",
+  "validRows": 81,
+  "rejectedRows": 0,
+  "earliestMatchAt": "2026-08-28T12:00:00.000Z",
+  "latestMatchAt": "2026-11-08T12:00:00.000Z",
+  "sizeBytes": 39027,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_D1_1794751034207"
+}

@@ -1,0 +1,23 @@
+{
+  "operationId": "AUDIT14_REFRESH_SP1_1793883802703",
+  "fetchedAt": "2026-11-05T13:03:22.703Z",
+  "lastSuccessAt": "2026-11-05T13:03:22.703Z",
+  "source": "NETWORK",
+  "season": "2627",
+  "url": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
+  "leagueKey": "sp1",
+  "leagueName": "sp1",
+  "code": "SP1",
+  "attemptedSeasons": [
+    "2627"
+  ],
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "sha256": "839e3c4994af05edcca50f8efe8beb42ef5996f1374f68fc705aa8cd206921a6",
+  "validRows": 109,
+  "rejectedRows": 0,
+  "earliestMatchAt": "2026-08-15T12:00:00.000Z",
+  "latestMatchAt": "2026-11-02T12:00:00.000Z",
+  "sizeBytes": 52114,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO\\backend\\data\\calcio_football_data\\last_known_good\\AUDIT14_REFRESH_SP1_1793883802703"
+}

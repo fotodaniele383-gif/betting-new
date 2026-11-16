@@ -1,0 +1,3 @@
+'use strict';
+const cp=require('child_process');const path=require('path');const root=path.resolve(__dirname,'..');
+const suites=['tools/verify-betting-patch26ff.js','tools/test-betting-patch26ff-bands.js'];const results=[];for(const file of suites){const run=cp.spawnSync(process.execPath,[path.join(root,file)],{cwd:root,encoding:'utf8',maxBuffer:128*1024*1024});results.push({file,ok:run.status===0,exitCode:run.status,stdout:run.status===0?undefined:String(run.stdout||'').slice(-3000),stderr:run.status===0?undefined:String(run.stderr||'').slice(-3000)});}const failed=results.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,suites:results},null,2));process.exit(failed.length?1:0);

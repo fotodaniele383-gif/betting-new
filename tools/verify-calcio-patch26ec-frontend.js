@@ -1,0 +1,18 @@
+'use strict';
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const root = path.join(__dirname, '..');
+const a = fs.readFileSync(path.join(root, 'public', 'app.js'), 'utf8');
+const b = fs.readFileSync(path.join(root, 'backend', 'public', 'app.js'), 'utf8');
+assert.strictEqual(a, b, 'I mirror frontend devono essere byte-identici');
+assert(a.includes('Qualità dati autoritativa — Patch 26E-C'));
+assert(a.includes('calcioStakeAuthorityFromBet'));
+assert(a.includes('calcioDataQualityAuthorityFromBet'));
+assert(a.includes('Stake modello'));
+assert(a.includes('Stake affidabilità'));
+assert(a.includes('Stake operativo'));
+assert(a.includes('Unified Stake Authority'));
+assert(a.includes('calcio_stake_authority_audit'));
+assert(a.includes('calcio_data_quality_audit'));
+console.log(JSON.stringify({ success: true, checks: 10 }, null, 2));

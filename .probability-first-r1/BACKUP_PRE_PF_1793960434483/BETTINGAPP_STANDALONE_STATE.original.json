@@ -1,0 +1,26 @@
+{
+  "version": "BETTINGAPP_MANUALE_PULITO_R1_20261105",
+  "mode": "SAFE13_MANUAL_PAPER_ONLY",
+  "created_at": "2026-11-05T12:10:53.817Z",
+  "created_from": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_SAFE_20261013_CLONE\\SAFE13_OPERATIVO_20261105101151_18804\\APP_MANUALE",
+  "source_workspace": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_SAFE_20261013_CLONE\\SAFE13_OPERATIVO_20261105101151_18804",
+  "src_db_rows": 1958,
+  "src_db_max_id": 3281,
+  "server_sha256": "deae49fc42556e6d91abb6f7d00bc43307aef48745623dbe74146a8802bcfc4d",
+  "tennis_sha256": "086c363aa37882019ab4645b403a47ddcad5dc914c21e1d3fddae34334e132e1",
+  "dependencies_copy": "PHYSICAL",
+  "port": 3188,
+  "api_key_source": "DPAPI",
+  "automatic_tasks": "DISABLED",
+  "source_used_as_runtime_dependency": false,
+  "quantv2_bridge": {
+    "version": "QUANTV2_SAFE13_PULITO_BRIDGE_R2_20261105",
+    "mode": "OPT_IN_MANUAL_PAPER_ONLY",
+    "baseTennisSha": "ac484addc108ad438b5ae0cb012701ebf1652d4e01f15cbb6e07501114347d7f",
+    "baseCalcioSha": "b9aade3c1875c380ac4b2e957475c88cedba941d1fa5c973552ebd3f5d3a682b"
+  },
+  "safe13_calcio_manual_batch_fix": {
+    "version": "SAFE13_CALCIO_MANUAL_BATCH_FIX_R1_20261106",
+    "installedAt": "2026-11-06T09:11:06.046Z"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "patch": "AUDIT16C_CALCIO_CLV_CAPTURE_RELIABILITY_V1",
+  "folder": "AUDIT16C",
+  "order": 3,
+  "requires": "AUDIT16A e AUDIT16B applicate",
+  "targets": [
+    "backend/server.js",
+    "backend/calcioClvOpeningCaptureAudit16c.js",
+    "tools/test-audit16c-calcio-clv-opening-capture.js",
+    "tools/audit16c-calcio-clv-coverage.js"
+  ],
+  "baselineHashes": {
+    "package.json": "a8efb68e73ff9de0bff598694bf456dc49e79a4d623e3cd488ae8916415c89eb",
+    "backend/operationalSchedulerStateMachinePatch58.js": "d215e74e8927ba55db1026af327b504796f513a94f3c5b77e8d59a61aa05adb5",
+    "backend/clvTracker.js": "c8fc8f7f0293de843b53a73570f2013c5c46f571fe2e526d3b3a83a01c60854e",
+    "backend/paperTrading.js": "ef64a6916e2980091b428d9a16a1c8f99485c43f8e0957222ef547f4d4bd4096",
+    "backend/paperTrading.tennis.js": "4b44fdce9c60ca9e7dfb787c443f3de2321b96031787dfda6391052d82e6454c",
+    "backend/studyLifecycle.js": "ad6fbc18b23bc3608214428d4ef9e80348623c6e393a542c12395c6d65cfce6c",
+    "backend/statisticalProductionReadinessGatePatch55.js": "bb7e9a01b28e99d1c6e51a87dec5f49baa685c14e8a0d878838ee93562dd9f03",
+    "backend/server.js": "f6738647ea2a5c20f644446a0d7d11dd0bb26eb3438536982236379541babc14",
+    "backend/calcioAutoScheduler.js": "bcffc9a08f8baa04feeecdae9223e8c9d8a12bb92da352c9cd8a4a74f3afe818",
+    "backend/calcioHistoricalStatsSnapshotCacheAudit16b.js": "41378e90c03f35ae0c810843f4c2e79023bcb9cc6d2c19a7a0fae2d80bdba239",
+    "tools/test-audit16a-calcio-scheduler-atomic.js": "6a81ab1d3e79478bb8369f7eac21ff50d068c3bb23fb7555d60626912b718d8a",
+    "tools/test-audit16b-calcio-analysis-performance.js": "394990e49abccee89261cb411e5bb169024f36d71dd5f6f14d458c1deda1aaa7"
+  },
+  "payloadHashes": {
+    "backend/server.js": "78df2a8f2f37296755c3f2107bc60e77b29022e6061efb039f10bf35c3c2fc2f",
+    "backend/calcioClvOpeningCaptureAudit16c.js": "7606535d13e3763e06eea444115736511c49130ff1f7ab27d704ee247ff5dd43",
+    "tools/test-audit16c-calcio-clv-opening-capture.js": "93685cf3cb3adf7b5de66068ed78eccb86431f6124a5726729f44ec635ca3298",
+    "tools/audit16c-calcio-clv-coverage.js": "e142057354d78ad3ab6fb76f8a787c96af404c113381c5f5bb8fd52cde93597c"
+  },
+  "baseSuites": [
+    "tools/test-calcio-patch26ec-standalone.js",
+    "tools/test-tennis-patch59-policy.js",
+    "tools/test-tennis-patch58-state-machine-policy.js",
+    "tools/test-calcio-patch54-registry-inventory.js",
+    "tools/test-audit15-source-fusion.js",
+    "tools/audit15-source-coverage.js",
+    "tools/test-audit16a-calcio-scheduler-atomic.js",
+    "tools/test-audit16b-calcio-analysis-performance.js"
+  ],
+  "postSuites": [
+    "tools/test-calcio-patch26ec-standalone.js",
+    "tools/test-tennis-patch59-policy.js",
+    "tools/test-tennis-patch58-state-machine-policy.js",
+    "tools/test-calcio-patch54-registry-inventory.js",
+    "tools/test-audit15-source-fusion.js",
+    "tools/audit15-source-coverage.js",
+    "tools/test-audit16a-calcio-scheduler-atomic.js",
+    "tools/test-audit16b-calcio-analysis-performance.js",
+    "tools/test-audit16c-calcio-clv-opening-capture.js",
+    "tools/audit16c-calcio-clv-coverage.js"
+  ]
+}

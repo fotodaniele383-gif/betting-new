@@ -1,0 +1,19 @@
+{
+  "timestamp": 1793963360777,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 1,
+  "totalGames": 38,
+  "isVoid": false,
+  "source": "STEP58_WEB_FALLBACK_SCORE_GUARDED",
+  "confidence": 0.9,
+  "step107WeakWinnerSide": true,
+  "observedAt": "2026-11-06T11:09:20.777Z",
+  "sourceEventId": "WEB:04228a936a1c4b42a165",
+  "rawEvidence": {
+    "query": "day samsonova tennis score 2026-09-17 result",
+    "matchDate": "2026-09-17",
+    "excerpt": "day 1-2 sam kayla day v liudmila samsonova 17 09 2026 tennis ... follow kayla day v liudmila samsonova 17 09 2026 match information kayla day latest results news highlights and kayla day v liudmila samsonova h2h statistics flashscore tennis coverage includes tennis scores and tennis news from more than 5000 tournaments worldwide. kayla day vs liudmila samsonova 17-09-2026 live scores result kayla day vs liudmila samsonova on 17-09-2026 in 2026 promises to be an exciting tennis match and xscores keeps you updated with everything you need. get live scores in-game stats and real-time updates as the action unfolds. find out where to watch the match with the full tv coverage list by country. kayla day liudmila samsonova live score and h2h results - sofascore kayla day liudmila samsonova live score starts on 17 sept 2026 at 00 35 utc time at estadio skarch stadium guadalajara city mexico in guadalajara mexico wta. kayla day vs liudmila samsonova round 2 - tennis.com kayla day vs liudmila samsonova round 2 wta guadalajara live score statistics and broadcast info on tennis.com. kayla day - liudmila samsonova results score 17-09-2026 kayla day - liudmila samsonova on 17-09-2026 delivered a "
+  },
+  "score": "17-9 17-9 17-9 17-9 7-6 2-6 7-6",
+  "note": "Risultato da web fallback: classificato PROPOSED da Patch 5; non chiude automaticamente senza fonte strutturata/certificata."
+}

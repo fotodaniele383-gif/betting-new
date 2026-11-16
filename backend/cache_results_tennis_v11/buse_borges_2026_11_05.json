@@ -1,0 +1,24 @@
+{
+  "timestamp": 1793963366977,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 2,
+  "winnerName": "Nuno Borges",
+  "winner_player_name": "Nuno Borges",
+  "totalGames": 14,
+  "isVoid": false,
+  "source": "TENNISMYLIFE",
+  "sourceEventId": "TML:df19f36bff80140bfed3",
+  "observedAt": "2026-11-06T11:09:26.977Z",
+  "rawEvidence": {
+    "date": "2026-11-05",
+    "winner": "Nuno Borges",
+    "loser": "Ignacio Buse",
+    "score": "6-0 6-2",
+    "source": "TENNISMYLIFE"
+  },
+  "score": "6-0 6-2",
+  "scoreOrientation": "WINNER_FIRST",
+  "confidence": 0.9,
+  "providerCompleted": true,
+  "note": "Risultato TennisMyLife: 6-0 6-2"
+}

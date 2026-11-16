@@ -1,0 +1,6 @@
+R12 NON e' un motore per autorizzare stake, modificare esiti o fare ordini.
+Non promette che il recupero dati esterno sia riuscito senza un dataset licenziato, recente, completo e validato.
+La simulazione BO3 a 10 EUR e' un payoff di due singole, non una garanzia di profitto.
+I campi R11/R12 sono osservazioni storiche e possono contenere quote non allineate temporalmente.
+Avvisi per quota estrema e replay NON trasformano quote errate in quote corrette.
+Per installare verificare prima R11, fermare server, eseguire backup, installare R12, verificare e riavviare.

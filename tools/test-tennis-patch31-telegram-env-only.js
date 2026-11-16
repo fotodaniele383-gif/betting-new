@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+'use strict';
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const notifier = require('../backend/telegramNotifier');
+const root = path.resolve(__dirname, '..');
+const checks = [];
+function check(name, fn) { try { fn(); checks.push({ name, ok: true }); } catch (error) { checks.push({ name, ok: false, error: error.message }); } }
+const oldToken = process.env.TELEGRAM_BOT_TOKEN;
+const oldRotation = process.env.TELEGRAM_TOKEN_ROTATION_REQUIRED;
+process.env.TELEGRAM_BOT_TOKEN = 'TEST_ONLY_ENV_TOKEN_DO_NOT_USE';
+process.env.TELEGRAM_TOKEN_ROTATION_REQUIRED = '1';
+check('policy versione Patch31', () => assert.equal(notifier.TELEGRAM_CREDENTIAL_POLICY_VERSION, 'TELEGRAM_ENV_ONLY_CREDENTIAL_POLICY_V1_PATCH31'));
+check('default config senza token', () => assert(!Object.prototype.hasOwnProperty.call(notifier.defaultConfig(), 'token')));
+check('default config environment-only', () => assert.equal(notifier.defaultConfig().credentialPolicy, 'ENVIRONMENT_ONLY'));
+check('getToken legge env', () => assert.equal(notifier.getToken({ tokenEnv: 'TELEGRAM_BOT_TOKEN', token: 'FILE_MUST_BE_IGNORED' }), process.env.TELEGRAM_BOT_TOKEN));
+check('token file ignorato senza env', () => { delete process.env.TELEGRAM_BOT_TOKEN; assert.equal(notifier.getToken({ token: 'FILE_MUST_BE_IGNORED' }), ''); process.env.TELEGRAM_BOT_TOKEN = 'TEST_ONLY_ENV_TOKEN_DO_NOT_USE'; });
+check('rotazione rilevata', () => assert.equal(notifier.isRotationRequired(), true));
+check('public config non espone token', () => { const p = notifier.publicConfig(); assert(!JSON.stringify(p).includes(process.env.TELEGRAM_BOT_TOKEN)); });
+check('public config source env', () => assert.equal(notifier.publicConfig().credentialSource, 'ENVIRONMENT_ONLY'));
+check('public config segnala rotazione', () => assert.equal(notifier.publicConfig().rotationRequired, true));
+check('save token via UI bloccato', () => assert.throws(() => notifier.saveConfigPatch({ token: 'abc' }), /PERSISTENCE_DISABLED_PATCH31/));
+check('errore redatto', () => assert(!notifier.sanitizeTelegramError(`fetch ${process.env.TELEGRAM_BOT_TOKEN}`, process.env.TELEGRAM_BOT_TOKEN).includes(process.env.TELEGRAM_BOT_TOKEN)));
+check('mask non mostra frammenti', () => assert.equal(notifier.maskToken(process.env.TELEGRAM_BOT_TOKEN), 'CONFIGURATO_IN_ENV'));
+const cfg = JSON.parse(fs.readFileSync(path.join(root, 'backend/telegram.config.json'), 'utf8'));
+check('config runtime senza token', () => assert(!Object.prototype.hasOwnProperty.call(cfg, 'token')));
+check('config runtime credential policy', () => assert.equal(cfg.credentialPolicy, 'ENVIRONMENT_ONLY'));
+check('example Telegram senza token reale', () => assert(!/\b\d{7,12}:[A-Za-z0-9_-]{25,}\b/.test(fs.readFileSync(path.join(root, 'backend/.env.telegram.example'), 'utf8'))));
+check('UI non contiene input token', () => assert(!fs.readFileSync(path.join(root, 'public/telegram.html'), 'utf8').includes('id="botToken"')));
+check('UI spiega env', () => assert(fs.readFileSync(path.join(root, 'public/telegram.html'), 'utf8').includes('TELEGRAM_BOT_TOKEN')));
+check('JS non invia token', () => assert(!fs.readFileSync(path.join(root, 'public/telegram.js'), 'utf8').includes('body.token')));
+if (oldToken === undefined) delete process.env.TELEGRAM_BOT_TOKEN; else process.env.TELEGRAM_BOT_TOKEN = oldToken;
+if (oldRotation === undefined) delete process.env.TELEGRAM_TOKEN_ROTATION_REQUIRED; else process.env.TELEGRAM_TOKEN_ROTATION_REQUIRED = oldRotation;
+const failed = checks.filter(x => !x.ok);
+console.log(JSON.stringify({ success: !failed.length, checks, passed: checks.length - failed.length, failed: failed.length }, null, 2));
+process.exit(failed.length ? 1 : 0);

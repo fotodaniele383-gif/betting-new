@@ -1,0 +1,216 @@
+{
+  "timestamp": 1794827424279,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 60,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Avellino",
+      "officialDomain": null,
+      "status": "TEAM_CONTEXT_ONLY",
+      "confidence": 0,
+      "coverageConfidence": 60,
+      "matchImpactConfidence": 0,
+      "r25MatchCandidateCount": 0,
+      "r25TeamContextCount": 1,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 902,
+          "received": 9,
+          "relevant": 1,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T11:10:24.275Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 763,
+          "received": 4,
+          "relevant": 1,
+          "fresh": 2,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T11:10:24.136Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 13,
+        "relevantArticles": 2,
+        "usableArticles": 1,
+        "uniqueArticles": 1,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 1,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 12,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "avellino, il presidente d’agostino illustra il progetto del nuovo stadio gau arena da oltre 21mila posti",
+          "originalTitle": "Avellino, il presidente D’Agostino illustra il progetto del nuovo stadio Gau Arena da oltre 21mila posti",
+          "fullText": "avellino, il presidente d’agostino illustra il progetto del nuovo stadio gau arena da oltre 21mila posti nel corso di una conferenza stampa durata oltre 90 minuti, il presidente dell'avellino, angelo d'agostino, ha illustrato il progetto del nuovo stadio che ha presentato lo scorso mese ...",
+          "sourceName": "Il Mattino",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afae4a123f948348c9d257bec5ca2f9&url=https%3a%2f%2fwww.ilmattino.it%2fsport%2fserie_b%2favellino_nuovo_stadio_gau_arena_dagostino_progetto_21mila_posti-9887925.html&c=5704522322956389482&mkt=it-it",
+          "publishedAt": "2026-11-13T06:03:00.000Z",
+          "ageDays": 3.21,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0,
+          "matchScopeR25": "TEAM_CONTEXT_ONLY",
+          "matchSpecificEvidence": false
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "lazio 6-3 avellino: nesta’s men overwhelmed in saturday morning’s friendly - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "us avellino 1912 - suspensions and injuries - transfermarkt",
+          "sourceName": "Transfermarkt",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "modena vs avellino - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "martin palumbo stats and ratings - sofascore",
+          "sourceName": "Sofascore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "avellino vs frosinone - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "avellino vs pisa - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "taranto vs avellino - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "avellino vs sampdoria - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview: monza vs avellino - prediction, team news, lineups - sports mole",
+          "sourceName": "Sports Mole",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "avellino, d'agostino presenta il progetto per lo stadio: \"non è un capriccio\"",
+          "sourceName": "Rai News",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "avellino, nesta è il nuovo allenatore: i dettagli del contratto e i componenti dello staff",
+          "sourceName": "Corriere dello Sport.it",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "scegli gazzetta come fonte preferita su google",
+          "sourceName": "Gazzetta",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "R25: notizie disponibili come contesto squadra, non certificate per l’avversario del match.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

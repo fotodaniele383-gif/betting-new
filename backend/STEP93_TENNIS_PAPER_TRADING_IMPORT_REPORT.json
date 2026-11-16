@@ -1,0 +1,10 @@
+{
+  "step": "STEP93_TENNIS_PAPER_TRADING_DB_SYNC_FINAL",
+  "importedAt": "2026-06-01T07:27:54.688Z",
+  "csvRows": 189,
+  "inserted": 0,
+  "updated": 189,
+  "tennisTotal": 421,
+  "tennisPending": 12,
+  "zeroStakeTracked": 129
+}

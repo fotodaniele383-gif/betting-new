@@ -1,0 +1,27 @@
+{
+  "version": "BETTINGAPP_MAIN_R7_PROMPT_CALCIO_V7_DATA_ONLY_20261114",
+  "from": "BETTINGAPP_MAIN_R6_PROMPT_CALCIO_V63_NO_MINIMAX_WIDGET_20261110",
+  "root": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "dbChanged": false,
+  "authorityChanged": false,
+  "installed": {
+    "public/quantMatchPromptBridgeV4.js": "1ae0ac3f3a5efc2ef50b379fdbcd7376a8980018a59f7de4956bbf39459e3c18",
+    "backend/public/quantMatchPromptBridgeV4.js": "1ae0ac3f3a5efc2ef50b379fdbcd7376a8980018a59f7de4956bbf39459e3c18",
+    "public/CALCIO_V7_MASTER.txt": "67e9b33b95db8578c3b39217bb0318eeda8750395c945bf2bf2c3ca1f66efc8b",
+    "backend/public/CALCIO_V7_MASTER.txt": "67e9b33b95db8578c3b39217bb0318eeda8750395c945bf2bf2c3ca1f66efc8b"
+  },
+  "before": {
+    "START_BETTING.cjs": "9a774238a577355529f8bc2645972f37a73a0ee0d6a464ede3989f67a3dffbcc",
+    "backend/public/quantMatchPromptBridgeV4.js": "4440253cfc40645c8a7f1c5802d6039760e92ff4a9e7fcd8fa4a0da049952c06",
+    "public/quantMatchPromptBridgeV4.js": "4440253cfc40645c8a7f1c5802d6039760e92ff4a9e7fcd8fa4a0da049952c06",
+    "START_BETTING_CORE_CHAIN_R7.cjs": null,
+    "backend/public/CALCIO_V7_MASTER.txt": null,
+    "public/CALCIO_V7_MASTER.txt": null
+  },
+  "backups": {
+    "START_BETTING.cjs": "C:\\Users\\pc-user\\AppData\\Local\\BettingApp_R7_PromptV7\\backup_2026-11-14T20-30-34-614Z\\START_BETTING.cjs",
+    "backend/public/quantMatchPromptBridgeV4.js": "C:\\Users\\pc-user\\AppData\\Local\\BettingApp_R7_PromptV7\\backup_2026-11-14T20-30-34-614Z\\backend__public__quantMatchPromptBridgeV4.js",
+    "public/quantMatchPromptBridgeV4.js": "C:\\Users\\pc-user\\AppData\\Local\\BettingApp_R7_PromptV7\\backup_2026-11-14T20-30-34-614Z\\public__quantMatchPromptBridgeV4.js"
+  },
+  "installedAt": "2026-11-14T20:30:34.665Z"
+}

@@ -1,0 +1,18 @@
+{
+  "version": "BETTINGAPP_R21_DUAL_GABBIA_PROMPTS_V1_20261115",
+  "dbChanged": false,
+  "authorityChanged": false,
+  "realMoneyAuthorization": false,
+  "files": {
+    "public/CALCIO_V8_MASTER.txt": "bbec2bee59ff731aa69c68b36270902ca4b924b2a732869fca1dbbf279a51c76",
+    "backend/public/CALCIO_V8_MASTER.txt": "bbec2bee59ff731aa69c68b36270902ca4b924b2a732869fca1dbbf279a51c76",
+    "public/TENNIS_V7_MASTER.txt": "f1c2da3d4c63718932569e05778961a8cc3c938c01f33b1c971ab7712a33fad5",
+    "backend/public/TENNIS_V7_MASTER.txt": "f1c2da3d4c63718932569e05778961a8cc3c938c01f33b1c971ab7712a33fad5",
+    "public/quantMatchPromptBridgeV4.js": "7db5eb1f58f55783f91c00850e75feec6c8d51f9633a4093000aaaf54837b2f6",
+    "backend/public/quantMatchPromptBridgeV4.js": "7db5eb1f58f55783f91c00850e75feec6c8d51f9633a4093000aaaf54837b2f6",
+    "public/tennisPromptV62.js": "39c9e3b0996e01a3e4a67909b8c240f8ffc11889d73243de3d8d6c49672e2bb6",
+    "backend/public/tennisPromptV62.js": "39c9e3b0996e01a3e4a67909b8c240f8ffc11889d73243de3d8d6c49672e2bb6",
+    "backend/public/index.html": "66bf05507850b1de4c7c68d6dcd266114ef58bf51bacf4963fe2a7bd9bab12ef",
+    "public/index.html": "66bf05507850b1de4c7c68d6dcd266114ef58bf51bacf4963fe2a7bd9bab12ef"
+  }
+}

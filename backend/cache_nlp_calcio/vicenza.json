@@ -1,0 +1,190 @@
+{
+  "timestamp": 1794162350332,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 35,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 0
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Vicenza",
+      "officialDomain": null,
+      "status": "NO_RELEVANT_EVIDENCE",
+      "confidence": 0,
+      "coverageConfidence": 35,
+      "matchImpactConfidence": 0,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 963,
+          "received": 15,
+          "relevant": 0,
+          "fresh": 15,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T18:25:50.315Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 743,
+          "received": 3,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T18:25:50.095Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 18,
+        "relevantArticles": 0,
+        "usableArticles": 0,
+        "uniqueArticles": 0,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 0,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 0,
+        "independentPublishers": 0,
+        "excludedEvidence": 18,
+        "excludedSquadArticles": 0
+      },
+      "articles": [],
+      "excludedEvidence": [
+        {
+          "title": "out & about - army.mil",
+          "sourceName": "Army.mil",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "one way or another, cougars will face falcons for d-ii girls title - stars and stripes",
+          "sourceName": "Stars and Stripes",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "watch palermo v lr vicenza live today: who is showing the match on tv and streaming it live? - goal.com",
+          "sourceName": "Goal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "sister nulls, decades apart, reunited at setaf-af - army.mil",
+          "sourceName": "Army.mil",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "catanzaro vs. l.r. vicenza: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "tommaso corazza: transfer news, market value (etv) and stats - www.footballtransfers.com",
+          "sourceName": "www.footballtransfers.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "watch palermo v lr vicenza live today: who is showing the match on tv and live streaming? - goal.com",
+          "sourceName": "Goal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "this week in lazio history: october 26 – november 1 - livescore",
+          "sourceName": "LiveScore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "protesters clash with police in rome, turin and vicenza - ansa",
+          "sourceName": "ANSA",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "l.r. vicenza vs. carrarese: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "watch palermo v lr vicenza live today: who is showing the match on tv and via live stream? - goal.com",
+          "sourceName": "Goal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "l.r. vicenza vs. cesena: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Nessuna notizia fresca e first-team rilevante verificata: non equivale a rosa completa o assenze zero."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 5000,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

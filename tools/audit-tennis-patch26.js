@@ -1,0 +1,12 @@
+'use strict';
+const path=require('path');const {DatabaseSync}=require('node:sqlite');const bridge=require('../backend/tennisCanonicalPlayerEvidenceBridge');const registry=require('../backend/tennisPatchRegistry');const {COLUMNS}=require('../backend/migrateTennisPatch26');
+const db=new DatabaseSync(path.resolve(__dirname,'../backend/database_betting.db'),{readOnly:true});
+try{
+ const cols=new Set(db.prepare('PRAGMA table_info(ai_forward_test)').all().map(r=>r.name));const missing=COLUMNS.map(x=>x[0]).filter(x=>!cols.has(x));
+ const health=bridge.getHealth();const wta=bridge.buildMatchupBridge('Elisabetta Cocciaretto','Emma Navarro','WTA','2026-07-29T09:00:00Z',{});const atp=bridge.buildMatchupBridge('Ben Shelton','Martin Damm Jr.','ATP','2026-07-29T09:00:00Z',{});
+ const persisted=missing.length?0:Number(db.prepare('SELECT COUNT(*) n FROM ai_forward_test WHERE tennis_canonical_player_evidence_json IS NOT NULL').get().n||0);
+ const violations=missing.length?null:Number(db.prepare("SELECT COUNT(*) n FROM ai_forward_test WHERE tennis_canonical_player_evidence_json IS NOT NULL AND (tennis_canonical_player_evidence_status IS NULL OR tennis_canonical_player_evidence_version IS NULL)").get().n||0);
+ const success=registry.TENNIS_CURRENT_PATCH_VERSION==='26'&&health.success&&missing.length===0&&violations===0;
+ const output={success,readOnly:true,patch:'TENNIS_PATCH_26_CANONICAL_PLAYER_EVIDENCE_BRIDGE_WTA_CURRENT_PROFILE_RECOVERY',certification:success?'CANONICAL_PLAYER_EVIDENCE_BRIDGE_AND_WTA_CURRENT_PROFILE_RECOVERY_CERTIFIED':'NOT_CERTIFIED',registry:{version:registry.TENNIS_CURRENT_PATCH_VERSION,id:registry.TENNIS_PATCH_REGISTRY_VERSION},schema:{missingColumns:missing,persistedRows:persisted,violations},fixtures:{wta:{status:wta.status,p1Rank:wta.p1.currentRank,p2Rank:wta.p2.currentRank,p1Elo:wta.p1.overallElo,p2Elo:wta.p2.overallElo},atp:{status:atp.status,p2CanonicalName:atp.p2.canonicalPlayerName,p2Identity:atp.p2.identityResolution,p2DominanceRatio:atp.p2.dominanceRatio}},guards:{identityAndDisplayAuthority:true,deepScanContextOnly:true,modelProbabilityAuthority:false,qualityGateAuthority:false,stakeAuthority:false,settlementAuthority:false,newOddsApiCalls:0},nextStep:persisted>0?'PATCH26_LIVE_EVIDENCE_CAPTURED':'RESTART_SERVER_CTRL_F5_RUN_ONE_FRESH_TENNIS_ANALYSIS_THEN_AUDIT_PATCH26'};
+ console.log(JSON.stringify(output,null,2));if(!success)process.exit(1);
+}finally{db.close();}

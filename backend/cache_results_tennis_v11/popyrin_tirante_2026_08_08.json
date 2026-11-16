@@ -1,0 +1,19 @@
+{
+  "timestamp": 1793877860561,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 1,
+  "totalGames": 38,
+  "isVoid": false,
+  "source": "STEP58_WEB_FALLBACK_SCORE_GUARDED",
+  "confidence": 0.9,
+  "step107WeakWinnerSide": true,
+  "observedAt": "2026-11-05T11:24:20.561Z",
+  "sourceEventId": "WEB:c8a3bd69aede5566f918",
+  "rawEvidence": {
+    "query": "popyrin tirante tennis score 2026-08-08 result",
+    "matchDate": "2026-08-08",
+    "excerpt": "alexei popyrin thiago agustin tirante live score and h2h results ... alexei popyrin thiago agustin tirante live score starts on 8 aug 2026 at 00 25 utc time at stadium stadium montreal city canada in montreal canada atp. alexei popyrin v thiago agustin tirante 08 08 2026 follow alexei popyrin v thiago agustin tirante 08 08 2026 match information alexei popyrin latest results news highlights and alexei popyrin v thiago agustin tirante h2h statistics flashscore tennis coverage includes tennis scores and tennis news from more than 5000 tournaments worldwide. alexei popyrin vs thiago agustin tirante round 3 - tennis.com alexei popyrin vs thiago agustin tirante round 3 atp montreal live score statistics and broadcast info on tennis.com. alexei popyrin - thiago agustin tirante results score 08-08-2026 alexei popyrin - thiago agustin tirante on 08-08-2026 delivered a great game finishing 0 2 at stade iga. court rogers montreal canada in the atp montreal canada men singles 2026 playoffs round of 32 event. find full match statistics results and the updated standings on escore alexei popyrin v thiago agustin tirante 08 08 2026 stats 100 welcome bonus up to r3 000 follow alexei popyrin v thia"
+  },
+  "score": "6-3 6-4 6-3 6-4",
+  "note": "Risultato da web fallback: classificato PROPOSED da Patch 5; non chiude automaticamente senza fonte strutturata/certificata."
+}

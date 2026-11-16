@@ -1,0 +1,4 @@
+'use strict';
+const path=require('path');const {DatabaseSync}=require('node:sqlite');const {COLUMNS}=require('../backend/migrateTennisPatch26');
+const db=new DatabaseSync(path.resolve(__dirname,'../backend/database_betting.db'),{readOnly:true});
+try{const cols=new Set(db.prepare('PRAGMA table_info(ai_forward_test)').all().map(r=>r.name));const missing=COLUMNS.map(x=>x[0]).filter(x=>!cols.has(x));const total=Number(db.prepare('SELECT COUNT(*) n FROM ai_forward_test').get().n||0);const populated=missing.length?null:Number(db.prepare("SELECT COUNT(*) n FROM ai_forward_test WHERE tennis_canonical_player_evidence_version IS NOT NULL").get().n||0);const result={success:missing.length===0,missing,total,populated,historicalBackfill:false};console.log(JSON.stringify(result,null,2));if(missing.length)process.exit(1);}finally{db.close();}

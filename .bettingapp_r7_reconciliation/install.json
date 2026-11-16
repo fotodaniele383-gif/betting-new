@@ -1,0 +1,15 @@
+{
+  "version": "BETTINGAPP_R7_EVIDENCE_AND_EDITOR_E2E_20261110",
+  "r6Mode": "RELIABILITY10_PLUS_REAL_MANUAL_PLUS_CALCIO_MAIN_R6_TENNIS_V62",
+  "dbChanged": false,
+  "legacyStakeChanged": false,
+  "installedAt": "2026-11-12T21:23:28.037Z",
+  "files": {
+    "AVVIA_R7_RECONCILIAZIONE.cmd": "0cbb661c4817214580c5f6316b6b5907d56668dab34771b05c36d35928858da7",
+    "addons/reliability-r7/core.cjs": "d30c4e1562cbbd3b21c03507ddf79f063b464e09d9b9ee739efb0fb1b7eb7a0f",
+    "addons/reliability-r7/public/app.js": "cfaf8b4210cb553f8a0f3075b05460cbb33cd3290e737477eccc4e1327fb0efd",
+    "addons/reliability-r7/public/index.html": "fe72191a8f7f6cc0c2735bde8e3ea6afa517b4d32d4f7619f96008490d457e09",
+    "addons/reliability-r7/public/style.css": "425995828dd623b629b6fe25565d90350a347187b66959780dfedc05dfd9174c",
+    "addons/reliability-r7/server.cjs": "893e7e4b0fc92674730513996aa4080f9726eed79fb56bf190f6bae39a91469d"
+  }
+}

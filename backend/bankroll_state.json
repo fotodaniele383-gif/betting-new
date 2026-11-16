@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-05-20T13:53:55.742Z",
+  "sports": {
+    "CALCIO": {
+      "baseBankroll": 1000,
+      "baselineProfit": 0,
+      "updatedAt": "2026-05-19T13:02:33.931Z",
+      "source": "MANUAL"
+    },
+    "TENNIS": {
+      "baseBankroll": 1088.67,
+      "baselineProfit": -99.48,
+      "updatedAt": "2026-05-20T13:53:55.742Z",
+      "source": "MANUAL"
+    }
+  }
+}

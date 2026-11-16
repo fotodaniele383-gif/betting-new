@@ -1,0 +1,18 @@
+{
+  "version": "BETTINGAPP_MAIN_R3_WINDOWS_EDITOR_REPAIR_V1",
+  "beforeHash": "f26a81b54ae1cad17d65295bb5b4df42198f7cabd015cfd965c3ca579740bfd0",
+  "afterHash": "2bc45c03ead990aac45da15f4b9936ae7f45b1c00695cc683219f257b825e9cd",
+  "filesAdded": [
+    "addons/calcio-editor/core.js",
+    "addons/calcio-editor/deepscan-worker.cjs",
+    "addons/calcio-editor/math.js",
+    "addons/calcio-editor/prompts/CALCIO_H_V2.md",
+    "addons/calcio-editor/prompts/TENNIS_H_V2.md",
+    "addons/calcio-editor/public/app.js",
+    "addons/calcio-editor/public/index.html",
+    "addons/calcio-editor/public/style.css",
+    "addons/calcio-editor/server.cjs"
+  ],
+  "verifiedPayload": true,
+  "dbChanged": false
+}

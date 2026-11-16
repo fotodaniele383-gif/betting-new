@@ -1,0 +1,27 @@
+{
+  "version": "PF_MAIN_PAPER_V1_20261106",
+  "target": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "createdAt": "2026-11-06T11:17:29.114Z",
+  "before": {
+    "backend/calcioProbabilityFirst.js": "62963b900209367e76965f1f721c1331140ba16763dcf5de31549d88c0dbab3f",
+    "backend/calcioUnifiedStakeAuthority.js": "6a61f1071b38532104f25efbab519f0a14824419960a0b736956e5c32c99dbd6",
+    "backend/server.js": "ece182214d7539b5ca63eb5052595f2d66b754fcebebc79903a8cf456c8db982",
+    "backend/calcioBatchPortfolioAllocator.js": "1e3d776f80653369309ee9b1560a222fa2d9fe33a19ef0e031237c096d700b67",
+    "backend/calcioFinalMarketDiagnosticContract.js": "8eea3517fc7ba05cc06b462622c1124de3a1aa5e40491eedd58be514667fee9a",
+    "backend/public/probability-first.html": "2c6c88d9b3de9adc82782e589651875674d7a4796a02b66c81e31f2683b588e0",
+    "BETTINGAPP_STANDALONE_STATE.json": "d31da3294b0c2ba696c3200c0f0bc2a23a6d1861d9734080b7082a6aa037d7c4"
+  },
+  "after": {
+    "backend/calcioProbabilityFirst.js": "3b398a583f85ca30844ac721a2a8cdbb577e7c06c11a35156d36a0f944043cf1",
+    "backend/calcioUnifiedStakeAuthority.js": "2bb4d6c280bf024aad9b5a26b524318ae194a1947ea32cdb848f3264b3458a0f",
+    "backend/server.js": "21686d9f10050d9686853d554e4f335092249b82105355ad303475021159e832",
+    "backend/calcioBatchPortfolioAllocator.js": "eaab40c7eece75bcb354e67b0547dcb05f08d55bfcc9365a1c57240210ce0611",
+    "backend/calcioFinalMarketDiagnosticContract.js": "a9b368b0f5109ac434d15df640dd1966cba8c9247158b151b41cbe1ad8c582e6",
+    "backend/public/probability-first.html": "543a5cc34fa9dd9d7f9c996b02c4a4e73cdcddde41d801cba5b64219bce3e964",
+    "backend/calcioPfMainPaperAuthority.js": "d0de8dd2cd39144ccae0cbed978d173d44d953bb713e1644e8d75fed3e7a7204"
+  },
+  "stateAfter": "6fa3b130f3d5d681e2d55427516aae8778f393a6a2a2187010aaf8d00011bd8c",
+  "dbBackupMethod": "BETTER_SQLITE3_ONLINE_BACKUP",
+  "dbSnapshot": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.pf-main-paper-v1\\database_betting.BACKUP.db",
+  "paperOnly": true
+}

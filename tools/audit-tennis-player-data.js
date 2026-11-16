@@ -1,0 +1,12 @@
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const refresh = require('../backend/tennisPlayerDataRefresh');
+const root = path.resolve(__dirname, '..');
+const auditDir = path.join(root, 'audit_patch14'); fs.mkdirSync(auditDir, { recursive: true });
+const report = { ...refresh.getPlayerDataHealth({ dataDir: path.join(root, 'backend', 'sackmann_data'), initialize: true }), readOnly: true, generatedAt: new Date().toISOString() };
+fs.writeFileSync(path.join(auditDir, 'patch14_player_data_audit.json'), JSON.stringify(report, null, 2));
+const lines = ['# Patch 14 — Player Data Freshness Audit', '', `Status: **${report.status}**`, `Ultimo match: ${report.latestMatchAt || 'N/D'}`, `Età dati: ${report.dataAgeDays ?? 'N/D'} giorni`, `Ultimo refresh: ${report.lastRefreshAt || 'mai'}`, '', '| Fonte | Presente | Righe valide | Ultimo match |', '|---|---:|---:|---|', ...(report.localSources || []).map(item => `| ${item.sourceId || item.localFile} | ${item.exists ? 'SÌ' : 'NO'} | ${item.validRows || 0} | ${item.latestMatchAt || 'N/D'} |`)];
+fs.writeFileSync(path.join(auditDir, 'patch14_player_data_audit.md'), lines.join('\n'));
+console.log(JSON.stringify(report, null, 2));
+if (report.success === false) process.exitCode = 2;

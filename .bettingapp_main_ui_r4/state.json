@@ -1,0 +1,25 @@
+{
+  "version": "BETTINGAPP_CALCIO_EDITOR_R4_MATCH_AND_DEEPSCAN_20261109",
+  "from": "BETTINGAPP_CALCIO_MAIN_UI_R3_20261109",
+  "installed": {
+    "addons/calcio-editor/server.cjs": "c8dbafc73ee1374c4918306e61a779aa2d0c334c0d8b0bdc42210c593343415b",
+    "addons/calcio-editor/core.js": "fb5c5f7358409707e697af9a21fd08d9d4c926f69126c12d065ec8787a760872",
+    "addons/calcio-editor/main-router-r3.cjs": "228d583deec4b419a8a0198dba7f6b80191ada3c6757805811c68c2d5d20e89a",
+    "addons/calcio-editor/public/app.js": "4a4b961c698c977a9e1cd4b046c34c0f3879b930209b29e464d5a59b57c26927",
+    "addons/calcio-editor/public/index.html": "17d754596e4bfb4de26f8868a4a5ef94171a9536572618f1b16970ba09947920",
+    "backend/public/calcioEditorMainR3.js": "2d93295a829a7076aca1650ec8b7be13e0b91e44583463e5198e1cfd068a5674",
+    "START_BETTING.cjs": "e13f659a0623c23d5fd53aa87dde1242af987ff4d0334c8dad860980db926864",
+    "START_BETTING_CORE_CHAIN_R4.cjs": "a716aab42d8863ddb1c9e67e67fbb7e54fcadfce3c93582cfd6a85d3cacb5dc5"
+  },
+  "before": {
+    "addons/calcio-editor/server.cjs": "3f51ffa5caf97b56ac4802fe55ac2c19c0bfcb5f217aaddec7cf5fbdd7467252",
+    "addons/calcio-editor/core.js": "36cbf8c6c6f587b4f21865abf2cd987d9c5303469110ebd2f7bf717422ac2c88",
+    "addons/calcio-editor/main-router-r3.cjs": "bf7afe8213b59e050867b828145fd094ea1fd0f4ba32e053b375b01693875dd3",
+    "addons/calcio-editor/public/app.js": "ded51a86ee156c5ad252ba832b287756860e18986364a35c3e268edba93b4ae9",
+    "addons/calcio-editor/public/index.html": "c3d067bc6a42b0b19cea0110e59db74b644c446dd721730dc17cd2bb5e97a757",
+    "backend/public/calcioEditorMainR3.js": "7527145c72288b3d462e8d300a9ac9241b152001eebed0b21a1367247b06a4f1",
+    "START_BETTING.cjs": "4f099de82ffdb70994b0607b7080a0213368dbb81539cf29be3046c7cf205539"
+  },
+  "dbChanged": false,
+  "installedAt": "2026-11-09T16:32:18.975Z"
+}

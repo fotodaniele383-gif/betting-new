@@ -1,0 +1,23 @@
+{
+  "operationId": "CALCIO_FD_SP1_1794164576747",
+  "fetchedAt": "2026-11-08T19:02:56.747Z",
+  "lastSuccessAt": "2026-11-08T19:02:56.747Z",
+  "source": "NETWORK",
+  "season": "2627",
+  "url": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
+  "leagueKey": "la_liga",
+  "leagueName": "La Liga",
+  "code": "SP1",
+  "attemptedSeasons": [
+    "2627"
+  ],
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "sha256": "839e3c4994af05edcca50f8efe8beb42ef5996f1374f68fc705aa8cd206921a6",
+  "validRows": 109,
+  "rejectedRows": 0,
+  "earliestMatchAt": "2026-08-15T12:00:00.000Z",
+  "latestMatchAt": "2026-11-02T12:00:00.000Z",
+  "sizeBytes": 52114,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_SP1_1794164576747"
+}

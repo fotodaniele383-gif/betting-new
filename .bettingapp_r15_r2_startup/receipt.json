@@ -1,0 +1,13 @@
+{
+  "version": "R15_R2_STARTUP_RECONCILIATION",
+  "installedAt": "2026-11-08T17:55:37.603Z",
+  "stateBeforeHash": "c7018304aea3e98f5f92475b98c091148a67a6c878a8a30c4ef9835a3d04fe21",
+  "stateAfterHash": "bd7d9260aa4d4ea816dcabb212cfaa30694cd94dd1375b0dd986ac4d14e62111",
+  "serverSha256": "01592301b41839ffc6ec1de53f7b909d07d31c90f3157e797fca6d46f0150718",
+  "tennisSha256": "b35154f10c7a2dcccdfc62d1c8212e9ffa54fb2c43bac3229965206380fc5da5",
+  "launcherSha256": "14edf1eefb18c1e2593a2df54f939a8f2f3a8039402705b1e416d979ebb033a0",
+  "dbSha256": "a6228ead3f34a849acd885f6650a2f48526825a25c9b77d253fbcf382f371b7e",
+  "r15BackupsPresent": 6,
+  "r15BackupsRequired": 6,
+  "stateOnly": true
+}

@@ -1,0 +1,10 @@
+{
+  "providerId": "TENNISMYLIFE_BULK",
+  "resourceId": "TML_CHALLENGER_2026",
+  "url": "https://stats.tennismylife.org/data/2026_challenger.csv",
+  "fetchedAt": "2026-11-15T13:57:02.362Z",
+  "etag": "W/\"15cda9-1a1bd687542\"",
+  "lastModified": "Sun, 08 Nov 2026 23:05:02 GMT",
+  "bytes": 1428905,
+  "sha256": "29948bce86a2f76be5b73f3d42087726114a484a3eb8a637ff2347232d80a040"
+}

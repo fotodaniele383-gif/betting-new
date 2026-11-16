@@ -1,0 +1,103 @@
+{
+  "version": "SCHEDULER_RELIABILITY_OPERATIONAL_STATE_MACHINE_V1_PATCH58",
+  "policyVersion": "SCHEDULER_RELIABILITY_POLICY_V1_PATCH58",
+  "stateSchemaVersion": "SCHEDULER_OPERATIONAL_STATE_SCHEMA_V1_PATCH58",
+  "sport": "TENNIS",
+  "state": "SCHEDULED",
+  "handoffState": "BLOCKED_UPSTREAM_GATE",
+  "reasonCode": "RUN_COMPLETED_SUCCESSFULLY",
+  "updatedAt": "2026-10-12T15:43:28.456Z",
+  "lastTransitionAt": "2026-10-10T09:39:37.227Z",
+  "transitionSeq": 48,
+  "runId": null,
+  "heartbeatAt": null,
+  "runStartedAt": "2026-10-10T09:37:28.935Z",
+  "runCompletedAt": "2026-10-10T09:39:37.226Z",
+  "lastSuccessAt": "2026-10-10T09:39:37.226Z",
+  "lastFailureAt": "2026-10-05T08:06:27.603Z",
+  "lastFailureReason": null,
+  "failureCount": 0,
+  "nextRetryAt": null,
+  "configEnabled": true,
+  "configFingerprint": "6f3d251a9422823fce539c68aaddfce1d284e0ca7a6ebd7f8bb4330869716144",
+  "historical": {
+    "importedFromLegacyScheduler": true,
+    "lastRunSuccess": false,
+    "lastRunAt": "2026-08-07T15:12:59.846Z",
+    "lastCompletedAt": "2026-08-07T15:29:04.423Z",
+    "lastSkipReason": null
+  },
+  "reconcile": {
+    "success": true,
+    "version": "CLV_CROSS_SPORT_SPORT_KEY_RESOLUTION_V1_PATCH53",
+    "before": {
+      "eligible": 1613,
+      "persisted": 1588,
+      "gap": 25
+    },
+    "after": {
+      "eligible": 1613,
+      "persisted": 1613,
+      "gap": 0
+    },
+    "firstPass": {
+      "success": true,
+      "version": "CLV_CROSS_SPORT_SPORT_KEY_RESOLUTION_V1_PATCH53",
+      "scanned": 1613,
+      "changed": 28,
+      "unchanged": 1585,
+      "resolved": 764,
+      "unresolved": 849,
+      "bySport": {
+        "TENNIS": {
+          "resolved": 335,
+          "unresolved": 849
+        },
+        "CALCIO": {
+          "resolved": 429,
+          "unresolved": 0
+        }
+      },
+      "businessValuesChanged": false
+    },
+    "secondPass": {
+      "success": true,
+      "version": "CLV_CROSS_SPORT_SPORT_KEY_RESOLUTION_V1_PATCH53",
+      "scanned": 1613,
+      "changed": 0,
+      "unchanged": 1613,
+      "resolved": 764,
+      "unresolved": 849,
+      "bySport": {
+        "TENNIS": {
+          "resolved": 335,
+          "unresolved": 849
+        },
+        "CALCIO": {
+          "resolved": 429,
+          "unresolved": 0
+        }
+      },
+      "businessValuesChanged": false
+    },
+    "integrity": "ok",
+    "foreignKeyViolations": 0,
+    "businessValuesUnchanged": true,
+    "networkCalls": 0,
+    "evidenceHash": "4e44fd3e62d3b0a71122c61ed8a8ec31ac681dbb54ce79f7f07004bb19b755e7"
+  },
+  "lock": {
+    "held": false,
+    "runId": null,
+    "acquiredAt": null,
+    "recoveredStaleLock": false
+  },
+  "authority": {
+    "schedulerOperationalStateOnly": true,
+    "probabilityMutation": false,
+    "paperStakeMutation": false,
+    "realMoneyStakeAuthority": false,
+    "settlementAuthority": false,
+    "automaticProductionActivation": false
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "timestamp": 1793881000360,
+  "cacheSchemaVersion": "CALCIO_PATCH_7_NLP_CACHE_V2",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 35,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 0
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_PATCH_24_SEMANTIC_FOOTBALL_ENTITY_FILTER_V1",
+      "cacheSchemaVersion": "CALCIO_PATCH_7_NLP_CACHE_V2",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Mantova",
+      "officialDomain": null,
+      "status": "NO_RELEVANT_EVIDENCE",
+      "confidence": 0,
+      "coverageConfidence": 35,
+      "matchImpactConfidence": 0,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1093,
+          "received": 15,
+          "relevant": 0,
+          "fresh": 15,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-05T12:16:40.357Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1082,
+          "received": 1,
+          "relevant": 0,
+          "fresh": 1,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-05T12:16:40.346Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 16,
+        "relevantArticles": 0,
+        "usableArticles": 0,
+        "uniqueArticles": 0,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 0,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 0,
+        "independentPublishers": 0,
+        "excludedEvidence": 16
+      },
+      "articles": [],
+      "excludedEvidence": [
+        {
+          "title": "mantova vs. cremonese (27 oct, 2026) live score - espn",
+          "sourceName": "ESPN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "mantova vs hellas verona - live score, predicted lineups and h2h stats - fotmob",
+          "sourceName": "FotMob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "inzaghi press conference saturday 24th october - palermo f.c.",
+          "sourceName": "Palermo F.C.",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "mantova vs. cremonese (27 oct, 2026) live score - espn (uk) - espn",
+          "sourceName": "ESPN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "vanja vlahović stats and ratings - sofascore",
+          "sourceName": "Sofascore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "avellino vs. mantova: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "iraola drops transfer hint! + arsenal injury crisis? liverpool fc latest transfer news - onefootball",
+          "sourceName": "OneFootball",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "rareș ilie: transfer news, market value (etv) and stats - www.footballtransfers.com",
+          "sourceName": "www.footballtransfers.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "ashley cole interviewed for first efl job but faces competition from championship coach - talksport",
+          "sourceName": "talkSPORT",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "frattesi and gattuso from italy’s world cup disappointment to lazio surprise - livescore",
+          "sourceName": "LiveScore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "sudtirol bolzano vs. mantova: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "modena-mantova 1-1, the virgilians don't give up and spinaccé takes home a valuable draw. - quotidiano sportivo",
+          "sourceName": "Quotidiano Sportivo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Nessuna notizia fresca e first-team rilevante verificata: non equivale a rosa completa o assenze zero."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_PATCH_24_SEMANTIC_FOOTBALL_ENTITY_FILTER_V1",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

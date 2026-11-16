@@ -1,0 +1,27 @@
+{
+  "version": "BETTINGAPP_R11_ADDON_DATA_FIRST_20261113",
+  "installedAt": "2026-11-13T13:42:15.760Z",
+  "dbWrite": false,
+  "coreReplacement": false,
+  "autoBet": false,
+  "autoSettlement": false,
+  "safe13Changed": false,
+  "stakeGateChanged": false,
+  "promptConsultative": true,
+  "manualDataActivationOnly": true,
+  "files": {
+    "APRI_INTERFACCIA_R11.cmd": "92797aa7058e6fd8cae4f5e7474a6c64ad1f85a57384ff67b551757b4d689adc",
+    "R11_ATTIVA_IMPORT_TENNIS.cmd": "f1aea53ffaedf79f3d669e597e71b263dd3f176ae7dce62bbe6fc0d575961747",
+    "R11_DIAGNOSI_LIVE.cmd": "893345b7a7f4f8bc177a3b0cebb1797e7e69cc6eaab91f88016e55bf72c98239",
+    "R11_PREPARA_IMPORT_TENNIS.cmd": "b0480ac8cda7be7e47a4bede6ac053ceb867466d84ab9da4d40f344dc2bdb960",
+    "addons/data-first-r11/diagnosis.cjs": "3c11cc0404dbd23f4756f084f1479c48ade7e98379144d816ff6d550171c7723",
+    "addons/data-first-r11/live.cjs": "e0d10c05e41bc64fee1e1e0107582cd96c8c84edf1bbcff861efd94eef26a107",
+    "addons/data-first-r11/tennis-intake.cjs": "c58465c3ae6be76ecbcf91fc47dde494e83113b2381aa48aca9d4112c7d0ab3f",
+    "backend/public/TENNIS_V7_1_MINIMAX_INDIPENDENTE.txt": "79d78e5139e9207703fbdf4406ff3c72dda977b9939d2e9cccd5673fa23ddcb8",
+    "backend/public/index-r11.html": "11042f651a2fd0d7a66f59adc57fe734ac2b079e950b5a09d7050bda6a119356",
+    "backend/public/r11-tennis-v7.js": "268fb006cb16b7807c4293609c089b91e5eaae846d35e924e7071251011b26db",
+    "public/TENNIS_V7_1_MINIMAX_INDIPENDENTE.txt": "79d78e5139e9207703fbdf4406ff3c72dda977b9939d2e9cccd5673fa23ddcb8",
+    "public/index-r11.html": "11042f651a2fd0d7a66f59adc57fe734ac2b079e950b5a09d7050bda6a119356",
+    "public/r11-tennis-v7.js": "268fb006cb16b7807c4293609c089b91e5eaae846d35e924e7071251011b26db"
+  }
+}

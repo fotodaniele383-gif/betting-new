@@ -1,0 +1,304 @@
+{
+  "timestamp": 1794822025841,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 76.2,
+    "sourceCoverageConfidence": 78,
+    "matchImpactConfidence": 76.2,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 65,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 5
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Newcastle United",
+      "officialDomain": "newcastleunited.com",
+      "status": "PARTIAL",
+      "confidence": 76.2,
+      "coverageConfidence": 78,
+      "matchImpactConfidence": 76.2,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1057,
+          "received": 15,
+          "relevant": 12,
+          "fresh": 5,
+          "usable": 5,
+          "excluded": 0,
+          "officialUsable": 5,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:25.420Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1467,
+          "received": 15,
+          "relevant": 5,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:25.830Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1090,
+          "received": 3,
+          "relevant": 1,
+          "fresh": 1,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:40:25.453Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 33,
+        "relevantArticles": 18,
+        "usableArticles": 5,
+        "uniqueArticles": 5,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 5,
+        "officialArticles": 5,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 28,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "latest. how to watch fulham vs newcastle united: tv details, kick-off time and team news - newcastle united",
+          "originalTitle": "Latest. How to watch Fulham vs Newcastle United: TV details, kick-off time and team news - Newcastle United",
+          "fullText": "latest. how to watch fulham vs newcastle united: tv details, kick-off time and team news - newcastle united <a href=\"https://news.google.com/rss/articles/cbmiugfbvv95cuxquwrot0iteeprq01omhotzvvslwxnzne3m29xzy1wsm15ttd5cunjugzsb0vymda3tm5ua3zvzuzialmtrgvdmutqqw5nahdhskpnbw44c09kqxj3tlvys2t4cmmzcf9ezzvjvxmzs2hputfkaffibndrwhrwqus4efc2ynzvtnjlcnv5mhexszuwahpvugfdqmpgsdnhbhzyqzfvrhnxyllpmzruqlg0c0dyrzvnt2p4vhc?oc=5\" target=\"_blank\">latest. how to watch fulham vs newcastle united: tv details, kick-off time and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">newcastle united</font>",
+          "sourceName": "Newcastle United",
+          "sourceUrl": "https://www.newcastleunited.com",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUWROT0IteEprQ01oMHotZVVsLWxNZnE3M29XZy1WSm15TTd5cUNJUGZsb0VyMDA3Tm5Ua3ZvZUZialMtRGVDMUtQQW5NaHdHSkpNbW44c09kQXJ3TlVYS2t4cmMzcF9EZzVjVXMzS2hpUTFKaFFibndRWHRwQUs4eFc2YnZVTnJLcnV5MHExSzUwaHpVUGFDQmpGSDNHbHZyQzFVRHNXYllPMzRUQlg0c0dYRzVnT2p4VHc?oc=5",
+          "publishedAt": "2026-11-06T08:00:00.000Z",
+          "ageDays": 10.07,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "latest. how to watch newcastle united vs everton: tv details, kick-off time & team news - newcastle united",
+          "originalTitle": "Latest. How to watch Newcastle United vs Everton: TV details, kick-off time & team news - Newcastle United",
+          "fullText": "latest. how to watch newcastle united vs everton: tv details, kick-off time & team news - newcastle united <a href=\"https://news.google.com/rss/articles/cbmiuwfbvv95cuxpbtzhauhzrmjptmpuag1su1yzte9bsxrimzzwajm0uxjoskqtowtqnjjnq1o5r0lncl9su3c5wldwu0tetfftywt6y1fvx3hrs2ktbzl0adqytmexag1orev6anlkotzzzvvlbl9knujqsxbms3mzatmwyxhfq2m3s3pid1qtdmfts0z5c3zjd09frhb2wghjvezwrtjqetiynejyrlp2b0xrbznjetn5uxjdqlblzkpovznn?oc=5\" target=\"_blank\">latest. how to watch newcastle united vs everton: tv details, kick-off time & team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">newcastle united</font>",
+          "sourceName": "Newcastle United",
+          "sourceUrl": "https://www.newcastleunited.com",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbTZHaUhzRmJPTmpuaG1sU1YzTE9BSXRIMzZWajM0UXJoSkQtOWtQNjJnQ1o5R0lncl9SU3c5WldWU0tETFFTYWt6Y1FvX3hrS2ktbzl0aDQyTmExaG1OREV6anlKOTZZZVVlbl9kNUJQSXBmS3MzaTMwYXhfQ2M3S3pid1QtdmFtS0Z5c3Zjd09FRHB2WGhJVEZWRTJQeTIyNEJyRlp2b0xrbzNJeTN5UXJDQlBLZkpOVzNn?oc=5",
+          "publishedAt": "2026-11-02T08:00:00.000Z",
+          "ageDays": 14.07,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "latest. matthias jaissle's team news update: joelinton and fernandez-pardo latest ahead of fulham clash - newcastle united",
+          "originalTitle": "Latest. Matthias Jaissle's team news update: Joelinton and Fernandez-Pardo latest ahead of Fulham clash - Newcastle United",
+          "fullText": "latest. matthias jaissle's team news update: joelinton and fernandez-pardo latest ahead of fulham clash - newcastle united <a href=\"https://news.google.com/rss/articles/cbmizgfbvv95cuxpwufdvznqsuhxsmphs05dve0ycfdxd3bdt0z4bwtrwdrgc093y29rsdntdzfyrvdtzxfpuumxvmrdnnfrr015y2fkuvvzb0d5nwsywm81nnjtumfuoxfadhr1nnbycdfxvdnebjzomlnub1llnem0d19pnfreqnriqmdtserkz0lcdnk4tkjzbzrpt2f6x1vkyxpty2pgthnmmgvownhjaxplbi1vufz3vhvlalytczblrlzantvwtnnjduplalrzq0fgehffzw?oc=5\" target=\"_blank\">latest. matthias jaissle's team news update: joelinton and fernandez-pardo latest ahead of fulham clash</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">newcastle united</font>",
+          "sourceName": "Newcastle United",
+          "sourceUrl": "https://www.newcastleunited.com",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWUFDVzNqSUhxSmpHS05DVE0ycFdXd3BDT0Z4bWtrWDRGc093Y29RSDNTdzFyRVdTZXFPUUMxVmRDNnFRR015Y2FkUVVzb0d5NWsyWm81NnJtUmFuOXFadHR1NnBycDFXVDNEbjZOMlNub1lLNEM0d19PNFREQnRiQmdTSERKZ0lCdnk4TkJzbzRpT2F6X1VkYXptY2pGTHNmMGVOWnhJaXpLbi1vUFZ3VHVlalYtczBlRlZaNTVWTnNjdUplalRzQ0FGeHFfZw?oc=5",
+          "publishedAt": "2026-11-05T08:00:00.000Z",
+          "ageDays": 11.07,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "latest. matthias jaissle's team news update: fernandez-pardo and miley latest ahead of carabao cup tie - newcastle united",
+          "originalTitle": "Latest. Matthias Jaissle's team news update: Fernandez-Pardo and Miley latest ahead of Carabao Cup tie - Newcastle United",
+          "fullText": "latest. matthias jaissle's team news update: fernandez-pardo and miley latest ahead of carabao cup tie - newcastle united <a href=\"https://news.google.com/rss/articles/cbmizafbvv95cuxoy0hux29hzjnamejptmlxtgs3v05mt1bwsldldkz1ckl5rhbetxzkltm3vkllr0dsq253ehpizzyyvfhsrg8ttna0cxpiehpkt0tzdmnzclnnwthla3e1meprmngttjhzr2zotfb1bnvcsu9nv2lenfjyvlnuvnzwwvhwwf9hz0tjnvnuq0t4r3boavrrzghmr1hqeuh2tem0wxixrvdqwdnmogronhpdnehwrulgoufhdgvnwmnxb3fmumvaqvfiuy1mee0?oc=5\" target=\"_blank\">latest. matthias jaissle's team news update: fernandez-pardo and miley latest ahead of carabao cup tie</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">newcastle united</font>",
+          "sourceName": "Newcastle United",
+          "sourceUrl": "https://www.newcastleunited.com",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOY0hUX29hZjNaMEJpTmlxTGs3V05MT1BwSldLdkZ1ckl5RHBETXZKLTM3VklLR0dsQ253eHpiZzYyVFhsRG8tTnA0cXpieHpkT0tzdmNzclNnWThLa3E1MEpRMngtTjhZR2ZOTFB1bnVCSU9nV2lENFJyVlNuVnZWWVhwWF9HZ0tjNVNuQ0t4R3BOaVRRZGhmR1hQeUh2TEM0WXIxRVdQWDNMOGRONHpDNEhWRUlGOUFHdGVNWmNxb3FmUmVaQVFiUy1MeE0?oc=5",
+          "publishedAt": "2026-10-27T07:00:00.000Z",
+          "ageDays": 20.11,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "latest. how to watch everton vs newcastle united: tv channel, kick-off time & team news - newcastle united",
+          "originalTitle": "Latest. How to watch Everton vs Newcastle United: TV channel, kick-off time & team news - Newcastle United",
+          "fullText": "latest. how to watch everton vs newcastle united: tv channel, kick-off time & team news - newcastle united <a href=\"https://news.google.com/rss/articles/cbmiuwfbvv95cuxncvgtreriehrmsutfse1fuflvm05cakxuohjvythwmjkxourcymjztmj6sfrqr2nrsehsdk5az3zyrknyz2zeslbzzxdpeuxlodvcmm1szdg2sjbsdghovxlkznv1setfltnpdxbotl9uefvzdxfjtkfpdtlqmc1kznnna1fzauk4muhrng5uynlfvng5shhtetneute4tndtde55m3vowgdacwrwdnloqthulxm3rmc3zhhj?oc=5\" target=\"_blank\">latest. how to watch everton vs newcastle united: tv channel, kick-off time & team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">newcastle united</font>",
+          "sourceName": "Newcastle United",
+          "sourceUrl": "https://www.newcastleunited.com",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcVgtRERIeHRmSUtFSE1FUFlVM05CakxuOHJvYThWMjkxOURCYmJzTmJ6SFRqR2NrSEhSdk5aZ3ZyRkNyZ2ZESlBzZXdpeUxLODVCMm1SZDg2SjBsdGhoVXlkZnV1SEtfLTNPdXBOTl9ueFVZdXFjTkFpdTlqMC1KZnNNa1FzaUk4MUhrNG5uYnlFVng5SHhteTNEUTE4TndTdE55M3VoWGdacWRWdnlOQThuLXM3Rmc3ZHhj?oc=5",
+          "publishedAt": "2026-10-29T07:00:00.000Z",
+          "ageDays": 18.11,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "men's team - squad listing - newcastle united",
+          "sourceName": "Newcastle United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "latest. matthias jaissle's team news update: elanga and ramsey latest ahead of palace trip - newcastle united",
+          "sourceName": "Newcastle United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "latest. how to watch newcastle united vs west brom: tv channel, kick-off time and team news - newcastle united",
+          "sourceName": "Newcastle United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "newcastle united adidas 26/27 navy pre-match shirt - newcastle united shop",
+          "sourceName": "Newcastle United Shop",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "how to watch fulham vs newcastle united: tv channel, ki... - newcastle united",
+          "sourceName": "Newcastle United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "eddie howe's team news update: gordon injury latest ahe... - newcastle united",
+          "sourceName": "Newcastle United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "partners. newcastle united announces multi-year partnership with sumup as official training kit partner - newcastle united",
+          "sourceName": "Newcastle United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "newcastle united adidas 25/26 coach's black edition training shorts - newcastle united shop",
+          "sourceName": "Newcastle United Shop",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "matthias jaissle's team news update: fernandez-pardo an... - newcastle united",
+          "sourceName": "Newcastle United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "newcastle united adidas 25/26 coach's range training shirt - newcastle united shop",
+          "sourceName": "Newcastle United Shop",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "matthias jaissle's team news update: 'warrior' joelinto... - newcastle united",
+          "sourceName": "Newcastle United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "leeds united vs newcastle united: team news, key stats and everything you need to know - leeds united | official website - leeds united",
+          "sourceName": "Leeds United | Official Website - Leeds United",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

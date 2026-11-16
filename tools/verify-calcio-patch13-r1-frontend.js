@@ -1,0 +1,12 @@
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const assert = require('assert');
+const root = path.resolve(process.argv[2] || path.join(__dirname, '..'));
+const publicApp = fs.readFileSync(path.join(root, 'public', 'app.js'));
+const backendApp = fs.readFileSync(path.join(root, 'backend', 'public', 'app.js'));
+assert(publicApp.equals(backendApp), 'public/app.js e backend/public/app.js non sono mirror');
+const text = publicApp.toString('utf8');
+assert(text.includes("'APPROVATA CON CAP','APPROVATA'"), 'Categoria APPROVATA Tennis assente');
+assert(text.includes('Nessun segnale nel periodo selezionato'), 'Fallback campione zero assente');
+console.log(JSON.stringify({ success: true, mirrorBytes: publicApp.length, tennisApprovedVisibleAtZeroSample: true }, null, 2));

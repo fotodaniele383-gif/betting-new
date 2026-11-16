@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>Telegram · AI Betting Quant Pro</title>
+  <link rel="stylesheet" href="telegram.css">
+</head>
+<body>
+  <div class="topbar">
+    <h1>📲 Telegram Notifier</h1>
+    <a class="back" href="/index.html">← Dashboard principale</a>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Configurazione Telegram</h2>
+      <div id="statusBox" class="status">Caricamento stato...</div>
+      <div class="field">
+        <label>Credenziale Bot</label>
+        <div class="hint security-note"><b>Patch 31:</b> il token non viene più accettato o salvato dalla UI. Configura <code>TELEGRAM_BOT_TOKEN</code> nel file <code>.env</code> della root. Dopo aver revocato e sostituito un token precedentemente esposto, imposta <code>TELEGRAM_TOKEN_ROTATION_REQUIRED=0</code> e riavvia il server.</div>
+      </div>
+      <div class="field">
+        <label>Contatti destinatari</label>
+        <textarea id="contactsText" placeholder="Nome|chat_id|true\nGruppo Telegram|-1001234567890|true"></textarea>
+        <div class="hint">Formato: <b>Nome|chat_id|true/false</b>. Puoi inserire chat private, gruppi o canali dove il bot può scrivere.</div>
+      </div>
+      <div class="actions">
+        <button class="btn primary" id="saveConfigBtn">💾 Salva config</button>
+        <button class="btn info" id="testBtn">🧪 Test invio</button>
+        <button class="btn danger" id="resetStateBtn">Reset anti-duplicati</button>
+      </div>
+      <hr style="border-color:#334155;margin:16px 0">
+      <h2>Filtri invio</h2>
+      <div class="field">
+        <label>Tipo aggiornamento</label>
+        <select id="mode">
+          <option value="results_since_last">Nuovi esiti non ancora inviati</option>
+          <option value="results_today">Esiti match vinte/perse oggi</option>
+          <option value="deep_scan_results">Solo esiti Resa Deep Scan IA</option>
+          <option value="gate_results">Solo esiti Resa Qualità / Gate</option>
+          <option value="predictions_today">Pronostici di oggi</option>
+          <option value="predictions_tomorrow">Pronostici di domani</option>
+          <option value="summary_real">Riepilogo reale operativo</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="field"><label>Area</label><select id="area"><option value="both">Deep Scan + Gate</option><option value="deep_scan">Deep Scan IA</option><option value="gate">Qualità / Gate</option><option value="all">Tutte</option></select></div>
+        <div class="field"><label>Sport</label><select id="sport"><option value="tennis">Tennis</option><option value="calcio">Calcio</option><option value="all">Tutto</option></select></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Scope stake</label><select id="stakeScope"><option value="operational">Solo stake reale &gt; 0</option><option value="all">Includi audit stake 0</option><option value="audit_only">Solo audit stake 0</option></select></div>
+        <div class="field"><label>Limite match</label><input id="limit" type="number" min="1" max="100" value="20"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Solo dati current</label><select id="onlyCurrentDataQuality"><option value="true">Sì</option><option value="false">No</option></select></div>
+        <div class="field"><label>Anti-duplicati</label><select id="dedupe"><option value="true">Sì</option><option value="false">No</option></select></div>
+      </div>
+      <div class="actions">
+        <button class="btn info" id="previewBtn">👁️ Anteprima</button>
+        <button class="btn primary" id="sendBtn">📤 Invia Telegram</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Anteprima / Esito</h2>
+      <div class="hint" style="margin-bottom:10px">L'anteprima non invia messaggi e non modifica il DB. L'invio aggiorna solo lo stato anti-duplicati Telegram.</div>
+      <div id="previewBox" class="preview">Premi “Anteprima”.</div>
+    </section>
+  </div>
+
+  <script src="telegram.js?v=patch31-secrets-release-hardening"></script>
+</body>
+</html>

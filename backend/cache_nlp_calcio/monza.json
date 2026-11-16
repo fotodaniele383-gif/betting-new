@@ -1,0 +1,251 @@
+{
+  "timestamp": 1794134383762,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 28.2,
+    "sourceCoverageConfidence": 66,
+    "matchImpactConfidence": 28.2,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 0
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Monza",
+      "officialDomain": null,
+      "status": "PARTIAL",
+      "confidence": 28.2,
+      "coverageConfidence": 66,
+      "matchImpactConfidence": 28.2,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 997,
+          "received": 15,
+          "relevant": 3,
+          "fresh": 15,
+          "usable": 3,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T10:39:43.754Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 706,
+          "received": 1,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T10:39:43.463Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 16,
+        "relevantArticles": 3,
+        "usableArticles": 3,
+        "uniqueArticles": 3,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 3,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 13,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "preview | bologna vs monza: team news, lineups, predictions (serie a 31/10) - yahoo sports",
+          "originalTitle": "PREVIEW | Bologna vs Monza: team news, lineups, predictions (Serie A 31/10) - Yahoo Sports",
+          "fullText": "preview | bologna vs monza: team news, lineups, predictions (serie a 31/10) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihafbvv95cuxqeuppelj2zha2txb0egvurulwbdbkvmljvkxptxu3wgk1rxp4rk1ir1zxvuprcg9jv2dubwdjx3r5yxzvrmdavva0wethnvpysgrlvdbizmm4t3bzajnicnzmcth0emn5oejxm29ylxgtcwxyu0u1vxh4ekzptwi5bxdbnnq?oc=5\" target=\"_blank\">preview | bologna vs monza: team news, lineups, predictions (serie a 31/10)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeUpPelJ2ZHA2TXB0eGVuRUlWbDBKVmlJVkxPTXU3WGk1RXp4Rk1iR1ZxVUpRcG9jV2dUbWdjX3R5YXZVRmdaVVA0WEtHNVpYSGRLVDBiZmM4T3BZajNicnZmcTh0emN5OEJxM29yLXgtcWxYU0U1VXh4ekZpTWI5bXdBNnQ?oc=5",
+          "publishedAt": "2026-10-29T13:00:00.000Z",
+          "ageDays": 9.9,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "MATCHDAY",
+          "matchImpactWeight": 0.4275
+        },
+        {
+          "title": "preview | monza vs napoli: team news, lineups, predictions (serie a 28/10) - yahoo sports",
+          "originalTitle": "PREVIEW | Monza vs Napoli: team news, lineups, predictions (Serie A 28/10) - Yahoo Sports",
+          "fullText": "preview | monza vs napoli: team news, lineups, predictions (serie a 28/10) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxpru1lotexvwxubmvzny1vexbyzxv3qvvsrxjioe5nz0t1tvjqt21ldwfnthhtddznyjbpyldeb0dvz1docgtzdhlqa1hya0lrtkutohvxcw1zmxzcy0w1s3rbqjznmezyodjnwetroe5uq2jucznuqm9ndgq3rek0bm5fna?oc=5\" target=\"_blank\">preview | monza vs napoli: team news, lineups, predictions (serie a 28/10)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRU1lOTExVWxubmVZNy1veXByZXV3QVVsRXJIOE5nZ0t1TVJqT21ldWFNTHhtdDZNYjBPYldEb0dvZ1docGtZdHlQa1hya0lRTkUtOHVXcW1ZMXZCY0w1S3RBQjZnMEZyODJNWEtrOE5uQ2JuczNUQm9ndGQ3REk0bm5FNA?oc=5",
+          "publishedAt": "2026-10-26T07:00:00.000Z",
+          "ageDays": 13.15,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "MATCHDAY",
+          "matchImpactWeight": 0.4275
+        },
+        {
+          "title": "preview | monza vs atalanta: team news, lineups, predictions (serie a 08/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Monza vs Atalanta: team news, lineups, predictions (Serie A 08/11) - Yahoo Sports",
+          "fullText": "preview | monza vs atalanta: team news, lineups, predictions (serie a 08/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihgfbvv95cuxox3vnctjqywdelvzjm0w2eg5umwnsrlfsrfrtefy3yza2m3htugxkmtz1uzdszjlonezqrgntdtzzevzlexplr09wv0q4lwvkt1hcmgxicjy5nu9yltrzwvqxwvzvac1tq1nhrgvmtxbjvexllxzmt0q5uhnibuluovforhryzw?oc=5\" target=\"_blank\">preview | monza vs atalanta: team news, lineups, predictions (serie a 08/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX3VNcTJQYWdELVZJM0w2eG5UMWNsRlFsRFRTeFY3YzA2M3htUGxkMTZ1UzdsZjloNEZQRGNtdTZZeVZLeXplR09wV0Q4LWVkT1hCMGxicjY5NU9YLTRZWVQxWVZVaC1tQ1NhRGVmTXBJVExlLXZMT0Q5UHNIbUlUOVFORHRYZw?oc=5",
+          "publishedAt": "2026-11-06T13:20:00.000Z",
+          "ageDays": 1.89,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "MATCHDAY",
+          "matchImpactWeight": 0.4275
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "*∇#[+[!livestreams!]tv] napoli vs monza live free tv! 28 october 2026 - vantage data centers",
+          "sourceName": "Vantage Data Centers",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[watchlive]ｔｏｄａｙ!] napoli vs monza football 𝐋𝐈𝐕𝐄 ｆｒｅｅ ｓｔｒｅａｍｓ ｏｎ ｔｖ ｃｈａｎｎｅｌ 28 october 2026 - vantage data centers",
+          "sourceName": "Vantage Data Centers",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "serie a | monza 1-4 napoli: hojlund breaks drought, but lobotka scare - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "++[ｌｉｖｅｓｔｒｅａｍ]now!!] napoli vs monza live updates - vantage data centers",
+          "sourceName": "Vantage Data Centers",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[watchlive]tv!] napoli v monza serie a 𝐋𝐈𝐕𝐄 ｏｎ ｔｖ ｃｈａｎｎｅｌ 28 october 2026 - vantage data centers",
+          "sourceName": "Vantage Data Centers",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "napoli vs monza now free | u-power stadium, monza match preview - vantage data centers",
+          "sourceName": "Vantage Data Centers",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "[[ｌｉｖｅ＠ｓｔｒｅａｍｓ]🆓＝] monza vs napoli 𝐋𝐈𝐕𝐄 ｓｔｒｅａｍｓ free ｏｎ ｔｖ ｃｈａｎｎｅｌ - vantage data centers",
+          "sourceName": "Vantage Data Centers",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "!$+[𝐒𝐓ream]here's*! monza vs napoli serie a 𝙻𝚒𝚟𝚎 𝚂𝚝𝚛𝚎𝚊𝚖𝚒𝚗𝚐 𝙾𝚗𝚕𝚒𝚗𝚎 - vantage data centers",
+          "sourceName": "Vantage Data Centers",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lobotka injury: napoli star stretchered off in tears - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "monza 1-4 napoli tactical analysis: politano, lobotka - the false 9",
+          "sourceName": "The False 9",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "monza vs napoli confirmed lineups - whoscored.com",
+          "sourceName": "WhoScored.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "preview: monza vs atalanta bc - prediction, team news, lineups - sports mole",
+          "sourceName": "Sports Mole",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 5000,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

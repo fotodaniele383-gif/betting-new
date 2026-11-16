@@ -1,0 +1,24 @@
+{
+  "name": "betting-analyzer",
+  "version": "1.0.0",
+  "description": "AI Betting Analyzer Pro - Motore Poisson & Monte Carlo per Value Betting",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
+  },
+  "keywords": [
+    "betting",
+    "poisson",
+    "monte-carlo",
+    "value-betting",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0"
+  }
+}

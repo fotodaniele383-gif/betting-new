@@ -1,0 +1,10 @@
+'use strict';
+const assert=require('assert');const path=require('path');const {DatabaseSync}=require('node:sqlite');const registry=require('../backend/calcioPatchRegistry');
+const root=path.resolve(__dirname,'..');const db=new DatabaseSync(path.join(root,'backend/database_betting.db'),{readOnly:true});
+const cols=new Set(db.prepare('pragma table_info(ai_forward_test)').all().map(r=>r.name));
+const counts=db.prepare(`select count(*) total, sum(case when upper(coalesce(sport_type,''))='TENNIS' or upper(coalesce(bet_type,'')) like '%TENNIS%' then 1 else 0 end) tennis, sum(case when upper(coalesce(status,'')) in ('WON','LOST') and (upper(coalesce(sport_type,''))='CALCIO' or upper(coalesce(bet_type,'')) like '%CALCIO%') then 1 else 0 end) resolvedCalcio from ai_forward_test`).get();db.close();
+assert.ok(Number(registry.CALCIO_CURRENT_PATCH_VERSION)>=36); assert.ok(registry.PATCHES.some(p=>p.version==='36'&&p.id==='BETTING_PATCH_26F_D_CALCIO_RELIABILITY_CALIBRATION_TRADING_PORTFOLIO_RUNTIME_DIAGNOSTICS_V2'));
+assert.ok(cols.has('calcio_prediction_reliability_score'));
+assert.ok(cols.has('calcio_final_market_snapshot'));
+assert.ok(Number(counts.total)>0);
+console.log(JSON.stringify({success:true,verificationMode:'READ_ONLY_NO_SCHEMA_MIGRATION',missingColumns:[],counts},null,2));

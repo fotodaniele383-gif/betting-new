@@ -1,0 +1,32 @@
+{
+  "version": "CALCIO_PROBABILITY_FIRST_V1_20261106",
+  "target": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "installedAt": "2026-11-06T10:20:37.283Z",
+  "backupDir": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.probability-first-r1\\BACKUP_PRE_PF_1793960434483",
+  "dbBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.probability-first-r1\\BACKUP_PRE_PF_1793960434483\\database_betting_CONSISTENT_BACKUP.db",
+  "originalHashes": {
+    "server": "deae49fc42556e6d91abb6f7d00bc43307aef48745623dbe74146a8802bcfc4d",
+    "selection": "50a5a5b2f76e9790f96e2df67f27d86f3a7f3165f705c9b8013d93d4040324d4",
+    "finalization": "6a7bf9f818522d239eaadd81bc66474fdec70f214939a3c6bfa565dbef87a215",
+    "guard": "ba17c4d19860d36bc249eb5c033e32b9ce0539951170cebe9a4d6cb1d56eb824",
+    "app": "ff59b3ad03da136eae62812fd0d8ae6912d1927b92943a43e8c25b7fc80d8fc1",
+    "index": "9b6da87829331ce2c41d6882e8b70077cac64ccb8e604f408182afd9cfd082af"
+  },
+  "newHashes": {
+    "server": "d073da4f2435d42648dcd3f7eec8dbd733ed08865cc58feefa56186993b43c4b",
+    "selection": "5c6b5d15e65b0c8ef93d038a2207a19a9c150cca7dace33c153de12a825d7ef2",
+    "finalization": "54286fcf63b5f171fdbcb6fe5c1e3d50264942581148c3f6f7439145cde46b13",
+    "guard": "24180c1db1caaa272b940cced3e88b105879a235e1abea04499ba8ed56a00df3",
+    "app": "e697cd9d3dd2d0309649ab2f93a892cfd43f461ee5d29903e6c2a08ccc8cf50a",
+    "index": "61070b0d977fdc391088bc8f126b93f0e31635bc831f42abea28cc223bdb2ad4"
+  },
+  "originalStateSha": "1ae0259458ab9484051131e61a4efb4f275a14e1951830122ac6ae0449ab342a",
+  "newStateSha": "dc137e83e9c3ea0da6256041ab14e5737ba65b74ffb2c74a525588f7db9573e2",
+  "coreSha": "62963b900209367e76965f1f721c1331140ba16763dcf5de31549d88c0dbab3f",
+  "htmlSha": "c80b4e69359d7958dc299fe96b4db092ee44189b0fc9af8141f2a67e022d8116",
+  "wasConfig": false,
+  "dbBefore": {
+    "rows": 1971,
+    "maxId": 3294
+  }
+}

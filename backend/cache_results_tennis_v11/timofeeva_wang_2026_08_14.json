@@ -1,0 +1,19 @@
+{
+  "timestamp": 1793883962053,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 1,
+  "totalGames": 12,
+  "isVoid": false,
+  "source": "STEP58_WEB_FALLBACK_SCORE_GUARDED",
+  "confidence": 0.9,
+  "step107WeakWinnerSide": true,
+  "observedAt": "2026-11-05T13:06:02.053Z",
+  "sourceEventId": "WEB:9650d004deec3617a580",
+  "rawEvidence": {
+    "query": "timofeeva wang tennis score 2026-08-14 result",
+    "matchDate": "2026-08-14",
+    "excerpt": "tim 0-1 wan maria timofeeva v xiyu wang 14 08 2026 tennis ... follow maria timofeeva v xiyu wang 14 08 2026 match information maria timofeeva latest results news highlights and maria timofeeva v xiyu wang h2h statistics flashscore tennis coverage includes tennis scores and tennis news from more than 5000 tournaments worldwide. maria timofeeva vs xiyu wang round 1 - tennis.com maria timofeeva vs xiyu wang round 1 cincinnati live score statistics and broadcast info on tennis.com. timofeeva maria vs wang xiyu aug 2026 singles live score timofeeva maria vs wang xiyu 14 aug 2026 singles live tennis scores team form player rankings and match overview. maria timofeeva v xiyu wang 14 08 2026 stats - flashscore.co.uk follow maria timofeeva v xiyu wang stats - aces double faults 1st serve percentage 2nd serve points won break points saved average serve speed flashscore tennis coverage includes tennis scores tennis news and match stats from more than 5000 tournaments worldwide. maria timofeeva vs xiyu wang result final score maria timofeeva vs xiyu wang at cincinnati final score after a retirement head-to-head and news. timofeeva m. - wang x. 08 14 2026 - tip score and online results nb-bet m"
+  },
+  "score": "6-0 6-0",
+  "note": "Risultato da web fallback: classificato PROPOSED da Patch 5; non chiude automaticamente senza fonte strutturata/certificata."
+}

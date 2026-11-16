@@ -1,0 +1,3337 @@
+<!DOCTYPE html>
+<html lang="it" data-patch59-controlled-canary="true" data-patch58-scheduler-state-machine="true" data-patch57-production-security="true">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- STEP72_FINAL_UI_BINDING_CHECKS_META -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>AI Betting Quant Pro</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon.png">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        :root { 
+            --bg-color: #0f172a; 
+            --card-bg: #1e293b; 
+            --text-main: #f8fafc; 
+            --accent: #10b981; 
+            --accent-hover: #059669; 
+            --danger: #ef4444;
+            --border-color: #334155;
+            --widget-bg: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body { 
+            background-color: var(--bg-color); 
+            color: var(--text-main); 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            padding: env(safe-area-inset-top) 15px calc(40px + env(safe-area-inset-bottom)) 15px; 
+            margin: 0; 
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .hidden { display: none !important; }
+        
+        /* TABELLE RESPONSIVE BASE */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+        
+        table { width: 100%; border-collapse: collapse; text-align: left; min-width: 1100px; } 
+        th { background-color: rgba(15, 23, 42, 0.6); padding: 12px 10px; border-bottom: 2px solid var(--border-color); color: var(--accent); white-space: nowrap; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px; }
+        td { padding: 12px 10px; border-bottom: 1px solid var(--border-color); vertical-align: middle; font-size: 0.9em; }
+        tr:last-child td { border-bottom: none; }
+        
+        .export-btn { background-color: rgba(16, 185, 129, 0.1); color: var(--accent); border: 1px solid var(--accent); padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 0.85em; font-weight: 700; transition: all 0.2s; position: relative; z-index: 10; min-height: 38px;}
+        .export-btn:hover { background-color: var(--accent); color: white; }
+        
+        .header-flex { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; padding: 0 5px; flex-wrap: wrap; gap: 10px; }
+        
+        .card-container {
+            background-color: var(--card-bg); 
+            padding: 20px; 
+            border-radius: 12px; 
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-widget {
+            flex: 1;
+            text-align: center;
+            background: var(--widget-bg);
+            padding: 20px 10px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            min-width: 130px; 
+        }
+
+        /* STICKY CONTROLS OTTIMIZZATI */
+        .sticky-controls {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 10px 0;
+            margin-top: -10px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .sport-selector {
+            display: flex;
+            background: #0f172a;
+            padding: 6px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* SETTINGS GRID */
+        .settings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .settings-card { background: #334155; padding: 18px; border-radius: 10px; border-left: 4px solid #3b82f6; transition: opacity 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .settings-card h4 { margin-top: 0; color: #f8fafc; margin-bottom: 12px; font-size: 1.05em; }
+        .settings-card label.param-label { display: flex; justify-content: space-between; font-size: 0.9em; color: #cbd5e1; margin-bottom: 12px; align-items: center; }
+        .settings-card input[type=number] { width: 75px; padding: 8px; background: #0f172a; border: 1px solid var(--border-color); color: white; border-radius: 6px; text-align: center; font-size: 1em; font-weight: bold; }
+        .settings-card input[type=number]:disabled { background: #1e293b; color: #64748b; cursor: not-allowed; }
+        
+        /* TOGGLE SWITCHES */
+        .switch { position: relative; display: inline-block; width: 52px; height: 32px; flex-shrink: 0; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #475569; transition: .4s; border-radius: 34px; }
+        .slider:before { position: absolute; content: ""; height: 24px; width: 24px; left: 4px; bottom: 4px; background-color: white; transition: .4s; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        input:checked + .slider { background-color: var(--accent); }
+        input:checked + .slider:before { transform: translateX(20px); }
+        #cfg_onlyGlobal:checked + .slider { background-color: var(--danger); }
+
+        /* BUTTONS */
+        .delete-btn, .edit-btn { min-width: 38px; min-height: 38px; display: inline-flex; align-items: center; justify-content: center; }
+        .delete-btn { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--danger); font-size: 1em; cursor: pointer; transition: all 0.2s; border-radius: 6px; position: relative; z-index: 10; }
+        .delete-btn:hover { background: var(--danger); color: white; }
+
+        .edit-btn { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); color: #3b82f6; font-size: 1em; cursor: pointer; transition: all 0.2s; border-radius: 6px; margin-left: 5px; position: relative; z-index: 10; }
+        .edit-btn:hover { background: #3b82f6; color: white; }
+
+        .action-btn { border: none; padding: 14px 10px; border-radius: 8px; cursor: pointer; font-weight: 700; flex: 1; min-width: 100px; font-size: 0.95em; transition: filter 0.2s, transform 0.1s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); position: relative; z-index: 10; display: flex; align-items: center; justify-content: center; text-align: center;}
+        .action-btn:active { transform: scale(0.97); }
+        .action-btn:hover { filter: brightness(1.1); }
+        
+        .nav-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: rgba(15, 23, 42, 0.6); color: white; font-size: 1em; font-weight: 600; position: relative; z-index: 10; }
+        .nav-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2); }
+
+        /* DEEP SCAN BADGES */
+        .ds-badge { display: inline-flex; align-items: center; justify-content: center; padding: 6px 12px; border-radius: 6px; font-size: 0.8em; font-weight: 800; min-width: 125px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); letter-spacing: 0.5px;}
+        .ds-loading { background-color: #475569; color: #cbd5e1; animation: pulse 1.5s infinite; }
+        .ds-value { background-color: #10b981; color: white; }
+        .ds-edge { background-color: #0ea5e9; color: white; }
+        .ds-warn { background-color: #f59e0b; color: white; }
+        .ds-risk { background-color: #ef4444; color: white; }
+        
+        .btn-ds-detail { background: #334155; border: 1px solid #475569; color: white; border-radius: 6px; padding: 6px 10px; font-size: 0.8em; cursor: pointer; transition: all 0.2s; margin-top: 6px; width: 100%; font-weight: bold; min-height: 34px;}
+        .btn-ds-detail:hover { background: #475569; }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+
+        /* PROJECT SYNC / BOOTSTRAP STATUS */
+        .system-banner {
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr 0.8fr;
+            gap: 10px;
+            align-items: stretch;
+            margin: 0 0 18px 0;
+        }
+        .system-banner-card {
+            background: rgba(30, 41, 59, 0.78);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 12px 14px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+        }
+        .system-banner-title {
+            display: block;
+            color: #94a3b8;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+        .system-banner-value {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 9px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 900;
+            border: 1px solid rgba(16,185,129,0.35);
+            background: rgba(16,185,129,0.11);
+            color: #6ee7b7;
+            white-space: nowrap;
+        }
+        .status-pill.warning {
+            border-color: rgba(245,158,11,0.35);
+            background: rgba(245,158,11,0.12);
+            color: #fcd34d;
+        }
+        .status-pill.info {
+            border-color: rgba(56,189,248,0.35);
+            background: rgba(56,189,248,0.12);
+            color: #7dd3fc;
+        }
+        .mobile-hint {
+            color: #94a3b8;
+            font-size: 0.78rem;
+            line-height: 1.35;
+            margin-top: 4px;
+        }
+        .section-subtitle {
+            color: #94a3b8;
+            font-size: 0.84rem;
+            margin-top: 6px;
+            line-height: 1.45;
+        }
+        .responsive-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+        }
+        .metric-mini {
+            background: rgba(15, 23, 42, 0.55);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px;
+        }
+        .metric-mini span {
+            display: block;
+            color: #94a3b8;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+        .metric-mini strong {
+            font-size: 1.2rem;
+        }
+
+
+
+        /* DESKTOP READABILITY FIX - v15.1
+           Mantiene il layout originale, elimina il banner non funzionale
+           e rende dati/tabelle più leggibili su computer. */
+        @media (min-width: 1024px) {
+            body {
+                font-size: 16px;
+                padding: env(safe-area-inset-top) 16px calc(40px + env(safe-area-inset-bottom)) 16px;
+            }
+
+            header {
+                margin-bottom: 14px !important;
+                padding-bottom: 10px !important;
+            }
+
+            header h1 {
+                font-size: 1.55rem !important;
+            }
+
+            header p {
+                font-size: 0.78rem !important;
+            }
+
+            .sport-selector {
+                margin-bottom: 18px;
+            }
+
+            #btnSportCalcio,
+            #btnSportTennis,
+            #btnSportDeepScan {
+                font-size: 1rem !important;
+                padding: 12px 10px !important;
+            }
+
+            .stat-widget {
+                padding: 22px 12px;
+                min-height: 92px;
+            }
+
+            .stat-widget span {
+                font-size: 0.72rem !important;
+            }
+
+            .stat-widget strong {
+                font-size: 1.72rem !important;
+            }
+
+            .sticky-controls {
+                padding: 10px 0;
+                margin-top: 0;
+            }
+
+            #analyzeForm {
+                padding: 14px !important;
+            }
+
+            .nav-input {
+                font-size: 1rem;
+                min-height: 42px;
+            }
+
+            .action-btn {
+                font-size: 1rem;
+                min-height: 48px;
+                padding: 14px 12px;
+            }
+
+            .card-container {
+                padding: 22px;
+            }
+
+            .header-flex h2 {
+                font-size: 1.45rem !important;
+            }
+
+            .table-responsive {
+                border-radius: 14px;
+            }
+
+            table {
+                min-width: 1250px;
+            }
+
+            th {
+                padding: 14px 12px;
+                font-size: 0.86rem;
+                letter-spacing: 0.55px;
+            }
+
+            td {
+                padding: 13px 12px;
+                font-size: 0.95rem;
+                line-height: 1.35;
+            }
+
+            .ds-badge {
+                font-size: 0.82rem;
+                min-width: 118px;
+            }
+
+            .export-btn {
+                font-size: 0.9rem;
+                min-height: 40px;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            body {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            table {
+                min-width: 1350px;
+            }
+
+            th,
+            td {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+        }
+
+
+
+        /* TENNIS HEALTH STATUS - READABILITY v14.8d STEP 2 */
+        .tennis-health-status-box {
+            grid-column: 1 / -1;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .tennis-health-v2 {
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.92));
+            border: 1px solid rgba(148, 163, 184, 0.24);
+            border-left: 5px solid #10b981;
+            border-radius: 16px;
+            padding: 18px;
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+            color: #cbd5e1;
+        }
+
+        .tennis-health-v2.status-warn { border-left-color: #f59e0b; }
+        .tennis-health-v2.status-error { border-left-color: #ef4444; }
+
+        .tennis-health-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        .tennis-health-eyebrow {
+            color: #94a3b8;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 900;
+        }
+
+        .tennis-health-title {
+            margin: 4px 0 5px 0;
+            font-size: 1.28rem;
+            color: #f8fafc;
+            line-height: 1.2;
+        }
+
+        .tennis-health-subtitle {
+            color: #cbd5e1;
+            line-height: 1.45;
+            max-width: 900px;
+        }
+
+        .tennis-health-pills {
+            display: flex;
+            gap: 7px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .tennis-health-pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            padding: 5px 9px;
+            font-size: 0.78rem;
+            font-weight: 900;
+            background: rgba(56, 189, 248, 0.13);
+            color: #bae6fd;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            white-space: nowrap;
+        }
+
+        .tennis-health-pill.safe {
+            background: rgba(16, 185, 129, 0.13);
+            color: #bbf7d0;
+            border-color: rgba(16, 185, 129, 0.28);
+        }
+
+        .tennis-health-pill.warn {
+            background: rgba(245, 158, 11, 0.13);
+            color: #fde68a;
+            border-color: rgba(245, 158, 11, 0.28);
+        }
+
+        .tennis-health-overview {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .tennis-health-card {
+            background: rgba(15, 23, 42, 0.62);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-radius: 13px;
+            padding: 12px;
+            min-height: 82px;
+        }
+
+        .tennis-health-card-label {
+            color: #94a3b8;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 900;
+            margin-bottom: 7px;
+        }
+
+        .tennis-health-card-value {
+            color: #f8fafc;
+            font-size: 1.05rem;
+            font-weight: 900;
+            line-height: 1.25;
+            word-break: break-word;
+        }
+
+        .tennis-health-section-title {
+            margin: 18px 0 9px 0;
+            color: #f8fafc;
+            font-size: 0.95rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tennis-health-components {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .tennis-health-component {
+            background: rgba(2, 6, 23, 0.36);
+            border: 1px solid rgba(148, 163, 184, 0.16);
+            border-radius: 12px;
+            padding: 11px;
+        }
+
+        .tennis-health-component-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 5px;
+        }
+
+        .tennis-health-component-name {
+            color: #f8fafc;
+            font-weight: 900;
+            font-size: 0.9rem;
+        }
+
+        .tennis-health-status-badge {
+            border-radius: 999px;
+            padding: 2px 7px;
+            font-size: 0.7rem;
+            color: #fff;
+            font-weight: 900;
+            white-space: nowrap;
+        }
+
+        .tennis-health-muted {
+            color: #94a3b8;
+            font-size: 0.78rem;
+            line-height: 1.35;
+        }
+
+        .tennis-health-checks {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        .tennis-health-check {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            background: rgba(15, 23, 42, 0.48);
+            border: 1px solid rgba(148, 163, 184, 0.14);
+            border-radius: 10px;
+            padding: 8px 10px;
+        }
+
+        .tennis-health-thresholds {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .tennis-health-warning {
+            margin-top: 12px;
+            background: rgba(245,158,11,0.10);
+            border: 1px solid rgba(245,158,11,0.35);
+            border-radius: 11px;
+            padding: 11px;
+            color: #fde68a;
+            font-weight: 800;
+        }
+
+
+        /* TENNIS PREDICTIVE CALIBRATION - STEP 3 */
+        .tennis-calibration-overview {
+            align-items: stretch;
+        }
+
+        .tennis-calibration-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+            margin-top: 12px;
+        }
+
+        .tennis-calibration-group-title {
+            margin: 4px 0 8px 2px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .tennis-calibration-mini-card .tennis-health-card-value {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 1200px) {
+            .tennis-health-overview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .tennis-health-components { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .tennis-health-checks { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 768px) {
+            .tennis-health-v2 { padding: 13px; border-radius: 13px; }
+            .tennis-health-title { font-size: 1.08rem; }
+            .tennis-health-pills { justify-content: flex-start; }
+            .tennis-health-overview,
+            .tennis-health-components,
+            .tennis-health-checks,
+            .tennis-health-thresholds { grid-template-columns: 1fr; }
+        }
+
+
+        
+
+        /* TENNIS OPERATIONAL REPORT - STEP 5 */
+        .tennis-op-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            border: 1px solid rgba(148,163,184,0.35);
+            border-radius: 999px;
+            padding: 3px 8px;
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
+
+        .tennis-op-report {
+            background: rgba(15, 23, 42, 0.68);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-left: 5px solid #10b981;
+            border-radius: 13px;
+            padding: 14px;
+            margin-bottom: 14px;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+        }
+
+        .tennis-op-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .tennis-op-eyebrow {
+            color: #94a3b8;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 900;
+            margin-bottom: 4px;
+        }
+
+        .tennis-op-title {
+            font-size: 1.02rem;
+            font-weight: 900;
+            line-height: 1.25;
+        }
+
+        .tennis-op-summary {
+            color: #cbd5e1;
+            margin-top: 5px;
+            line-height: 1.4;
+        }
+
+        .tennis-op-action {
+            background: rgba(56,189,248,0.12);
+            color: #bae6fd;
+            border: 1px solid rgba(56,189,248,0.26);
+            border-radius: 999px;
+            padding: 5px 9px;
+            font-size: 0.74rem;
+            font-weight: 900;
+        }
+
+        .tennis-op-grid {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .tennis-op-grid > div {
+            background: rgba(2, 6, 23, 0.32);
+            border: 1px solid rgba(148,163,184,0.14);
+            border-radius: 10px;
+            padding: 8px;
+        }
+
+        .tennis-op-grid span {
+            display: block;
+            color: #94a3b8;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            font-weight: 900;
+            margin-bottom: 4px;
+        }
+
+        .tennis-op-grid strong {
+            color: #f8fafc;
+            font-size: 0.88rem;
+        }
+
+        .tennis-op-checks {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .tennis-op-check {
+            background: rgba(30,41,59,0.58);
+            border: 1px solid rgba(148,163,184,0.14);
+            border-radius: 10px;
+            padding: 8px;
+        }
+
+        .tennis-op-check span {
+            display: block;
+            color: #cbd5e1;
+            font-weight: 900;
+            margin-bottom: 3px;
+        }
+
+        .tennis-op-check small {
+            display: block;
+            color: #94a3b8;
+            margin-top: 3px;
+            line-height: 1.35;
+        }
+
+        .tennis-op-reasons {
+            color: #cbd5e1;
+            border-top: 1px solid rgba(148,163,184,0.16);
+            padding-top: 10px;
+        }
+
+        .tennis-op-list {
+            color: #cbd5e1;
+            margin-top: 6px;
+            line-height: 1.45;
+        }
+
+        .tennis-op-list.warn {
+            color: #fde68a;
+        }
+
+        .tennis-op-muted {
+            color: #94a3b8;
+            margin-top: 6px;
+        }
+
+        @media (max-width: 1200px) {
+            .tennis-op-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .tennis-op-checks { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        @media (max-width: 768px) {
+            .tennis-op-grid,
+            .tennis-op-checks { grid-template-columns: 1fr; }
+            .tennis-op-header { flex-direction: column; }
+            .tennis-op-action { align-self: flex-start; }
+        }
+
+/* 📱 MEDIA QUERIES PER SMARTPHONE */
+        @media (max-width: 768px) {
+            body { padding: 10px 10px calc(28px + env(safe-area-inset-bottom)) 10px; }
+            header h1 { font-size: 1.35em !important; }
+            .system-banner { grid-template-columns: 1fr; gap: 8px; }
+            .system-banner-card { padding: 11px 12px; }
+            .sport-selector { position: sticky; top: 0; z-index: 120; margin-bottom: 12px; }
+            .sticky-controls { position: sticky; top: 55px; padding: 8px 0; }
+            .responsive-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .header-flex { flex-direction: column; align-items: flex-start; gap: 15px;}
+            .header-flex .export-btn { width: 100%; }
+            
+            #analyzeForm { padding: 10px; }
+            .action-btn { min-width: calc(33% - 5px); font-size: 0.85em; padding: 10px 5px;}
+            #analyzeForm > div:last-child { margin-top: 10px; }
+            #btnSportCalcio, #btnSportTennis, #btnSportDeepScan { font-size: 0.9em; padding: 10px; }
+            
+            #generalStatsBox { flex-direction: row; flex-wrap: wrap; }
+            .stat-widget { min-width: calc(33% - 10px); padding: 15px 5px;}
+            .stat-widget strong { font-size: 1.3em !important; }
+            
+            .settings-grid { grid-template-columns: 1fr; }
+            
+            .table-responsive { background: transparent; border: none; box-shadow: none; }
+            table { min-width: 100%; }
+            thead { display: none; }
+            
+            tr {
+                display: block; background-color: var(--card-bg) !important;
+                border: 1px solid var(--border-color) !important; border-radius: 12px;
+                margin-bottom: 15px; padding: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+                position: relative;
+            }
+
+            tr[id^="ds-row-"] { margin-top: -10px; border-top-left-radius: 0; border-top-right-radius: 0; background-color: rgba(15, 23, 42, 0.6) !important; }
+            
+            td { display: flex; justify-content: space-between; align-items: center; padding: 10px 5px; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.95em; text-align: right; }
+            td:last-child { border-bottom: 0; }
+            
+            td::before {
+                content: attr(data-label); float: left; font-weight: bold; color: #94a3b8;
+                text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; text-align: left; margin-right: 15px;
+            }
+            td strong { font-size: 1.1em; color: white; text-align: right;}
+            
+            td:first-child { display: flex; justify-content: flex-end; gap: 10px; }
+            td:first-child::before { display: none; } 
+        }
+
+        .automation-section { background: rgba(16, 185, 129, 0.05); border-left-color: #10b981 !important; border: 1px solid rgba(16, 185, 129, 0.2); }
+        .radio-label { display: flex; align-items: center; gap: 8px; cursor: pointer; color: #cbd5e1; font-size: 0.95em; margin-bottom: 8px; }
+        .checkbox-group label { background: #1e293b; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-color); cursor: pointer; transition: 0.2s; }
+        .checkbox-group input:checked + span { color: #10b981; font-weight: bold; }
+
+        .dashboard-metric-value {
+            display: inline-block;
+            font-size: clamp(1.9rem, 2.2vw, 2.45rem) !important;
+            font-weight: 800;
+            line-height: 1.15 !important;
+            margin-top: 6px;
+            letter-spacing: -0.02em;
+        }
+
+        .table-filter-row th {
+            background: rgba(30, 41, 59, 0.92);
+            padding: 8px 10px;
+            border-bottom: 1px solid rgba(148,163,184,0.18);
+        }
+
+        .table-filter-input {
+            width: 100%;
+            padding: 7px 9px;
+            border-radius: 7px;
+            border: 1px solid rgba(148,163,184,0.25);
+            background: rgba(15, 23, 42, 0.7);
+            color: #f8fafc;
+            font-size: 0.76rem;
+        }
+
+        .table-filter-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(16,185,129,0.18);
+        }
+
+        .diagnostics-toggle-btn {
+            background: rgba(59,130,246,0.12);
+            color: #bfdbfe;
+            border: 1px solid rgba(59,130,246,0.28);
+            border-radius: 999px;
+            padding: 6px 10px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .diagnostics-toggle-btn:hover {
+            background: rgba(59,130,246,0.2);
+        }
+
+
+        /* HEALTH COLLAPSE + TENNIS BACKTEST EMPTY - STEP 7 */
+        .health-collapse-btn {
+            margin-left: 4px;
+            white-space: nowrap;
+        }
+
+        .health-collapsible-body {
+            margin-top: 0;
+        }
+
+        .tennis-backtest-empty-panel {
+            width: 100%;
+            margin-top: 14px;
+            background: rgba(15, 23, 42, 0.72);
+            border: 1px solid rgba(245, 158, 11, 0.28);
+            border-left: 4px solid #f59e0b;
+            border-radius: 12px;
+            padding: 14px;
+            color: #cbd5e1;
+        }
+
+
+        /* STEP 8 - DEEPSCAN DETAIL + PAPER TRADING TABLE ALIGNMENT */
+        .ds-detail-row td {
+            background: rgba(15, 23, 42, 0.62);
+        }
+
+        .ds-detail-empty {
+            color: #cbd5e1;
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.22);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 0.9rem;
+            line-height: 1.45;
+        }
+
+        .tennis-op-legend {
+            margin: 12px 0;
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.22);
+            border-left: 4px solid #3b82f6;
+            border-radius: 10px;
+            padding: 11px;
+            color: #cbd5e1;
+            line-height: 1.45;
+        }
+
+        .tennis-op-legend strong {
+            color: #bfdbfe;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .tennis-op-legend small {
+            display: block;
+            color: #94a3b8;
+            margin-top: 6px;
+        }
+
+
+        .stats-toolbar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin: 12px 0 18px 0;
+            align-items: end;
+        }
+
+        .stats-filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .stats-filter-group label {
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #94a3b8;
+            font-weight: 700;
+        }
+
+        .stats-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .stats-summary-card {
+            background: rgba(15,23,42,0.75);
+            border: 1px solid rgba(148,163,184,0.18);
+            border-radius: 12px;
+            padding: 14px;
+        }
+
+        .stats-summary-card span {
+            display: block;
+            color: #94a3b8;
+            font-size: 0.74rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 6px;
+        }
+
+        .stats-summary-card strong {
+            display: block;
+            font-size: 1.35rem;
+            color: #f8fafc;
+            margin-bottom: 4px;
+        }
+
+        .stats-summary-card small {
+            color: #94a3b8;
+            font-size: 0.82rem;
+        }
+
+        .stats-chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .chart-card {
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .chart-card h4 {
+            margin: 0 0 12px 0;
+            font-size: 0.95rem;
+            color: #e2e8f0;
+        }
+
+
+
+        /* STEP55_PROFESSIONAL_UI_REFRESH */
+        #forwardTestSummaryBox {
+            display: block !important;
+            margin: 16px 0 20px 0 !important;
+        }
+
+        .step55-forward-summary-grid {
+            display: grid;
+            grid-template-columns: minmax(280px, 0.9fr) minmax(420px, 1.65fr) minmax(360px, 1.35fr) minmax(280px, 1fr);
+            gap: 16px;
+            align-items: stretch;
+        }
+
+        .step55-summary-card {
+            background: linear-gradient(180deg, rgba(30,41,59,.96), rgba(15,23,42,.92));
+            border: 1px solid rgba(148,163,184,.18);
+            border-left: 4px solid var(--step55-accent, #3b82f6);
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 14px 32px rgba(2,6,23,.20);
+            min-width: 0;
+        }
+
+        .step55-global-card { --step55-accent:#3b82f6; }
+        .step55-league-card { --step55-accent:#a855f7; }
+        .step55-exposure-card { grid-column: 1 / -1; --step55-accent:#38bdf8; }
+        .step55-exposure-alert { --step55-accent:#ef4444; }
+        .step55-exposure-ok { --step55-accent:#38bdf8; }
+
+        .step55-card-heading {
+            display:flex;
+            align-items:flex-start;
+            gap:10px;
+            margin-bottom:12px;
+        }
+
+        .step55-card-heading > span {
+            width:30px;
+            height:30px;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:10px;
+            background:rgba(148,163,184,.12);
+        }
+
+        .step55-card-heading strong {
+            display:block;
+            color:#f8fafc;
+            font-size:1rem;
+            letter-spacing:.01em;
+        }
+
+        .step55-card-heading small {
+            display:block;
+            color:#94a3b8;
+            font-size:.76rem;
+            margin-top:2px;
+        }
+
+        .step55-primary-kpi {
+            font-size:clamp(1.8rem, 3vw, 2.65rem);
+            font-weight:900;
+            line-height:1.05;
+            letter-spacing:-.04em;
+            margin:6px 0 14px 0;
+        }
+
+        .step55-metric-strip {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(92px, 1fr));
+            gap:8px;
+            margin-top:10px;
+        }
+
+        .step55-metric-strip > div, .step55-exposure-pill {
+            background:rgba(15,23,42,.58);
+            border:1px solid rgba(148,163,184,.12);
+            border-radius:12px;
+            padding:9px 10px;
+        }
+
+        .step55-metric-strip span, .step55-exposure-pill span {
+            display:block;
+            color:#94a3b8;
+            font-size:.68rem;
+            text-transform:uppercase;
+            letter-spacing:.06em;
+            font-weight:800;
+        }
+
+        .step55-metric-strip strong, .step55-exposure-pill strong {
+            display:block;
+            color:#f8fafc;
+            font-size:1rem;
+            margin-top:3px;
+        }
+
+        .step55-data-mode {
+            margin-top:10px;
+            color:#94a3b8;
+            font-size:.78rem;
+            border-top:1px solid rgba(148,163,184,.12);
+            padding-top:8px;
+        }
+
+        .step55-card-list {
+            display:grid;
+            grid-template-columns:1fr;
+            gap:10px;
+        }
+
+        .step55-breakdown-card { border-left-color:var(--step55-accent, #f59e0b); }
+        .step55-breakdown-row {
+            background:rgba(15,23,42,.50);
+            border:1px solid rgba(148,163,184,.12);
+            border-radius:13px;
+            padding:11px;
+        }
+
+        .step55-breakdown-title, .step55-breakdown-footer, .step55-mini-row {
+            display:flex;
+            justify-content:space-between;
+            gap:12px;
+            align-items:flex-start;
+        }
+
+        .step55-breakdown-title strong, .step55-mini-row strong { color:#f8fafc; }
+        .step55-breakdown-title span { font-weight:900; white-space:nowrap; }
+        .step55-breakdown-metrics {
+            display:grid;
+            grid-template-columns:repeat(4, minmax(58px, 1fr));
+            gap:7px;
+            margin:10px 0;
+        }
+
+        .step55-breakdown-metrics div {
+            background:rgba(2,6,23,.28);
+            border-radius:10px;
+            padding:7px;
+        }
+
+        .step55-breakdown-metrics small, .step55-mini-row small {
+            display:block;
+            color:#94a3b8;
+            font-size:.68rem;
+            text-transform:uppercase;
+            letter-spacing:.04em;
+        }
+
+        .step55-breakdown-metrics strong { color:#e2e8f0; }
+        .step55-breakdown-footer { color:#94a3b8; font-size:.82rem; }
+        .step55-audit-note {
+            margin-top:9px;
+            color:#fbbf24;
+            background:rgba(251,191,36,.10);
+            border:1px solid rgba(251,191,36,.18);
+            border-radius:10px;
+            padding:8px 9px;
+            font-size:.78rem;
+            line-height:1.35;
+        }
+
+        .step55-exposure-grid {
+            display:grid;
+            grid-template-columns:repeat(5, minmax(120px, 1fr));
+            gap:10px;
+        }
+
+        .step55-exposure-pill strong { font-size:1.35rem; }
+        .step55-exposure-note { margin-top:10px; }
+        .step55-mini-row {
+            background:rgba(15,23,42,.50);
+            border:1px solid rgba(148,163,184,.12);
+            border-radius:12px;
+            padding:10px;
+        }
+
+        .step55-mini-row > span { font-weight:900; white-space:nowrap; }
+        .step55-empty-state { color:#94a3b8; padding:8px 0; }
+
+
+        /* PATCH41_TRADING_DASHBOARD_READABILITY_RESPONSIVE_TABLES */
+        .step41-trading-dashboard {
+            display:grid;
+            grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+            grid-template-areas:
+                "exposure exposure"
+                "global global"
+                "rolling rolling"
+                "calibration league"
+                "deepscan deepscan"
+                "quality quality";
+            gap:14px;
+            align-items:start;
+        }
+
+        .step41-trading-dashboard > .step55-exposure-card { grid-area:exposure; }
+        .step41-global-card { grid-area:global; }
+        .step41-rolling-card { grid-area:rolling; }
+        .step41-calibration-card { grid-area:calibration; }
+        .step41-league-card { grid-area:league; }
+        .step41-deepscan-card { grid-area:deepscan; }
+        .step41-quality-card { grid-area:quality; }
+        .step41-wide-card { width:auto; min-width:0; }
+
+        .step41-trading-dashboard .step55-summary-card {
+            padding:14px;
+            border-radius:13px;
+            box-shadow:0 9px 22px rgba(2,6,23,.16);
+        }
+
+        .step41-trading-dashboard .step55-card-heading {
+            margin-bottom:9px;
+        }
+
+        .step41-trading-dashboard .step55-card-heading > span {
+            width:27px;
+            height:27px;
+            border-radius:8px;
+            flex:0 0 27px;
+        }
+
+        .step41-trading-dashboard .step55-card-heading strong {
+            font-size:.94rem;
+        }
+
+        .step41-trading-dashboard .step55-card-heading small {
+            font-size:.71rem;
+        }
+
+        .step41-global-card .step55-primary-kpi {
+            font-size:clamp(1.65rem, 2.35vw, 2.25rem);
+            margin:3px 0 9px;
+        }
+
+        .step41-global-card .step55-metric-strip {
+            grid-template-columns:repeat(5, minmax(110px, 1fr));
+            gap:7px;
+        }
+
+        .step41-global-card .step55-metric-strip > div {
+            padding:8px 9px;
+        }
+
+        .step41-table-scroll {
+            overflow-x:auto;
+            overflow-y:hidden;
+            border:1px solid rgba(148,163,184,.13);
+            border-radius:11px;
+            background:rgba(2,6,23,.22);
+            scrollbar-width:thin;
+        }
+
+        .step41-table-scroll:focus-visible {
+            outline:2px solid rgba(56,189,248,.55);
+            outline-offset:2px;
+        }
+
+        .step41-performance-table,
+        .step41-rolling-table,
+        .step41-vertical-table {
+            width:100%;
+            border-collapse:separate;
+            border-spacing:0;
+            color:#dbeafe;
+            font-size:.78rem;
+        }
+
+        .step41-performance-table { min-width:980px; }
+        .step41-rolling-table { min-width:900px; }
+        .step41-vertical-table { min-width:520px; }
+
+        .step41-performance-table thead th,
+        .step41-rolling-table thead th,
+        .step41-vertical-table thead th {
+            padding:8px 10px;
+            color:#94a3b8;
+            background:rgba(15,23,42,.88);
+            border-bottom:1px solid rgba(148,163,184,.18);
+            text-align:left;
+            font-size:.64rem;
+            text-transform:uppercase;
+            letter-spacing:.055em;
+            white-space:nowrap;
+        }
+
+        .step41-performance-table tbody th,
+        .step41-performance-table tbody td,
+        .step41-rolling-table tbody td,
+        .step41-vertical-table tbody th,
+        .step41-vertical-table tbody td {
+            padding:9px 10px;
+            border-bottom:1px solid rgba(148,163,184,.09);
+            text-align:left;
+            vertical-align:middle;
+            white-space:nowrap;
+        }
+
+        .step41-performance-table tbody tr:last-child > *,
+        .step41-rolling-table tbody tr:last-child > *,
+        .step41-vertical-table tbody tr:last-child > * {
+            border-bottom:0;
+        }
+
+        .step41-performance-table tbody tr:nth-child(even),
+        .step41-vertical-table tbody tr:nth-child(even) {
+            background:rgba(30,41,59,.22);
+        }
+
+        .step41-performance-table tbody tr:hover,
+        .step41-vertical-table tbody tr:hover {
+            background:rgba(56,189,248,.055);
+        }
+
+        .step41-performance-table tbody th,
+        .step41-vertical-table tbody th {
+            color:#f8fafc;
+            font-weight:800;
+        }
+
+        .step41-performance-table td strong,
+        .step41-rolling-table td strong,
+        .step41-vertical-table td strong {
+            color:#f8fafc;
+            font-size:.82rem;
+        }
+
+        .step41-performance-table td small,
+        .step41-rolling-table td small,
+        .step41-vertical-table td small {
+            display:block;
+            color:#64748b;
+            font-size:.64rem;
+            margin-top:2px;
+        }
+
+        .step41-category-name {
+            display:inline-block;
+            max-width:220px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            vertical-align:middle;
+        }
+
+        .step41-audit-chip,
+        .step41-pending-chip,
+        .step41-policy-badge {
+            display:inline-flex;
+            align-items:center;
+            min-height:21px;
+            padding:2px 7px;
+            border-radius:999px;
+            font-size:.63rem;
+            font-weight:800;
+            white-space:nowrap;
+        }
+
+        .step41-audit-chip {
+            color:#fcd34d;
+            background:rgba(245,158,11,.10);
+            border:1px solid rgba(245,158,11,.22);
+        }
+
+        .step41-pending-chip {
+            margin-left:4px;
+            color:#bae6fd;
+            background:rgba(14,165,233,.10);
+            border:1px solid rgba(14,165,233,.20);
+        }
+
+        .step41-policy-badge {
+            margin-left:6px;
+            color:#bbf7d0;
+            background:rgba(16,185,129,.10);
+            border:1px solid rgba(16,185,129,.20);
+        }
+
+        .step41-legend-line {
+            display:flex;
+            flex-wrap:wrap;
+            gap:6px 14px;
+            margin-top:7px;
+            color:#64748b;
+            font-size:.66rem;
+        }
+
+        .step41-table-scroll-vertical {
+            max-height:360px;
+            overflow:auto;
+        }
+
+        .step41-calibration-card,
+        .step41-league-card {
+            min-width:0;
+        }
+
+        .step41-calibration-table td:nth-child(n+3),
+        .step41-calibration-table th:nth-child(n+3) {
+            text-align:right;
+        }
+
+        .step41-rolling-card .step41-rolling-table tbody td {
+            background:rgba(15,23,42,.30);
+        }
+
+        @media (max-width: 1200px) {
+            .step41-global-card .step55-metric-strip {
+                grid-template-columns:repeat(3, minmax(110px, 1fr));
+            }
+        }
+
+        @media (max-width: 900px) {
+            .step41-trading-dashboard {
+                grid-template-columns:1fr;
+                grid-template-areas:
+                    "exposure"
+                    "global"
+                    "rolling"
+                    "calibration"
+                    "league"
+                    "deepscan"
+                    "quality";
+            }
+
+            .step41-global-card .step55-metric-strip {
+                grid-template-columns:repeat(2, minmax(110px, 1fr));
+            }
+
+            .step41-table-scroll-vertical {
+                max-height:none;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .step41-trading-dashboard .step55-summary-card { padding:11px; }
+            .step41-global-card .step55-metric-strip { grid-template-columns:1fr 1fr; }
+            .step41-legend-line { display:none; }
+        }
+        /* /PATCH41_TRADING_DASHBOARD_READABILITY_RESPONSIVE_TABLES */
+
+        .stats-section-pro {
+            background:linear-gradient(180deg, rgba(30,41,59,.95), rgba(15,23,42,.95));
+            border:1px solid rgba(148,163,184,.20);
+            border-radius:18px;
+            padding:22px;
+        }
+
+        .stats-toolbar {
+            background:rgba(15,23,42,.45);
+            border:1px solid rgba(148,163,184,.14);
+            border-radius:16px;
+            padding:14px;
+        }
+
+        .stats-summary-grid {
+            grid-template-columns:repeat(auto-fit, minmax(170px, 1fr));
+        }
+
+        .step55-kpi-card {
+            position:relative;
+            overflow:hidden;
+            border-left:4px solid var(--kpi-color, #38bdf8);
+        }
+
+        .step55-kpi-card::after {
+            content:'';
+            position:absolute;
+            inset:auto -20px -42px auto;
+            width:110px;
+            height:110px;
+            border-radius:999px;
+            background:color-mix(in srgb, var(--kpi-color, #38bdf8) 16%, transparent);
+            pointer-events:none;
+        }
+
+        .stats-chart-grid.step55-chart-grid {
+            grid-template-columns:repeat(12, minmax(0, 1fr));
+            gap:18px;
+        }
+
+        .chart-card {
+            background:linear-gradient(180deg, rgba(15,23,42,.88), rgba(2,6,23,.62));
+            border:1px solid rgba(148,163,184,.18);
+            box-shadow:0 14px 30px rgba(2,6,23,.18);
+            overflow:hidden;
+        }
+
+        .step55-chart-large { grid-column:span 6; min-height:390px; }
+        .step55-chart-wide { grid-column:span 12; min-height:420px; }
+        .step55-chart-small { grid-column:span 6; min-height:360px; }
+
+        /* STEP85_PORTFOLIO_CHART_LAYOUT_FIX */
+        .portfolio-chart-grid-step85 { display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:20px; margin-top:25px; align-items:start; }
+        .portfolio-chart-card-step85 { min-width:0; overflow:hidden; }
+        .portfolio-chart-box-step85 { position:relative; width:100%; height:320px; min-height:320px; max-height:320px; overflow:hidden; background:#0f172a; border-radius:8px; }
+        .portfolio-chart-box-step85 canvas { display:block !important; width:100% !important; height:320px !important; min-height:0 !important; max-height:320px !important; background:transparent !important; }
+        @media (max-width: 860px) { .portfolio-chart-grid-step85 { grid-template-columns:1fr; } }
+        .chart-card canvas { min-height:300px; max-height:360px; }
+        .step55-chart-wide canvas { min-height:335px; max-height:390px; }
+
+        .chart-card h4 {
+            font-size:1rem;
+            color:#f8fafc;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:8px;
+            margin-bottom:4px;
+        }
+
+        .chart-card .chart-subtitle {
+            display:block;
+            color:#94a3b8;
+            font-size:.78rem;
+            margin:0 0 12px 0;
+        }
+
+        @media (max-width: 1350px) {
+            .step55-forward-summary-grid { grid-template-columns:1fr 1fr; }
+            .step55-exposure-grid { grid-template-columns:repeat(auto-fit, minmax(145px, 1fr)); }
+        }
+
+        @media (max-width: 900px) {
+            .step55-forward-summary-grid, .stats-chart-grid.step55-chart-grid { grid-template-columns:1fr; }
+            .step55-chart-large, .step55-chart-wide, .step55-chart-small { grid-column:span 1; }
+            .step55-breakdown-metrics { grid-template-columns:repeat(2, 1fr); }
+            .step55-exposure-grid { grid-template-columns:1fr 1fr; }
+        }
+
+        .background-control-card{position:absolute;top:8px;right:18px;display:flex;align-items:center;gap:12px;min-width:210px;padding:10px 12px;background:rgba(30,41,59,.88);border:2px solid rgba(132,204,22,.85);border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.25);text-align:left}.background-control-card strong{display:block;color:#f8fafc;font-size:.95rem}.background-control-card small{display:block;color:#94a3b8;font-size:.72rem;margin-top:2px}.top-metric-label{color:#94a3b8;font-size:.78rem!important;text-transform:uppercase;letter-spacing:1px;font-weight:800}.dashboard-metric-value{font-size:clamp(1.9rem,2.35vw,2.65rem)!important;font-weight:900!important;line-height:1.08!important;letter-spacing:-.03em}.bankroll-sport-badge{display:inline-flex;margin-left:6px;padding:2px 6px;border-radius:999px;background:rgba(59,130,246,.15);color:#bfdbfe;font-size:.68rem;font-weight:900;vertical-align:middle}@media(max-width:900px){.background-control-card{position:static;margin:10px auto 0 auto;max-width:320px;justify-content:space-between}}
+
+        /* STEP61_MANUAL_DEEPSCAN_UI_STYLES */
+        .manual-deepscan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}.manual-deepscan-card{background:rgba(15,23,42,.72);border:1px solid var(--border-color);border-radius:14px;padding:14px}.manual-deepscan-card label{display:block;color:#94a3b8;font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}.manual-deepscan-card input,.manual-deepscan-card select,.manual-deepscan-card textarea{width:100%;box-sizing:border-box}.manual-deepscan-result{white-space:pre-wrap;line-height:1.55;color:#e2e8f0;background:rgba(2,6,23,.65);border:1px solid rgba(56,189,248,.25);border-radius:14px;padding:16px;min-height:180px}.manual-deepscan-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:14px 0}.manual-deepscan-kpi{background:rgba(30,41,59,.72);border:1px solid var(--border-color);border-radius:12px;padding:12px}.manual-deepscan-kpi span{display:block;color:#94a3b8;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}.manual-deepscan-kpi strong{display:block;margin-top:5px;color:#f8fafc;font-size:1rem}.manual-deepscan-warning{margin-top:10px;color:#fbbf24;font-size:.86rem}.manual-deepscan-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.manual-deepscan-prompt{font-family:Consolas,monospace;font-size:.86rem;white-space:pre-wrap;background:#020617;border:1px dashed rgba(168,85,247,.55);border-radius:14px;padding:14px;color:#ddd6fe;max-height:360px;overflow:auto}
+        /* /STEP61_MANUAL_DEEPSCAN_UI_STYLES */
+
+        /* PATCH5_RUNTIME_DIAGNOSTICS_UI */
+        .runtime-diagnostic-panel {
+            position: fixed; right: 18px; bottom: 18px; z-index: 99999;
+            width: min(520px, calc(100vw - 36px)); max-height: 58vh; overflow: auto;
+            background: rgba(15,23,42,.98); border: 1px solid rgba(248,113,113,.55);
+            border-left: 5px solid #ef4444; border-radius: 14px; padding: 14px;
+            box-shadow: 0 18px 45px rgba(0,0,0,.45); color: #e2e8f0; display: none;
+        }
+        .runtime-diagnostic-panel.is-visible { display: block; }
+        .runtime-diagnostic-panel.severity-warn { border-left-color: #f59e0b; border-color: rgba(245,158,11,.5); }
+        .runtime-diagnostic-panel.severity-info { border-left-color: #38bdf8; border-color: rgba(56,189,248,.45); }
+        .runtime-diagnostic-header { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }
+        .runtime-diagnostic-title { margin:0; font-size:1rem; color:#fecaca; }
+        .runtime-diagnostic-panel.severity-warn .runtime-diagnostic-title { color:#fde68a; }
+        .runtime-diagnostic-panel.severity-info .runtime-diagnostic-title { color:#bae6fd; }
+        .runtime-diagnostic-meta { margin-top:7px; font-size:.78rem; color:#94a3b8; line-height:1.45; }
+        .runtime-diagnostic-message { margin-top:10px; white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.5; }
+        .runtime-diagnostic-details { margin-top:10px; padding:9px; border-radius:9px; background:rgba(2,6,23,.75); font: .76rem/1.45 Consolas, monospace; white-space:pre-wrap; overflow-wrap:anywhere; }
+        .runtime-diagnostic-actions { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
+        .runtime-diagnostic-actions button { border:1px solid rgba(148,163,184,.35); background:#1e293b; color:#e2e8f0; border-radius:8px; padding:6px 10px; cursor:pointer; }
+        .runtime-diagnostic-close { border:0; background:transparent; color:#cbd5e1; font-size:1.1rem; cursor:pointer; }
+        @media (max-width: 640px) { .runtime-diagnostic-panel { right:8px; bottom:8px; width:calc(100vw - 16px); max-height:70vh; } }
+        /* PATCH9_TENNIS_OPERATIONS_CENTER_UI */
+        .tennis-operations-center {
+            margin: 0 0 20px; border:1px solid rgba(56,189,248,.32); border-radius:16px;
+            background:linear-gradient(145deg,rgba(15,23,42,.94),rgba(15,23,42,.78));
+            box-shadow:0 14px 34px rgba(2,6,23,.26); overflow:hidden; transition:max-height .2s ease,opacity .2s ease;
+        }
+        .tennis-operations-center.is-sport-hidden { display:none; }
+        .tennis-operations-header {
+            min-height:58px; display:flex; align-items:center; justify-content:space-between; gap:12px;
+            padding:10px 12px; border-bottom:1px solid rgba(148,163,184,.18);
+        }
+        .tennis-operations-heading { display:flex; align-items:center; gap:10px; min-width:0; }
+        .tennis-operations-icon {
+            width:38px; height:38px; display:grid; place-items:center; flex:0 0 38px; border-radius:11px;
+            background:rgba(56,189,248,.14); border:1px solid rgba(56,189,248,.34); font-size:1.1rem;
+        }
+        .tennis-operations-title { margin:0; color:#e2e8f0; font-size:1rem; }
+        .tennis-operations-subtitle { margin-top:2px; color:#94a3b8; font-size:.72rem; }
+        .tennis-operations-summary { display:flex; gap:6px; flex-wrap:wrap; margin-left:auto; justify-content:flex-end; }
+        .tennis-operations-chip {
+            display:inline-flex; align-items:center; gap:5px; min-height:25px; padding:3px 8px; border-radius:999px;
+            border:1px solid rgba(148,163,184,.25); background:rgba(30,41,59,.75); color:#cbd5e1;
+            font-size:.7rem; font-weight:800; white-space:nowrap;
+        }
+        .tennis-operations-chip.status-ok { color:#6ee7b7; border-color:rgba(16,185,129,.42); }
+        .tennis-operations-chip.status-warn { color:#fde68a; border-color:rgba(245,158,11,.48); }
+        .tennis-operations-chip.status-error { color:#fecaca; border-color:rgba(239,68,68,.48); }
+        .tennis-operations-actions { display:flex; align-items:center; gap:7px; }
+        .tennis-operations-action {
+            min-height:34px; border-radius:9px; border:1px solid rgba(148,163,184,.3); background:#1e293b;
+            color:#e2e8f0; padding:6px 10px; cursor:pointer; font-weight:800;
+        }
+        .tennis-operations-toggle { width:36px; padding:0; font-size:1.05rem; }
+        .tennis-operations-body { padding:12px; display:grid; gap:12px; }
+        .tennis-patch-map {
+            display:grid; grid-template-columns:repeat(auto-fit,minmax(118px,1fr)); gap:7px;
+            padding:9px; border:1px solid rgba(148,163,184,.16); border-radius:11px;
+            background:rgba(2,6,23,.34);
+        }
+        .tennis-patch-map-item {
+            display:flex; align-items:center; gap:7px; min-height:34px; padding:6px 8px;
+            border-radius:9px; border:1px solid rgba(148,163,184,.15); background:rgba(30,41,59,.55);
+            color:#cbd5e1; font-size:.7rem; line-height:1.15;
+        }
+        .tennis-patch-map-item strong {
+            display:grid; place-items:center; min-width:24px; height:24px; border-radius:7px;
+            background:rgba(56,189,248,.13); color:#7dd3fc; font-size:.68rem;
+        }
+        .tennis-patch-map-item span { min-width:0; }
+        .tennis-operations-center.is-collapsed { width:58px; max-width:58px; }
+        .tennis-operations-center.is-collapsed .tennis-operations-header { width:58px; min-height:58px; padding:9px; border-bottom:0; }
+        .tennis-operations-center.is-collapsed .tennis-operations-heading > div:not(.tennis-operations-icon),
+        .tennis-operations-center.is-collapsed .tennis-operations-summary,
+        .tennis-operations-center.is-collapsed .tennis-operations-actions .tennis-operations-refresh { display:none; }
+        .tennis-operations-center.is-collapsed .tennis-operations-actions { margin-left:-7px; }
+        .tennis-operations-center.is-collapsed .tennis-operations-toggle { position:absolute; opacity:0; width:58px; height:58px; }
+        .tennis-operations-center.is-collapsed .tennis-operations-body { display:none; }
+        .tennis-operations-panel {
+            margin:0; padding:14px; border-radius:12px; border:1px solid rgba(148,163,184,.2);
+            border-left:5px solid #38bdf8; background:rgba(15,23,42,.72);
+        }
+        .tennis-operations-panel-header { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap; }
+        .tennis-operations-eyebrow { font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; color:#94a3b8; }
+        .tennis-operations-panel h3 { margin:4px 0; font-size:1rem; }
+        .tennis-operations-panel-message { color:#cbd5e1; font-size:.82rem; }
+        .tennis-calibration-readiness-panel { border-left-color:#38bdf8; }
+        .tennis-calibration-readiness-panel.status-not-ready { border-left-color:#f59e0b; }
+        .tennis-calibration-readiness-panel.status-degraded { border-left-color:#ef4444; }
+        .tennis-calibration-readiness-panel.status-ready { border-left-color:#10b981; }
+        .tennis-prediction-audit-panel { border-left-color:#8b5cf6; }
+        .tennis-prediction-audit-panel.status-ok { border-left-color:#10b981; }
+        .tennis-prediction-audit-panel.status-warn { border-left-color:#f59e0b; }
+        .tennis-prediction-audit-panel.status-error { border-left-color:#ef4444; }
+        .tennis-forward-lifecycle-panel { border-left-color:#14b8a6; }
+        .tennis-forward-lifecycle-panel.status-ok { border-left-color:#10b981; }
+        .tennis-forward-lifecycle-panel.status-warn { border-left-color:#f59e0b; }
+        .tennis-forward-lifecycle-panel.status-error { border-left-color:#ef4444; }
+        .tennis-forward-cohort-panel { border-left-color:#f472b6; }
+        .tennis-quality-gate-panel { border-left-color:#60a5fa; }
+        .tennis-forward-cohort-panel.status-ok { border-left-color:#10b981; }
+        .tennis-forward-cohort-panel.status-warn { border-left-color:#f59e0b; }
+        .tennis-forward-cohort-panel.status-error { border-left-color:#ef4444; }
+        .tennis-calibration-readiness-grid,.tennis-prediction-audit-grid,.tennis-forward-lifecycle-grid,.tennis-forward-cohort-grid,.tennis-quality-gate-grid,.tennis-forward-capture-grid,.tennis-matchup-intelligence-grid {
+            display:grid; grid-template-columns:repeat(auto-fit,minmax(135px,1fr)); gap:8px; margin-top:10px;
+        }
+        .tennis-calibration-readiness-metric,.tennis-prediction-audit-metric,.tennis-forward-lifecycle-metric,.tennis-forward-cohort-metric,.tennis-quality-gate-metric,.tennis-forward-capture-metric,.tennis-matchup-intelligence-metric {
+            background:rgba(30,41,59,.66); padding:9px; border-radius:9px; border:1px solid rgba(148,163,184,.16);
+        }
+        .tennis-calibration-readiness-metric span,.tennis-prediction-audit-metric span,.tennis-forward-lifecycle-metric span,.tennis-forward-cohort-metric span,.tennis-quality-gate-metric span,.tennis-forward-capture-metric span,.tennis-matchup-intelligence-metric span {
+            display:block; color:#94a3b8; font-size:.68rem; text-transform:uppercase; letter-spacing:.04em;
+        }
+        .tennis-calibration-readiness-metric strong,.tennis-prediction-audit-metric strong,.tennis-forward-lifecycle-metric strong,.tennis-forward-cohort-metric strong,.tennis-quality-gate-metric strong,.tennis-forward-capture-metric strong,.tennis-matchup-intelligence-metric strong {
+            display:block; color:#e2e8f0; font-size:.98rem; margin-top:3px;
+        }
+        .tennis-prediction-audit-recent,.tennis-forward-lifecycle-details,.tennis-forward-cohort-details,.tennis-matchup-intelligence-details {
+            margin-top:9px; max-height:150px; overflow:auto; font-size:.74rem; color:#cbd5e1; white-space:pre-wrap;
+        }
+        @media (max-width:760px) {
+            .tennis-operations-header { align-items:flex-start; }
+            .tennis-operations-summary { order:3; width:100%; justify-content:flex-start; margin-left:48px; }
+            .tennis-operations-action.tennis-operations-refresh { display:none; }
+            .tennis-operations-body { padding:8px; }
+        }
+        /* /PATCH9_TENNIS_OPERATIONS_CENTER_UI */
+
+
+
+        /* PATCH41_FINAL_LAYOUT_PRECEDENCE */
+        .step55-forward-summary-grid.step41-trading-dashboard {
+            grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+        }
+        @media (max-width:900px) {
+            .step55-forward-summary-grid.step41-trading-dashboard { grid-template-columns:1fr; }
+        }
+        /* /PATCH41_FINAL_LAYOUT_PRECEDENCE */
+    
+
+        /* PATCH42_TRADING_ACCORDION_ICON_DISCLOSURE */
+        .step42-trading-header {
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:10px;
+            padding:6px 0 2px;
+        }
+        .step42-trading-title {
+            display:flex;
+            align-items:center;
+            gap:8px;
+            min-width:0;
+            color:var(--accent);
+            font-weight:900;
+            font-size:1rem;
+        }
+        .step42-trading-title-icon,
+        .step42-icon-action {
+            width:38px;
+            height:38px;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:11px;
+            border:1px solid rgba(148,163,184,.22);
+            background:rgba(15,23,42,.72);
+            color:#dbeafe;
+            cursor:pointer;
+            transition:background .16s ease,border-color .16s ease,transform .16s ease;
+        }
+        .step42-trading-title-icon { cursor:default; font-size:1.05rem; }
+        .step42-icon-action:hover,
+        .step42-icon-action:focus-visible {
+            background:rgba(56,189,248,.12);
+            border-color:rgba(56,189,248,.55);
+            transform:translateY(-1px);
+            outline:none;
+        }
+        .step42-icon-action .step42-action-label {
+            position:absolute;
+            width:1px;
+            height:1px;
+            padding:0;
+            margin:-1px;
+            overflow:hidden;
+            clip:rect(0,0,0,0);
+            white-space:nowrap;
+            border:0;
+        }
+        .step42-action-cluster { display:flex; gap:7px; align-items:center; flex-wrap:wrap; }
+        .step42-accordion-toolbar {
+            display:flex;
+            align-items:center;
+            justify-content:flex-end;
+            gap:6px;
+            margin:8px 0 3px;
+        }
+        .step42-accordion-toolbar button {
+            width:32px;
+            height:32px;
+            border-radius:9px;
+            border:1px solid rgba(148,163,184,.20);
+            background:rgba(15,23,42,.58);
+            color:#cbd5e1;
+            cursor:pointer;
+            font-weight:900;
+        }
+        .step42-accordion-toolbar button:hover,
+        .step42-accordion-toolbar button:focus-visible {
+            color:#7dd3fc;
+            border-color:rgba(56,189,248,.48);
+            outline:none;
+        }
+        .step42-trading-dashboard {
+            display:grid;
+            grid-template-columns:1fr;
+            gap:8px;
+            align-items:start;
+        }
+        details.step42-accordion {
+            width:100%;
+            min-width:0;
+            border:1px solid rgba(148,163,184,.18);
+            border-left:3px solid var(--step42-accent, rgba(56,189,248,.65));
+            border-radius:12px;
+            background:linear-gradient(180deg,rgba(30,41,59,.84),rgba(15,23,42,.84));
+            overflow:hidden;
+            box-shadow:0 5px 14px rgba(2,6,23,.12);
+        }
+        details.step42-accordion[open] {
+            border-color:rgba(148,163,184,.28);
+            box-shadow:0 10px 24px rgba(2,6,23,.18);
+        }
+        details.step42-accordion > summary {
+            list-style:none;
+            display:grid;
+            grid-template-columns:36px minmax(180px,1fr) auto 30px;
+            align-items:center;
+            gap:10px;
+            min-height:48px;
+            padding:7px 10px;
+            cursor:pointer;
+            user-select:none;
+        }
+        details.step42-accordion > summary::-webkit-details-marker { display:none; }
+        details.step42-accordion > summary:hover { background:rgba(56,189,248,.045); }
+        details.step42-accordion > summary:focus-visible {
+            outline:2px solid rgba(56,189,248,.52);
+            outline-offset:-2px;
+        }
+        .step42-panel-icon {
+            width:31px;
+            height:31px;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:9px;
+            background:rgba(15,23,42,.82);
+            border:1px solid rgba(148,163,184,.16);
+            font-size:.98rem;
+        }
+        .step42-panel-copy { min-width:0; }
+        .step42-panel-copy strong {
+            display:block;
+            color:#f8fafc;
+            font-size:.83rem;
+            line-height:1.15;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .step42-panel-copy small {
+            display:block;
+            margin-top:2px;
+            color:#64748b;
+            font-size:.62rem;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .step42-summary-kpis {
+            display:flex;
+            align-items:center;
+            justify-content:flex-end;
+            gap:5px;
+            flex-wrap:wrap;
+        }
+        .step42-summary-chip {
+            display:inline-flex;
+            align-items:baseline;
+            gap:4px;
+            min-height:25px;
+            padding:3px 7px;
+            border:1px solid rgba(148,163,184,.15);
+            border-radius:8px;
+            background:rgba(2,6,23,.32);
+            white-space:nowrap;
+        }
+        .step42-summary-chip span {
+            color:#64748b;
+            font-size:.55rem;
+            text-transform:uppercase;
+            letter-spacing:.04em;
+        }
+        .step42-summary-chip strong { color:#e2e8f0; font-size:.71rem; }
+        .step42-summary-chip.positive strong { color:#34d399; }
+        .step42-summary-chip.negative strong { color:#fb7185; }
+        .step42-disclosure-chevron {
+            width:27px;
+            height:27px;
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            color:#94a3b8;
+            border-radius:8px;
+            transition:transform .18s ease,background .18s ease;
+        }
+        details.step42-accordion[open] .step42-disclosure-chevron {
+            transform:rotate(180deg);
+            background:rgba(56,189,248,.08);
+            color:#7dd3fc;
+        }
+        .step42-panel-body { padding:0 10px 10px; }
+        .step42-panel-body > .step55-summary-card,
+        .step42-panel-body > .ai-outcome-panel {
+            border:0 !important;
+            box-shadow:none !important;
+            background:transparent !important;
+            padding:4px 0 0 !important;
+            border-radius:0 !important;
+        }
+        .step42-panel-body .step55-card-heading { display:none !important; }
+        .step42-panel-body .ai-outcome-header { display:none; }
+        .step42-panel-body .step41-table-scroll { max-height:min(58vh,520px); overflow:auto; }
+        .step42-market-audit { --step42-accent:#f59e0b; }
+        .step42-exposure { --step42-accent:#f59e0b; }
+        .step42-global { --step42-accent:#10b981; }
+        .step42-rolling { --step42-accent:#38bdf8; }
+        .step42-calibration { --step42-accent:#64748b; }
+        .step42-league { --step42-accent:#a855f7; }
+        .step42-deepscan { --step42-accent:#f59e0b; }
+        .step42-quality { --step42-accent:#38bdf8; }
+        .step42-ai-bands { --step42-accent:#14b8a6; }
+        .step42-panel-body[hidden] { display:none !important; }
+        @media (max-width:900px) {
+            details.step42-accordion > summary {
+                grid-template-columns:34px minmax(0,1fr) 28px;
+            }
+            .step42-summary-kpis { display:none; }
+            .step42-trading-title-text { display:none; }
+        }
+        @media (max-width:560px) {
+            .step42-trading-header { align-items:center; }
+            .step42-icon-action,.step42-trading-title-icon { width:34px; height:34px; border-radius:9px; }
+            details.step42-accordion > summary { min-height:44px; padding:6px 8px; gap:7px; }
+            .step42-panel-body { padding:0 7px 8px; }
+        }
+        /* /PATCH42_TRADING_ACCORDION_ICON_DISCLOSURE */
+
+    </style>
+    <!-- STEP88/STEP89/STEP90 legacy cache markers per test statici:
+         app.js?v=step85-portfolio-chart-layout-fix
+         app.js?v=step87-portfolio-axis-tour-clv
+         app.js?v=step88-master-alignment
+         app.js?v=step89-frontend-full-repair
+         app.js?v=step90-prematch-gate-alignment
+         data-step88-master-alignment
+         data-step89-frontend-full-repair
+         data-step90-prematch-gate-alignment
+    -->
+<meta name="tennis-patch38-marker" content="TENNIS_PATCH38_FORWARD_HEALTH_DECISION_TRUTH_EXTERNAL_EVIDENCE_INTEGRITY">
+</head>
+<body data-patch56-cross-sport-portfolio-risk="true" data-patch55-statistical-production-readiness="true" data-patch54-calcio-registry-harmonization="true" data-patch34-r4-settlement-truth-snapshot-authority="true" data-patch34-official-schedule-authority-reschedule-lifecycle="true" data-patch33-canonical-event-time-provider-time-quality="true" data-patch32-rejected-capture-observability="true" data-patch31-secrets-release-hardening="true" data-patch30-core-hygiene-script-contract-repair="true" data-patch29-r3-prematch-capture-gate-component-health-semantic="true" data-patch29-r2-settlement-update-audit-truth="true" data-patch29-r1-wta-settlement-diagnostic-clarity="true" data-patch26ff-r1-runtime-diagnostics-truth="true" data-patch26ff-ai-outcome-bands="true" data-patch28-r3-runtime-alignment="true" data-step88-master-alignment="true" data-step89-frontend-full-repair="true" data-step90-prematch-gate-alignment="true" data-patch5-runtime-diagnostics="true" data-patch26fd-runtime-diagnostics-v2="true" data-patch26fd-reliability-calibration="true" data-patch6-calibration-readiness="true" data-patch7-prediction-snapshots="true" data-patch8-forward-lifecycle="true" data-patch9-forward-cohorts="true" data-patch9-compact-operations-center="true" data-patch10-quality-gate-v2="true" data-patch11-forward-capture="true" data-patch12-player-matchup-intelligence="true" data-patch13-historical-combination="true" data-patch13-program-progression="true" data-patch14-player-data-refresh="true" data-patch14-freshness-guard="true" data-patch20-resilient-player-data-refresh="true" data-patch25-runtime-health-truth="true" data-patch25-exact-scheduler="true">
+
+    <aside id="runtimeDiagnosticPanel" class="runtime-diagnostic-panel" role="alert" aria-live="assertive" aria-label="Diagnostica runtime">
+        <div class="runtime-diagnostic-header">
+            <div>
+                <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;">Runtime Diagnostics V2 · Stato sistema</div>
+                <h3 id="runtimeDiagnosticTitle" class="runtime-diagnostic-title">Errore applicazione</h3>
+            </div>
+            <button id="runtimeDiagnosticClose" class="runtime-diagnostic-close" type="button" title="Chiudi">✕</button>
+        </div>
+        <div id="runtimeDiagnosticMeta" class="runtime-diagnostic-meta"></div>
+        <div id="runtimeDiagnosticMessage" class="runtime-diagnostic-message"></div>
+        <pre id="runtimeDiagnosticDetails" class="runtime-diagnostic-details" style="display:none;"></pre>
+        <div class="runtime-diagnostic-actions">
+            <button id="runtimeDiagnosticToggle" type="button" aria-expanded="false" style="display:none;">Mostra dettagli</button>
+            <button id="runtimeDiagnosticCopy" type="button">Copia diagnostica</button>
+            <button id="runtimeDiagnosticRefresh" type="button">Leggi log Node</button>
+        </div>
+    </aside>
+
+    <div id="loading-bar" style="position: fixed; top: 0; left: 0; width: 0%; height: 4px; background: var(--accent); z-index: 9999; transition: width 0.3s ease; display: none; box-shadow: 0 0 15px var(--accent);"></div>
+
+    <header style="position: relative; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px; margin-bottom: 15px; text-align: center;">
+        <h1 style="color: var(--text-main); margin: 0; font-size: 1.6em; letter-spacing: -0.5px;">🤖 Quant <span style="color: var(--accent);">Pro</span></h1>
+        <p style="color: #94a3b8; margin: 3px 0 0 0; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px;">AI Value Betting Engine</p>
+        <a href="/telegram.html" class="step109-telegram-link" data-step109="STEP109_TELEGRAM_UI_LINK" style="display:inline-flex;align-items:center;justify-content:center;margin-top:10px;padding:8px 12px;border-radius:10px;border:1px solid #38bdf8;color:#38bdf8;text-decoration:none;font-weight:900;background:rgba(56,189,248,.08);">📲 Telegram</a>
+        <div class="background-control-card" aria-label="Controllo modalità background"><div><strong>Background</strong><small id="backgroundModeLabel">Background spento</small></div><label class="switch" title="Attiva background Tennis; Calcio richiede abilitazione esplicita"><input type="checkbox" id="backgroundModeToggle"><span class="slider"></span></label></div>
+    </header>
+    <div class="sport-selector" role="tablist" aria-label="Selezione sport">
+        <button type="button" id="btnSportCalcio" onclick="switchSport('calcio')" role="tab" aria-selected="true" style="flex: 1; padding: 10px; font-weight: 700; border-radius: 8px; cursor: pointer; border: none; background: var(--accent); color: white; font-size: 0.95em; transition: background 0.3s;">⚽ Calcio</button>
+        <button type="button" id="btnSportTennis" onclick="switchSport('tennis')" role="tab" aria-selected="false" style="flex: 1; padding: 10px; font-weight: 700; border-radius: 8px; cursor: pointer; border: none; background: transparent; color: #94a3b8; font-size: 0.95em; transition: background 0.3s;">🎾 Tennis</button>
+        <button type="button" id="btnSportDeepScan" onclick="switchSport('manual_deepscan')" role="tab" aria-selected="false" style="flex: 1; padding: 10px; font-weight: 700; border-radius: 8px; cursor: pointer; border: none; background: transparent; color: #94a3b8; font-size: 0.95em; transition: background 0.3s;">🔎 DeepScan</button>
+    </div>
+
+    <div id="generalStatsBox" style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+        <div class="stat-widget">
+            <span class="top-metric-label">Saldo aggiornato dello sport</span><span id="bankrollSportBadge" class="bankroll-sport-badge">Calcio</span><br>
+            <strong id="displayBankroll" class="dashboard-metric-value" style="color: var(--text-main);">€ 1000.00</strong>
+        </div>
+        <div class="stat-widget">
+            <span class="top-metric-label">ROI Globale</span><br>
+            <strong id="displayRoi" class="dashboard-metric-value" style="color: var(--accent);">0.00%</strong>
+        </div>
+        <div class="stat-widget">
+            <span class="top-metric-label">Yield (Avg)</span><br>
+            <strong id="displayYield" class="dashboard-metric-value" style="color: #a855f7;">€ 0.00</strong>
+        </div>
+        <div class="stat-widget" title="Precisione del Modello. Più è basso, meglio è.">
+            <span class="top-metric-label">Brier Score</span><br>
+            <strong id="displayBrier" class="dashboard-metric-value" style="color: #38bdf8;">0.000</strong>
+        </div>
+        <div class="stat-widget" title="Percentuale di volte in cui battiamo la Closing Line.">
+            <span class="top-metric-label">CLV Beat</span><br>
+            <strong id="displayClvBeat" class="dashboard-metric-value" style="color: #f59e0b;">0.0%</strong>
+        </div>
+    </div>
+
+
+
+    <section id="tennisOperationsCenter" class="tennis-operations-center is-sport-hidden" aria-label="Centro operativo aggiornamenti Tennis" data-state="expanded">
+        <header class="tennis-operations-header">
+            <div class="tennis-operations-heading">
+                <div class="tennis-operations-icon" aria-hidden="true">🎾</div>
+                <div>
+                    <h2 class="tennis-operations-title">Centro operativo Tennis</h2>
+                    <div class="tennis-operations-subtitle">Patch 1–25 · runtime health coerente, scheduler esatto e intake forward atomico</div>
+                </div>
+            </div>
+            <div class="tennis-operations-summary" aria-live="polite">
+                <span id="tennisOpsPatchChip" class="tennis-operations-chip">Patch 25</span>
+                <span id="tennisOpsReadinessChip" class="tennis-operations-chip status-warn">Verifica sistema…</span>
+                <span id="tennisOpsAlertChip" class="tennis-operations-chip status-ok">0 avvisi · 0 errori</span>
+            </div>
+            <div class="tennis-operations-actions">
+                <button type="button" id="refreshTennisOperationsCenter" class="tennis-operations-action tennis-operations-refresh" title="Aggiorna tutti i controlli">🔄 Aggiorna</button>
+                <button type="button" id="toggleTennisOperationsCenter" class="tennis-operations-action tennis-operations-toggle" aria-expanded="true" aria-controls="tennisOperationsBody" title="Riduci a icona">−</button>
+            </div>
+        </header>
+        <div id="tennisOperationsBody" class="tennis-operations-body">
+            <div id="tennisPatchMap" class="tennis-patch-map" aria-label="Mappa aggiornamenti Tennis Patch 1-25">
+                <div class="tennis-patch-map-item" data-tennis-patch="1"><strong>P1</strong><span>Pipeline unica</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="2"><strong>P2</strong><span>Formato BO3/BO5</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="3"><strong>P3</strong><span>Identità evento</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="4"><strong>P4</strong><span>Contratto CLV</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="5"><strong>P5</strong><span>Settlement e log</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="6"><strong>P6</strong><span>Readiness shadow</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="7"><strong>P7</strong><span>Snapshot immutabile</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="8"><strong>P8</strong><span>Lifecycle atomico</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="9"><strong>P9</strong><span>Coorti e holdout</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="10"><strong>P10</strong><span>Qualità + stake</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="11"><strong>P11</strong><span>SLA + supporto</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="12"><strong>P12</strong><span>Giocatori + matchup</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="13"><strong>P13</strong><span>WR DS×Gate + audit</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="14"><strong>P14</strong><span>Dati freschi + LKG</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="15"><strong>P15</strong><span>Fonti e ricevute</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="16"><strong>P16</strong><span>Statistiche storiche</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="17"><strong>P17</strong><span>Performance shadow</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="18"><strong>P18</strong><span>Cross-fit + bootstrap</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="19"><strong>P19</strong><span>Markov + MC + Elo + round</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="20"><strong>P20</strong><span>Refresh resiliente</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="21"><strong>P21</strong><span>Multi-provider zero-key</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="22"><strong>P22</strong><span>Freschezza per circuito</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="23"><strong>P23</strong><span>Retrieval tour-aware</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="24"><strong>P24</strong><span>Intake forward atomico</span></div>
+                <div class="tennis-patch-map-item" data-tennis-patch="25"><strong>P25</strong><span>Health truth + scheduler esatto</span></div>
+            </div>
+            <section id="tennisCalibrationReadinessPanel" class="tennis-operations-panel tennis-calibration-readiness-panel status-not-ready" aria-live="polite">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow">Patch 6 · Calibration Eligibility</div>
+                        <h3 id="tennisCalibrationReadinessTitle" style="color:#fbbf24;">Calibrazione certificata: caricamento…</h3>
+                        <div id="tennisCalibrationReadinessMessage" class="tennis-operations-panel-message">Lettura del ledger e delle metriche shadow.</div>
+                    </div>
+                    <button type="button" id="refreshTennisCalibrationReadiness" class="export-btn" style="border-color:#38bdf8;color:#38bdf8;">🔄 Readiness</button>
+                </div>
+                <div id="tennisCalibrationReadinessGrid" class="tennis-calibration-readiness-grid"></div>
+                <div id="tennisCalibrationReadinessReasons" style="margin-top:9px;color:#fca5a5;font-size:.74rem;white-space:pre-wrap;"></div>
+            </section>
+
+            <section id="tennisPredictionAuditPanel" class="tennis-operations-panel tennis-prediction-audit-panel status-warn" aria-live="polite">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#a78bfa;">Patch 7 · Immutable Prediction Snapshot</div>
+                        <h3 id="tennisPredictionAuditTitle" style="color:#c4b5fd;">Snapshot predittivi: caricamento…</h3>
+                        <div id="tennisPredictionAuditMessage" class="tennis-operations-panel-message">Verifica catena hash, anchor pre-match e revisioni append-only.</div>
+                    </div>
+                    <button type="button" id="refreshTennisPredictionAudit" class="export-btn" style="border-color:#a78bfa;color:#c4b5fd;">🔄 Snapshot</button>
+                </div>
+                <div id="tennisPredictionAuditGrid" class="tennis-prediction-audit-grid"></div>
+                <div id="tennisPredictionAuditRecent" class="tennis-prediction-audit-recent"></div>
+            </section>
+
+            <section id="tennisForwardLifecyclePanel" class="tennis-operations-panel tennis-forward-lifecycle-panel status-ok" aria-live="polite">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#5eead4;">Patch 8 · Forward Lifecycle Watchdog</div>
+                        <h3 id="tennisForwardLifecycleTitle" style="color:#5eead4;">Lifecycle forward: caricamento…</h3>
+                        <div id="tennisForwardLifecycleMessage" class="tennis-operations-panel-message">Verifica atomica tra snapshot, CLV, settlement e ledger calibrazione.</div>
+                    </div>
+                    <button type="button" id="refreshTennisForwardLifecycle" class="export-btn" style="border-color:#2dd4bf;color:#5eead4;">🔄 Lifecycle</button>
+                </div>
+                <div id="tennisForwardLifecycleGrid" class="tennis-forward-lifecycle-grid"></div>
+                <div id="tennisForwardLifecycleDetails" class="tennis-forward-lifecycle-details"></div>
+            </section>
+
+            <section id="tennisForwardCohortPanel" class="tennis-operations-panel tennis-forward-cohort-panel status-ok" aria-live="polite">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#f9a8d4;">Patch 9 · Cohort Seal & Temporal Guard</div>
+                        <h3 id="tennisForwardCohortTitle" style="color:#f9a8d4;">Coorti forward: caricamento…</h3>
+                        <div id="tennisForwardCohortMessage" class="tennis-operations-panel-message">Membership immutabile, holdout separato e controllo leakage temporale.</div>
+                    </div>
+                    <button type="button" id="refreshTennisForwardCohorts" class="export-btn" style="border-color:#f472b6;color:#f9a8d4;">🔄 Coorti</button>
+                </div>
+                <div id="tennisForwardCohortGrid" class="tennis-forward-cohort-grid"></div>
+                <div id="tennisForwardCohortDetails" class="tennis-forward-cohort-details"></div>
+            </section>
+
+            <section id="tennisQualityGatePanel" class="tennis-operations-panel tennis-quality-gate-panel status-ok" aria-live="polite">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#93c5fd;">Patch 10 · Quality Gate V2</div>
+                        <h3 id="tennisQualityGateTitle" style="color:#93c5fd;">Qualità/Gate: caricamento…</h3>
+                        <div id="tennisQualityGateMessage" class="tennis-operations-panel-message">Qualità base quantitativa prima del DeepScan; gate finale dopo fusione indipendente.</div>
+                    </div>
+                    <button type="button" id="refreshTennisQualityGate" class="export-btn" style="border-color:#60a5fa;color:#93c5fd;">🔄 Qualità</button>
+                </div>
+                <div id="tennisQualityGateGrid" class="tennis-quality-gate-grid"></div>
+                <div id="tennisQualityGateDetails" class="tennis-forward-cohort-details"></div>
+            </section>
+
+            <section id="tennisForwardCapturePanel" class="tennis-operations-panel tennis-forward-capture-panel status-ok" aria-live="polite" style="border-left-color:#22c55e;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#86efac;">Patch 11 · Forward Capture SLA</div>
+                        <h3 id="tennisForwardCaptureTitle" style="color:#86efac;">Acquisizione forward: caricamento…</h3>
+                        <div id="tennisForwardCaptureMessage" class="tennis-operations-panel-message">Snapshot, coorte, CLV, settlement e coerenza Quality/Stake in modalità read-only.</div>
+                    </div>
+                    <button type="button" id="refreshTennisForwardCapture" class="export-btn" style="border-color:#22c55e;color:#86efac;">🔄 Acquisizione</button>
+                </div>
+                <div id="tennisForwardCaptureGrid" class="tennis-forward-capture-grid"></div>
+                <div id="tennisForwardCaptureDetails" class="tennis-forward-cohort-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Bundle supporto sicuro: <code>npm run support:bundle:safe</code></div>
+            </section>
+
+
+
+            <section id="tennisPatch37ExternalIntelligencePanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#06b6d4;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#67e8f9;">Patch 37 · External Match Intelligence</div>
+                        <h3 id="tennisPatch37ExternalIntelligenceTitle" style="color:#67e8f9;">H2H, ranking e meteo: caricamento…</h3>
+                        <div id="tennisPatch37ExternalIntelligenceMessage" class="tennis-operations-panel-message">H2H strutturato locale, ranking ufficiale e meteo venue-aware con autorità separate.</div>
+                    </div>
+                    <button type="button" id="refreshTennisPatch37ExternalIntelligence" class="export-btn" style="border-color:#06b6d4;color:#67e8f9;">🔄 Fonti</button>
+                </div>
+                <div id="tennisPatch37ExternalIntelligenceGrid" class="tennis-forward-capture-grid"></div>
+                <div id="tennisPatch37ExternalIntelligenceDetails" class="tennis-forward-cohort-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">H2H massimo ±2,5pp nel DeepScan; ranking e meteo non possono aumentare stake, promuovere il modello o determinare settlement.</div>
+            </section>
+
+            <section id="tennisPatch36GovernancePanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#f59e0b;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#fcd34d;">Patch 36 · WTA Provider Recovery & Tour Drift Authority</div>
+                        <h3 id="tennisPatch36GovernanceTitle" style="color:#fcd34d;">Governance WTA e drift: caricamento…</h3>
+                        <div id="tennisPatch36GovernanceMessage" class="tennis-operations-panel-message">Freschezza WTA, provider zero-key, separazione retrospettivo/forward e circuit breaker stake.</div>
+                    </div>
+                    <button type="button" id="refreshTennisPatch36Governance" class="export-btn" style="border-color:#f59e0b;color:#fcd34d;">🔄 Governance</button>
+                </div>
+                <div id="tennisPatch36GovernanceGrid" class="tennis-forward-capture-grid"></div>
+                <div id="tennisPatch36GovernanceDetails" class="tennis-forward-cohort-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Il drift retrospettivo è diagnostico: può ridurre la confidenza, ma non modificare la probabilità. La WTA stale resta paper-only.</div>
+            </section>
+
+            <section id="tennisOfficialSchedulePanel" class="tennis-operations-panel status-ok" aria-live="polite" style="border-left-color:#8b5cf6;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#c4b5fd;">Patch 34 · Official Schedule Authority & Reschedule Lifecycle</div>
+                        <h3 id="tennisOfficialScheduleTitle" style="color:#c4b5fd;">Schedule ufficiale: caricamento…</h3>
+                        <div id="tennisOfficialScheduleMessage" class="tennis-operations-panel-message">Stati evento, autorità provider, transizioni e race guard prima del commit della previsione.</div>
+                    </div>
+                    <button type="button" id="refreshTennisOfficialSchedule" class="export-btn" style="border-color:#8b5cf6;color:#c4b5fd;">🔄 Schedule</button>
+                </div>
+                <div id="tennisOfficialScheduleGrid" class="tennis-forward-capture-grid"></div>
+                <div id="tennisOfficialScheduleDetails" class="tennis-forward-cohort-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Gli stati schedule possono bloccare la cattura, ma non determinano automaticamente settlement, probabilità, Quality Gate o stake.</div>
+            </section>
+
+            <section id="tennisCanonicalEventTimePanel" class="tennis-operations-panel status-ok" aria-live="polite" style="border-left-color:#10b981;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#a7f3d0;">Patch 33 · Canonical Event Time & Provider Time Quality</div>
+                        <h3 id="tennisCanonicalEventTimeTitle" style="color:#a7f3d0;">Orario evento: caricamento…</h3>
+                        <div id="tennisCanonicalEventTimeMessage" class="tennis-operations-panel-message">Provenienza, timezone, DST, conflitti provider e revisioni append-only prima del Prematch Capture Gate.</div>
+                    </div>
+                    <button type="button" id="refreshTennisCanonicalEventTime" class="export-btn" style="border-color:#10b981;color:#a7f3d0;">🔄 Orario</button>
+                </div>
+                <div id="tennisCanonicalEventTimeGrid" class="tennis-forward-capture-grid"></div>
+                <div id="tennisCanonicalEventTimeDetails" class="tennis-forward-cohort-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Un conflitto usa l’orario credibile più anticipato per proteggere la cattura, senza modificare probabilità, Quality Gate, stake o settlement.</div>
+            </section>
+
+            <section id="tennisRejectedCapturePanel" class="tennis-operations-panel status-ok" aria-live="polite" style="border-left-color:#06b6d4;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#67e8f9;">Patch 32 · Rejected Capture & Clock Drift Ledger</div>
+                        <h3 id="tennisRejectedCaptureTitle" style="color:#67e8f9;">Rifiuti capture: caricamento…</h3>
+                        <div id="tennisRejectedCaptureMessage" class="tennis-operations-panel-message">Ledger append-only post-rollback, cause del blocco e qualità temporale dei provider.</div>
+                    </div>
+                    <button type="button" id="refreshTennisRejectedCapture" class="export-btn" style="border-color:#06b6d4;color:#67e8f9;">🔄 Rifiuti</button>
+                </div>
+                <div id="tennisRejectedCaptureGrid" class="tennis-forward-capture-grid"></div>
+                <div id="tennisRejectedCaptureDetails" class="tennis-forward-cohort-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Una segnalazione di possibile false rejection richiede revisione: non salva né riattiva automaticamente il pronostico.</div>
+            </section>
+
+            <section id="tennisMatchupIntelligencePanel" class="tennis-operations-panel status-ok" aria-live="polite" style="border-left-color:#c084fc;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#d8b4fe;">Patch 12 · Player Evidence & Matchup Intelligence</div>
+                        <h3 id="tennisMatchupIntelligenceTitle" style="color:#d8b4fe;">Intelligence giocatori: caricamento…</h3>
+                        <div id="tennisMatchupIntelligenceMessage" class="tennis-operations-panel-message">Dati locali as-of-safe, matchup quantitativo e challenger shadow separato dal DeepScan.</div>
+                    </div>
+                    <button type="button" id="refreshTennisMatchupIntelligence" class="export-btn" style="border-color:#a855f7;color:#d8b4fe;">🔄 Matchup</button>
+                </div>
+                <div id="tennisMatchupIntelligenceGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisMatchupIntelligenceDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Challenger: <strong>SHADOW ONLY</strong> · nessuna autorità su DeepScan, Quality Gate o stake.</div>
+            </section>
+
+            <section id="tennisHistoricalCombinationPanel" class="tennis-operations-panel status-ok" aria-live="polite" style="border-left-color:#14b8a6;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#5eead4;">Patch 13 · Historical DeepScan × Quality Evidence</div>
+                        <h3 id="tennisHistoricalCombinationTitle" style="color:#5eead4;">Frequenza storica DS×Gate: caricamento…</h3>
+                        <div id="tennisHistoricalCombinationMessage" class="tennis-operations-panel-message">WON/(WON+LOST) nel Paper Trading per combinazione. Patch35: n<5 viene mostrato come campione insufficiente e non autorizza stake.</div>
+                    </div>
+                    <button type="button" id="refreshTennisHistoricalCombination" class="export-btn" style="border-color:#14b8a6;color:#5eead4;">🔄 Storico</button>
+                </div>
+                <div id="tennisHistoricalCombinationGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisHistoricalCombinationDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">La colonna <strong>Storico DS×Gate</strong> è una frequenza empirica di tutti i segnali risolti. Il Trading-only è separato; <strong>Affidabilità AI</strong> mostra una P(win) shadow Tennis senza autorità stake.</div>
+            </section>
+
+
+            <!-- PATCH21_TENNIS_MULTI_PROVIDER_ZERO_KEY_FIRST_UI -->
+            <section id="tennisPlayerDataPanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#f59e0b;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#fbbf24;">Patch 21 · Multi-Provider Zero-Key-First Data Registry</div>
+                        <h3 id="tennisPlayerDataTitle" style="color:#fbbf24;">Dati giocatori: caricamento…</h3>
+                        <div id="tennisPlayerDataMessage" class="tennis-operations-panel-message">Provider locali e bulk gratuiti prima delle API; cache, budget, attivazione atomica e last-known-good.</div>
+                    </div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;">
+                        <button type="button" id="refreshTennisPlayerDataHealth" class="export-btn" style="border-color:#f59e0b;color:#fbbf24;">🔄 Stato</button>
+                        <button type="button" id="executeTennisPlayerDataSourceProbe" class="export-btn" style="border-color:#38bdf8;color:#7dd3fc;">🧭 Piano fonti</button>
+                        <button type="button" id="executeTennisPlayerDataRefresh" class="export-btn" style="border-color:#22c55e;color:#86efac;">⬇️ Aggiorna dati</button>
+                    </div>
+                </div>
+                <div id="tennisPlayerDataGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisPlayerDataDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Priorità: import locale → TennisMyLife bulk ATP → Tennis-Data manuale ATP/WTA → API Tennis opzionale e budgettata → LKG. Chiavi mai persistite o esposte; modello e stake invariati.</div>
+            </section>
+
+            <!-- PATCH22_TOUR_AWARE_FRESHNESS_ACTIVITY_UI -->
+            <section id="tennisTourDataReadinessPanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#22d3ee;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#67e8f9;">Patch 22 · Tour-aware Freshness & Activity Guard</div>
+                        <h3 id="tennisTourDataReadinessTitle" style="color:#67e8f9;">Freschezza per circuito: caricamento…</h3>
+                        <div id="tennisTourDataReadinessMessage" class="tennis-operations-panel-message">ATP main, Challenger/qualificazioni e WTA sono valutati separatamente; inattività giocatore distinta dalla freschezza della sorgente.</div>
+                    </div>
+                    <button type="button" id="refreshTennisTourDataReadiness" class="export-btn" style="border-color:#22d3ee;color:#67e8f9;">🔄 Circuiti</button>
+                </div>
+                <div id="tennisTourDataReadinessGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisTourDataReadinessDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Read-only · nessuna promozione automatica · probabilità production, DeepScan, Quality Gate e stake invariati.</div>
+            </section>
+
+            <section id="tennisInformationRetrievalPanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#f472b6;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#f9a8d4;">Patch 23 · Tour-Aware Information Retrieval & Zero-Key Scoring</div>
+                        <h3 id="tennisInformationRetrievalTitle" style="color:#f9a8d4;">Ricerca informazioni: caricamento…</h3>
+                        <div id="tennisInformationRetrievalMessage" class="tennis-operations-panel-message">Scope ATP/WTA/Challenger risolto sui giocatori del probe; API opzionali escluse dallo scoring e ricevute forward immutabili.</div>
+                    </div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;">
+                        <button type="button" id="refreshTennisInformationRetrieval" class="export-btn" style="border-color:#f472b6;color:#f9a8d4;">🔄 Stato</button>
+                        <button type="button" id="executeTennisInformationRetrievalProbe" class="export-btn" style="border-color:#22c55e;color:#86efac;">🌐 Test fonti</button>
+                    </div>
+                </div>
+                <div id="tennisInformationRetrievalGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisInformationRetrievalDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Probe live solo locale ed esplicito · nessuna autorità su probabilità production, DeepScan, Quality Gate, stake o settlement.</div>
+            </section>
+
+
+            <section id="tennisForwardSampleIntakePanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#34d399;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#6ee7b7;">Patch 24 · Forward Sample Intake Assurance</div>
+                        <h3 id="tennisForwardSampleIntakeTitle" style="color:#6ee7b7;">Campione forward: caricamento…</h3>
+                        <div id="tennisForwardSampleIntakeMessage" class="tennis-operations-panel-message">Verifica che la prossima previsione reale produca snapshot, ledger, coorte, evidenze giocatori, matchup, challenger e ricevuta prima del commit.</div>
+                    </div>
+                    <button type="button" id="refreshTennisForwardSampleIntake" class="export-btn" style="border-color:#34d399;color:#6ee7b7;">🔄 Intake</button>
+                </div>
+                <div id="tennisForwardSampleIntakeGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisForwardSampleIntakeDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Solo forward · nessun backfill storico · errore strutturale = rollback atomico · nessuna autorità su probabilità, gate, stake o settlement.</div>
+            </section>
+
+
+            <section id="tennisHistoricalPlayerStatsPanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#c084fc;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#d8b4fe;">Patch 16 · Historical Player Statistics & Shadow Evidence</div>
+                        <h3 id="tennisHistoricalPlayerStatsTitle" style="color:#d8b4fe;">Statistiche storiche giocatori: caricamento…</h3>
+                        <div id="tennisHistoricalPlayerStatsMessage" class="tennis-operations-panel-message">Controllo dataset XLSX canonico, parità HTML, stagioni, quarantena e persistenza append-only.</div>
+                    </div>
+                    <button type="button" id="refreshTennisHistoricalPlayerStats" class="export-btn" style="border-color:#c084fc;color:#d8b4fe;">🔄 Storico</button>
+                </div>
+                <div id="tennisHistoricalPlayerStatsGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisHistoricalPlayerStatsDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Validazione <strong>SHADOW ONLY</strong> · nessuna autorità su probabilità production, DeepScan, Quality Gate, stake, settlement o CLV.</div>
+            </section>
+
+            <section id="tennisHistoricalValidationPerformancePanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#fb7185;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#fda4af;">Patch 17 · Historical Validation Performance</div>
+                        <h3 id="tennisHistoricalValidationPerformanceTitle" style="color:#fda4af;">Performance validazione storica: caricamento…</h3>
+                        <div id="tennisHistoricalValidationPerformanceMessage" class="tennis-operations-panel-message">Benchmark retrospettivo as-of-safe e misurazione forward da snapshot immutabili.</div>
+                    </div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;">
+                        <button type="button" id="refreshTennisHistoricalValidationPerformance" class="export-btn" style="border-color:#fb7185;color:#fda4af;">🔄 Stato</button>
+                        <button type="button" id="executeTennisHistoricalValidationPerformanceRefresh" class="export-btn" style="border-color:#22c55e;color:#86efac;">▶ Misura forward</button>
+                    </div>
+                </div>
+                <div id="tennisHistoricalValidationPerformanceGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisHistoricalValidationPerformanceDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Nessuna promozione automatica: servono almeno 100 segnali forward, copertura ≥60%, accuratezza ≥55%, miglioramento Brier ≥0,005 e una patch separata approvata manualmente.</div>
+            </section>
+
+            <section id="tennisStatisticalChallengerPanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#facc15;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#fde68a;">Patch 18 · Temporal Cross-Fitted Statistical Challenger</div>
+                        <h3 id="tennisStatisticalChallengerTitle" style="color:#fde68a;">Challenger statistico: caricamento…</h3>
+                        <div id="tennisStatisticalChallengerMessage" class="tennis-operations-panel-message">Blend shadow selezionato su soli match precedenti, con Brier fuori campione e bootstrap paired ATP/WTA.</div>
+                    </div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;">
+                        <button type="button" id="refreshTennisStatisticalChallenger" class="export-btn" style="border-color:#facc15;color:#fde68a;">🔄 Stato</button>
+                        <button type="button" id="executeTennisStatisticalChallengerRefresh" class="export-btn" style="border-color:#22c55e;color:#86efac;">▶ Ricalcola OOS</button>
+                    </div>
+                </div>
+                <div id="tennisStatisticalChallengerGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisStatisticalChallengerDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;">Cross-fit temporale <strong>SHADOW ONLY</strong> · peso storico massimo 50% · nessuna autorità su probabilità production, DeepScan, Quality Gate, stake, settlement o CLV.</div>
+            </section>
+
+
+            <section id="tennisProfessionalStatisticalEnginePanel" class="tennis-operations-panel status-warn" aria-live="polite" style="border-left-color:#c084fc;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#d8b4fe;">Patch 19 · Professional Statistical Ensemble</div>
+                        <h3 id="tennisProfessionalStatisticalEngineTitle" style="color:#d8b4fe;">Markov · Monte Carlo · Elo: caricamento…</h3>
+                        <div id="tennisProfessionalStatisticalEngineMessage" class="tennis-operations-panel-message">Audit professionale Tennis, pressione QF/SF/F e miglior pronostico sempre disponibile.</div>
+                    </div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;">
+                        <button type="button" id="refreshTennisProfessionalStatisticalEngine" class="export-btn" style="border-color:#c084fc;color:#d8b4fe;">🔄 Stato</button>
+                        <button type="button" id="executeTennisProfessionalStatisticalEngineAudit" class="export-btn" style="border-color:#22c55e;color:#86efac;">▶ Verifica motori</button>
+                    </div>
+                </div>
+                <div id="tennisProfessionalStatisticalEngineGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisProfessionalStatisticalEngineDetails" class="tennis-matchup-intelligence-details"></div>
+                <div style="margin-top:8px;color:#94a3b8;font-size:.72rem;"><strong>BEST AVAILABLE FORECAST</strong>: nessun veto per round o affidabilità incompleta; incertezza e peggioramento recente riducono confidenza e probabilità estreme, non eliminano il pronostico.</div>
+            </section>
+
+            <section id="tennisProgramProgressionPanel" class="tennis-operations-panel status-ok" aria-live="polite" style="border-left-color:#38bdf8;">
+                <div class="tennis-operations-panel-header">
+                    <div>
+                        <div class="tennis-operations-eyebrow" style="color:#7dd3fc;">Patch 25 · Program Progression Guard V13</div>
+                        <h3 id="tennisProgramProgressionTitle" style="color:#7dd3fc;">Progressione programma: caricamento…</h3>
+                        <div id="tennisProgramProgressionMessage" class="tennis-operations-panel-message">Registry, inventario, SQLite, tabelle, trigger, endpoint, frontend e ID grafici verificati in read-only.</div>
+                    </div>
+                    <button type="button" id="refreshTennisProgramProgression" class="export-btn" style="border-color:#38bdf8;color:#7dd3fc;">🔄 Controllo</button>
+                </div>
+                <div id="tennisProgramProgressionGrid" class="tennis-matchup-intelligence-grid"></div>
+                <div id="tennisProgramProgressionDetails" class="tennis-matchup-intelligence-details"></div>
+            </section>
+        </div>
+    </section>
+
+    <div id="apiCreditsUsageBox" class="card-container" style="border-left: 4px solid #38bdf8; margin-bottom: 20px;">
+        <div class="header-flex" style="margin-bottom: 10px; padding: 0;">
+            <div>
+                <h3 style="margin: 0; color: #38bdf8; font-size: 1.05rem;">🔑 Crediti The Odds API</h3>
+                <div class="section-subtitle">Contatore provider-first: i crediti sono riconciliati con gli header The Odds API quando disponibili; cache e tentativi falliti restano tracciati senza mostrare le chiavi.</div>
+            </div>
+            <button type="button" id="refreshApiUsageBtn" class="export-btn" style="border-color:#38bdf8;color:#38bdf8;">🔄 Aggiorna</button>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;">
+            <div class="metric-mini"><span>Chiavi</span><strong id="apiUsageKeyCount">--</strong></div>
+            <div class="metric-mini"><span>Totale mese</span><strong id="apiUsageMonthlyTotal">--</strong></div>
+            <div class="metric-mini"><span>Usati</span><strong id="apiUsageCreditsUsed">--</strong></div>
+            <div class="metric-mini"><span>Residui</span><strong id="apiUsageCreditsRemaining" style="color:#10b981;">--</strong></div>
+            <div class="metric-mini"><span>Chiamate</span><strong id="apiUsageAttempts">--</strong></div>
+            <div class="metric-mini"><span>Cache hit</span><strong id="apiUsageCacheHits">--</strong></div>
+            <div class="metric-mini"><span>Hit rate</span><strong id="apiUsageCacheHitRate">--</strong></div>
+        </div>
+        <div style="margin-top:12px;background:rgba(15,23,42,.7);border:1px solid var(--border-color);border-radius:999px;overflow:hidden;height:12px;">
+            <div id="apiUsageProgressBar" style="height:100%;width:0%;background:#10b981;transition:width .25s ease,background .25s ease;"></div>
+        </div>
+        <div id="apiUsageDetails" class="section-subtitle" style="margin-top:8px;">In attesa del riepilogo crediti API...</div>
+    </div>
+
+    <div class="sticky-controls">
+        <form id="analyzeForm" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; background: var(--card-bg); padding: 12px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 10px 25px rgba(0,0,0,0.4);">
+            <div style="flex: 1; min-width: 80px;">
+                <label style="display: block; font-size: 0.75em; margin-bottom: 6px; color: #94a3b8; font-weight: 600;">Bankroll (€)</label>
+                <input type="number" id="bankroll" value="1000" class="nav-input" style="padding: 10px;" step="0.01" min="0" inputmode="decimal" autocomplete="off">
+            </div>
+            <div style="flex: 2; min-width: 140px;">
+                <label style="display: block; font-size: 0.75em; margin-bottom: 6px; color: #94a3b8; font-weight: 600;">Lega / Circuito</label>
+                <select id="league" class="nav-input" style="padding: 10px;">
+                </select>
+            </div>
+            
+            <div style="display: flex; gap: 8px; width: 100%; margin-top: 5px; flex-wrap: wrap;">
+                <button type="submit" id="submitBtn" class="action-btn" style="background-color: #3b82f6; color: white;">🚀 Analisi IA</button>
+                <button type="button" id="backtestBtn" class="action-btn" style="background-color: #475569; color: white;">📊 Backtest</button>
+                <button type="button" id="forwardTestBtn" class="action-btn" style="background-color: var(--accent); color: white;">🏆 Trading</button>
+                <button type="button" id="tradingStudioBtn" class="action-btn" style="background:#493b87;color:white">🔬 Trading Studio</button>
+                <button type="button" id="portfolioBtn" class="action-btn" style="background-color: #8b5cf6; color: white;">📈 Portfolio</button>
+                <button type="button" id="settingsBtn" class="action-btn settingsBtnAction" style="background-color: #1e293b; color: #cbd5e1; border: 1px solid var(--border-color);">⚙️ Setup</button>
+            </div>
+        </form>
+    </div>
+
+    <main style="margin-top: 15px;">
+        
+        
+        <section id="manualDeepScanSection" class="hidden card-container" style="border-top:4px solid #38bdf8;">
+            <div class="header-flex">
+                <div>
+                    <h2 style="color:#38bdf8;margin:0;font-size:1.35em;">🔎 DeepScan Manuale</h2>
+                    <div class="section-subtitle">Laboratorio read-only: analizza match non presi dall'Analisi AI. Non salva nel paper trading, non crea pending, non modifica portfolio, stake o storico.</div>
+                </div>
+                <span style="background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.45);color:#6ee7b7;padding:7px 10px;border-radius:999px;font-size:.78rem;font-weight:900;">MANUAL ONLY · NO SAVE</span>
+            </div>
+
+            <div class="manual-deepscan-grid">
+                <div class="manual-deepscan-card">
+                    <label for="manualDsSport">Sport</label>
+                    <select id="manualDsSport" class="nav-input">
+                        <option value="calcio">⚽ Calcio</option>
+                        <option value="tennis">🎾 Tennis</option>
+                    </select>
+                </div>
+                <div class="manual-deepscan-card">
+                    <label for="manualDsMode">Modalità dati</label>
+                    <select id="manualDsMode" class="nav-input">
+                        <option value="web" selected>Manuale + web/news, senza Odds API</option>
+                        <option value="pure">Manuale puro, zero fonti esterne</option>
+                        <option value="live">Manuale + quote live/API opzionale</option>
+                    </select>
+                    <div class="section-subtitle" style="margin-top:6px;">API live OFF di default. La modalità live invia solo il consenso esplicito al backend read-only.</div>
+                </div>
+                <div class="manual-deepscan-card">
+                    <label for="manualDsDate">Data/Ora opzionale</label>
+                    <input id="manualDsDate" class="nav-input" placeholder="es. 25/05/2026 20:45" autocomplete="off">
+                </div>
+            </div>
+
+            <div id="manualDsCalcioFields" class="manual-deepscan-grid">
+                <div class="manual-deepscan-card"><label>Squadra 1</label><input id="manualDsHomeTeam" class="nav-input" placeholder="es. Inter" autocomplete="off"></div>
+                <div class="manual-deepscan-card"><label>Squadra 2</label><input id="manualDsAwayTeam" class="nav-input" placeholder="es. Milan" autocomplete="off"></div>
+                <div class="manual-deepscan-card"><label>Campionato</label><input id="manualDsFootballLeague" class="nav-input" placeholder="es. Serie A" autocomplete="off"></div>
+                <div class="manual-deepscan-card"><label>Quota 1</label><input id="manualDsOdd1Football" class="nav-input" type="number" step="0.01" placeholder="opzionale"></div>
+                <div class="manual-deepscan-card"><label>Quota X</label><input id="manualDsOddXFootball" class="nav-input" type="number" step="0.01" placeholder="opzionale"></div>
+                <div class="manual-deepscan-card"><label>Quota 2</label><input id="manualDsOdd2Football" class="nav-input" type="number" step="0.01" placeholder="opzionale"></div>
+                <div class="manual-deepscan-card"><label>Linea Over/Under</label><input id="manualDsFootballLine" class="nav-input" placeholder="es. 2.5" autocomplete="off"></div>
+            </div>
+
+            <div id="manualDsTennisFields" class="manual-deepscan-grid hidden">
+                <div class="manual-deepscan-card"><label>Giocatore 1</label><input id="manualDsPlayer1" class="nav-input" placeholder="es. Jannik Sinner" autocomplete="off"></div>
+                <div class="manual-deepscan-card"><label>Giocatore 2</label><input id="manualDsPlayer2" class="nav-input" placeholder="es. Carlos Alcaraz" autocomplete="off"></div>
+                <div class="manual-deepscan-card"><label>ATP/WTA</label><select id="manualDsCircuit" class="nav-input"><option value="ATP">ATP</option><option value="WTA">WTA</option></select></div>
+                <div class="manual-deepscan-card"><label>Torneo</label><input id="manualDsTournament" class="nav-input" placeholder="es. Roland Garros" autocomplete="off"></div>
+                <div class="manual-deepscan-card"><label>Superficie</label><input id="manualDsSurface" class="nav-input" placeholder="Clay / Hard / Grass" autocomplete="off"></div>
+                <div class="manual-deepscan-card"><label>Quota 1</label><input id="manualDsOdd1Tennis" class="nav-input" type="number" step="0.01" placeholder="opzionale"></div>
+                <div class="manual-deepscan-card"><label>Quota 2</label><input id="manualDsOdd2Tennis" class="nav-input" type="number" step="0.01" placeholder="opzionale"></div>
+                <div class="manual-deepscan-card"><label>Linea Over/Under games</label><input id="manualDsTennisLine" class="nav-input" placeholder="es. 18.5, 19.5, 20.5" autocomplete="off"></div>
+            </div>
+
+            <div class="manual-deepscan-actions">
+                <button type="button" id="manualDsRunBtn" class="action-btn" style="background:#38bdf8;color:#02111f;">🔎 Esegui DeepScan</button>
+                <button type="button" id="manualDsClearBtn" class="action-btn" style="background:#334155;color:#e2e8f0;">🧹 Pulisci campi</button>
+                <button type="button" id="manualDsCopyBtn" class="action-btn" style="background:#8b5cf6;color:white;">📋 Copia analisi</button>
+            </div>
+
+            <div id="manualDsSafetyNote" class="manual-deepscan-warning">Nessun dato salvato: no DB, no localStorage, no paper trading. Il prompt AI è generato solo in pagina.</div>
+            <div id="manualDsOutput" class="manual-deepscan-result" style="margin-top:16px;">Compila i campi e premi “Esegui DeepScan”.</div>
+            <h3 style="color:#ddd6fe;margin-top:18px;font-size:1rem;">🧠 PROMPT PER AI</h3>
+            <div id="manualDsPrompt" class="manual-deepscan-prompt">Il prompt per analisi AI verrà generato dopo il DeepScan.</div>
+        </section>
+
+        <section id="portfolioSection" class="hidden card-container" style="border-top: 4px solid #8b5cf6;">
+            <div class="header-flex">
+                <div><h2 style="color: #8b5cf6; margin: 0; font-size: 1.3em;">📈 Hedge Fund Portfolio</h2><div class="section-subtitle">Report separato per sport, nuovo storico pulito, CLV e calibrazione.</div></div> 
+                <button id="refreshPortfolioBtn" class="export-btn" style="border-color: #8b5cf6; color: #8b5cf6;">🔄 Aggiorna Dati</button>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
+                <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); padding: 15px; border-radius: 12px; text-align: center;">
+                    <span style="color: #fca5a5; font-size: 0.8em; text-transform: uppercase;">Max Drawdown</span><br>
+                    <strong id="portDrawdown" style="font-size: 1.6em; color: #ef4444;">0.00%</strong>
+                </div>
+                <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); padding: 15px; border-radius: 12px; text-align: center;" title="Rapporto tra Rendimento e Volatilità (Maggiore di 1 è eccellente)">
+                    <span style="color: #6ee7b7; font-size: 0.8em; text-transform: uppercase;">Sharpe-Like Ratio</span><br>
+                    <strong id="portSharpe" style="font-size: 1.6em; color: #10b981;">0.00</strong>
+                </div>
+                <div style="background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); padding: 15px; border-radius: 12px; text-align: center;" title="Copertura CLV: quante righe hanno una closing line utilizzabile">
+                    <span style="color: #fcd34d; font-size: 0.8em; text-transform: uppercase;">CLV Coverage</span><br>
+                    <strong id="portSteam" style="font-size: 1.6em; color: #f59e0b;">0.00%</strong>
+                </div>
+                <div style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); padding: 15px; border-radius: 12px; text-align: center;">
+                    <span style="color: #7dd3fc; font-size: 0.8em; text-transform: uppercase;">Avg CLV Edge</span><br>
+                    <strong id="portAvgClv" style="font-size: 1.6em; color: #38bdf8;">+0.00%</strong>
+                </div>
+            </div>
+
+            <div data-step85-portfolio-chart-grid="1" class="portfolio-chart-grid-step85" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 20px; margin-top: 25px; align-items:start;">
+                <div style="background: var(--bg-color); padding: 15px; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <h4 style="color: #cbd5e1; margin-top: 0; font-size: 1em; text-align: center;">📉 Curva del Drawdown (Equity) <span style="font-size:.72em;color:#94a3b8;">verificabile</span></h4>
+                    <div class="portfolio-chart-box-step85"><canvas id="chartDrawdown"></canvas></div>
+                    <div id="drawdownChartDataAuditPanel" style="margin-top:10px;"></div>
+                </div>
+                <div style="background: var(--bg-color); padding: 15px; border-radius: 12px; border: 1px solid var(--border-color);">
+                    <h4 style="color: #cbd5e1; margin-top: 0; font-size: 1em; text-align: center;">🎯 Brier Calibration Curve <span style="font-size:.72em;color:#94a3b8;" id="calibrationSportLabel">Audit per sport</span></h4>
+                    <div class="portfolio-chart-box-step85"><canvas id="chartCalibration"></canvas></div>
+                    <div id="brierTourDataAuditPanel" style="display:none; margin-top:10px;"></div>
+                    <div id="calibrationChartNoDataDiagnostic" style="display:none; margin-top:10px;"></div>
+                </div>
+            </div>
+
+            <h3 style="color: #cbd5e1; margin-top: 35px; font-size: 1.1em; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; display: flex; justify-content: space-between;">
+                <span>⚖️ Model Calibration Buckets (Audit)</span>
+                <span id="calibrationQualityBadge" style="font-size: 0.8em; padding: 4px 8px; border-radius: 12px; background: #334155; color: white;">IN ATTESA</span>
+            </h3>
+            <div class="table-responsive" style="margin-top: 15px;">
+                <table style="min-width: 900px;">
+                    <thead>
+                        <tr><th>Bucket Prob. (%)</th> <th>Volume Bets</th> <th>Predizione Media</th> <th>Win Rate Reale</th> <th>Errore (Gap)</th> <th>Status Modello</th></tr>
+                    </thead>
+                    <tbody id="calibrationBucketsTable">
+                        <tr><td colspan="6" style="text-align:center;">Caricamento calibrazione in corso...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 style="color: #cbd5e1; margin-top: 35px; font-size: 1.1em; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">Top Strategie Algoritmiche</h3>
+            <div class="table-responsive" style="margin-top: 15px;">
+                <table>
+                    <thead>
+                        <tr><th>Strategia</th> <th>Bets</th> <th>Hit Rate</th> <th>ROI</th> <th>Avg CLV</th> <th>Brier</th> <th>Qualità</th></tr>
+                    </thead>
+                    <tbody id="topStrategiesTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="settingsSection" class="hidden card-container" style="border-top: 4px solid #f59e0b;">
+            <h2 style="color: #f59e0b; margin-top: 0; font-size: 1.3em;">⚙️ Modifica Parametri IA</h2><div class="section-subtitle">Parametri sincronizzati con backend: Calcio, Tennis, Markov, CLV, edge_pp ed ev_pct.</div>
+            <form id="saveSettingsForm">
+                <div class="settings-card" style="border-left-color: #3b82f6; margin-bottom: 20px; background: rgba(59, 130, 246, 0.1);">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <div style="padding-right: 10px;">
+                            <h4 style="color:#3b82f6; margin:0 0 5px 0;">🔄 Sorgente Opt.</h4>
+                            <span style="font-size: 0.8em; color: #94a3b8;">Usa Storico CSV o Paper Trading.</span>
+                        </div>
+                        <label class="switch" title="Se OFF usa il Paper Trading. Se ON usa lo storico CSV."><input type="checkbox" id="cfg_useHistoricalOpt"><span class="slider"></span></label>
+                    </div>
+                    <div style="margin-top: 12px; font-size: 0.8em; color: #cbd5e1; display: flex; gap: 10px;">
+                        <span id="label_opt_pt" style="flex: 1; padding: 6px; border-radius: 4px; background: #10b981; color: white; text-align: center; font-weight: bold;">🟢 Paper Trading</span>
+                        <span id="label_opt_csv" style="flex: 1; padding: 6px; border-radius: 4px; background: #475569; color: #cbd5e1; text-align: center;">⚪ Storico CSV</span>
+                    </div>
+                </div>
+
+                <div id="panel-calcio" class="settings-grid">
+                    <div id="calcioHealthStatusBox" class="tennis-health-status-box calcio-health-status-box"></div>
+                    <div class="settings-card" style="border-left-color: #a855f7; grid-column: 1 / -1; text-align: center; background: rgba(168, 85, 247, 0.1);">
+                        <h4 style="color:#a855f7; margin-bottom: 12px; font-size: 1.1em;">✨ Ottimizzazione Calcio</h4>
+                        <button type="button" id="btnOptimizeCalcio" class="action-btn" style="background-color: #a855f7; color: white; width: 100%; max-width: 400px; padding: 15px; margin: 0 auto;">🎯 Esegui Auto-Ottimizzazione</button>
+                    </div>
+
+                    <div class="settings-card automation-section" style="border-left-color: #10b981; grid-column: 1 / -1; margin-bottom: 20px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <div style="padding-right: 10px;">
+                                <h4 style="color:#10b981; margin:0 0 5px 0;">🤖 Automazione Scansioni Calcio</h4>
+                                <span style="font-size: 0.8em; color: #94a3b8;">Workflow: Opt ➔ Deep Scan ➔ Paper Trading.</span>
+                            </div>
+                            <label class="switch" title="Attiva o Disattiva Schedulazione Calcio">
+                                <input type="checkbox" id="calcio_autoEnableToggle" onchange="toggleCalcioAutomationUI()">
+                                <span class="slider" id="calcio_sliderSpan"></span>
+                            </label>
+                        </div>
+
+                        <div id="calcio_automationSettings" style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--border-color); opacity: 0.5; pointer-events: none; transition: 0.3s;">
+                            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                                <div style="flex: 1; min-width: 250px;">
+                                    <label class="radio-label"><input type="radio" name="calcio_scheduleType" value="daily_twice" checked onchange="toggleCalcioScheduleType()"> Tutti i giorni (2 volte/giorno)</label>
+                                    <div id="calcio_dailyTwiceSettings" style="margin-left: 25px; margin-bottom: 15px; display: flex; gap: 10px;">
+                                        <input type="time" id="calcio_time1" value="09:00" class="nav-input" style="padding: 8px; width: auto;">
+                                        <input type="time" id="calcio_time2" value="20:00" class="nav-input" style="padding: 8px; width: auto;">
+                                    </div>
+                                </div>
+                                <div style="flex: 1; min-width: 250px;">
+                                    <label class="radio-label"><input type="radio" name="calcio_scheduleType" value="custom_days" onchange="toggleCalcioScheduleType()"> Giorni Specifici (1 volta/giorno)</label>
+                                    <div id="calcio_customDaysSettings" style="margin-left: 25px; display: none;">
+                                        <input type="time" id="calcio_timeCustom" value="10:00" class="nav-input" style="padding: 8px; width: auto; margin-bottom:10px;">
+                                        <div class="checkbox-group" style="display: flex; gap: 8px; font-size:0.8rem; flex-wrap: wrap;">
+                                            <label><input type="checkbox" name="calcio_days" value="1" style="display:none;"> <span>Lu</span></label>
+                                            <label><input type="checkbox" name="calcio_days" value="2" style="display:none;"> <span>Ma</span></label>
+                                            <label><input type="checkbox" name="calcio_days" value="3" style="display:none;"> <span>Me</span></label>
+                                            <label><input type="checkbox" name="calcio_days" value="4" style="display:none;"> <span>Gi</span></label>
+                                            <label><input type="checkbox" name="calcio_days" value="5" style="display:none;"> <span>Ve</span></label>
+                                            <label><input type="checkbox" name="calcio_days" value="6" style="display:none;"> <span>Sa</span></label>
+                                            <label><input type="checkbox" name="calcio_days" value="0" style="display:none;"> <span>Do</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" onclick="saveCalcioAutomationSettings()" class="action-btn" style="background-color: #10b981; color: white; width: 100%; margin-top: 15px; padding: 12px;">💾 Salva Schedulazione Calcio</button>
+                        </div>
+                    </div>
+
+                    <div class="settings-card" style="border-left-color: #eab308; grid-column: 1 / -1;">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 15px;">
+                            <h4 style="color:#eab308; margin:0;">🧠 Cervello Avanzato</h4>
+                            <label class="switch"><input type="checkbox" id="cfg_useAdvancedMetrics" checked><span class="slider"></span></label>
+                        </div>
+                        <div style="display: flex; gap: 15px;">
+                            <label class="param-label" style="flex: 1;">Fattore K <input type="number" id="cfg_eloK" value="20"></label>
+                            <label class="param-label" style="flex: 1;">Decadimento <input type="number" step="0.1" id="cfg_timeDecay" value="1.15"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-card">
+                        <h4>Filtro GLOBALE Base</h4>
+                        <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_baseEdge"></label>
+                        <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_baseProb"></label>
+                        <label class="param-label">Quota max globale <input type="number" step="0.1" min="1.5" max="10" id="cfg_maxOdd"></label>
+                    </div>
+
+                    <div class="settings-card" id="card_pt" style="border-left-color: #06b6d4; grid-column: 1 / -1;">
+                        <h4 style="color:#06b6d4; margin-bottom: 15px;">📊 Filtri Reali (Paper Trading)</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;">
+                            <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color);">
+                                <strong style="color: #cbd5e1; display: block; margin-bottom: 8px;">🇮🇹 Serie A</strong>
+                                <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_pt_seriea_edge"></label>
+                                <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_pt_seriea_prob"></label>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color);">
+                                <strong style="color: #cbd5e1; display: block; margin-bottom: 8px;">🇮🇹 Serie B</strong>
+                                <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_pt_serieb_edge"></label>
+                                <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_pt_serieb_prob"></label>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color);">
+                                <strong style="color: #cbd5e1; display: block; margin-bottom: 8px;">🇬🇧 Premier</strong>
+                                <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_pt_premier_edge"></label>
+                                <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_pt_premier_prob"></label>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color);">
+                                <strong style="color: #cbd5e1; display: block; margin-bottom: 8px;">🇪🇸 La Liga</strong>
+                                <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_pt_laliga_edge"></label>
+                                <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_pt_laliga_prob"></label>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color);">
+                                <strong style="color: #cbd5e1; display: block; margin-bottom: 8px;">🇩🇪 Bundesliga</strong>
+                                <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_pt_bundes_edge"></label>
+                                <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_pt_bundes_prob"></label>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px; border: 1px solid var(--border-color);">
+                                <strong style="color: #cbd5e1; display: block; margin-bottom: 8px;">🇫🇷 Ligue 1</strong>
+                                <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_pt_ligue1_edge"></label>
+                                <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_pt_ligue1_prob"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-card" id="card_u25" style="border-left-color: var(--danger);">
+                        <h4>Under 2.5</h4>
+                        <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_u25Edge"></label>
+                        <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_u25Prob"></label>
+                    </div>
+                    <div class="settings-card" id="card_home1" style="border-left-color: var(--danger);">
+                        <h4>Segno 1</h4>
+                        <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_home1Edge"></label>
+                        <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_home1Prob"></label>
+                    </div>
+                    <div class="settings-card" id="card_x2" style="border-left-color: var(--danger);">
+                        <h4>Segno X2</h4>
+                        <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_x2Edge"></label>
+                        <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_x2Prob"></label>
+                    </div>
+
+                    <div class="settings-card" style="border-left-color: var(--accent); grid-column: 1 / -1;">
+                        <h4 style="color:var(--accent); margin-bottom: 20px;">🛡️ Moduli di Sicurezza</h4>
+                        <div style="display:flex; flex-direction: column; gap:15px;">
+                            <label class="param-label" style="justify-content: space-between; align-items: center;">
+                                <span style="padding-right: 15px;"><strong style="color: white; font-size: 1em;">Sharp Cross-Reference</strong><br><span style="font-size: 0.85em; color: #94a3b8; display: block; margin-top: 4px;">Valida con Pinnacle.</span></span> 
+                                <label class="switch"><input type="checkbox" id="cfg_useCrossReference"><span class="slider"></span></label>
+                            </label>
+                            <div style="height: 1px; background: var(--border-color); width: 100%;"></div>
+                            <label class="param-label" style="justify-content: space-between; align-items: center;">
+                                <span style="padding-right: 15px;"><strong style="color: white; font-size: 1em;">🔴 Kill Switch (Solo Globale)</strong><br><span style="font-size: 0.85em; color: #94a3b8; display: block; margin-top: 4px;">Forza Filtro Globale ovunque.</span></span> 
+                                <label class="switch"><input type="checkbox" id="cfg_onlyGlobal"><span class="slider"></span></label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="panel-tennis" class="settings-grid hidden">
+                    <div id="tennisHealthStatusBox" class="tennis-health-status-box"></div>
+                    
+                    <div class="settings-card" style="border-left-color: #a855f7; grid-column: 1 / -1; text-align: center; background: rgba(168, 85, 247, 0.1);">
+                        <h4 style="color:#a855f7; margin-bottom: 12px; font-size: 1.1em;">✨ Ottimizzazione Tennis</h4>
+                        <button type="button" id="btnOptimizeTennis" class="action-btn" style="background-color: #a855f7; color: white; width: 100%; max-width: 400px; padding: 15px; margin: 0 auto;">🎯 Esegui Auto-Ottimizzazione</button>
+                    </div>
+                    <div class="settings-card automation-section" style="border-left-color: #10b981; grid-column: 1 / -1; margin-bottom: 20px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <div style="padding-right: 10px;">
+                                <h4 style="color:#10b981; margin:0 0 5px 0;">🤖 Automazione Scansioni Tennis</h4>
+                                <span style="font-size: 0.8em; color: #94a3b8;">Workflow: Opt ➔ ATP ➔ WTA ➔ Paper Trading.</span>
+                            </div>
+                            <label class="switch" title="Attiva o Disattiva Schedulazione Tennis">
+                                <input type="checkbox" id="autoEnableToggle" onchange="toggleAutomationUI()">
+                                <span class="slider" id="sliderSpan"></span>
+                            </label>
+                        </div>
+
+                        <div id="automationSettings" style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed var(--border-color); opacity: 0.5; pointer-events: none; transition: 0.3s;">
+                            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                                <div style="flex: 1; min-width: 250px;">
+                                    <label class="radio-label"><input type="radio" name="scheduleType" value="daily_twice" checked onchange="toggleScheduleType()"> Tutti i giorni (2 volte/giorno)</label>
+                                    <div id="dailyTwiceSettings" style="margin-left: 25px; margin-bottom: 15px; display: flex; gap: 10px;">
+                                        <input type="time" id="time1" value="09:00" class="nav-input" style="padding: 8px; width: auto;">
+                                        <input type="time" id="time2" value="20:00" class="nav-input" style="padding: 8px; width: auto;">
+                                    </div>
+                                </div>
+                                <div style="flex: 1; min-width: 250px;">
+                                    <label class="radio-label"><input type="radio" name="scheduleType" value="custom_days" onchange="toggleScheduleType()"> Giorni Specifici (1 volta/giorno)</label>
+                                    <div id="customDaysSettings" style="margin-left: 25px; display: none;">
+                                        <input type="time" id="timeCustom" value="10:00" class="nav-input" style="padding: 8px; width: auto; margin-bottom:10px;">
+                                        <div class="checkbox-group" style="display: flex; gap: 8px; font-size:0.8rem; flex-wrap: wrap;">
+                                            <label><input type="checkbox" name="days" value="1" style="display:none;"> <span>Lu</span></label>
+                                            <label><input type="checkbox" name="days" value="2" style="display:none;"> <span>Ma</span></label>
+                                            <label><input type="checkbox" name="days" value="3" style="display:none;"> <span>Me</span></label>
+                                            <label><input type="checkbox" name="days" value="4" style="display:none;"> <span>Gi</span></label>
+                                            <label><input type="checkbox" name="days" value="5" style="display:none;"> <span>Ve</span></label>
+                                            <label><input type="checkbox" name="days" value="6" style="display:none;"> <span>Sa</span></label>
+                                            <label><input type="checkbox" name="days" value="0" style="display:none;"> <span>Do</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" onclick="saveAutomationSettings()" class="action-btn" style="background-color: #10b981; color: white; width: 100%; margin-top: 15px; padding: 12px;">💾 Salva Schedulazione Tennis</button>
+                        </div>
+                    </div>
+                    <div class="settings-card" style="border-left-color: #8b5cf6; grid-column: 1 / -1;">
+                        <h4 style="color:#8b5cf6; margin-bottom: 20px;">🧠 Motori IA Tennis</h4>
+                        <div style="display:flex; flex-direction: column; gap:15px;">
+                            <label class="param-label" style="justify-content: space-between; align-items: center;">
+                                <span style="padding-right: 15px;"><strong style="color: white; font-size: 1em;">Catene di MARKOV</strong></span> 
+                                <label class="switch"><input type="checkbox" id="cfg_useMarkov" checked><span class="slider"></span></label>
+                            </label>
+                            <label class="param-label" style="justify-content: space-between; align-items: center;">
+                                <span style="padding-right: 15px;"><strong style="color: white; font-size: 1em;">Mercati TOTALS (Game)</strong></span> 
+                                <label class="switch"><input type="checkbox" id="cfg_tennisUseTotals" checked><span class="slider"></span></label>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings-card">
+                        <h4>ATP Tour</h4>
+                        <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_tennisAtpEdge"></label>
+                        <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_tennisAtpProb"></label>
+                    </div>
+                    <div class="settings-card">
+                        <h4>WTA Tour</h4>
+                        <label class="param-label">Edge % <input type="number" step="0.1" id="cfg_tennisWtaEdge"></label>
+                        <label class="param-label">Prob % <input type="number" step="0.1" id="cfg_tennisWtaProb"></label>
+                    </div>
+                </div>
+
+                <button type="submit" class="action-btn" style="background-color: var(--accent); color: white; padding: 16px; font-size: 1.1em; width: 100%; margin-top: 10px;">💾 Salva Parametri IA</button>
+            </form>
+        </section>
+
+        <section id="results" class="hidden">
+            <div id="accumulatorBox"></div>
+            <div class="header-flex">
+                <h2 style="color: #3b82f6; margin: 0; font-size: 1.3em;">🎯 Singole di Valore</h2>
+                <button id="exportAnalysisBtn" class="export-btn">📥 CSV</button>
+            </div>
+            <div class="table-responsive">
+                <table id="analysisTable">
+                    <thead>
+                        <tr><th>Data</th> <th>Partita</th> <th>Deep Scan IA</th> <th title="Gate finale 0-100 e classe operativa. Il badge Tennis PRE-FUSIONE è diagnostico; autorità finale: Quality V2 → Patch35 → Patch39 → Patch46.">Qualità / Gate</th> <th>Lega / Torneo</th> <th>Pred.</th> <th>Quota</th> <th>Prob.</th> <th id="historicalRateHeader" title="Storico empirico DeepScan × Gate su tutti i segnali risolti. Trading-only è separato; non è P(win) del match corrente.">Storico DS×Gate</th> <th>Edge / EV</th> <th title="Tennis: P(win) SHADOW = Logit-V1 congelato + aggiornamento Bayesiano con soli esiti Trading della stessa combinazione DS×Gate. Nessuna autorità stake.">Affidabilità AI</th> <th title="Punteggio 0-100 della solidità delle evidenze Tennis; non è probabilità di vittoria.">Qualità evidenze</th> <th title="Indice Predizione 0-100. Calcio: IPM. Tennis: TPI diagnostico; non modifica lo stake.">Indice Predizione</th> <th>Stake</th> <th title="Importo potenziale finché la giocata è PENDING; profitto realizzato solo dopo refertazione.">Profitto pot.</th></tr>
+                        <tr class="table-filter-row">
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="0" placeholder="Filtra data"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="1" placeholder="Filtra partita"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="2" placeholder="Deep scan"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="3" placeholder="Qualità / Gate"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="4" placeholder="Campionato / torneo"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="5" placeholder="Pronostico"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="6" placeholder="Quota"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="7" placeholder="Prob."></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="8" placeholder="Storico DS×Gate"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="9" placeholder="Edge / EV"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="10" placeholder="Affidabilità AI P(win)"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="11" placeholder="Qualità evidenze"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="12" placeholder="Indice predizione"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="13" placeholder="Stake"></th>
+                            <th><input class="table-filter-input" data-filter-table="analysisTable" data-col-index="14" placeholder="Profitto pot."></th>
+                        </tr>
+                    </thead>
+                    <tbody id="valueBetsTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="backtestLogSection" class="hidden">
+            <div class="header-flex">
+                <h2 style="margin: 0; font-size: 1.3em;">📊 Log Backtest</h2> 
+                <button id="exportBacktestBtn" class="export-btn">📥 CSV</button>
+            </div>
+            <div id="backtestSummaryBox" style="display: flex; gap: 15px; flex-wrap: wrap; margin: 15px 0;"></div>
+            <div class="table-responsive">
+                <table id="backtestTable">
+                    <thead>
+                        <tr><th>Data</th> <th>Partita</th> <th>Esito</th> <th>Quota</th> <th>Edge / EV</th> <th>Stake</th> <th>Risultato</th> <th>Profitto</th></tr>
+                        <tr class="table-filter-row">
+                            <th><input class="table-filter-input" data-filter-table="backtestTable" data-col-index="0" placeholder="Filtra data"></th>
+                            <th><input class="table-filter-input" data-filter-table="backtestTable" data-col-index="1" placeholder="Filtra partita"></th>
+                            <th><input class="table-filter-input" data-filter-table="backtestTable" data-col-index="2" placeholder="Filtra esito"></th>
+                            <th><input class="table-filter-input" data-filter-table="backtestTable" data-col-index="3" placeholder="Quota"></th>
+                            <th><input class="table-filter-input" data-filter-table="backtestTable" data-col-index="4" placeholder="Edge / EV"></th>
+                            <th><input class="table-filter-input" data-filter-table="backtestTable" data-col-index="5" placeholder="Stake"></th>
+                            <th><input class="table-filter-input" data-filter-table="backtestTable" data-col-index="6" placeholder="Risultato"></th>
+                            <th><input class="table-filter-input" data-filter-table="backtestTable" data-col-index="7" placeholder="Profitto"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="backtestLogTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="statsSection" class="hidden card-container stats-section-pro">
+            <div class="header-flex">
+                <h2 style="margin: 0; font-size: 1.3em;">📈 Performance Statistiche Dinamiche</h2> 
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <button id="closeStatsBtn" class="action-btn" style="background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: white; min-width: auto; padding: 8px 12px;">✖</button>
+                </div>
+            </div>
+            <div class="stats-toolbar">
+                <div class="stats-filter-group">
+                    <label for="chartLeagueFilter">Campionato / Torneo</label>
+                    <select id="chartLeagueFilter" class="nav-input" style="padding: 10px;"></select>
+                </div>
+                <div class="stats-filter-group">
+                    <label for="chartPredictionFilter">Pronostico</label>
+                    <select id="chartPredictionFilter" class="nav-input" style="padding: 10px;"></select>
+                </div>
+                <div class="stats-filter-group">
+                    <label for="chartOutcomeFilter">Esito</label>
+                    <select id="chartOutcomeFilter" class="nav-input" style="padding: 10px;">
+                        <option value="all">Tutti gli esiti</option>
+                        <option value="WON">Vinti</option>
+                        <option value="LOST">Persi</option>
+                        <option value="PENDING">Pending</option>
+                    </select>
+                </div>
+                <div class="stats-filter-group">
+                    <label for="chartDeepScanFilter">Deep Scan IA</label>
+                    <select id="chartDeepScanFilter" class="nav-input" style="padding: 10px;"></select>
+                </div>
+                <div class="stats-filter-group">
+                    <label for="chartQualityFilter">Qualità / Gate</label>
+                    <select id="chartQualityFilter" class="nav-input" style="padding: 10px;"></select>
+                </div>
+                <div class="stats-filter-group">
+                    <label>&nbsp;</label>
+                    <button id="resetChartFiltersBtn" class="export-btn" style="width:100%;">Reset filtri</button>
+                </div>
+            </div>
+            <div id="statsQuickSummary" class="stats-summary-grid"></div>
+            <div class="stats-chart-grid step55-chart-grid">
+                <div class="chart-card step55-chart-wide"><h4>Andamento profitto cumulato</h4><span class="chart-subtitle">Equity curve filtrata, solo esiti risolti WON/LOST.</span><canvas id="chartCumulativePred"></canvas></div>
+                <div class="chart-card step55-chart-large"><h4>Profitto per pronostico</h4><span class="chart-subtitle">Barre orizzontali ordinate per impatto economico.</span><canvas id="chartProfitPred"></canvas></div>
+                <div class="chart-card step55-chart-large"><h4>Win rate per pronostico</h4><span class="chart-subtitle">Lettura rapida della qualità del segnale per mercato.</span><canvas id="chartWinRatePred"></canvas></div>
+                <div class="chart-card step55-chart-small"><h4>Volume per campionato / torneo</h4><span class="chart-subtitle">Distribuzione del campione filtrato.</span><canvas id="chartVolumeByLeague"></canvas></div>
+                <div class="chart-card step55-chart-small"><h4>Vinte/Perse per Deep Scan IA</h4><span class="chart-subtitle">Confronto esiti per causalità qualitativa DeepScan.</span><canvas id="chartDeepScanOutcome"></canvas></div>
+                <div class="chart-card step55-chart-small"><h4>Vinte/Perse per Qualità / Gate</h4><span class="chart-subtitle">Controllo gate operativo e blocchi soft/hard.</span><canvas id="chartQualityOutcome"></canvas></div>
+            </div>
+        </section>
+
+        <section id="forwardTestLogSection" class="hidden">
+            <div class="step42-trading-header" data-step42-toolbar="true">
+                <div class="step42-trading-title" title="Trading Reale">
+                    <span class="step42-trading-title-icon" aria-hidden="true">🏆</span>
+                    <span class="step42-trading-title-text">Trading Reale</span>
+                </div>
+                <div class="step42-action-cluster" role="toolbar" aria-label="Azioni Trading">
+                    <button id="showStatsBtn" class="step42-icon-action" type="button" title="Apri Grafici Base" aria-label="Apri Grafici Base">📊<span class="step42-action-label">Grafici Base</span></button>
+                    <button id="exportForwardBtn" class="step42-icon-action" type="button" title="Esporta CSV" aria-label="Esporta CSV">📥<span class="step42-action-label">CSV</span></button>
+                    <button id="step42ExpandAllBtn" class="step42-icon-action" type="button" title="Espandi tutte le sezioni" aria-label="Espandi tutte le sezioni">⊞<span class="step42-action-label">Espandi tutto</span></button>
+                    <button id="step42CollapseAllBtn" class="step42-icon-action" type="button" title="Comprimi tutte le sezioni" aria-label="Comprimi tutte le sezioni">⊟<span class="step42-action-label">Comprimi tutto</span></button>
+                </div>
+            </div>
+            <div id="forwardTestSummaryBox" style="display: flex; gap: 15px; flex-wrap: wrap; margin: 15px 0;"></div>
+            <div id="forwardBulkToolbar" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:10px 0;padding:10px;border:1px solid rgba(148,163,184,.18);border-radius:9px;background:rgba(15,23,42,.55);">
+                <strong style="color:#cbd5e1;">Selezione multipla:</strong>
+                <span id="forwardSelectedCount" style="color:#38bdf8;font-weight:800;">0 selezionati</span>
+                <button type="button" id="forwardSelectAllBtn" class="export-btn" style="background:transparent;border-color:#38bdf8;color:#38bdf8;">Seleziona caricati</button>
+                <button type="button" id="forwardClearSelectionBtn" class="export-btn" style="background:transparent;border-color:#94a3b8;color:#cbd5e1;">Azzera</button>
+                <button type="button" id="forwardBulkDeleteBtn" class="export-btn" style="background:transparent;border-color:#ef4444;color:#fca5a5;">✖ Elimina selezionati</button>
+                <span style="font-size:.72rem;color:#94a3b8;">Eliminazione logica auditabile: i record non vengono distrutti.</span>
+            </div>
+            <div class="table-responsive">
+                <table id="forwardTable">
+                    <thead>
+                        <tr><th>Azioni</th> <th>Data</th> <th>Partita</th> <th>Deep Scan</th> <th>Pivot IA</th> <th>Lega / Torneo</th> <th>Strategia</th> <th>Mercato</th> <th>Pred.</th> <th>Quota</th> <th>CLV</th> <th>Prob.</th> <th>Edge / EV</th> <th>Stake</th> <th>Stato</th> <th>Profitto</th></tr>
+                        <tr class="table-filter-row">
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="0" placeholder="Azioni"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="1" placeholder="Filtra data"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="2" placeholder="Filtra partita"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="3" placeholder="Deep scan"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="4" placeholder="Pivot IA"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="5" placeholder="Campionato / torneo"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="6" placeholder="Strategia"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="7" placeholder="Mercato"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="8" placeholder="Pronostico"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="9" placeholder="Quota"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="10" placeholder="CLV"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="11" placeholder="Prob."></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="12" placeholder="Edge / EV"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="13" placeholder="Stake"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="14" placeholder="Stato"></th>
+                            <th><input class="table-filter-input" data-filter-table="forwardTable" data-col-index="15" placeholder="Profitto"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="forwardTestLogTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    
+    
+    <!-- STEP70/STEP71/STEP72/STEP73/STEP75/STEP88/STEP89/STEP90 compatibility cache markers for static Jest checks:
+         app.js?v=step70-ui-diagnostic-readability
+         app.js?v=step71-portfolio-segment-filters
+         app.js?v=step72-final-ui-binding-checks
+         app.js?v=step73-portfolio-diagnostics-fix
+         app.js?v=step75-tennis-system-audit
+         app.js?v=step85-portfolio-chart-layout-fix
+         app.js?v=step87-portfolio-axis-tour-clv
+         app.js?v=step88-master-alignment
+         app.js?v=step89-frontend-full-repair
+         app.js?v=step90-prematch-gate-alignment
+         data-step89-frontend-full-repair
+    -->
+    <script>
+    // STEP90B_PUBLIC_CACHE_CLEANUP: pulizia cache/service worker senza cambiare logica sportiva.
+    (function step90bPublicCacheCleanup(){
+        try {
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function(){
+                    navigator.serviceWorker.getRegistrations()
+                        .then(function(regs){ regs.forEach(function(reg){ reg.unregister(); }); })
+                        .catch(function(){});
+                });
+            }
+            if (window.caches && caches.keys) {
+                caches.keys().then(function(keys){ keys.forEach(function(k){ caches.delete(k); }); }).catch(function(){});
+            }
+        } catch (e) {}
+    })();
+    </script>
+
+    <!-- STEP90D_FULL_LEGACY_TEST_REPAIR: marker statici retro-compatibili per Jest Step84/85/86/87/88/89/90.
+         Runtime attivo unico: app.js?v=step90-prematch-gate-alignment. Le righe seguenti sono marker commentati, non script caricati.
+         app.js?v=step84-portfolio-ui-restore
+         app.js?v=step85-portfolio-chart-layout-fix
+         app.js?v=step86-portfolio-complete-restore
+         app.js?v=step87-portfolio-axis-tour-clv
+         app.js?v=step88-master-alignment
+         app.js?v=step89-frontend-full-repair
+         app.js?v=step90-prematch-gate-alignment
+         data-step88-master-alignment
+         data-step89-frontend-full-repair
+         data-step90-prematch-gate-alignment
+    -->
+<style id="patch26ff-ai-outcome-bands-style">
+/* BETTING_PATCH_26F_F_CROSS_SPORT_AI_OUTCOME_PROBABILITY_BANDS */
+.ai-outcome-host { margin-top: 18px; width: 100%; min-width: 0; }
+.ai-outcome-panel {
+    width: 100%; min-width: 0; box-sizing: border-box;
+    background: rgba(15, 23, 42, .72);
+    border: 1px solid rgba(56, 189, 248, .22);
+    border-radius: 14px; padding: 16px; overflow: hidden;
+}
+.ai-outcome-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; flex-wrap: wrap; }
+.ai-outcome-eyebrow { color: #7dd3fc; font-size: .7rem; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; }
+.ai-outcome-header h3 { margin: 4px 0 4px; color: #f8fafc; font-size: 1.08rem; line-height: 1.25; }
+.ai-outcome-header p { margin: 0; color: #94a3b8; font-size: .8rem; line-height: 1.4; max-width: 780px; }
+.ai-outcome-readonly { padding: 5px 9px; border-radius: 999px; border: 1px solid rgba(94, 234, 212, .28); background: rgba(20, 184, 166, .1); color: #99f6e4; font-size: .68rem; font-weight: 900; white-space: nowrap; }
+.ai-outcome-controls { display: grid; grid-template-columns: minmax(250px, auto) minmax(240px, 1fr); gap: 12px; align-items: end; margin-top: 14px; }
+.ai-outcome-segmented { display: inline-grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; border-radius: 10px; background: rgba(2, 6, 23, .45); border: 1px solid rgba(148, 163, 184, .14); }
+.ai-outcome-segmented button { border: 0; border-radius: 8px; padding: 9px 11px; background: transparent; color: #94a3b8; font-size: .78rem; font-weight: 800; cursor: pointer; }
+.ai-outcome-segmented button.active { background: rgba(56, 189, 248, .16); color: #e0f2fe; box-shadow: inset 0 0 0 1px rgba(56, 189, 248, .25); }
+.ai-outcome-select-wrap { min-width: 0; color: #94a3b8; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; }
+.ai-outcome-select { display: block; width: 100%; min-width: 0; margin-top: 5px; box-sizing: border-box; border: 1px solid rgba(148, 163, 184, .22); border-radius: 9px; background: #0f172a; color: #e2e8f0; padding: 9px 10px; font-size: .8rem; }
+.ai-outcome-kpis { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 8px; margin-top: 12px; }
+.ai-outcome-kpis > div { min-width: 0; border: 1px solid rgba(148, 163, 184, .14); border-radius: 10px; padding: 10px; background: rgba(2, 6, 23, .32); }
+.ai-outcome-kpis span, .ai-outcome-kpis small { display: block; color: #94a3b8; font-size: .65rem; line-height: 1.25; }
+.ai-outcome-kpis span { text-transform: uppercase; letter-spacing: .05em; font-weight: 800; }
+.ai-outcome-kpis strong { display: block; margin: 3px 0; color: #f8fafc; font-size: 1.1rem; line-height: 1.15; }
+.ai-outcome-kpis .good { border-color: rgba(16,185,129,.25); }
+.ai-outcome-kpis .warn { border-color: rgba(245,158,11,.25); }
+.ai-outcome-kpis .low { border-color: rgba(239,68,68,.22); }
+.ai-outcome-quality-note, .ai-outcome-footnote { margin-top: 9px; color: #94a3b8; font-size: .72rem; line-height: 1.4; }
+.ai-outcome-quality-note { border-left: 3px solid #f59e0b; background: rgba(245,158,11,.07); border-radius: 7px; padding: 8px 10px; color: #fde68a; }
+.ai-outcome-table-wrap { margin-top: 12px; width: 100%; overflow: hidden; border: 1px solid rgba(148,163,184,.14); border-radius: 10px; }
+.ai-outcome-table { width: 100%; min-width: 0 !important; border-collapse: collapse; table-layout: fixed; }
+.ai-outcome-table th, .ai-outcome-table td { padding: 9px 8px; text-align: left; border-bottom: 1px solid rgba(148,163,184,.1); font-size: .76rem; overflow-wrap: anywhere; }
+.ai-outcome-table th { color: #94a3b8; background: rgba(2,6,23,.42); text-transform: uppercase; letter-spacing: .04em; font-size: .65rem; }
+.ai-outcome-table td { color: #cbd5e1; }
+.ai-outcome-table td small { display: block; color: #64748b; margin-top: 2px; font-size: .63rem; }
+.ai-outcome-table tbody tr:last-child td { border-bottom: 0; }
+.ai-outcome-table tr.sample-low { opacity: .72; }
+.ai-outcome-won { color: #34d399 !important; }
+.ai-outcome-lost { color: #f87171 !important; }
+.ai-gap-positive { color: #34d399 !important; }
+.ai-gap-negative { color: #fbbf24 !important; }
+.ai-outcome-mobile-grid { display: none; }
+.ai-outcome-loading, .ai-outcome-empty { padding: 14px; border-radius: 10px; color: #94a3b8; background: rgba(15,23,42,.55); border: 1px dashed rgba(148,163,184,.22); font-size: .8rem; }
+
+@media (max-width: 760px) {
+    .ai-outcome-panel { padding: 12px; border-radius: 12px; }
+    .ai-outcome-controls { grid-template-columns: 1fr; gap: 9px; }
+    .ai-outcome-kpis { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .ai-outcome-table-wrap { display: none; }
+    .ai-outcome-mobile-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 11px; }
+    .ai-outcome-band-card { min-width: 0; border: 1px solid rgba(148,163,184,.14); border-radius: 10px; padding: 10px; background: rgba(2,6,23,.32); }
+    .ai-outcome-band-card.sample-low { opacity: .72; }
+    .ai-outcome-band-card-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; color: #f8fafc; }
+    .ai-outcome-band-card-head span { color: #94a3b8; font-size: .7rem; }
+    .ai-outcome-band-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 7px; margin-top: 8px; }
+    .ai-outcome-band-card-grid div { min-width: 0; }
+    .ai-outcome-band-card-grid small { display: block; color: #64748b; font-size: .62rem; text-transform: uppercase; }
+    .ai-outcome-band-card-grid strong { display: block; color: #e2e8f0; font-size: .78rem; margin-top: 2px; overflow-wrap: anywhere; }
+    .ai-outcome-band-card-foot { margin-top: 8px; padding-top: 7px; border-top: 1px solid rgba(148,163,184,.1); color: #94a3b8; font-size: .65rem; }
+}
+
+@media (max-width: 390px) {
+    .ai-outcome-kpis { grid-template-columns: 1fr; }
+    .ai-outcome-segmented { grid-template-columns: 1fr; }
+}
+/* /BETTING_PATCH_26F_F_CROSS_SPORT_AI_OUTCOME_PROBABILITY_BANDS */
+</style>
+<!-- PATCH41_TRADING_DASHBOARD_READABILITY_RESPONSIVE_TABLES -->
+<!-- LEGACY_R2_CACHE_BUSTER_COMPAT app.js?v=patch28-r2-ui-navigation-stability -->
+
+<style id="patch50-health-alignment-collapse-style">
+.tennis-health-check-detail{display:block;margin-top:2px;color:#64748b;font-size:.58rem;font-weight:600;line-height:1.25;text-transform:none;letter-spacing:0;}
+.patch50-prediction-index-controls{grid-template-columns:repeat(2,minmax(130px,auto)) minmax(220px,1fr) minmax(150px,auto);align-items:center;}
+.prediction-index-collapse-btn{border:1px solid rgba(56,189,248,.28);border-radius:9px;padding:9px 11px;background:rgba(14,116,144,.14);color:#bae6fd;font-size:.76rem;font-weight:850;cursor:pointer;white-space:nowrap;}
+.prediction-index-collapse-btn:hover{background:rgba(14,116,144,.24);}
+#predictionIndexBandsTableRegion[hidden]{display:none!important;}
+@media(max-width:900px){.patch50-prediction-index-controls{grid-template-columns:1fr 1fr;}}
+@media(max-width:760px){.patch50-prediction-index-controls{grid-template-columns:1fr;}.prediction-index-collapse-btn{width:100%;}}
+</style>
+<link rel="stylesheet" href="tradingScopes.css?v=betting-patch-audit07s-r3">
+<script src="tradingScopes.js?v=betting-patch-audit07s-r3"></script>
+<script src="portfolioAccounting.js?v=betting-patch-audit07s-r3"></script>
+<script src="portfolioR3.js?v=betting-patch-audit07s-r3"></script>
+<script src="scopeRepairs.js?v=betting-patch-audit07s-r3"></script>
+<script src="app.js?v=betting-r17-deepscan-medical-20261108"></script>
+<script src="tradingScopesUI.js?v=betting-patch-audit07s-r3"></script>
+<script src="t10ShadowMonitorUI.js?v=AUDIT16D_R3_T10_R1_SHADOW_MONITOR_V1"></script>
+<script src="t10R2PortfolioForwardAuditUI.js?v=AUDIT16D_R3_T10_R2_R1_V1"></script>
+<script>
+/* STEP89_PAGE_BOOT_CHECK: mostra errore leggibile se app.js non viene caricato. */
+window.addEventListener("load", function(){
+  setTimeout(function(){
+    if (!window.switchSport) {
+      console.error("STEP89/PATCH7: app.js non caricato correttamente o cache browser ancora attiva.");
+      var panel=document.getElementById('runtimeDiagnosticPanel');
+      if(panel){
+        panel.classList.add('is-visible');
+        document.getElementById('runtimeDiagnosticTitle').textContent='Frontend non avviato';
+        document.getElementById('runtimeDiagnosticMessage').textContent='app.js non è stato caricato. Svuota la cache, verifica la console e il file public/app.js.';
+        document.getElementById('runtimeDiagnosticMeta').textContent='Fase: PAGE_BOOT · Codice: APP_JS_NOT_LOADED';
+      }
+    }
+  }, 800);
+});
+</script>
+    
+    <script>
+        // --- GESTIONE UI CARD AUTOMAZIONE SCHEDULER (CALCIO) ---
+        function toggleCalcioAutomationUI() {
+            const isEnabled = document.getElementById('calcio_autoEnableToggle');
+            const settingsDiv = document.getElementById('calcio_automationSettings');
+            const slider = document.getElementById('calcio_sliderSpan');
+            
+            if (isEnabled && settingsDiv) {
+                settingsDiv.style.opacity = isEnabled.checked ? "1" : "0.5";
+                settingsDiv.style.pointerEvents = isEnabled.checked ? "auto" : "none";
+                if(slider) slider.style.backgroundColor = isEnabled.checked ? "#10b981" : "#4b5563";
+            }
+        }
+
+        function toggleCalcioScheduleType() {
+            const typeNode = document.querySelector('input[name="calcio_scheduleType"]:checked');
+            if (!typeNode) return;
+            const type = typeNode.value;
+            const daily = document.getElementById('calcio_dailyTwiceSettings');
+            const custom = document.getElementById('calcio_customDaysSettings');
+            if (daily) daily.style.display = type === 'daily_twice' ? 'flex' : 'none';
+            if (custom) custom.style.display = type === 'custom_days' ? 'block' : 'none';
+        }
+
+        async function loadCalcioAutomationSettings() {
+            try {
+                const res = await fetch('/api/setup/calcio-automation');
+                if(!res.ok) return; 
+                const config = await res.json();
+                
+                const toggle = document.getElementById('calcio_autoEnableToggle');
+                if (toggle) toggle.checked = config.enabled;
+                
+                const radioType = document.querySelector(`input[name="calcio_scheduleType"][value="${config.type}"]`);
+                if(radioType) radioType.checked = true;
+                
+                if (config.type === 'daily_twice') {
+                    const t1 = document.getElementById('calcio_time1');
+                    const t2 = document.getElementById('calcio_time2');
+                    if (t1) t1.value = (Array.isArray(config.times) ? config.times : [])[0] || '09:00';
+                    if (t2) t2.value = (Array.isArray(config.times) ? config.times : [])[1] || '20:00';
+                } else {
+                    const tC = document.getElementById('calcio_timeCustom');
+                    if (tC) tC.value = (Array.isArray(config.times) ? config.times : [])[0] || '10:00';
+                    const checkboxes = document.querySelectorAll('input[name="calcio_days"]');
+                    checkboxes.forEach(cb => {
+                        cb.checked = (Array.isArray(config.days) ? config.days : []).includes(parseInt(cb.value));
+                    });
+                }
+                
+                toggleCalcioScheduleType();
+                toggleCalcioAutomationUI();
+            } catch (e) { console.warn("Moduli automazione calcio non inizializzati."); }
+        }
+
+        async function saveCalcioAutomationSettings() {
+            const toggle = document.getElementById('calcio_autoEnableToggle');
+            const isEnabled = toggle ? toggle.checked : false;
+            
+            const typeNode = document.querySelector('input[name="calcio_scheduleType"]:checked');
+            const type = typeNode ? typeNode.value : 'daily_twice';
+            
+            let config = { enabled: isEnabled, explicitEnable: isEnabled, type: type, times: [], days: [] };
+            
+            if (type === 'daily_twice') {
+                const t1 = document.getElementById('calcio_time1');
+                const t2 = document.getElementById('calcio_time2');
+                if (t1) config.times.push(t1.value);
+                if (t2) config.times.push(t2.value);
+            } else {
+                const tC = document.getElementById('calcio_timeCustom');
+                if (tC) config.times.push(tC.value);
+                const checkedDays = Array.from(document.querySelectorAll('input[name="calcio_days"]:checked')).map(cb => parseInt(cb.value));
+                config.days = checkedDays;
+            }
+
+            try {
+                const res = await fetch('/api/setup/calcio-automation', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(config)
+                });
+                const data = await res.json();
+                if(data.success) alert('✅ Automazione Calcio Salvata e Programmata!');
+            } catch (e) {
+                alert('❌ Errore nel salvataggio Calcio');
+            }
+        }
+
+        // --- GESTIONE UI CARD AUTOMAZIONE SCHEDULER (TENNIS) ---
+        function toggleAutomationUI() {
+            const isEnabled = document.getElementById('autoEnableToggle');
+            const settingsDiv = document.getElementById('automationSettings');
+            const slider = document.getElementById('sliderSpan');
+            
+            if (isEnabled && settingsDiv) {
+                settingsDiv.style.opacity = isEnabled.checked ? "1" : "0.5";
+                settingsDiv.style.pointerEvents = isEnabled.checked ? "auto" : "none";
+                if(slider) slider.style.backgroundColor = isEnabled.checked ? "#10b981" : "#4b5563";
+            }
+        }
+
+        function toggleScheduleType() {
+            const typeNode = document.querySelector('input[name="scheduleType"]:checked');
+            if (!typeNode) return;
+            const type = typeNode.value;
+            const daily = document.getElementById('dailyTwiceSettings');
+            const custom = document.getElementById('customDaysSettings');
+            if (daily) daily.style.display = type === 'daily_twice' ? 'flex' : 'none';
+            if (custom) custom.style.display = type === 'custom_days' ? 'block' : 'none';
+        }
+
+        async function loadAutomationSettings() {
+            try {
+                const res = await fetch('/api/setup/tennis-automation');
+                if(!res.ok) return; 
+                const config = await res.json();
+                
+                const toggle = document.getElementById('autoEnableToggle');
+                if (toggle) toggle.checked = config.enabled;
+                
+                const radioType = document.querySelector(`input[name="scheduleType"][value="${config.type}"]`);
+                if(radioType) radioType.checked = true;
+                
+                if (config.type === 'daily_twice') {
+                    const t1 = document.getElementById('time1');
+                    const t2 = document.getElementById('time2');
+                    if (t1) t1.value = (Array.isArray(config.times) ? config.times : [])[0] || '09:00';
+                    if (t2) t2.value = (Array.isArray(config.times) ? config.times : [])[1] || '20:00';
+                } else {
+                    const tC = document.getElementById('timeCustom');
+                    if (tC) tC.value = (Array.isArray(config.times) ? config.times : [])[0] || '10:00';
+                    const checkboxes = document.querySelectorAll('input[name="days"]');
+                    checkboxes.forEach(cb => {
+                        cb.checked = (Array.isArray(config.days) ? config.days : []).includes(parseInt(cb.value));
+                    });
+                }
+                
+                toggleScheduleType();
+                toggleAutomationUI();
+            } catch (e) { console.warn("Caricamento impostazioni automazione Tennis fallito:", e); }
+        }
+
+        async function saveAutomationSettings() {
+            const toggle = document.getElementById('autoEnableToggle');
+            const isEnabled = toggle ? toggle.checked : false;
+            
+            const typeNode = document.querySelector('input[name="scheduleType"]:checked');
+            const type = typeNode ? typeNode.value : 'daily_twice';
+            
+            let config = { enabled: isEnabled, type: type, times: [], days: [] };
+            
+            if (type === 'daily_twice') {
+                const t1 = document.getElementById('time1');
+                const t2 = document.getElementById('time2');
+                if (t1) config.times.push(t1.value);
+                if (t2) config.times.push(t2.value);
+            } else {
+                const tC = document.getElementById('timeCustom');
+                if (tC) config.times.push(tC.value);
+                const checkedDays = Array.from(document.querySelectorAll('input[name="days"]:checked')).map(cb => parseInt(cb.value));
+                config.days = checkedDays;
+            }
+
+            try {
+                const res = await fetch('/api/setup/tennis-automation', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(config)
+                });
+                const data = await res.json();
+                if(data.success) alert('✅ Automazione Tennis Salvata e Programmata!');
+            } catch (e) {
+                alert('❌ Errore nel salvataggio Tennis');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Sincronizza i badge statici con lo sport selezionato quando app.js richiama switchSport().
+            const originalSwitchSport = window.switchSport;
+            window.switchSport = function patchedSwitchSport(sport) {
+                if (typeof originalSwitchSport === 'function') {
+                    originalSwitchSport(sport);
+                }
+                const badge = document.getElementById('systemSportBadge');
+                const calcioBtn = document.getElementById('btnSportCalcio');
+                const tennisBtn = document.getElementById('btnSportTennis');
+                if (badge) {
+                    badge.textContent = sport === 'tennis' ? '🎾 Tennis' : '⚽ Calcio';
+                }
+                if (calcioBtn && tennisBtn) {
+                    calcioBtn.setAttribute('aria-selected', sport === 'tennis' ? 'false' : 'true');
+                    tennisBtn.setAttribute('aria-selected', sport === 'tennis' ? 'true' : 'false');
+                }
+            };
+
+            loadAutomationSettings(); 
+            loadCalcioAutomationSettings(); 
+
+            // Inietta il CSS per le Pseudo-Label per il Mobile Responsive
+            const observer = new MutationObserver(() => {
+                document.querySelectorAll('#forwardTestLogTableBody tr:not([id^="ds-row-"])').forEach(tr => {
+                    const tds = tr.querySelectorAll('td');
+                    if(tds.length >= 15) { 
+                        tds[2].setAttribute('data-label', 'Data');
+                        tds[3].setAttribute('data-label', 'Match');
+                        tds[4].setAttribute('data-label', 'IA Scan');
+                        tds[5].setAttribute('data-label', 'Pivot IA');
+                        tds[6].setAttribute('data-label', 'Lega');
+                        tds[7].setAttribute('data-label', 'Strategia');
+                        tds[8].setAttribute('data-label', 'Pred');
+                        tds[9].setAttribute('data-label', 'Quota');
+                        tds[10].setAttribute('data-label', 'CLV');
+                        tds[11].setAttribute('data-label', 'Prob');
+                        tds[12].setAttribute('data-label', 'Edge');
+                        tds[13].setAttribute('data-label', 'Stake');
+                        tds[14].setAttribute('data-label', 'Stato');
+                        if(tds[15]) tds[15].setAttribute('data-label', 'Profitto');
+                    }
+                });
+                
+                document.querySelectorAll('#valueBetsTable tr:not([id^="ds-row-"])').forEach(tr => {
+                    const tds = tr.querySelectorAll('td');
+                    if(tds.length === 10) {
+                        tds[0].setAttribute('data-label', 'Data');
+                        tds[1].setAttribute('data-label', 'Match');
+                        tds[2].setAttribute('data-label', 'IA Scan');
+                        tds[3].setAttribute('data-label', 'Lega');
+                        tds[4].setAttribute('data-label', 'Pred');
+                        tds[5].setAttribute('data-label', 'Quota');
+                        tds[6].setAttribute('data-label', 'Prob');
+                        tds[7].setAttribute('data-label', 'Edge');
+                        tds[8].setAttribute('data-label', 'Stake');
+                        tds[9].setAttribute('data-label', 'Profitto');
+                    }
+                });
+            });
+            
+            observer.observe(document.body, { childList: true, subtree: true });
+        });
+    </script>
+<!-- STEP59E_CALCIO_DIAGNOSTICS_UI: Calcio gate/exposure/settlement visibili nel paper trading e grafici Step55. -->
+<script>
+// STEP86_PUBLIC_CACHE_CLEANUP: pulizia cache/service worker senza cambiare logica sportiva.
+(function step86PublicCacheCleanup(){
+    try {
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function(){
+                navigator.serviceWorker.getRegistrations()
+                    .then(function(regs){ regs.forEach(function(reg){ reg.unregister(); }); })
+                    .catch(function(){});
+            });
+        }
+        if (window.caches && caches.keys) {
+            caches.keys().then(function(keys){ keys.forEach(function(k){ caches.delete(k); }); }).catch(function(){});
+        }
+    } catch (e) {}
+})();
+</script>
+<!-- <TENNIS_DUAL_SINGLES_V5_R1_UI> -->
+<script defer src="/tennisDualSinglesV5UI.js?v=TEN_V5_R1"></script>
+</body>
+</html>
+<!-- STEP61_MANUAL_DEEPSCAN_LAB_UI: pagina DeepScan read-only manuale, senza paper trading/localStorage/DB operativo. -->

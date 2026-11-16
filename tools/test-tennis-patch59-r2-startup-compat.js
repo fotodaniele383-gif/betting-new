@@ -1,0 +1,26 @@
+
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const assert = require('assert');
+const ROOT = path.resolve(process.argv.includes('--root') ? process.argv[process.argv.indexOf('--root')+1] : path.join(__dirname,'..'));
+const doctorPath = path.join(ROOT,'tools','startupDoctorPatch57R2.js');
+const batPath = path.join(ROOT,'Avvia_Betting.bat');
+const doctor = fs.readFileSync(doctorPath,'utf8');
+const bat = fs.readFileSync(batPath,'utf8');
+let checks=0; const ok=(v,m)=>{assert.ok(v,m); checks++;};
+ok(doctor.includes('TENNIS_PATCH59_R2_STARTUP_HEALTH_GRACE_V1'),'doctor revision marker');
+ok(doctor.includes('function detectPatch58OrLater(pkg)'),'future-compatible detector');
+ok(doctor.includes("evidence: 'TENNIS_REGISTRY'"),'registry evidence');
+ok(doctor.includes('current >= 58'),'registry >=58');
+ok(doctor.includes('patch58Installed: patch58.installed'),'legacy field remains compatible');
+ok(doctor.includes('patch58Detection: patch58'),'diagnostic evidence exposed');
+ok(bat.includes('HEALTH_MAX_ATTEMPTS=30'),'health retry attempts');
+ok(bat.includes('HEALTH_RETRY_SECONDS=2'),'health retry interval');
+ok(bat.includes(':HEALTH_RETRY_LOOP'),'health retry loop');
+ok(bat.includes(':HEALTH_READY'),'health success label');
+ok(bat.includes(':HEALTH_FAILED'),'health failure label');
+ok(!bat.includes('timeout /t 5 /nobreak >NUL'),'fixed 5-second single-shot removed');
+ok(bat.includes('node tools\\startupDoctorPatch57R2.js --health > "%TEMP%\\bettingapp_startup_health.json" 2>&1'),'health output captured');
+ok(bat.includes('dopo il grace period'),'real failure message distinguishes timeout');
+console.log(JSON.stringify({success:true,patch:'TENNIS_PATCH_59_R2_STARTUP_HEALTH_GRACE_COMPAT',checks},null,2));

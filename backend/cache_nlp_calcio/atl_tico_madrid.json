@@ -1,0 +1,354 @@
+{
+  "timestamp": 1794164669784,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 75.8,
+    "sourceCoverageConfidence": 85,
+    "matchImpactConfidence": 75.8,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 70,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 6
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Atlético Madrid",
+      "officialDomain": "atleticodemadrid.com",
+      "status": "PARTIAL",
+      "confidence": 75.8,
+      "coverageConfidence": 85,
+      "matchImpactConfidence": 75.8,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "EMPTY",
+          "httpStatus": 200,
+          "durationMs": 1057,
+          "received": 0,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:04:29.763Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1065,
+          "received": 15,
+          "relevant": 8,
+          "fresh": 15,
+          "usable": 8,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:04:29.772Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 920,
+          "received": 3,
+          "relevant": 1,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:04:29.627Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 18,
+        "relevantArticles": 9,
+        "usableArticles": 8,
+        "uniqueArticles": 8,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 8,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 10,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "bayern munich xi vs atletico madrid – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Bayern Munich XI vs Atletico Madrid – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "bayern munich xi vs atletico madrid – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxqb3nwrhy0zm1lmgjjametmhfwm19otglomldhluywwu5odfdnegdvn2powklwy0dqcm9oawfwu05yodrvavzime5iluzmtwtzugvzdtzqn3ljvg02zxb1y294zhzmt0tln3bibxg2y2vrclztaws4lwlcq0pvblpss2puvq?oc=5\" target=\"_blank\">bayern munich xi vs atletico madrid – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb3NWRHY0Zm1LMGJJamEtMHFwM19oTGloMldhLUYwWU5odFdNeGdvN2poWklwY0dQcm9oaWFwU05yODRvaVZiME5ILUZmTWtZUGVzdTZQN3lJVG02ZXB1Y294ZHZmT0tlN3BibXg2Y2VrclZtaWs4LWlCQ0pVblpsS2pUVQ?oc=5",
+          "publishedAt": "2026-11-03T04:47:00.000Z",
+          "ageDays": 5.6,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "atletico madrid vs bayern munich – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Atletico Madrid vs Bayern Munich – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "atletico madrid vs bayern munich – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmiiafbvv95cuxpr2vtswhfcgrkbgp4offive1row04dllzrc1zvge1tmyxrg1vnznwd0furlrjr3f2mjnlqvzwclryntvxcxv0ytdnukzhmuottv9cuufpqlc3qmrza1jpbmpubvg1lxfsmxrhluvtz3ptn0jmauy5ckvhdf9zlwjtae9uuvnbrgxd?oc=5\" target=\"_blank\">atletico madrid vs bayern munich – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPR2VtSWhFcGRkbGp4OFFIVE1ROW04dllzRC1ZVGE1TmYxRG1VNzNwd0FURlRJR3F2MjNlQVZwclRyNTVXcXV0YTdNUkZHMUotTV9CUUFPQlc3QmRza1JpbmpubVg1LXFsMXRhLUVTZ3ptN0JmaUY5ckVHdF9zLWJTaE9uUVNBRGxD?oc=5",
+          "publishedAt": "2026-11-03T04:45:00.000Z",
+          "ageDays": 5.6,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "barcelona predicted lineup vs. atletico madrid: main midfield duo of flick era returns - sports illustrated",
+          "originalTitle": "Barcelona Predicted Lineup vs. Atletico Madrid: Main Midfield Duo of Flick Era Returns - Sports Illustrated",
+          "fullText": "barcelona predicted lineup vs. atletico madrid: main midfield duo of flick era returns - sports illustrated <a href=\"https://news.google.com/rss/articles/cbmihgfbvv95cuxpm2hwrehfufuwctz1slbitdnjnzryefbzc0lxohllckxwazdjnzzwblzzcnnxmzbgn3hgqw43sjribu9qyxftyzd0mzhmu3nqr1ftn093ohzpnfbytg1lmhozms10nnc5yk45aw9lqtrjofrvblpxb3dmuc1bvnnvbwjvn2qzzw?oc=5\" target=\"_blank\">barcelona predicted lineup vs. atletico madrid: main midfield duo of flick era returns</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">sports illustrated</font>",
+          "sourceName": "Sports Illustrated",
+          "sourceUrl": "https://www.si.com",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPM2hwREhFUFUwcTZ1SlBiTDNJNzRYeFBzc0lXOHllckxWazdjNzZwblZzcnNxMzBGN3hGQW43SjRibU9QYXFTYzd0MzhMU3NQR1FtN093OHZPNFByTG1lMHozMS10Nnc5Yk45aW9lQTRJOFRvblpXb3dmUC1BVnNVbWJVN2QzZw?oc=5",
+          "publishedAt": "2026-11-07T20:00:01.000Z",
+          "ageDays": 0.96,
+          "category": "RETURN_FITNESS",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "atletico madrid vs bayern munich – match preview and team news - yahoo sports",
+          "originalTitle": "Atletico Madrid vs Bayern Munich – Match preview and team news - Yahoo Sports",
+          "fullText": "atletico madrid vs bayern munich – match preview and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmiiafbvv95cuxqtvizwhfvajbnltlvwvvemzlertdluzhmawzboezxmuhmm0rjrfvkc2hhqxmzmm15bkr3y0rhvf93efnbzlr2egcwbwzstvvstmdtblkzcxfudglfdupwqnnpbef3ovvirlhetkxmtxflvgjtqthyv3pdmjuwwu5ou3nwykm2oe1r?oc=5\" target=\"_blank\">atletico madrid vs bayern munich – match preview and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTVIzWHFVajBNLTlVWVVEMzlERTdLUzhmaWZBOEZXMUhmM0RJRFVkc2hhQXMzMm15bkR3Y0RHVF93eFNBZlR2eGcwbWZSTVVsTmdtblkzcXFUdGlFdUpWQnNPbEF3OVVIRlhETkxMTXFlVGJtQThYV3pDMjUwWU5oU3NWYkM2OE1r?oc=5",
+          "publishedAt": "2026-11-03T04:43:00.000Z",
+          "ageDays": 5.6,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "atletico madrid vs barcelona – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Atletico Madrid vs Barcelona – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "atletico madrid vs barcelona – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmikafbvv95cuxqzg4zs3vtzgyxtznlytrqc0zimxf2a0v2szfquznuvtzkcwo1bdrkyvnir2f4dedrttjjtwfly2xhdtf1vtnswtdgd0w4dmkzm2xxawxrathndvf3svvqqwlqshayt3mznw1owglzqwzqylrnn19zv25vai0xshpnukrla2ffrvbnmnrwm1zvrkq?oc=5\" target=\"_blank\">atletico madrid vs barcelona – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZG4zS3VtZGYxTzNLYTRqc0ZIMXF2a0V2SzFqUzNuVTZkcWo1bDRKYVNIR2F4dEdRTTJJTWFLY2xHdTF1VTNSWTdGd0w4dmkzM2xxaWxraThndVF3SVVQQWlQSHAyT3MzNW1OWGlzQWZQYlRNN19zV25vai0xSHpnUkRla2FFRVBNMnRWM1ZvRkQ?oc=5",
+          "publishedAt": "2026-11-08T10:15:00.000Z",
+          "ageDays": 0.37,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "atletico madrid xi vs levante – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Atletico Madrid XI vs Levante – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "atletico madrid xi vs levante – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihafbvv95cuxqzc1guvvnu2hmmmhpdjhpufjrbmvibul6nwdrq0h1cvhmczndtuhqckvwaxcxwglkn0vtunhwrnzhytlawujlefhkemnsvuprt1rvtvhvcmq1dmvadvgtttvmy2hjenvknejjwjhxew1gze45uxliednocxrmzfnsndrin3q?oc=5\" target=\"_blank\">atletico madrid xi vs levante – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZC1GUVVNU2hMMmhpdjhpUFJrbmVIbUl6NWdrQ0h1cVhmczNDTUhqckVWaXcxWGlkN0VtUnhWRnZHYTlaWUJleFhkemNsVUpRT1RVTVhvcmQ1dmVadVgtTTVMY2hJenVKNEJjWjhXeW1GZE45UXlIeDNocXRmZFNsNDRiN3Q?oc=5",
+          "publishedAt": "2026-10-31T05:23:00.000Z",
+          "ageDays": 8.57,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "arsenal handed january transfer blow as atletico madrid refuse to sell mikel arteta target alex baena mid-season - yahoo sports",
+          "originalTitle": "Arsenal handed January transfer blow as Atletico Madrid refuse to sell Mikel Arteta target Alex Baena mid-season - Yahoo Sports",
+          "fullText": "arsenal handed january transfer blow as atletico madrid refuse to sell mikel arteta target alex baena mid-season - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmijgfbvv95cuxqqjlwogu1cgleuw9zy1jnwwvwudixcff5qm1xmhjfz09im1ljcfqzew4zsklyrhp4bug1mlnlczk5qlbbugplbxrpzeu1tvjrx2rpceq3ugzxy2dxoe53a1bxoxvzbf9bawd2n1lncgddsnhotxrbq0zptelnu3zcemvvz01qluxpq1jlvepr?oc=5\" target=\"_blank\">arsenal handed january transfer blow as atletico madrid refuse to sell mikel arteta target alex baena mid-season</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQjlwOGU1cGlEUW9zY1JnWWVwUDIxcFF5Qm1xMHJFZ09iM1lJcFQzeW4zSklYRHp4bUg1MlNLczk5QlBBUGplbXRPZEU1TVJRX2RpcEQ3UGZxY2dxOE53a1BxOXVzbF9BaWd2N1lncGdDSnhoTXRBQ0ZPTElNU3ZCemVVZ01qLUxPQ1JLVEpR?oc=5",
+          "publishedAt": "2026-10-29T07:00:00.000Z",
+          "ageDays": 10.5,
+          "category": "TRANSFER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "levante vs atletico madrid – match preview and team news - yahoo sports",
+          "originalTitle": "Levante vs Atletico Madrid – Match preview and team news - Yahoo Sports",
+          "fullText": "levante vs atletico madrid – match preview and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmiiafbvv95cuxovgl6zw1dtwo0qtrcs0fnrurdv0lonhdclu03tehqwhi3nknhrwxacs1lntzkoxzoaxloredtswt2teqwznywmmjqt1namvyzem5quvotb2dlwm9iajlgvve2nkxja0vxqmnhb1fxumznvmvlwl9kyk55dk15anpxb1c4v2xvz2nj?oc=5\" target=\"_blank\">levante vs atletico madrid – match preview and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVGl6ZW1DTWo0QTRCS0FnRURDV0lONHdCLU03TEhQWHI3NkNhRWxacS1lNTZkOXZoaXloREdtSWt2TEQwZnYwMmJqT1NaMVYzem5QUVotb2dlWm9IajlGVVE2Nkxja0VxQmNhb1FxUmZNVmVLWl9kYk55dk15anpXb1c4V2xvZ2Nj?oc=5",
+          "publishedAt": "2026-10-30T07:00:00.000Z",
+          "ageDays": 9.5,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "why atletico madrid vs. barcelona is at risk of suspension - sports illustrated",
+          "sourceName": "Sports Illustrated",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "atletico madrid vs barcelona: la liga – predictions, team news, lineups - al jazeera",
+          "sourceName": "Al Jazeera",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "how to watch atletico madrid vs barcelona live: stream, tv, team news, prediction - nbc sports",
+          "sourceName": "NBC Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "barcelona's rodri ruled out of atlético madrid clash with hamstring injury - espn",
+          "sourceName": "ESPN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "atletico madrid vs. barcelona lineups & confirmed team news - athlon sports",
+          "sourceName": "Athlon Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "atletico madrid vs. barcelona: preview, predictions and lineups - sports illustrated",
+          "sourceName": "Sports Illustrated",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "atletico madrid vs. bayern munich lineups and confirmed team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "atlético madrid vs málaga",
+          "sourceName": "Goal",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "atlético madrid",
+          "sourceName": "fotmob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "atlético madrid",
+          "sourceName": "fotmob",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 5000,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

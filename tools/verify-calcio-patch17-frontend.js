@@ -1,0 +1,13 @@
+'use strict';
+const fs = require('fs'); const path = require('path'); const assert = require('assert');
+const root = path.resolve(__dirname, '..');
+const a = fs.readFileSync(path.join(root,'public/app.js'));
+const b = fs.readFileSync(path.join(root,'backend/public/app.js'));
+const h1 = fs.readFileSync(path.join(root,'public/index.html'));
+const h2 = fs.readFileSync(path.join(root,'backend/public/index.html'));
+assert(a.equals(b), 'Frontend app mirrors differ');
+assert(h1.equals(h2), 'Frontend HTML mirrors differ');
+const text = a.toString('utf8'); const html = h1.toString('utf8');
+for (const marker of ['renderCalcioPredictionIndexCell','prediction-index-cell-','Indice Predizione Match','calcio_prediction_index_score']) assert(text.includes(marker), `Missing ${marker}`);
+assert(html.includes('Indice Predizione'));
+console.log(JSON.stringify({success:true,patch:'BETTING_PATCH_17_UNIFIED_PREDICTION_INDEX_STAKE_AUTHORITY',appBytes:a.length,htmlBytes:h1.length,markers:4},null,2));

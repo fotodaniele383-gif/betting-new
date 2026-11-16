@@ -1,0 +1,27 @@
+{
+  "version": "BETTINGAPP_MAIN_R6_PROMPT_CALCIO_V63_NO_MINIMAX_WIDGET_20261110",
+  "from": "BETTINGAPP_MAIN_R5_TENNIS_V62_INTEGRITY_REBASE_20261110",
+  "installed": {
+    "START_BETTING.cjs": "9a774238a577355529f8bc2645972f37a73a0ee0d6a464ede3989f67a3dffbcc",
+    "START_BETTING_CORE_CHAIN_R6.cjs": "f3e3fd0d39f45b50177f1b2ad76ddf6a7c12c7e0cd1d7caeabbd5a00b97a4c83",
+    "addons/calcio-editor/prompts/CALCIO_H_V2.md": "529db810600ec7c37f2194c5effedbf63530e635cb3d8dc6a0e3ba5dde0b92ec",
+    "backend/public/index.html": "9fcd327f06ae5f8d23316f2851b9bb6598587213962a421e525274e860188bd7",
+    "backend/public/quantMatchPromptBridgeV4.js": "4440253cfc40645c8a7f1c5802d6039760e92ff4a9e7fcd8fa4a0da049952c06",
+    "public/index.html": "9fcd327f06ae5f8d23316f2851b9bb6598587213962a421e525274e860188bd7",
+    "public/quantMatchPromptBridgeV4.js": "4440253cfc40645c8a7f1c5802d6039760e92ff4a9e7fcd8fa4a0da049952c06",
+    "prompts/CALCIO_V6_3_MASTER_MINIMAX.txt": "6557360fa4f448c6416c4a4e02147985769e6c2dc1811c76792f82f015a2ed9e"
+  },
+  "before": {
+    "START_BETTING.cjs": "710eedfbab7b7675d51c11913f8154c1734cfa86ab5bf118881f35b63fe7b1bd",
+    "START_BETTING_CORE_CHAIN_R5.cjs": "f615cefdbae154c4500f7b2e765fb1cf9546039d97fc4bb1344c6dcd7369018e",
+    "addons/calcio-editor/prompts/CALCIO_H_V2.md": "1224942163bba33982c26922fb526d15cc79cfff82e3e2018e155420fbc7c6e1",
+    "backend/public/index.html": "0105538787f8ea2b10193d223e161a0f3b0aae1a09cad6eab64ff3feaa393ee0",
+    "backend/public/quantMatchPromptBridgeV4.js": "63ad336f42ea141a0bfaa16df24d238c7b8eb570fe81535f63e3ca119d3647cd",
+    "public/index.html": "0105538787f8ea2b10193d223e161a0f3b0aae1a09cad6eab64ff3feaa393ee0",
+    "public/quantMatchPromptBridgeV4.js": "63ad336f42ea141a0bfaa16df24d238c7b8eb570fe81535f63e3ca119d3647cd"
+  },
+  "dbChanged": false,
+  "stakeChanged": false,
+  "backupDir": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.bettingapp_main_ui_r6\\backups\\2026-11-10T16-53-52-752Z-ce985b",
+  "generatedAt": "2026-11-10T16:53:52.808Z"
+}

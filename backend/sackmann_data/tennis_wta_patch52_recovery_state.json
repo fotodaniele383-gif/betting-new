@@ -1,0 +1,78 @@
+{
+  "version": "TENNIS_WTA_INFORMATION_RECOVERY_V2_PATCH52_R2",
+  "policyVersion": "TENNIS_WTA_INFORMATION_RECOVERY_POLICY_V2_PATCH52_R2",
+  "stateSchemaVersion": "TENNIS_WTA_RECOVERY_STATE_SCHEMA_V2_PATCH52_R2",
+  "updatedAt": "2026-11-16T08:19:08.110Z",
+  "providers": {
+    "JEFF_SACKMANN_GITHUB_DISCOVERY": {
+      "providerId": "JEFF_SACKMANN_GITHUB_DISCOVERY",
+      "status": "COOLDOWN",
+      "failureClass": "PERMANENT_RESOURCE_MISSING",
+      "httpStatus": 404,
+      "retryable": false,
+      "lastError": "PATCH43_WTA_HTTP_404",
+      "lastAttemptAt": "2026-11-16T08:19:08.110Z",
+      "cooldownUntil": "2026-11-17T08:19:08.110Z",
+      "consecutiveFailures": 29
+    },
+    "HUGGINGFACE_SACKMANN_ARCHIVE": {
+      "providerId": "HUGGINGFACE_SACKMANN_ARCHIVE",
+      "status": "AVAILABLE",
+      "failureClass": null,
+      "httpStatus": null,
+      "retryable": false,
+      "lastError": null,
+      "lastAttemptAt": "2026-11-16T08:19:08.110Z",
+      "lastSuccessAt": "2026-11-16T08:19:08.110Z",
+      "cooldownUntil": null,
+      "consecutiveFailures": 0,
+      "latestMatchAt": "2026-05-25T12:00:00.000Z",
+      "validRows": 1295,
+      "sha256": "8fea203e3f4e731308b9ed2845059818d400aa6176c801279b24e846569e9d97"
+    },
+    "ANEESHERS_GITHUB_ARCHIVE": {
+      "providerId": "ANEESHERS_GITHUB_ARCHIVE",
+      "status": "AVAILABLE",
+      "failureClass": null,
+      "httpStatus": null,
+      "retryable": false,
+      "lastError": null,
+      "lastAttemptAt": "2026-11-16T08:19:08.110Z",
+      "lastSuccessAt": "2026-11-16T08:19:08.110Z",
+      "cooldownUntil": null,
+      "consecutiveFailures": 0,
+      "latestMatchAt": "2026-05-25T12:00:00.000Z",
+      "validRows": 1295,
+      "sha256": "8fea203e3f4e731308b9ed2845059818d400aa6176c801279b24e846569e9d97"
+    }
+  },
+  "lastAttemptAt": "2026-11-16T08:19:08.110Z",
+  "lastSuccessAt": null,
+  "lastStatus": "READY_CURRENT_LKG",
+  "lastSemanticStatus": "READY_CURRENT_LKG",
+  "selectedCandidate": null,
+  "activeDataset": {
+    "providerId": "LAST_KNOWN_GOOD",
+    "latestMatchAt": "2026-11-03T12:00:00.000Z",
+    "validRows": 2553,
+    "sha256": "7eaa2bb82c1452437af573a687a750c3aa78b393cae877da2d4452ce4b8216f0",
+    "freshness": {
+      "status": "CURRENT",
+      "dataAgeDays": 12.8
+    },
+    "role": "ACTIVE_DATASET",
+    "activationSource": "LOCAL_LAST_KNOWN_GOOD"
+  },
+  "active": {
+    "providerId": "LAST_KNOWN_GOOD",
+    "latestMatchAt": "2026-11-03T12:00:00.000Z",
+    "validRows": 2553,
+    "sha256": "7eaa2bb82c1452437af573a687a750c3aa78b393cae877da2d4452ce4b8216f0",
+    "freshness": {
+      "status": "CURRENT",
+      "dataAgeDays": 12.8
+    },
+    "role": "ACTIVE_DATASET",
+    "activationSource": "LOCAL_LAST_KNOWN_GOOD"
+  }
+}

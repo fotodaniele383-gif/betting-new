@@ -1,0 +1,25 @@
+{
+  "version": "BETTINGAPP_R10_DATA_FIRST_INTEGRATED_MINIMAX_20261112",
+  "installedAt": "2026-11-12T21:23:29.292Z",
+  "sqliteModified": false,
+  "coreModified": false,
+  "engineGateChanged": false,
+  "autoExecutionEnabled": false,
+  "autoSettlementEnabled": false,
+  "promptReadOnly": true,
+  "diagnosticsReadOnly": true,
+  "r9InstalledOrVerified": true,
+  "files": {
+    "APRI_INTERFACCIA_R10.cmd": "6266de52892a7cc12f779e551c728b4e428f2fac915c03ae4ff377aa52550f4a",
+    "AUDIT_R10_CALCIO_TENNIS.cmd": "eae5c10cba539eda4342b78c8b5ff905ea7ee3638d28a40644d93a6149ff6880",
+    "addons/data-audit-r10/audit.cjs": "590469f0f2f2801bb010856280c2059a2defa4e34e55933e151fbcede8155c0a",
+    "addons/data-audit-r10/cli.cjs": "806ffa570b893c21e063572c0e4346f9e91dffaffe1ebfc6eb57418eba7d2033",
+    "addons/data-audit-r10/payoff.cjs": "128ff5343872f1b466e51a4add1452b9768c6e60387ee7265ca6c7d4b3100f84",
+    "backend/public/TENNIS_V7_MINIMAX_INDIPENDENTE.txt": "fa09a5c0f162a75ce77b7e2e7b53730b7f8dfd4ab3c68455ba98d1b403a4280c",
+    "backend/public/index-r10.html": "879a339f1c0c3d7eeb81a8e82cbfcbd6390b039bafdc08e3683c881890b98bd5",
+    "backend/public/r10-tennis-v7.js": "6115934034c6800a64b50160e8e6ff7b3c6c3deead4304d56e667e068e06fda5",
+    "public/TENNIS_V7_MINIMAX_INDIPENDENTE.txt": "fa09a5c0f162a75ce77b7e2e7b53730b7f8dfd4ab3c68455ba98d1b403a4280c",
+    "public/index-r10.html": "879a339f1c0c3d7eeb81a8e82cbfcbd6390b039bafdc08e3683c881890b98bd5",
+    "public/r10-tennis-v7.js": "6115934034c6800a64b50160e8e6ff7b3c6c3deead4304d56e667e068e06fda5"
+  }
+}

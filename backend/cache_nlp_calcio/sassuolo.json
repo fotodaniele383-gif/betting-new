@@ -1,0 +1,304 @@
+{
+  "timestamp": 1794817197567,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 33.4,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 33.4,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 45,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Sassuolo",
+      "officialDomain": "sassuolocalcio.it",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 33.4,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 33.4,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1156,
+          "received": 1,
+          "relevant": 1,
+          "fresh": 1,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:57.563Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 658,
+          "received": 15,
+          "relevant": 10,
+          "fresh": 3,
+          "usable": 2,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:57.065Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 922,
+          "received": 9,
+          "relevant": 4,
+          "fresh": 4,
+          "usable": 2,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:57.329Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 25,
+        "relevantArticles": 15,
+        "usableArticles": 5,
+        "uniqueArticles": 5,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 5,
+        "officialArticles": 1,
+        "trustedArticles": 0,
+        "independentChannels": 4,
+        "independentPublishers": 4,
+        "excludedEvidence": 20,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "roberto d’aversa is the new men’s first team coach - u.s. sassuolo calcio",
+          "originalTitle": "Roberto D’Aversa is the new Men’s First Team coach - U.S. Sassuolo Calcio",
+          "fullText": "roberto d’aversa is the new men’s first team coach - u.s. sassuolo calcio <a href=\"https://news.google.com/rss/articles/cbmilgfbvv95cuxntm9mlvhowlfmyldzvgg0nevktmnplxu1r1pvuuvjrjb2v0vudjzhu1hrm1v2nlhnqwtidzjirvlubflwskvewutnu2rmtmi0ukdurthzbg1wmxzymnmwdkjzeg9wd1qtsdzgsw4xwwzyrc1inlbirfbjzvpvqmpfdnbvqkrkx0l2wet6wdjnwfa2ng9ps2c?oc=5\" target=\"_blank\">roberto d’aversa is the new men’s first team coach</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">u.s. sassuolo calcio</font>",
+          "sourceName": "U.S. Sassuolo Calcio",
+          "sourceUrl": "https://www.sassuolocalcio.it",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTm9mLVhOWlFmYldzVGg0NEVkTmNpLXU1R1pvUUVJRjB2V0VUdjZhU1hRM1V2NlhNQWtIdzJIRVlubFlwSkVEWUtNU2RMTmI0UkduRThZbG1wMXZYMnMwdkJZeG9wd1QtSDZGSW4xWWZyRC1INlBiRFBJZVpVQmpFdnBvQkRKX0l2WEt6WDJNWFA2NG9PS2c?oc=5",
+          "publishedAt": "2026-11-10T13:40:17.000Z",
+          "ageDays": 5.78,
+          "category": "MANAGER",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "preview | roma vs sassuolo: team news, lineups, predictions (serie a 07/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Roma vs Sassuolo: team news, lineups, predictions (Serie A 07/11) - Yahoo Sports",
+          "fullText": "preview | roma vs sassuolo: team news, lineups, predictions (serie a 07/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihafbvv95cuxpbujmzzhgtwh2nc1dlthxvwfztdhzmglzotfewjnpyxzqz3yyrfpzwehlbmo2veqtevhlnxbicm9tv3fwq3dhvm9uzxrfrk16vw85rlflv21slwlveu1xtu1wa1jtyvj1clf2s2tgb0ztdk9cqxo0suwteduwcgrrmzg3ctk?oc=5\" target=\"_blank\">preview | roma vs sassuolo: team news, lineups, predictions (serie a 07/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbUJMZzhGTWh2NC1DLThXVWFZTDhZMGlZOTFEWjNPYXZQZ3YyRFpZWEhLbmo2VEQteVhlNXBicm9tV3FwQ3dHVm9uZXRfRk16VW85RlFLV21sLWlVeU1xTU1wa1JTYVJ1clF2S2tGb0Ztdk9CQXo0SUwteDUwcGRrMzg3cTk?oc=5",
+          "publishedAt": "2026-11-05T08:00:00.000Z",
+          "ageDays": 11.01,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "as roma vs sassuolo – match preview and team news - yahoo sports",
+          "originalTitle": "AS Roma vs Sassuolo – Match preview and team news - Yahoo Sports",
+          "fullText": "as roma vs sassuolo – match preview and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihgfbvv95cuxnwulonzznmhzfwwrtmwlhcndatgnuqvnnttywt0puwulrddvtatnjbnnjrvfvadhza3nvu19wrmhwwwxdqza5ump3wnfpymlbdxvzc3hocs1knfnjufjbamxnd09low9au2etqznmr2u0nfhnswxiam1rb2pxzfhmzg5nb3nmqq?oc=5\" target=\"_blank\">as roma vs sassuolo – match preview and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWUlONzZNMHZfWWRTMWlHcndaTGNUQVNnTTYwT0puWUlRdDVTaTNjbnNJRVFvaDhZa3NVU19wRmhWWWxDQzA5Ump3WnFPYmlBdXVZc3hocS1KNFNjUFJBamxnd09lOW9aU2EtQzNMR2U0NFhNSWxiam1rb2pXZFhMZG5nb3NMQQ?oc=5",
+          "publishedAt": "2026-11-07T09:18:00.000Z",
+          "ageDays": 8.96,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "sassuolo-fiorentina, orario e dove vederla in tv e streaming: formazioni ufficiali, arbitro, precedenti e quote",
+          "originalTitle": "Sassuolo-Fiorentina, orario e dove vederla in tv e streaming: formazioni ufficiali, arbitro, precedenti e quote",
+          "fullText": "sassuolo-fiorentina, orario e dove vederla in tv e streaming: formazioni ufficiali, arbitro, precedenti e quote sassuolo e fiorentina cercano la svolta per allontanarsi dalla zona retrocessione. nel posticipo della decima giornata di serie a, le squadre di alberto aquilani e paolo vanoli sono a caccia ...",
+          "sourceName": "Il Messaggero",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afabcae85d54bab806e39b11d5435e9&url=https%3a%2f%2fwww.ilmessaggero.it%2fsport%2fschede%2fsassuolo_fiorentina_orario_dove_vederla_tv_streaming_formazioni_arbitro_precedenti_quote_serie_a-9864315.html&c=5605066660057226056&mkt=it-it",
+          "publishedAt": "2026-11-02T10:22:00.000Z",
+          "ageDays": 13.92,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "sassuolo, brutte notizie per aquilani: berardi out con la roma",
+          "originalTitle": "Sassuolo, brutte notizie per Aquilani: Berardi out con la Roma",
+          "fullText": "sassuolo, brutte notizie per aquilani: berardi out con la roma l'allenatore ha dichiarato in conferenza stampa che il capitano non sarà a disposizione per il match dell'olimpico, in programma domani alle 20.45 ...",
+          "sourceName": "La Gazzetta dello Sport",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afabcae85d54bab806e39b11d5435e9&url=https%3a%2f%2fwww.gazzetta.it%2fcalcio%2ffantanews%2fstrumenti-fantacalcio%2findisponibili%2f06-11-2026%2fberardi-infortunio-le-condizioni-dell-attaccante-del-sassuolo.shtml&c=18144051765839226604&mkt=it-it",
+          "publishedAt": "2026-11-06T05:43:00.000Z",
+          "ageDays": 10.11,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "sassuolo vs. juventus preview: team news, prediction, date, and how to watch serie a on dazn - dazn",
+          "sourceName": "DAZN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "kone to undergo fitness test ahead of sassuolo clash - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "preview | sassuolo vs fiorentina: team news, lineups, predictions (serie a 02/11) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "kone tipped to make return vs sassuolo - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "kone completes recovery, eyes call-up with sassuolo - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | como 1907 vs sassuolo: team news, lineups, predictions (serie a 24/10) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | sassuolo vs lazio: team news, lineups, predictions (serie a 27/10) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | monza vs sassuolo: team news, lineups, predictions (serie a 18/09) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "sassuolo teammates pay tribute to ismael kone after gruesome world cup injury - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | sassuolo vs juventus: team news, lineups, predictions (serie a 13/09) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "sassuolo vs juventus – match preview and team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | sassuolo vs ac milan: team news, lineups, predictions (serie a 11/10) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

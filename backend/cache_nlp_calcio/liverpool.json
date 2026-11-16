@@ -1,0 +1,368 @@
+{
+  "timestamp": 1794822094706,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -2,
+    "tactics": {
+      "mentions": 2,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 90,
+    "sourceCoverageConfidence": 91,
+    "matchImpactConfidence": 90,
+    "raw": {
+      "injury": -2,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 75,
+      "globalScore": -8,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 7
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Liverpool",
+      "officialDomain": "liverpoolfc.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 90,
+      "coverageConfidence": 91,
+      "matchImpactConfidence": 90,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 896,
+          "received": 15,
+          "relevant": 6,
+          "fresh": 15,
+          "usable": 6,
+          "excluded": 3,
+          "officialUsable": 6,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:34.274Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1320,
+          "received": 15,
+          "relevant": 3,
+          "fresh": 14,
+          "usable": 2,
+          "excluded": 1,
+          "officialUsable": 2,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:34.698Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 829,
+          "received": 9,
+          "relevant": 3,
+          "fresh": 1,
+          "usable": 1,
+          "excluded": 1,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:34.207Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 39,
+        "relevantArticles": 12,
+        "usableArticles": 8,
+        "uniqueArticles": 8,
+        "duplicateRetrievals": 1,
+        "evidenceClusters": 8,
+        "officialArticles": 7,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 30,
+        "excludedSquadArticles": 5
+      },
+      "articles": [
+        {
+          "title": "team news: confirmed liverpool line-up v crystal palace - liverpool fc",
+          "originalTitle": "Team news: Confirmed Liverpool line-up v Crystal Palace - Liverpool FC",
+          "fullText": "team news: confirmed liverpool line-up v crystal palace - liverpool fc <a href=\"https://news.google.com/rss/articles/cbmikafbvv95cuxomkfiswwwu0zvqvvez1g3tnb4n0rnt3fzmmpcmfhflwh3lu1fzgheltf3cmuxd2rwwg1xm1o0cvu1u1k2ukszvg9mdzlcvedvtm9hu2rlafmybwd1q1myc2dobkvgnjk1wmjsa3o1bk9la1fqqwtyqjjvm1hladrlwhuzs3nhwhhiudncm0gxlw0?oc=5\" target=\"_blank\">team news: confirmed liverpool line-up v crystal palace</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">liverpool fc</font>",
+          "sourceName": "Liverpool FC",
+          "sourceUrl": "https://www.liverpoolfc.com",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0?oc=5",
+          "publishedAt": "2026-11-08T12:45:54.000Z",
+          "ageDays": 7.87,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "liverpool's injury list, suspensions and availability - liverpool fc",
+          "originalTitle": "Liverpool's injury list, suspensions and availability - Liverpool FC",
+          "fullText": "liverpool's injury list, suspensions and availability - liverpool fc <a href=\"https://news.google.com/rss/articles/cbmijafbvv95cuxpseu1yug0tlhlcghlwvfszvbcsgjftg9xrjfxzvfhrhp4x1ixcufsemdgawtjr19ybeptdtjdu192tfk3nvbquthjulrgbfi2vthwd2xbutjlu2tvlwrmbgzfqkpueertuwrhvk40bunotwq4r1punddzqnrietrsrmtgmhhtal9nbwo1ta?oc=5\" target=\"_blank\">liverpool's injury list, suspensions and availability</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">liverpool fc</font>",
+          "sourceName": "Liverpool FC",
+          "sourceUrl": "https://www.liverpoolfc.com",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSEU1YUg0TlhLcGhlWVFsZVBCSGJfTG9xRjFXZVFhRHp4X1IxcUFsemdGaWtjR19YbEpTdTJDU192TFk3NVBqUThjUlRGbFI2VThWd2xBUTJlU2tvLWRmbGZfQkpUeERTUWRhVk40bUNOTWQ4R1pUNDdzQnRIeTRsRmtGMHhtal9nbWo1TA?oc=5",
+          "publishedAt": "2026-11-06T08:00:00.000Z",
+          "ageDays": 10.07,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 1,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "team news: confirmed liverpool line-up v fenerbahce - liverpool fc",
+          "originalTitle": "Team news: Confirmed Liverpool line-up v Fenerbahce - Liverpool FC",
+          "fullText": "team news: confirmed liverpool line-up v fenerbahce - liverpool fc <a href=\"https://news.google.com/rss/articles/cbmiiwfbvv95cuxqzudrztdqrjfbrzhky1hgvkvpx3danl9czkzwvfrumgjhdxrinmy5blndrc1ttmlizuzhxzjncgpryuqtnm1guue1cufpafgwdni1quppbwzitvbfvlhstuzxuwh3atzrenbmn1q1umkynkjczmdyddmyc2fwrg1odg1irudmrdnmdfi0?oc=5\" target=\"_blank\">team news: confirmed liverpool line-up v fenerbahce</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">liverpool fc</font>",
+          "sourceName": "Liverpool FC",
+          "sourceUrl": "https://www.liverpoolfc.com",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZUdrZTdQRjFBRzhkY1hGVkVPX3daNl9CZkZWVFRuMGJhdXRiNmY5blNDRC1TTmliZUZhXzJNcGprYUQtNm1GUUE1cUFpaFgwdnI1QUpPbWZITVBFVlhsTUZxUWh3aTZRenBMN1Q1UmkyNkJCZmdYdDMyc2FWRG1OdG1IRUdmRDNmdFI0?oc=5",
+          "publishedAt": "2026-11-04T08:00:00.000Z",
+          "ageDays": 12.07,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "ryan gravenberch fitness latest - liverpool fc",
+          "originalTitle": "Ryan Gravenberch fitness latest - Liverpool FC",
+          "fullText": "ryan gravenberch fitness latest - liverpool fc <a href=\"https://news.google.com/rss/articles/cbmijwfbvv95cuxqnwnubuzxb2xtunz2sxqtanlrlxhrlvlerdhwlw5rnjljzhjhvl9jaedvnfrycevisnbwm1jzshjjvfi0allrb05yrky0oe5rntgxowdzdc0wdgdkwwpvuk9cenvmy0zkcwzsvgdpzjnydwhyn1dpywftqmj4mnbzui1iu0i4tnp3re5sul81dw?oc=5\" target=\"_blank\">ryan gravenberch fitness latest</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">liverpool fc</font>",
+          "sourceName": "Liverpool FC",
+          "sourceUrl": "https://www.liverpoolfc.com",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNWNUbUZxb2xtUnZ2SXQtanlRLXhrLVlERDhWLW5RNjljZHJhVl9jaEdvNFRYcEVISnBWM1JzSHJJVFI0allrb05yRkY0OE5RNTgxOWdzdC0wdGdkWWpvUk9CenVMY0ZkcWZsVGdpZjNydWhyN1dPYWFtQmJ4MnBZUi1IU0I4Tnp3RE5sUl81dw?oc=5",
+          "publishedAt": "2026-11-06T08:00:00.000Z",
+          "ageDays": 10.07,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "liverpool v arsenal: team news - liverpool fc",
+          "originalTitle": "Liverpool v Arsenal: Team news - Liverpool FC",
+          "fullText": "liverpool v arsenal: team news - liverpool fc <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxpt1jdq29latcycnbczuvfbu5aqjnzzhhiuu1gtw00cmlnn2lkyvbqwnbjdfbuylvpumvtewx4cjlwslrxmjzdvfpctuo1avb2rf8xuev2xzftmxrmutjome9jd1ltthpia3r3zlixzg1zsdbrdgstn0itblr3suoxdhj0cw?oc=5\" target=\"_blank\">liverpool v arsenal: team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">liverpool fc</font>",
+          "sourceName": "Liverpool FC",
+          "sourceUrl": "https://www.liverpoolfc.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
+          "publishedAt": "2026-10-31T07:00:00.000Z",
+          "ageDays": 16.11,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "crystal palace v liverpool: team news - liverpool fc",
+          "originalTitle": "Crystal Palace v Liverpool: Team news - Liverpool FC",
+          "fullText": "crystal palace v liverpool: team news - liverpool fc <a href=\"https://news.google.com/rss/articles/cbmiigfbvv95cuxpwutjnfrswe1mxza2nhzpmnzqyxi4smxtnm1prllxzgjbanhqtgjuexp6stbxsejarllzn0g5bla1vl82bfnpr01bu2hhqucwenrsmf9rwlptnendmwlwx0pvv05vrwhyy1otr01ozelomtkzdlu1a285cwrhcjbnzmdtvhnnaulonmc?oc=5\" target=\"_blank\">crystal palace v liverpool: team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">liverpool fc</font>",
+          "sourceName": "Liverpool FC",
+          "sourceUrl": "https://www.liverpoolfc.com",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWUtjNFRsWE1MXzA2NHZpMnZQYXI4SmxTNm1pRllxZGJBanhqTGJUeXp6STBxSEJaRllZN0g5blA1Vl82bFNPR01BU2hHQUcwenRSMF9RWlpTNENDMWlwX0pvV05VRWhYY1otR01OZEloMTkzdlU1a285cWRHcjBnZmdtVHNnaUloNmc?oc=5",
+          "publishedAt": "2026-11-07T19:05:32.000Z",
+          "ageDays": 8.61,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "mia enderby and ceri holland injury updates - liverpool fc",
+          "originalTitle": "Mia Enderby and Ceri Holland injury updates - Liverpool FC",
+          "fullText": "mia enderby and ceri holland injury updates - liverpool fc <a href=\"https://news.google.com/rss/articles/cbmiggfbvv95cuxquurbajnrcezyyxl0sdryoulpennmmvjkqvruvdg1ehhbmc04zvdhc2hpbjdtadryzhvzmgv3rlnadi1pltjioeiwr3rmovy5avrjy3g0ddnsu3hhb3zsvwvwmnvls2jhowjaek5gegxpd3u3ngrquvrtuy1ecfyxzv9n?oc=5\" target=\"_blank\">mia enderby and ceri holland injury updates</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">liverpool fc</font>",
+          "sourceName": "Liverpool FC",
+          "sourceUrl": "https://www.liverpoolfc.com",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUURBajNRcEZYYXl0SDRyOUlpenNMMVJkQVRUVDg1eHhBMC04ZVdHc2hpbjdtaDRYZHVZMGV3RlNadi1pLTJIOEIwR3RmOVY5aVRjY3g0dDNSU3hHb3ZSVWVwMnVlS2JhOWJaek5GeGxPd3U3NGRqUVRTUy1EcFYxZV9n?oc=5",
+          "publishedAt": "2026-11-12T15:52:35.000Z",
+          "ageDays": 3.74,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "pronostici fenerbahce - liverpool: i reds possono blindare un altro clean... anzi, un'altra notte da imbattuti in champions",
+          "originalTitle": "Pronostici Fenerbahce - Liverpool: i Reds possono blindare un altro clean... anzi, un'altra notte da imbattuti in Champions",
+          "fullText": "pronostici fenerbahce - liverpool: i reds possono blindare un altro clean... anzi, un'altra notte da imbattuti in champions in questo articolo si possono trovare i pronostici fenerbahce - liverpool, le quote dei bookmakers e le probabili formazioni del match ...",
+          "sourceName": "GOAL",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afacfcf77f844d48499acea02002f0a&url=https%3a%2f%2fwww.goal.com%2fit%2fscommesse%2fpronostici%2fpronostici-fenerbahce-liverpool-04-11-2026%2fA%253Ablt33cd43fb34da79b9&c=3588492427387338906&mkt=it-it",
+          "publishedAt": "2026-11-04T01:00:00.000Z",
+          "ageDays": 12.36,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "virgil van dijk withdraws from netherlands squad - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "'i always want to play for liverpool' | how lewis koumas grasped the opportunity of a lifetime - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "liverpool fc legends to face inter legends at anfield in march 2027 - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "ronald araujo wins liverpool's player of the month award for october - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "team news: confirmed lfc women line-up v brighton - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "lfc women injury news: updates on sam kerr, lily woodham and ceri holland - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "liverpool name 22-man squad for champions league trip to fenerbahce - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "federico chiesa - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "wsl team news: confirmed liverpool line-up against arsenal at anfield - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "liverpool star confirms major injury scare ahead of manchester united clash - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "dominik szoboszlai plays for hungary despite injury concerns - the liverpool offside",
+          "sourceName": "The Liverpool Offside",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "liverpool injury update: van dijk, gravenberch and szoboszlai latest return dates - london evening standard",
+          "sourceName": "London Evening Standard",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "1 recupero/i duplicati consolidati in cluster informativi unici.",
+        "R12: 5 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "timestamp": 1793881000321,
+  "cacheSchemaVersion": "CALCIO_PATCH_7_NLP_CACHE_V2",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 2.6,
+    "sourceCoverageConfidence": 60,
+    "matchImpactConfidence": 2.6,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 45,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_PATCH_24_SEMANTIC_FOOTBALL_ENTITY_FILTER_V1",
+      "cacheSchemaVersion": "CALCIO_PATCH_7_NLP_CACHE_V2",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Hellas Verona",
+      "officialDomain": null,
+      "status": "PARTIAL",
+      "confidence": 2.6,
+      "coverageConfidence": 60,
+      "matchImpactConfidence": 2.6,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1034,
+          "received": 15,
+          "relevant": 1,
+          "fresh": 15,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-05T12:16:40.298Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 835,
+          "received": 10,
+          "relevant": 0,
+          "fresh": 3,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-05T12:16:40.099Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 25,
+        "relevantArticles": 1,
+        "usableArticles": 1,
+        "uniqueArticles": 1,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 1,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 24
+      },
+      "articles": [
+        {
+          "title": "serie bkt 2026/27 | head coach marco baroni's comments ahead of #veronapisa - hellas verona",
+          "originalTitle": "Serie BKT 2026/27 | Head Coach Marco Baroni's comments ahead of #VeronaPisa - Hellas Verona",
+          "fullText": "serie bkt 2026/27 | head coach marco baroni's comments ahead of #veronapisa - hellas verona <a href=\"https://news.google.com/rss/articles/cbmiqwfbvv95cuxnu2xbsk5iq3g2mflksvfvqwfidvnnyjv6oewyz3pdbwpuqw9ztnhnnwxgrzzwy0zonmdzqxzfdmrwntbawutlajjevmzhcze2ztfjs3hly0fjntdjtjd0m1dea3pqx05jtxf4avjzxzlpbzfxbe1ns09muxdsoff2qnneuux4bnzxnuzwyy1pegnvnvvrdg95vukxag1dq1jrm25wzuh3oxjdwdq?oc=5\" target=\"_blank\">serie bkt 2026/27 | head coach marco baroni's comments ahead of #veronapisa</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">hellas verona</font>",
+          "sourceName": "Hellas Verona",
+          "sourceUrl": "https://www.hellasverona.it",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU2xBSk5iQ3g2MFlkSVFVQWFidVNnYjV6OEwyZ3pDbWpuQW9ZTnhnNWxGRzZwY0ZONmdzQXZFdmRWNTBaWUtlajJEVmZHczE2ZTFJS3hlY0FJNTdjTjd0M1dEa3pqX05JTXF4aVJZXzlpbzFxbE1NS09MUXdSOFF2QnNEUUx4bnZXNUZWYy1peGNvNVVRdG95VUkxaG1DQ1JrM25WZUh3OXJDWDQ?oc=5",
+          "publishedAt": "2026-10-31T17:51:29.000Z",
+          "ageDays": 4.77,
+          "category": "MANAGER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "FINAL_TEAM_NEWS",
+          "matchImpactWeight": 0.369
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "hellas verona results 2026/27: latest matches of the season - vavel.com",
+          "sourceName": "VAVEL.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hellas verona - transfermarkt",
+          "sourceName": "Transfermarkt",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "why does thiago motta seem unlikely to succeed paulo fonseca as lyon manager? - get french football news",
+          "sourceName": "Get French Football News",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "liverpool title charge? + carra's transfer wishlist! liverpool fc latest transfer news - onefootball",
+          "sourceName": "OneFootball",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "udinese, it’s now official: runjaic sacked, zanetti takes his place - goal.com",
+          "sourceName": "Goal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "new verona stadium: preliminary conferenza dei servizi gets underway at palazzo barbieri - hellas verona",
+          "sourceName": "Hellas Verona",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "manna: ‘napoli knew badiashile was a risk, de bruyne in more congenial role’ - football italia",
+          "sourceName": "Football Italia",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "official: udinese sack runjaic with zanetti lined up - football italia",
+          "sourceName": "Football Italia",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "medical report: davide de battisti and tomas suslov - hellas verona",
+          "sourceName": "Hellas Verona",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "carra should not have apologised! bayern star link + scott race over? liverpool latest transfer news - onefootball",
+          "sourceName": "OneFootball",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "udinese have a new head coach lined up as runjaic faces imminent sack - football italia",
+          "sourceName": "Football Italia",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "serie b femminile 2026/27 | verona host genoa in tomorrow's early kickoff - hellas verona",
+          "sourceName": "Hellas Verona",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_PATCH_24_SEMANTIC_FOOTBALL_ENTITY_FILTER_V1",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

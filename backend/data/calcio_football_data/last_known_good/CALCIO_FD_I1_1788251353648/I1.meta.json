@@ -1,0 +1,23 @@
+{
+  "operationId": "CALCIO_FD_I1_1788164971015",
+  "fetchedAt": "2026-08-31T08:29:31.014Z",
+  "lastSuccessAt": "2026-08-31T08:29:31.014Z",
+  "source": "NETWORK",
+  "season": "2627",
+  "url": "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
+  "leagueKey": "serie_a",
+  "leagueName": "Serie A",
+  "code": "I1",
+  "attemptedSeasons": [
+    "2627"
+  ],
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "sha256": "8261990c8482ae1385f4b70867bcaf3d263f7a8149a3f72e070193d6cd00c588",
+  "validRows": 10,
+  "rejectedRows": 0,
+  "earliestMatchAt": "2026-08-22T12:00:00.000Z",
+  "latestMatchAt": "2026-08-24T12:00:00.000Z",
+  "sizeBytes": 5344,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\OneDrive\\Personale\\BettingApp\\BettingApp\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_I1_1788164971015"
+}

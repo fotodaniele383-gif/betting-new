@@ -1,0 +1,107 @@
+{
+  "version": "TENNIS_MULTI_PROVIDER_MANIFEST_V1_PATCH21",
+  "refreshVersion": "TENNIS_MULTI_PROVIDER_DATA_V2_PATCH36",
+  "registryVersion": "TENNIS_MULTI_PROVIDER_REGISTRY_V2_PATCH36",
+  "policyVersion": "TENNIS_MULTI_PROVIDER_POLICY_V2_PATCH36",
+  "operationId": "R20_MANUAL_1794751022362",
+  "lastAttemptAt": "2026-11-15T13:57:02.362Z",
+  "lastSuccessAt": "2026-11-15T13:57:02.362Z",
+  "status": "SUCCESS_MIXED_PROVIDER_ATOMIC_BUNDLE",
+  "strategy": "ZERO_KEY_FIRST_OPTIONAL_API_LAST",
+  "selected": [
+    {
+      "targetId": "ATP_MAIN",
+      "providerId": "TENNISMYLIFE_BULK",
+      "latestMatchAt": "2026-11-08T12:00:00.000Z",
+      "validRows": 2774,
+      "sha256": "dabaf6950aa3b11acc70b88b24853b33d708940e93b888f88d24f951b74f7929",
+      "networkCalls": 1,
+      "fromCache": false,
+      "apiUsage": null,
+      "apiRange": null
+    },
+    {
+      "targetId": "ATP_QUAL_CHALL",
+      "providerId": "TENNISMYLIFE_BULK",
+      "latestMatchAt": "2026-11-09T12:00:00.000Z",
+      "validRows": 8191,
+      "sha256": "074b6c40b326f9d0843d1c53d7d99b7eaa5e00c17dcddedd9083736f7b606756",
+      "networkCalls": 2,
+      "fromCache": false,
+      "apiUsage": null,
+      "apiRange": null
+    },
+    {
+      "targetId": "WTA_MAIN",
+      "providerId": "TENNISMYLIFE_BULK",
+      "latestMatchAt": "2026-11-03T12:00:00.000Z",
+      "validRows": 2553,
+      "sha256": "7eaa2bb82c1452437af573a687a750c3aa78b393cae877da2d4452ce4b8216f0",
+      "networkCalls": 1,
+      "fromCache": false,
+      "apiUsage": null,
+      "apiRange": null
+    }
+  ],
+  "diagnostics": [
+    {
+      "targetId": "ATP_MAIN",
+      "providerId": "TENNISMYLIFE_BULK",
+      "status": "PASS",
+      "comparison": {
+        "accepted": true,
+        "reasons": []
+      },
+      "latestMatchAt": "2026-11-08T12:00:00.000Z",
+      "validRows": 2774,
+      "networkCalls": 1,
+      "fromCache": false
+    },
+    {
+      "targetId": "ATP_QUAL_CHALL",
+      "providerId": "TENNISMYLIFE_BULK",
+      "status": "PASS",
+      "comparison": {
+        "accepted": true,
+        "reasons": []
+      },
+      "latestMatchAt": "2026-11-09T12:00:00.000Z",
+      "validRows": 8191,
+      "networkCalls": 2,
+      "fromCache": false
+    },
+    {
+      "targetId": "WTA_MAIN",
+      "providerId": "TENNISMYLIFE_BULK",
+      "status": "PASS",
+      "comparison": {
+        "accepted": true,
+        "reasons": []
+      },
+      "latestMatchAt": "2026-11-03T12:00:00.000Z",
+      "validRows": 2553,
+      "networkCalls": 1,
+      "fromCache": false
+    }
+  ],
+  "aggregate": {
+    "fileCount": 9,
+    "matchCount": 37370,
+    "playerCount": 2117,
+    "earliestMatchAt": "2024-01-01T12:00:00.000Z",
+    "latestMatchAt": "2026-11-09T12:00:00.000Z",
+    "rejectedRows": 124,
+    "duplicateRows": 2
+  },
+  "apiKeyPersisted": false,
+  "apiKeyExposed": false,
+  "apiCalls": 0,
+  "atomicBundle": true,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\backend\\sackmann_data\\last_known_good_patch21\\2026-11-15T13-57-02-362Z",
+  "productionAuthority": false,
+  "qualityGateAuthority": false,
+  "stakeAuthority": false,
+  "lockRevision": "AUDIT16D_R3_T2_R1_REFRESH_LOCK_OWNERSHIP_RECOVERY_V1",
+  "staleLockRecovered": false,
+  "staleLockRecovery": null
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+'use strict';
+const assert=require('assert');const fs=require('fs');const path=require('path');const root=path.resolve(__dirname,'..');
+const files=['backend/tennisTourDriftAuthorityPatch36.js','backend/tennisRiskAuthorityPatch36.js','backend/tennisMultiProviderData.js','backend/tennisTournamentStageModel.js','backend/tennisProfessionalStatisticalEnsemble.js','backend/migrateTennisPatch36.js','backend/server.tennis.js','backend/tennisProgramProgressionAudit.js','backend/tennisPatchRegistry.js','public/app.js','public/index.html','tools/test-tennis-patch36-tour-drift-authority.js','tools/test-tennis-patch36-wta-provider-recovery.js','tools/test-tennis-patch36-risk-authority.js','tools/verify-tennis-patch36-db.js','tools/verify-tennis-patch36-server.js','tools/verify-tennis-patch36-frontend.js','tools/verify-tennis-patch36-regression.js','tools/audit-tennis-patch36-tour-drift.js','tools/audit-tennis-patch36.js','tools/verify-tennis-patch36.js','tools/rollback-tennis-patch36.js','tools/rollback-tennis-patch35.js'];
+const slash=String.fromCharCode(47);const forbidden=[`${slash}mnt${slash}data${slash}`,`${slash}home${slash}oai${slash}`,'patch'+'36_work','patch'+'36_baseline'];
+const checks=[];function c(n,f){try{f();checks.push({name:n,ok:true});}catch(e){checks.push({name:n,ok:false,error:e.message});}}
+for(const rel of files)c(`${rel} portable`,()=>{const text=fs.readFileSync(path.join(root,rel),'utf8');for(const bad of forbidden)assert(!text.includes(bad),`${bad} found`);assert(!/require\(\s*['"][A-Za-z]:[\\/]/.test(text));});
+c('all files exist',()=>files.forEach(rel=>assert(fs.existsSync(path.join(root,rel)),rel)));
+const failed=checks.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,checks,passed:checks.length-failed.length,failed:failed.length},null,2));process.exit(failed.length?1:0);

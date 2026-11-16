@@ -1,0 +1,368 @@
+{
+  "timestamp": 1794822088539,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -1,
+    "tactics": {
+      "mentions": 1,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 90,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 90,
+    "raw": {
+      "injury": -1,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 80,
+      "globalScore": -4,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 8
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Chelsea",
+      "officialDomain": "chelseafc.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 90,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 90,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 970,
+          "received": 15,
+          "relevant": 8,
+          "fresh": 15,
+          "usable": 8,
+          "excluded": 2,
+          "officialUsable": 8,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:28.401Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1098,
+          "received": 15,
+          "relevant": 5,
+          "fresh": 11,
+          "usable": 2,
+          "excluded": 3,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:28.529Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1022,
+          "received": 1,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:28.453Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 31,
+        "relevantArticles": 13,
+        "usableArticles": 9,
+        "uniqueArticles": 9,
+        "duplicateRetrievals": 1,
+        "evidenceClusters": 9,
+        "officialArticles": 8,
+        "trustedArticles": 0,
+        "independentChannels": 4,
+        "independentPublishers": 4,
+        "excludedEvidence": 21,
+        "excludedSquadArticles": 5
+      },
+      "articles": [
+        {
+          "title": "xabi alonso confirms chelsea team news for manchester united | news | official site - chelsea football club",
+          "originalTitle": "Xabi Alonso confirms Chelsea team news for Manchester United | News | Official Site - Chelsea Football Club",
+          "fullText": "xabi alonso confirms chelsea team news for manchester united | news | official site - chelsea football club <a href=\"https://news.google.com/rss/articles/cbmipafbvv95cuxpskfgmulteuzny09vqkrzbmptb19wcnp4lw5sd0l5azlgtxffm1zrbnrnvez5yzjraxbxbtbevgs2rwk4ohrrq0nrrl8wme9izexpz3forlu0s2reoffrqnjjwwjgtlpbq2roowpnaxfyszj4yjrgutnrlwh0znjyshbpwnb4x2h2ow9rahpkrf95qxdzr3zdnkytukt2eglenne1qg?oc=5\" target=\"_blank\">xabi alonso confirms chelsea team news for manchester united | news | official site</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">chelsea football club</font>",
+          "sourceName": "Chelsea Football Club",
+          "sourceUrl": "https://www.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSkFGMUlTeUZNY09VQkRzbmptb19Wcnp4LW5sd0l5azlGTXFFM1ZRbnRnVEZ5YzJraXBXbTBEVGs2RWk4OHRrQ0NRRl8wME9IZExpZ3FoRlU0S2REOFFrQnJJWWJGTlpBQ2RoOWpNaXFySzJ4YjRGUTNRLWh0ZnJySHBPWnB4X2h2OW9raHpKRF95QXdZR3ZDNkYtUkt2eGlENnE1Qg?oc=5",
+          "publishedAt": "2026-10-30T07:00:00.000Z",
+          "ageDays": 17.11,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "xabi alonso confirms chelsea team news for sunderland | news | official site - chelsea football club",
+          "originalTitle": "Xabi Alonso confirms Chelsea team news for Sunderland | News | Official Site - Chelsea Football Club",
+          "fullText": "xabi alonso confirms chelsea team news for sunderland | news | official site - chelsea football club <a href=\"https://news.google.com/rss/articles/cbmimwfbvv95cuxpsnlrc25ndu8xsxv0ylfcwgrkbmzjq0lcvvv2wmxwd0f1nwkzwte4nndnwkhhce1uv2jaevpzme9zz2ljzfzuwlvuewlta2jnlxlpm0rozxjrwwfhdgn6uwczmzrxqu1szemyqxfjt2pnagk4rutyz05pyujquwr1wwktufhswlviwmrjnhzuwudsa0r4cm9jdedjma?oc=5\" target=\"_blank\">xabi alonso confirms chelsea team news for sunderland | news | official site</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">chelsea football club</font>",
+          "sourceName": "Chelsea Football Club",
+          "sourceUrl": "https://www.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSnlRc25ndU8xSXV0YlFCWGRkbmZJQ0lCVVV2Wmxwd0F1NWkzWTE4NndnWkhhcE1UV2JaeVpzME9ZZ2lJZFZuWlVueWlTa2JNLXlpM0RoZXJrWWFhdGN6UWczMzRxQU1SZEMyQXFJT2pNaGk4RUtYZ05pYUJQUWR1WWktUFhsWlViWmRJNHZuWUdSa0R4cm9JdEdJMA?oc=5",
+          "publishedAt": "2026-11-06T08:00:00.000Z",
+          "ageDays": 10.07,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "chelsea training - chelsea football club",
+          "originalTitle": "Chelsea Training - Chelsea Football Club",
+          "fullText": "chelsea training - chelsea football club <a href=\"https://news.google.com/rss/articles/cbmilafbvv95cuxnx0dwmzvau3h1mw53qvfbnhk2zerjn0v3skzfc3bkqtlszmrfzkvoslphnhbcvgh6cwljvlftddjbztlwvvvyv25bstv0mwpju0pazws3suritxnrrtdtbwvkqmdjemxlshfcallbyljnwdbawv8xujezvwk0vmo1qtl2mne4uzd0ejrjuhdbazj0ovzj?oc=5\" target=\"_blank\">chelsea training</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">chelsea football club</font>",
+          "sourceName": "Chelsea Football Club",
+          "sourceUrl": "https://usastore.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX0dwMzVaU3h1MW53QVFBNHk2ZERjN0V3SkZFc3BKQTlSZmRfZkVoSlphNHBCVGh6cWljVlFtdDJBZTlWVVVyV25BSTV0MWpjU0paZWs3SURiTXNRRTdTbWVKQmdjemxLSHFCallBYlJnWDBaWV8xUjEzVWk0Vmo1QTl2MnE4Uzd0ejRJUHdBazJ0OVZj?oc=5",
+          "publishedAt": "2026-10-30T00:06:25.000Z",
+          "ageDays": 17.4,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "xabi alonso delivers latest on caicedo and anselmino fitness | news | official site - chelsea football club",
+          "originalTitle": "Xabi Alonso delivers latest on Caicedo and Anselmino fitness | News | Official Site - Chelsea Football Club",
+          "fullText": "xabi alonso delivers latest on caicedo and anselmino fitness | news | official site - chelsea football club <a href=\"https://news.google.com/rss/articles/cbmipafbvv95cuxnc1rwahftnw5vzmt3wtzcdupxmzhfmml2amppdme5aefhouutuvj6m3b2vfbkr0jpnzhsevrur0jkujzqutz2ofzfwvfxevrld2l4b2vrmdbub0dcd05ouwxhemjvnu9syxlva2hxz2e5bg5rrglhevlxbfhyuw1trjlmc3llrjvylu1xmeg4nzdllu1qrmltevhdshf1dfd4wxjzua?oc=5\" target=\"_blank\">xabi alonso delivers latest on caicedo and anselmino fitness | news | official site</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">chelsea football club</font>",
+          "sourceName": "Chelsea Football Club",
+          "sourceUrl": "https://www.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNc1RwaHFTNW5vZmt3WTZCdUpXMzhFMml2ampPdmE5aEFHOUUtUVJ6M3B2VFBkR0JpNzhSeVRUR0JkUjZqUTZ2OFZFWVFXeVRld2l4b2VRMDBub0dCd05oUWxHemJvNU9sYXlva2hXZ2E5bG5RRGlHeVlXbFhYUW1TRjlmc3lLRjVyLU1XMEg4NzdLLU1qRmlteVhDSHF1dFd4WXJzUA?oc=5",
+          "publishedAt": "2026-11-06T08:00:00.000Z",
+          "ageDays": 10.07,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "sonia bompastor provides injury update on kadeisha buchanan and melvine malard | news | official site - chelsea football club",
+          "originalTitle": "Sonia Bompastor provides injury update on Kadeisha Buchanan and Melvine Malard | News | Official Site - Chelsea Football Club",
+          "fullText": "sonia bompastor provides injury update on kadeisha buchanan and melvine malard | news | official site - chelsea football club <a href=\"https://news.google.com/rss/articles/cbmiswfbvv95cuxpchflms1cn0u2vnjpdfffn0vyyvb6ekhwukdem3vvvldyouzisjc4uw5rows3bnprumjhmg4xyvj0mdvpqjntci16cgcyr2xanzbbbnjishj3xzhqc0rjmzz3vvnyedvbv3c1r0yxcjf5rldtu0tltemteklkbfjybmvfduzfnhpfzuhubufstjrmndlqalllvzhysmhiyudhwldvujlmckxlqzbfcfo4nwhnyw?oc=5\" target=\"_blank\">sonia bompastor provides injury update on kadeisha buchanan and melvine malard | news | official site</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">chelsea football club</font>",
+          "sourceName": "Chelsea Football Club",
+          "sourceUrl": "https://www.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcHFlMS1CN0U2VnJPdFFFN0VYYVB6ekhwUkdEM3VvVldyOUZiSjc4UW5rOWs3bnpRUmJhMG4xYVJ0MDVpQjNTci16cGcyR2xaNzBBbnJiSHJ3XzhQc0RjMzZ3VVNyeDVBV3c1R0YxcjF5RldTU0tlTEMteklKbFJYbmVfdUZfNHpfZUhubUFSTjRMNDlQalllVzhySmhIYUdHWldVUjlmckxlQzBFcFo4NWhnYw?oc=5",
+          "publishedAt": "2026-11-14T19:30:00.000Z",
+          "ageDays": 1.59,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 1,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "bompastor on latest team news and needing to be at our best against hacken | news | official site - chelsea football club",
+          "originalTitle": "Bompastor on latest team news and needing to be at our best against Hacken | News | Official Site - Chelsea Football Club",
+          "fullText": "bompastor on latest team news and needing to be at our best against hacken | news | official site - chelsea football club <a href=\"https://news.google.com/rss/articles/cbmitwfbvv95cuxnzc1qtel5zm5zr2plvnfpexjrr3lvr09xalbtnf9jnwvxulbxrnfwynvmdmjozvppve43m3f2tthsumxpcxhwvhbzntnmve9ctmpvb2tsvnrfugh3txrqwwu1tuzotnbvm1vptlnhs3bwowrhofgxoerhev9rvwxargrkudlgdvhjdvrramnjcjf3ajndcflyuznwou5hykntejdjdeuyszbfeddprxpqqzfhvkhelxm?oc=5\" target=\"_blank\">bompastor on latest team news and needing to be at our best against hacken | news | official site</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">chelsea football club</font>",
+          "sourceName": "Chelsea Football Club",
+          "sourceUrl": "https://www.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZC1qTEl5Zm5zR2pLVnFpeXJrR3lvR09xalBtNF9JNWVXUlBXRnFWYnVmdmJOZVppVE43M3F2TThSUmxpcXhWVHBzNTNmVE9CTmpVb2tsVnRfUGh3TXRqWWU1TUZOTnBVM1VPTlNhS3BwOWRHOFgxOERHeV9RVWxaRGRkUDlGdVhJdVRRamNJcjF3ajNDcFlYUzNwOU5HYkNtejdJdEUySzBfeDdpRXpqQzFHVkhELXM?oc=5",
+          "publishedAt": "2026-11-09T21:00:00.000Z",
+          "ageDays": 6.53,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "chelsea nike dri-fit adv elite training pant - green - official chelsea store",
+          "originalTitle": "Chelsea Nike Dri-Fit Adv Elite Training Pant - Green - Official Chelsea Store",
+          "fullText": "chelsea nike dri-fit adv elite training pant - green - official chelsea store <a href=\"https://news.google.com/rss/articles/cbmigajbvv95cuxoudhdov9soc0tnmtlblpsvxa3nndhm3mzsfl2vel6d2llwe93z2dqvs1kcku5mu95y041r1dkwfktq2ftvjiyndawntbxu3p1zdv1umw1c18wn1fqser4tgxpuhruyvbhuy10det4de4xzdzvz2zfudnqc0lwmxlyzxlkrwxpv1r0b3k0ewe5dndtrnvrm1rytk1ushdqsvd1uzv3vwvevhliltntalzznzblbzborkgwz216b1hvue5iuuxeswvusw0xc3fxqxfxsxh1d0zgtg1hehfmq0lfaljta0hza0h1b3q0dke2mve5mexsdkzjs0prwelszk56?oc=5\" target=\"_blank\">chelsea nike dri-fit adv elite training pant - green</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">official chelsea store</font>",
+          "sourceName": "Official Chelsea Store",
+          "sourceUrl": "https://store.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOUDhDOV9SOC0tNmtlblpsVXA3NndhM3MzSFl2VEl6d2llWE93Z2dQVS1KckU5MU95Y041R1dkWFktQ2FTVjIyNDAwNTBxU3p1ZDV1Umw1c18wN1FqSER4TGxPUHRuYVBhUy10dEt4dE4xZDZVZ2ZfUDNQc0lwMXlYZXlkRWxpV1R0b3k0eWE5dndtRnVRM1RYTk1uSHdqSVd1UzV3VWVEVHlILTNTalZZNzBlbzBORkgwZ216b1hvUE5iUUxESWVUSW0xc3FXQXFXSXh1d0ZGTG1heHFMQ0lFalJTa0hza0h1b3Q0dkE2MVE5MExsdkZJS0pRWElSZk56?oc=5",
+          "publishedAt": "2026-11-10T03:14:59.000Z",
+          "ageDays": 6.27,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "xabi alonso confirms chelsea team news for liverpool | news | official site - chelsea football club",
+          "originalTitle": "Xabi Alonso confirms Chelsea team news for Liverpool | News | Official Site - Chelsea Football Club",
+          "fullText": "xabi alonso confirms chelsea team news for liverpool | news | official site - chelsea football club <a href=\"https://news.google.com/rss/articles/cbmimgfbvv95cuxqog5rmnbfyvezd0g2ctldbxfebmo0bxe5bhrxderfmthwv3bsrw02ahzeetnfdtllsdrus1fetzrudxluz2xoelz0zmdimkfyqlktzednq0rqzw5itwncvfjivurwr3gwaxdrb0nrb21snxzkutd0cf9sdhl3snjwzkc0ovd6dlgznzm3z19mmurhmhrzrjj3vhzb?oc=5\" target=\"_blank\">xabi alonso confirms chelsea team news for liverpool | news | official site</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">chelsea football club</font>",
+          "sourceName": "Chelsea Football Club",
+          "sourceUrl": "https://www.chelseafc.com",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOG5rMnBFYVEzd0g2cTlDbXFEbmo0bXE5bHRxdERfMThWV3BsRW02aHZEeTNfdTllSDRuS1FETzRudXluZ2xoelZ0ZmdiMkFyQlktZEdNQ0RQZW5iTWNCVFJIVURwR3gwaXdRb0NRb21SNXZKUTd0cF9SdHl3SnJwZkc0OVd6dlgzNzM3Z19MMURHMHRZRjJ3VHZB?oc=5",
+          "publishedAt": "2026-10-27T07:00:00.000Z",
+          "ageDays": 20.11,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "internationals: rogers on target, gusto features for france | news | official site - chelsea football club",
+          "sourceName": "Chelsea Football Club",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "chelsea international call-ups and schedules for november 2026 | news | official site - chelsea football club",
+          "sourceName": "Chelsea Football Club",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "confirmed chelsea women line up vs hacken | news | official site - chelsea football club",
+          "sourceName": "Chelsea Football Club",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "alonso delivers updates on caicedo, gusto and lacroix | news | official site - chelsea football club",
+          "sourceName": "Chelsea Football Club",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "chelsea women travelling squad confirmed for hacken | news | official site - chelsea football club",
+          "sourceName": "Chelsea Football Club",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "sonia bompastor delivers update on james and walsh ahead of roma | news | official site - chelsea football club",
+          "sourceName": "Chelsea Football Club",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "match report: hacken 0-0 chelsea | news | official site - chelsea football club",
+          "sourceName": "Chelsea Football Club",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "chelsea injury update: joao pedro, martinez and acheampong latest return dates - london evening standard",
+          "sourceName": "London Evening Standard",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "chelsea fcw vs. manchester city wfc, women’s super league: preview, team news, how to watch - we ain't got no history",
+          "sourceName": "We Ain't Got No History",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "chelsea vs manchester city: wsl preview, predictions, team news and tv info - the pride of london",
+          "sourceName": "The Pride of London",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "chelsea team news for man city women - dave.sport",
+          "sourceName": "Dave.Sport",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "bompastor gives fitness updates on two chelsea stars - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "1 recupero/i duplicati consolidati in cluster informativi unici.",
+        "R12: 5 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

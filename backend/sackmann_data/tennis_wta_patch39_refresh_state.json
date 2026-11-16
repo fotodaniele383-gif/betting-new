@@ -1,0 +1,14 @@
+{
+  "success": false,
+  "status": "FAILED_LKG_PRESERVED",
+  "version": "TENNIS_WTA_FRESHNESS_RECOVERY_V1_PATCH39",
+  "operationId": "WTA39_1786009366649",
+  "usageMode": "PERSONAL_RESEARCH",
+  "error": "PATCH20_HTTP_404:WTA_MAIN:404",
+  "dataChanged": false,
+  "lastKnownGoodPreserved": true,
+  "probabilityAuthority": false,
+  "stakeAuthority": false,
+  "lastAttemptAt": "2026-08-06T09:42:46.524Z",
+  "previousSuccessAt": null
+}

@@ -1,0 +1,116 @@
+{
+  "success": true,
+  "version": "AUDIT16D_R3_R3B_R2_R2_FREE_HISTORICAL_CALIBRATION_V1",
+  "mode": "READ_WRITE_CACHE_ONLY_NO_PRODUCTION_MODEL_CHANGE",
+  "keyConfigured": true,
+  "keyEnvName": "API_FOOTBALL_KEY",
+  "tokenExposed": false,
+  "seasons": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "newStatsFetched": 58,
+  "fixtureListCalls": 0,
+  "cacheHits": 3,
+  "quotaSyncRevision": "AUDIT16D_R3_R3B_R2_R2_R1_PROVIDER_QUOTA_HEADER_SYNC_V1",
+  "apiCallsThisRun": 58,
+  "stopReason": "DAILY_BUDGET_EXHAUSTED",
+  "coverage": {
+    "seasons": [
+      {
+        "season": 2022,
+        "fixturesTotal": 381,
+        "statsCached": 381,
+        "missingStats": 0,
+        "fixtureListCached": true
+      },
+      {
+        "season": 2023,
+        "fixturesTotal": 380,
+        "statsCached": 380,
+        "missingStats": 0,
+        "fixtureListCached": true
+      },
+      {
+        "season": 2024,
+        "fixturesTotal": 380,
+        "statsCached": 147,
+        "missingStats": 233,
+        "fixtureListCached": true
+      },
+      {
+        "season": 2025,
+        "fixturesTotal": 0,
+        "statsCached": 0,
+        "missingStats": 0,
+        "fixtureListCached": false
+      },
+      {
+        "season": 2026,
+        "fixturesTotal": 0,
+        "statsCached": 0,
+        "missingStats": 0,
+        "fixtureListCached": false
+      }
+    ],
+    "totals": {
+      "fixturesTotal": 1141,
+      "statsCached": 908,
+      "missingStats": 233
+    },
+    "complete": false
+  },
+  "localQuota": {
+    "mode": "PROVIDER_HEADER_SYNC",
+    "utcDay": "2026-10-12",
+    "minuteUsed": 2,
+    "dayUsed": 90,
+    "minuteRemaining": 6,
+    "dayRemaining": 0,
+    "localMinuteRemaining": 6,
+    "localDayRemaining": 0,
+    "providerSyncActive": true,
+    "providerDailyLimit": 100,
+    "providerDailyRemaining": 10,
+    "providerMinuteLimit": 10,
+    "providerMinuteRemaining": 8,
+    "providerObservedAt": "2026-10-12T11:12:26.914Z",
+    "providerDailyReserve": 10,
+    "providerMinuteReserve": 2
+  },
+  "startedAt": "2026-10-12T11:03:23.356Z",
+  "finishedAt": "2026-10-12T11:12:27.718Z",
+  "liveModelChanged": false,
+  "perSeason": [
+    {
+      "season": 2022,
+      "status": "COMPLETE",
+      "fetchedThisRun": 0,
+      "fixturesTotal": 381,
+      "statsCached": 381,
+      "missingStats": 0,
+      "fixtureListCached": true
+    },
+    {
+      "season": 2023,
+      "status": "COMPLETE",
+      "fetchedThisRun": 0,
+      "fixturesTotal": 380,
+      "statsCached": 380,
+      "missingStats": 0,
+      "fixtureListCached": true
+    },
+    {
+      "season": 2024,
+      "status": "PARTIAL",
+      "fetchedThisRun": 58,
+      "fixturesTotal": 380,
+      "statsCached": 147,
+      "missingStats": 233,
+      "fixtureListCached": true
+    }
+  ]
+}

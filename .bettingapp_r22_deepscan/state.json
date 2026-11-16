@@ -1,0 +1,14 @@
+{
+  "version": "BETTINGAPP_R22_DEEPSCAN_COHERENCE_V1_20261115",
+  "dbChanged": false,
+  "authorityChanged": false,
+  "realMoneyAuthorization": false,
+  "files": {
+    "public/calcioR22SnapshotGuard.js": "b114fb40a340d3ec979a4b77d19309dbb832d360c5250cb487a315d96c036bd3",
+    "backend/public/calcioR22SnapshotGuard.js": "b114fb40a340d3ec979a4b77d19309dbb832d360c5250cb487a315d96c036bd3",
+    "public/app.js": "6895d298bd0f16ae765df2b133d2822f46ff9539708ed8e3cdec6ffed10db5aa",
+    "backend/public/app.js": "6895d298bd0f16ae765df2b133d2822f46ff9539708ed8e3cdec6ffed10db5aa",
+    "public/index.html": "33c860677e9daad43e3e750580bf2068178bc675e574c7dc4abad8db12d1cf9a",
+    "backend/public/index.html": "33c860677e9daad43e3e750580bf2068178bc675e574c7dc4abad8db12d1cf9a"
+  }
+}

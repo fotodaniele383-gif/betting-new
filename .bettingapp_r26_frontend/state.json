@@ -1,0 +1,16 @@
+{
+  "version": "BETTINGAPP_R26_TENNIS_FRONTEND_PROGRESS_HOTFIX_V1_20261116",
+  "date": "2026-11-16",
+  "from": "BETTINGAPP_R25_UNICA_DECISION_COHERENCE_V1_20261116",
+  "dbChanged": false,
+  "realMoneyAuthorization": false,
+  "autoSettlement": false,
+  "safetyGateBypass": false,
+  "schedulerChanges": false,
+  "scope": "TENNIS_PATCH59_FRONTEND_CACHE_REVISION_ONLY",
+  "files": {
+    "public/index.html": "cbc9aa47f2a0eb757b06d9eafe2e4310640f28575f8ba5562f234a305e906ccf",
+    "backend/public/index.html": "cbc9aa47f2a0eb757b06d9eafe2e4310640f28575f8ba5562f234a305e906ccf"
+  },
+  "activeFrontendRevision": "patch59-r26-frontend-health-truth"
+}

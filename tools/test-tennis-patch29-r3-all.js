@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const gate=require('../backend/tennisPrematchCaptureGate');
+const health=require('../backend/tennisRuntimeHealthContract');
+const registry=require('../backend/tennisPatchRegistry');
+const root=path.resolve(__dirname,'..');
+const server=fs.readFileSync(path.join(root,'backend','server.tennis.js'),'utf8');
+const progression=fs.readFileSync(path.join(root,'backend','tennisProgramProgressionAudit.js'),'utf8');
+const app=fs.readFileSync(path.join(root,'public','app.js'),'utf8');
+const index=fs.readFileSync(path.join(root,'public','index.html'),'utf8');
+const checks=[];function check(name,fn){try{fn();checks.push({name,ok:true})}catch(e){checks.push({name,ok:false,error:e.message})}}
+const self=gate.selfCheck();
+check('versione Prematch Capture Gate R3',()=>assert.equal(gate.TENNIS_PREMATCH_CAPTURE_GATE_VERSION,'TENNIS_PREMATCH_CAPTURE_GATE_V1_PATCH29_R3'));
+check('self-check gate completo',()=>assert(self.ok&&Object.values(self.checks).every(Boolean)));
+check('Europe Rome estate convertita in UTC',()=>assert.equal(gate.parseTimestamp('2026-08-02T20:30:00').epochMs,Date.parse('2026-08-02T18:30:00Z')));
+check('Europe Rome inverno convertito in UTC',()=>assert.equal(gate.parseTimestamp('2026-01-15T20:30:00').epochMs,Date.parse('2026-01-15T19:30:00Z')));
+check('capture prematch autorizzato',()=>assert(self.checks.validPrematchAllowed));
+check('capture post-start bloccato',()=>assert(self.checks.postStartBlocked));
+check('snapshot incompleto bloccato',()=>assert(self.checks.incompleteBlocked));
+check('runtime contract R3',()=>assert.equal(health.TENNIS_RUNTIME_HEALTH_CONTRACT_VERSION,'TENNIS_RUNTIME_HEALTH_CONTRACT_V2_PATCH29_R3'));
+check('provider opzionale non blocca capture',()=>{const r=health.buildComponentHealthSemantics({paperTradingTennis:{ok:true,status:'OK'},sackmann:{ok:false,status:'ERROR'}});assert.equal(r.status,'WARN');assert.equal(r.captureReady,true);});
+check('componente capture guasto blocca',()=>{const r=health.buildComponentHealthSemantics({paperTradingTennis:{ok:false,status:'ERROR'},sackmann:{ok:true,status:'OK'}});assert.equal(r.status,'ERROR');assert.equal(r.captureReady,false);});
+check('ruoli semantici esposti',()=>assert(health.COMPONENT_ROLES.REQUIRED_CAPTURE&&health.COMPONENT_ROLES.OPTIONAL_EVIDENCE));
+check('server importa gate',()=>assert(server.includes("require('./tennisPrematchCaptureGate')")));
+check('gate dentro transazione prima snapshot',()=>assert(server.indexOf("patch24FailureStage = 'PREMATCH_CAPTURE_GATE'")<server.indexOf('capturePredictionSnapshot(db, persistedRow')));
+check('errore gate genera rollback transazionale',()=>assert(server.includes('PATCH29_R3_PREMATCH_CAPTURE_GATE_BLOCKED')&&server.includes('const transaction = db.transaction')));
+check('health usa semantic components',()=>assert(server.includes('buildComponentHealthSemantics(components)')&&server.includes('componentHealthSemantics')));
+check('endpoint gate collegato',()=>assert(server.includes("router.get('/prematch-capture-gate-health'")));
+check('progression audit R3 preservato',()=>assert(/TENNIS_PROGRAM_PROGRESSION_AUDIT_V(?:21_PATCH29_R3|22_PATCH30|23_PATCH31)/.test(progression)));
+check('registry almeno 29',()=>assert(Number(registry.TENNIS_CURRENT_PATCH_VERSION)>=29));
+check('registry descrive R3 forward-only',()=>assert(registry.PATCHES.find(x=>String(x.version)==='29')?.scope.some(x=>/R3 is additive and forward-only/i.test(x))));
+check('frontend semantic marker',()=>assert(app.includes('TENNIS_PATCH29_R3_PREMATCH_CAPTURE_GATE_COMPONENT_HEALTH_SEMANTIC')));
+check('frontend mostra ruolo e stato semantico',()=>assert(app.includes('semanticLabel')&&app.includes('effectiveStatus')&&app.includes('Ruolo ${item.role}')));
+check('cache buster R3 o successivo attivo',()=>assert(/app\.js\?v=(?:patch29-r3-prematch-capture-gate-component-health-semantic|patch30-core-hygiene-script-contract-repair|patch31-secrets-release-hardening)/.test(index)));
+const failed=checks.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,patch:'TENNIS_PATCH_29_R3_PREMATCH_CAPTURE_GATE_COMPONENT_HEALTH_SEMANTIC',checks:checks.length,passed:checks.length-failed.length,failed:failed.length,results:checks},null,2));process.exit(failed.length?1:0);

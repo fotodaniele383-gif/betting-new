@@ -1,0 +1,219 @@
+{
+  "timestamp": 1794146015263,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 9.8,
+    "sourceCoverageConfidence": 63,
+    "matchImpactConfidence": 9.8,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 50,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 2
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Carrarese",
+      "officialDomain": null,
+      "status": "PARTIAL",
+      "confidence": 9.8,
+      "coverageConfidence": 63,
+      "matchImpactConfidence": 9.8,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1476,
+          "received": 10,
+          "relevant": 2,
+          "fresh": 10,
+          "usable": 2,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T13:53:35.258Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1356,
+          "received": 2,
+          "relevant": 0,
+          "fresh": 2,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T13:53:35.138Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 12,
+        "relevantArticles": 2,
+        "usableArticles": 2,
+        "uniqueArticles": 2,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 2,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 10,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "soccer - serie b. carrarese faces a test against sampdoria. coach pagliuca leads the charge. - qs quotidiano sportivo",
+          "originalTitle": "Soccer - Serie B. Carrarese faces a test against Sampdoria. Coach Pagliuca leads the charge. - QS Quotidiano Sportivo",
+          "fullText": "soccer - serie b. carrarese faces a test against sampdoria. coach pagliuca leads the charge. - qs quotidiano sportivo <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxonm14odcxs0fis1jhcjvxnlrbqw9wz2kwtnrtvelowjlkalaydk5vbuzot1nmqmezbzhnavpjqjrtsutuaehkc3fss3plvtk1uzbkalfky2htwgwwd1lsuknjau1pzghqem91evptdnzhz2l2ugdcthrxturvczrjtfzxuq?oc=5\" target=\"_blank\">soccer - serie b. carrarese faces a test against sampdoria. coach pagliuca leads the charge.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">qs quotidiano sportivo</font>",
+          "sourceName": "QS Quotidiano Sportivo",
+          "sourceUrl": "https://sport.quotidiano.net",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONm14ODcxS0FIS1JhcjVxNlRBQW9WZ2kwTnRtVElOWjlkalAydk5vbUZoT1NMQmEzbzhnaVpJQjRTSUtUaEhkc3FSS3plVTk1UzBkalFkY2hTWGwwd1lsUkNJaU1PZGhQem91eVpTdnZHZ2l2UGdCTHRXTURvczRjTFZxUQ?oc=5",
+          "publishedAt": "2026-11-07T07:51:10.000Z",
+          "ageDays": 1.25,
+          "category": "MANAGER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "MATCHDAY",
+          "matchImpactWeight": 0.4275
+        },
+        {
+          "title": "serie b. carrarese, anticipation grows for the match against sampdoria. dagba and vujevic return. - qs quotidiano sportivo",
+          "originalTitle": "Serie B. Carrarese, anticipation grows for the match against Sampdoria. Dagba and Vujevic return. - QS Quotidiano Sportivo",
+          "fullText": "serie b. carrarese, anticipation grows for the match against sampdoria. dagba and vujevic return. - qs quotidiano sportivo <a href=\"https://news.google.com/rss/articles/cbmikafbvv95cuxnaupus09ovxkwy01hrvbgzzntwhfzsnrhcdldr3ddalzqohpjbjlqohpkcghobwvtywjkmnhfbtrytwfwnny3nznfy1doduzbtuhnumdltzg5v1lun25snzmxb0nytznzaw5kegswqvd3vnm3m3dtsgsydjvtvnjoaggxmzvfvgxls2fgrvvqdne?oc=5\" target=\"_blank\">serie b. carrarese, anticipation grows for the match against sampdoria. dagba and vujevic return.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">qs quotidiano sportivo</font>",
+          "sourceName": "QS Quotidiano Sportivo",
+          "sourceUrl": "https://sport.quotidiano.net",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaUpuS09OVXkwY01HRVBGZzNTWHFzSnRHcDlDR3dDalZQOHpJbjlqOHpkcGhObWVTYWJkMnhFbTRyTWFWNnY3NzNFY1dodUZBTUhNUmdlTzg5V1lUN25SNzMxb0NYTzNzaW5keGswQVd3VnM3M3dTSGsydjVtVnJOaGgxMzVFVGxLS2FGRVVQdnE?oc=5",
+          "publishedAt": "2026-11-05T07:22:04.000Z",
+          "ageDays": 3.27,
+          "category": "RETURN_FITNESS",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "MATCHDAY",
+          "matchImpactWeight": 0.4275
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "watch carrarese v sampdoria live today: who is showing the match on tv and streaming it live? - goal.com",
+          "sourceName": "Goal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "l.r. vicenza vs. carrarese: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "devid eugene bouah: transfer news, market value (etv) and stats - www.footballtransfers.com",
+          "sourceName": "www.footballtransfers.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "watch carrarese v sampdoria live today: who is showing the match on tv and via live stream? - goal.com",
+          "sourceName": "Goal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "cesena vs. carrarese: live game updates, stats, play-by-play - yahoo",
+          "sourceName": "Yahoo",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "carrarese vs sampdoria prediction, betting tips, lineups & odds | 08 nov 2026 - sportsgambler",
+          "sourceName": "Sportsgambler",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hellas verona vs carrarese prediction, betting tips, lineups & odds | 01 nov 2026 - sportsgambler",
+          "sourceName": "Sportsgambler",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "serie b injuries & suspensions - sportsgambler",
+          "sourceName": "Sportsgambler",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "guarda carrarese contro sampdoria in diretta oggi: chi trasmette la partita in tv e in live streaming?",
+          "sourceName": "Calciomercato.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "serie bkt 2026/27 | #veronacarrarese: ticket info",
+          "sourceName": "hellasverona",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 5000,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "BETTINGAPP_R19_CALCIO_MICRO_PAPER_UI_20261115",
+  "from": "BETTINGAPP_MAIN_R7_PROMPT_CALCIO_V7_DATA_ONLY_20261114",
+  "dbChanged": false,
+  "realExecutionEnabled": false,
+  "files": {
+    "public/app.js": "7ea406f0a4c812c05b350b77c327225cddd860a399dac127e0f5bc6fff1ad4fc",
+    "backend/public/app.js": "7ea406f0a4c812c05b350b77c327225cddd860a399dac127e0f5bc6fff1ad4fc"
+  }
+}

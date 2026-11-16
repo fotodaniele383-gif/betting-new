@@ -1,0 +1,246 @@
+{
+  "timestamp": 1794817192034,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 13.5,
+    "sourceCoverageConfidence": 77,
+    "matchImpactConfidence": 13.5,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 45,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Udinese",
+      "officialDomain": "udinese.it",
+      "status": "PARTIAL",
+      "confidence": 13.5,
+      "coverageConfidence": 77,
+      "matchImpactConfidence": 13.5,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1068,
+          "received": 15,
+          "relevant": 0,
+          "fresh": 15,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:51.908Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1182,
+          "received": 15,
+          "relevant": 12,
+          "fresh": 1,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:52.022Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1041,
+          "received": 9,
+          "relevant": 3,
+          "fresh": 3,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:51.881Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 39,
+        "relevantArticles": 15,
+        "usableArticles": 2,
+        "uniqueArticles": 2,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 2,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 37,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "preview | venezia vs udinese: team news, lineups, predictions (serie a 06/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Venezia vs Udinese: team news, lineups, predictions (Serie A 06/11) - Yahoo Sports",
+          "fullText": "preview | venezia vs udinese: team news, lineups, predictions (serie a 06/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihwfbvv95cuxqde5quw9hvnhxdtdxcnlizgdardh2vndit1fcnujzcu5gnkpozmrrwdrhogkymnpxewnzatvbbhhjc3zlcmlstzywq0dzty0yzi15wenma3dlown3vdhra1hnxzgxt2ranknrmu4yztltul9nvw1xtnu5qndrshbdvnfvulpkuw8?oc=5\" target=\"_blank\">preview | venezia vs udinese: team news, lineups, predictions (serie a 06/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdE5QUW9HVnhxdTdxcnliZGdaRDh2VndiT1FCNUJzcU5GNkpOZmRrWDRhOGkyMnpXeWNZaTVBbHhJc3ZlcmlsTzYwQ0dZTy0yZi15WENMa3dLOWN3VDhra1hNXzgxT2RaNkNRMU4yZTltUl9NVW1XTnU5QndrSHBDVnFvUlpkUW8?oc=5",
+          "publishedAt": "2026-11-04T08:00:00.000Z",
+          "ageDays": 12.01,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "runjaic saluta l'udinese: \"avrà sempre un posto speciale nel mio cuore\"",
+          "originalTitle": "Runjaic saluta l'Udinese: \"Avrà sempre un posto speciale nel mio cuore\"",
+          "fullText": "runjaic saluta l'udinese: \"avrà sempre un posto speciale nel mio cuore\" dopo la conferenza stampa di presentazione di paolo zanetti, arriva il messaggio social del tecnico tedesco, esonerato dopo il pesante ko con la roma ...",
+          "sourceName": "Corriere dello Sport",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afabca89cf8408faaa9dc8ab80ec64a&url=https%3a%2f%2fwww.corrieredellosport.it%2fnews%2fcalcio%2fserie-a%2fudinese%2f2026%2f11%2f04-152371511%2frunjaic_saluta_l_udinese_avr_sempre_un_posto_speciale_nel_mio_cuore&c=3468593882024189156&mkt=it-it",
+          "publishedAt": "2026-11-04T11:24:00.000Z",
+          "ageDays": 11.87,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "welcome, paolo zanetti! - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "runjaic: \"parma a step forward but we must keep going\" - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "maresca to referee roma v udinese - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "parma 0-0 udinese - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "venezia v udinese preview - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "5 bianconeri in campo - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "official statement: kosta runjaic - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "nani offers post-parma musings - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "eleven players get international call-ups - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "message from kosta runjaic - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "kamara and zanetti mull over venezia defeat - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "runjaic and karlstrom speak at post-roma press conference - udinese",
+          "sourceName": "Udinese",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

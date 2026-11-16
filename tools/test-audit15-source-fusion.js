@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+'use strict';
+const path=require('path');
+const root=path.resolve(process.argv.includes('--root')?(process.argv[process.argv.indexOf('--root')+1]||'.'):process.argv[2]||path.join(__dirname,'..'));
+const m=require(path.join(root,'backend','certifiedOutcomeSourceFusionAudit15'));
+const checks=[]; const add=(name,ok,value)=>checks.push({name,ok:Boolean(ok),...(value!==undefined?{value}:{})});
+const soccer={events:[{id:'S1',date:'2026-08-22T14:00:00Z',status:{type:{completed:true,state:'post'}},competitions:[{competitors:[{homeAway:'home',team:{displayName:'Nottingham Forest'},score:'0'},{homeAway:'away',team:{displayName:'Leeds United'},score:'1'}]}]}]};
+let x=m.parseEspnFootballPayload(soccer,{home_team:"Nott'm Forest",away_team:'Leeds',match_date:'2026-08-22T16:00:00Z'});
+add('football exact canonical structured match',x.resolution?.homeGoals===0&&x.resolution?.awayGoals===1&&x.resolution?.sourceTier==='STRUCTURED_WEB');
+x=m.parseEspnFootballPayload(soccer,{home_team:'Leeds',away_team:"Nott'm Forest",match_date:'2026-08-22T16:00:00Z'});
+add('football swapped identity rejected',!x.resolution);
+const tennis={events:[{id:'T1',date:'2026-08-14T18:10:00Z',status:{type:{completed:true,state:'post'}},competitions:[{competitors:[{athlete:{displayName:'Luca Van Assche'},linescores:[{value:6},{value:4},{value:6}],score:'2'},{athlete:{displayName:'Yannick Hanfmann'},linescores:[{value:3},{value:6},{value:2}],score:'1'}]}]}]};
+x=m.parseEspnTennisPayload(tennis,{home_team:'Luca Van Assche',away_team:'Yannick Hanfmann',match_date:'2026-08-14T18:10:00Z',league:'ATP'});
+add('tennis structured set score parsed',x.resolution?.winner===1&&x.resolution?.score==='6-3 4-6 6-2'&&x.resolution?.totalGames===27,x.resolution);
+const bad={events:[tennis.events[0],{...tennis.events[0],id:'T2'}]};
+x=m.parseEspnTennisPayload(bad,{home_team:'Luca Van Assche',away_team:'Yannick Hanfmann',match_date:'2026-08-14T18:10:00Z',league:'ATP'});
+add('ambiguous tennis source fails closed',!x.resolution&&x.trace?.status==='AMBIGUOUS_STRUCTURED_SOURCE');
+add('football league map EPL',m.footballLeagueSlug({league:'Premier'})==='eng.1');
+add('tennis ATP route',m.tennisTourSlug({league:'ATP'})==='atp');
+add('tennis WTA route',m.tennisTourSlug({league:'WTA'})==='wta');
+let c=m.compareEvidence({winnerSide:1,score:'6-3 6-4',source:'OFFICIAL'},{winner:1,score:'6-3 6-4',source:'ESPN'});
+add('consensus agrees',c.status==='SOURCE_CONSENSUS'&&c.agree===true);
+c=m.compareEvidence({winnerSide:1,score:'6-3 6-4',source:'OFFICIAL'},{winner:2,score:'3-6 4-6',source:'ESPN'});
+add('conflicting sources quarantined',c.status==='SOURCE_CONFLICT'&&c.agree===false);
+add('network resolver fail-closed when disabled',(async()=>{const r=await m.resolveFootballStructured({league:'Premier',home_team:'A',away_team:'B',match_date:'2026-08-22'},{allowNetwork:false});return !r.resolution&&r.trace.status==='NETWORK_NOT_AUTHORIZED';})());
+Promise.all(checks.map(async q=>({...q,ok:await q.ok}))).then(final=>{const failures=final.filter(x=>!x.ok);console.log(JSON.stringify({success:failures.length===0,patch:'AUDIT15',checks:final.length,failures,version:m.VERSION},null,2));process.exit(failures.length?1:0);});

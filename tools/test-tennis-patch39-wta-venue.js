@@ -1,0 +1,10 @@
+'use strict';
+const assert=require('assert');
+const fs=require('fs');const os=require('os');const path=require('path');
+const venue=require('../backend/tennisVenueRegistryPatch39');
+const wta=require('../backend/tennisWtaFreshnessRecoveryPatch39');
+assert.equal(venue.resolveVenue({tour:'ATP',tournament_catalog_id:'atp_m1000_canada',match_date:'2026-08-04'}).city,'Montreal');
+assert.equal(venue.resolveVenue({tour:'WTA',tournament_catalog_id:'wta_1000_canada',match_date:'2026-08-04'}).city,'Toronto');
+assert.equal(venue.resolveVenue({tour:'ATP',tournament:'Unknown Cup'}).status,'VENUE_UNRESOLVED');
+assert.equal(wta.usageAllowed({usageMode:'COMMERCIAL'}).allowed,false);
+(async()=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'wta39-'));const target={id:'WTA_MAIN',localFile:'wta_matches_2026.csv'};fs.writeFileSync(path.join(dir,target.localFile),'header\nold\n');const inspection={latestMatchAt:'2026-08-03T12:00:00Z',validRows:100,sha256:'NEW'};const result=await wta.refreshWtaOnly({dataDir:dir,force:true,now:'2026-08-04T00:00:00Z',multiProvider:{targetRegistry:()=>[target],githubWtaCandidate:async()=>({text:'header\nnew\n',networkCalls:1,fromCache:false})},refreshModule:{inspectCsvText:(text)=>text.includes('new')?inspection:{latestMatchAt:'2026-05-25T12:00:00Z',validRows:10,sha256:'OLD'},compareRemoteToLocal:()=>({accepted:true})},playerEvidence:{init:()=>({latestMatchAt:inspection.latestMatchAt,matchCount:100,playerCount:20})}});assert.equal(result.status,'WTA_REFRESH_ACTIVATED');assert.equal(result.dataChanged,true);console.log(JSON.stringify({success:true,checks:6,venueVersion:venue.VERSION,wtaStatus:result.status}));})().catch(e=>{console.error(e);process.exit(1);});

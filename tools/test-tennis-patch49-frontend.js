@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('fs'); const path=require('path'); const crypto=require('crypto'); const assert=require('assert'); const cp=require('child_process');
+const root=path.resolve(process.argv.includes('--root')?process.argv[process.argv.indexOf('--root')+1]:'.');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8'), hash=p=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex');
+const app=read('public/app.js'), html=read('public/index.html'), server=read('backend/server.js');
+assert.strictEqual(hash('public/app.js'),hash('backend/public/app.js')); assert.strictEqual(hash('public/index.html'),hash('backend/public/index.html'));
+assert(html.includes('>Affidabilità AI</th>')&&html.includes('Indice Predizione'));
+assert(app.includes('id="ai-reliability-cell-${index}"')); assert(app.includes("key: 'prediction_index', label: 'Indice Predizione'")); assert(app.includes('renderUnifiedPredictionIndexCell(row)'));
+assert(app.includes('predictionIndexBandsPanel')&&app.includes('/api/analytics/prediction-index-bands'));
+assert(server.includes("app.get('/api/analytics/prediction-index-bands'")); assert(server.includes("require('./aiPredictionIndexBandPerformance')"));
+assert(/app\.js\?v=patch(?:49-analysis-memory-prediction-index-bands-ai-reliability|50-health-check-alignment-prediction-index-collapse|51-settlement-exception-queue-idempotent-notifications|52-wta-information-recovery|53-clv-cross-sport-coverage)/.test(html));
+for(const f of ['public/app.js','backend/public/app.js','backend/server.js','backend/aiPredictionIndexBandPerformance.js']) cp.execFileSync(process.execPath,['--check',path.join(root,f)],{stdio:'pipe'});
+console.log(JSON.stringify({success:true,patch:'PATCH49',checks:12,frontendMirrors:true,analysisReliability:true,tradingPredictionIndex:true,predictionIndexBandsPanel:true},null,2));

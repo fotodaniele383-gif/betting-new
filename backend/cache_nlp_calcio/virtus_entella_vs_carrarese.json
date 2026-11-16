@@ -1,0 +1,199 @@
+{
+  "timestamp": 1794827412522,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 53,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Virtus Entella",
+      "officialDomain": null,
+      "status": "TEAM_CONTEXT_ONLY",
+      "confidence": 0,
+      "coverageConfidence": 53,
+      "matchImpactConfidence": 0,
+      "r25MatchCandidateCount": 0,
+      "r25TeamContextCount": 1,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "EMPTY",
+          "httpStatus": 200,
+          "durationMs": 1102,
+          "received": 0,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T11:10:12.512Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1092,
+          "received": 10,
+          "relevant": 3,
+          "fresh": 5,
+          "usable": 1,
+          "excluded": 1,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T11:10:12.502Z"
+        }
+      ],
+      "counts": {
+        "providers": 2,
+        "successfulProviders": 2,
+        "failedProviders": 0,
+        "providersWithResults": 1,
+        "receivedArticles": 10,
+        "relevantArticles": 3,
+        "usableArticles": 1,
+        "uniqueArticles": 1,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 1,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 9,
+        "excludedSquadArticles": 1
+      },
+      "articles": [
+        {
+          "title": "test di prestigio per la virtus entella: sabato mattina a leivi sfiderà il genoa. ma a porte chiuse",
+          "originalTitle": "Test di prestigio per la Virtus Entella: sabato mattina a Leivi sfiderà il Genoa. Ma a porte chiuse",
+          "fullText": "test di prestigio per la virtus entella: sabato mattina a leivi sfiderà il genoa. ma a porte chiuse una sosta di lavoro per la formazione chiavarese, che sfiderà la truppa guidata da de rossi pe tenere al meglio il ritmo gara ...",
+          "sourceName": "TUTTOmercatoWEB.com",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afae495bd424028bf98f7f8600fd54b&url=https%3a%2f%2fwww.tuttomercatoweb.com%2fserie-b%2ftest-prestigio-virtus-entella-sabato-mattina-leivi-sfidera-genoa-porte-chiuse-2293086&c=5484787393675572917&mkt=it-it",
+          "publishedAt": "2026-11-11T11:18:00.000Z",
+          "ageDays": 4.99,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0,
+          "matchScopeR25": "TEAM_CONTEXT_ONLY",
+          "matchSpecificEvidence": false
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "guarda sampdoria contro virtus entella in diretta oggi: chi trasmette la partita in tv e in live streaming?",
+          "sourceName": "Calciomercato.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "virtus entella-modena come e dove vederla: sky o dazn? canale tv, diretta streaming e orario",
+          "sourceName": "Virgilio",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "virtus entella-modena finisce 0 a 2",
+          "sourceName": "Rai News",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "virtus entella-modena 8 novembre 2026: orario, arbitro, precedenti e statistiche",
+          "sourceName": "Virgilio",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "virtus entella-modena 0-2: montevago segna una doppietta, galloppa consolida il secondo posto",
+          "sourceName": "TUTTOmercatoWEB.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "rimonta vincente: il derby ligure è della sampdoria",
+          "sourceName": "mondoprimavera",
+          "squadScope": "ACADEMY",
+          "reason": "EXPLICIT_YOUTH_OR_RESERVE_CONTEXT"
+        },
+        {
+          "title": "virtus entella - carrarese : 2 - 1",
+          "sourceName": "Quotidiano di Puglia",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "guarda la serie bkt su dazn",
+          "sourceName": "dazn",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "virtus entella - juve stabia: curiosità e probabili formazioni. riparte da chiavari il cammino delle vespe verso la salvezza",
+          "sourceName": "StabiaChannel",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "Dominio ufficiale squadra non presente nel catalogo: verifica official-first non disponibile.",
+        "R25: notizie disponibili come contesto squadra, non certificate per l’avversario del match.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club.",
+        "R12: 1 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

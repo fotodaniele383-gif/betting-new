@@ -1,0 +1,27 @@
+'use strict';
+const assert=require('assert'); const {DatabaseSync}=require('node:sqlite'); const path=require('path');
+const root=path.resolve(__dirname,'..'), official=require('../backend/tennisOfficialSettlementResolver'), contract=require('../backend/tennisSettlementContract');
+const db=new DatabaseSync(path.join(root,'backend','database_betting.db')); const checks=[]; const check=(name,fn)=>{try{fn();checks.push({name,ok:true})}catch(e){checks.push({name,ok:false,error:e.message})}};
+let row2413,row2434,row2436; try{row2413=db.prepare('select * from ai_forward_test where id=2413').get();row2434=db.prepare('select * from ai_forward_test where id=2434').get();row2436=db.prepare('select * from ai_forward_test where id=2436').get();}finally{db.close()}
+const seed=official.loadSeed();
+check('seed integro con 12 risultati',()=>assert.equal(seed.records.length,12));
+check('hash seed certificato',()=>assert.equal(official.health().seedHash,seed.seedHash));
+check('alias Jr normalizzato',()=>assert(official.samePlayer('Martin Damm Jr.','Martin Damm')));
+check('risoluzione Majchrzak Paul',()=>assert.equal(official.resolveFromSeed(row2413).winnerName,'Kamil Majchrzak'));
+check('cross-midnight Shelton Humbert',()=>assert.equal(official.resolveFromSeed(row2434).winnerName,'Ben Shelton'));
+check('data adiacente limitata a 24h',()=>assert.equal(official.dateDistanceDays('2026-07-30','2026-07-31'),1));
+const res=official.resolveFromSeed(row2413), evaluated=contract.evaluateTennisSettlementContract(row2413,res,{operationId:'PATCH29_TEST'});
+check('contratto ufficiale VERIFIED',()=>assert.equal(evaluated.status,'VERIFIED'));
+check('contratto ufficiale auto settle',()=>assert.equal(evaluated.autoSettleAllowed,true));
+const weak={winner:1,winnerName:row2413.home_team,totalGames:25,score:'7-5 7-6(4)',source:'DUCKDUCKGO_WEB_FALLBACK',sourceEventId:'WEB:X',observedAt:new Date().toISOString(),providerCompleted:true,confidence:.9,rawEvidence:{}};
+const weakContract=contract.evaluateTennisSettlementContract(row2413,weak,{operationId:'PATCH29_WEAK'});
+check('fonte web debole non VERIFIED',()=>assert.notEqual(weakContract.status,'VERIFIED'));
+check('fonte web debole no auto settle',()=>assert.equal(weakContract.autoSettleAllowed,false));
+const fixture='Ben Shelton vs Ugo Humbert. Game Set and Match Ben Shelton. Ben Shelton wins the match 6-4 6-4';
+check('parser pagina ufficiale',()=>assert.equal(official.parseOfficialResultText(fixture,{home_team:'Ben Shelton',away_team:'Ugo Humbert',match_date:'30/07/2026'},{tour:'ATP',source:'ATP_OFFICIAL_RESULTS_PATCH29'}).winner,1));
+check('ritiro non auto-settled',()=>assert.equal(official.parseOfficialResultText('Game Set and Match Naomi Osaka. Naomi Osaka wins the match 6-3 3-1 RET',{home_team:'Ashlyn Krueger',away_team:'Naomi Osaka',match_date:'30/07/2026'},{tour:'WTA'}),null));
+check('match futuro non ha seed',()=>assert.equal(official.resolveFromSeed(row2436),null));
+check('zero Odds API',()=>assert.equal(official.health().zeroOddsApiCalls,true));
+check('cache pagina bounded TTL',()=>assert(official.PAGE_CACHE_TTL_MS>=300000&&official.PAGE_CACHE_TTL_MS<=21600000));
+check('retirement policy prudente',()=>assert.equal(official.health().retirementAutoSettlement,false));
+const failed=checks.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,patch:'TENNIS_PATCH_29',checks:checks.length,passed:checks.length-failed.length,failed:failed.length,results:checks},null,2));process.exit(failed.length?1:0);

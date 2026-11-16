@@ -1,0 +1,8 @@
+'use strict';
+const cp=require('child_process');const path=require('path');
+const PATCH='BETTING_PATCH_23_CALCIO_AI_DETERMINISTIC_FINALIZATION_CERTIFICATION';
+const files=['test-calcio-patch1-standalone.js','test-calcio-patch2-standalone.js','test-calcio-patch3-standalone.js','test-calcio-patch4-standalone.js','test-calcio-patch5-standalone.js','test-calcio-patch6-standalone.js','test-calcio-patch7-standalone.js','test-calcio-patch8-standalone.js','test-calcio-patch9-standalone.js','test-calcio-patch12-standalone.js'];
+const results=files.map(file=>{const r=cp.spawnSync(process.execPath,[path.resolve(__dirname,file)],{encoding:'utf8',timeout:45000});return{file,ok:r.status===0,status:r.status,stdoutTail:(r.stdout||'').slice(-1000),stderrTail:(r.stderr||'').slice(-1000)};});
+const bad=results.filter(x=>!x.ok);if(bad.length)throw new Error('Regressioni: '+bad.map(x=>x.file).join(', '));
+const syntax=['backend/server.js','backend/calcioAiFinalization.js','backend/calcioUnifiedPredictionIndex.js','backend/calcioProfessionalSelection.js','backend/calcioStakeReconciler.js','public/app.js','backend/public/app.js'].map(file=>{const r=cp.spawnSync(process.execPath,['--check',path.resolve(__dirname,'..',file)],{encoding:'utf8'});return{file:'syntax:'+file,ok:r.status===0,status:r.status,stderrTail:r.stderr};});if(syntax.some(x=>!x.ok))throw new Error('Syntax failure');
+console.log(JSON.stringify({success:true,patch:PATCH,compatibleLegacySuites:results.length,syntaxChecks:syntax.length,results:[...results,...syntax]},null,2));

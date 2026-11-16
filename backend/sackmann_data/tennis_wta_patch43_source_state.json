@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "status": "NO_NEWER_CANDIDATE",
+  "version": "TENNIS_WTA_SOURCE_DISCOVERY_V1_PATCH43",
+  "operationId": "WTA43_1785916934810",
+  "dataChanged": false,
+  "selectedProvider": "HUGGINGFACE_SACKMANN_ARCHIVE",
+  "selected": {
+    "latestMatchAt": "2026-05-25T12:00:00.000Z",
+    "validRows": 1295,
+    "sha256": "8fea203e3f4e731308b9ed2845059818d400aa6176c801279b24e846569e9d97"
+  },
+  "diagnostics": [
+    {
+      "providerId": "TENNISDATA_APP_LOCAL_IMPORT",
+      "status": "DISABLED_BY_POLICY"
+    },
+    {
+      "providerId": "JEFF_SACKMANN_GITHUB_DISCOVERY",
+      "status": "FAILED",
+      "error": "PATCH43_WTA_HTTP_404",
+      "httpStatus": 404
+    },
+    {
+      "providerId": "HUGGINGFACE_SACKMANN_ARCHIVE",
+      "status": "ACCEPTED_CANDIDATE",
+      "latestMatchAt": "2026-05-25T12:00:00.000Z",
+      "validRows": 1295,
+      "comparison": {
+        "accepted": true,
+        "reasons": []
+      },
+      "networkCalls": 1,
+      "fromCache": true,
+      "diagnostics": [
+        {
+          "status": "NOT_MODIFIED"
+        }
+      ]
+    }
+  ],
+  "probabilityAuthority": false,
+  "qualityGateAuthority": false,
+  "stakeAuthority": false,
+  "settlementAuthority": false,
+  "sourceLicense": "CC_BY_NC_SA_4_0",
+  "lastAttemptAt": "2026-08-05T08:02:14.808Z",
+  "previousSuccessAt": null
+}

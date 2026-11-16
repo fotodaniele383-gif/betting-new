@@ -1,0 +1,19 @@
+{
+  "timestamp": 1793963361227,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 1,
+  "totalGames": 23,
+  "isVoid": false,
+  "source": "STEP58_WEB_FALLBACK_SCORE_GUARDED",
+  "confidence": 0.9,
+  "step107WeakWinnerSide": true,
+  "observedAt": "2026-11-06T11:09:21.227Z",
+  "sourceEventId": "WEB:93fda54624dfecc87023",
+  "rawEvidence": {
+    "query": "stearns stephens tennis score 2026-09-17 result",
+    "matchDate": "2026-09-17",
+    "excerpt": "ste 2-0 ste peyton stearns v sloane stephens 18 09 2026 tennis ... follow peyton stearns v sloane stephens 18 09 2026 match information peyton stearns latest results news highlights and peyton stearns v sloane stephens h2h statistics flashscore tennis coverage includes tennis scores and tennis news from more than 5000 tournaments worldwide. peyton stearns sloane stephens live score and h2h results - sofascore peyton stearns sloane stephens live score starts on 18 sept 2026 at 02 40 utc time at estadio skarch stadium guadalajara city mexico in guadalajara mexico wta. stearns p. 2 0 stephens s. result h2h stats checklive stearns p. vs stephens s. final score 2 0. sets match statistics and head-to-head record on checklive. p.stearns beats s.stephens - guadalajara open akron - guadalajara 2026 ... peyton stearns defeated sloane stephens result in stats h2h live tennis score progression and draw results stearns p. - stephens s. 09 17 2026 - tip score and online results ... match prediction for stearns p. - stephens s. september 17 2026 - score completed match statistics pre-match analytics. tools for analysis and betting tips. peyton stearns vs sloane stephens result 2-0 - sportytrader "
+  },
+  "score": "7-6 6-4",
+  "note": "Risultato da web fallback: classificato PROPOSED da Patch 5; non chiude automaticamente senza fonte strutturata/certificata."
+}

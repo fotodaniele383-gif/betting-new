@@ -1,0 +1,366 @@
+{
+  "timestamp": 1794822100734,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -2,
+    "tactics": {
+      "mentions": 2,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 90,
+    "sourceCoverageConfidence": 83,
+    "matchImpactConfidence": 90,
+    "raw": {
+      "injury": -2,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 80,
+      "globalScore": -8,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 8
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Tottenham Hotspur",
+      "officialDomain": "tottenhamhotspur.com",
+      "status": "PARTIAL",
+      "confidence": 90,
+      "coverageConfidence": 83,
+      "matchImpactConfidence": 90,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 821,
+          "received": 15,
+          "relevant": 8,
+          "fresh": 14,
+          "usable": 8,
+          "excluded": 2,
+          "officialUsable": 8,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:40.215Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1333,
+          "received": 15,
+          "relevant": 7,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:40.727Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 897,
+          "received": 2,
+          "relevant": 0,
+          "fresh": 1,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:40.291Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 32,
+        "relevantArticles": 15,
+        "usableArticles": 8,
+        "uniqueArticles": 8,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 8,
+        "officialArticles": 8,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 24,
+        "excludedSquadArticles": 2
+      },
+      "articles": [
+        {
+          "title": "spurs vs crystal palace, players cup | how to watch, team news, kit colours, key information - tottenham hotspur",
+          "originalTitle": "Spurs vs Crystal Palace, Players Cup | How to watch, team news, kit colours, key information - Tottenham Hotspur",
+          "fullText": "spurs vs crystal palace, players cup | how to watch, team news, kit colours, key information - tottenham hotspur <a href=\"https://news.google.com/rss/articles/cbmi3afbvv95cuxpbgg2z1doy1jpyvvyzlvvb014rgtqwue2whnxxzrptxpvqljpdupwr2v1cti0a01pvk5vzw03dxfgakxxaej5yzlpnflxq1jpcnf2slkxmu9jrmpqvglsr0lzoetzywvtuxi4c1fwtux2bfrkmm42a2e0sup5wni0uvnmak1mwlhfsec3s2dpzhdieu1powqyewp6t0rhs3dbdm5ieliwltvkd1fjmwzxq0nwv2vyttbpwxm5nwvivlpfn19icza1twvkc0xpruw4rufzny1ebefhd3hb?oc=5\" target=\"_blank\">spurs vs crystal palace, players cup | how to watch, team news, kit colours, key information</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tottenham hotspur</font>",
+          "sourceName": "Tottenham Hotspur",
+          "sourceUrl": "https://www.tottenhamhotspur.com",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPbGg2Z1doY1JPYVVYZlVvb014RGtqWUE2WHNXXzRpTXpvQlJpdUpWR2V1cTI0a01pVk5vZW03dXFGakxXaEJ5YzlpNFlxQ1JpcnF2SlkxMU9jRmpQVGlSR0lZOEtZYWVtUXI4c1FwTUx2bFRKMm42a2E0SUp5WnI0UVNmak1MWlhfSEc3S2dPZHdieU1POWQyeWp6T0RHS3dBdm5IelIwLTVkd1FJMWZXQ0NwV2VyTTBpWXM5NWVIVlpFN19iczA1TWVkc0xpRUw4RUFZNy1EbEFhd3hB?oc=5",
+          "publishedAt": "2026-11-10T18:26:52.000Z",
+          "ageDays": 5.64,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "roberto’s latest on mathys tel’s injury from elland road - tottenham hotspur",
+          "originalTitle": "Roberto’s latest on Mathys Tel’s injury from Elland Road - Tottenham Hotspur",
+          "fullText": "roberto’s latest on mathys tel’s injury from elland road - tottenham hotspur <a href=\"https://news.google.com/rss/articles/cbmiogfbvv95cuxnrxhmnu1uuxznslpfrlphvzzkqzzsrlvdb1ezuvzszvjiwwfqb3o4azfqrll2mu05njnvx3bstvl0qnhjwxpvd1v0nmffwtzgdmw5net4b0vwxzrrz0t2ekfprlrbdc15ynbotlzrovlqt2ewdfvmmlhuzuzwew1hnkjlcxb2u1uxd0dyu2wyrfj3n3jiwfr1vtloz29wvwtfr1e?oc=5\" target=\"_blank\">roberto’s latest on mathys tel’s injury from elland road</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tottenham hotspur</font>",
+          "sourceName": "Tottenham Hotspur",
+          "sourceUrl": "https://www.tottenhamhotspur.com",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRXhmNU1uUXZnSlpfRlpHVzZKQzZsRlVDb1EzUVZsZVJiWWFQb3o4azFqRll2MU05NjNVX3BSTVl0QnhJWXpvd1V0NmFFWTZGdmw5NEt4b0VwXzRRZ0t2ekFpRlRBdC15YnBOTlZrOVlqT2EwdFVmMlhuZUZWeW1hNkJLcXB2U1Uxd0dYU2wyRFJ3N3JiWFR1VTloZ29WVWtFR1E?oc=5",
+          "publishedAt": "2026-11-07T08:00:00.000Z",
+          "ageDays": 9.07,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "spurs vs crystal palace | how to watch, team news, kit colours, key information - tottenham hotspur",
+          "originalTitle": "Spurs vs Crystal Palace | How to watch, team news, kit colours, key information - Tottenham Hotspur",
+          "fullText": "spurs vs crystal palace | how to watch, team news, kit colours, key information - tottenham hotspur <a href=\"https://news.google.com/rss/articles/cbmivafbvv95cuxoogptynhvckrnrmntcy04m0lkr19iyndoq3jtowxyctnrvtzvavn6ohlswndkofh1sklyykdxmmdhyvq4c0hysm9zyk4twxiwsjhpc3dlmzdese5hrk5hrluzr0zgbevxrgrtzmrwque3zwdltxm4vergnxn4d2hvbdnwzgoxczdtvhpud0f5ugpdrktkbtnnyxptymtgzwnmlvrramvxq1vuazziqng2swpvnkfqbgx3zgdmzg?oc=5\" target=\"_blank\">spurs vs crystal palace | how to watch, team news, kit colours, key information</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tottenham hotspur</font>",
+          "sourceName": "Tottenham Hotspur",
+          "sourceUrl": "https://www.tottenhamhotspur.com",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOGpTYnhvckRnRmNtcy04M0lKR19iYndoQ3JtOWxycTNRVTZVaVN6OHlSWndKOFh1SklYYkdxMmdhYVQ4c0hYSm9zYk4tWXIwSjhpc3dlMzdESE5HRk5HRlUzR0ZGbEVXRGRTZmRWQUE3ZWdLTXM4VERGNXN4d2hvbDNwZGoxczdtVHpUd0F5UGpDRktkbTNnYXpTYmtGZWNMLVRramVXQ1VuazZIQng2SWpVNkFqbGx3ZGdmZg?oc=5",
+          "publishedAt": "2026-10-30T07:00:00.000Z",
+          "ageDays": 17.11,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "team news | roberto’s positive update on ‘special’ maddison - tottenham hotspur",
+          "originalTitle": "Team news | Roberto’s positive update on ‘special’ Maddison - Tottenham Hotspur",
+          "fullText": "team news | roberto’s positive update on ‘special’ maddison - tottenham hotspur <a href=\"https://news.google.com/rss/articles/cbmiogfbvv95cuxnbmfzwhvis19wtdfndkitzudsnll1s2virty5c2m5dnvqmv83uld0wvdnoxvfq0fxmkx3se85zkvswe0xodvheuzzaujvsu1vwjliajvyenplvlhcm1v2vhc3ueg4nmfmrhvmm3i3dfn3qw5zu0wwq0lozxlpzfk0rhpnqwltaxd0uu0xcmpcmlbysvlabjhhu1zfajdur3phbfe?oc=5\" target=\"_blank\">team news | roberto’s positive update on ‘special’ maddison</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tottenham hotspur</font>",
+          "sourceName": "Tottenham Hotspur",
+          "sourceUrl": "https://www.tottenhamhotspur.com",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbmFZWHViS19wTDFndkItZUdsNll1S2ViRTY5c2M5dnVqMV83Uld0WVdnOXVfQ0FxMkx3SE85ZkVsWE0xODVHeUZzaUJVSU1VWjlIajVYenpLVlhCM1V2VHc3UEg4NmFMRHVMM3I3dFN3QW5ZU0wwQ0lOZXlPZFk0RHpnQWltaXd0UU0xcmpCMlBYSVlabjhhU1ZfajduR3pHbFE?oc=5",
+          "publishedAt": "2026-10-30T07:00:00.000Z",
+          "ageDays": 17.11,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "de zerbi on when tosin, bergvall, mudryk and savio could return - tottenham hotspur",
+          "originalTitle": "De Zerbi on when Tosin, Bergvall, Mudryk and Savio could return - Tottenham Hotspur",
+          "fullText": "de zerbi on when tosin, bergvall, mudryk and savio could return - tottenham hotspur <a href=\"https://news.google.com/rss/articles/cbmiqwfbvv95cuxqyklhzl9kqwvhothna2fjsefumk9fampts2tuu1lsdvpqdwrumlu5nnzrwmzsawhoaehkt1bpdm0zcvpzzg5xulbxzer0czzfnu5hbfvwdgl2wkrhqlbfbjr0ylzkqtcxclh0uxhinhq3t3vzczlscudravfvuxzmdtlieezta3l2ugvxtxvjv19vu0jvx1llclkztetzt181vgjemhpwzezwn3c?oc=5\" target=\"_blank\">de zerbi on when tosin, bergvall, mudryk and savio could return</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tottenham hotspur</font>",
+          "sourceName": "Tottenham Hotspur",
+          "sourceUrl": "https://www.tottenhamhotspur.com",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYklhZl9kQWVhOThNa2FJSEFUMk9FampTS2tuU1lsdVpQdWRuMlU5NnZRWmZsaWhoaEhkT1Bpdm0zcVpzZG5XUlBxZER0czZfNU5hbFVWdGl2WkRHQlBfbjR0YlZkQTcxclh0UXhINHQ3T3VzczlScUdRaVFVUXZMdTlIeEZTa3l2UGVXTXVJV19vU0JVX1lLclkzTEtZT181VGJEMHpWZEZwN3c?oc=5",
+          "publishedAt": "2026-10-31T07:00:00.000Z",
+          "ageDays": 16.11,
+          "category": "RETURN_FITNESS",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "training: eyes on everton - tottenham hotspur",
+          "originalTitle": "Training: Eyes on Everton - Tottenham Hotspur",
+          "fullText": "training: eyes on everton - tottenham hotspur <a href=\"https://news.google.com/rss/articles/cbmilafbvv95cuxqumjssvphqwfueghrcjk1nnliodveotbbdxp0cudoqkfla0thwuhanw1satronddmzhviujvut0lzejnbewrtlxzndel4r0jcshbnr0n4dwnzwgtkcutpmel5qk5eshvmugpfalnyrlhbb0xjbi1qmmdhznc2edfnrettsepjejnndhnnck1ec2y3m1ew?oc=5\" target=\"_blank\">training: eyes on everton</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tottenham hotspur</font>",
+          "sourceName": "Tottenham Hotspur",
+          "sourceUrl": "https://www.tottenhamhotspur.com",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUmJSSVphQWFueGhRcjk1NnlIODVEOTBBdXp0cUdOQkFLa0thWUhaNW1SaTRONDdMZHVIUjVUT0lzejNBeWRTLXZNdEl4R0JCSHBNR0N4dWNzWGtKcUtpMEl5Qk5ESHVMUGpFalNYRlhBb0xJbi1QMmdHZnc2eDFnREtTSEpjejNndHNNck1Ec2Y3M1Ew?oc=5",
+          "publishedAt": "2026-11-13T17:21:15.000Z",
+          "ageDays": 2.68,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "team news | udogie back, bergvall, savio, tosin out for palace clash - tottenham hotspur",
+          "originalTitle": "Team news | Udogie back, Bergvall, Savio, Tosin out for Palace clash - Tottenham Hotspur",
+          "fullText": "team news | udogie back, bergvall, savio, tosin out for palace clash - tottenham hotspur <a href=\"https://news.google.com/rss/articles/cbmirgfbvv95cuxpvjhhz0tozmczn2ftnhncawxiug9ddjrscthxtxjsqwf6czkttmfzzuzotlzxbkrnnlbmy29ib2nvdkzmv2nlmudoatbmrjr3vjr0chf1q2jhtjrxz3zix2y5qzhvnzhsbuq0eehrdzl4wnkzr1zkbwxuunfztfrpcknwm2xleej5dnpgseftofz5zfy2z2fgt1hyn2djovvpshdbwknuev9jsdbjunc?oc=5\" target=\"_blank\">team news | udogie back, bergvall, savio, tosin out for palace clash</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tottenham hotspur</font>",
+          "sourceName": "Tottenham Hotspur",
+          "sourceUrl": "https://www.tottenhamhotspur.com",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVjhhZ0toZmczN2FTNHNCaWxIUG9DdjRScThXTXJsQWF6czktTmFzZUZoTlZXbkRNNlBmY29Ib2NVdkZMV2NlMUdoaTBMRjR3VjR0cHF1Q2JhTjRxZ3ZIX2Y5QzhVNzhSbUQ0eEhRdzl4WnkzR1ZkbWxuUnFZTFRPckNWM2xLeEJ5dnpGSEFTOFZ5ZFY2Z2FGT1hyN2dJOVVPSHdBWkNueV9jSDBjUnc?oc=5",
+          "publishedAt": "2026-10-30T07:00:00.000Z",
+          "ageDays": 17.11,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "injury update | alice sombath - tottenham hotspur",
+          "originalTitle": "Injury update | Alice Sombath - Tottenham Hotspur",
+          "fullText": "injury update | alice sombath - tottenham hotspur <a href=\"https://news.google.com/rss/articles/cbmijgfbvv95cuxnbthbqurltdhpdwnqrxnuvwjrmwvlcupuc1joy1bobhzlmufksuphtzhvrw5nr3kzrejprkjragrly0tpb3zddzrhajzzmhg2es1eyuhid3fcdxgwdwt6c3nkny1hqs1mdhbunuphq3n0zlfdemnsck9vuexqd284ev9hmmtrd1rtclbpyznb?oc=5\" target=\"_blank\">injury update | alice sombath</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tottenham hotspur</font>",
+          "sourceName": "Tottenham Hotspur",
+          "sourceUrl": "https://www.tottenhamhotspur.com",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbThBQURLTDhpdWNQRXNUVWJrMWVLcUpUc1JoY1BObHZlMUFKSUpHTzhVRW5nR3kzREJpRkJraGRlY0tpb3ZDdzRHajZZMHg2eS1EYUhid3FCdXgwdWt6c3NkNy1HQS1MdHBuNUphQ3N0ZlFDemNSck9vUExQd284eV9hMmtRd1RtclBpYzNB?oc=5",
+          "publishedAt": "2026-10-27T07:00:00.000Z",
+          "ageDays": 20.11,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "black friday - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "confirmed line-ups | spurs vs crystal palace, players cup - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "retro - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "confirmed line-ups: leeds vs spurs - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "spurs vs everton, wsl | how to watch, team news, kit colours, key information - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "confirmed line-ups: spurs vs crystal palace - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "birmingham city vs spurs, wsl | how to watch, team news, kit colours, key information - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "team news | roberto’s positive update on ‘special’ maddison - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "brentford v tottenham team news: sangaré set for premier league debut - brentford fc",
+          "sourceName": "Brentford FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "calum mcfarlane confirms chelsea team news for tottenham hotspur visit | news | official site - chelsea football club",
+          "sourceName": "Chelsea Football Club",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "team news | udogie back, bergvall, savio, tosin out for palace clash - tottenham hotspur",
+          "sourceName": "Tottenham Hotspur",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "read arne slot's analysis of liverpool's 2-1 win at - liverpool fc",
+          "sourceName": "Liverpool FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "R12: 2 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

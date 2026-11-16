@@ -1,0 +1,12 @@
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+const root = path.resolve(__dirname, '..');
+const a = fs.readFileSync(path.join(root,'public/app.js'),'utf8');
+const b = fs.readFileSync(path.join(root,'backend/public/app.js'),'utf8');
+if (a !== b) throw new Error('Frontend mirrors non allineati');
+const markers = ['calcioDecisionCertificationFromBet','AFFIDABILITÀ','Valore economico separato','DECISIONE CERTIFICATA','Mercato/outcome','Soglie live'];
+const missing = markers.filter(m => !a.includes(m));
+if (missing.length) throw new Error(`Marker frontend mancanti: ${missing.join(', ')}`);
+console.log(JSON.stringify({ success:true, patch:'BETTING_PATCH_19_CALCIO_DECISION_IDENTITY_RELIABILITY_CERTIFICATION', mirrorsAligned:true, bytes:Buffer.byteLength(a), sha256:crypto.createHash('sha256').update(a).digest('hex'), markers }, null, 2));

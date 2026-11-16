@@ -1,0 +1,32 @@
+{
+  "version": "BETTINGAPP_R16_CALCIO_BATCH_STABILITY_20261108",
+  "installedAt": "2026-11-08T19:57:09.574Z",
+  "dbSha256": "d3fdc197a57c9882264f9502be9d8deb69bdef09667840ae910c8a82b6f53c18",
+  "backupRelative": ".bettingapp_r16_rollback\\2026-11-08T19-57-06-803Z",
+  "files": [
+    {
+      "path": "backend/public/app.js",
+      "beforeSha256": "2559c09bc75c7a6dfb8bbbbede900f743e8948cebff40e2c418845ec9191eea2",
+      "afterSha256": "ef1036aa790507ab73aa636b15597595dcccbcadc14cc0024c86053d948191b6",
+      "size": 883873
+    },
+    {
+      "path": "public/app.js",
+      "beforeSha256": "6f7c056c81dec357998530be7db3be4c8f6d2a214e57be87ceb822a1d3dccd6d",
+      "afterSha256": "07e68debbaf3a2aa60265876af97d3cdacbccc5305d65dae8936f3cf7fd2875f",
+      "size": 880787
+    },
+    {
+      "path": "backend/public/index.html",
+      "beforeSha256": "9fac676109591931ad362d3536ab17a1f0dc6fa1942083ea9b046ea2dd746c45",
+      "afterSha256": "5bc2269bc03248ce0295c3265a28f68fd186b0efbaf564c86e35e3b55c21432c",
+      "size": 194448
+    },
+    {
+      "path": "public/index.html",
+      "beforeSha256": "1be6994096f5a1403fcc32c934a8fa8976b853a81a05f92cbf4d399ee2f56c02",
+      "afterSha256": "364ecdbbb4555943198244c55915a6dc2b6460e9babbf0243378b6adf2424385",
+      "size": 194152
+    }
+  ]
+}

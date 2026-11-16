@@ -1,0 +1,15 @@
+'use strict';
+const assert=require('assert');
+const p=require('../backend/tennisH2HWeightPolicyPatch40');
+let checks=0;const check=(v)=>{assert.ok(v);checks++};
+check(p.apply(2.5,1).adjustmentPp===0);
+check(p.apply(2.5,2).adjustmentPp===0.75);
+check(p.apply(-2.5,3).adjustmentPp===-0.75);
+check(p.apply(2.5,4).adjustmentPp===1.5);
+check(p.apply(-2.5,6).adjustmentPp===-1.5);
+check(p.apply(2.5,7).adjustmentPp===2.5);
+check(p.apply(0.4,2).adjustmentPp===0.4);
+check(p.apply(9,50).adjustmentPp===2.5);
+check(p.apply(1,2).stakeAuthority===false);
+check(p.POLICY.length===4);
+console.log(JSON.stringify({success:true,checks,version:p.VERSION,policy:p.POLICY}));

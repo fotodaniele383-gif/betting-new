@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs');const path=require('path');const root=path.resolve(process.argv.includes('--root')?process.argv[process.argv.indexOf('--root')+1]||'.':process.argv[2]||path.join(__dirname,'..'));const read=r=>fs.readFileSync(path.join(root,r),'utf8');
+const server=read('backend/server.js'),tennis=read('backend/server.tennis.js'),allocator=read('backend/calcioBatchPortfolioAllocator.js'),idx=read('public/index.html'),bidx=read('backend/public/index.html');const pkg=JSON.parse(read('package.json'));const checks=[];const c=(n,o,d=null)=>checks.push({name:n,ok:Boolean(o),details:d});
+c('Main server require Patch56',server.includes("require('./unifiedCrossSportPortfolioRiskAuthorityPatch56')"));
+c('Tennis server require Patch56',tennis.includes("require('./unifiedCrossSportPortfolioRiskAuthorityPatch56')"));
+c('Calcio allocator require Patch56',allocator.includes("require('./unifiedCrossSportPortfolioRiskAuthorityPatch56')"));
+c('Schema inizializzato main',server.includes('unifiedCrossSportPortfolioRiskAuthorityPatch56.ensureSchema(db)'));
+c('Schema inizializzato Tennis',tennis.includes('unifiedCrossSportPortfolioRiskAuthorityPatch56.ensureSchema(db)'));
+c('Endpoint portfolio globale',server.includes("'/api/portfolio-risk-authority'"));
+c('Endpoint portfolio Tennis',server.includes("'/api/portfolio-risk-authority/tennis'"));
+c('Endpoint portfolio Calcio',server.includes("'/api/portfolio-risk-authority/calcio'"));
+c('Tennis health Patch56',tennis.includes("'/portfolio-risk-authority-health'"));
+c('Tennis mantiene paper stake',tennis.includes("step64Set('stake', patch39FinalStake)")&&tennis.includes('realMoneyPortfolioRisk: patch56PortfolioRiskDecision'));
+c('Tennis persiste campi separati',tennis.includes('cross_sport_portfolio')||tennis.includes('toPersistenceFields(patch56PortfolioRiskDecision)'));
+c('Calcio mantiene finalStake paper',server.includes('invested: finalStake.toFixed(2)')&&server.includes('real_money_executable_stake: patch56PortfolioRiskDecision.realExecutableStake'));
+c('Batch allocator persiste decisione',allocator.includes('persistDecision(db, patch56PortfolioRiskDecision)'));
+c('Batch allocator non sostituisce operationalStake',allocator.includes('proposedStake: Math.max(0, num(predictionIndex.operationalStake, 0))'));
+c('Frontend marker Patch56',idx.includes('data-patch56-cross-sport-portfolio-risk="true"'));
+c('Frontend corrente future-compatible Patch56',idx.includes('app.js?v=patch56-cross-sport-portfolio-risk-authority')||idx.includes('app.js?v=patch57-production-security-safe-release'));
+c('Frontend mirror',idx===bidx);
+c('Package Patch56 future-compatible',Number(pkg.version.split('.')[1])>=43,{actual:pkg.version});
+c('Script verify Patch56',Boolean(pkg.scripts?.['verify:tennis:patch56']));
+c('Script audit Patch56',Boolean(pkg.scripts?.['audit:tennis:patch56']));
+const failed=checks.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,patch:'56',checks:checks.length,details:checks},null,2));process.exit(failed.length?1:0);

@@ -1,0 +1,28 @@
+BETTINGAPP MANUALE PULITA - MIGRAZIONE NON DISTRUTTIVA - 05/11/2026
+
+1. Prima di installare, arresta TUTTE le finestre del server SAFE13 (Ctrl+C), soprattutto porta 3188.
+2. Esegui INSTALLA_CARTELLA_PULITA.cmd dallo ZIP estratto.
+3. La procedura copia l'app in una NUOVA cartella sorella del clone:
+   C:\Users\pc-user\Documents\Personale\BettingApp\BettingApp_MANUALE_PULITO
+   NON SOVRASCRIVE una cartella con questo nome gia esistente.
+4. Copia fisicamente i file node_modules, senza junction che dipendono dal clone.
+5. Verifica SQL in sola lettura e salva un backup SQLite consistente nella nuova cartella.
+6. Mantiene .env e, se esistono, le credenziali DPAPI cifrate, senza mostrarle.
+7. Elimina dalla COPIA soltanto test, report zip/log/temp e directory superflue; i moduli audit importati dall'app RESTANO.
+8. Esegui VERIFICA_BETTING.bat; poi AVVIA_BETTING.bat.
+9. Il BAT apre automaticamente http://127.0.0.1:3188 quando il server supera il health check.
+10. Controlla a ogni avvio la cache CSV Serie A di Football-Data; acquisisce dati freschi soltanto se la cache e scaduta.
+    AGGIORNA_DATI.bat forza un refresh manuale, sempre solo nella cache.
+    Le quote live sono recuperate dalle analisi manuali; non viene avviato uno scheduler automatico.
+11. Settlements automatici, configurazione API POST, altri write e allocazione batch restano bloccati:
+    HTTP 423 SAFE13_MANUAL_ONLY sara analizzato dopo la migrazione; NON aggirare il guard.
+12. Non vi sono garanzie che la nuova cartella avvii Windows prima della tua prova reale.
+
+IMPORTANTE SULLA CANCELLAZIONE:
+NON eliminare BettingApp_SAFE_20261013_CLONE durante o subito dopo la copia.
+Solo quando la nuova cartella funziona autonomamente con Calcio/Tennis e le chiavi,
+e dopo aver verificato che non punta a file del clone, potrai archiviare il clone.
+Meglio RINOMINARLO prima come _DA_ARCHIVIARE per alcuni giorni invece di eliminarlo subito.
+Il database originale nel clone, i backup precedenti e le altre cartelle BettingApp NON saranno cancellati dall'installer.
+
+Dopo prova invia ESITO_MIGRAZIONE.txt (NON .env o credenziali).

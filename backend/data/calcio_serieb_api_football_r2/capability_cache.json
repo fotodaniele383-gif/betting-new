@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "seasons": {
+    "2025": {
+      "allowed": false,
+      "reason": "PLAN_SEASON_UNAVAILABLE",
+      "leagueId": 135,
+      "seasonStart": 2025,
+      "availableSeasons": [
+        2022,
+        2023,
+        2024
+      ],
+      "apiErrors": [
+        "plan: Free plans do not have access to this season, try from 2022 to 2024."
+      ],
+      "observedAt": "2026-10-04T17:34:55.616Z",
+      "expiresAt": "2026-10-05T17:34:55.616Z"
+    },
+    "2026": {
+      "allowed": false,
+      "reason": "PLAN_SEASON_UNAVAILABLE",
+      "leagueId": 135,
+      "seasonStart": 2026,
+      "availableSeasons": [
+        2022,
+        2023,
+        2024
+      ],
+      "apiErrors": [
+        "plan: Free plans do not have access to this season, try from 2022 to 2024."
+      ],
+      "observedAt": "2026-11-05T12:15:45.432Z",
+      "expiresAt": "2026-11-06T12:15:45.432Z"
+    }
+  }
+}

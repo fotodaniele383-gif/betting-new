@@ -1,0 +1,19 @@
+{
+  "version": "BETTINGAPP_R8_UI_SAFE13_SCOPED_READONLY_20261111",
+  "previousCore": "BETTINGAPP_MAIN_R6_PROMPT_CALCIO_V63_NO_MINIMAX_WIDGET_20261110",
+  "dbModified": false,
+  "stakeModified": false,
+  "legacySchedulerModified": false,
+  "autoBetEnabled": false,
+  "autoSettlementEnabled": false,
+  "installedAt": "2026-11-11T10:20:19.302Z",
+  "files": {
+    "APRI_INTERFACCIA_R8.cmd": "892bfcf925da1d455936db0e7b6e37881750ae6ad5ef586e645d41d9dbe332fa",
+    "AVVIA_MONITOR_R8_READONLY.cmd": "e6adcfa93c367c3f6552e67e53000bf0f0217b88fda005ee66d8b429db3534b9",
+    "STATO_SAFE13_R8.cmd": "efa761bc0cbd0a12536c535bd96a1ffc279f8bcd22206c95b379139e1618214e",
+    "addons/safe13-r8/monitor.cjs": "251371e8fcd15106c060cfc160dc8256d4eb04867a18a539ff9c45c57bf82bc0",
+    "addons/safe13-r8/policy.cjs": "bfa51731b681806a263aa6ade17646e99d66360201243188d569ac9c8376d26e",
+    "backend/public/index-r8.html": "a80a89cf5f66560e9ab1c845195cb7496ae48e06af36a68d2eda9ed95f985b83",
+    "public/index-r8.html": "a80a89cf5f66560e9ab1c845195cb7496ae48e06af36a68d2eda9ed95f985b83"
+  }
+}

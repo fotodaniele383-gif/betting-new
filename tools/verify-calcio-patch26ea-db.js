@@ -1,0 +1,11 @@
+'use strict';
+const assert = require('assert');
+const path = require('path');
+const Database = require('./sqlite-compat');
+const db = new Database(process.env.BETTING_DB_PATH || path.join(__dirname, '..', 'backend', 'database_betting.db'), { readonly: true });
+const cols = new Set(db.prepare('PRAGMA table_info(ai_forward_test)').all().map(r => r.name));
+['calcio_deepscan_final_state_version','calcio_deepscan_final_state_action','calcio_deepscan_final_state_score','calcio_deepscan_final_state_audit','calcio_deepscan_final_report_json'].forEach(c => assert(cols.has(c), c));
+const tennis = db.prepare("SELECT COUNT(*) n FROM ai_forward_test WHERE UPPER(COALESCE(sport_type,''))='TENNIS'").get().n;
+assert(tennis > 0);
+db.close();
+console.log(JSON.stringify({ success: true, checks: 6, tennis }, null, 2));

@@ -1,0 +1,25 @@
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const root = path.resolve(process.argv[2] || path.join(__dirname, '..'));
+const checks = [];
+function check(name, ok, details = null) { checks.push({ name, success: Boolean(ok), details }); }
+const registry = require(path.join(root, 'backend', 'tennisPatchRegistry'));
+const perf = require(path.join(root, 'backend', 'tennisHistoricalValidationPerformance'));
+const progression = require(path.join(root, 'backend', 'tennisProgramProgressionAudit'));
+const server = fs.readFileSync(path.join(root, 'backend', 'server.tennis.js'), 'utf8');
+const app = fs.readFileSync(path.join(root, 'public', 'app.js'), 'utf8');
+const index = fs.readFileSync(path.join(root, 'public', 'index.html'), 'utf8');
+const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
+check('Registry Patch 17 compatibile', Number(registry.TENNIS_CURRENT_PATCH_VERSION) >= 17 && registry.TENNIS_PATCH_REGISTRY_VERSION === `TENNIS_PATCH_REGISTRY_V${registry.TENNIS_CURRENT_PATCH_VERSION}` && registry.PATCHES.some(item => item.version === '17'));
+check('Patch 16 preservata', registry.PATCHES.some(item => item.version === '16' && String(item.status).startsWith('ACTIVE')));
+check('Contratto performance', perf.TENNIS_HISTORICAL_VALIDATION_PERFORMANCE_VERSION === 'TENNIS_HISTORICAL_VALIDATION_PERFORMANCE_V1_PATCH17');
+check('Progression Guard Patch 17 compatibile', ['TENNIS_PROGRAM_PROGRESSION_AUDIT_V5_PATCH17', 'TENNIS_PROGRAM_PROGRESSION_AUDIT_V6_PATCH18'].includes(progression.TENNIS_PROGRAM_PROGRESSION_AUDIT_VERSION));
+for (const route of ['/historical-validation-performance-health','/historical-validation-performance','/historical-validation-performance-refresh']) check(`Endpoint ${route}`, server.includes(route));
+check('UI Patch 17 compatibile', /Patch 1–(?:17|18)/.test(index) && index.includes('data-tennis-patch="17"') && app.includes('PATCH17_TENNIS_HISTORICAL_VALIDATION_PERFORMANCE_UI'));
+check('Frontend byte-identici', fs.readFileSync(path.join(root,'public/app.js')).equals(fs.readFileSync(path.join(root,'backend/public/app.js'))) && fs.readFileSync(path.join(root,'public/index.html')).equals(fs.readFileSync(path.join(root,'backend/public/index.html'))));
+check('Script Patch 17', Boolean(pkg.scripts?.['test:tennis:patch17'] && pkg.scripts?.['verify:tennis:patch17:db'] && pkg.scripts?.['audit:tennis:historical-validation-performance']));
+check('Nessuna autorità production', /automaticPromotion:\s*false/.test(fs.readFileSync(path.join(root,'backend','tennisHistoricalValidationPerformance.js'),'utf8')) && !server.includes('PATCH17_APPLY_MODEL_WEIGHT'));
+const report = { success: checks.every(item => item.success), patch: '17', version: perf.TENNIS_HISTORICAL_VALIDATION_PERFORMANCE_VERSION, checks, generatedAt: new Date().toISOString() };
+const dir = path.join(root,'audit_patch17'); fs.mkdirSync(dir,{recursive:true}); fs.writeFileSync(path.join(dir,'patch17_verification_report.json'),JSON.stringify(report,null,2));
+console.log(JSON.stringify(report,null,2)); if (!report.success) process.exit(2);

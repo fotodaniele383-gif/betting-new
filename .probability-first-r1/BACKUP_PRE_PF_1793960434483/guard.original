@@ -1,0 +1,36 @@
+'use strict';
+// SAFE13_MANUAL_BATCH_R1: only explicit manual-paper routes; never scheduler/settlement/admin.
+const ALLOWED_POST = new Set([
+  '/api/analyze', '/api/calcio/deepscan', '/api/manual-deepscan',
+  '/api/tennis/analyze', '/api/tennis/deepscan',
+  '/api/calcio/portfolio/finalize-batch'
+]);
+const FINALIZE = '/api/calcio/portfolio/finalize-batch';
+const BANNED_GET = /(?:^|\/)(?:refresh|import|sync|trigger|force|settle|reconcile|execute|migrate|send|bulk-action|finalize-batch)(?:\/|$)/;
+function routeStatus(req) {
+  const method = String(req.method || '').toUpperCase();
+  const route = (String(req.path || req.url || '').split('?')[0].toLowerCase().replace(/\/+$/, '') || '/');
+  if (!route.startsWith('/api/')) return {allow: true};
+  if (['GET','HEAD'].includes(method)) {
+    return BANNED_GET.test(route) ? {allow:false,status:423,code:'SAFE13_MANUAL_GET_BLOCKED'} : {allow:true};
+  }
+  if (method === 'OPTIONS') return {allow: true};
+  if (method !== 'POST' || !ALLOWED_POST.has(route)) return {allow:false,status:423,code:'SAFE13_MANUAL_ONLY'};
+  if (route !== FINALIZE) return {allow:true};
+  if (process.env.SAFE13_MANUAL_PAPER !== '1' || !process.env.BETTING_DB_PATH) return {allow:false,status:423,code:'SAFE13_BATCH_REQUIRES_ISOLATED_MANUAL_PAPER'};
+  const port = String(process.env.PORT || '3188');
+  const hosts = new Set([`127.0.0.1:${port}`,`localhost:${port}`]);
+  const host = String((req.headers || {}).host || '').toLowerCase();
+  const origin = String((req.headers || {}).origin || '').toLowerCase();
+  if (!hosts.has(host) || (origin && !hosts.has(origin.replace(/^http:\/\//,'').replace(/\/$/,''))) || (origin && !origin.startsWith('http://')))
+    return {allow:false,status:403,code:'SAFE13_MANUAL_CROSS_ORIGIN_BLOCKED'};
+  const remote = String(req.socket?.remoteAddress || req.connection?.remoteAddress || '');
+  if (remote && !['127.0.0.1','::1','::ffff:127.0.0.1'].includes(remote)) return {allow:false,status:403,code:'SAFE13_NON_LOOPBACK_DENIED'};
+  return {allow:true};
+}
+function middleware(req,res,next) {
+  const decision = routeStatus(req);
+  if (decision.allow) return next();
+  return res.status(decision.status).json({success:false,code:decision.code,error:decision.code,message:'SAFE13: richieste automatiche, settlement, gestione bankroll e configurazioni restano bloccate. Solo la finalizzazione del batch Calcio manuale è consentita.'});
+}
+module.exports = {routeStatus,middleware,ALLOWED_POST,FINALIZE};

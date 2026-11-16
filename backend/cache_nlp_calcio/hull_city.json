@@ -1,0 +1,284 @@
+{
+  "timestamp": 1794822118000,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 39.6,
+    "sourceCoverageConfidence": 91,
+    "matchImpactConfidence": 39.6,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 60,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 4
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Hull City",
+      "officialDomain": "wearehullcity.co.uk",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 39.6,
+      "coverageConfidence": 91,
+      "matchImpactConfidence": 39.6,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 737,
+          "received": 3,
+          "relevant": 1,
+          "fresh": 3,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:57.643Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1090,
+          "received": 15,
+          "relevant": 5,
+          "fresh": 6,
+          "usable": 2,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:57.996Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 690,
+          "received": 6,
+          "relevant": 1,
+          "fresh": 2,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:57.596Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 24,
+        "relevantArticles": 7,
+        "usableArticles": 4,
+        "uniqueArticles": 4,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 4,
+        "officialArticles": 1,
+        "trustedArticles": 0,
+        "independentChannels": 3,
+        "independentPublishers": 3,
+        "excludedEvidence": 20,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "team news: arsenal (a) - www.wearehullcity.co.uk",
+          "originalTitle": "Team News: Arsenal (A) - www.wearehullcity.co.uk",
+          "fullText": "team news: arsenal (a) - www.wearehullcity.co.uk <a href=\"https://news.google.com/rss/articles/cbmif0fvx3lxte5ftdv3ntz3oevuwxr0ves0zujwa0zptc1uwjnpnxlrbhmzqxvkafpsuwc4z3lushzvynn3wwtzskizd09yrlvxcvljsmnqsxl6ckdkutfpzfjhtuzwnkjhynlobkjmbhrtnnnxcgnxqunlsuq2djl3mfhssee4cza?oc=5\" target=\"_blank\">team news: arsenal (a)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.wearehullcity.co.uk</font>",
+          "sourceName": "www.wearehullcity.co.uk",
+          "sourceUrl": "https://www.wearehullcity.co.uk",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FTDV3NTZ3OEVUWXR0VEs0ZUJwa0ZpTC1UWjNpNXlrbHMzQXVKaFpSUWc4Z3lUSHZVYnN3WWtZSkIzd09YRlVXcVljSmNQSXl6ckdKUTFpZFJhTUZWNkJhYnlobkJMbHRtNnNXcGNXQUNlSUQ2djl3MFhsSEE4czA?oc=5",
+          "publishedAt": "2026-11-07T14:35:45.000Z",
+          "ageDays": 8.8,
+          "category": "LINEUP",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        },
+        {
+          "title": "arsenal vs hull city – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Arsenal vs Hull City – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "arsenal vs hull city – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihgfbvv95cuxqmuy5uvvqd29uze1xawtiz0lzmlhvvkpjzjlwzk82vdjfr1fiamxjz1byauo3rwlmbmk3yulot2flt1phsgx1t1u4avfbt2m5adu4zfprtmcwntzbamnzmxznutjsafnsodrnszhbetd6nktpwhv2bfrdrfnmlvlfvupadjffqq?oc=5\" target=\"_blank\">arsenal vs hull city – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMUY5UVVQd29UZE1xaWtIZ0lZMlhvVkpjZjlWZk82VDJfR1FIamxjZ1BYaUo3RWlmbmk3YUloT2FlT1phSGx1T1U4aVFBT2M5aDU4ZFpRTmcwNTZBamNZMXZNUTJsaFNsODRnSzhBeTd6NktpWHV2bFRDRFNMLVlfVUpadjFFQQ?oc=5",
+          "publishedAt": "2026-11-06T08:00:00.000Z",
+          "ageDays": 10.07,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "saliba missing from arsenal squad against hull city despite fitness return - yahoo sports",
+          "originalTitle": "Saliba Missing From Arsenal Squad Against Hull City Despite Fitness Return - Yahoo Sports",
+          "fullText": "saliba missing from arsenal squad against hull city despite fitness return - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmijgfbvv95cuxqylnpslpxyzjld05rqxpim0djt2q4aec4adzyce5imtj1oejqdfnzvuw1qm9foez1zk51z3rzx3vxvejnm1bevtdcvgxpynlinxr1rja5m1jeymhhutlezjnpsmxumhhiexhkme5lcvdcx2tcrfpkcv9kmtzuexkwd3cyuznom1qzmni4bzhn?oc=5\" target=\"_blank\">saliba missing from arsenal squad against hull city despite fitness return</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYlNPSlpxYzJLd05rQXpIM0dJT2Q4aEc4aDZYcE5IMTJ1OEJQdFNZVUw1Qm9FOEZ1Zk51Z3RZX3VXVEJnM1BEVTdCVGxPYnliNXR1RjA5M1JEYmhHUTlEZjNPSmxUMHhIeXhKME5lcVdCX2tCRFpkcV9kMTZUeXkwd3cyUzNoM1QzMnI4bzhn?oc=5",
+          "publishedAt": "2026-11-07T14:20:00.000Z",
+          "ageDays": 8.81,
+          "category": "RETURN_FITNESS",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "arsenal-hull city in diretta oggi: dove vedere la partita in tv e streaming?",
+          "originalTitle": "Arsenal-Hull City in diretta oggi: dove vedere la partita in TV e streaming?",
+          "fullText": "arsenal-hull city in diretta oggi: dove vedere la partita in tv e streaming? scopri dove vedere arsenal-hull city in diretta tv e streaming. orario esatto del calcio d’inizio, notizie sulle formazioni, stato di forma e precedenti della sfida di premier league all’emirates stad ...",
+          "sourceName": "Calciomercato.com",
+          "sourceUrl": "",
+          "link": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6afacfe66c7f47e19d82f2a93ac98068&url=https%3a%2f%2fwww.calciomercato.com%2fnotizie%2farsenal-hull-city-in-diretta-oggi-dove-vedere-la-partita-in-tv-e-streaming%2fblt6dc6c2c22224d219&c=15525319832286684887&mkt=it-it",
+          "publishedAt": "2026-11-06T22:46:00.000Z",
+          "ageDays": 9.46,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "BING_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "BING_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "hughes: back with a smile on my face - www.wearehullcity.co.uk",
+          "sourceName": "www.wearehullcity.co.uk",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "iroegbunam post ipswich (h): amazing feeling to score - www.wearehullcity.co.uk",
+          "sourceName": "www.wearehullcity.co.uk",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hull city vs brighton: predictions, picks, odds & lineups - squawka",
+          "sourceName": "Squawka",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "preview | arsenal vs hull city: team news, lineups, predictions (premier league 07/11) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "team news: arteta makes six changes for visit of hull city - arsenal.com",
+          "sourceName": "Arsenal.com",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hull city v brentford team news: jannik schuster, mathias jensen and nathan collins latest - brentford fc",
+          "sourceName": "Brentford FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "hull city vs brighton: predictions, picks, odds & lineups - squawka",
+          "sourceName": "Squawka",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hull city v brentford - match preview, kick-off time and more - brentford fc",
+          "sourceName": "Brentford FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "brentford team news and predicted xi vs hull city: jannik schuster returns - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "confirmed hull city v brentford team news: andrews makes three changes - brentford fc",
+          "sourceName": "Brentford FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | hull city vs ipswich town: team news, lineups, predictions (premier league 31/10) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "preview | hull city vs brentford: team news, lineups, predictions (premier league 25/10) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

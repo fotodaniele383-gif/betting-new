@@ -1,0 +1,13 @@
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const assert = require('assert');
+const root = path.resolve(process.argv[2] || path.join(__dirname, '..'));
+const publicApp = fs.readFileSync(path.join(root, 'public', 'app.js'));
+const backendApp = fs.readFileSync(path.join(root, 'backend', 'public', 'app.js'));
+assert(publicApp.equals(backendApp), 'public/app.js e backend/public/app.js non sono mirror');
+const text = publicApp.toString('utf8');
+assert(text.includes('Classe dati'), 'Classe dati Kelly non visibile');
+assert(text.includes('calcio_data_class'), 'Binding classe dati assente');
+assert(text.includes("'APPROVATA CON CAP','APPROVATA'"), 'Categoria APPROVATA Tennis assente');
+console.log(JSON.stringify({ success: true, patch: 'BETTING_PATCH_14_DATA_AUTHORITY_KELLY_GATE', mirrorBytes: publicApp.length, dataClassVisible: true, tennisApprovedVisible: true }, null, 2));

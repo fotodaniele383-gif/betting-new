@@ -1,0 +1,18 @@
+{
+  "version": "R14_BOOKMAKER_INDEPENDENT_TWO_SINGLES_20261108",
+  "project": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "files": [
+    "backend/calcioAdaptiveDeepScanR10.js",
+    "backend/calcioIndependentAiR11.js",
+    "backend/calcioSourceIntelligence.js",
+    "backend/calcioProfessionalGuard.js",
+    "backend/calcioXgProviderFailoverAudit16dR3R2.js",
+    "backend/deepScanCalcio.js",
+    "backend/calcioDeepScanFinalState.js",
+    "backend/public/app.js",
+    "backend/public/index.html",
+    "public/app.js",
+    "public/index.html"
+  ],
+  "installedAt": "2026-11-08T15:42:48.171Z"
+}

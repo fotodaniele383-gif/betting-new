@@ -1,0 +1,19 @@
+{
+  "timestamp": 1793883965927,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 1,
+  "totalGames": 133,
+  "isVoid": false,
+  "source": "STEP58_WEB_FALLBACK_SCORE_GUARDED",
+  "confidence": 0.9,
+  "step107WeakWinnerSide": true,
+  "observedAt": "2026-11-05T13:06:05.926Z",
+  "sourceEventId": "WEB:bb825ca85fc83b9451d5",
+  "rawEvidence": {
+    "query": "blockx trungelliti tennis score 2026-09-02 result",
+    "matchDate": "2026-09-02",
+    "excerpt": "alexander blockx marco trungelliti live score and h2h results - sofascore alexander blockx marco trungelliti live score starts on 3 sept 2026 at 19 20 utc time at court 5 stadium new york city usa in us open new york usa atp. alexander blockx vs marco trungelliti us open 2026 result alexander blockx vs marco trungelliti at us open 2026 round of 64 men s singles the 6-3 6-2 3-6 6-1 result the box score the hard-court graphic and a recap. alexander blockx vs marco trungelliti round 2 - tennis.com alexander blockx vs marco trungelliti round 2 us open live score statistics and broadcast info on tennis.com. marco trungelliti vs alexander blockx result score stats 2026 us open alexander blockx defeated marco trungelliti 6-3 6-2 3-6 6-1 in the 2026 us open men s singles round 2. view the set-by-set score match length court and available player statistics. a.blockx beats m.trungelliti - u.s. open - new york 2026 - score ... alexander blockx defeated marco trungelliti result in stats h2h live tennis score progression and draw results highlights alexander blockx beat marco trungelliti us open 2026 alexander blockx beat marco trungelliti at us open 2026 round of 64. full match statistics and "
+  },
+  "score": "6-3 6-2 3-6 6-1 6-3 6-2 3-6 6-1 6-3 6-2 3-6 6-1 3-6 2-6 6-3 1-6 26-9",
+  "note": "Risultato da web fallback: classificato PROPOSED da Patch 5; non chiude automaticamente senza fonte strutturata/certificata."
+}

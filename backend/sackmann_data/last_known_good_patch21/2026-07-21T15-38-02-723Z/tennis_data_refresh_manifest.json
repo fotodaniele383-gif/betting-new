@@ -1,0 +1,49 @@
+{
+  "version": "TENNIS_PLAYER_DATA_MANIFEST_V3_PATCH21",
+  "refreshVersion": "TENNIS_PLAYER_DATA_REFRESH_V3_PATCH21",
+  "operationId": "PATCH21_CLI_1784532754915",
+  "lastAttemptAt": "2026-07-20T07:32:34.916Z",
+  "lastSuccessAt": "2026-07-20T07:32:34.916Z",
+  "status": "SUCCESS",
+  "dataDir": "C:\\Users\\pc-user\\OneDrive\\Personale\\BettingApp\\BettingApp\\backend\\sackmann_data",
+  "sources": [
+    {
+      "id": "ATP_MAIN",
+      "providerId": "TENNISMYLIFE_BULK",
+      "localFile": "atp_matches_2026.csv",
+      "validRows": 1701,
+      "latestMatchAt": "2026-07-12T12:00:00.000Z",
+      "sha256": "68044c3e23820a6f6b382def3cef0eca15863ea87884a365ca5744564609b1a0"
+    },
+    {
+      "id": "ATP_QUAL_CHALL",
+      "providerId": "TENNISMYLIFE_BULK",
+      "localFile": "atp_matches_challenger_2026.csv",
+      "validRows": 5062,
+      "latestMatchAt": "2026-07-13T12:00:00.000Z",
+      "sha256": "ec8761bc9c20059d4da9ac6babc77a40887e2c7fe7e86130070886ed3ee1b964"
+    },
+    {
+      "id": "WTA_MAIN",
+      "providerId": "LAST_KNOWN_GOOD",
+      "localFile": "wta_matches_2026.csv",
+      "validRows": 1295,
+      "latestMatchAt": "2026-05-25T12:00:00.000Z",
+      "sha256": "8fea203e3f4e731308b9ed2845059818d400aa6176c801279b24e846569e9d97"
+    }
+  ],
+  "aggregate": {
+    "fileCount": 9,
+    "matchCount": 31912,
+    "playerCount": 2004,
+    "earliestMatchAt": "2024-01-01T12:00:00.000Z",
+    "latestMatchAt": "2026-07-13T12:00:00.000Z",
+    "rejectedRows": 124,
+    "duplicateRows": 0
+  },
+  "networkUsed": false,
+  "allowlistedOnly": true,
+  "atomicActivation": true,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\OneDrive\\Personale\\BettingApp\\BettingApp\\backend\\sackmann_data\\last_known_good_patch21\\2026-07-20T07-32-34-916Z",
+  "multiProvider": true
+}

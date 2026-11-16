@@ -1,0 +1,23 @@
+{
+  "operationId": "CALCIO_FD_F1_1788505727239",
+  "fetchedAt": "2026-09-04T07:08:35.378Z",
+  "lastSuccessAt": "2026-09-04T07:08:35.378Z",
+  "source": "NETWORK",
+  "season": "2627",
+  "url": "https://www.football-data.co.uk/mmz4281/2627/F1.csv",
+  "leagueKey": "ligue_1",
+  "leagueName": "Ligue 1",
+  "code": "F1",
+  "attemptedSeasons": [
+    "2627"
+  ],
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "sha256": "7fa9ed3abda5097f4fd40d6cd4d2968bb7f8446ab583fadb1a4e470a18caf95f",
+  "validRows": 19,
+  "rejectedRows": 0,
+  "earliestMatchAt": "2026-08-21T12:00:00.000Z",
+  "latestMatchAt": "2026-09-03T12:00:00.000Z",
+  "sizeBytes": 9564,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\OneDrive\\Personale\\BettingApp\\BettingApp\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_F1_1788505727239"
+}

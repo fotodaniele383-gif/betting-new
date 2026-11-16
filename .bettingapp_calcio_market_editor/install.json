@@ -1,0 +1,53 @@
+{
+  "version": "CALCIO_ASIAN_EDITOR_DEEPSCAN_PROMPT_H_V1_20261109",
+  "files": [
+    {
+      "rel": "AVVIA_EDITOR_CALCIO.cmd",
+      "sha": "ede80bae53d8305c2c03b446a90578c08017a9adc6076408c52b7bcdaffc1f6b"
+    },
+    {
+      "rel": "addons/calcio-editor/core.js",
+      "sha": "cbce46f5a7bb90d528eb8500b6836166375c927efdeac77ad13f4576327e5fc5"
+    },
+    {
+      "rel": "addons/calcio-editor/deepscan-worker.cjs",
+      "sha": "45a2f9b48e487d0596e7c1824213f357221377b0754f658632151a613b5e89ee"
+    },
+    {
+      "rel": "addons/calcio-editor/math.js",
+      "sha": "3ba74e30ca021985273ce626fa02ec16e8b1b846f63dcf16f6760b91f07b1a72"
+    },
+    {
+      "rel": "addons/calcio-editor/prompts/CALCIO_H_V2.md",
+      "sha": "1224942163bba33982c26922fb526d15cc79cfff82e3e2018e155420fbc7c6e1"
+    },
+    {
+      "rel": "addons/calcio-editor/prompts/TENNIS_H_V2.md",
+      "sha": "a161973a7c1fbbc6fc4117f31b90e835f898d02ff9bdb756127bc9757d1548f8"
+    },
+    {
+      "rel": "addons/calcio-editor/public/app.js",
+      "sha": "b4afe34bf688ad0ac3e846524831eb3b9e8e04a8a017a300c89770b29003faaf"
+    },
+    {
+      "rel": "addons/calcio-editor/public/index.html",
+      "sha": "c81b2b0e4d3b61a57895d5cea06cc4c52f5671f35480cef65a280d7dde152f1d"
+    },
+    {
+      "rel": "addons/calcio-editor/public/style.css",
+      "sha": "c766876c156411855a60e5f05883cc3fe4c20a9dcce5ffd3226a28a050848e6e"
+    },
+    {
+      "rel": "addons/calcio-editor/server.cjs",
+      "sha": "3f51ffa5caf97b56ac4802fe55ac2c19c0bfcb5f217aaddec7cf5fbdd7467252"
+    }
+  ],
+  "installedAt": "2026-11-09T14:30:17.835Z",
+  "historicalDbModified": false,
+  "windowsPathRecovery": {
+    "version": "BETTINGAPP_MAIN_R3_WINDOWS_EDITOR_REPAIR_V1",
+    "reason": "WINDOWS_BACKSLASH_VS_SLASH_FILTER",
+    "fileCountBefore": 1,
+    "fileCountAfter": 10
+  }
+}

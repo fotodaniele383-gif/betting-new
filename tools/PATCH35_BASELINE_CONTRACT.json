@@ -1,0 +1,41 @@
+{
+  "baselinePackageVersion": "21.21.1",
+  "baselineTennisRegistry": "34",
+  "globalRegistry": "38",
+  "dependencies": {
+    "axios": "^1.14.0",
+    "better-sqlite3": "^12.6.2",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.6",
+    "csv-parse": "^6.2.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "node-cron": "^4.2.1",
+    "puppeteer": "^24.40.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "random-useragent": "^0.5.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.11"
+  },
+  "protectedFiles": {
+    "backend/tennisValueEvaluator.js": "c2cff280a2e0551fd35ec8d0c3fdfd80d45de5a1f8f939c5e98f7c6dde34da3f",
+    "backend/deepScanTennis.js": "321b7b70c70944e5b76a5738e7d3894aa065ffb61b94c1d6a972a231d249fa60",
+    "backend/tennisQualityGateV2.js": "084803dfce7dcb35d65b0e9f6681771e9670bea2a5e9f45965d74d5c686c3bb7",
+    "backend/paperTrading.tennis.js": "0bf0f16a35edce668f4387d51000547ed565ec3426983e57106e9c47cd694b64",
+    "backend/tennisOfficialSettlementResolver.js": "0a0b44dca0f1611fcbfb90275ad279f4ea9116e9430f56d9bb9a56b777d072d9",
+    "backend/tennisSettlementTruthPatch34R4.js": "31f3361ec341bc97478d34e03796409678d272f90fedec7cdfb273950d433145",
+    "backend/calcioPatchRegistry.js": "6cdb91b37a250bf43b77213e77dc4c8689ccb8a888a6e2ee0c5332b9f413b4cb"
+  },
+  "database": {
+    "total": 1164,
+    "tennis": 881,
+    "pending": 45,
+    "truthRepairAudit": 5,
+    "resolvedTennisHash": "270a049803ed19a395a44e3698d980601507d7a81b22f46ffa34ef7c3ca9b3d5",
+    "nonTennisHash": "e24051b7ed442a7f76ca3ccc866e401b60f67016016bc2e12dfea8fa18b94d45"
+  }
+}

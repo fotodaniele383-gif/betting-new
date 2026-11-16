@@ -1,0 +1,31 @@
+{
+  "version": "PATCH34_R4_BASELINE_CONTRACT_V1",
+  "packageVersion": "21.21.0",
+  "tennisRegistry": "34",
+  "globalRegistry": "38",
+  "protectedFiles": {
+    "backend/tennisValueEvaluator.js": "c2cff280a2e0551fd35ec8d0c3fdfd80d45de5a1f8f939c5e98f7c6dde34da3f",
+    "backend/deepScanTennis.js": "321b7b70c70944e5b76a5738e7d3894aa065ffb61b94c1d6a972a231d249fa60",
+    "backend/tennisQualityGateV2.js": "084803dfce7dcb35d65b0e9f6681771e9670bea2a5e9f45965d74d5c686c3bb7",
+    "backend/calcioPatchRegistry.js": "6cdb91b37a250bf43b77213e77dc4c8689ccb8a888a6e2ee0c5332b9f413b4cb"
+  },
+  "dependencies": {
+    "axios": "^1.14.0",
+    "better-sqlite3": "^12.6.2",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.6",
+    "csv-parse": "^6.2.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "node-cron": "^4.2.1",
+    "puppeteer": "^24.40.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "random-useragent": "^0.5.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.11"
+  }
+}

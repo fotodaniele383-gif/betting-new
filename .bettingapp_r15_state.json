@@ -1,0 +1,48 @@
+{
+  "version": "CALCIO_EDGE_KELLY_AUTHORITY_R15_20261108",
+  "installedAt": "2026-11-08T17:03:47.347Z",
+  "backupRelative": ".bettingapp_r15_rollback\\2026-11-08T17-03-46-396Z",
+  "dbBeforeSha256": "a6228ead3f34a849acd885f6650a2f48526825a25c9b77d253fbcf382f371b7e",
+  "files": [
+    {
+      "path": "backend/calcioAiFinalization.js",
+      "beforeSha256": "54286fcf63b5f171fdbcb6fe5c1e3d50264942581148c3f6f7439145cde46b13",
+      "afterSha256": "871bfd7a5772a9625d3d10db79b63492332378942a7408d9f35c7d594aaa0855"
+    },
+    {
+      "path": "backend/calcioBatchPortfolioAllocator.js",
+      "beforeSha256": "21a9716e83417f438a1733519782fbe4afa5e4eada01e69724d7dca12bb5b4f8",
+      "afterSha256": "162a9c2930dcd6783b49fa2f588f187be1b13775760712811c8d2569b34d7938"
+    },
+    {
+      "path": "backend/calcioEdgeHistoricalV15.js",
+      "beforeSha256": null,
+      "afterSha256": "a26f92e0c32360cd245368a40c5feeca157ee9d04f65da4ab0c3b6781b08d847"
+    },
+    {
+      "path": "backend/calcioEdgeKellyAuthorityV15.js",
+      "beforeSha256": null,
+      "afterSha256": "e145428fca15628d458c56b11bbb5aeba30d89b968dbfe734a2cd81d546e2d96"
+    },
+    {
+      "path": "backend/calcioProfessionalSelection.js",
+      "beforeSha256": "5c6b5d15e65b0c8ef93d038a2207a19a9c150cca7dace33c153de12a825d7ef2",
+      "afterSha256": "d5424ed03309897d4ea1a6bb83b59f6d6cc426189adf8890dc72ed50db0ffd8a"
+    },
+    {
+      "path": "backend/calcioStakeSafetyContract.js",
+      "beforeSha256": "7d483f67fe8ce262cbe1f669e78f0a8cd56091edbc21cad31247acbf6831b541",
+      "afterSha256": "3ace6f78533e0f8fc59a5fc68d3a24bb6c6db4ebfbab152feb31121866a17fe7"
+    },
+    {
+      "path": "backend/calcioUnifiedStakeAuthority.js",
+      "beforeSha256": "6bf6913df29a5db9a953d854b0958523e1a9aed3b0c7a8d30782e0cfaf3c2a09",
+      "afterSha256": "5b9b4064e6b459ec5622874fb92ee3df2afc5c3c027f2a63efd94669f2ffc167"
+    },
+    {
+      "path": "backend/server.js",
+      "beforeSha256": "21686d9f10050d9686853d554e4f335092249b82105355ad303475021159e832",
+      "afterSha256": "01592301b41839ffc6ec1de53f7b909d07d31c90f3157e797fca6d46f0150718"
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "timestamp": 1794164718761,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -1,
+    "tactics": {
+      "mentions": 1,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 81.3,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 81.3,
+    "raw": {
+      "injury": -1,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 60,
+      "globalScore": -4,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 4
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Fiorentina",
+      "officialDomain": "acffiorentina.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 81.3,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 81.3,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1083,
+          "received": 8,
+          "relevant": 1,
+          "fresh": 7,
+          "usable": 1,
+          "excluded": 0,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:05:18.752Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1054,
+          "received": 15,
+          "relevant": 6,
+          "fresh": 15,
+          "usable": 6,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:05:18.723Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1040,
+          "received": 9,
+          "relevant": 0,
+          "fresh": 4,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:05:18.709Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 32,
+        "relevantArticles": 7,
+        "usableArticles": 7,
+        "uniqueArticles": 7,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 7,
+        "officialArticles": 1,
+        "trustedArticles": 0,
+        "independentChannels": 4,
+        "independentPublishers": 4,
+        "excludedEvidence": 25,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "pongracic medical update - - acf fiorentina",
+          "originalTitle": "Pongracic medical update - - ACF Fiorentina",
+          "fullText": "pongracic medical update - - acf fiorentina <a href=\"https://news.google.com/rss/articles/cbmic0fvx3lxte5usjn1wdvtywx2uuxmz2r3bunhrg5yvfrhm00tsw5tltntwtixatc5yvzbb210nu1uqmzmnmvrnmpls184azgzawuzv3bdlxbcaervbzu2vwpia2lqamfsqwfztmh4ofzhqndpm2lda0jucxm?oc=5\" target=\"_blank\">pongracic medical update -</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">acf fiorentina</font>",
+          "sourceName": "ACF Fiorentina",
+          "sourceUrl": "https://www.acffiorentina.com",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5uSjN1WDVTYWx2UUxmZ2R3bUNHRG5YVFRHM00tSW5TLTNTWTIxaTc5YVZBb210NU1uQmZmNmVrNmpLS184azgzaWUzV3BDLXBCaERvbzU2VWpIa2lQamFSQWFZTmh4OFZHQndPM2lDa0JUcXM?oc=5",
+          "publishedAt": "2026-10-27T14:58:06.000Z",
+          "ageDays": 12.17,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 1
+        },
+        {
+          "title": "fiorentina, pongracic has an injury: the medical report - goal.com",
+          "originalTitle": "Fiorentina, Pongracic has an injury: the medical report - Goal.com",
+          "fullText": "fiorentina, pongracic has an injury: the medical report - goal.com <a href=\"https://news.google.com/rss/articles/cbmipafbvv95cuxqzuw0a0vzy3rhsthjbe9gyurwedfsumhct3zhelfyejdbsezfohdxmvuyy2zcahp5clbjbv9gnmtlugdmrjdcshz0t21pnmc0vuv1qxnjue1qnw12zhhvm0dms1jpz1hmbkw5zxherzfbzjbivc1wvu5heddycznons1youi4nngwnzremjnpymxlakfudeqtcdhpltlqa05pv0nyma?oc=5\" target=\"_blank\">fiorentina, pongracic has an injury: the medical report</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">goal.com</font>",
+          "sourceName": "Goal.com",
+          "sourceUrl": "https://www.goal.com",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZUw0a0VZY3RhSThjbE9GYURweDFsUmhCT3ZHelFYejdBSEZfOHdxMVUyY2ZCaHp5clBjbV9GNmtlUGdMRjdCSHZ0T21PNmc0VUV1QXNJUE1QNW12ZHhvM0dmS1JpZ1hMbkw5ZXhERzFBZjBIVC1WVU5HeDdyczNoNS1YOUI4NngwNzREMjNpYmxlakFudEQtcDhpLTlQa05PV0NyMA?oc=5",
+          "publishedAt": "2026-10-28T07:00:00.000Z",
+          "ageDays": 11.5,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "juventus predicted lineup at fiorentina: bremer returns - the false 9",
+          "originalTitle": "Juventus Predicted Lineup at Fiorentina: Bremer Returns - The False 9",
+          "fullText": "juventus predicted lineup at fiorentina: bremer returns - the false 9 <a href=\"https://news.google.com/rss/articles/cbmijwfbvv95cuxoekjsymd2snzndutjznewzkp6nllfntvwbtc2n3zechfjsvg4svlvvxdvdevnvvfvenc0awlowlh4ee5omgdwvddwdxdza21wexytnkjyekzczuezck9qr3h4ndn0bdjrbgr3r3rvexvxtvotetu0rmt0stvsbvy4q3o0nm9swuftdmp5ythena?oc=5\" target=\"_blank\">juventus predicted lineup at fiorentina: bremer returns</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">the false 9</font>",
+          "sourceName": "The False 9",
+          "sourceUrl": "https://thefalse9.com",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOekJSYmd2SnZndUtjZnEwZkp6NllfNTVWbTc2N3ZEcHFJSVg4SVlVVXdVdEVNVVFvenc0aWlOWlh4eE5oMGdWVDdwdXdza21WeXYtNkJyekZCZUEzck9QR3h4NDN0bDJRbGR3R3RVeXVxTVoteTU0Rmt0STVSbVY4Q3o0Nm9sWUFTdmp5YThENA?oc=5",
+          "publishedAt": "2026-11-06T22:15:41.000Z",
+          "ageDays": 1.87,
+          "category": "RETURN_FITNESS",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "preview | sassuolo vs fiorentina: team news, lineups, predictions (serie a 02/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Sassuolo vs Fiorentina: team news, lineups, predictions (Serie A 02/11) - Yahoo Sports",
+          "fullText": "preview | sassuolo vs fiorentina: team news, lineups, predictions (serie a 02/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmijafbvv95cuxorxoxd1plwllrsxbcv2xhn3pfunbmcgnqsmxinnfcyuvfntyya0rmr0lsskjrz0dsn3fvwhm3exm1swhxvxbkdul3suhlufpyu1jickdjrmxivnvrmex2y1lsa2vydgpquffjagftvepmswewzwnwy3mwrnp4mgdqx0s5qi1dv3byb25kvw?oc=5\" target=\"_blank\">preview | sassuolo vs fiorentina: team news, lineups, predictions (serie a 02/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORXoxd1pLWllrSXBCV2xHN3pfUnBMcGNQSmxiNnFCYUVfNTYya0RmR0lSSkJrZ0dsN3FVWHM3eXM1SWhxVXBKdUl3SUhLUFpYU1JickdJRmxIVnVrMEx2Y1lsa2VYdGpqUFFJaGFTVEpMSWEwZWNWY3MwRnp4MGdqX0s5Qi1DV3BYb25KVw?oc=5",
+          "publishedAt": "2026-10-31T16:40:00.000Z",
+          "ageDays": 8.1,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "preview | fiorentina vs juventus: team news, lineups, predictions (serie a 08/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Fiorentina vs Juventus: team news, lineups, predictions (Serie A 08/11) - Yahoo Sports",
+          "fullText": "preview | fiorentina vs juventus: team news, lineups, predictions (serie a 08/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmijafbvv95cuxovgjzd2nyu3f0mw15awezu1zawuuwru9lwdjovghdbxlmv2vhrkfvzme1lxuycjlnmgd1skzbmhk3vehly2xos2kyv1y3qjnplvviqnhsburmngl5vmhsrwxpytnnwfkxzgjuynjkrvnhy0vvsmrrzkj1zks2n0rrodfwte0xzu1mmnbgcg?oc=5\" target=\"_blank\">preview | fiorentina vs juventus: team news, lineups, predictions (serie a 08/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVGJzd2NyU3F0MW15aWEzU1ZaWUUwRU9LWDJOVGhDbXlmV2VhRkFvZmE1LXUycjlNMGd1SkZBMHk3VEhLY2xoS2kyV1Y3QjNPLVVIQnhsbURmNGl5VmhSRWxpYTNNWFkxZGJuYnJKRVNHY0VvSmRrZkJ1Zks2N0RRODFWTE0xZU1mMnBGcg?oc=5",
+          "publishedAt": "2026-11-06T18:50:00.000Z",
+          "ageDays": 2.01,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "juventus suffers injury blow ahead of the fiorentina match - yahoo sports",
+          "originalTitle": "Juventus suffers injury blow ahead of the Fiorentina match - Yahoo Sports",
+          "fullText": "juventus suffers injury blow ahead of the fiorentina match - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmiiwfbvv95cuxomgltm1pbrhpxevjaelriwtzpohhjrzcwbdkzz3v5adrinkrwc1fom3husxq2yllvslpnnhljbvbutnlovhnqnuhpvdltbjj5nmm4b1ntedlkvi1owmvjvnbjywlschc1y3luumy2d2vnnk5kaurrajrssetiyzi2dndkqxhrv2djy2q4?oc=5\" target=\"_blank\">juventus suffers injury blow ahead of the fiorentina match</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMGltM1pBRHpxeVJaelRIWTZPOHhJRzcwbDkzZ3V5aDRINkRwc1FOM3hUSXQ2YllvSlpnNHlJbVBUTnloVHNQNUhpVDltbjJ5NmM4b1NTeDlKVi1OWmVJVnBjYWlScHc1Y3luUmY2d2VnNk5KaURrajRsSEtIYzI2dndKQXhRV2djY2Q4?oc=5",
+          "publishedAt": "2026-11-08T13:00:00.000Z",
+          "ageDays": 0.25,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "preview | fiorentina vs atalanta: team news, lineups, predictions (serie a 29/10) - yahoo sports",
+          "originalTitle": "PREVIEW | Fiorentina vs Atalanta: team news, lineups, predictions (Serie A 29/10) - Yahoo Sports",
+          "fullText": "preview | fiorentina vs atalanta: team news, lineups, predictions (serie a 29/10) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmijafbvv95cuxnsupkn1y3u29otnbldjy4nzvhckrnugnnaldfbwd5zhjpduwwtdvnvtfmz0n3setybdzhwf96y1fpnlbqzhljy3rmy1p3wktadut1ueh4zjhku3z2b1jnmmfmlvfiexyyrxngcwprzm1yuknvwxlwv0w2s205cxmymkzroekyukflrjjqsw?oc=5\" target=\"_blank\">preview | fiorentina vs atalanta: team news, lineups, predictions (serie a 29/10)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSUpkN1Y3U29OTnBLdjY4NzVHckRNUGNNaldFbWd5ZHJpdUwwTDVnVTFMZ0N3SEtybDZHWF96Y1FpNlBqZHlJY3RmY1p3WktadUt1UEh4ZjhkU3Z2b1JNMmFmLVFIeXYyRXNGcWprZm1yUkNvWXlwV0w2S205cXMyMkZrOEkyUkFLRjJQSw?oc=5",
+          "publishedAt": "2026-10-27T07:00:00.000Z",
+          "ageDays": 12.5,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "vanoli to hold press conference on friday - - acf fiorentina",
+          "sourceName": "ACF Fiorentina",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "home (en) - acf fiorentina",
+          "sourceName": "ACF Fiorentina",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "vanoli: \"we must always play for the shirt\" - - acf fiorentina",
+          "sourceName": "ACF Fiorentina",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "vanoli: “nothing is impossible” - - acf fiorentina",
+          "sourceName": "ACF Fiorentina",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "vanoli: “we will be united and focused against sassuolo” - - acf fiorentina",
+          "sourceName": "ACF Fiorentina",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "vanoli analyzes sassuolo victory - - acf fiorentina",
+          "sourceName": "ACF Fiorentina",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "match ends, fiorentina 2, atalanta 2. - acf fiorentina",
+          "sourceName": "ACF Fiorentina",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "fiorentina vs atalanta: lineups and how to watch - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "fiorentina vs atalanta lineups, prediction, betting picks & odds - oddschecker",
+          "sourceName": "Oddschecker",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "game time thread: juventus vs. fiorentina - black & white & read all over",
+          "sourceName": "Black & White & Read All Over",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "argentina call up seven serie a players from roma, como, fiorentina and parma - football italia",
+          "sourceName": "Football Italia",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "fiorentina v juventus: preview, team news, talking points - the false 9",
+          "sourceName": "The False 9",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 5000,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

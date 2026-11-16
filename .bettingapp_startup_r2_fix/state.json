@@ -1,0 +1,10 @@
+{
+  "version": "BETTINGAPP_STARTUP_R2_MANUAL_CMD_HASHFIX_20261109",
+  "from": "FRESH",
+  "beforeLauncher": "14edf1eefb18c1e2593a2df54f939a8f2f3a8039402705b1e416d979ebb033a0",
+  "beforeHelper": null,
+  "afterLauncher": "e9f24e067157199d6dffbdae9f465dc37f311bc32dbde4fd863ec103b6c9d1a0",
+  "afterHelper": "a09a8a84a5bdd988895c178b7c6b4e23f1afb895cd0b8962e8f01241a382fb58",
+  "reason": "CORRECT_EXPECTED_SHA_FOR_SHIPPED_AVVIA_REALE_MANUALE_CMD",
+  "dbModified": false
+}

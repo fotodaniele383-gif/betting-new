@@ -1,0 +1,40 @@
+{
+  "ai_live": {
+    "records": 38,
+    "markets": {
+      "MONEYLINE": 38
+    },
+    "gate_status": {
+      "BLOCCATA": 23,
+      "WATCHLIST MICRO STAKE": 15
+    },
+    "stake_sum": 32.65,
+    "profit_display_sum": 18.39
+  },
+  "paper_trading": {
+    "records": 94,
+    "markets": {
+      "MONEYLINE": 93,
+      "UNDER": 1
+    },
+    "gate_status": {
+      "BLOCCATA": 59,
+      "WATCHLIST MICRO": 28,
+      "APPROVATA CON CAP": 7
+    },
+    "settlement": {
+      "PENDING": 55,
+      "WON": 25,
+      "LOST": 14
+    },
+    "stake_sum_all": 53.25,
+    "profit_sum_all": 89.24
+  },
+  "sackmann": {
+    "rows": 16091,
+    "valid_total_games": 15449,
+    "valid_total_games_pct": 96.01,
+    "overall_total_games_mean": 23.25,
+    "overall_total_games_median": 22.0
+  }
+}

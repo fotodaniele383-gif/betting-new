@@ -1,0 +1,17 @@
+'use strict';
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const root = path.join(__dirname, '..');
+const server = fs.readFileSync(path.join(root, 'backend', 'server.js'), 'utf8');
+const allocator = fs.readFileSync(path.join(root, 'backend', 'calcioBatchPortfolioAllocator.js'), 'utf8');
+const guard = fs.readFileSync(path.join(root, 'backend', 'calcioCrossMarketReliability.js'), 'utf8');
+assert(server.includes("require('./calcioCrossMarketReliability')"));
+assert(server.includes('buildReliabilityAssessment'));
+assert(server.includes('applyReportGuard'));
+assert(server.includes('applyStakeGuard'));
+assert(server.includes('persistenceFields'));
+assert(allocator.includes('BETTING_PATCH_26E_B_BATCH_PORTFOLIO_ALLOCATOR_V4'));
+assert(guard.includes('ONE_WAY_REDUCE_OR_ZERO_ONLY'));
+assert(guard.includes('probabilityProductionChanged: false'));
+console.log(JSON.stringify({ success: true, checks: 8 }, null, 2));

@@ -1,0 +1,7 @@
+'use strict';
+const fs=require('fs');const path=require('path');const assert=require('assert');const contract=require('../backend/calcioDeepScanPayloadContract');const registry=require('../backend/calcioPatchRegistry');
+const root=path.resolve(__dirname,'..');const server=fs.readFileSync(path.join(root,'backend/server.js'),'utf8');const app=fs.readFileSync(path.join(root,'public/app.js'),'utf8');
+const guards={compactClientPayload:app.includes('buildCompactCalcioDeepScanPayload'),noFullExtDataSpread:!app.includes('...(bet.extData || {})'),serverParserRaised:server.includes("express.json({ limit: calcioDeepScanPayloadContract.EXPRESS_JSON_LIMIT })"),serverRehydration:server.includes('sanitizeRequestBody(req.body || {}, prePendingCalcioRow || {})'),structured413:server.includes('CALCIO_DEEPSCAN_PAYLOAD_TOO_LARGE'),partialPreservesState:app.includes('DeepScan parziale: stake e IPM precedenti preservati.'),errorClassification:app.includes("badgeEl.innerHTML = '❌ Payload'")};
+Object.entries(guards).forEach(([k,v])=>assert(v,k));
+const patch=registry.PATCHES.find(x=>x.version==='23');assert(patch);
+console.log(JSON.stringify({success:true,patch:patch.id,certification:{rootCause:'EXPRESS_DEFAULT_100KB_PLUS_FULL_EXTDATA_POST',runtimeRecovery:'CERTIFIED_OFFLINE',liveProviders:'REQUIRES_POST_INSTALL_RUN'},limits:{clientTargetBytes:contract.CLIENT_TARGET_BYTES,serverMaxBytes:contract.SERVER_MAX_BYTES,expressLimit:contract.EXPRESS_JSON_LIMIT},guards,probabilityStakeContractsChanged:false,databaseMutation:false,newOddsApiCalls:0},null,2));

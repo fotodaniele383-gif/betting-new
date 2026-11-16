@@ -1,0 +1,319 @@
+{
+  "timestamp": 1794836438954,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Nessun segnale verificato ⚪",
+    "color": "#94a3b8",
+    "confidence": 0,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 0,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 0,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 3
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R25_MATCH_SCOPE_V1",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Lazio",
+      "officialDomain": "sslazio.it",
+      "status": "TEAM_CONTEXT_ONLY",
+      "confidence": 0,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 0,
+      "r25MatchCandidateCount": 0,
+      "r25TeamContextCount": 5,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1663,
+          "received": 3,
+          "relevant": 0,
+          "fresh": 3,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T13:40:38.943Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1667,
+          "received": 15,
+          "relevant": 7,
+          "fresh": 13,
+          "usable": 5,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T13:40:38.947Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 939,
+          "received": 10,
+          "relevant": 0,
+          "fresh": 9,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T13:40:38.219Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 28,
+        "relevantArticles": 7,
+        "usableArticles": 5,
+        "uniqueArticles": 5,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 5,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 4,
+        "independentPublishers": 4,
+        "excludedEvidence": 23,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "new nuno tavares injury to force lazio star out of portugal squad - yahoo sports",
+          "originalTitle": "New Nuno Tavares injury to force Lazio star out of Portugal squad - Yahoo Sports",
+          "fullText": "new nuno tavares injury to force lazio star out of portugal squad - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihwfbvv95cuxpou50rtl6z2vfeerbehb6emtfv3p5qs1oqllhy1rebjv1vktdv0s4c2dpb1ptutfkt2lwuu9oz3binez0rejqnwtvzmdzdtr5bwnzy3j5oxg5zgw3mzdiutf0dgrxrkxdrzhpnjjobxbzb0xuu3voltcwm2g1a2dbmxddzunibuu?oc=5\" target=\"_blank\">new nuno tavares injury to force lazio star out of portugal squad</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOU50RTl6Z2VFeERBeHB6emtFV3p5QS1OQllHY1REbjV1VktDV0s4c2dpb1pTUTFKT2lwUU9OZ3BiNEZ0REJQNWtvZmdzdTR5bWNZY3J5OXg5ZGw3MzdiUTF0dGRxRkxDRzhPNjJObXBzb0xuU3VOLTcwM2g1a2dBMXdDZUNibUU?oc=5",
+          "publishedAt": "2026-11-09T15:57:00.000Z",
+          "ageDays": 6.91,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0,
+          "matchScopeR25": "TEAM_CONTEXT_ONLY",
+          "matchSpecificEvidence": false
+        },
+        {
+          "title": "lazio defender leaves national team camp after suffering new injury - the laziali",
+          "originalTitle": "Lazio Defender Leaves National Team Camp After Suffering New Injury - The Laziali",
+          "fullText": "lazio defender leaves national team camp after suffering new injury - the laziali <a href=\"https://news.google.com/rss/articles/cbmifefvx3lxte9newpiuhbtwnkymk02uecxnfjvdgw2ww9qzvvhtw1onnd6czdfvhrgduzzb1k1cdj4behvzexonupaadvcaf9yuedgm3fgynlwm1yytxvzamczeksyvhvwskdhrnjuofd6rumtvxo2cnrltgc5nvzqbxngzjxsayibqvvfexfmufnqmglkngdcwwdxzffxdghty1pjdlhytvfrumdisu41y01mtujcqzbcqxfxn1axx1rtqwx4atrbrk9yrervwxpzzzfjnmgyr0e0a1ntykytbfayn19cbfffelhvr2nkwffvws1bvs0wdnz6rw54dezpnk5qvjjxdlrjuq?oc=5\" target=\"_blank\">lazio defender leaves national team camp after suffering new injury</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">the laziali</font>",
+          "sourceName": "The Laziali",
+          "sourceUrl": "https://thelaziali.com",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9neWpiUHBtWnkyMk02UEcxNFJVdGw2WW9QZVVhTW1ONnd6czdFVHRGdUZZb1k1cDJ4bEhvZExoNUpaaDVCaF9YUEdGM3FGYnlwM1YyTXVzamczeksyVHVwSkdhRnJuOFd6RUMtVXo2cnRlTGc5NVZQbXNGZjXSAYIBQVVfeXFMUFNqMGlKNGdCWWdxZFFxdGhTY1pjdlhYTVFRUmdiSU41Y01MTUJCQzBCQXFXN1AxX1RTQWx4aTRBRk9yRERvWXpZZzFJNmgyR0E0a1NTYkYtbFAyN19CbFFFelhVR2NkWFFVWS1BVS0wdnZ6RW54dEZPNk5QVjJXdlRjUQ?oc=5",
+          "publishedAt": "2026-11-13T11:15:27.000Z",
+          "ageDays": 3.1,
+          "category": "MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0,
+          "matchScopeR25": "TEAM_CONTEXT_ONLY",
+          "matchSpecificEvidence": false
+        },
+        {
+          "title": "napoli vs. lazio preview: team news, prediction, date, and how to watch serie a on dazn - dazn",
+          "originalTitle": "Napoli vs. Lazio preview: Team news, prediction, date, and how to watch Serie A on DAZN - DAZN",
+          "fullText": "napoli vs. lazio preview: team news, prediction, date, and how to watch serie a on dazn - dazn <a href=\"https://news.google.com/rss/articles/cbmitafbvv95cuxpznzws2pctff0lxvzumdkq3lrlwhpchduvxmxyjdtcze0nznmtgzkvgw1qwdyulzmafvqv1qyrkl2oenscm1qcktrn3o2aezanfq0rjvhzwxotm1jenhdtw02wnk0cjjmuu54u0lrn1pgbzbyai1ovkpfeetxeddkq1peterfn3rudkw5t1bmzu5wvknpttbcnglmthdlwdvku1i5ulk5uejqy3rir2ytn1djdlg?oc=5\" target=\"_blank\">napoli vs. lazio preview: team news, prediction, date, and how to watch serie a on dazn</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">dazn</font>",
+          "sourceName": "DAZN",
+          "sourceUrl": "https://www.dazn.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZnZwS2pCTFF0LXVZUmdKQ3lRLWhPcHdUVXMxYjdtczE0NzNmTGZkVGw1QWdYUlZmaFVqV1QyRkl2OENscm1qcktrN3o2aEZaNFQ0RjVHZWxOTm1jenhDTW02Wnk0cjJMUU54U0lrN1pGbzBYai1oVkpFeEtXeDdkQ1pETERFN3RUdkw5T1BMZU5wVkNPTTBCNGlMTHdlWDVkU1I5Ulk5UEJqY3RIR2YtN1dJdlg?oc=5",
+          "publishedAt": "2026-11-05T08:00:00.000Z",
+          "ageDays": 11.24,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0,
+          "matchScopeR25": "TEAM_CONTEXT_ONLY",
+          "matchSpecificEvidence": false
+        },
+        {
+          "title": "blow for italy! lazio midfielder davide frattesi ruled out of crucial nations league showdown against belgium with muscular injury - goal.com",
+          "originalTitle": "Blow for Italy! Lazio midfielder Davide Frattesi ruled out of crucial Nations League showdown against Belgium with muscular injury - Goal.com",
+          "fullText": "blow for italy! lazio midfielder davide frattesi ruled out of crucial nations league showdown against belgium with muscular injury - goal.com <a href=\"https://news.google.com/rss/articles/cbmirwfbvv95cuxnvtfks1biqtjplutqvwfqwxvemwfdr1dlmnrjbfbudlhcynl3lwqxmxjswfjkbgowoxnfddrsanrhak9vr2n3vxhqqjrjvu1waexkcdrkrzjfvmhvbw5rqlbfq09mb0pwyuu0dhjwrkrmnnntvwdfrxqyx3ptqzbmtkputvhfdf9zszezvwpjbm9ivu9smeetovo2vtr6qunxv0vhyu8yavhruep3a2pv?oc=5\" target=\"_blank\">blow for italy! lazio midfielder davide frattesi ruled out of crucial nations league showdown against belgium with muscular injury</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">goal.com</font>",
+          "sourceName": "Goal.com",
+          "sourceUrl": "https://www.goal.com",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVTFKS1BiQTJPLUtqVWFQWXVEMWFDR1dlMnRjbFBudlhCYnl3LWQxMXJSWFJKbGowOXNFdDRsanRhak9vR2N3VXhqQjRjVU1WaExKcDRKRzJfVmhvbW5rQlBfQ09Mb0pwYUU0dHJwRkRMNnNtVWdfRXQyX3pTQzBMTkpUTVhFdF9ZSzEzVWpJbm9iVU9sMEEtOVo2VTR6QUNxV0VhYU8yaVhRUEp3a2pv?oc=5",
+          "publishedAt": "2026-11-13T20:38:21.000Z",
+          "ageDays": 2.71,
+          "category": "HARD_MEDICAL",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0,
+          "matchScopeR25": "TEAM_CONTEXT_ONLY",
+          "matchSpecificEvidence": false
+        },
+        {
+          "title": "preview | napoli vs lazio: team news, lineups, predictions (serie a 08/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Napoli vs Lazio: team news, lineups, predictions (Serie A 08/11) - Yahoo Sports",
+          "fullText": "preview | napoli vs lazio: team news, lineups, predictions (serie a 08/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxpm1zvn3vtbhy1nzlultrmntdtawxuaxvfvmhmd2piblnzuw1kowfysmf6ewjndlzanmhkty1tqnflsui4c3hnohuyyuy1elg4aklxzlpzem5cvwjpx1dbzvpvmxzizfh6qmnouzhptkvbquzoewfrxzdiu3f4uk1douthma?oc=5\" target=\"_blank\">preview | napoli vs lazio: team news, lineups, predictions (serie a 08/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPM1ZvN3VtbHY1NzluLTRmNTdTaWxUaXVFVmhMd2pIblNzUW1kOWFySmF6eWJNdlZaNmhKTy1tQnFlSUI4c3hNOHUyYUY1elg4aklxZlpzem5CVWJpX1dBZVpvMXZIZFh6QmNOUzhpTkVBQUZOeWFRXzdiU3F4Uk1DOUthMA?oc=5",
+          "publishedAt": "2026-11-06T10:30:00.000Z",
+          "ageDays": 10.13,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0,
+          "matchScopeR25": "TEAM_CONTEXT_ONLY",
+          "matchSpecificEvidence": false
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "le condizioni di mattia zaccagni - s.s. lazio",
+          "sourceName": "S.S. Lazio",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "serie a enilive | sassuolo-lazio 2-6, il tabellino - s.s. lazio",
+          "sourceName": "S.S. Lazio",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "serie a enilive | napoli-lazio 1-1, il tabellino - s.s. lazio",
+          "sourceName": "S.S. Lazio",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "seven lazio players called up for international break as injured duo pull out - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lazio left sweating as frattesi leaves italy camp due to muscle issue - the laziali",
+          "sourceName": "The Laziali",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "probable italy lineup vs france: frattesi to join arsenal & spurs stars - the laziali",
+          "sourceName": "The Laziali",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "lazio full-back won’t join national team after sustaining injury in napoli - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "gattuso open to new-look midfield, urges lazio winger to improve his mindset - the laziali",
+          "sourceName": "The Laziali",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lazio receive triple injury boost ahead of napoli clash - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "napoli captain di lorenzo to miss lazio clash through injury - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lazio probable lineup vs cagliari: only one doubt for gattuso - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "gattuso pondering two changes in lazio lineup against cagliari - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "R25: notizie disponibili come contesto squadra, non certificate per l’avversario del match.",
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

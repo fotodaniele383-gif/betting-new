@@ -1,0 +1,14 @@
+'use strict';
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const root = path.join(__dirname, '..');
+const server = fs.readFileSync(path.join(root, 'backend', 'server.js'), 'utf8');
+const allocator = fs.readFileSync(path.join(root, 'backend', 'calcioBatchPortfolioAllocator.js'), 'utf8');
+assert(server.includes("require('./calcioDeepScanFinalState')"));
+assert(server.includes('PATCH 26E-A'));
+assert(server.includes('finalizeCandidateReport(candidateRawReport'));
+assert(server.includes('calcio_deepscan_final_report_json'));
+assert(allocator.includes('refreshFinalReportJson'));
+assert(allocator.includes('BETTING_PATCH_26E_A_BATCH_PORTFOLIO_ALLOCATOR_V3'));
+console.log(JSON.stringify({ success: true, checks: 6 }, null, 2));

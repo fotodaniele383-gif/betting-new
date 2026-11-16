@@ -1,0 +1,16 @@
+{
+  "version": "BETTINGAPP_MATCH_PROMPT_V3_20261105",
+  "root": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO",
+  "created": "2026-11-05T15:23:04.704Z",
+  "originalIndexHash": "41b812340adc1be1e7a8b1941bc611ccf1ce8c4ce7138c0feda362e3b2fa6767",
+  "newIndexHash": "9b6da87829331ce2c41d6882e8b70077cac64ccb8e604f408182afd9cfd082af",
+  "addonHash": "a62dc17dc194405411621b251fe2b873f25a12b9419f035eabdc0bd7bf722f64",
+  "protectedHashes": {
+    "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO\\backend\\database_betting.db": "d9284f429e7f62e4be55da37c64592170139ee932e2a97651526f08bb7f5f78b",
+    "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO\\backend\\server.js": "6949d8b36b154b46f68bd27d52cae2654c396fc8db8f0c9c82e1abc7fbab4f97",
+    "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO\\backend\\public\\app.js": "39e9f5808ca91d6694ff57e75a76ba8d9e917541171583749b3eb66db23213e1",
+    "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO\\START_BETTING.cjs": "14edf1eefb18c1e2593a2df54f939a8f2f3a8039402705b1e416d979ebb033a0",
+    "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp_MANUALE_PULITO\\AVVIA_BETTING.bat": "4705cbde571d9a810f150523c2bf75ce3dde2c9294d156d6d951b59d6bc1a8b7"
+  },
+  "committed": true
+}

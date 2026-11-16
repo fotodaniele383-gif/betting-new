@@ -1,0 +1,72 @@
+{
+  "version": "STEP51_API_USAGE_CREDITS_COUNTER",
+  "provider": "the_odds_api",
+  "monthKey": "2026-11",
+  "monthlyCreditsPerKey": 500,
+  "keyInventory": {
+    "sources": {
+      "server.tennis.js": {
+        "source": "server.tennis.js",
+        "keyCount": 12,
+        "updatedAt": "2026-11-16T14:15:02.437Z"
+      },
+      "server.js": {
+        "source": "server.js",
+        "keyCount": 12,
+        "updatedAt": "2026-11-16T14:15:02.862Z"
+      }
+    },
+    "effectiveKeyCount": 14
+  },
+  "creditsUsed": 0,
+  "requestAttempts": 0,
+  "bySource": {},
+  "byOperation": {},
+  "lastCall": null,
+  "cacheStats": {
+    "mode": "STEP53_API_EFFICIENCY_CACHE",
+    "enabled": true,
+    "hits": 20,
+    "misses": 114,
+    "writes": 110,
+    "bypasses": 0,
+    "byOperation": {
+      "calcio_live_odds": {
+        "hits": 0,
+        "misses": 65,
+        "writes": 62,
+        "bypasses": 0
+      },
+      "sports_catalog": {
+        "hits": 17,
+        "misses": 12,
+        "writes": 11,
+        "bypasses": 0
+      },
+      "tennis_live_odds": {
+        "hits": 0,
+        "misses": 25,
+        "writes": 25,
+        "bypasses": 0
+      },
+      "scores_settlement": {
+        "hits": 3,
+        "misses": 12,
+        "writes": 12,
+        "bypasses": 0
+      }
+    },
+    "lastCacheEvent": {
+      "operation": "calcio_live_odds",
+      "source": "server.js",
+      "route": "fetchOddsApi",
+      "hit": false,
+      "bypass": false,
+      "write": true,
+      "cacheKey": "a25ce9027630bf2d46e12a1ed84df0c3529c0997ef86b6fca90ea6ddc9e2af2a",
+      "ttlMs": 120000,
+      "at": "2026-11-16T14:24:40.975Z"
+    }
+  },
+  "resetAt": "2026-11-05T10:42:14.725Z"
+}

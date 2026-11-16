@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+'use strict';
+const assert = require('assert');
+const path = require('path');
+const security = require('../backend/tennisReleaseSecurity');
+const root = path.resolve(__dirname, '..');
+const checks = [];
+const fakeTelegram = '123456789:' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcd1234567890';
+const fakePrivateKeyHeader = '-----BEGIN ' + 'PRIVATE KEY-----';
+function check(name, fn) { try { fn(); checks.push({ name, ok: true }); } catch (error) { checks.push({ name, ok: false, error: error.message }); } }
+check('versione Patch31', () => assert.equal(security.TENNIS_RELEASE_SECURITY_VERSION, 'TENNIS_RELEASE_SECURITY_V1_PATCH31'));
+check('rileva token Telegram realistico', () => assert.equal(security.scanText(`x=${fakeTelegram}`, 'x.txt')[0]?.code, 'TELEGRAM_BOT_TOKEN'));
+check('non espone valore trovato', () => assert.equal(security.scanText(`x=${fakeTelegram}`, 'x.txt')[0]?.exposedValue, false));
+check('fingerprint presente', () => assert.equal(security.scanText(`x=${fakeTelegram}`, 'x.txt')[0]?.fingerprint.length, 16));
+check('placeholder ignorato', () => assert.equal(security.scanText('TELEGRAM_BOT_TOKEN=INSERISCI_QUI_TOKEN', 'x.env.example').length, 0));
+check('private key rilevata', () => assert(security.scanText(fakePrivateKeyHeader, 'x.pem').some(x => x.code === 'PRIVATE_KEY')));
+check('env locale escluso release', () => assert.equal(security.classifyExclusion('.env'), 'SECRET_ENV'));
+check('env example incluso release', () => assert.equal(security.classifyExclusion('.env.example'), null));
+check('database escluso release', () => assert(['RUNTIME_STATE','DATABASE'].includes(security.classifyExclusion('backend/database_betting.db'))));
+check('backup escluso release', () => assert.equal(security.classifyExclusion('backend/.betting_patch_backups/x/a.js'), 'BACKUP_OR_DEPENDENCY'));
+check('eseguibile escluso release', () => assert.equal(security.classifyExclusion('backend/ngrok.exe'), 'EXECUTABLE_BINARY'));
+check('config Telegram esclusa release', () => assert.equal(security.classifyExclusion('backend/telegram.config.json'), 'RUNTIME_STATE'));
+const scan = security.scanProject(root);
+check('scan progetto sano', () => assert.equal(scan.healthy, true));
+check('zero finding runtime', () => assert.equal(scan.findings.length, 0));
+check('token config non persistito', () => assert.equal(scan.persistedTelegramConfigToken, false));
+check('report non espone secrets', () => assert.equal(scan.secretsExposedInReport, false));
+const plan = security.buildReleasePlan(root, { withHashes: false });
+check('release entro 150 MiB', () => assert.equal(plan.summary.withinSizeGuard, true));
+check('release include file', () => assert(plan.summary.includedFiles > 100));
+const failed = checks.filter(x => !x.ok);
+console.log(JSON.stringify({ success: !failed.length, checks, passed: checks.length - failed.length, failed: failed.length }, null, 2));
+process.exit(failed.length ? 1 : 0);

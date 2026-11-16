@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "utcDay": "2026-11-05",
+  "observedAt": "2026-11-05T12:15:45.432Z",
+  "dailyLimit": 100,
+  "dailyRemaining": 99,
+  "minuteLimit": 10,
+  "minuteRemaining": 9
+}

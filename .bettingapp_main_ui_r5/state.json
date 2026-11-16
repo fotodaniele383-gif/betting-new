@@ -1,0 +1,12 @@
+{
+  "version": "BETTINGAPP_MAIN_R5_TENNIS_V62_INTEGRITY_REBASE_20261110",
+  "from": "BETTINGAPP_CALCIO_EDITOR_R4_MATCH_AND_DEEPSCAN_20261109",
+  "dbChanged": false,
+  "stakeChanged": false,
+  "previousLauncherSha256": "e13f659a0623c23d5fd53aa87dde1242af987ff4d0334c8dad860980db926864",
+  "backupDir": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.bettingapp_main_ui_r5\\backups\\2026-11-10T16-10-48-402Z",
+  "installed": {
+    "START_BETTING.cjs": "710eedfbab7b7675d51c11913f8154c1734cfa86ab5bf118881f35b63fe7b1bd",
+    "START_BETTING_CORE_CHAIN_R5.cjs": "f615cefdbae154c4500f7b2e765fb1cf9546039d97fc4bb1344c6dcd7369018e"
+  }
+}

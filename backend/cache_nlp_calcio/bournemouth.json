@@ -1,0 +1,226 @@
+{
+  "timestamp": 1794822082672,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -1,
+    "tactics": {
+      "mentions": 1,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 17.9,
+    "sourceCoverageConfidence": 66,
+    "matchImpactConfidence": 17.9,
+    "raw": {
+      "injury": -1,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 45,
+      "globalScore": -4,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 1
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Bournemouth",
+      "officialDomain": "afcb.co.uk",
+      "status": "PARTIAL",
+      "confidence": 17.9,
+      "coverageConfidence": 66,
+      "matchImpactConfidence": 17.9,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 783,
+          "received": 15,
+          "relevant": 1,
+          "fresh": 15,
+          "usable": 1,
+          "excluded": 3,
+          "officialUsable": 1,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:22.325Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 818,
+          "received": 15,
+          "relevant": 7,
+          "fresh": 2,
+          "usable": 0,
+          "excluded": 1,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:22.360Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1124,
+          "received": 3,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T09:41:22.666Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 33,
+        "relevantArticles": 8,
+        "usableArticles": 1,
+        "uniqueArticles": 1,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 1,
+        "officialArticles": 1,
+        "trustedArticles": 0,
+        "independentChannels": 1,
+        "independentPublishers": 1,
+        "excludedEvidence": 32,
+        "excludedSquadArticles": 4
+      },
+      "articles": [
+        {
+          "title": "rose gives update on tóth injury - afc bournemouth",
+          "originalTitle": "Rose gives update on Tóth injury - AFC Bournemouth",
+          "fullText": "rose gives update on tóth injury - afc bournemouth <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxpn2h5zg1wudnlejn4nw0yuzy0q050zuhgvkppttrqyknnqtnvbw5ot2v4tezys2jezvvqvfawchh0tmjkudj5vfo3ufbsrdz5b19vvxhtzgjznmzyqjbrc25lckthzk1mtexkvng3n2pwcndyv1pjd0owdkjfohm1a2ytwq?oc=5\" target=\"_blank\">rose gives update on tóth injury</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">afc bournemouth</font>",
+          "sourceName": "AFC Bournemouth",
+          "sourceUrl": "https://www.afcb.co.uk",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPN2h5ZG1wUDNlejN4NW0yUzY0Q050ZUhGVkpPTTRqYkNNQTNvbW5oT2V4TEZYS2JEZVVqVFAwcHh0TmJKUDJ5VFo3UFBsRDZ5b19VVXhTZGJzNmZyQjBRc25lcktHZk1MTExkVng3N2pWcndYV1pJd0owdkJFOHM1a2YtWQ?oc=5",
+          "publishedAt": "2026-10-30T07:00:00.000Z",
+          "ageDays": 17.11,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.62
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "europa league scarf vs sturm graz - afc bournemouth superstore",
+          "sourceName": "AFC Bournemouth Superstore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hummel womens keeper chevron wide sweatpant - black - afc bournemouth superstore",
+          "sourceName": "AFC Bournemouth Superstore",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "womens home shirt 26/27 - red / black - afc bournemouth superstore",
+          "sourceName": "AFC Bournemouth Superstore",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "sparta praha v afc bournemouth: everything you need to know - afc bournemouth",
+          "sourceName": "AFC Bournemouth",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "womens third shirt 26/27 - marshmallow - afc bournemouth superstore",
+          "sourceName": "AFC Bournemouth Superstore",
+          "squadScope": "WOMEN",
+          "reason": "EXPLICIT_WOMEN_TEAM_CONTEXT"
+        },
+        {
+          "title": "mens long sleeve european home shirt 26/27 - afc bournemouth superstore",
+          "sourceName": "AFC Bournemouth Superstore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "mens long sleeve third shirt 26/27 - afc bournemouth superstore",
+          "sourceName": "AFC Bournemouth Superstore",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hill receives maiden england call - afc bournemouth",
+          "sourceName": "AFC Bournemouth",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "helen bleazard previews portsmouth test - afc bournemouth",
+          "sourceName": "AFC Bournemouth",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "watch - afc bournemouth",
+          "sourceName": "AFC Bournemouth",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "cook has belief in cherries' english talent - afc bournemouth",
+          "sourceName": "AFC Bournemouth",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "liverpool carabao cup date confirmed - afc bournemouth",
+          "sourceName": "AFC Bournemouth",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "R12: 4 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

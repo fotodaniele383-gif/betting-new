@@ -1,0 +1,19 @@
+{
+  "version": "BETTINGAPP_R27_XG_PUBLISHED_FIVE_LEAGUES_V1_20261116",
+  "from": "BETTINGAPP_R26_TENNIS_FRONTEND_PROGRESS_HOTFIX_V1_20261116",
+  "date": "2026-11-16",
+  "scope": "XG_EVIDENCE_ONLY",
+  "dbChanged": false,
+  "realMoneyAuthorization": false,
+  "autoSettlement": false,
+  "safetyGateBypass": false,
+  "schedulerChanges": false,
+  "source": "https://www.xgtables.io/data/",
+  "attribution": "xGTables / Sportmonks",
+  "sourceAuthority": "PUBLISHED_THIRD_PARTY_LKG_MAX_0_25",
+  "files": {
+    "backend/server.js": "add066a1574cbaf318da70c0d1d14d0cc087725faed756e7e49c67c3c9e54d2f",
+    "backend/calcioXgProviderFailoverAudit16dR3R2.js": "d54265a7d360de7797dec53e25402857c7dc1895f910c2e578aa259cab338671",
+    "backend/calcioXgtablesPublicXgR27.cjs": "023324b262d12f3bb190114189aa603857ec0de1980d1f27d9e6f03d3c87841a"
+  }
+}

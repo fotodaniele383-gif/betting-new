@@ -1,0 +1,23 @@
+{
+  "operationId": "CALCIO_FD_E0_1786710954424",
+  "fetchedAt": "2026-08-14T12:35:53.817Z",
+  "lastSuccessAt": "2026-08-14T12:35:53.817Z",
+  "source": "NETWORK",
+  "season": "2627",
+  "url": "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
+  "leagueKey": "premier_league",
+  "leagueName": "Premier",
+  "code": "E0",
+  "attemptedSeasons": [
+    "2627"
+  ],
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "sha256": "4eea2ff909d3b8e4fe394117d2ea3f18cfc39fff885595658b92a629af3c6e33",
+  "validRows": 12,
+  "rejectedRows": 0,
+  "earliestMatchAt": "2026-08-08T12:00:00.000Z",
+  "latestMatchAt": "2026-08-08T12:00:00.000Z",
+  "sizeBytes": 6397,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\OneDrive\\Personale\\BettingApp\\BettingApp\\backend\\data\\calcio_football_data\\last_known_good\\CALCIO_FD_E0_1786710954424"
+}

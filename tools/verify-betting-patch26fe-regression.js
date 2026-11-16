@@ -1,0 +1,5 @@
+'use strict';
+const fs=require('fs');const path=require('path');const crypto=require('crypto');const root=path.resolve(__dirname,'..');const expected=require('./PATCH26FE_PROTECTED_HASHES.json');
+const results=Object.entries(expected).map(([file,hash])=>{const actual=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex');return {file,ok:actual===hash,sha256:actual};});
+const registry=require('../backend/calcioPatchRegistry');results.push({file:'backend/calcioPatchRegistry.js',ok:String(registry.CALCIO_CURRENT_PATCH_VERSION)==='37',registry:String(registry.CALCIO_CURRENT_PATCH_VERSION),id:registry.PATCHES.at(-1)?.id});
+if(results.some(x=>!x.ok)){console.error(JSON.stringify({success:false,results},null,2));process.exit(1);}console.log(JSON.stringify({success:true,protectedAuthorities:{footballProbability:true,unifiedStakeAuthority:true,portfolioCaps:true,finalMarketContract:true,tennisQualityGate:true,tennisValueEvaluator:true,tennisPaperTrading:true,tennisDeepScan:true},results},null,2));

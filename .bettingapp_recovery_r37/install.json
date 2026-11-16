@@ -1,0 +1,237 @@
+{
+  "version": "R9_R37_REBASE_RECOVERY_20261112",
+  "at": "2026-11-12T19:28:41.801Z",
+  "originalAudit": "2026-11-12T16:11:45.650Z",
+  "targets": [
+    {
+      "file": "backend/server.js",
+      "original": "SHA_MISMATCH",
+      "sha": "01592301b41839ffc6ec1de53f7b909d07d31c90f3157e797fca6d46f0150718",
+      "replacement": "a6c86049cd1439e0a744cd5c1d7f5c75d3568273f7614f6668119c13dd927769"
+    },
+    {
+      "file": "backend/public/app.js",
+      "original": "SHA_MISMATCH",
+      "sha": "2559c09bc75c7a6dfb8bbbbede900f743e8948cebff40e2c418845ec9191eea2",
+      "replacement": "1ecf2d3b73c54a6bf9ff6163872e190380fb1dbb449a823fba615ae63d813023"
+    },
+    {
+      "file": "backend/public/calcioEditorMainR3.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "2d93295a829a7076aca1650ec8b7be13e0b91e44583463e5198e1cfd068a5674"
+    },
+    {
+      "file": "addons/calcio-editor/core.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "fb5c5f7358409707e697af9a21fd08d9d4c926f69126c12d065ec8787a760872"
+    },
+    {
+      "file": "addons/calcio-editor/math.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "7d0a8ef2f8ecb96518d248fe729034cbcf4f7b1fe173a77874fce0ca92539b06"
+    },
+    {
+      "file": "addons/calcio-editor/public/app.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "4a4b961c698c977a9e1cd4b046c34c0f3879b930209b29e464d5a59b57c26927"
+    },
+    {
+      "file": "backend/safe13ManualRouteGuard.js",
+      "original": "SHA_MISMATCH",
+      "sha": "749c6860d9d963269e1588ea4644ebadad165a79ad218593b599fbb51d7fe8bc",
+      "replacement": "d7b7dcddc0ef61bc8afb0cc1a7482cdf1010488f2b6c2f9d37cfdb90e15b8b92"
+    },
+    {
+      "file": "backend/realManualMode.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "7c7deaf9d3f1a2ff2d0bcc7c5dd85afdf8ec7589c527cb1e0a2f4564d9d93dc9"
+    },
+    {
+      "file": "backend/public/real-manual.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "337d7d7b9fb220b55a5b985ba16484c02e001b4d8ab2e700567c5fde853f24a9"
+    },
+    {
+      "file": "AVVIA_REALE_MANUALE.cmd",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "baeefe63cc0afce4939b0036c24484e29b1abd0ff3b0d3be02b35d96c71a18fb"
+    },
+    {
+      "file": "backend/calcioDeepScanEvidenceR17.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "91b4cf894556be2ce7614a38c5208dd1bc5b801ef4790fb866993d16c7919bd3"
+    },
+    {
+      "file": "backend/calcioDecisionCertification.js",
+      "original": "SHA_MISMATCH",
+      "sha": "88d35750471b767543bf8aba24b81b631a09994f811ecd036f3dbd53700e8c45",
+      "replacement": "30b2fd548b55c4f6f925cbd2b7ff2b925bd1193aae76eeecb00444f64e075e53"
+    },
+    {
+      "file": "backend/calcioAiFinalization.js",
+      "original": "SHA_MISMATCH",
+      "sha": "871bfd7a5772a9625d3d10db79b63492332378942a7408d9f35c7d594aaa0855",
+      "replacement": "af8cffe7b240f94c1ef681aa9177fdb34a6fe57b50a27fc93e921f713976a5e0"
+    },
+    {
+      "file": "backend/tennisValueEvaluator.js",
+      "original": "SHA_MISMATCH",
+      "sha": "c2cff280a2e0551fd35ec8d0c3fdfd80d45de5a1f8f939c5e98f7c6dde34da3f",
+      "replacement": "9147551247bdd12d9037ca21c01918883045328aea5731958637dee66297e17d"
+    },
+    {
+      "file": "backend/public/quantMatchPromptBridgeV4.js",
+      "original": "SHA_MISMATCH",
+      "sha": "25bc102df20a3b0c56248b0299cb72c30107da94e287fc89cb629c6104e80e4e",
+      "replacement": "4440253cfc40645c8a7f1c5802d6039760e92ff4a9e7fcd8fa4a0da049952c06"
+    },
+    {
+      "file": "backend/reliability10/common.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "3fffd90d3db542ea3d340c18aab958996e833dc9856dbf97fb97cd7b5f04fe9e"
+    },
+    {
+      "file": "backend/reliability10/calcioEventAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "642861d174c86e2f317b1ccaf44204cf2b986aeda174e2385eff11149b046991"
+    },
+    {
+      "file": "backend/reliability10/calcioSourceAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "bab03c01625ff6f45c3c7fa46b9148fd586af213311da945e49f9217b8d9cb4f"
+    },
+    {
+      "file": "backend/reliability10/calcioProbabilityAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "6be42dcb7272d8ea9c874ccd5c6e79970409ee4be761a8970ca5da99325738dd"
+    },
+    {
+      "file": "backend/reliability10/calcioPayoffAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "b115f3f9458de3246c4269a5c114db0806dcb39faee80530c2b0fb356437ff50"
+    },
+    {
+      "file": "backend/reliability10/calcioDecisionAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "b7d94cbc6f2a368ceca744e781c78c5a6c4965e893bb0385d2e41863e9ecc1f7"
+    },
+    {
+      "file": "backend/reliability10/tennisEventAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "e2979c168c237d44a97125cd55623db8ef205c8f79557b6de440e005c6b1a59e"
+    },
+    {
+      "file": "backend/reliability10/tennisSourceAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "470c91b5aae421e55c28c42bb398ce17e31dd65c9714132295bc09bc2eacca34"
+    },
+    {
+      "file": "backend/reliability10/tennisProbabilityAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "f98b9d3c98742690b6211ba6011328c0b142dace86ae465edbd3b1de7e878192"
+    },
+    {
+      "file": "backend/reliability10/tennisPayoffAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "c83423cd274d14c765b24893c7af4f97cff8b45f8afcc7ef678e42336b7928ab"
+    },
+    {
+      "file": "backend/reliability10/tennisDecisionAudit.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "aa165672fd28e84888c17ca3b92954eed37fb3a529e3707b18b3c4cdeb7abcb9"
+    },
+    {
+      "file": "backend/public/tennisDualSinglesV5UI.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "34e97042ac9423a664eca142b09fcbe9c3df4a4f6f1b53429ab687cdfacf607f"
+    },
+    {
+      "file": "backend/public/tennisPromptV62.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "788623e14f9a57e95167efa58d3c5b4801e03d51c29d17d9e615baa7d18d5dec"
+    },
+    {
+      "file": "backend/tennisCoreContractAudit.js",
+      "original": "SHA_MISMATCH",
+      "sha": "9f0e023949789e18d3e7c006ecf8e4eee3129230dd3f8788072a232dd5cdab27",
+      "replacement": "0d982e6911eb64b29cb6fbdc3c6dacefc30f0efdee7588cfd1406f6f38942a97"
+    },
+    {
+      "file": "public/app.js",
+      "original": "SHA_MISMATCH",
+      "sha": "6f7c056c81dec357998530be7db3be4c8f6d2a214e57be87ceb822a1d3dccd6d",
+      "replacement": "1ecf2d3b73c54a6bf9ff6163872e190380fb1dbb449a823fba615ae63d813023"
+    },
+    {
+      "file": "public/calcioEditorMainR3.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "2d93295a829a7076aca1650ec8b7be13e0b91e44583463e5198e1cfd068a5674"
+    },
+    {
+      "file": "public/quantMatchPromptBridgeV4.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "4440253cfc40645c8a7f1c5802d6039760e92ff4a9e7fcd8fa4a0da049952c06"
+    },
+    {
+      "file": "public/tennisDualSinglesV5UI.js",
+      "original": "SHA_MISMATCH",
+      "sha": "dad72c9a9b3095166f7622b3dc8f6323f9b4abed520d01f0e3279f8eeb813266",
+      "replacement": "34e97042ac9423a664eca142b09fcbe9c3df4a4f6f1b53429ab687cdfacf607f"
+    },
+    {
+      "file": "public/tennisPromptV62.js",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "788623e14f9a57e95167efa58d3c5b4801e03d51c29d17d9e615baa7d18d5dec"
+    },
+    {
+      "file": "APRI_INTERFACCIA_R8.cmd",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "892bfcf925da1d455936db0e7b6e37881750ae6ad5ef586e645d41d9dbe332fa"
+    },
+    {
+      "file": "AVVIA_MONITOR_R8_READONLY.cmd",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "e6adcfa93c367c3f6552e67e53000bf0f0217b88fda005ee66d8b429db3534b9"
+    },
+    {
+      "file": "STATO_SAFE13_R8.cmd",
+      "original": "MISSING",
+      "sha": null,
+      "replacement": "efa761bc0cbd0a12536c535bd96a1ffc279f8bcd22206c95b379139e1618214e"
+    }
+  ],
+  "backupDirectory": ".bettingapp_recovery_r37/backup-2026-11-12T19-28-41-799Z",
+  "sqliteSha256Before": "151183d5a127014bd583d590e39155069df624a78d0f37182720dd616783d46b",
+  "integrity": "PASS",
+  "filesRestored": 37,
+  "r6Integrity": "RELIABILITY10_PLUS_REAL_MANUAL_PLUS_CALCIO_MAIN_R6_TENNIS_V62",
+  "r7Installed": false,
+  "r9Installed": false,
+  "databaseTouched": false
+}

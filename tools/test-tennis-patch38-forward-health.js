@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+'use strict';
+const path=require('path');const{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(process.cwd());const db=new DatabaseSync(path.join(root,'backend','database_betting.db'));
+const cohorts=require(path.join(root,'backend','tennisForwardCohorts'));const health=require(path.join(root,'backend','tennisForwardCaptureHealth'));const semantics=require(path.join(root,'backend','tennisForwardHealthSemanticsPatch38'));
+const checks=[];function check(name,ok,details={}){checks.push({name,ok:Boolean(ok),details});}
+for(const id of [2441,2442]){const inspected=cohorts.inspectForwardCohortMember(db,id,{evaluatedAt:'2026-08-03T21:05:12.890Z'});const c=semantics.classifyCohortInspection(inspected);const capture=health.inspectForwardCaptureBet(db,id,{now:'2026-08-03T21:05:30.000Z'});check(`#${id} sigillo valido`,inspected.sealValid===true&&inspected.stateHashValid===true,inspected);check(`#${id} esclusione attesa`,c.expectedTemporalExclusion===true,c);check(`#${id} non strutturale attivo`,capture.expectedTemporalExclusion===true&&capture.blockClass==='NONE'&&capture.status!=='BLOCKED',capture);}
+const reject=semantics.classifyPrematchRejection({code:'PATCH29_R3_PREMATCH_CAPTURE_GATE_BLOCKED'});check('prematch policy rejection è WARN',reject.expectedPolicyRejection&&reject.severity==='WARN'&&reject.event==='PREMATCH_CAPTURE_REJECTED',reject);const fatal=semantics.classifyPrematchRejection({code:'SQLITE_CORRUPT'});check('errore reale resta ERROR',!fatal.expectedPolicyRejection&&fatal.severity==='ERROR',fatal);
+db.close();const failed=checks.filter(c=>!c.ok);console.log(JSON.stringify({success:failed.length===0,checks:checks.length,passed:checks.length-failed.length,failed:failed.length,details:checks},null,2));if(failed.length)process.exit(1);

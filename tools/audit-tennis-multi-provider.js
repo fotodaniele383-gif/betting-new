@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('fs');
+const path=require('path');
+const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));
+const multi=require(path.join(root,'backend/tennisMultiProviderData'));
+const health=multi.getHealth({dataDir:path.join(root,'backend/sackmann_data'),projectRoot:root});
+const report={...health,patch:'21',generatedAt:new Date().toISOString()};
+const out=path.join(root,'audit_patch21');fs.mkdirSync(out,{recursive:true});
+fs.writeFileSync(path.join(out,'patch21_multi_provider_audit.json'),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify(report,null,2));
+if(!report.success)process.exit(2);

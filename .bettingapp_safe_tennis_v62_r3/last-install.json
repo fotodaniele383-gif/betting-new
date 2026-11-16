@@ -1,0 +1,105 @@
+{
+  "version": "BETTINGAPP_SAFE_TENNIS_V62_R3_CUMULATIVA",
+  "base": "SAFE_ORIGINALE",
+  "backupDir": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.bettingapp_safe_tennis_v62_r3\\backups\\2026-11-10T15-51-45-164Z",
+  "entries": [
+    {
+      "path": "backend/public/TENNIS_V6_2_MASTER.txt",
+      "originalExisted": false,
+      "originalSha256": null,
+      "newSha256": "9548fd10fe9a777cda11e8b2f90d0ec45f4f18314fab05561595c108e478dea5"
+    },
+    {
+      "path": "backend/public/app.js",
+      "originalExisted": true,
+      "originalSha256": "27c53435a0c142b399993b39933496d7865b33d38f6af2cc3b4277a6e6182e6a",
+      "newSha256": "1ecf2d3b73c54a6bf9ff6163872e190380fb1dbb449a823fba615ae63d813023"
+    },
+    {
+      "path": "backend/public/calcioEditorMainR3.js",
+      "originalExisted": true,
+      "originalSha256": "2d93295a829a7076aca1650ec8b7be13e0b91e44583463e5198e1cfd068a5674",
+      "newSha256": "2d93295a829a7076aca1650ec8b7be13e0b91e44583463e5198e1cfd068a5674"
+    },
+    {
+      "path": "backend/public/index.html",
+      "originalExisted": true,
+      "originalSha256": "74a0e5768aec153c5f2edb171e39873a7c40a11b9a7487d7a35ccd2f28ed851e",
+      "newSha256": "0105538787f8ea2b10193d223e161a0f3b0aae1a09cad6eab64ff3feaa393ee0"
+    },
+    {
+      "path": "backend/public/quantMatchPromptBridgeV4.js",
+      "originalExisted": true,
+      "originalSha256": "18a55dbe8fef3fad09cde2d2521e42e10ca857c31b47707dc27bedc16d1f5feb",
+      "newSha256": "63ad336f42ea141a0bfaa16df24d238c7b8eb570fe81535f63e3ca119d3647cd"
+    },
+    {
+      "path": "backend/public/tennisDualSinglesV5UI.js",
+      "originalExisted": false,
+      "originalSha256": null,
+      "newSha256": "34e97042ac9423a664eca142b09fcbe9c3df4a4f6f1b53429ab687cdfacf607f"
+    },
+    {
+      "path": "backend/public/tennisPromptV62.js",
+      "originalExisted": false,
+      "originalSha256": null,
+      "newSha256": "788623e14f9a57e95167efa58d3c5b4801e03d51c29d17d9e615baa7d18d5dec"
+    },
+    {
+      "path": "backend/tennisCoreContractAudit.js",
+      "originalExisted": true,
+      "originalSha256": "9f0e023949789e18d3e7c006ecf8e4eee3129230dd3f8788072a232dd5cdab27",
+      "newSha256": "0d982e6911eb64b29cb6fbdc3c6dacefc30f0efdee7588cfd1406f6f38942a97"
+    },
+    {
+      "path": "prompts/TENNIS_V6_2_MASTER.txt",
+      "originalExisted": false,
+      "originalSha256": null,
+      "newSha256": "9548fd10fe9a777cda11e8b2f90d0ec45f4f18314fab05561595c108e478dea5"
+    },
+    {
+      "path": "public/TENNIS_V6_2_MASTER.txt",
+      "originalExisted": false,
+      "originalSha256": null,
+      "newSha256": "9548fd10fe9a777cda11e8b2f90d0ec45f4f18314fab05561595c108e478dea5"
+    },
+    {
+      "path": "public/app.js",
+      "originalExisted": true,
+      "originalSha256": "a81267f4717da128f2243268ff81ab0b1f75977a70ccb6cf468c20cfe678b1dd",
+      "newSha256": "1ecf2d3b73c54a6bf9ff6163872e190380fb1dbb449a823fba615ae63d813023"
+    },
+    {
+      "path": "public/calcioEditorMainR3.js",
+      "originalExisted": false,
+      "originalSha256": null,
+      "newSha256": "2d93295a829a7076aca1650ec8b7be13e0b91e44583463e5198e1cfd068a5674"
+    },
+    {
+      "path": "public/index.html",
+      "originalExisted": true,
+      "originalSha256": "ff8e05fb9d66574c4d5b5fda9900f853c740a01dbb2739781e8aa7c9dab06c96",
+      "newSha256": "0105538787f8ea2b10193d223e161a0f3b0aae1a09cad6eab64ff3feaa393ee0"
+    },
+    {
+      "path": "public/quantMatchPromptBridgeV4.js",
+      "originalExisted": false,
+      "originalSha256": null,
+      "newSha256": "63ad336f42ea141a0bfaa16df24d238c7b8eb570fe81535f63e3ca119d3647cd"
+    },
+    {
+      "path": "public/tennisDualSinglesV5UI.js",
+      "originalExisted": true,
+      "originalSha256": "dad72c9a9b3095166f7622b3dc8f6323f9b4abed520d01f0e3279f8eeb813266",
+      "newSha256": "34e97042ac9423a664eca142b09fcbe9c3df4a4f6f1b53429ab687cdfacf607f"
+    },
+    {
+      "path": "public/tennisPromptV62.js",
+      "originalExisted": false,
+      "originalSha256": null,
+      "newSha256": "788623e14f9a57e95167efa58d3c5b4801e03d51c29d17d9e615baa7d18d5dec"
+    }
+  ],
+  "modifiedDatabase": false,
+  "modifiedStake": false
+}

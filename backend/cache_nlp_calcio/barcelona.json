@@ -1,0 +1,366 @@
+{
+  "timestamp": 1794164669930,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": -1,
+    "tactics": {
+      "mentions": 1,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Negativo 📉",
+    "color": "#ef4444",
+    "confidence": 90,
+    "sourceCoverageConfidence": 95,
+    "matchImpactConfidence": 90,
+    "raw": {
+      "injury": -1,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 80,
+      "globalScore": -4,
+      "report": "Negativo 📉",
+      "color": "#ef4444",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 8
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Barcelona",
+      "officialDomain": "fcbarcelona.com",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 90,
+      "coverageConfidence": 95,
+      "matchImpactConfidence": 90,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1213,
+          "received": 15,
+          "relevant": 3,
+          "fresh": 15,
+          "usable": 3,
+          "excluded": 1,
+          "officialUsable": 3,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:04:29.920Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 897,
+          "received": 15,
+          "relevant": 8,
+          "fresh": 15,
+          "usable": 8,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:04:29.604Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1043,
+          "received": 1,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:04:29.750Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 3,
+        "receivedArticles": 31,
+        "relevantArticles": 11,
+        "usableArticles": 11,
+        "uniqueArticles": 11,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 11,
+        "officialArticles": 3,
+        "trustedArticles": 1,
+        "independentChannels": 5,
+        "independentPublishers": 5,
+        "excludedEvidence": 20,
+        "excludedSquadArticles": 1
+      },
+      "articles": [
+        {
+          "title": "rodri injury news - official fc barcelona website",
+          "originalTitle": "Rodri injury news - Official FC Barcelona Website",
+          "fullText": "rodri injury news - official fc barcelona website <a href=\"https://news.google.com/rss/articles/cbmiiafbvv95cuxpn25fwtfyy09ltfpjvxzmzenwz1f5dgs0unhtvwrzswsxt3qxyk8ywlftstbpmtzgtzhndk1ubvllzk8wudfrotvtwnrmektbmermogpbcmlqofvxreqwqthatvmyaurybhzznmxkddn4zku3egfpy3uwbtd0edjwx0pquxpssunw?oc=5\" target=\"_blank\">rodri injury news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">official fc barcelona website</font>",
+          "sourceName": "Official FC Barcelona Website",
+          "sourceUrl": "https://www.fcbarcelona.com",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN25FWTFyY09lTFpJVXZmZENwZ1F5dGs0UnhtVWRZSWsxT3QxYk8yWlFtSTBpMTZGTzhndk1UbVllZk8wUDFrOTVTWnRMektBMERMOGpBcmlQOFVXREQwQThaTVMyaURYbHZzNmxkdDN4ZkU3eGFPY3UwbTd0eDJWX0pQUXpSSUNW?oc=5",
+          "publishedAt": "2026-11-04T11:53:11.000Z",
+          "ageDays": 4.3,
+          "category": "MEDICAL",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 1
+        },
+        {
+          "title": "back at training - official fc barcelona website",
+          "originalTitle": "Back at training - Official FC Barcelona Website",
+          "fullText": "back at training - official fc barcelona website <a href=\"https://news.google.com/rss/articles/cbmihwfbvv95cuxodm5omhz6smk1m2d6vfdleuj2lvzjtuzay1prr0nvui1qt0k5twzuug5zujyzoxk4ewv4m3jmrfvvmjiztgu2vvpwewetdgu0x29hr3did0thz1jfslv3evjindd3bwhkce5olxram3nnqzhnm1lln2pvttzmtmtlt2horu5hvjq?oc=5\" target=\"_blank\">back at training</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">official fc barcelona website</font>",
+          "sourceName": "Official FC Barcelona Website",
+          "sourceUrl": "https://www.fcbarcelona.com",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdm5OMHZ6Smk1M2d6VFdLeUJ2LVZjTUZaY1pRR0NvUi1qT0k5TWZuUG5ZUjYzOXk4eWV4M3JMRFVVMjIzTGU2VVpWeWEtdGU0X29hR3did0thZ1JfSlV3eVJiNDd3bWhkcE5oLXRaM3NNQzhnM1llN2pvTTZMTmtlT2hORU5HVjQ?oc=5",
+          "publishedAt": "2026-11-06T12:38:14.000Z",
+          "ageDays": 2.27,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 1
+        },
+        {
+          "title": "raphinha to sign renewal with president laporta this thursday - official fc barcelona website",
+          "originalTitle": "Raphinha to sign renewal with president Laporta this Thursday - Official FC Barcelona Website",
+          "fullText": "raphinha to sign renewal with president laporta this thursday - official fc barcelona website <a href=\"https://news.google.com/rss/articles/cbmiwwfbvv95cuxoak96tjrpcwfgz0vcx2mxzwhishhtx19tz1rktvr4mhbenfr0y2ftszvnz2zntfj2adduefjpwdjabzlxtvfkd01nq2tolwlxytbxx2flc2y5cevvmlflmlvzckpledzzde1kylf6r3nkovbqshhisflkznltawrobzvgrnfmahzttznbunzhaznxz21mdg5yte1mbw52mnbqmddjmfjmnhzwu1nibwlnnkhmuvh0qvlvtvlcnllfbnrjazg?oc=5\" target=\"_blank\">raphinha to sign renewal with president laporta this thursday</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">official fc barcelona website</font>",
+          "sourceName": "Official FC Barcelona Website",
+          "sourceUrl": "https://www.fcbarcelona.com",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOak96TjRPcWFGZ0VCX2MxZWhISHhtX19TZ1RKTVR4MHBENFR0Y2FtSzVNZ2ZNTFJ2aDdUeFJPWDJabzlxTVFKd01nQ2toLWlXYTBXX2Flc2Y5cEVVMlFlMlVzckpLeDZZdE1KYlF6R3NKOVBqSHhiSFlkZnlTaWRObzVGRnFmaHZTTzNBUnZhazNxZ21MdG5yTE1MbW52MnBQMDdJMFJMNHZWU1NibWlNNkhMUVh0QVlVTVlCNllfbnRjazg?oc=5",
+          "publishedAt": "2026-11-04T16:03:54.000Z",
+          "ageDays": 4.13,
+          "category": "TRANSFER",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 1
+        },
+        {
+          "title": "espanyol appoint former barcelona assistant sarabia as new manager - reuters",
+          "originalTitle": "Espanyol appoint former Barcelona assistant Sarabia as new manager - Reuters",
+          "fullText": "espanyol appoint former barcelona assistant sarabia as new manager - reuters <a href=\"https://news.google.com/rss/articles/cbmiswfbvv95cuxnctd4txjntwdmdldsrnfrmm1zmwnpwle1dnjaak90mv9faey1ajvsrzfqn2jzaw1fqvd4mljwbuplq3loa0rfbedkv3nydhhsyzlfuzr2ec15oxy1ztfhrjdfnxf4nvbktdfcqjhvahvpaw5du0hqvtdax0ldbu9hzwjmnu81ylnrne43nnv0ou5oevvnajjemzfydfzgawzpzg5tme9jufmtzv9qzhazmwotsq?oc=5\" target=\"_blank\">espanyol appoint former barcelona assistant sarabia as new manager</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">reuters</font>",
+          "sourceName": "Reuters",
+          "sourceUrl": "https://www.reuters.com",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcTd4TXJnTWdMdldsRnFrMm1zMWNpWlE1dnJaak90MV9FaEY1ajVSRzFqN2JZaW1FQVd4MlJWbUpLQ3lOa0RfbEdkV3NYdHhSYzlfUzR2eC15OXY1ZTFHRjdfNXF4NVBKTDFCQjhvaHVpaW5DU0hqVTdaX0lDbU9hZWJMNU81YlNRNE43NnV0OU5oeVVNajJEMzFYdFZGaWZPZG5tME9JUFMtZV9QZHAzMWotSQ?oc=5",
+          "publishedAt": "2026-10-28T07:00:00.000Z",
+          "ageDays": 11.5,
+          "category": "MANAGER",
+          "trustTier": "TRUSTED_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.78
+        },
+        {
+          "title": "barcelona vs aston villa – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Barcelona vs Aston Villa – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "barcelona vs aston villa – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmiiwfbvv95cuxnmvnhrtzwzwvoww5gmurucgcxdkrou1bidxbddll4azawt29fctb0s1bxzwznvnznr3lwclo4rjh6cgnowmk1lwtftdbqml9xuhzuaurxyupmrdnvunfilthiwdbazvl3zvh5rllfbtzzq3vvtgr3wmg3nfprr2txn08zteo3m0huslqw?oc=5\" target=\"_blank\">barcelona vs aston villa – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMVNHRTZwZWVOWW5GMURUcGcxdkROU1BIdXBDdll4azAwT29FcTB0S1BXZWZNVnZnR3lwclo4Rjh6cGNoWmk1LWtFTDBQMl9XUHZuaURXYUpmRDNVUnFiLThIWDBaZVl3ZVh5RllFbTZZQ3VVTGR3Wmg3NFprR2tXN08zTEo3M0hUSlQw?oc=5",
+          "publishedAt": "2026-11-03T04:52:00.000Z",
+          "ageDays": 5.59,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "jose mourinho’s barcelona years: when real madrid’s manager was loved at the camp nou - the athletic - the new york times",
+          "originalTitle": "Jose Mourinho’s Barcelona years: When Real Madrid’s manager was loved at the Camp Nou - The Athletic - The New York Times",
+          "fullText": "jose mourinho’s barcelona years: when real madrid’s manager was loved at the camp nou - the athletic - the new york times <a href=\"https://news.google.com/rss/articles/cbmipwfbvv95cuxpnnpetlrot0zbmmhjmw4yb0mwwklhn0xostfpngj6d2t1oexyms1ddm85x1rxvkz0ltj6ng51rg9gzxzwvjdewuh5qzdxauk0btdfwc1cdfv0cmzbs0rdrflyng41skcxnvrmd014tkytwmrfml9nwg56nkw4tgvemvhfav91vnd1v08tby1kc1jhswpfmlvzndlhefj1su13tg1unxp5ma?oc=5\" target=\"_blank\">jose mourinho’s barcelona years: when real madrid’s manager was loved at the camp nou - the athletic</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">the new york times</font>",
+          "sourceName": "The New York Times",
+          "sourceUrl": "https://www.nytimes.com",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNnpETlRoT0ZBMmhjMW4yb0MwWklHN0xoSTFpNGJ6d2t1OExyMS1Ddm85X1RXVkZ0LTJ6NG51RG9GZXZwVjdEWUh5QzdxaUk0bTdFWC1CdFV0cmZBS0RDRFlyNG41SkcxNVRmd014TkYtWmRFMl9NWG56Nkw4TGVEMVhFaV91Vnd1V08tby1kc1JhSWpfMlVZNDlheFJ1SU13TG1uNXp5MA?oc=5",
+          "publishedAt": "2026-10-26T07:00:00.000Z",
+          "ageDays": 13.5,
+          "category": "MANAGER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "barcelona predicted lineup vs. atletico madrid: main midfield duo of flick era returns - sports illustrated",
+          "originalTitle": "Barcelona Predicted Lineup vs. Atletico Madrid: Main Midfield Duo of Flick Era Returns - Sports Illustrated",
+          "fullText": "barcelona predicted lineup vs. atletico madrid: main midfield duo of flick era returns - sports illustrated <a href=\"https://news.google.com/rss/articles/cbmihgfbvv95cuxpm2hwrehfufuwctz1slbitdnjnzryefbzc0lxohllckxwazdjnzzwblzzcnnxmzbgn3hgqw43sjribu9qyxftyzd0mzhmu3nqr1ftn093ohzpnfbytg1lmhozms10nnc5yk45aw9lqtrjofrvblpxb3dmuc1bvnnvbwjvn2qzzw?oc=5\" target=\"_blank\">barcelona predicted lineup vs. atletico madrid: main midfield duo of flick era returns</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">sports illustrated</font>",
+          "sourceName": "Sports Illustrated",
+          "sourceUrl": "https://www.si.com",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPM2hwREhFUFUwcTZ1SlBiTDNJNzRYeFBzc0lXOHllckxWazdjNzZwblZzcnNxMzBGN3hGQW43SjRibU9QYXFTYzd0MzhMU3NQR1FtN093OHZPNFByTG1lMHozMS10Nnc5Yk45aW9lQTRJOFRvblpXb3dmUC1BVnNVbWJVN2QzZw?oc=5",
+          "publishedAt": "2026-11-07T20:00:01.000Z",
+          "ageDays": 0.96,
+          "category": "RETURN_FITNESS",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "aston villa starting xi vs barcelona: confirmed team news and predicted lineup - yahoo sports",
+          "originalTitle": "Aston Villa Starting XI vs Barcelona: Confirmed Team News and Predicted Lineup - Yahoo Sports",
+          "fullText": "aston villa starting xi vs barcelona: confirmed team news and predicted lineup - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmigafbvv95cuxqvwfbyxlztuttshm2q21crghorkxfdhhhbkw4smvzouo2x0vxowdiqndaelltwjbuahbyc055zhjpuy1gdjh4qzj4zvldzzlws3deqwhmnwzvwxk4oddzy0jsbvdjtjmzt3bzb3vczk9hnlq0tlpovehiztbmvvzedg?oc=5\" target=\"_blank\">aston villa starting xi vs barcelona: confirmed team news and predicted lineup</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVWFBYXlzTUtTSHM2Q21CRGhoRkxFdHhHbkw4SmVzOUo2X0VxOWdIQndaelltWjBUaHBYc055ZHJPUy1Gdjh4QzJ4ZVlDZzlwS3dEQWhMNWZvWXk4ODdzY0JSbVdjTjMzT3BZb3VCZk9HNlQ0TlpoVEhIZTBmVVZEdg?oc=5",
+          "publishedAt": "2026-11-03T15:50:00.000Z",
+          "ageDays": 5.14,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "raphinha staying at fc barcelona until 2030 - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "last workout before the metropolitano - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "raphinha rises in three rankings - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "hansi flick: 'eric and christensen will be in the squad' - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "when and where to watch atlético madrid v fc barcelona - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "highest goalscoring barça side in a century - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "large number of fc barcelona players called up for international duty - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lamine yamal top champions league scorer under 20 years of age - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "ACADEMY",
+          "reason": "EXPLICIT_YOUTH_OR_RESERVE_CONTEXT"
+        },
+        {
+          "title": "fc barcelona 3-0 aston villa: three goals, three points - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "frenkie de jong reaches 300 appearances for fc barcelona - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "preview | fc barcelona v aston villa - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "the squad for the aston villa match - official fc barcelona website",
+          "sourceName": "Official FC Barcelona Website",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "R12: 1 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 5000,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

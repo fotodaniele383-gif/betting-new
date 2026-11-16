@@ -1,0 +1,300 @@
+{
+  "timestamp": 1794817182005,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 31.9,
+    "sourceCoverageConfidence": 80,
+    "matchImpactConfidence": 31.9,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 55,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 3
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Inter Milan",
+      "officialDomain": "inter.it",
+      "status": "PARTIAL",
+      "confidence": 31.9,
+      "coverageConfidence": 80,
+      "matchImpactConfidence": 31.9,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "EMPTY",
+          "httpStatus": 200,
+          "durationMs": 952,
+          "received": 0,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:41.787Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1159,
+          "received": 15,
+          "relevant": 12,
+          "fresh": 7,
+          "usable": 5,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:41.994Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 641,
+          "received": 1,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-16T08:19:41.476Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 16,
+        "relevantArticles": 12,
+        "usableArticles": 5,
+        "uniqueArticles": 5,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 5,
+        "officialArticles": 0,
+        "trustedArticles": 0,
+        "independentChannels": 2,
+        "independentPublishers": 2,
+        "excludedEvidence": 11,
+        "excludedSquadArticles": 0
+      },
+      "articles": [
+        {
+          "title": "inter milan vs como – match preview and team news - yahoo sports",
+          "originalTitle": "Inter Milan vs Como – Match preview and team news - Yahoo Sports",
+          "fullText": "inter milan vs como – match preview and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmif0fvx3lxtfbgq2fgmeg4ntzar1c3cjhnnf9ccdrkv3fdnve1egnmegfvbtlmeuu4qllulwfin25heehzzxh5ouv4shfmvfrqbgx4cdu2m3jzlwfvzkpmcezeu1prrvvocthsqwrbzxlnctmwve5ivkoymgy4rupqz19mqtdqqvk?oc=5\" target=\"_blank\">inter milan vs como – match preview and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGQ2FGMEg4NTZaR1c3cjhNNF9CcDRKV3FDNVE1eGNmeGFVbTlmeUU4QlluLWFiN25HeEhZZXh5OUV4SHFMVFRQbGx4cDU2M3JZLWFvZkpMcEZEU1pRRVVOcThsQWRBZXlncTMwVE5iVkoyMGY4RUpqZ19mQTdqQVk?oc=5",
+          "publishedAt": "2026-11-08T13:09:00.000Z",
+          "ageDays": 7.8,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "lazio defender expected to miss roma & inter milan clashes before returning in january - the laziali",
+          "originalTitle": "Lazio Defender Expected to Miss Roma & Inter Milan Clashes Before Returning in January - The Laziali",
+          "fullText": "lazio defender expected to miss roma & inter milan clashes before returning in january - the laziali <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxnrno4weqzrxluq0hbcm9qtmpuzlppwmxjc0zjvff0a0dyzgn1xzluqjjda0ppc04zbnlpa2ntcejjwtjpnzfvu1j2cwvkvlbgww5xwezfqwtls3i4ntryc201dtdmugvom0ltoxltwg1lcmtssy1oqwhkaeljre9ga3nznnibiafbvv95cuxnme5vsnnxbdaxdmj1bjbmedvcys13mwtjy19ms3ney3hzyu9gwkzpbu8wvgzeywjud2tkdljgwvhpa3fyslnvyxlbcvgzwddhdmnvemlls002ulz5vc1zrtratwvwdtdoufnzum1osfzmwu5ssgtdmji4djdwy2gytwfudnbhv1hz?oc=5\" target=\"_blank\">lazio defender expected to miss roma & inter milan clashes before returning in january</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">the laziali</font>",
+          "sourceName": "The Laziali",
+          "sourceUrl": "https://thelaziali.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRno4WEQzRXlUQ0hBcm9qTmpUZlpPWmxJc0ZjVFF0a0dyZGN1XzlUQjJDa0ppc04zbnlpa2NTcEJjWTJPNzFVU1J2cWVkVlBGWW5XWEZFQWtLS3I4NTRyc201dTdmUGVoM0ltOXltWG1lcmtSSy1OQWhKaElJRE9Ga3NzNNIBiAFBVV95cUxNME5vSnNxbDAxdmJ1bjBMeDVCYS13MWtjY19MS3NEY3hZYU9GWkZPbU8wVGZEYWJud2tkdlJGWVhPa3FySlNVYXlBcVgzWDdHdmNvemlLS002UlZ5VC1ZRTRaTWVwdTdoUFNZUm1OSFZmWU5SSGtDMjI4djdWY2gyTWFudnBhV1hz?oc=5",
+          "publishedAt": "2026-11-14T22:24:17.000Z",
+          "ageDays": 1.41,
+          "category": "OTHER",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "inter milan vs como – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Inter Milan vs Como – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "inter milan vs como – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmihafbvv95cuxpdjiycnhmseduogutbmfwswtqmwzfctjqvi1px0ituuhsb2dwytdkx3drdujkzxkzvgqwb21pbm13oexvos1svmvycvdrcdbyblawutbctk5nqndmte85dgq0d1flbzfjx3htzuzbnhr0wddmt1rxqmzzodriejz6sxyyyww?oc=5\" target=\"_blank\">inter milan vs como – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdjIycnhMSEduOGUtbmFwSWtQMWZFcTJQVi1PX0ItUUhsb2dwYTdkX3dRdUJkZXkzVGQwb21Pbm13OExVOS1sVmVycVdRcDByblAwUTBCTk5nQndMTE85dGQ0d1FLbzFjX3htZUZBNHR0WDdMT1RxQmZzODRIejZ6SXYyYWw?oc=5",
+          "publishedAt": "2026-11-08T13:31:00.000Z",
+          "ageDays": 7.78,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "inter milan xi vs feyenoord – predicted lineup and team news - yahoo sports",
+          "originalTitle": "Inter Milan XI vs Feyenoord – Predicted lineup and team news - Yahoo Sports",
+          "fullText": "inter milan xi vs feyenoord – predicted lineup and team news - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmiggfbvv95cuxpbe5ueffps0rzzmx5tes3rxpbtknjrtnszvj3lvnvy3vzx1pymlv1uw5oqk4zmmt0q3h2tkfqytztb0zothrrvtbicgtbsgcysvplmjhxcmhzewztrvv0yzlpmtbmnwngr3zxsfvjohg1cv9gnethd0qyt2tgwklqmzrn?oc=5\" target=\"_blank\">inter milan xi vs feyenoord – predicted lineup and team news</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbE5UeFFPS0RzZmx5TEs3RXpBTkNjRTNSZVJ3LVNVY3VZX1pYMlV1UW5oQk4zMmt0Q3h2TkFQYTZtb0ZOTHRRVTBIcGtBSGcySVpLMjhXcmhZeWZtRVV0YzlPMTBMNWNGR3ZXSFVjOHg1cV9GNEthd0QyT2tGWklqMzRn?oc=5",
+          "publishedAt": "2026-11-03T08:00:00.000Z",
+          "ageDays": 13.01,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        },
+        {
+          "title": "inter milan vs como today: serie a preview, team news & tv info - yahoo sports",
+          "originalTitle": "Inter Milan vs Como Today: Serie A Preview, Team News & TV Info - Yahoo Sports",
+          "fullText": "inter milan vs como today: serie a preview, team news & tv info - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmif0fvx3lxte5rlvboofzws3rrzjlpvfdyamxpuhheq1dkdxf1tmzzmjq1v2z2eja1a3fyahlvzxjksthnzhdzyu1ueer3yzf2qk9ns24ydhhpb043vkx6u2u3n1zst2wzwf9ucnnsunl2mjfqbu5ishvtunlea2fvcnp5n1poeku?oc=5\" target=\"_blank\">inter milan vs como today: serie a preview, team news & tv info</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5rLVBOOFZWS3RrZjlPVFdYamxPUHhEQ1dkdXF1TmZzMjQ1V2Z2ejA1a3FYaHlVZXJKSThNZHdzYU1UeER3YzF2Qk9nS24ydHhpb043Vkx6U2U3N1ZsT2wzWF9UcnNSUnl2MjFQbU5ISHVtUnlEa2Fvcnp5N1poekU?oc=5",
+          "publishedAt": "2026-11-08T12:28:14.000Z",
+          "ageDays": 7.83,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "PREMATCH_WEEK",
+          "matchImpactWeight": 0.279
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "france woes mount as tchouaméni, thuram leave squad due to injuries - espn",
+          "sourceName": "ESPN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TEAM_NOT_MENTIONED"
+        },
+        {
+          "title": "inter milan v city: kick-off time, team news and tv information - manchester city fc",
+          "sourceName": "Manchester City FC",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "ac milan vs inter milan – predicted lineup and team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "milan boss ruben amorim faces injury headache ahead of pre-derby bologna game - espn",
+          "sourceName": "ESPN",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "serie a preview: milan vs inter – team news, lineups & prediction - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "inter milan xi vs ac milan – predicted lineup and team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "ac milan vs inter milan – match preview and team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "inter milan vs fiorentina – predicted lineup and team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "inter milan vs fiorentina – match preview and team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "inter milan vs napoli – predicted lineup and team news - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        },
+        {
+          "title": "finale inter-milan 0-3: il diavolo cancella il sogno triplete! rossoneri in finale",
+          "sourceName": "Gazzetta",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "STALE"
+        }
+      ],
+      "warnings": [
+        "Evidenza solo media/aggregatori: nessuna conferma ufficiale del club."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 2500,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

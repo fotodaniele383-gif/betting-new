@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs'),path=require('path');
+const i=process.argv.indexOf('--root');const root=path.resolve(i>=0&&process.argv[i+1]?process.argv[i+1]:'.');
+const out=path.join(root,'patch42_trading_accordion_preview.html');
+const rows=[['🛡️','Step54 Exposure Guard','64 ripetuti · 10 multi-stake'],['🎯','Singole — Storico attivo completo','+€5.93 · ROI 0.84% · 322 giocate'],['🕒','Ultime 200 righe attive','ROI -13.66% · 71 operative'],['📐','Calibrazione per fascia','Gap massimo +18.5 pp'],['🌍','Resa per Campionato','4 competizioni'],['🧠','Resa Deep Scan IA','6 categorie'],['🏷️','Resa Qualità / Gate finale','4 categorie'],['🤖','Vinte e perse per fascia AI','n=838 · 57.5% vinte']];
+const html=`<!doctype html><meta charset="utf-8"><title>Patch 42 preview</title><style>body{background:#0f172a;color:#e2e8f0;font:14px Arial;padding:24px}details{border:1px solid #334155;border-left:3px solid #38bdf8;border-radius:12px;margin:8px 0;background:#172033}summary{display:grid;grid-template-columns:34px 1fr 28px;align-items:center;gap:10px;padding:10px;cursor:pointer}.i{width:30px;height:30px;border:1px solid #334155;border-radius:9px;display:grid;place-items:center}.s{color:#94a3b8;font-size:12px}.b{padding:12px;border-top:1px solid #334155;color:#94a3b8}</style><h2>Trading Reale · pannelli chiusi di default</h2>${rows.map(r=>`<details><summary><span class=i>${r[0]}</span><span><strong>${r[1]}</strong><div class=s>${r[2]}</div></span><span>⌄</span></summary><div class=b>Contenuto tabellare Patch 41 preservato.</div></details>`).join('')}`;
+fs.writeFileSync(out,html);console.log(JSON.stringify({success:true,file:out},null,2));

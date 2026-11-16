@@ -1,0 +1,45 @@
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const quality = require('../backend/tennisQualityGateV2');
+const registry = require('../backend/tennisPatchRegistry');
+const ROOT = path.resolve(__dirname, '..');
+function assert(condition, message) { if (!condition) throw new Error(message); }
+function read(rel) { return fs.readFileSync(path.join(ROOT, rel), 'utf8'); }
+
+assert(Number(registry.TENNIS_CURRENT_PATCH_VERSION) >= 10, 'Registry precedente a Patch 10');
+assert(registry.PATCHES.some(p => p.version === '9' && p.status === 'ACTIVE'), 'Patch 9 non preservata');
+assert(registry.PATCHES.some(p => p.version === '10' && p.status === 'ACTIVE'), 'Patch 10 non attiva');
+const inventoryBuilder = read('tools/build-tennis-patch-inventory.js');
+assert(inventoryBuilder.includes("TENNIS_INVENTORY_BUILDER_REVISION = 'PATCH10_R1_SELF_EXCLUSION'"), 'Inventory builder R1 non installato');
+assert(inventoryBuilder.includes('path.resolve(file) === normalizedOutputPath'), 'Inventory builder non esclude il proprio output');
+const input = { sport_type:'TENNIS', odd:1.72, estimated_prob:68, market_implied_prob:58.1, edge_pp:7.2, ev_pct:16.9, data_sufficiency_score:78, reference_market_quality:'CERTIFIED_SHARP', market_type:'h2h' };
+const baseA = quality.evaluateBaseQualityGate({ ...input, ds_action:'🔴 ALTO RISCHIO', status:'LOST', clv_pct:-10 });
+const baseB = quality.evaluateBaseQualityGate({ ...input, ds_action:'🟢 VALUE CONFERMATO', status:'WON', clv_pct:10 });
+assert(baseA.code === baseB.code && baseA.score === baseB.score, 'Quality base contiene leakage DeepScan/result/CLV');
+const modelRisk = quality.fuseQualityGateWithDeepScan({ ...input, deepScan:{action:'🟠 RISCHIO MODELLO'}, bankroll:1000 });
+assert(modelRisk.code === 'WATCHLIST_MICRO' && modelRisk.stake.amount === 2, 'Model Risk + base forte non diventa micro');
+const highDominates = quality.fuseQualityGateWithDeepScan({ ...input, deepScan:{action:'🟢 VALUE CONFERMATO',riskAssessment:{level:'🔴 ALTO RISCHIO'}}, bankroll:1000, currentStake:8 });
+assert(highDominates.code === 'BLOCKED_HARD' && highDominates.stake.amount === 0, 'High risk non domina wording positivo');
+const edge = quality.fuseQualityGateWithDeepScan({ ...input, reference_market_quality:'STANDARD', data_sufficiency_score:63, deepScan:{action:'📊 EDGE TECNICO'}, bankroll:1000, currentStake:8 });
+assert(edge.code === 'BLOCKED_SOFT' && edge.stake.amount === 0, 'Technical Edge debole non bloccato');
+const unknown = quality.fuseQualityGateWithDeepScan({ ...input, deepScan:{}, bankroll:1000, currentStake:8 });
+assert(unknown.code === 'BLOCKED_SOFT' && unknown.stake.amount === 0, 'DeepScan assente ha autorizzato stake');
+const watchlist = quality.fuseQualityGateWithDeepScan({ ...input, deepScan:{action:'🟡 WATCHLIST'}, bankroll:1000, currentStake:8 });
+assert(watchlist.code === 'WATCHLIST_MICRO' && watchlist.stake.amount === 2, 'Watchlist + base forte non resta micro');
+const value = quality.fuseQualityGateWithDeepScan({ ...input, deepScan:{action:'🟢 VALUE CONFERMATO · MICRO'}, bankroll:1000, currentStake:20, kellyRawStake:12, professionalCap:9 });
+assert(value.code === 'APPROVED_WITH_CAP' && value.stake.amount <= 4 && value.allowFullStake === false, 'Value cap non prudente');
+assert(quality.deriveHistoricalFinalQuality({pre_match_gate_label:'BLOCCATA SOFT',ds_action:'🟠 RISCHIO MODELLO',stake:2}) === 'WATCHLIST MICRO', 'Dashboard non usa final gate');
+assert(quality.deriveHistoricalFinalQuality({pre_match_gate_label:'WATCHLIST MICRO',ds_action:'📊 EDGE TECNICO',stake:2}) === 'BLOCCATA SOFT', 'Technical Edge storico non riallineato');
+const server=read('backend/server.tennis.js'), app=read('public/app.js'), index=read('public/index.html');
+assert(server.includes('PATCH10_QUALITY_BASE_BEFORE_DEEPSCAN') && server.includes('PATCH10_QUALITY_FINAL_AFTER_DEEPSCAN'), 'Stage server assenti');
+assert((server.match(/const qualityBase = tennisQualityGateV2\.evaluateBaseQualityGate\(bet\);/g)||[]).length >= 2, 'Quality base non calcolata sia in update sia in insert');
+assert((server.match(/\['quality_base_code', qualityBase\.code\]/g)||[]).length >= 2, 'Quality base non persistita sia in update sia in insert');
+assert(server.indexOf('PATCH10_QUALITY_BASE_BEFORE_DEEPSCAN') < server.indexOf('PATCH10_QUALITY_FINAL_AFTER_DEEPSCAN'), 'Ordine stage errato');
+assert(server.includes("router.get('/quality-gate-health'"), 'Endpoint qualità assente');
+assert(app.includes('/api/tennis/quality-gate-health') && app.includes('Resa Qualità / Gate finale'), 'UI qualità non collegata');
+assert(app.includes("'data_sufficiency_score'") && app.includes("'reference_market_quality'") && app.includes("'tennis_event_identity_status'"), 'Export Quality Gate non contiene gli input auditabili');
+assert(index.includes('tennisQualityGatePanel') && (index.match(/data-tennis-patch=["']\d+["']/g)||[]).length>=10, 'Centro operativo Patch 10 non corretto');
+assert(fs.readFileSync(path.join(ROOT,'public','app.js')).equals(fs.readFileSync(path.join(ROOT,'backend','public','app.js'))), 'App frontend non identiche');
+assert(fs.readFileSync(path.join(ROOT,'public','index.html')).equals(fs.readFileSync(path.join(ROOT,'backend','public','index.html'))), 'Index frontend non identici');
+console.log('PATCH10 R1 standalone audit PASS: base quantitative separata, DeepScan indipendente, fusion/stake prudente e UI finale allineata.');

@@ -1,0 +1,28 @@
+{
+  "version": "CALCIO_PF_STUDIO_AND_SETUP_HEALTH_V2_20261106",
+  "target": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "backupDir": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.pf-studio-v2\\BACKUP_20261106104424961_4624",
+  "installedAt": "2026-11-06T10:44:25.542Z",
+  "originalHashes": {
+    "server": "d073da4f2435d42648dcd3f7eec8dbd733ed08865cc58feefa56186993b43c4b",
+    "guard": "24180c1db1caaa272b940cced3e88b105879a235e1abea04499ba8ed56a00df3",
+    "app": "e697cd9d3dd2d0309649ab2f93a892cfd43f461ee5d29903e6c2a08ccc8cf50a",
+    "html": "c80b4e69359d7958dc299fe96b4db092ee44189b0fc9af8141f2a67e022d8116"
+  },
+  "newHashes": {
+    "server": "ece182214d7539b5ca63eb5052595f2d66b754fcebebc79903a8cf456c8db982",
+    "guard": "57290854eab1e9b5ddfe4fac53c318f85dfeb97fe27becb471fb77300ac9d336",
+    "app": "029ecd64d409f053fe777f3f14c4b9c638f97ecad2b5b325786bb4149022affa",
+    "html": "2c6c88d9b3de9adc82782e589651875674d7a4796a02b66c81e31f2683b588e0"
+  },
+  "sourceStateHash": "dc137e83e9c3ea0da6256041ab14e5737ba65b74ffb2c74a525588f7db9573e2",
+  "newStateHash": "d31da3294b0c2ba696c3200c0f0bc2a23a6d1861d9734080b7082a6aa037d7c4",
+  "additionHashes": {
+    "ledger": "cd2ebf0dd1a9fce641d1d1e61507db539d92b66c68a830bc85be7bccc3b5cdde",
+    "studio": "6f590012fec4e35c4697afe5e78b5482301b70c75e5fe64a7b6b3ef84f0e1485"
+  },
+  "dbBefore": {
+    "n": 1971,
+    "mx": 3294
+  }
+}

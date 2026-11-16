@@ -1,0 +1,16 @@
+'use strict';
+const fs=require('fs'),path=require('path');
+const ROOT=path.resolve(process.argv.includes('--root')?process.argv[process.argv.indexOf('--root')+1]:path.join(__dirname,'..'));
+const s=fs.readFileSync(path.join(ROOT,'backend','server.js'),'utf8');
+const f=fs.readFileSync(path.join(ROOT,'backend','calcioXgProviderFailoverAudit16dR3R2.js'),'utf8');
+const d=[]; const c=(name,ok,details=null)=>d.push({name,ok:Boolean(ok),details});
+c('Server requires Serie B estimated model',s.includes("require('./calcioSerieBEstimatedXgAudit16dR3R3b')"));
+c('Model activates only for serie_b',s.includes("if (l === 'serie_b'"));
+c('Model activates only after certified chain is proxy',s.includes("xgProviderStateAudit16dR3R2.providerId === 'GOAL_SHOT_PROXY'")&&s.includes("xgProviderStateAudit16dR3R2.sourceClass === 'PROXY'"));
+c('Estimated model explicitly tracked separately from real xG',s.includes('xgEstimatedDataAvailable')&&s.includes("['LIVE_CERTIFIED', 'LKG_CERTIFIED'].includes(xgProviderSourceClass)"));
+c('Multi-provider authoritative evidence uses real-xG flag',s.includes('hasBothXg: Boolean(calcioProfessionalContext.xgRealDataAvailable)'));
+c('Failover evidence has MODEL_ESTIMATED branch',f.includes("state.sourceClass === 'MODEL_ESTIMATED'")&&f.includes("status: 'MODEL_ESTIMATED_XG'"));
+c('Model authority capped at 0.20',f.includes('Math.min(Number(state.authorityWeight) || 0.20, 0.20)'));
+c('No direct stake authority introduced',!s.includes('SERIE_B_ESTIMATED_XG_DIRECT_STAKE')&&!f.includes('directStakeAuthority: true'));
+c('No direct gate authority introduced',!s.includes('SERIE_B_ESTIMATED_XG_DIRECT_GATE')&&!f.includes('directGateAuthority: true'));
+const success=d.every(x=>x.ok); console.log(JSON.stringify({success,patch:'AUDIT16D_R3_R3B',suite:'SERIE_B_MODEL_SERVER_INTEGRATION',checks:d.length,failures:d.filter(x=>!x.ok),details:d},null,2)); process.exit(success?0:1);

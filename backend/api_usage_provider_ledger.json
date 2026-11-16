@@ -1,0 +1,71 @@
+{
+  "version": "BETTING_PATCH_12_ODDS_API_HEADER_LEDGER_V1",
+  "monthKey": "2026-11",
+  "attempts": 111,
+  "successes": 110,
+  "failures": 1,
+  "reconciledResponses": 110,
+  "unreconciledResponses": 1,
+  "estimatedCredits": 0,
+  "providerKeys": {
+    "a1ee4519a3ad4655": {
+      "keyId": "a1ee4519a3ad4655",
+      "used": 372,
+      "remaining": 128,
+      "lastCost": 2,
+      "firstObservedUsedBeforeCall": 124,
+      "statusCode": 200,
+      "observedAt": "2026-11-16T14:24:40.951Z",
+      "source": "server.js",
+      "operation": "calcio_live_odds"
+    }
+  },
+  "attemptsByOperation": {
+    "calcio_live_odds": {
+      "attempts": 62,
+      "successes": 62,
+      "failures": 0,
+      "estimatedCredits": 0
+    },
+    "sports_catalog": {
+      "attempts": 12,
+      "successes": 11,
+      "failures": 1,
+      "estimatedCredits": 0
+    },
+    "tennis_live_odds": {
+      "attempts": 25,
+      "successes": 25,
+      "failures": 0,
+      "estimatedCredits": 0
+    },
+    "scores_settlement": {
+      "attempts": 12,
+      "successes": 12,
+      "failures": 0,
+      "estimatedCredits": 0
+    }
+  },
+  "legacyBaselineCredits": 0,
+  "legacyBaselineAttempts": 0,
+  "lastEvent": {
+    "attemptId": "6ea93763-d324-40a5-9993-55ed83dbfa9d",
+    "source": "server.js",
+    "route": "fetchOddsApi",
+    "operation": "calcio_live_odds",
+    "urlClass": "https://api.the-odds-api.com/v4/sports/soccer_italy_serie_a/odds/?apiKey=REDACTED&regions=eu&markets=h2h,totals",
+    "keyId": "a1ee4519a3ad4655",
+    "at": "2026-11-16T14:24:40.951Z",
+    "type": "SUCCESS",
+    "statusCode": 200,
+    "header": {
+      "available": true,
+      "used": 372,
+      "remaining": 128,
+      "last": 2
+    },
+    "estimatedCost": null
+  },
+  "createdAt": "2026-11-05T10:44:26.039Z",
+  "updatedAt": "2026-11-16T14:24:40.951Z"
+}

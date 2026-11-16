@@ -1,0 +1,43 @@
+{
+  "leagueId": 135,
+  "leagueName": "Serie A",
+  "country": "Italy",
+  "seasonStart": 2025,
+  "availableSeasons": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "coverage": {
+    "fixtures": {
+      "events": true,
+      "lineups": true,
+      "statistics_fixtures": true,
+      "statistics_players": true
+    },
+    "standings": true,
+    "players": true,
+    "top_scorers": true,
+    "top_assists": true,
+    "top_cards": true,
+    "injuries": true,
+    "predictions": true,
+    "odds": false
+  },
+  "discoveryUrl": "https://v3.football.api-sports.io/leagues?id=135",
+  "cachedAt": "2026-10-04T17:34:55.616Z"
+}

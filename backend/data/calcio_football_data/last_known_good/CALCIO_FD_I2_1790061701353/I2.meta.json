@@ -1,0 +1,23 @@
+{
+  "operationId": "AUDIT14_REFRESH_I2_1789999865825",
+  "fetchedAt": "2026-09-21T14:11:05.825Z",
+  "lastSuccessAt": "2026-09-21T14:11:05.825Z",
+  "source": "NETWORK",
+  "season": "2627",
+  "url": "https://www.football-data.co.uk/mmz4281/2627/I2.csv",
+  "leagueKey": "i2",
+  "leagueName": "i2",
+  "code": "I2",
+  "attemptedSeasons": [
+    "2627"
+  ],
+  "version": "CALCIO_PATCH_3_FOOTBALL_DATA_MANIFEST_V1",
+  "providerVersion": "CALCIO_PATCH_3_FOOTBALL_DATA_PROVIDER_V1",
+  "sha256": "50fc385a523711421213c5d634f51b37cb4ca05a0b2ac5e35af9c9fcaad9db01",
+  "validRows": 40,
+  "rejectedRows": 0,
+  "earliestMatchAt": "2026-08-21T12:00:00.000Z",
+  "latestMatchAt": "2026-09-13T12:00:00.000Z",
+  "sizeBytes": 19514,
+  "lastKnownGoodBackup": "C:\\Users\\pc-user\\OneDrive\\Personale\\BettingApp\\BettingApp\\backend\\data\\calcio_football_data\\last_known_good\\AUDIT14_REFRESH_I2_1789999865825"
+}

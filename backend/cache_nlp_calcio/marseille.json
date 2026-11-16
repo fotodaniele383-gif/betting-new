@@ -1,0 +1,286 @@
+{
+  "timestamp": 1794164815871,
+  "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+  "profile": {
+    "score": 0,
+    "tactics": {
+      "mentions": 0,
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false
+    },
+    "report": "Neutro ⚖️",
+    "color": "#94a3b8",
+    "confidence": 43.8,
+    "sourceCoverageConfidence": 85,
+    "matchImpactConfidence": 43.8,
+    "raw": {
+      "injury": 0,
+      "form": 0,
+      "momentum": 0,
+      "psychology": 0,
+      "injuredAttackers": 0,
+      "injuredDefenders": 0,
+      "injuredGoalies": 0,
+      "keyPlayersOut": 0,
+      "fakeInjuryCount": 0,
+      "confidence": 55,
+      "globalScore": 0,
+      "report": "Neutro ⚖️",
+      "color": "#94a3b8",
+      "isEmergency": false,
+      "attackOut": false,
+      "defenseOut": false,
+      "keyPlayerOut": false,
+      "evidenceArticles": 3
+    },
+    "sourceIntelligence": {
+      "version": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+      "cacheSchemaVersion": "CALCIO_RECOVERY_R12_NLP_CACHE_V3",
+      "entityResolutionVersion": "BETTING_PATCH_26F_B_ENTITY_RESOLUTION_V2",
+      "team": "Marseille",
+      "officialDomain": "om.fr",
+      "status": "VERIFIED_MULTI_SOURCE",
+      "confidence": 43.8,
+      "coverageConfidence": 85,
+      "matchImpactConfidence": 43.8,
+      "providers": [
+        {
+          "id": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "OFFICIAL_DOMAIN",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 874,
+          "received": 8,
+          "relevant": 2,
+          "fresh": 8,
+          "usable": 2,
+          "excluded": 0,
+          "officialUsable": 2,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:06:55.538Z"
+        },
+        {
+          "id": "GOOGLE_NEWS_GENERAL_RSS",
+          "channel": "GOOGLE_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "OK_WITH_RESULTS",
+          "httpStatus": 200,
+          "durationMs": 1201,
+          "received": 15,
+          "relevant": 2,
+          "fresh": 15,
+          "usable": 2,
+          "excluded": 1,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:06:55.865Z"
+        },
+        {
+          "id": "BING_NEWS_GENERAL_RSS",
+          "channel": "BING_NEWS_RSS",
+          "tier": "AGGREGATOR",
+          "status": "EMPTY",
+          "httpStatus": 200,
+          "durationMs": 761,
+          "received": 0,
+          "relevant": 0,
+          "fresh": 0,
+          "usable": 0,
+          "excluded": 0,
+          "officialUsable": 0,
+          "error": null,
+          "fetchedAt": "2026-11-08T19:06:55.425Z"
+        }
+      ],
+      "counts": {
+        "providers": 3,
+        "successfulProviders": 3,
+        "failedProviders": 0,
+        "providersWithResults": 2,
+        "receivedArticles": 23,
+        "relevantArticles": 4,
+        "usableArticles": 4,
+        "uniqueArticles": 4,
+        "duplicateRetrievals": 0,
+        "evidenceClusters": 4,
+        "officialArticles": 2,
+        "trustedArticles": 0,
+        "independentChannels": 3,
+        "independentPublishers": 3,
+        "excludedEvidence": 19,
+        "excludedSquadArticles": 1
+      },
+      "articles": [
+        {
+          "title": "om training blue pro shorts - olympique de marseille",
+          "originalTitle": "OM Training Blue Pro Shorts - Olympique de Marseille",
+          "fullText": "om training blue pro shorts - olympique de marseille <a href=\"https://news.google.com/rss/articles/cbmigwfbvv95cuxpueltzww3djjpexrrmgf1rwxcb041wxzlel9yovpacxbnrhvywdbfmnuzx2pwewxrrzv6zkpnrtqzthftqnrju29hx3fhdxe4mek0d1lmzdrucgxrywf4berhz2jqvfbimwlkavnldhrhzut2rf85auzhy25tt0lhbnplbw?oc=5\" target=\"_blank\">om training blue pro shorts</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">olympique de marseille</font>",
+          "sourceName": "Olympique de Marseille",
+          "sourceUrl": "https://boutique.om.fr",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUElTZWw3djJpeXRRMGF1RWxCb041WXZLel9yOVpacXBNRHVYWDBfMnUzX2pweWxrRzV6ZkpNRTQzTHFtQnRJU29HX3FhdXE4MEk0d1lMZDRucGxrYWF4bERHZ2JqVFBiMWlkaVNLdHRHZUt2RF85aUZHY25tT0lHbnplbw?oc=5",
+          "publishedAt": "2026-11-06T16:34:19.000Z",
+          "ageDays": 2.11,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 1
+        },
+        {
+          "title": "om blue pro training jersey - olympique de marseille",
+          "originalTitle": "OM Blue Pro Training Jersey - Olympique de Marseille",
+          "fullText": "om blue pro training jersey - olympique de marseille <a href=\"https://news.google.com/rss/articles/cbmiogfbvv95cuxqcc1knfluc3ncdml3d3buwllnshpfrtviqznmvi1dmwdmqw5jbwpry3fkmmtxcm1ox2k2os1ycfbfefltsfzscnjawhlgalron09ttxdwwkm5ovmxutjwa01fnuhhuzrlsed5wlf5oe1cqvfodk1jqw9jwmswbfraz2i4tdj0s0xyrwfcdxjxd1nibvgtafney1q4y2zxqumttgc?oc=5\" target=\"_blank\">om blue pro training jersey</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">olympique de marseille</font>",
+          "sourceName": "Olympique de Marseille",
+          "sourceUrl": "https://boutique.om.fr",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcC1KNFlUc3NCdml3d3BUWllNSHpFRTViQzNmVi1DMWdmQW5JbWpRY3FkMmtxcm1OX2k2OS1YcFBFeFlTSFZScnJaWHlGalRON09tTXdWWkM5OVMxUTJWa01FNUhHUzRlSEd5WlF5OE1CQVFodk1JQW9JWmswbFRaZ2I4TDJ0S0xyRWFCdXJxd1NibVgtaFNEY1Q4Y2ZXQUMtTGc?oc=5",
+          "publishedAt": "2026-11-05T14:46:09.000Z",
+          "ageDays": 3.18,
+          "category": "PRESEASON",
+          "trustTier": "OFFICIAL",
+          "providerId": "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_OFFICIAL_DOMAIN_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 1
+        },
+        {
+          "title": "preview | bayer leverkusen vs marseille: team news, lineups, predictions (europa league 05/11) - yahoo sports",
+          "originalTitle": "PREVIEW | Bayer Leverkusen vs Marseille: team news, lineups, predictions (Europa League 05/11) - Yahoo Sports",
+          "fullText": "preview | bayer leverkusen vs marseille: team news, lineups, predictions (europa league 05/11) - yahoo sports <a href=\"https://news.google.com/rss/articles/cbmijwfbvv95cuxqogk4qwljuvhfuy1fdndzvutywefyu3frou1px0rdaknsn1hmugixavdxsndsdvhsdzhvn2xfqk9lovburnbooulvtwewrfd4v2i3agwzvl9tqlbsmlvhclj5qjvyvgh4dkdjyxj2t2hlb0sxvtr0r1jyylhoqnfdz3pjnm9zsm9nqxpmwnpzaw?oc=5\" target=\"_blank\">preview | bayer leverkusen vs marseille: team news, lineups, predictions (europa league 05/11)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">yahoo sports</font>",
+          "sourceName": "Yahoo Sports",
+          "sourceUrl": "https://sports.yahoo.com",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQOGk4QWlJUVhFUy1fdndZVUtYWEFyU3FrOU1PX0RDakNsN1hMUGIxaVdXSndsdVhSdzhvN2xfQk9lOVBURnBOOUlVTWEwRFd4V2I3aGwzVl9tQlBsMlVhclJ5QjVYVGh4dkdJYXJ2T2hLb0sxVTR0R1JyYlhOQnFDZ3pJNm9zSm9nQXpmWnpzaw?oc=5",
+          "publishedAt": "2026-11-03T20:10:00.000Z",
+          "ageDays": 4.96,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        },
+        {
+          "title": "marseille festival dreamachine confirms lineup for debut edition · news ⟋ ra - resident advisor",
+          "originalTitle": "Marseille festival Dreamachine confirms lineup for debut edition · News ⟋ RA - Resident Advisor",
+          "fullText": "marseille festival dreamachine confirms lineup for debut edition · news ⟋ ra - resident advisor <a href=\"https://news.google.com/rss/articles/cbmipefvx3lxte43uke0mjdjbgl0rf9xmu4wmudqqzhrrlzwwmt1bwvyqjheyvmtwmjrdxzkov85z2vbbg9wmg?oc=5\" target=\"_blank\">marseille festival dreamachine confirms lineup for debut edition · news ⟋ ra</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">resident advisor</font>",
+          "sourceName": "Resident Advisor",
+          "sourceUrl": "https://ra.co",
+          "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE43UkE0MjdJbGl0RF9xMU4wMUdQQzhrRlZWWmt1bWVyQjhEYVMtWmJRdXZkOV85Z2VBbG9wMg?oc=5",
+          "publishedAt": "2026-10-28T16:30:45.000Z",
+          "ageDays": 11.11,
+          "category": "LINEUP",
+          "trustTier": "GENERAL_MEDIA",
+          "providerId": "GOOGLE_NEWS_GENERAL_RSS",
+          "retrievalPaths": [
+            "GOOGLE_NEWS_GENERAL_RSS"
+          ],
+          "duplicateCount": 0,
+          "squadScope": "MEN_FIRST_TEAM",
+          "temporalPhase": "LINEUP_WINDOW",
+          "matchImpactWeight": 0.45
+        }
+      ],
+      "excludedEvidence": [
+        {
+          "title": "the olimpian man – page 6 - olympique de marseille",
+          "sourceName": "Olympique de Marseille",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "om flame key ring - olympique de marseille",
+          "sourceName": "Olympique de Marseille",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "cadeaux petit budget – page 3 - olympique de marseille",
+          "sourceName": "Olympique de Marseille",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "cadeaux grand budget - olympique de marseille",
+          "sourceName": "Olympique de Marseille",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "cadeaux immense budget - olympique de marseille",
+          "sourceName": "Olympique de Marseille",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "cadeaux petit budget - olympique de marseille",
+          "sourceName": "Olympique de Marseille",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "lens vs marseille prediction, lineups & team news - rotowire",
+          "sourceName": "RotoWire",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "preview | lens vs marseille: team news, lineups, predictions (ligue 1 08/11) - yahoo sports",
+          "sourceName": "Yahoo Sports",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "marseille study finds non-operative care viable for stable chest trauma - bioengineer.org",
+          "sourceName": "Bioengineer.org",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "bayer leverkusen vs. olympique de marseille preview: team news and predicted lineups - bulinews",
+          "sourceName": "Bulinews",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "leverkusen v marseille preview, team news and predicted line-ups - onefootball",
+          "sourceName": "OneFootball",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        },
+        {
+          "title": "marseille vs toulouse prediction, lineups & team news - rotowire",
+          "sourceName": "RotoWire",
+          "squadScope": "MEN_FIRST_TEAM",
+          "reason": "TOPIC_NOT_RELEVANT"
+        }
+      ],
+      "warnings": [
+        "R12: 1 articolo/i di settore femminile, Primavera, giovanili o squadre diverse esclusi dalla valutazione first-team."
+      ],
+      "runtimeResilience": {
+        "version": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1",
+        "providerTimeoutMs": 5000,
+        "circuitBreaker": true,
+        "sharedNewsCache": true
+      }
+    },
+    "sourceError": null,
+    "sourceVersion": "BETTING_RECOVERY_R12_FIRST_TEAM_NEWS_SCOPE_20261108",
+    "runtimeVersion": "BETTING_PATCH_13_R1_DEEPSCAN_RUNTIME_RESILIENCE_V1"
+  }
+}

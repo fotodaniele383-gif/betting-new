@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "CALCIO_PATCH_10_UNDERSTAT_LKG_V1",
+  "leagueName": "Premier",
+  "teams": {
+    "Aston Villa": {
+      "xG_for": 0.998,
+      "xG_against": 2.171,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Everton": {
+      "xG_for": 1.671,
+      "xG_against": 1.44,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Bournemouth": {
+      "xG_for": 1.62,
+      "xG_against": 1.399,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Sunderland": {
+      "xG_for": 2.014,
+      "xG_against": 1.77,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Crystal Palace": {
+      "xG_for": 1.517,
+      "xG_against": 2.004,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Chelsea": {
+      "xG_for": 1.788,
+      "xG_against": 2.059,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Tottenham": {
+      "xG_for": 1.164,
+      "xG_against": 1.839,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Arsenal": {
+      "xG_for": 1.883,
+      "xG_against": 1.091,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Newcastle United": {
+      "xG_for": 1.109,
+      "xG_against": 1.868,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Liverpool": {
+      "xG_for": 1.649,
+      "xG_against": 1.388,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Manchester City": {
+      "xG_for": 2.208,
+      "xG_against": 1.435,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Manchester United": {
+      "xG_for": 2.117,
+      "xG_against": 1.443,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Hull": {
+      "xG_for": 1.146,
+      "xG_against": 1.437,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Brighton": {
+      "xG_for": 2.579,
+      "xG_against": 1.725,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Fulham": {
+      "xG_for": 1.593,
+      "xG_against": 2.086,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Brentford": {
+      "xG_for": 2.103,
+      "xG_against": 1.499,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Leeds": {
+      "xG_for": 1.445,
+      "xG_against": 1.283,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Nottingham Forest": {
+      "xG_for": 1.696,
+      "xG_against": 1.002,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Ipswich": {
+      "xG_for": 1.425,
+      "xG_against": 2.062,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Coventry": {
+      "xG_for": 0.995,
+      "xG_against": 1.718,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    }
+  },
+  "metadata": {
+    "version": "CALCIO_PATCH_11_UNDERSTAT_PROVIDER_V3",
+    "resilienceRevision": "AUDIT16D_R3_R3A_UNDERSTAT_API_DATE_BROWSER_RESILIENCE_V1",
+    "provenanceRevision": "AUDIT16D_R3_R3A_R2_UNDERSTAT_PROVENANCE_LOCK_V1",
+    "evidenceSource": "UNDERSTAT_TEAMS_DATA",
+    "evidenceClass": "REAL_XG",
+    "ajaxContract": "UNDERSTAT_GET_LEAGUE_DATA_V1",
+    "parser": "AJAX_GET_LEAGUE_DATA_JSON_TEAMS",
+    "season": "2026/2027",
+    "teamCount": 20,
+    "rejectedCount": 0,
+    "fetchedAt": "2026-10-04T17:59:43.744Z",
+    "source": "DIRECT_AJAX_JSON",
+    "apiLeagueSegment": "EPL",
+    "wireRevision": "AUDIT16D_R3_R3A_R4_UNDERSTAT_GZIP_AND_ENDPOINT_ALIAS_V1"
+  }
+}

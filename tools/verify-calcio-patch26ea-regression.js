@@ -1,0 +1,10 @@
+'use strict';
+const assert = require('assert');
+const registry = require('../backend/calcioPatchRegistry');
+assert.strictEqual(String(registry.CALCIO_CURRENT_PATCH_VERSION), '30');
+const patch = registry.PATCHES.find(p => String(p.version) === '30');
+assert(patch && patch.id === 'BETTING_PATCH_26E_A_CALCIO_DEEPSCAN_FINAL_STATE_UI_CONSISTENCY');
+assert.strictEqual(patch.tennisAuthorityChanged, false);
+assert.strictEqual(patch.footballProbabilityContractChanged, false);
+assert.strictEqual(patch.stakeAuthorityChanged, false);
+console.log(JSON.stringify({ success: true, checks: 5 }, null, 2));

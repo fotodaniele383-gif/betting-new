@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('fs'); const path=require('path'); const crypto=require('crypto'); const assert=require('assert'); const {DatabaseSync}=require('node:sqlite');
+const reconciler=require('../backend/calcioStakeReconciler'); const audit=require('../backend/calcioStakePortfolioAudit');
+const root=path.resolve(process.argv[2]||path.join(__dirname,'..')); const dbFile=path.join(root,'backend','database_betting.db'); const sha=()=>crypto.createHash('sha256').update(fs.readFileSync(dbFile)).digest('hex'); const before=sha();
+const db=new DatabaseSync(dbFile,{readOnly:true});
+const tables=db.prepare(`SELECT COUNT(*) c FROM sqlite_master WHERE type='table'`).get().c; const totalRows=db.prepare(`SELECT COUNT(*) c FROM ai_forward_test`).get().c; const tennisRows=db.prepare(`SELECT COUNT(*) c FROM ai_forward_test WHERE UPPER(COALESCE(sport_type,''))='TENNIS'`).get().c;
+const activeDuplicateGroups=db.prepare(`SELECT COUNT(*) c FROM (SELECT COALESCE(paper_result_key,match_exposure_key||'|'||prediction) k,COUNT(*) n FROM ai_forward_test WHERE COALESCE(paper_result_active,1)=1 AND COALESCE(paper_result_conflict,0)=0 GROUP BY k HAVING k IS NOT NULL AND k<>'' AND n>1)`).get().c;
+const pending=db.prepare(`SELECT * FROM ai_forward_test WHERE status='PENDING' AND UPPER(COALESCE(sport_type,''))='CALCIO' AND COALESCE(paper_result_active,1)=1 AND COALESCE(paper_result_conflict,0)=0 AND UPPER(COALESCE(bet_type,'')) IN ('SINGLE','SINGLE_CR')`).all();
+const dry=reconciler.reconcilePendingRows(db,{dryRun:true}); const dbById=new Map(pending.map(r=>[r.id,r])); const eligibleStillZero=dry.decisions.filter(d=>d.operationalStake>0 && Number(dbById.get(d.id)?.calcio_operational_stake||dbById.get(d.id)?.stake||0)<=0);
+const diagnostics=audit.buildStakeDiagnostics(pending); db.close(); const after=sha();
+assert.equal(before,after,'DB modified by read-only verification'); assert.equal(activeDuplicateGroups,0,'Active duplicate groups found'); assert.equal(eligibleStillZero.length,0,`Eligible Kelly rows still zero: ${eligibleStillZero.map(x=>x.id).join(',')}`); assert(diagnostics.operationalPositive>0,'No real operational stake found after Patch 16');
+console.log(JSON.stringify({success:true,patch:'BETTING_PATCH_16_FORCED_STAKE_AUTHORITY_RECONCILIATION',sha256:before,tables,totalRows,tennisRows,activeDuplicateGroups,readOnly:true,eligibleStillZero:0,stakeDiagnostics:diagnostics},null,2));

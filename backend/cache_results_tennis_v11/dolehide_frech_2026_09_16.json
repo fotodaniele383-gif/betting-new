@@ -1,0 +1,19 @@
+{
+  "timestamp": 1793963354536,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 1,
+  "totalGames": 19,
+  "isVoid": false,
+  "source": "STEP58_WEB_FALLBACK_SCORE_GUARDED",
+  "confidence": 0.9,
+  "step107WeakWinnerSide": true,
+  "observedAt": "2026-11-06T11:09:14.536Z",
+  "sourceEventId": "WEB:3afdce3c64caa014adcb",
+  "rawEvidence": {
+    "query": "dolehide frech tennis score 2026-09-16 result",
+    "matchDate": "2026-09-16",
+    "excerpt": "fre 2-0 dol magdalena frech v caroline dolehide 16 09 2026 tennis ... follow magdalena frech v caroline dolehide 16 09 2026 match information magdalena frech latest results news highlights and magdalena frech v caroline dolehide h2h statistics flashscore tennis coverage includes tennis scores and tennis news from more than 5000 tournaments worldwide. magdalena frech caroline dolehide live score and h2h results - sofascore magdalena frech caroline dolehide live score starts on 16 sept 2026 at 19 10 utc time at estadio skarch stadium guadalajara city mexico in guadalajara mexico wta. magdalena frech vs caroline dolehide result 2-0 - sportytrader magdalena frech vs caroline dolehide 2-0 on 16 september 2026 in wta guadalajara - recap highlights detailed stats magdalena frech 2 - 0 caroline dolehide 09 16 - game report the match between magdalena frech and caroline dolehide in the guadalajara held on wednesday september 16 2026 ended with a final score of magdalena frech 2 - 0 caroline dolehide. magdalena frech beat caroline dolehide guadalajara 2026 magdalena frech beat caroline dolehide at guadalajara 2026 round of 16. full match statistics and the point by point. magdalena frech vs "
+  },
+  "score": "6-4 6-3",
+  "note": "Risultato da web fallback: classificato PROPOSED da Patch 5; non chiude automaticamente senza fonte strutturata/certificata."
+}

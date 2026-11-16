@@ -1,0 +1,17 @@
+{
+  "version": "SAFE13_CALCIO_MANUAL_BATCH_FIX_R1_20261106",
+  "installedAt": "2026-11-06T09:11:12.551Z",
+  "target": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2",
+  "backupDir": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.safe13-calcio-manual-batch-fix\\BACKUP_PRE_FIX_1793956269665",
+  "backupServer": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.safe13-calcio-manual-batch-fix\\BACKUP_PRE_FIX_1793956269665\\server.js",
+  "backupState": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.safe13-calcio-manual-batch-fix\\BACKUP_PRE_FIX_1793956269665\\BETTINGAPP_STANDALONE_STATE.json",
+  "backupDbPath": "C:\\Users\\pc-user\\Documents\\Personale\\BettingApp\\BettingApp v2\\.safe13-calcio-manual-batch-fix\\BACKUP_PRE_FIX_1793956269665\\database_betting_BACKUP_CONSISTENTE.db",
+  "oldServerSha": "6949d8b36b154b46f68bd27d52cae2654c396fc8db8f0c9c82e1abc7fbab4f97",
+  "oldStateSha": "a0bce33efd054c1e24ef52abe194b008803baf4e3ba7e62f75d53d0088a5efcd",
+  "newServerSha": "deae49fc42556e6d91abb6f7d00bc43307aef48745623dbe74146a8802bcfc4d",
+  "newStateSha": "1ae0259458ab9484051131e61a4efb4f275a14e1951830122ac6ae0449ab342a",
+  "guardSha": "ba17c4d19860d36bc249eb5c033e32b9ce0539951170cebe9a4d6cb1d56eb824",
+  "diagSha": "1ed4c74103b647b9e1f8a183d30fbb5d58e0fb4be1151c1dbe4f2ad68087de11",
+  "baselineRows": 1971,
+  "baselineMaxId": 3294
+}

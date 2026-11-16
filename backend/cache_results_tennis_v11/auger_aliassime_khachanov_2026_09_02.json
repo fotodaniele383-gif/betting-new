@@ -1,0 +1,19 @@
+{
+  "timestamp": 1793963353222,
+  "engineVersion": "11.9_PATCH51_SETTLEMENT_EXCEPTION_QUEUE_IDEMPOTENT_NOTIFICATIONS",
+  "winner": 1,
+  "totalGames": 240,
+  "isVoid": false,
+  "source": "STEP58_WEB_FALLBACK_SCORE_GUARDED",
+  "confidence": 0.9,
+  "step107WeakWinnerSide": true,
+  "observedAt": "2026-11-06T11:09:13.222Z",
+  "sourceEventId": "WEB:d74ac02b2d60b87217ea",
+  "rawEvidence": {
+    "query": "auger-aliassime khachanov tennis score 2026-09-02 result",
+    "matchDate": "2026-09-02",
+    "excerpt": "karen khachanov vs felix auger-aliassime result score stats 2026 ... karen khachanov defeated felix auger-aliassime 6-7 5-7 6-3 6-2 6-2 in the 2026 us open men s singles round 2. view the set-by-set score match length court and available player statistics. auger-aliassime vs khachanov us open 2026 tennistemple in twelve months felix auger-aliassime went from 27th to 4th in the world rankings while karen khachanov dropped from 9th to 50th. karen khachanov has nine titles including a masters 1000 in paris but his best result at the us open remains a semifinal after eleven appearances. this match comes nearly fifteen months after their last meeting won by karen khachanov on grass at halle in 2025. felix auger-aliassime vs karen khachanov us open 2026 result felix auger-aliassime vs karen khachanov at us open 2026 round of 64 men s singles the 6-7 5 6-3 6-2 6-2 result the box score the hard-court graphic and a recap. khachanov vs auger-aliassime beijing 2026 tennistemple in beijing felix auger-aliassime the number 2 seed faces karen khachanov who leads 3-2 in their head-to-head and beat him at the last us open. faa vs khachanov result khachanov wins 6-7 6-3 6-2 6-2 - lines.com what was"
+  },
+  "score": "6-7 5-7 6-3 6-2 6-2 6-7 6-3 6-2 6-2 6-7 6-3 6-2 6-2 6-7 6-3 6-2 6-2 7-6 3-6 2-6 2-6 6-7 6-3 6-2 6-2",
+  "note": "Risultato da web fallback: classificato PROPOSED da Patch 5; non chiude automaticamente senza fonte strutturata/certificata."
+}

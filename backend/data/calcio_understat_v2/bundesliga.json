@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "CALCIO_PATCH_10_UNDERSTAT_LKG_V1",
+  "leagueName": "Bundesliga",
+  "teams": {
+    "Bayern Munich": {
+      "xG_for": 3.331,
+      "xG_against": 0.75,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Hamburger SV": {
+      "xG_for": 0.987,
+      "xG_against": 2.305,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Bayer Leverkusen": {
+      "xG_for": 2.61,
+      "xG_against": 0.856,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Hoffenheim": {
+      "xG_for": 2.18,
+      "xG_against": 2.087,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Augsburg": {
+      "xG_for": 2.142,
+      "xG_against": 2.134,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Werder Bremen": {
+      "xG_for": 1.321,
+      "xG_against": 1.581,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Schalke 04": {
+      "xG_for": 1.644,
+      "xG_against": 2.576,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Mainz 05": {
+      "xG_for": 2.635,
+      "xG_against": 1.549,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Borussia Dortmund": {
+      "xG_for": 2.149,
+      "xG_against": 1.062,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Borussia M.Gladbach": {
+      "xG_for": 1.87,
+      "xG_against": 3.104,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Eintracht Frankfurt": {
+      "xG_for": 2.218,
+      "xG_against": 2.226,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "VfB Stuttgart": {
+      "xG_for": 2.027,
+      "xG_against": 3.002,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "FC Cologne": {
+      "xG_for": 2.236,
+      "xG_against": 2.176,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Freiburg": {
+      "xG_for": 2.159,
+      "xG_against": 1.008,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "RasenBallsport Leipzig": {
+      "xG_for": 2.186,
+      "xG_against": 1.285,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Paderborn": {
+      "xG_for": 0.769,
+      "xG_against": 1.885,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Union Berlin": {
+      "xG_for": 1.231,
+      "xG_against": 3.215,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    },
+    "Elversberg": {
+      "xG_for": 1.564,
+      "xG_against": 2.458,
+      "source": "UNDERSTAT_TEAMS_DATA",
+      "providerId": "UNDERSTAT",
+      "evidenceClass": "REAL_XG"
+    }
+  },
+  "metadata": {
+    "version": "CALCIO_PATCH_11_UNDERSTAT_PROVIDER_V3",
+    "resilienceRevision": "AUDIT16D_R3_R3A_UNDERSTAT_API_DATE_BROWSER_RESILIENCE_V1",
+    "provenanceRevision": "AUDIT16D_R3_R3A_R2_UNDERSTAT_PROVENANCE_LOCK_V1",
+    "evidenceSource": "UNDERSTAT_TEAMS_DATA",
+    "evidenceClass": "REAL_XG",
+    "ajaxContract": "UNDERSTAT_GET_LEAGUE_DATA_V1",
+    "parser": "AJAX_GET_LEAGUE_DATA_JSON_TEAMS",
+    "season": "2026/2027",
+    "teamCount": 18,
+    "rejectedCount": 0,
+    "fetchedAt": "2026-10-04T17:59:43.890Z",
+    "source": "DIRECT_AJAX_JSON",
+    "apiLeagueSegment": "Bundesliga",
+    "wireRevision": "AUDIT16D_R3_R3A_R4_UNDERSTAT_GZIP_AND_ENDPOINT_ALIAS_V1"
+  }
+}

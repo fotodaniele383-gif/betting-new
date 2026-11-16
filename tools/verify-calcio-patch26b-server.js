@@ -1,0 +1,16 @@
+'use strict';
+const fs=require('fs');const path=require('path');const assert=require('assert/strict');
+const root=path.resolve(__dirname,'..');
+const server=fs.readFileSync(path.join(root,'backend/server.js'),'utf8');
+const fin=fs.readFileSync(path.join(root,'backend/calcioAiFinalization.js'),'utf8');
+const registry=require('../backend/calcioPatchRegistry');
+for(const marker of ["require('./calcioEventFinalizationIsolation')",'buildFullCandidateAudit(','candidatePoolCount: completeCandidateSelection.candidatePoolCount','allocateCurrentEventOnly({','assertOnlyCurrentEventMutated(','COMMITTED_EVENT_ONLY','EVENT_FINALIZED_PORTFOLIO_BATCH_PENDING']) assert.ok(server.includes(marker),`Marker mancante ${marker}`);
+assert.ok(!server.includes('applyPortfolioExposureCaps(\n                        latestRows'),'La route non deve più allocare e riscrivere l’intero portafoglio');
+assert.ok(!server.includes('for (const allocatedRow of portfolioAllocation.candidates)'),'La transazione evento non deve ciclare tutte le righe allocate');
+assert.ok(!fin.includes('Servono almeno due mercati candidati da finalizzare'));
+assert.ok(fin.includes('MARKET_SINGLE_DIRECT_FINALIZED'));
+assert.ok(fin.includes('directFinalizedCount === ranked.length'));
+assert.equal(registry.CALCIO_CURRENT_PATCH_VERSION,'27');
+const patch=registry.PATCHES.find(p=>p.version==='27');assert.ok(patch);assert.equal(patch.id,'BETTING_PATCH_26B_CALCIO_FULL_CANDIDATE_POOL_EVENT_ISOLATION');
+assert.equal(patch.crossEventWritesForbidden,true);assert.equal(patch.portfolioBatchCertified,false);assert.equal(patch.newOddsApiCalls,0);
+console.log(JSON.stringify({success:true,patch:patch.id,registryVersion:registry.CALCIO_CURRENT_PATCH_VERSION,guards:{fullPool:true,singleCandidate:true,eventIsolation:true,noGlobalWriteLoop:true,degradedNotCertified:true}},null,2));

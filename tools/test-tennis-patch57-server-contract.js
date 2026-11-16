@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs'),path=require('path');const root=path.resolve(process.argv.includes('--root')?process.argv[process.argv.indexOf('--root')+1]||'.':process.argv[2]||path.join(__dirname,'..'));const read=r=>fs.readFileSync(path.join(root,r),'utf8');
+const server=read('backend/server.js'), app=read('public/app.js'), bapp=read('backend/public/app.js'), idx=read('public/index.html'), bidx=read('backend/public/index.html'), tg=read('public/telegram.js'), btg=read('backend/public/telegram.js'), bat=read('Avvia_Betting.bat'); const pkg=JSON.parse(read('package.json'));const checks=[];const c=(n,o,d=null)=>checks.push({name:n,ok:Boolean(o),details:d});
+c('Server require Patch57',server.includes("require('./productionSecuritySafeReleasePatch57')"));
+c('Security installed before JSON body parser',server.indexOf('installExpressSecurity(app')>=0&&server.indexOf('installExpressSecurity(app')<server.indexOf('express.json('));
+c('Wildcard cors removed',!server.includes('app.use(cors())')&&!server.includes("require('cors')"));
+c('Explicit bind host',server.includes('app.listen(PORT, BIND_HOST'));
+c('No trust proxy widening',!server.includes("app.set('trust proxy'")&&!server.includes('app.enable(\'trust proxy\')'));
+c('Security health endpoint',server.includes("'/api/production-security-health'"));
+c('Security runtime endpoint',server.includes("'/api/production-security/runtime'"));
+c('Frontend Patch57 marker',idx.includes('data-patch57-production-security="true"'));
+c('Frontend Patch56 marker preserved',idx.includes('data-patch56-cross-sport-portfolio-risk="true"'));
+c('Frontend current cache revision preserves Patch57',idx.includes('app.js?v=patch57-production-security-safe-release')||idx.includes('app.js?v=patch58-scheduler-reliability-state-machine'));
+c('Frontend token fragment bootstrap',app.includes("hash.get('access_token')")&&app.includes('sessionStorage.setItem')&&app.includes('history.replaceState'));
+c('Frontend token same-origin API only',app.includes("url.origin === window.location.origin")&&app.includes("url.pathname.startsWith('/api/')"));
+c('Frontend token header',app.includes("headers.set('X-BettingApp-Token', token)"));
+c('Telegram remote session',tg.includes('BETTINGAPP_PATCH57_REMOTE_ACCESS_TOKEN')&&tg.includes('X-BettingApp-Token'));
+c('Frontend mirrors',idx===bidx&&app===bapp&&tg===btg);
+const rawNgrok=/\bngrok(?:\.exe)?\s+http\b/i.test(bat);const legacyGuarded=bat.includes('start-secure-ngrok-patch57.js --check-only')&&!rawNgrok;const recoveryR2LocalOnly=bat.includes('Startup Recovery Patch57 R2')&&bat.includes("require('./backend/productionSecuritySafeReleasePatch57')")&&bat.includes('Tunnel remoto non avviato automaticamente.')&&!rawNgrok;c('Startup remote exposure fail-closed',legacyGuarded||recoveryR2LocalOnly,{legacyGuarded,recoveryR2LocalOnly,rawNgrok});
+c('Startup loopback dashboard',bat.includes('http://127.0.0.1:3000'));
+c('Package Patch57 future-compatible',Number(String(pkg.version).split('.')[1]||0)>=44,{actual:pkg.version});
+c('Npm verify script',Boolean(pkg.scripts?.['verify:tennis:patch57']));
+c('Npm release plan script',Boolean(pkg.scripts?.['release:plan:patch57']));
+const failed=checks.filter(x=>!x.ok);console.log(JSON.stringify({success:!failed.length,patch:'57',suite:'SERVER_CONTRACT',checks:checks.length,details:checks},null,2));process.exit(failed.length?1:0);

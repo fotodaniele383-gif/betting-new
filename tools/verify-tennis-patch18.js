@@ -1,0 +1,27 @@
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const root = path.resolve(process.argv[2] || path.join(__dirname, '..'));
+const checks = [];
+function check(name, ok, details = null) { checks.push({ name, success: Boolean(ok), details }); }
+const registry = require(path.join(root, 'backend', 'tennisPatchRegistry'));
+const challenger = require(path.join(root, 'backend', 'tennisStatisticalChallenger'));
+const progression = require(path.join(root, 'backend', 'tennisProgramProgressionAudit'));
+const server = fs.readFileSync(path.join(root, 'backend', 'server.tennis.js'), 'utf8');
+const moduleText = fs.readFileSync(path.join(root, 'backend', 'tennisStatisticalChallenger.js'), 'utf8');
+const app = fs.readFileSync(path.join(root, 'public', 'app.js'), 'utf8');
+const index = fs.readFileSync(path.join(root, 'public', 'index.html'), 'utf8');
+const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
+check('Registry Patch 18', ['18','19'].includes(registry.TENNIS_CURRENT_PATCH_VERSION) && ['TENNIS_PATCH_REGISTRY_V18','TENNIS_PATCH_REGISTRY_V19'].includes(registry.TENNIS_PATCH_REGISTRY_VERSION));
+check('Patch 17 preservata', registry.PATCHES.some(item => item.version === '17' && String(item.status).startsWith('ACTIVE')));
+check('Contratto challenger', challenger.TENNIS_STATISTICAL_CHALLENGER_VERSION === 'TENNIS_STATISTICAL_CHALLENGER_V1_PATCH18');
+check('Progression Guard V6', ['TENNIS_PROGRAM_PROGRESSION_AUDIT_V6_PATCH18','TENNIS_PROGRAM_PROGRESSION_AUDIT_V7_PATCH19'].includes(progression.TENNIS_PROGRAM_PROGRESSION_AUDIT_VERSION));
+for (const route of ['/statistical-challenger-health','/statistical-challenger','/statistical-challenger-refresh']) check(`Endpoint ${route}`, server.includes(route));
+check('UI Patch 18', index.includes('Patch 1–18') || index.includes('Patch 1–19') && index.includes('data-tennis-patch="18"') && app.includes('PATCH18_TENNIS_STATISTICAL_CHALLENGER_UI'));
+check('Frontend byte-identici', fs.readFileSync(path.join(root,'public/app.js')).equals(fs.readFileSync(path.join(root,'backend/public/app.js'))) && fs.readFileSync(path.join(root,'public/index.html')).equals(fs.readFileSync(path.join(root,'backend/public/index.html'))));
+check('Script Patch 18', Boolean(pkg.scripts?.['test:tennis:patch18'] && pkg.scripts?.['verify:tennis:patch18:db'] && pkg.scripts?.['audit:tennis:statistical-challenger']));
+check('Cross-fit temporale', moduleText.includes('STRICTLY_PRIOR_ROWS_ONLY') && moduleText.includes('MINIMUM_TRAINING_BRIER') && moduleText.includes('DEFAULT_MAX_HISTORICAL_WEIGHT = 0.50'));
+check('Nessuna autorità production', /automaticPromotion:\s*false/.test(moduleText) && !server.includes('PATCH18_APPLY_MODEL_WEIGHT'));
+const report = { success: checks.every(item => item.success), patch: '18', version: challenger.TENNIS_STATISTICAL_CHALLENGER_VERSION, checks, generatedAt: new Date().toISOString() };
+const dir = path.join(root,'audit_patch18'); fs.mkdirSync(dir,{recursive:true}); fs.writeFileSync(path.join(dir,'patch18_verification_report.json'),JSON.stringify(report,null,2));
+console.log(JSON.stringify(report,null,2)); if (!report.success) process.exit(2);
